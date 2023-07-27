@@ -70,7 +70,7 @@ for chain in structure[0]:
                         min_distance = distance  # Mantém a distância mínima
                         interacting_atoms = (atom, ligand_atom)  # Mantém os átomos que produziram a distância mínima
             if min_distance <= 4.0:
-                interaction = 'H-bond (1.5 to 2.7 Å)' if min_distance <= 2.9 else 'van der Waals (3.0 to 4.0 Å)'
+                interaction = 'H-bond (1.5 to 2.9 Å)' if min_distance <= 2.9 else 'van der Waals (3.0 to 4.0 Å)'
                 if residue not in near_residues or near_residues[residue][0] == 'van der Waals (3.0 to 4.0 Å)':
                     near_residues[residue] = (interaction, interacting_atoms)
 
@@ -78,7 +78,7 @@ for chain in structure[0]:
 with open('output.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Nome do aminoácido", "Número", "Classificação", "Interação", "Átomos Interagindo"])
-    print("{:<20} {:<10} {:<30} {:<15} {:<20}".format("Aminoácido", "Número", "Classificação", "Interação", "Átomos Interagindo"))   
+    print("{:<20} {:<10} {:<30} {:<30} {:<20}".format("Aminoácido", "Número", "Classificação", "Interação", "Átomos Interagindo"))   
     for residue, (interaction, atoms) in near_residues.items():
         aa_name = residue.get_resname()
         aa_num = residue.get_id()[1]
@@ -87,4 +87,4 @@ with open('output.csv', 'w', newline='') as file:
         atom2 = atoms[1].get_name() + "(" + ligand_residue.get_resname() + ")"
         interacting_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)  # Ajusta o tamanho dos campos dos átomos
         writer.writerow([aa_name, aa_num, aa_class, interaction, interacting_atoms_str])
-        print("{:<20} {:<10} {:<30} {:<15} {:<20}".format(aa_name, aa_num, aa_class, interaction, interacting_atoms_str))
+        print("{:<20} {:<10} {:<30} {:<30} {:<20}".format(aa_name, aa_num, aa_class, interaction, interacting_atoms_str))
