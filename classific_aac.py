@@ -76,16 +76,17 @@ for chain in structure[0]:
                         interacting_atoms = (atom, ligand_atom)  # Mantém os átomos que produziram a distância mínima
 
             if min_distance <= 4.0:
-                interaction = 'H-bond (1.5 to 2.9 Å)' if min_distance <= 2.9 else 'van der Waals (3.0 to 4.0 Å)'
-                hydrophobic_interaction = "Yes" if min_distance <= 4.0 and molecule_class[residue.get_resname()] == "hidrofóbico" else "No"
-                if residue not in near_residues or near_residues[residue][0] == 'van der Waals (3.0 to 4.0 Å)':
+                interaction = 'Ligação de hidrogenio: '+str(round(min_distance,2))+' Å' if min_distance <= 2.4 else 'Ligação de hidrogenio fraca: '+str(round(min_distance,2))+' Å' if min_distance <= 2.9 else 'van der Waals: '+str(round(min_distance,2))+' Å'
+                hydrophobic_interaction = "       Sim" if min_distance <= 4.0 and molecule_class[residue.get_resname()] == "hidrofóbico" else "       Não"
+                if residue not in near_residues or near_residues[residue][0] == 'van der Waals':
                     near_residues[residue] = (interaction, interacting_atoms, hydrophobic_interaction)
+
 
 # Escreve os resíduos próximos em um arquivo csv
 with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["Aminoácido", "Numero", "Classificação", "Interação intermolecular", "Interacção hidrofóbica", "Átomos interagindo"])
-    print("{:<20} {:<10} {:<30} {:<30} {:<20} {:<20}".format("Aminoácido", "Número", "Classificação", "Interação intermolecular", "Interacção hidrofóbica", "Átomos interagindo"))   
+    writer.writerow(["Aminoácido", "Numero", "Classificação", "Possivel interação intermolecular", "Interação hidrofóbica", "Átomos interagindo"])
+    print("{:<20} {:<10} {:<30} {:<40} {:<20} {:<20}".format("Aminoácido", "Número", "Classificação", "Possivel interação intermolecular", "Interação hidrofóbica", "Átomos interagindo"))   
     for residue, (interaction, atoms, hydrophobic_interaction) in near_residues.items():
         aa_name = residue.get_resname()
         aa_num = residue.get_id()[1]
@@ -94,4 +95,4 @@ with open(output_name, 'w', newline='') as file:
         atom2 = atoms[1].get_name() + "(" + ligand_residue.get_resname() + ")"
         interacting_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)  # Ajusta o tamanho dos campos dos átomos
         writer.writerow([aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str])
-        print("{:<20} {:<10} {:<30} {:<30} {:<22} {:<25}".format(aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str))
+        print("{:<20} {:<10} {:<30} {:<40} {:<22} {:<25}".format(aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str))
