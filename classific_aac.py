@@ -1,6 +1,5 @@
 # python script.py 3c9t.pdb A TPS 3c9t_TPS.csv
 
-
 from Bio.PDB import *
 import numpy as np
 import csv
