@@ -4,7 +4,7 @@ import csv
 
 # Abre o arquivo PDB e pega a estrutura
 parser = PDBParser(QUIET=True)
-structure = parser.get_structure("name", "./3c9t.pdb")
+structure = parser.get_structure("name", "./new_kleb_sub_align.pdb")
 
 # Classificação dos aminoácidos
 molecule_class = {
@@ -35,14 +35,24 @@ molecule_class = {
 }
 
 # Selecione o ligante
+ligand_selection = ('A', 329)  # uma tupla com ('cadeia', número do resíduo)
 ligand_residue = None
+
 for chain in structure[0]:
-    for residue in chain:
-        if residue.get_resname() == 'TPS':
-            ligand_residue = residue
+    if chain.get_id() == ligand_selection[0]:  # checa a cadeia
+        for residue in chain:
+            if isinstance(ligand_selection[1], str) and residue.get_resname() == ligand_selection[1]:
+                ligand_residue = residue
+                break
+            elif isinstance(ligand_selection[1], int) and residue.get_id()[1] == ligand_selection[1]:
+                ligand_residue = residue
+                break
+        if ligand_residue:
             break
-    if ligand_residue:
-        break
+
+if ligand_residue is None:
+    raise ValueError(f"Ligante {ligand_selection} não encontrado na estrutura")
+
 
 # Lista para armazenar os resíduos próximos
 near_residues = []
@@ -63,6 +73,7 @@ for chain in structure[0]:
 with open('output.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Nome do aminoácido", "Número", "Classificação"])
+    print("{:<20} {:<10} {:<30}".format("Aminoácido", "Número", "Classificação"))   
     for residue in near_residues:
         aa_name = residue.get_resname()
         aa_num = residue.get_id()[1]
