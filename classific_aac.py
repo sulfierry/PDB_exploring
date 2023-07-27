@@ -84,8 +84,8 @@ for chain in structure[0]:
 # Escreve os resíduos próximos em um arquivo csv
 with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["Nome do aminoácido", "Número", "Classificação", "Interação", "Interacção Hidrofóbica", "Átomos Interagindo"])
-    print("{:<20} {:<10} {:<30} {:<30} {:<20} {:<20}".format("Aminoácido", "Número", "Classificação", "Interação", "Interacção Hidrofóbica", "Átomos Interagindo"))   
+    writer.writerow(["Aminoácido", "Numero", "Classificação", "Interação intermolecular", "Interacção hidrofóbica", "Átomos interagindo"])
+    print("{:<20} {:<10} {:<30} {:<30} {:<20} {:<20}".format("Aminoácido", "Número", "Classificação", "Interação intermolecular", "Interacção hidrofóbica", "Átomos interagindo"))   
     for residue, (interaction, atoms, hydrophobic_interaction) in near_residues.items():
         aa_name = residue.get_resname()
         aa_num = residue.get_id()[1]
