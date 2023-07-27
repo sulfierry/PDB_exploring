@@ -1,10 +1,19 @@
+# python  script.py 3c9t.pdb A TPS 3c9t_TPS.csv
+
 from Bio.PDB import *
 import numpy as np
 import csv
+import sys
 
+input_pdb = sys.argv[1]
+chain_select = str(sys.argv[2])
+molecule_select = str(sys.argv[3])
+output_name = str(sys.argv[4])
 # Abre o arquivo PDB e pega a estrutura
 parser = PDBParser(QUIET=True)
-structure = parser.get_structure("name", "./3c9t.pdb")
+structure = parser.get_structure("name", input_pdb)
+
+
 
 # Classificação dos aminoácidos
 molecule_class = {
@@ -35,7 +44,7 @@ molecule_class = {
 }
 
 # Selecione o ligante
-ligand_selection = ('A', 'TPS')  # uma tupla com ('cadeia', número do resíduo)
+ligand_selection = (chain_select, molecule_select)  # uma tupla com ('cadeia', número do resíduo)
 ligand_residue = None
 
 for chain in structure[0]:
@@ -75,7 +84,7 @@ for chain in structure[0]:
                     near_residues[residue] = (interaction, interacting_atoms)
 
 # Escreve os resíduos próximos em um arquivo csv
-with open('output.csv', 'w', newline='') as file:
+with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Nome do aminoácido", "Número", "Classificação", "Interação", "Átomos Interagindo"])
     print("{:<20} {:<10} {:<30} {:<30} {:<20}".format("Aminoácido", "Número", "Classificação", "Interação", "Átomos Interagindo"))   
