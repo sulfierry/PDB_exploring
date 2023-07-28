@@ -42,7 +42,8 @@ molecule_class = {
     "MG" : "cofactor charge: +",
     "HOH": "polar charge: +-",
     "ACP": "ATP",
-    "TPS": "TMP"
+    "TPS": "TMP",
+    "LIG": "LIG"
 }
 
 # Ligand selection
