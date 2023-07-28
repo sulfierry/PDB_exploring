@@ -1,3 +1,5 @@
+# python script.py input.pdb output.pdb
+
 import sys
 from Bio.PDB import PDBParser, PDBIO
 
