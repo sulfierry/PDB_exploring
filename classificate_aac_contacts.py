@@ -1,5 +1,5 @@
 # Check contacts between structure and ligand
-# python script.py ref.pdb A LIG PDB_LIG.csv
+# python script.py ref.pdb LIG PDB_LIG.csv
 # GitHub: github.com/sulfierry/
 
 from Bio.PDB import *
@@ -83,8 +83,7 @@ near_residues_positions = set()
 # Check all atoms of all residues
 for chain in structure[0]:
     for residue in chain:
-        if residue != ligand_residue:  
-            # Ignore ligand
+        if residue != ligand_residue:  # Ignore ligand
             min_distance = np.inf
             interacting_atoms = None
             for atom in residue:
@@ -92,26 +91,34 @@ for chain in structure[0]:
                     distance = atom - ligand_atom
                     if distance < min_distance:
                         # Keep the minimum distance
-                        min_distance = distance  
+                        min_distance = distance
                         # Keeps the atoms that produced the minimum distance
-                        interacting_atoms = (atom, ligand_atom)  
+                        interacting_atoms = (atom, ligand_atom)
 
             if min_distance <= 4.0:
-                interaction = 'hydrogen bonding: ' + str(round(min_distance,2)) + ' Å' if min_distance <= 2.4 else 'weak hydrogen bonding: ' + str(round(min_distance,2)) + ' Å' if min_distance <= 2.9 else 'van der Waals: ' + str(round(min_distance,2)) + ' Å'
-                hydrophobic_interaction = "Yep (" + str(round(min_distance,2)) + ' Å)' if min_distance <= 4.0 and molecule_class[ligand_residue.get_resname()] == "hydrophobic" else "Not "
+                interaction = None
+                hydrophobic_interaction = "Not "
+                if atom.get_name() in ['H', 'F', 'O', 'N']:
+                    if min_distance <= 2.5:
+                        interaction = 'hydrogen bonding: ' + str(round(min_distance,2)) + ' Å'
+                    elif min_distance <= 2.9:
+                        interaction = 'weak hydrogen bonding: ' + str(round(min_distance,2)) + ' Å'
+                if interaction is None:  # If interaction was not set above, it is van der Waals
+                    interaction = 'van der Waals: ' + str(round(min_distance,2)) + ' Å'
+                if min_distance <= 4.0 and molecule_class[ligand_residue.get_resname()] == "hydrophobic":
+                    hydrophobic_interaction = "Yep (" + str(round(min_distance,2)) + ' Å)'
                 # Gets the unique position of the residue in the structure
-                position = residue.get_full_id()  
+                position = residue.get_full_id()
                 if position not in [r[0].get_full_id() for r in near_residues]:
                     near_residues.append((residue, interaction, interacting_atoms, hydrophobic_interaction))
-
 
 # Write the next residuals to a csv file
 with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Amino acid", "Number", "Classification", 
-                     "Intermolecular interaction", "hydrophobic interaction", "Interacting atoms"])
+                     "Probable Intermolecular interaction", "Hydrophobic interaction", "Interacting atoms"])
     columns = ["Amino acid", "Number", "Classification", 
-               "Intermolecular interaction", "hydrophobic interaction", "Interacting atoms"]
+               "Probable intermolecular interaction", "Hydrophobic interaction", "Interacting atoms"]
     print("{:^20} {:^10} {:^30} {:^40} {:^20} {:^20}".format(*columns))   
     for residue, interaction, atoms, hydrophobic_interaction in near_residues:
         aa_name = residue.get_resname()
