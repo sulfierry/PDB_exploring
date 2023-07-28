@@ -1,4 +1,5 @@
-# python script.py 3c9t.pdb A TPS 3c9t_TPS.csv
+# Check contacts between structure and ligand
+# python script.py ref.pdb A LIG PDB_LIG.csv
 # GitHub: github.com/sulfierry/
 
 from Bio.PDB import *
@@ -7,9 +8,9 @@ import csv
 import sys
 
 input_pdb = sys.argv[1]
-chain_select = str(sys.argv[2])
-molecule_select = str(sys.argv[3])
-output_name = str(sys.argv[4])
+molecule_select = str(sys.argv[2])
+output_name = str(sys.argv[3])
+
 
 
 parser = PDBParser(QUIET=True)
@@ -46,24 +47,31 @@ molecule_class = {
 
 # Ligand selection
 # a tuple with ('string', residue number)
-ligand_selection = (chain_select, molecule_select)  
 ligand_residue = None
+chain_select = None
 
-for chain in structure[0]:
-    
-    # busca pela cadeia correspondente ao nome fornecido
-    if chain_select.upper() in chain.get_id():  
+# Check if the chain_select was provided as an argument
+if len(sys.argv) > 4:
+    chain_select = str(sys.argv[4])
+
+# Look for the ligand in the specified chain or in all chains
+for model in structure:
+    for chain in model:
+        # If chain_select was provided, check only that chain
+        if chain_select and chain_select.upper() != chain.get_id():
+            continue
+
         for residue in chain:
-            
-             # busca pelo resíduo correspondente ao nome fornecido
-            if residue.get_resname() == molecule_select: 
+            if residue.get_resname() == molecule_select:
                 ligand_residue = residue
+                chain_select = chain.get_id()
                 break
         if ligand_residue:
             break
 
 if ligand_residue is None:
-    raise ValueError(f"Ligante {ligand_selection} não encontrado na estrutura")
+    raise ValueError(f"Ligante {molecule_select} não encontrado na estrutura")
+
 
 # List to store the next residues and the interaction
 near_residues = []
@@ -99,8 +107,10 @@ for chain in structure[0]:
 # Write the next residuals to a csv file
 with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["Amino acid", "Number", "Classification", "Intermolecular interaction", "hydrophobic interaction", "Interacting atoms"])
-    columns = ["Amino acid", "Number", "Classification", "Intermolecular interaction", "hydrophobic interaction", "Interacting atoms"]
+    writer.writerow(["Amino acid", "Number", "Classification", 
+                     "Intermolecular interaction", "hydrophobic interaction", "Interacting atoms"])
+    columns = ["Amino acid", "Number", "Classification", 
+               "Intermolecular interaction", "hydrophobic interaction", "Interacting atoms"]
     print("{:^20} {:^10} {:^30} {:^40} {:^20} {:^20}".format(*columns))   
     for residue, interaction, atoms, hydrophobic_interaction in near_residues:
         aa_name = residue.get_resname()
@@ -111,3 +121,4 @@ with open(output_name, 'w', newline='') as file:
         interacting_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)  # Adjust the size of the atoms fields
         writer.writerow([aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str])
         print("{:^20} {:^10} {:^30} {:^40} {:^22} {:^25}".format(aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str))
+
