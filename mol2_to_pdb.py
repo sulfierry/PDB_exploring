@@ -1,7 +1,4 @@
-# python script.py input.mol2 output.pdb
-
-import pybel
-import openbabel
+from openbabel import openbabel
 import sys
 
 def convert_mol2_to_pdb(input_mol2_file, output_pdb_file):
