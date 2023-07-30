@@ -41,9 +41,11 @@ molecule_class = {
     "GLU": "polar charge: -",
     "MG" : "cofactor charge: +",
     "HOH": "polar charge: +-",
-    "ACP": "ATP",
-    "TPS": "TMP",
-    "LIG": "LIG"
+    "ACP": "ATP substrate",
+    "TPS": "TMP substrate",
+    "LIG": "LIG ligand",
+    "TPP": "TPP product",
+    "ADP": "ADP product"
 }
 
 # Ligand selection
