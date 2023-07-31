@@ -1,6 +1,58 @@
 import sys
-from Bio.PDB import PDBParser, PDBIO, Select
 import numpy as np
+from Bio.PDB import *
+import csv
+
+input_pdb = sys.argv[1]
+molecule_select = str(sys.argv[2])
+output_name = str(sys.argv[3])
+
+
+
+parser = PDBParser(QUIET=True)
+structure = parser.get_structure("name", input_pdb)
+
+
+# Amino acids classification
+molecule_class = {
+    "ALA": "hydrophobic",
+    "ILE": "hydrophobic",
+    "LEU": "hydrophobic",
+    "VAL": "hydrophobic",
+    "PHE": "hydrophobic",
+    "PRO": "hydrophobic",
+    "TRP": "hydrophobic",
+    "MET": "hydrophobic",
+    "GLY": "hydrophobic",
+    "CYS": "polar charge: 0",
+    "SER": "polar charge: 0",
+    "THR": "polar charge: 0",
+    "TYR": "polar charge: 0",
+    "ASN": "polar charge: 0",
+    "GLN": "polar charge: 0",
+    "HIS": "polar charge: +",
+    "LYS": "polar charge: +",
+    "ARG": "polar charge: +",
+    "ASP": "polar charge: -",
+    "GLU": "polar charge: -",
+    "MG" : "cofactor charge: +",
+    "HOH": "polar charge: +-",
+    "ACP": "ATP substrate",
+    "TPS": "TMP substrate",
+    "LIG": "LIG ligand",
+    "TPP": "TPP product",
+    "ADP": "ADP product"
+}
+
+# Ligand selection
+# a tuple with ('string', residue number)
+ligand_residue = None
+chain_select = None
+
+# Check if the chain_select was provided as an argument
+if len(sys.argv) > 4:
+    chain_select = str(sys.argv[4])
+
 
 # Definindo os parâmetros de Lennard-Jones
 # Nota: Esses valores são apenas placeholders, por favor, substitua-os pelos valores reais
