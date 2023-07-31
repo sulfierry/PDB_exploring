@@ -147,3 +147,21 @@ for chain in structure[0]:
                 position = residue.get_full_id()
                 if position not in [r[0].get_full_id() for r in near_residues]:
                     near_residues.append((residue, interaction, interacting_atoms, hydrophobic_interaction))
+
+# Write the next residuals to a csv file
+with open(output_name, 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(["Amino acid", "Number", "Classification", 
+                     "Probable Intermolecular interaction", "Hydrophobic interaction", "Interacting atoms"])
+    columns = ["Amino acid", "Number", "Classification", 
+               "Probable intermolecular interaction", "Hydrophobic interaction", "Interacting atoms"]
+    print("{:^20} {:^10} {:^30} {:^40} {:^20} {:^20}".format(*columns))   
+    for residue, interaction, atoms, hydrophobic_interaction in near_residues:
+        aa_name = residue.get_resname()
+        aa_num = residue.get_id()[1]
+        aa_class = molecule_class.get(aa_name, "unknown")
+        atom1 = atoms[0].get_name() + "(" + residue.get_resname() + ")"
+        atom2 = atoms[1].get_name() + "(" + ligand_residue.get_resname() + ")"
+        interacting_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)  # Adjust the size of the atoms fields
+        writer.writerow([aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str])
+        print("{:^20} {:^10} {:^30} {:^40} {:^22} {:^25}".format(aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str))
