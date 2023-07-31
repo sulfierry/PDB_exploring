@@ -7,42 +7,11 @@ input_pdb = sys.argv[1]
 molecule_select = str(sys.argv[2])
 output_name = str(sys.argv[3])
 
-
-
 parser = PDBParser(QUIET=True)
 structure = parser.get_structure("name", input_pdb)
 
-
 # Amino acids classification
-molecule_class = {
-    "ALA": "hydrophobic",
-    "ILE": "hydrophobic",
-    "LEU": "hydrophobic",
-    "VAL": "hydrophobic",
-    "PHE": "hydrophobic",
-    "PRO": "hydrophobic",
-    "TRP": "hydrophobic",
-    "MET": "hydrophobic",
-    "GLY": "hydrophobic",
-    "CYS": "polar charge: 0",
-    "SER": "polar charge: 0",
-    "THR": "polar charge: 0",
-    "TYR": "polar charge: 0",
-    "ASN": "polar charge: 0",
-    "GLN": "polar charge: 0",
-    "HIS": "polar charge: +",
-    "LYS": "polar charge: +",
-    "ARG": "polar charge: +",
-    "ASP": "polar charge: -",
-    "GLU": "polar charge: -",
-    "MG" : "cofactor charge: +",
-    "HOH": "polar charge: +-",
-    "ACP": "ATP substrate",
-    "TPS": "TMP substrate",
-    "LIG": "LIG ligand",
-    "TPP": "TPP product",
-    "ADP": "ADP product"
-}
+molecule_class = { ... }  # Inserir a classificação dos aminoácidos
 
 # Ligand selection
 # a tuple with ('string', residue number)
@@ -53,8 +22,27 @@ chain_select = None
 if len(sys.argv) > 4:
     chain_select = str(sys.argv[4])
 
-
 near_residues = []
+
+# Lennard-Jones parameters
+lj_params = {
+    'C': (3.55, 0.105),   # Example values, replace with actual values
+    'H': (2.42, 0.015),   # Example values, replace with actual values
+    'O': (3.12, 0.16),    # Example values, replace with actual values
+    'N': (3.25, 0.17),    # Example values, replace with actual values
+    # Add more atoms as needed
+}
+
+# Atomic charges
+charges = {
+    'C': -0.18,  # Example values, replace with actual values
+    'H': 0.20,   # Example values, replace with actual values
+    'O': -0.65,  # Example values, replace with actual values
+    'N': -0.57,  # Example values, replace with actual values
+    # Add more atoms as needed
+}
+
+ke = 332.06371  # Coulomb constant in kcal*mol^-1*Å*e^-2
 
 # Checking all atoms from all residues...
 for chain in structure[0]:
@@ -70,17 +58,20 @@ for chain in structure[0]:
                         min_distance = distance
                         # Keep the atoms that produced the minimum distance
                         interacting_atoms = (atom, ligand_atom)
-            
+
             if min_distance <= 4.0:
                 interaction = None
                 hydrophobic_interaction = "Not "
-
-                # Use the MMFF force field to calculate the interaction energy
-                ff = AllChem.MMFFGetMoleculeForceField(m)
-                interaction_energy = ff.CalcEnergy()
-                
-                if interaction_energy < 0:  # Negative energy means attraction
-                    interaction = 'Interaction: ' + str(round(min_distance,2)) + ' Å, energy: ' + str(round(interaction_energy,2)) + ' kcal/mol'
+                if atom.get_name() in lj_params and ligand_atom.get_name() in lj_params:
+                    # Calculate van der Waals interaction using Lennard-Jones potential
+                    sigma1, epsilon1 = lj_params[atom.get_name()]
+                    sigma2, epsilon2 = lj_params[ligand_atom.get_name()]
+                    sigma = (sigma1 + sigma2) / 2
+                    epsilon = np.sqrt(epsilon1 * epsilon2)
+                    vdw_energy = 4 * epsilon * ((sigma / min_distance)**12 - (sigma / min_distance)**6)
+                    # Calculate electrostatic interaction using Coulomb's law
+                    coulomb_energy = ke * charges[atom.get_name()] * charges[ligand_atom.get_name()] / min_distance
+                    interaction = 'VDW: ' + str(round(vdw_energy,2)) + ' kcal/mol, Coulomb: ' + str(round(coulomb_energy,2)) + ' kcal/mol'
                 
                 if min_distance <= 4.0 and molecule_class[ligand_residue.get_resname()] == "hydrophobic":
                     hydrophobic_interaction = "Yep (" + str(round(min_distance,2)) + ' Å)'
@@ -88,73 +79,13 @@ for chain in structure[0]:
                 # Get the residue's unique position in the structure
                 position = residue.get_full_id()
                 if position not in [r[0].get_full_id() for r in near_residues]:
-                    near_residues.append((residue, interaction, interacting_atoms, hydrophobic_interaction))# Definindo os parâmetros de Lennard-Jones
-    # Adicione mais átomos conforme necessário
-}
-
-# Definindo as cargas parciais dos átomos
-# Nota: Esses valores são apenas placeholders, por favor, substitua-os pelos valores reais
-charges = {
-    'C': -0.18,
-    'H': 0.20,
-    'O': -0.65,
-    'N': -0.57,
-    # Adicione mais átomos conforme necessário
-}
-
-ke = 332.06371  # Constante de Coulomb em kcal*mol^-1*Å*e^-2
-
-# Demais partes do código...
-
-# Checando todos os átomos de todos os resíduos
-for chain in structure[0]:
-    for residue in chain:
-        if residue != ligand_residue:  # Ignora o ligante
-            min_distance = np.inf
-            interacting_atoms = None
-            for atom in residue:
-                for ligand_atom in ligand_residue:
-                    distance = atom - ligand_atom
-                    if distance < min_distance:
-                        # Mantém a distância mínima
-                        min_distance = distance
-                        # Mantém os átomos que produziram a distância mínima
-                        interacting_atoms = (atom, ligand_atom)
-
-            if min_distance <= 4.0:
-                interaction = None
-                hydrophobic_interaction = "Not "
-                if atom.get_name() in ['H', 'F', 'O', 'N']:
-                    if min_distance <= 2.5:
-                        interaction = 'hydrogen bonding: ' + str(round(min_distance,2)) + ' Å'
-                    elif min_distance <= 2.9:
-                        interaction = 'weak hydrogen bonding: ' + str(round(min_distance,2)) + ' Å'
-                if interaction is None:  # Se a interação não foi definida acima, é de Van der Waals
-                    # Calcula o potencial de Lennard-Jones
-                    sigma1, epsilon1 = lj_params[atom.get_name()]
-                    sigma2, epsilon2 = lj_params[ligand_atom.get_name()]
-                    sigma = (sigma1 + sigma2) / 2
-                    epsilon = np.sqrt(epsilon1 * epsilon2)
-                    # Note: a distância precisa ser convertida para o mesmo sistema de unidades do sigma
-                    interaction_energy = 4 * epsilon * ((sigma / min_distance)**12 - (sigma / min_distance)**6)
-                    # Calcula a interação eletrostática de Coulomb
-                    coulomb_energy = ke * charges[atom.get_name()] * charges[ligand_atom.get_name()] / min_distance
-                    if interaction_energy < 0:  # Energia negativa significa atração
-                        interaction = 'Van der Waals: ' + str(round(min_distance,2)) + ' Å, energy: ' + str(round(interaction_energy,2)) + ' kcal/mol, Coulomb: ' + str(round(coulomb_energy,2)) + ' kcal/mol'
-                if min_distance <= 4.0 and molecule_class[ligand_residue.get_resname()] == "hydrophobic":
-                    hydrophobic_interaction = "Yep (" + str(round(min_distance,2)) + ' Å)'
-                # Obtém a posição única do resíduo na estrutura
-                position = residue.get_full_id()
-                if position not in [r[0].get_full_id() for r in near_residues]:
                     near_residues.append((residue, interaction, interacting_atoms, hydrophobic_interaction))
 
 # Write the next residuals to a csv file
 with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["Amino acid", "Number", "Classification", 
-                     "Probable Intermolecular interaction", "Hydrophobic interaction", "Interacting atoms"])
-    columns = ["Amino acid", "Number", "Classification", 
-               "Probable intermolecular interaction", "Hydrophobic interaction", "Interacting atoms"]
+    writer.writerow(["Amino acid", "Number", "Classification", "Probable Intermolecular interaction", "Hydrophobic interaction", "Interacting atoms"])
+    columns = ["Amino acid", "Number", "Classification", "Probable intermolecular interaction", "Hydrophobic interaction", "Interacting atoms"]
     print("{:^20} {:^10} {:^30} {:^40} {:^20} {:^20}".format(*columns))   
     for residue, interaction, atoms, hydrophobic_interaction in near_residues:
         aa_name = residue.get_resname()
@@ -163,5 +94,4 @@ with open(output_name, 'w', newline='') as file:
         atom1 = atoms[0].get_name() + "(" + residue.get_resname() + ")"
         atom2 = atoms[1].get_name() + "(" + ligand_residue.get_resname() + ")"
         interacting_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)  # Adjust the size of the atoms fields
-        writer.writerow([aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str])
-        print("{:^20} {:^10} {:^30} {:^40} {:^22} {:^25}".format(aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str))
+        writer.writerow([aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms
