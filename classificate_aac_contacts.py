@@ -40,12 +40,12 @@ molecule_class = {
     "ASP": "polar charge: -",
     "GLU": "polar charge: -",
     "MG" : "cofactor charge: +",
+    "K"  : "cofactor charge: +",
     "HOH": "polar charge: +-",
-    "ACP": "ATP substrate",
-    "TPS": "TMP substrate",
-    "LIG": "LIG ligand",
-    "TPP": "TPP product",
-    "ADP": "ADP product"
+    "ACP": "ATP",
+    "TPS": "TMP",
+    "LIG": "LIG",
+    "ANP": "ATP"
 }
 
 # Ligand selection
@@ -73,7 +73,7 @@ for model in structure:
             break
 
 if ligand_residue is None:
-    raise ValueError(f"Ligante {molecule_select} não encontrado na estrutura")
+    raise ValueError(f"Ligand {molecule_select} not found in structure")
 
 
 # List to store the next residues and the interaction
@@ -92,43 +92,26 @@ for chain in structure[0]:
                 for ligand_atom in ligand_residue:
                     distance = atom - ligand_atom
                     if distance < min_distance:
-                        # Keep the minimum distance
                         min_distance = distance
-                        # Keeps the atoms that produced the minimum distance
                         interacting_atoms = (atom, ligand_atom)
 
             if min_distance <= 4.0:
-                interaction = None
-                hydrophobic_interaction = "Not "
-                if atom.get_name() in ['H', 'F', 'O', 'N']:
-                    if min_distance <= 2.5:
-                        interaction = 'hydrogen bonding: ' + str(round(min_distance,2)) + ' Å'
-                    elif min_distance <= 2.9:
-                        interaction = 'weak hydrogen bonding: ' + str(round(min_distance,2)) + ' Å'
-                if interaction is None:  # If interaction was not set above, it is van der Waals
-                    interaction = 'van der Waals: ' + str(round(min_distance,2)) + ' Å'
-                if min_distance <= 4.0 and molecule_class[ligand_residue.get_resname()] == "hydrophobic":
-                    hydrophobic_interaction = "Yep (" + str(round(min_distance,2)) + ' Å)'
-                # Gets the unique position of the residue in the structure
                 position = residue.get_full_id()
                 if position not in [r[0].get_full_id() for r in near_residues]:
-                    near_residues.append((residue, interaction, interacting_atoms, hydrophobic_interaction))
+                    near_residues.append((residue, min_distance, interacting_atoms))
 
 # Write the next residuals to a csv file
 with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["Amino acid", "Number", "Classification", 
-                     "Probable Intermolecular interaction", "Hydrophobic interaction", "Interacting atoms"])
-    columns = ["Amino acid", "Number", "Classification", 
-               "Probable intermolecular interaction", "Hydrophobic interaction", "Interacting atoms"]
-    print("{:^20} {:^10} {:^30} {:^40} {:^20} {:^20}".format(*columns))   
-    for residue, interaction, atoms, hydrophobic_interaction in near_residues:
+    writer.writerow(["Amino acid", "Number", "Classification", "Nearby atoms", "Distance Å"])
+    columns = ["Amino acid", "Number", "Classification", "Nearby atoms", "Distance Å"]
+    print("{:^20} {:^10} {:^30} {:^20} {:^10}".format(*columns))   
+    for residue, distance, atoms in near_residues:
         aa_name = residue.get_resname()
         aa_num = residue.get_id()[1]
         aa_class = molecule_class.get(aa_name, "unknown")
         atom1 = atoms[0].get_name() + "(" + residue.get_resname() + ")"
         atom2 = atoms[1].get_name() + "(" + ligand_residue.get_resname() + ")"
-        interacting_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)  # Adjust the size of the atoms fields
-        writer.writerow([aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str])
-        print("{:^20} {:^10} {:^30} {:^40} {:^22} {:^25}".format(aa_name, aa_num, aa_class, interaction, hydrophobic_interaction, interacting_atoms_str))
-
+        nearby_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)
+        writer.writerow([aa_name, aa_num, aa_class, nearby_atoms_str, round(distance, 2)])
+        print("{:^20} {:^10} {:^30} {:^20} {:^10.2f}".format(aa_name, aa_num, aa_class, nearby_atoms_str, distance))
