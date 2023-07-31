@@ -1,59 +1,6 @@
 import sys
-rom Bio.PDB import *
+from Bio.PDB import PDBParser, PDBIO, Select
 import numpy as np
-import csv
-import sys
-
-input_pdb = sys.argv[1]
-molecule_select = str(sys.argv[2])
-output_name = str(sys.argv[3])
-
-
-
-parser = PDBParser(QUIET=True)
-structure = parser.get_structure("name", input_pdb)
-
-
-# Amino acids classification
-molecule_class = {
-    "ALA": "hydrophobic",
-    "ILE": "hydrophobic",
-    "LEU": "hydrophobic",
-    "VAL": "hydrophobic",
-    "PHE": "hydrophobic",
-    "PRO": "hydrophobic",
-    "TRP": "hydrophobic",
-    "MET": "hydrophobic",
-    "GLY": "hydrophobic",
-    "CYS": "polar charge: 0",
-    "SER": "polar charge: 0",
-    "THR": "polar charge: 0",
-    "TYR": "polar charge: 0",
-    "ASN": "polar charge: 0",
-    "GLN": "polar charge: 0",
-    "HIS": "polar charge: +",
-    "LYS": "polar charge: +",
-    "ARG": "polar charge: +",
-    "ASP": "polar charge: -",
-    "GLU": "polar charge: -",
-    "MG" : "cofactor charge: +",
-    "HOH": "polar charge: +-",
-    "ACP": "ATP substrate",
-    "TPS": "TMP substrate",
-    "LIG": "LIG ligand",
-    "TPP": "TPP product",
-    "ADP": "ADP product"
-}
-
-# Ligand selection
-# a tuple with ('string', residue number)
-ligand_residue = None
-chain_select = None
-
-# Check if the chain_select was provided as an argument
-if len(sys.argv) > 4:
-    chain_select = str(sys.argv[4])
-
 
 # Definindo os parâmetros de Lennard-Jones
 # Nota: Esses valores são apenas placeholders, por favor, substitua-os pelos valores reais
@@ -64,6 +11,18 @@ lj_params = {
     'N': (3.25, 0.170),
     # Adicione mais átomos conforme necessário
 }
+
+# Definindo as cargas parciais dos átomos
+# Nota: Esses valores são apenas placeholders, por favor, substitua-os pelos valores reais
+charges = {
+    'C': -0.18,
+    'H': 0.20,
+    'O': -0.65,
+    'N': -0.57,
+    # Adicione mais átomos conforme necessário
+}
+
+ke = 332.06371  # Constante de Coulomb em kcal*mol^-1*Å*e^-2
 
 # Demais partes do código...
 
@@ -98,8 +57,10 @@ for chain in structure[0]:
                     epsilon = np.sqrt(epsilon1 * epsilon2)
                     # Note: a distância precisa ser convertida para o mesmo sistema de unidades do sigma
                     interaction_energy = 4 * epsilon * ((sigma / min_distance)**12 - (sigma / min_distance)**6)
+                    # Calcula a interação eletrostática de Coulomb
+                    coulomb_energy = ke * charges[atom.get_name()] * charges[ligand_atom.get_name()] / min_distance
                     if interaction_energy < 0:  # Energia negativa significa atração
-                        interaction = 'Van der Waals: ' + str(round(min_distance,2)) + ' Å, energy: ' + str(round(interaction_energy,2)) + ' kcal/mol'
+                        interaction = 'Van der Waals: ' + str(round(min_distance,2)) + ' Å, energy: ' + str(round(interaction_energy,2)) + ' kcal/mol, Coulomb: ' + str(round(coulomb_energy,2)) + ' kcal/mol'
                 if min_distance <= 4.0 and molecule_class[ligand_residue.get_resname()] == "hydrophobic":
                     hydrophobic_interaction = "Yep (" + str(round(min_distance,2)) + ' Å)'
                 # Obtém a posição única do resíduo na estrutura
