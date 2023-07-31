@@ -54,13 +54,41 @@ if len(sys.argv) > 4:
     chain_select = str(sys.argv[4])
 
 
-# Definindo os parâmetros de Lennard-Jones
-# Nota: Esses valores são apenas placeholders, por favor, substitua-os pelos valores reais
-lj_params = {
-    'C': (3.55, 0.276),
-    'H': (2.42, 0.062),
-    'O': (3.12, 0.210),
-    'N': (3.25, 0.170),
+near_residues = []
+
+# Checking all atoms from all residues...
+for chain in structure[0]:
+    for residue in chain:
+        if residue != ligand_residue:  # Ignore the ligand
+            min_distance = np.inf
+            interacting_atoms = None
+            for atom in residue:
+                for ligand_atom in ligand_residue:
+                    distance = np.linalg.norm(np.array(atom.coord) - np.array(ligand_atom.coord))
+                    if distance < min_distance:
+                        # Keep minimum distance
+                        min_distance = distance
+                        # Keep the atoms that produced the minimum distance
+                        interacting_atoms = (atom, ligand_atom)
+            
+            if min_distance <= 4.0:
+                interaction = None
+                hydrophobic_interaction = "Not "
+
+                # Use the MMFF force field to calculate the interaction energy
+                ff = AllChem.MMFFGetMoleculeForceField(m)
+                interaction_energy = ff.CalcEnergy()
+                
+                if interaction_energy < 0:  # Negative energy means attraction
+                    interaction = 'Interaction: ' + str(round(min_distance,2)) + ' Å, energy: ' + str(round(interaction_energy,2)) + ' kcal/mol'
+                
+                if min_distance <= 4.0 and molecule_class[ligand_residue.get_resname()] == "hydrophobic":
+                    hydrophobic_interaction = "Yep (" + str(round(min_distance,2)) + ' Å)'
+                
+                # Get the residue's unique position in the structure
+                position = residue.get_full_id()
+                if position not in [r[0].get_full_id() for r in near_residues]:
+                    near_residues.append((residue, interaction, interacting_atoms, hydrophobic_interaction))# Definindo os parâmetros de Lennard-Jones
     # Adicione mais átomos conforme necessário
 }
 
