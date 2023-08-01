@@ -1,4 +1,4 @@
-# Check contacts between structure and ligand
+# Check possible contacts between structure and ligand
 # python script.py ref.pdb LIG PDB_LIG.csv
 # GitHub: github.com/sulfierry/
 
@@ -103,15 +103,16 @@ for chain in structure[0]:
 # Write the next residuals to a csv file
 with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["Amino acid", "Number", "Classification", "Nearby atoms", "Distance Å"])
-    columns = ["Amino acid", "Number", "Classification", "Nearby atoms", "Distance Å"]
-    print("{:^20} {:^10} {:^30} {:^20} {:^10}".format(*columns))   
+    writer.writerow(["Amino acid", "Number", "Chain", "Classification", "Nearby atoms", "Distance Å"])  # Add "Chain"
+    columns = ["Amino acid", "Number", "Chain", "Classification", "Nearby atoms", "Distance Å"]  # Add "Chain"
+    print("{:^20} {:^10} {:^5} {:^30} {:^20} {:^10}".format(*columns))   # Add another column for "Chain"
     for residue, distance, atoms in near_residues:
         aa_name = residue.get_resname()
         aa_num = residue.get_id()[1]
+        chain_id = residue.get_parent().get_id()  # Get chain ID
         aa_class = molecule_class.get(aa_name, "unknown")
         atom1 = atoms[0].get_name() + "(" + residue.get_resname() + ")"
         atom2 = atoms[1].get_name() + "(" + ligand_residue.get_resname() + ")"
         nearby_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)
-        writer.writerow([aa_name, aa_num, aa_class, nearby_atoms_str, round(distance, 2)])
-        print("{:^20} {:^10} {:^30} {:^20} {:^10.2f}".format(aa_name, aa_num, aa_class, nearby_atoms_str, distance))
+        writer.writerow([aa_name, aa_num, chain_id, aa_class, nearby_atoms_str, round(distance, 2)])  # Add chain_id
+        print("{:^20} {:^10} {:^5} {:^30} {:^20} {:^10.2f}".format(aa_name, aa_num, chain_id, aa_class, nearby_atoms_str, distance))  # Add chain_id
