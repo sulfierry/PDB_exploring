@@ -46,7 +46,7 @@ molecule_class = {
 
 # Check if molecule_to_check is in molecule_class. If not, add it.
 if molecule_select not in molecule_class:
-    molecule_class[molecule_select] = str(sys.argv[2])
+    molecule_class[molecule_select] = molecule_select
 
 
 # Ligand selection
