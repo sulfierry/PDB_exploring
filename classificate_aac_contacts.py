@@ -49,11 +49,11 @@ molecule_class = {
     "U": "uracil base",    # RNA
 
     # Cofactors
-    "MG" : "cofactor charge: +",
+    "Mg" : "cofactor charge: +",
     "K"  : "cofactor charge: +",
     "Ca" : "cofactor charge +",
     "Na" : "cofactor charge",
-    "HOH": "polar charge"
+    "HoH": "partial polar charge"
 }
 
 
