@@ -19,6 +19,7 @@ structure = parser.get_structure("name", input_pdb)
 
 # Amino acids classification
 molecule_class = {
+    # Amino Acids
     "ALA": "hydrophobic",
     "ILE": "hydrophobic",
     "LEU": "hydrophobic",
@@ -39,10 +40,22 @@ molecule_class = {
     "ARG": "polar charge: +",
     "ASP": "polar charge: -",
     "GLU": "polar charge: -",
+    
+    # Nucleic Acid Bases
+    "A": "adenine base",
+    "C": "cytosine base",
+    "G": "guanine base",
+    "T": "thymine base",   # DNA
+    "U": "uracil base",    # RNA
+
+    # Cofactors
     "MG" : "cofactor charge: +",
     "K"  : "cofactor charge: +",
-    "HOH": "polar charge: +-",
+    "Ca" : "cofactor charge +",
+    "Na" : "cofactor charge",
+    "HOH": "polar charge"
 }
+
 
 # Check if molecule_to_check is in molecule_class. If not, add it.
 if molecule_select not in molecule_class:
