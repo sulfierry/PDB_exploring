@@ -1,5 +1,5 @@
 # Check possible contacts between structure and ligand
-# python script.py ref.pdb LIG PDB_LIG.csv
+# python script.py ref.pdb LIG PDB_LIG.csv CHAIN(optional)
 # GitHub: github.com/sulfierry/
 
 from Bio.PDB import *
