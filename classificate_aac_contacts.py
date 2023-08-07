@@ -100,7 +100,10 @@ for chain in structure[0]:
                 if position not in [r[0].get_full_id() for r in near_residues]:
                     near_residues.append((residue, min_distance, interacting_atoms))
 
-# Write the next residuals to a csv file
+# Sort the near_residues list based on the distance (second element of the tuple)
+near_residues.sort(key=lambda x: x[1])
+
+# Write the residuals to a csv file
 with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Amino acid", "Number", "Chain", "Classification", "Nearby atoms", "Distance Å"])  # Add "Chain"
