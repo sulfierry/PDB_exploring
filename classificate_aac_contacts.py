@@ -117,11 +117,6 @@ def is_interaction(atom1, atom2, residue_name, distance):
     
     return "False"
 
-# ...
-
-
-
-
 # Check all atoms of all residues
 for chain in structure[0]:
     for residue in chain:
