@@ -96,7 +96,7 @@ near_residues_positions = set()
 
 # Define a function to check for potential hydrogen bonds
 def is_interaction(atom1, atom2, residue_name, distance):
-    hydrogen_bond_atoms = ["O", "N", "F"]
+    hydrogen_bond_acceptors = ["O", "N", "F"]
     ionic_interactions = {
         "NA": ["F", "Cl", "Br", "I", "O", "S"],
         "MG": ["F", "Cl", "Br", "I", "O", "S"],
@@ -104,14 +104,21 @@ def is_interaction(atom1, atom2, residue_name, distance):
         "CA": ["F", "Cl", "Br", "I", "O", "S"],
         #"HOH": ["F", "Cl", "Br", "I", "O", "S"]
     }
-    
+
     if distance < 3.0:
-        if atom1.get_name().startswith(tuple(hydrogen_bond_atoms)) or atom2.get_name().startswith(tuple(hydrogen_bond_atoms)):
-            if residue_name in ionic_interactions:
-                if atom1.get_name().startswith(tuple(ionic_interactions[residue_name])) or atom2.get_name().startswith(tuple(ionic_interactions[residue_name])):
-                    return "Ionic"
+        # Check for ionic interaction
+        if residue_name in ionic_interactions:
+            if atom1.get_name().startswith(tuple(ionic_interactions[residue_name])) or atom2.get_name().startswith(tuple(ionic_interactions[residue_name])):
+                return "Ionic"
+
+        # Check for hydrogen bond
+        if atom1.get_name().startswith(tuple(hydrogen_bond_acceptors)) and atom2.get_name().startswith(tuple(hydrogen_bond_acceptors)):
             return "True"
+    
     return "False"
+
+# ...
+
 
 
 
@@ -141,10 +148,10 @@ with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
     # Change the order of columns here
     writer.writerow(["Molecule", "Classification", "Number", 
-                     "Chain", "Nearby atoms", "Distance Å", "H bond"]) 
+                     "Chain", "Nearby atoms", "Distance(Å)", "H bond"]) 
     
     columns = ["Molecule", "Classification", "Number", 
-               "Chain", "Nearby atoms", "Distance Å", "H bond"] 
+               "Chain", "Nearby atoms", "Distance(Å)", "H bond"] 
     
     print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10} {:^6}".format(*columns))
     for residue, distance, atoms in near_residues:
@@ -163,10 +170,9 @@ with open(output_name, 'w', newline='') as file:
         
         # Check for hydrogen bond
         h_bond = is_interaction(atoms[0], atoms[1], residue.get_resname(), distance)
-        
+
         # If the result is "probable", set h_bond to "probable". Otherwise, set it to "True" or "False".
         #h_bond = "probable" if h_bond_check == "probable" else ("True" if h_bond_check else "False")
-
 
         # Change the order of written rows here to match column header order
         writer.writerow([aa_name, aa_class, aa_num, 
