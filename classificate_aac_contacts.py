@@ -172,7 +172,7 @@ def is_interaction(atom1, atom2, residue_name, distance):
         # Check for ionic interaction
         if residue_name in ionic_interactions:
             if atom1.get_name().startswith(tuple(ionic_interactions[residue_name])) or atom2.get_name().startswith(tuple(ionic_interactions[residue_name])):
-                return "Ionic interaction"
+                return "Ionic"
 
         # Check for hydrogen bond
         if atom1.get_name().startswith(tuple(hydrogen_bond_acceptors)) and atom2.get_name().startswith(tuple(hydrogen_bond_acceptors)):
@@ -183,7 +183,7 @@ def is_interaction(atom1, atom2, residue_name, distance):
     if residue_name in hydrophobic_residues:
         if atom1.get_name() in hydrophobic_atoms or atom2.get_name() in hydrophobic_atoms:
             if distance <= hydrophobic_distance_threshold:
-                return "hydrophobic interaction"
+                return "Hydrophobic"
 
     # Check for van der Waals interaction
     atom1_type = atom1.get_name()[0]  # Simplified to get first letter, might need refinement
@@ -203,7 +203,7 @@ def is_interaction(atom1, atom2, residue_name, distance):
 
     # Check for potential van der Waals interaction based on Lennard-Jones potential
     if v_lj < -0.1:  # using -0.1 kcal/mol as a threshold
-        return "van der Waals interaction"
+        return "van der Waals"
     
     return "Non-specific"
 
