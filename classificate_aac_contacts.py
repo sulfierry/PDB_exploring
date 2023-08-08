@@ -230,44 +230,6 @@ for chain in structure[0]:
 near_residues.sort(key=lambda x: x[1])
 
 
-
-# New CSV and print headers
-new_csv_header = ["Molecule", "Classification", "Number", "Chain", "Nearby atoms", "Distance(Å)", "Interaction", "vdW Interaction"]
-new_print_header = "{:^20} {:^30} {:^10} {:^5} {:^20} {:^10} {:^20} {:^20}".format(*new_csv_header)
-
-# Write the residuals to a csv file
-with open(output_name, 'w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(new_csv_header)  # New CSV header
-    
-    print(new_print_header)  # New print header
-
-    for residue, distance, atoms in near_residues:
-        residue_name = residue.get_resname()
-        residue_number = residue.get_id()[1]
-        chain = residue.get_full_id()[2]
-        classification = molecule_class.get(residue_name, "Other")
-        interaction = is_interaction(atoms[0], atoms[1], residue_name, distance)
-        vdw_interaction = "Yes" if interaction == "van der Waals interaction" else "No"  # New vdW column
-        writer.writerow([residue_name, classification, residue_number, chain, atoms[0].get_name() + "-" + atoms[1].get_name(), distance, interaction, vdw_interaction])  # Updated CSV row
-        print("{:<20} {:<30} {:<10} {:<5} {:<20} {:<10.2f} {:<20} {:<20}".format(residue_name, classification, residue_number, chain, atoms[0].get_name() + "-" + atoms[1].get_name(), distance, interaction, vdw_interaction))  # Updated print row
-
-with open(output_name, 'w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(new_csv_header)  # New CSV header
-    
-    print({repr(new_print_header)})  # New print header
-
-    for residue, distance, atoms in near_residues:
-        residue_name = residue.get_resname()
-        residue_number = residue.get_id()[1]
-        chain = residue.get_full_id()[2]
-        classification = molecule_class.get(residue_name, "Other")
-        interaction = is_interaction(atoms[0], atoms[1], residue_name, distance)
-        vdw_interaction = "Yes" if interaction == "van der Waals interaction" else "No"  # New vdW column
-        writer.writerow([residue_name, classification, residue_number, chain, atoms[0].get_name() + "-" + atoms[1].get_name(), distance, interaction, vdw_interaction])  # Updated CSV row
-        print("{:<20} {:<30} {:<10} {:<5} {:<20} {:<10.2f} {:<20} {:<20}".format(residue_name, classification, residue_number, chain, atoms[0].get_name() + "-" + atoms[1].get_name(), distance, interaction, vdw_interaction))  # Updated print row
-
 with open(output_name, 'w', newline='') as file:
 
     writer = csv.writer(file)
