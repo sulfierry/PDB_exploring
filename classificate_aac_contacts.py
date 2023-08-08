@@ -6,6 +6,8 @@ from Bio.PDB import *
 import numpy as np
 import csv
 import sys
+
+
 # Hydrophobic residues and atoms for identifying hydrophobic interactions
 hydrophobic_residues = ["ALA", "VAL", "ILE", "LEU", "MET", "PHE", "TRP", "PRO", "TYR"]
 hydrophobic_atoms = [
@@ -30,7 +32,7 @@ hydrophobic_atoms = [
 
     "C",   # Átomos de carbono em grupos alquila e anéis alifáticos
     "CA",  # Nome comum para carbonos em anéis aromáticos
-    "CB", "CG", "CD", "CE", "CH",  # Outros nomes para carbonos em diferentes ambientes
+    "CH",  # Outros nomes para carbonos em diferentes ambientes
     "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9",  # Carbonos numerados, comuns em moléculas pequenas
     "F",   # Flúor
     "Cl",  # Cloro
@@ -38,6 +40,8 @@ hydrophobic_atoms = [
     "I"    # Iodo
 ]
 
+# Distance from the select molecule
+treshold_distance = 4.0 
 # Distance threshold for hydrophobic interactions
 hydrophobic_distance_threshold = 4.0
 
@@ -201,7 +205,8 @@ def is_interaction(atom1, atom2, residue_name, distance):
     if v_lj < -0.1:  # using -0.1 kcal/mol as a threshold
         return "van der Waals interaction"
     
-    return "False"
+    return "Non-specific"
+
 
 # Check all atoms of all residues
 for chain in structure[0]:
@@ -216,7 +221,7 @@ for chain in structure[0]:
                         min_distance = distance
                         interacting_atoms = (atom, ligand_atom)
 
-            if min_distance <= 5.0:
+            if min_distance <= treshold_distance:
                 position = residue.get_full_id()
                 if position not in [r[0].get_full_id() for r in near_residues]:
                     near_residues.append((residue, min_distance, interacting_atoms))
@@ -227,7 +232,7 @@ near_residues.sort(key=lambda x: x[1])
 
 
 # New CSV and print headers
-new_csv_header = ["Molecule", "Classification", "Number", "Chain", "Nearby atoms", "Distance(Å)", "H bond", "vdW Interaction"]
+new_csv_header = ["Molecule", "Classification", "Number", "Chain", "Nearby atoms", "Distance(Å)", "Interaction", "vdW Interaction"]
 new_print_header = "{:^20} {:^30} {:^10} {:^5} {:^20} {:^10} {:^20} {:^20}".format(*new_csv_header)
 
 # Write the residuals to a csv file
@@ -268,10 +273,10 @@ with open(output_name, 'w', newline='') as file:
     writer = csv.writer(file)
     # Change the order of columns here
     writer.writerow(["Molecule", "Classification", "Number", 
-                     "Chain", "Nearby atoms", "Distance(Å)", "H bond"]) 
+                     "Chain", "Nearby atoms", "Distance(Å)", "Interaction"]) 
     
     columns = ["Molecule", "Classification", "Number", 
-               "Chain", "Nearby atoms", "Distance(Å)", "H bond"] 
+               "Chain", "Nearby atoms", "Distance(Å)", "Interaction"] 
     
     print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10} {:^20}".format(*columns))
 
@@ -290,11 +295,11 @@ with open(output_name, 'w', newline='') as file:
         nearby_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)
         
         # Check for hydrogen bond
-        h_bond = is_interaction(atoms[0], atoms[1], residue.get_resname(), distance)
+        probable_interaction = is_interaction(atoms[0], atoms[1], residue.get_resname(), distance)
 
         # Change the order of written rows here to match column header order
         writer.writerow([aa_name, aa_class, aa_num, 
-                         chain_id, nearby_atoms_str, round(distance, 2), h_bond]) 
+                         chain_id, nearby_atoms_str, round(distance, 2), probable_interaction]) 
         
         print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10.2f} {:^20}".format(
-            aa_name, aa_class, aa_num, chain_id, nearby_atoms_str, distance, h_bond))
+            aa_name, aa_class, aa_num, chain_id, nearby_atoms_str, distance, probable_interaction))
