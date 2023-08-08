@@ -6,6 +6,41 @@ from Bio.PDB import *
 import numpy as np
 import csv
 import sys
+# Hydrophobic residues and atoms for identifying hydrophobic interactions
+hydrophobic_residues = ["ALA", "VAL", "ILE", "LEU", "MET", "PHE", "TRP", "PRO", "TYR"]
+hydrophobic_atoms = [
+    # Alanina
+    "CB",
+    # Valina
+    "CB", "CG1", "CG2",
+    # Isoleucina
+    "CB", "CG1", "CG2", "CD1",
+    # Leucina
+    "CB", "CG", "CD1", "CD2",
+    # Metionina
+    "CB", "CG", "SD", "CE",
+    # Prolina
+    "CB", "CG", "CD",
+    # Fenilalanina
+    "CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ",
+    # Triptofano
+    "CB", "CG", "CD1", "CD2", "NE1", "CE2", "CE3", "CZ2", "CZ3", "CH2",
+    # Tirosina
+    "CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ", "OH",
+
+    "C",   # Átomos de carbono em grupos alquila e anéis alifáticos
+    "CA",  # Nome comum para carbonos em anéis aromáticos
+    "CB", "CG", "CD", "CE", "CH",  # Outros nomes para carbonos em diferentes ambientes
+    "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9",  # Carbonos numerados, comuns em moléculas pequenas
+    "F",   # Flúor
+    "Cl",  # Cloro
+    "Br",  # Bromo
+    "I"    # Iodo
+]
+
+# Distance threshold for hydrophobic interactions
+hydrophobic_distance_threshold = 4.0
+
 
 input_pdb = sys.argv[1]
 molecule_select = str(sys.argv[2])
@@ -21,21 +56,16 @@ structure = parser.get_structure("name", input_pdb)
 epsilon_0 = 8.854187817e-12  # permittivity of vacuum in C^2/N*m^2
 four_pi_epsilon_0 = 4 * 3.14159265359 * epsilon_0  # 4*pi*epsilon_0 for Coulomb's law
 
-# Common Lennard-Jones parameters and charges for atom types from MMFF94 force field
+# Common Lennard-Jones parameters and charges for atom types from CHARMM force field
 atom_parameters = {
-    'C': {'sigma': 3.50, 'epsilon': 0.066, 'charge': 0.0},   # Aproximado para carbono sp3
-    'O': {'sigma': 3.07, 'epsilon': 0.152, 'charge': -0.5}, # Aproximado para oxigênio sp3
-    'N': {'sigma': 3.25, 'epsilon': 0.170, 'charge': -0.5}, # Aproximado para nitrogênio sp3
-    'H': {'sigma': 2.42, 'epsilon': 0.03, 'charge': 0.3},   # Hidrogênio
-    'S': {'sigma': 3.80, 'epsilon': 0.250, 'charge': 0.0},  # Enxofre sp3
-    'P': {'sigma': 3.74, 'epsilon': 0.200, 'charge': 0.5},  # Fósforo
-    'F': {'sigma': 2.94, 'epsilon': 0.061, 'charge': -0.8}, # Flúor
-    'Cl': {'sigma': 3.40, 'epsilon': 0.276, 'charge': -0.7},# Cloro
-    'Br': {'sigma': 3.80, 'epsilon': 0.389, 'charge': -0.7},# Bromo
-    'I':  {'sigma': 4.17, 'epsilon': 0.468, 'charge': -0.4} # Iodo
-    # Adicione mais tipos atômicos conforme necessário
+    'C': {'sigma': 3.55, 'epsilon': 0.066, 'charge': 0.0},
+    'O': {'sigma': 3.12, 'epsilon': 0.12, 'charge': -0.5},
+    'N': {'sigma': 3.25, 'epsilon': 0.17, 'charge': -0.5},
+    'H': {'sigma': 2.42, 'epsilon': 0.03, 'charge': 0.3},
+    'S': {'sigma': 3.79, 'epsilon': 0.25, 'charge': 0.0},
+    'P': {'sigma': 3.74, 'epsilon': 0.20, 'charge': 0.5},
+    # Add more atom types as necessary
 }
-
 
 def coulomb_potential(q1, q2, r):
     """Calculate Coulomb potential between two charges."""
@@ -144,6 +174,13 @@ def is_interaction(atom1, atom2, residue_name, distance):
         if atom1.get_name().startswith(tuple(hydrogen_bond_acceptors)) and atom2.get_name().startswith(tuple(hydrogen_bond_acceptors)):
             return "Hydrogen bond"
             
+    
+    # Check for hydrophobic interactions
+    if residue_name in hydrophobic_residues:
+        if atom1.get_name() in hydrophobic_atoms or atom2.get_name() in hydrophobic_atoms:
+            if distance <= hydrophobic_distance_threshold:
+                return "hydrophobic interaction"
+
     # Check for van der Waals interaction
     atom1_type = atom1.get_name()[0]  # Simplified to get first letter, might need refinement
     atom2_type = atom2.get_name()[0]
@@ -166,33 +203,6 @@ def is_interaction(atom1, atom2, residue_name, distance):
     
     return "False"
 
-    hydrogen_bond_acceptors = ["O", "N", "F"]
-    ionic_interactions = {
-        "NA": ["F", "Cl", "Br", "I", "O"],
-        "MG": ["F", "Cl", "Br", "I", "O"],
-        "K" : ["F", "Cl", "Br", "I", "O"],
-        "CA": ["F", "Cl", "Br", "I", "O"],
-        #"HOH": ["F", "Cl", "Br", "I", "O", "S"]
-    }
-
-    if distance < 3.0:
-        # Check for ionic interaction
-        if residue_name in ionic_interactions:
-            if atom1.get_name().startswith(tuple(
-                ionic_interactions[residue_name]
-                )) or atom2.get_name().startswith(tuple(
-                ionic_interactions[residue_name])):
-                return "Ionic interaction"
-
-        # Check for hydrogen bond
-        if atom1.get_name().startswith(tuple(
-            hydrogen_bond_acceptors
-            )) and atom2.get_name().startswith(tuple(
-            hydrogen_bond_acceptors)):
-            return "True"
-    
-    return "False"
-
 # Check all atoms of all residues
 for chain in structure[0]:
     for residue in chain:
@@ -206,7 +216,7 @@ for chain in structure[0]:
                         min_distance = distance
                         interacting_atoms = (atom, ligand_atom)
 
-            if min_distance <= 4.0:
+            if min_distance <= 5.0:
                 position = residue.get_full_id()
                 if position not in [r[0].get_full_id() for r in near_residues]:
                     near_residues.append((residue, min_distance, interacting_atoms))
