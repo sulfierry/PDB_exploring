@@ -2,6 +2,8 @@
 # python script.py ref.pdb LIG PDB_LIG.csv CHAIN(optional)
 # GitHub: github.com/sulfierry/
 
+from rdkit.Chem.rdMolDescriptors import GetFeatureInvariants
+from rdkit.Chem import rdMolDescriptors
 from rdkit.Chem import Descriptors
 from rdkit.Chem import AllChem
 from rdkit import Chem
@@ -13,65 +15,21 @@ import sys
 
 # Variaveis globais ################################################################################################
 
-# Distance threshold for hydrophobic interactions
-hydrophobic_distance_threshold = 4.0
-
-# Hydrophobic residues and atoms for identifying hydrophobic interactions
-hydrophobic_residues = ["ALA", "VAL", "ILE", "LEU", "MET", "PHE", "TRP", "PRO", "TYR"]
-
-hydrophobic_atoms = [
-    # Alanina
-    "CB",
-    # Valina
-    "CB", "CG1", "CG2",
-    # Isoleucina
-    "CB", "CG1", "CG2", "CD1",
-    # Leucina
-    "CB", "CG", "CD1", "CD2",
-    # Metionina
-    "CB", "CG", "SD", "CE",
-    # Prolina
-    "CB", "CG", "CD",
-    # Fenilalanina
-    "CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ",
-    # Triptofano
-    "CB", "CG", "CD1", "CD2", "NE1", "CE2", "CE3", "CZ2", "CZ3", "CH2",
-    # Tirosina
-    "CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ",
-    
-    # Átomos de carbono em grupos alquila e anéis alifáticos
-    "C",   
-    # Nome comum para carbonos em anéis aromáticos
-    "CA", 
-    # Outros nomes para carbonos em diferentes ambientes 
-    "CH",
-    # Carbonos numerados, comuns em moléculas pequenas 
-    "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", 
-    # Flúor
-    "F",
-    # Cloro   
-    "Cl",
-    # Bromo 
-    "Br",
-    # Iodo  
-    "I"    
-]
-
-
 # Common Lennard-Jones parameters and charges for atom types from MMFF94 force field
 atom_parameters = {
     'C': {'sigma': 3.50, 'epsilon': 0.066, 'charge': 0.0},   # Aproximado para carbono sp3
-    'O': {'sigma': 3.07, 'epsilon': 0.152, 'charge': -0.5}, # Aproximado para oxigênio sp3
-    'N': {'sigma': 3.25, 'epsilon': 0.170, 'charge': -0.5}, # Aproximado para nitrogênio sp3
-    'H': {'sigma': 2.42, 'epsilon': 0.03, 'charge': 0.3},   # Hidrogênio
-    'S': {'sigma': 3.80, 'epsilon': 0.250, 'charge': 0.0},  # Enxofre sp3
-    'P': {'sigma': 3.74, 'epsilon': 0.200, 'charge': 0.5},  # Fósforo
-    'F': {'sigma': 2.94, 'epsilon': 0.061, 'charge': -0.8}, # Flúor
-    'Cl': {'sigma': 3.40, 'epsilon': 0.276, 'charge': -0.7},# Cloro
-    'Br': {'sigma': 3.80, 'epsilon': 0.389, 'charge': -0.7},# Bromo
-    'I':  {'sigma': 4.17, 'epsilon': 0.468, 'charge': -0.4} # Iodo
+    'O': {'sigma': 3.07, 'epsilon': 0.152, 'charge': -0.5},  # Aproximado para oxigênio sp3
+    'N': {'sigma': 3.25, 'epsilon': 0.170, 'charge': -0.5},  # Aproximado para nitrogênio sp3
+    'H': {'sigma': 2.42, 'epsilon': 0.03, 'charge': 0.3},    # Hidrogênio
+    'S': {'sigma': 3.80, 'epsilon': 0.250, 'charge': 0.0},   # Enxofre sp3
+    'P': {'sigma': 3.74, 'epsilon': 0.200, 'charge': 0.5},   # Fósforo
+    'F': {'sigma': 2.94, 'epsilon': 0.061, 'charge': -0.8},  # Flúor
+    'Cl': {'sigma': 3.40, 'epsilon': 0.276, 'charge': -0.7}, # Cloro
+    'Br': {'sigma': 3.80, 'epsilon': 0.389, 'charge': -0.7}, # Bromo
+    'I':  {'sigma': 4.17, 'epsilon': 0.468, 'charge': -0.4}  # Iodo
     # Adicione mais tipos atômicos conforme necessário
 }
+
 # Amino acids and nucleic acid bases classification
 molecule_class = {
 
@@ -112,8 +70,6 @@ molecule_class = {
     "HOH": "partial polar charge"
 }
 
-hydrogen_bond_acceptors = ["O", "N", "F"]
-    
 ionic_interactions = {
 
         "NA": ["F", "Cl", "Br", "I", "O"],
@@ -121,6 +77,67 @@ ionic_interactions = {
         "K" : ["F", "Cl", "Br", "I", "O"],
         "CA": ["F", "Cl", "Br", "I", "O"],
 }
+
+hydrogen_bond_acceptors = [
+    "O", 
+    "N", 
+    "F"
+    ]
+
+# Hydrophobic residues and atoms for identifying hydrophobic interactions
+hydrophobic_residues = [
+    "ALA", 
+    "VAL", 
+    "ILE", 
+    "LEU", 
+    "MET", 
+    "PHE", 
+    "TRP", 
+    "PRO", 
+    "TYR"
+    ]
+
+hydrophobic_atoms = [
+    # Alanina
+    "CB",
+    # Valina
+    "CB", "CG1", "CG2",
+    # Isoleucina
+    "CB", "CG1", "CG2", "CD1",
+    # Leucina
+    "CB", "CG", "CD1", "CD2",
+    # Metionina
+    "CB", "CG", "SD", "CE",
+    # Prolina
+    "CB", "CG", "CD",
+    # Fenilalanina
+    "CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ",
+    # Triptofano
+    "CB", "CG", "CD1", "CD2", "NE1", "CE2", "CE3", "CZ2", "CZ3", "CH2",
+    # Tirosina
+    "CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ",
+    
+    # Átomos de carbono em grupos alquila e anéis alifáticos
+    "C",   
+    # Nome comum para carbonos em anéis aromáticos
+    "CA", 
+    # Outros nomes para carbonos em diferentes ambientes 
+    "CH",
+    # Carbonos numerados, comuns em moléculas pequenas 
+    "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", 
+    # Flúor
+    "F",
+    # Cloro   
+    "Cl",
+    # Bromo 
+    "Br",
+    # Iodo  
+    "I"    
+]
+
+# Distance threshold for hydrophobic interactions
+hydrophobic_distance_threshold = 4.0
+
 
  ######################################################################################################################
 
@@ -341,19 +358,50 @@ def convert_to_sdf(ligand_residue):
     return mol 
 
 
+def is_rotatable_bond(bond):
+    """Determine if a bond is rotatable."""
+    return (not bond.IsInRing() and
+            bond.GetBondType() == Chem.rdchem.BondType.SINGLE and
+            bond.GetBeginAtom().GetAtomicNum() != 1 and
+            bond.GetEndAtom().GetAtomicNum() != 1)
+
 def calculate_descriptors(molecule):
-    """
-    Calculate a set of molecular descriptors for the given molecule.
-    """
-    descriptors = {
-        'Molecular Weight': Descriptors.MolWt(molecule),
-        'LogP': Descriptors.MolLogP(molecule),
-        'Number of Rings': Descriptors.RingCount(molecule),
-        'Number of H-Bond Donors': Descriptors.NumHDonors(molecule),
-        'Number of H-Bond Acceptors': Descriptors.NumHAcceptors(molecule),
-        'TPSA': Descriptors.TPSA(molecule)
+    # Calculate molecular descriptors
+    mol_weight = Descriptors.MolWt(molecule)
+    mol_logp = Descriptors.MolLogP(molecule)
+    
+    # Determine H-bond donors and acceptors
+    features = GetFeatureInvariants(molecule)
+    h_donors = [atom.GetIdx() for atom, feature in zip(molecule.GetAtoms(), features) if feature & 0x1]
+    h_acceptors = [atom.GetIdx() for atom, feature in zip(molecule.GetAtoms(), features) if feature & 0x2]
+
+    # Determine rotatable bonds
+    rotatable_bonds = [bond.GetIdx() for bond in molecule.GetBonds() if is_rotatable_bond(bond)]
+    num_rotatable = rdMolDescriptors.CalcNumRotatableBonds(molecule)
+
+    # Determine ring information
+    ring_atoms = list(molecule.GetRingInfo().AtomRings())
+
+    result = {
+        "Molecular Weight": mol_weight,
+        'TPSA': Descriptors.TPSA(molecule),
+        "LogP": mol_logp,
+        "Number of H Bond Donors":Descriptors.NumHDonors(molecule),
+        "Index H Bond Donors": h_donors,
+        "Number of H-Bond Acceptors":Descriptors.NumHAcceptors(molecule),
+        "Index H Bond Acceptors": h_acceptors,
+        "Number of Rotatable Bonds":num_rotatable,
+        "Index of Rotatable Bonds": rotatable_bonds,
+        "Number of Rings": Descriptors.RingCount(molecule),
+        "Index of Ring Atoms": ring_atoms,
     }
-    return descriptors
+
+    with open(sys.argv[3]+'_descriptors.csv', 'w', newline='') as csv_file:
+        writer = csv.writer(csv_file)
+        for key, value in result.items():
+            writer.writerow([key, value])
+
+    return result
 
 
 def calculate_partial_charges(molecule):
@@ -426,21 +474,3 @@ if __name__ == "__main__":
     # Convertendo ligand_residue into a .sdf
     mol_sdf = convert_to_sdf(ligand_residue)
     charges = partial_charges(mol_sdf)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
