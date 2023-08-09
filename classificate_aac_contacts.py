@@ -12,6 +12,7 @@ import numpy as np
 import subprocess
 import csv
 import sys
+import os
 
 # Variaveis globais ################################################################################################
 
@@ -353,7 +354,7 @@ def convert_to_sdf(ligand_residue):
     residue_to_pdb(ligand_residue, "temp.pdb")
     pdb_to_sdf("temp.pdb", "temp.sdf")
     mol = load_molecule_from_sdf("temp.sdf")
-    # remover arquivo temp.pdb
+    os.system("rm temp.pdb && rm temp.sdf")
 
     return mol 
 
@@ -364,6 +365,7 @@ def is_rotatable_bond(bond):
             bond.GetBondType() == Chem.rdchem.BondType.SINGLE and
             bond.GetBeginAtom().GetAtomicNum() != 1 and
             bond.GetEndAtom().GetAtomicNum() != 1)
+
 
 def calculate_descriptors(molecule):
     # Calculate molecular descriptors
@@ -402,47 +404,43 @@ def calculate_descriptors(molecule):
             writer.writerow([key, value])
 
     return result
+    
 
-
-def calculate_partial_charges(molecule):
+def calculate_partial_charges_mmff94(molecule):
     """
-    Calculate Gasteiger charges for the given molecule.
+    Calculate MMFF94 charges for the given molecule.
     """
     # Add hydrogen to the molecule
     molecule = Chem.AddHs(molecule)
-    
-    # Calculate Gasteiger charges
-    AllChem.ComputeGasteigerCharges(molecule)
-    
+
+    # Create an MMFF94 properties object
+    mmff_props = AllChem.MMFFGetMoleculeProperties(molecule)
+
     charges = []
     for atom in molecule.GetAtoms():
-        charges.append((atom.GetSymbol(), atom.GetIdx(), atom.GetProp("_GasteigerCharge")))
-    
+        charge = mmff_props.GetMMFFPartialCharge(atom.GetIdx())
+        charges.append((atom.GetSymbol(), atom.GetIdx(), charge))
+
     return charges
 
 
 def partial_charges(mol):
 
-    # Ensure the molecule was loaded correctly
-    if mol:
-        # Calculate descriptors
-        descriptors = calculate_descriptors(mol)
-        for desc, value in descriptors.items():
-            print(f"{desc}: {value}")
-        
-        # Calculate partial charges
-        print("\nPartial Charges (Gasteiger):")
-        charges = calculate_partial_charges(mol)
-        for symbol, idx, charge in charges:
-            #if not (charge == ("nan")):  # Check for valid charge
-            print(f"{symbol} (Atom Index {idx}): {charge}")
+    # Calculate descriptors
+    descriptors = calculate_descriptors(mol)
+    for desc, value in descriptors.items():
+        print(f"{desc}: {value}")
 
-    else:
-        print("Failed to load the molecule from the PDB file.")
+    # Calculate partial charges
+    print("\nPartial Charges (MMFF94):")
+    charges = calculate_partial_charges_mmff94(mol)
+    for symbol, idx, charge in charges:
+        #if not (charge == ("nan")):  # Check for valid charge
+        print(f"{symbol} (Atom Index {idx}): {round(charge, 2)}")
 
 
     # salvar cargas em csv
-    with open(sys.argv[3]+'_partial_charges.csv', 'w', newline='') as csvfile:
+    with open(sys.argv[3]+'_partial_charges_MMFF94.csv', 'w', newline='') as csvfile:
         charge_writer = csv.writer(csvfile)
         
         # Escreva o cabeçalho
@@ -455,10 +453,9 @@ def partial_charges(mol):
     return charges
 
 
-
 if __name__ == "__main__":
 
-
+    # Arquivos de entrada e saida a serem fornecidos
     input_pdb = sys.argv[1]
     input_molecule = str(sys.argv[2])
     output_name = str(sys.argv[3])
