@@ -426,3 +426,21 @@ if __name__ == "__main__":
     # Convertendo ligand_residue into a .sdf
     mol_sdf = convert_to_sdf(ligand_residue)
     charges = partial_charges(mol_sdf)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
