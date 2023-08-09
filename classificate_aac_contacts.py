@@ -2,11 +2,14 @@
 # python script.py ref.pdb LIG PDB_LIG.csv CHAIN(optional)
 # GitHub: github.com/sulfierry/
 
+from rdkit.Chem import Descriptors
+from rdkit.Chem import AllChem
+from rdkit import Chem
 from Bio.PDB import *
 import numpy as np
+import subprocess
 import csv
 import sys
-
 
 # Variaveis globais ################################################################################################
 
@@ -69,7 +72,6 @@ atom_parameters = {
     'I':  {'sigma': 4.17, 'epsilon': 0.468, 'charge': -0.4} # Iodo
     # Adicione mais tipos atômicos conforme necessário
 }
-
 # Amino acids and nucleic acid bases classification
 molecule_class = {
 
@@ -183,6 +185,9 @@ def is_interaction(atom1, atom2, residue_name, distance):
         if atom1.get_name().startswith(tuple(hydrogen_bond_acceptors)) and atom2.get_name().startswith(tuple(hydrogen_bond_acceptors)):
             return "Hydrogen bond"
             
+        def is_aromatic_ring(atom1):
+             return atom1.GetIsAromatic()
+
     
     # Check for hydrophobic interactions
     if residue_name in hydrophobic_residues:
@@ -305,6 +310,103 @@ def set_output(output_name, near_residues):
     return ("Successfully processed and saved!")
 
 
+class ResidueSelect(Select):
+    def __init__(self, residue):
+        self.residue = residue
+
+    def accept_residue(self, residue):
+        return residue == self.residue
+
+def residue_to_pdb(residue, pdb_filename):
+    io = PDBIO()
+    io.set_structure(residue.parent.parent.parent)  # Assumindo que o resíduo está dentro de uma estrutura completa
+    io.save(pdb_filename, ResidueSelect(residue))
+
+def pdb_to_sdf(pdb_filename, sdf_filename):
+    subprocess.run(["obabel", pdb_filename, "-O", sdf_filename])
+
+def load_molecule_from_sdf(sdf_filename):
+    supplier = Chem.SDMolSupplier(sdf_filename)
+    for mol in supplier:
+        if mol:
+            return mol
+
+def convert_to_sdf(ligand_residue):
+
+    residue_to_pdb(ligand_residue, "temp.pdb")
+    pdb_to_sdf("temp.pdb", "temp.sdf")
+    mol = load_molecule_from_sdf("temp.sdf")
+    # remover arquivo temp.pdb
+
+    return mol 
+
+
+def calculate_descriptors(molecule):
+    """
+    Calculate a set of molecular descriptors for the given molecule.
+    """
+    descriptors = {
+        'Molecular Weight': Descriptors.MolWt(molecule),
+        'LogP': Descriptors.MolLogP(molecule),
+        'Number of Rings': Descriptors.RingCount(molecule),
+        'Number of H-Bond Donors': Descriptors.NumHDonors(molecule),
+        'Number of H-Bond Acceptors': Descriptors.NumHAcceptors(molecule),
+        'TPSA': Descriptors.TPSA(molecule)
+    }
+    return descriptors
+
+
+def calculate_partial_charges(molecule):
+    """
+    Calculate Gasteiger charges for the given molecule.
+    """
+    # Add hydrogen to the molecule
+    molecule = Chem.AddHs(molecule)
+    
+    # Calculate Gasteiger charges
+    AllChem.ComputeGasteigerCharges(molecule)
+    
+    charges = []
+    for atom in molecule.GetAtoms():
+        charges.append((atom.GetSymbol(), atom.GetIdx(), atom.GetProp("_GasteigerCharge")))
+    
+    return charges
+
+
+def partial_charges(mol):
+
+    # Ensure the molecule was loaded correctly
+    if mol:
+        # Calculate descriptors
+        descriptors = calculate_descriptors(mol)
+        for desc, value in descriptors.items():
+            print(f"{desc}: {value}")
+        
+        # Calculate partial charges
+        print("\nPartial Charges (Gasteiger):")
+        charges = calculate_partial_charges(mol)
+        for symbol, idx, charge in charges:
+            #if not (charge == ("nan")):  # Check for valid charge
+            print(f"{symbol} (Atom Index {idx}): {charge}")
+
+    else:
+        print("Failed to load the molecule from the PDB file.")
+
+
+    # salvar cargas em csv
+    with open(sys.argv[3]+'_partial_charges.csv', 'w', newline='') as csvfile:
+        charge_writer = csv.writer(csvfile)
+        
+        # Escreva o cabeçalho
+        charge_writer.writerow(['Atom Symbol', 'Atom Index', 'Charge'])
+        
+        # Escreva as cargas
+        for symbol, idx, charge in charges:
+            charge_writer.writerow([symbol, idx, charge])
+
+    return charges
+
+
 
 if __name__ == "__main__":
 
@@ -316,6 +418,11 @@ if __name__ == "__main__":
     # Distance from the select molecule
     treshold_distance = 4.0 
 
+    # executa e salva o resultados para a classificacao dos contatos
     ligand_residue = find_molecule(input_pdb, input_molecule)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     save_csv = set_output(output_name, near_residues)
+
+    # Convertendo ligand_residue into a .sdf
+    mol_sdf = convert_to_sdf(ligand_residue)
+    charges = partial_charges(mol_sdf)
