@@ -28,7 +28,6 @@ atom_parameters = {
     'Cl': {'sigma': 3.40, 'epsilon': 0.276, 'charge': -0.7}, # Cloro
     'Br': {'sigma': 3.80, 'epsilon': 0.389, 'charge': -0.7}, # Bromo
     'I':  {'sigma': 4.17, 'epsilon': 0.468, 'charge': -0.4}  # Iodo
-    # Adicione mais tipos atômicos conforme necessário
 }
 
 # Amino acids and nucleic acid bases classification
@@ -139,9 +138,7 @@ hydrophobic_atoms = [
 # Distance threshold for hydrophobic interactions
 hydrophobic_distance_threshold = 4.0
 
-
  ######################################################################################################################
-
 
 def find_molecule(input_pdb, input_molecule):
 
@@ -182,11 +179,77 @@ def find_molecule(input_pdb, input_molecule):
     return ligand_residue
 
 
+def verify_near_residues(input_pdb, ligand_residue, treshold_distance):
 
-def lennard_jones_potential(epsilon, sigma, r):
-    """Calculate Lennard-Jones potential between two atoms."""
-    return 4 * epsilon * ((sigma / r)**12 - (sigma / r)**6)
+    parser = PDBParser(QUIET=True)
+    structure = parser.get_structure("name", input_pdb)
 
+    # List to store the next residues and the interaction
+    near_residues = []
+
+    # Check all atoms of all residues
+    for chain in structure[0]:
+        for residue in chain:
+            if residue != ligand_residue:  # Ignore ligand
+                min_distance = np.inf
+                interacting_atoms = None
+                for atom in residue:
+                    for ligand_atom in ligand_residue:
+                        distance = atom - ligand_atom
+                        if distance < min_distance:
+                            min_distance = distance
+                            interacting_atoms = (atom, ligand_atom)
+
+                if min_distance <= treshold_distance:
+                    position = residue.get_full_id()
+                    if position not in [r[0].get_full_id() for r in near_residues]:
+                        near_residues.append((residue, min_distance, interacting_atoms))
+
+    # Sort the near_residues list based on the distance (second element of the tuple)
+    near_residues.sort(key=lambda x: x[1])
+
+    return near_residues
+
+
+def set_output(output_name, near_residues):
+
+    with open(output_name, 'w', newline='') as file:
+
+        writer = csv.writer(file)
+        # Change the order of columns here
+        writer.writerow(["Molecule", "Classification", "Number", 
+                        "Chain", "Nearby atoms", "Distance(Å)", "Interaction"]) 
+        
+        columns = ["Molecule", "Classification", "Number", 
+                "Chain", "Nearby atoms", "Distance(Å)", "Interaction"] 
+        
+        print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10} {:^20}".format(*columns))
+
+        for residue, distance, atoms in near_residues:
+            aa_name = residue.get_resname()
+            aa_num = residue.get_id()[1]
+            chain_id = residue.get_parent().get_id()  # Get chain ID
+
+            if aa_name in ["NA", "MG", "K", "CA", "HOH"]:
+                aa_class = "cofactor"
+            else:
+                aa_class = molecule_class.get(aa_name, "unknown")
+
+            atom1 = atoms[0].get_name() + "(" + residue.get_resname() + ")"
+            atom2 = atoms[1].get_name() + "(" + residue.get_resname() + ")"
+            nearby_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)
+            
+            # Check for hydrogen bond
+            probable_interaction = is_interaction(atoms[0], atoms[1], residue.get_resname(), distance)
+
+            # Change the order of written rows here to match column header order
+            writer.writerow([aa_name, aa_class, aa_num, 
+                            chain_id, nearby_atoms_str, round(distance, 2), probable_interaction]) 
+            
+            print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10.2f} {:^20}".format(
+                aa_name, aa_class, aa_num, chain_id, nearby_atoms_str, distance, probable_interaction))
+    print("\n")
+    return ("Successfully processed and saved!")
 
 
 # Define a function to check for potential hydrogen bonds
@@ -255,99 +318,12 @@ def is_interaction(atom1, atom2, residue_name, distance):
     
     return "Non-specific"
 
+def lennard_jones_potential(epsilon, sigma, r):
+    """Calculate Lennard-Jones potential between two atoms."""
+    return 4 * epsilon * ((sigma / r)**12 - (sigma / r)**6)
 
-def verify_near_residues(input_pdb, ligand_residue, treshold_distance):
-
-    parser = PDBParser(QUIET=True)
-    structure = parser.get_structure("name", input_pdb)
-
-    # List to store the next residues and the interaction
-    near_residues = []
-
-    # Check all atoms of all residues
-    for chain in structure[0]:
-        for residue in chain:
-            if residue != ligand_residue:  # Ignore ligand
-                min_distance = np.inf
-                interacting_atoms = None
-                for atom in residue:
-                    for ligand_atom in ligand_residue:
-                        distance = atom - ligand_atom
-                        if distance < min_distance:
-                            min_distance = distance
-                            interacting_atoms = (atom, ligand_atom)
-
-                if min_distance <= treshold_distance:
-                    position = residue.get_full_id()
-                    if position not in [r[0].get_full_id() for r in near_residues]:
-                        near_residues.append((residue, min_distance, interacting_atoms))
-
-    # Sort the near_residues list based on the distance (second element of the tuple)
-    near_residues.sort(key=lambda x: x[1])
-
-    return near_residues
-
-def set_output(output_name, near_residues):
-
-    with open(output_name, 'w', newline='') as file:
-
-        writer = csv.writer(file)
-        # Change the order of columns here
-        writer.writerow(["Molecule", "Classification", "Number", 
-                        "Chain", "Nearby atoms", "Distance(Å)", "Interaction"]) 
-        
-        columns = ["Molecule", "Classification", "Number", 
-                "Chain", "Nearby atoms", "Distance(Å)", "Interaction"] 
-        
-        print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10} {:^20}".format(*columns))
-
-        for residue, distance, atoms in near_residues:
-            aa_name = residue.get_resname()
-            aa_num = residue.get_id()[1]
-            chain_id = residue.get_parent().get_id()  # Get chain ID
-
-            if aa_name in ["NA", "MG", "K", "CA", "HOH"]:
-                aa_class = "cofactor"
-            else:
-                aa_class = molecule_class.get(aa_name, "unknown")
-
-            atom1 = atoms[0].get_name() + "(" + residue.get_resname() + ")"
-            atom2 = atoms[1].get_name() + "(" + ligand_residue.get_resname() + ")"
-            nearby_atoms_str = "{:<10}-{:>10}".format(atom1, atom2)
-            
-            # Check for hydrogen bond
-            probable_interaction = is_interaction(atoms[0], atoms[1], residue.get_resname(), distance)
-
-            # Change the order of written rows here to match column header order
-            writer.writerow([aa_name, aa_class, aa_num, 
-                            chain_id, nearby_atoms_str, round(distance, 2), probable_interaction]) 
-            
-            print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10.2f} {:^20}".format(
-                aa_name, aa_class, aa_num, chain_id, nearby_atoms_str, distance, probable_interaction))
-    
-    return ("Successfully processed and saved!")
-
-
-class ResidueSelect(Select):
-    def __init__(self, residue):
-        self.residue = residue
-
-    def accept_residue(self, residue):
-        return residue == self.residue
-
-def residue_to_pdb(residue, pdb_filename):
-    io = PDBIO()
-    io.set_structure(residue.parent.parent.parent)  # Assumindo que o resíduo está dentro de uma estrutura completa
-    io.save(pdb_filename, ResidueSelect(residue))
-
-def pdb_to_sdf(pdb_filename, sdf_filename):
-    subprocess.run(["obabel", pdb_filename, "-O", sdf_filename])
-
-def load_molecule_from_sdf(sdf_filename):
-    supplier = Chem.SDMolSupplier(sdf_filename)
-    for mol in supplier:
-        if mol:
-            return mol
+########################################################################################################################
+# Secao exclusiva para converter a estrutura de dados atual para .sdf
 
 def convert_to_sdf(ligand_residue):
 
@@ -359,12 +335,29 @@ def convert_to_sdf(ligand_residue):
     return mol 
 
 
-def is_rotatable_bond(bond):
-    """Determine if a bond is rotatable."""
-    return (not bond.IsInRing() and
-            bond.GetBondType() == Chem.rdchem.BondType.SINGLE and
-            bond.GetBeginAtom().GetAtomicNum() != 1 and
-            bond.GetEndAtom().GetAtomicNum() != 1)
+def residue_to_pdb(residue, pdb_filename):
+    io = PDBIO()
+    io.set_structure(residue.parent.parent.parent)  # Assumindo que o resíduo está dentro de uma estrutura completa
+    io.save(pdb_filename, ResidueSelect(residue))
+
+class ResidueSelect(Select):
+    def __init__(self, residue):
+        self.residue = residue
+
+    def accept_residue(self, residue):
+        return residue == self.residue
+    
+def pdb_to_sdf(pdb_filename, sdf_filename):
+    subprocess.run(["obabel", pdb_filename, "-O", sdf_filename])
+
+def load_molecule_from_sdf(sdf_filename):
+    supplier = Chem.SDMolSupplier(sdf_filename)
+    for mol in supplier:
+        if mol:
+            return mol
+
+########################################################################################################################
+
 
 
 def calculate_descriptors(molecule):
@@ -382,20 +375,21 @@ def calculate_descriptors(molecule):
     num_rotatable = rdMolDescriptors.CalcNumRotatableBonds(molecule)
 
     # Determine ring information
-    ring_atoms = list(molecule.GetRingInfo().AtomRings())
+    #ring_atoms = list(molecule.GetRingInfo().AtomRings())
 
     result = {
-        "Molecular Weight": mol_weight,
-        'TPSA': Descriptors.TPSA(molecule),
-        "LogP": mol_logp,
-        "Number of H Bond Donors":Descriptors.NumHDonors(molecule),
+        "I Molecular Weight (Da)":round(mol_weight, 2),
+        "II  LogP": round(mol_logp, 2),
+        "III Number of H Bond Donors":Descriptors.NumHDonors(molecule),
+        "IV  Number of H-Bond Acceptors":Descriptors.NumHAcceptors(molecule),
+        "V   Number of Rotatable Bonds":num_rotatable,
         "Index H Bond Donors": h_donors,
-        "Number of H-Bond Acceptors":Descriptors.NumHAcceptors(molecule),
         "Index H Bond Acceptors": h_acceptors,
-        "Number of Rotatable Bonds":num_rotatable,
         "Index of Rotatable Bonds": rotatable_bonds,
-        "Number of Rings": Descriptors.RingCount(molecule),
-        "Index of Ring Atoms": ring_atoms,
+        #"Number of Rings": Descriptors.RingCount(molecule),
+        #"Index of Ring Atoms": ring_atoms,
+        #'TPSA (Å^2)': Descriptors.TPSA(molecule),
+
     }
 
     with open(sys.argv[3]+'_descriptors.csv', 'w', newline='') as csv_file:
@@ -403,8 +397,48 @@ def calculate_descriptors(molecule):
         for key, value in result.items():
             writer.writerow([key, value])
 
+    print("\n")
+    print("Regra dos Cinco de Lipinski:")
+    print("I   Peso molecular <= 500 Da")
+    print("II  LogP (coeficiente de partição octanol-água) <= 5")
+    print("III Doadores de ligações de H <= 5")
+    print("IV  Aceptores de ligações de H <= 10")
+    print("V   Átomos rotativos <= 10 ")
+    print("\n")
+
+    for desc, value in result.items():
+        print(f"{desc}: {value}")
+
     return result
-    
+
+def is_rotatable_bond(bond):
+    """Determine if a bond is rotatable."""
+    return (not bond.IsInRing() and
+            bond.GetBondType() == Chem.rdchem.BondType.SINGLE and
+            bond.GetBeginAtom().GetAtomicNum() != 1 and
+            bond.GetEndAtom().GetAtomicNum() != 1)
+
+def partial_charges(molecule):
+
+    # Calculate partial charges
+    print("\nPartial Charges (MMFF94):")
+    charges = calculate_partial_charges_mmff94(molecule)
+    for symbol, idx, charge in charges:
+        print(f"{symbol} (Atom Index {idx}): {round(charge, 2)}")
+
+    # salvar cargas em csv
+    with open(sys.argv[3]+'_partial_charges_MMFF94.csv', 'w', newline='') as csvfile:
+        charge_writer = csv.writer(csvfile)
+        
+        # Escreva o cabeçalho
+        charge_writer.writerow(['Atom Symbol', 'Atom Index', 'Charge'])
+        
+        # Escreva as cargas
+        for symbol, idx, charge in charges:
+            charge_writer.writerow([symbol, idx, charge])
+
+    return charges
+
 
 def calculate_partial_charges_mmff94(molecule):
     """
@@ -424,50 +458,24 @@ def calculate_partial_charges_mmff94(molecule):
     return charges
 
 
-def partial_charges(mol):
-
-    # Calculate descriptors
-    descriptors = calculate_descriptors(mol)
-    for desc, value in descriptors.items():
-        print(f"{desc}: {value}")
-
-    # Calculate partial charges
-    print("\nPartial Charges (MMFF94):")
-    charges = calculate_partial_charges_mmff94(mol)
-    for symbol, idx, charge in charges:
-        #if not (charge == ("nan")):  # Check for valid charge
-        print(f"{symbol} (Atom Index {idx}): {round(charge, 2)}")
-
-
-    # salvar cargas em csv
-    with open(sys.argv[3]+'_partial_charges_MMFF94.csv', 'w', newline='') as csvfile:
-        charge_writer = csv.writer(csvfile)
-        
-        # Escreva o cabeçalho
-        charge_writer.writerow(['Atom Symbol', 'Atom Index', 'Charge'])
-        
-        # Escreva as cargas
-        for symbol, idx, charge in charges:
-            charge_writer.writerow([symbol, idx, charge])
-
-    return charges
-
-
 if __name__ == "__main__":
 
     # Arquivos de entrada e saida a serem fornecidos
-    input_pdb = sys.argv[1]
-    input_molecule = str(sys.argv[2])
-    output_name = str(sys.argv[3])
+    input_pdb      = sys.argv[1]    # example.pdb
+    input_molecule = sys.argv[2]    # ATP
+    output_name    = sys.argv[3]    # ATP_OUT (csv)
 
-    # Distance from the select molecule
+    # Distance from the selected molecule
     treshold_distance = 4.0 
 
     # executa e salva o resultados para a classificacao dos contatos
     ligand_residue = find_molecule(input_pdb, input_molecule)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
-    save_csv = set_output(output_name, near_residues)
+    set_output(output_name, near_residues)
 
     # Convertendo ligand_residue into a .sdf
     mol_sdf = convert_to_sdf(ligand_residue)
-    charges = partial_charges(mol_sdf)
+
+    # Obtendo descritores e cargas parciais
+    calculate_descriptors(mol_sdf)
+    partial_charges(mol_sdf)
