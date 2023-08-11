@@ -461,9 +461,9 @@ def calculate_partial_charges_mmff94(molecule):
 if __name__ == "__main__":
 
     # Arquivos de entrada e saida a serem fornecidos
-    input_pdb      = sys.argv[1]    # example.pdb
-    input_molecule = sys.argv[2]    # ATP
-    output_name    = sys.argv[3]    # ATP_OUT (csv)
+    input_pdb      = sys.argv[1]    # EXAMPLE.pdb
+    input_molecule = sys.argv[2]    # LIGANDNAME
+    output_name    = sys.argv[3]    # EXAMPLE_OUT (csv)
 
     # Distance from the selected molecule
     treshold_distance = 4.0 
