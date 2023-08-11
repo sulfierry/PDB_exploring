@@ -380,11 +380,11 @@ def calculate_descriptors(molecule):
     result = {
         "I Molecular Weight (Da)":round(mol_weight, 2),
         "II  LogP": round(mol_logp, 2),
-        "III Number of H Bond Donors":Descriptors.NumHDonors(molecule),
+        "III Number of H-Bond Donors":Descriptors.NumHDonors(molecule),
         "IV  Number of H-Bond Acceptors":Descriptors.NumHAcceptors(molecule),
         "V   Number of Rotatable Bonds":num_rotatable,
-        "Index H Bond Donors": h_donors,
-        "Index H Bond Acceptors": h_acceptors,
+        "Index H-Bond Donors": h_donors,
+        "Index H-Bond Acceptors": h_acceptors,
         "Index of Rotatable Bonds": rotatable_bonds,
         #"Number of Rings": Descriptors.RingCount(molecule),
         #"Index of Ring Atoms": ring_atoms,
@@ -398,12 +398,12 @@ def calculate_descriptors(molecule):
             writer.writerow([key, value])
 
     print("\n")
-    print("Regra dos Cinco de Lipinski:")
-    print("I   Peso molecular <= 500 Da")
-    print("II  LogP (coeficiente de partição octanol-água) <= 5")
-    print("III Doadores de ligações de H <= 5")
-    print("IV  Aceptores de ligações de H <= 10")
-    print("V   Átomos rotativos <= 10 ")
+    print("Lipinski's Rule of Fives:")
+    print("I   Molecular Weight (Da) <= 500")
+    print("II  LogP (octanol-water partition coefficient) <= 5")
+    print("III Number of H-Bond Donors <= 5")
+    print("IV  Number of H-Bond Acceptors <= 10")
+    print("V   Number of Rotatable Bonds <= 10 ")
     print("\n")
 
     for desc, value in result.items():
