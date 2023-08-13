@@ -1,13 +1,21 @@
 
-
 def map_to_molecular_group(atom_name, residue_name):
     # Simplified mapping logic based on atom name, this needs refinement based on specific rules
     if atom_name.startswith("C"):
         return "CR"
     elif atom_name.startswith("O"):
         return "OR"
-    # Add more mapping logic as needed
+    elif atom_name.startswith("N"):
+        return "NR"
+    elif atom_name.startswith("H"):
+        return "HR"
+    elif atom_name.startswith("P"):
+        return "PR"
+    elif atom_name.startswith("F"):
+        return "FR"
 
+    # Add more mapping logic as needed
+    
     # Return None if no match is found
     return None
 
