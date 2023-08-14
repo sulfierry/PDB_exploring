@@ -1,7 +1,7 @@
 #                Copyright (c) Merck and Co., Inc., 1994
 #                         All Rights Reserved
 
-# Transcribe by: Leon Sulfierry GitHub:https://github.com/sulfierry
+# Transcribed by: Leon Sulfierry GitHub:https://github.com/sulfierry
 
 ang_dict = {
     ('1', '0', '0.000'): {'ka': '108.900', 'theta0': '0:*-1-*', 'Comment/origin': 'MMFF94 DEF'},
