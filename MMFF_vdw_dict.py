@@ -1,7 +1,7 @@
 #                Copyright (c) Merck and Co., Inc., 1994
 #                         All Rights Reserved
 
-# Transcribe by: Leon Sulfierry GitHub:https://github.com/sulfierry
+# Transcribed by: Leon Sulfierry GitHub:https://github.com/sulfierry
 
 vdw_dict = {
     '1': {'alpha-i': '1.050', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CR', 'Origin': 'E94'},
