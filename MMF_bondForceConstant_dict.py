@@ -1,3 +1,9 @@
+#                Copyright (c) Merck and Co., Inc., 1994
+#                         All Rights Reserved
+
+# Transcribed by: Leon Sulfierry GitHub:https://github.com/sulfierry
+
+
 bndk_dict = {
     ('1', '6'): {'r0-ref': '1.084', 'kb-ref': '5.15', 'Source': 'C94'},
     ('1', '7'): {'r0-ref': '1.001', 'kb-ref': '7.35', 'Source': 'C94'},
