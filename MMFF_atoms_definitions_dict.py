@@ -1,5 +1,6 @@
 #                Copyright (c) Merck and Co., Inc., 1994
 #                         All Rights Reserved
+
 # Transcribe by: Leon Sulfierry GitHub:https://github.com/sulfierry
 
 molecular_group_dict = {
