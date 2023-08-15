@@ -1,115 +1,104 @@
+def parse_pdb_extended_v5(pdb_file):
+    """
+    Parses a PDB file to extract chains, cofactors, ligands, and atom details.
 
-def distance(atom1, atom2):
-    return ((atom1['x'] - atom2['x'])**2 + (atom1['y'] - atom2['y'])**2 + (atom1['z'] - atom2['z'])**2)**0.5
+    Parameters:
+        pdb_file (str): Path to the PDB file.
 
-# Parser for PDB structure with consideration for protein structure, ligands, and cofactors
-def parse_pdb_extended_v2(pdb_path):
-    with open(pdb_path, 'r') as f:
-        lines = f.readlines()
+    Returns:
+        dict: A dictionary containing lists:
+              - 'chains': List of ATOM details.
+              - 'cofactors': List of HETATM details matching cofactor names.
+              - 'ligands': List of HETATM details matching ligand names.
+    """
     
-    structure = {'chains': {}, 'cofactors': [], 'ligand': {'resname': 'LIG', 'atoms': []}}
-    cofactor_names = ["MG", "NA", "CA", "K", "FE"]
-    waters_near_cofactors = []
+    def extract_atom_details(line):
+        """Helper function to extract atom details from a line."""
+        return {
+            'serial_number': int(line[6:11].strip()),
+            'name': line[12:16].strip(),
+            'alt_loc': line[16].strip(),
+            'res_name': line[17:20].strip(),
+            'chain_id': line[21].strip(),
+            'res_seq': int(line[22:26].strip()),
+            'icode': line[26].strip(),
+            'coord': [
+                float(line[30:38]),
+                float(line[38:46]),
+                float(line[46:54])
+            ],
+            'occupancy': float(line[54:60].strip()),
+            'temp_factor': float(line[60:66].strip()),
+            'element': line[76:78].strip(),
+            'charge': line[78:80].strip()
+        }
 
-    for line in lines:
-        if line.startswith("ATOM"):
-            chain_id = line[21]
-            residue_num = int(line[22:26].strip())
-            residue_name = line[17:20].strip()
-            if chain_id not in structure['chains']:
-                structure['chains'][chain_id] = {'residues': {}}
-            if residue_num not in structure['chains'][chain_id]['residues']:
-                structure['chains'][chain_id]['residues'][residue_num] = {'resname': residue_name, 'atoms': []}
-            atom_data = {
-                'atom_name': line[12:16].strip(),
-                'x': float(line[30:38]),
-                'y': float(line[38:46]),
-                'z': float(line[46:54])
-            }
-            structure['chains'][chain_id]['residues'][residue_num]['atoms'].append(atom_data)
-        elif line.startswith("HETATM"):
-            residue_name = line[17:20].strip()
-            atom_data = {
-                'atom_name': line[12:16].strip(),
-                'chain_id': line[21],
-                'residue_num': int(line[22:26].strip()),
-                'x': float(line[30:38]),
-                'y': float(line[38:46]),
-                'z': float(line[46:54])
-            }
-            if residue_name in cofactor_names:
-                cofactor_exists = False
-                for cof in structure['cofactors']:
-                    if cof['resname'] == residue_name and cof['chain_id'] == atom_data['chain_id'] and cof['residue_num'] == atom_data['residue_num']:
-                        cof['atoms'].append(atom_data)
-                        cofactor_exists = True
-                        break
-                if not cofactor_exists:
-                    structure['cofactors'].append({
-                        'resname': residue_name,
-                        'chain_id': atom_data['chain_id'],
-                        'residue_num': atom_data['residue_num'],
-                        'atoms': [atom_data]
-                    })
-            elif residue_name == "HOH":
-                waters_near_cofactors.append(atom_data)
-            else:
-                structure['ligand']['atoms'].append(atom_data)
+    chains = []
+    cofactors = []
+    ligands = []
 
-    for water in waters_near_cofactors:
-        for cofactor in structure['cofactors']:
-            for atom in cofactor['atoms']:
-                if distance(water, atom) <= 5.0:
-                    cofactor_exists = False
-                    for cof in structure['cofactors']:
-                        if cof['resname'] == "HOH" and cof['chain_id'] == water['chain_id'] and cof['residue_num'] == water['residue_num']:
-                            cof['atoms'].append(water)
-                            cofactor_exists = True
-                            break
-                    if not cofactor_exists:
-                        structure['cofactors'].append({
-                            'resname': "HOH",
-                            'chain_id': water['chain_id'],
-                            'residue_num': water['residue_num'],
-                            'atoms': [water]
-                        })
-                    break
-    return structure
+    cofactor_names = ["MG", "ZN", "CA", "K", "NA"]
+    ligand_names = ["ACP", "TPS"]
+
+    with open(pdb_file, 'r') as f:
+        for line in f:
+            if line.startswith('ATOM'):
+                chains.append(extract_atom_details(line))
+            elif line.startswith('HETATM'):
+                residue_name = line[17:20].strip()
+                details = extract_atom_details(line)
+                if residue_name in cofactor_names:
+                    cofactors.append(details)
+                elif residue_name in ligand_names:
+                    ligands.append(details)
+
+    return {
+        'chains': chains,
+        'cofactors': cofactors,
+        'ligands': ligands
+    }
 
 
+def print_pdb_structure(pdb_dict):
+    """
+    Prints the PDB structure from the dictionary in an organized manner.
 
-def print_chains(structure_dict):
-    atom_count = 1
-    for chain_id, chain_data in structure_dict['chains'].items():
-        for residue_num, residue_data in chain_data['residues'].items():
-            for atom in residue_data['atoms']:
-                print(f"ATOM  {atom_count:5} {atom['atom_name']:^4} {residue_data['resname']:<3} {chain_id} {residue_num:4}    {atom['x']:8.3f} {atom['y']:8.3f} {atom['z']:8.3f}")
-                atom_count += 1
+    Parameters:
+        pdb_dict (dict): Dictionary containing the parsed PDB lists.
 
-def print_cofactors(structure_dict):
-    atom_count = 1
-    for cofactor in structure_dict['cofactors']:
-        for atom in cofactor['atoms']:
-            print(f"HETATM{atom_count:5} {atom['atom_name']:^4} {cofactor['resname']:<3} {atom['chain_id']} {atom['residue_num']:4}    {atom['x']:8.3f} {atom['y']:8.3f} {atom['z']:8.3f}")
-            atom_count += 1
+    Returns:
+        None: Simply prints the PDB structured data.
+    """
 
-def print_ligand(structure_dict):
-    atom_count = 1
-    ligand = structure_dict['ligand']
-    for atom in ligand['atoms']:
-        print(f"HETATM{atom_count:5} {atom['atom_name']:^4} {ligand['resname']:<3} {atom['chain_id']} {atom['residue_num']:4}    {atom['x']:8.3f} {atom['y']:8.3f} {atom['z']:8.3f}")
-        atom_count += 1
+def format_line(atom_data, atom_type="ATOM  "):
+    return (
+        f"{atom_type:6s}{atom_data['serial_number']:5d} {atom_data['name']:<4s} {atom_data['alt_loc']:1s}{atom_data['res_name']:<3s} "
+        f"{atom_data['chain_id']:1s}{atom_data['res_seq']:4d}{atom_data['icode']:1s}   "
+        f"{atom_data['coord'][0]:8.3f}{atom_data['coord'][1]:8.3f}{atom_data['coord'][2]:8.3f}"
+        f"{atom_data['occupancy']:6.2f}{atom_data['temp_factor']:6.2f}          "
+        f"{atom_data['element']:^2s}{atom_data['charge']:2s}\n"
+    )
 
+def print_pdb_structure(pdb_dict):
+    # Print the chains first
+    for atom in pdb_dict['chains']:
+        print(format_line(atom), end='')
+
+    # Print cofactors
+    print("TER")
+    for atom in pdb_dict['cofactors']:
+        print(format_line(atom, "HETATM"), end='')
+
+    # Print ligands
+    print("TER")
+    for atom in pdb_dict['ligands']:
+        print(format_line(atom, "HETATM"), end='')
+
+    print("END")
 
 
 
 # Parse the provided PDB
-parsed_structure_extended = parse_pdb_extended_v2("../model_structure/3c9t.pdb")
-print('Chains: \n') 
-# Display the keys of the parsed structure for a preview
-print_chains(parsed_structure_extended)
-print('\n Cofactors: \n')
-  # Display the keys of the parsed structure for a preview
-print_cofactors(parsed_structure_extended)
-print('\n Ligand: \n')
-print_ligand(parsed_structure_extended)
+pdb_dict = parse_pdb_extended_v5("../model_structure/3c9t.pdb")
+print_pdb_structure(pdb_dict)
+#print(type(pdb_dict))
