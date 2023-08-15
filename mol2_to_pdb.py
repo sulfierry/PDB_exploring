@@ -25,3 +25,23 @@ else:
     output_pdb_file = sys.argv[2]
 
     convert_mol2_to_pdb(input_mol2_file, output_pdb_file)
+
+
+
+
+def map_to_molecular_group(atom_name, residue_name):
+    # Simplified mapping logic based on atom name, this needs refinement based on specific rules
+    if atom_name.startswith("C"):
+        return "CR"
+    elif atom_name.startswith("O"):
+        return "OR"
+    elif atom_name.startswith("N"):
+        return "NR"
+    elif atom_name.startswith("H"):
+        return "HR"
+    elif atom_name.startswith("P"):
+        return "PR"
+    elif atom_name.startswith("F"):
+        return "FR"
+
+    return None
