@@ -426,11 +426,11 @@ def map_to_molecular_group(atom_name, residue_name):
     elif atom_name.startswith("N"):
         return "NR"
     elif atom_name.startswith("H"):
-        return "HR"
+        return "H"
     elif atom_name.startswith("P"):
         return "P"
     elif atom_name.startswith("F"):
-        return "FR"
+        return "F"
 
     return None
 
@@ -447,21 +447,33 @@ def find_molecule(pdb_dict, molecule_name):
         tuple: (Name of the molecule, residue sequence number) or None if not found.
     """
 
+    chain_select = None
+
+    # Check if the chain_select was provided as an argument
+    if len(sys.argv) > 4:
+        chain_select = str(sys.argv[4])
+
     # Combine all atom lists
     all_atoms = pdb_dict['chains'] + pdb_dict['cofactors'] + pdb_dict['ligands']
 
     # Check if any atom with the desired molecule name is present
     for atom in all_atoms:
         if atom['res_name'] == molecule_name:
-            return (atom['res_name'], atom['res_seq'])
+            if chain_select is None or atom['chain_id'] == chain_select:
+                return (atom['res_name'], atom['res_seq'], atom['chain_id'])
+            else:
+                atom['chain_id'] = chain_select
+                return (atom['res_name'], atom['res_seq'], atom['chain_id'])
 
-    return None
 
 
 def verify_near_residues(input_pdb, ligand_residue, treshold_distance):
 
     # Extract ligand atoms based on ligand_residue tuple
-    ligand_atoms = [atom for atom in input_pdb['ligands'] if atom['res_name'] == ligand_residue[0] and atom['res_seq'] == ligand_residue[1]]
+    ligand_atoms = [atom for atom in input_pdb['ligands'] 
+                    if atom['res_name'] == ligand_residue[0] 
+                    and atom['res_seq'] == ligand_residue[1] 
+                    and atom['chain_id'] == ligand_residue[2]]
 
     # List to store the next residues and the interaction
     near_residues_info = []
@@ -470,7 +482,9 @@ def verify_near_residues(input_pdb, ligand_residue, treshold_distance):
     all_atoms = input_pdb['chains'] + input_pdb['cofactors'] + input_pdb['ligands']
 
     for atom in all_atoms:
-        if atom['res_name'] != ligand_residue[0] or atom['res_seq'] != ligand_residue[1]:  # Ignore ligand
+        if (atom['res_name'] != ligand_residue[0] or 
+           atom['res_seq'] != ligand_residue[1] or 
+           atom['chain_id'] != ligand_residue[2]):  # Ignore specified ligand
             min_distance = float('inf')
             interacting_atoms = None
 
@@ -501,8 +515,12 @@ def verify_near_residues(input_pdb, ligand_residue, treshold_distance):
     return near_residues_info
 
 
+
+
+
+
 def set_output(output_name, near_residues_dict, ligand_residue_tuple):
-    ligand_name, ligand_num = ligand_residue_tuple
+    ligand_name, ligand_num, ligand_chain = ligand_residue_tuple
 
     interacting_molecules_count = 0  # contador para moléculas interagindo
 
@@ -521,14 +539,14 @@ def set_output(output_name, near_residues_dict, ligand_residue_tuple):
             molecule_atom = entry['molecule_atom']
             ligand_atom = entry['ligand_atom']
 
-            # Use molecule_class to get classification if available, otherwise set to 'unknown'
+            # Use molecule_class para obter a classificação, se disponível, caso contrário, defina como 'unknown'
             aa_class = molecule_class.get(aa_name, "unknown")
 
             atom1_str = molecule_atom + "(" + aa_name + ")"
             atom2_str = ligand_atom + "(" + ligand_name + ")"
             nearby_atoms_str = "{:<10}-{:>10}".format(atom1_str, atom2_str)
 
-            # I'm assuming your is_interaction function works like this
+            # Supondo que sua função is_interaction funcione assim
             probable_interaction = is_interaction(molecule_atom, ligand_atom, aa_name, distance)
 
             # Incrementa o contador se houver interação
@@ -539,10 +557,12 @@ def set_output(output_name, near_residues_dict, ligand_residue_tuple):
 
             print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10.2f} {:^20}".format(
                 aa_name, aa_class, aa_num, chain_id, nearby_atoms_str, distance, probable_interaction))
-            
+
     print("\nTotal number of interacting molecules:", interacting_molecules_count)
     print("\n")
     return f"Successfully processed and saved! Total interactions: {interacting_molecules_count}"
+
+
 
 # Define a function to check for potential hydrogen bonds
 def is_interaction(atom1_name, atom2_name, residue_name, distance):
@@ -635,6 +655,5 @@ if __name__ == "__main__":
     ligand_residue = find_molecule(input_pdb, input_molecule)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     set_output(output_name, near_residues, ligand_residue)
-
 
 # Generalizar a funcao "map_to_molecular_group" para todos os atomos MMFF
