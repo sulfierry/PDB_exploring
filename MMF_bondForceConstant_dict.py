@@ -3,6 +3,20 @@
 
 # Transcribed by: Leon Sulfierry GitHub:https://github.com/sulfierry
 
+"""
+Neste novo dicionário, que se refere às constantes de força de ligação no MMFF94, as chaves e os valores associados têm os seguintes significados:
+
+**Chave (tupla de dois valores)**:
+1. **Primeiro valor**: Representa o tipo de átomo em uma extremidade da ligação.
+2. **Segundo valor**: Representa o tipo de átomo na outra extremidade da ligação.
+
+Então, a chave identifica uma ligação específica entre dois tipos de átomos no modelo de força de campo. Por exemplo, a chave ('1', '6') representa a ligação entre átomos do tipo 1 e tipo 6.
+
+**Valores associados à chave**:
+1. **'r0-ref'**: Este é o comprimento de ligação de referência (ou equilíbrio) para os dois tipos de átomos. É a distância ideal entre os átomos quando a energia potencial da ligação é mínima. As unidades são tipicamente em Ångströms (Å).
+2. **'kb-ref'**: É a constante de força para a ligação, que determina a rigidez da ligação. Esta constante é usada para calcular a energia potencial associada a desvios do comprimento de ligação de equilíbrio. As unidades são geralmente em kcal/mol·Å².
+3. **'Source'**: Indica a fonte ou referência de onde esses valores foram obtidos ou ajustados. 'C94' e 'E94' são provavelmente referências ou códigos para estudos ou publicações específicas que forneceram ou validaram esses parâmetros.
+"""
 
 bndk_dict = {
     ('1', '6'): {'r0-ref': '1.084', 'kb-ref': '5.15', 'Source': 'C94'},

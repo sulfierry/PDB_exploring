@@ -3,6 +3,16 @@
 
 # Transcribed by: Leon Sulfierry GitHub:https://github.com/sulfierry
 
+# 'Valor_escalar' : Esta é a chave do dicionário, que provavelmente indica um tipo de átomo específico ou uma classificação MMFF94 para um átomo.
+# 'alpha-i' :Representa o parâmetro ϵ no potencial de Lennard-Jones. É a profundidade do poço de potencial e descreve a força de atração entre os átomos.
+# 'N-i' :  Equivale ao parâmetro σ no potencial de Lennard-Jones. É a distância na qual o potencial entre dois átomos é zero, basicamente referindo-se ao tamanho efetivo do átomo.
+# 'A-i' e 'G-i': Estes estão associados ao termo de energia de ângulo de ligação no MMFF94.
+# 'A-i': Refere-se ao ângulo de ligação de equilíbrio em graus.
+# 'G-i': É a constante de força associada ao ângulo de ligação.
+# 'DA': Em muitos campos de força, "DA" refere-se a um átomo doador/aceitador. No contexto do MMFF94, pode indicar se o átomo em questão é um doador ou aceitador de ligações de hidrogênio ou pode ter algum outro significado específico.
+# 'Symb': Representa um símbolo ou abreviação para o tipo de átomo ou grupo funcional.
+# Origin': Indica a origem ou fonte dos parâmetros. "E94" provavelmente se refere a uma especificação ou literatura específica de onde os parâmetros foram derivados ou adaptados para o MMFF94.
+
 vdw_dict = {
     '1': {'alpha-i': '1.050', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CR', 'Origin': 'E94'},
     '2': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C=C', 'Origin': 'E94'},

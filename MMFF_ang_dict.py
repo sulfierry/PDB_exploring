@@ -3,7 +3,23 @@
 
 # Transcribed by: Leon Sulfierry GitHub:https://github.com/sulfierry
 
+
+
+"""
+EX: ('1', '0', '0.000'): {'ka': '108.900', 'theta0': '0:*-1-*', 'Comment/origin': 'MMFF94 DEF'}
+
+Tipo de Átomo Central ('1' em todos os exemplos): Este valor é constante em todos os exemplos fornecidos, o que sugere que ele representa o tipo de átomo central no ângulo. No contexto do MMFF94, cada tipo de átomo tem um código numérico associado, então '1' se refere a um tipo específico de átomo.
+Tipo de Átomo Adjacente: Este é o segundo valor na tupla e varia nos exemplos fornecidos. Este provavelmente representa o tipo de átomo que está formando um ângulo com o átomo central. Como o MMFF94 tem tipos de átomos definidos numericamente, cada número aqui se refere a um tipo diferente de átomo.
+Parâmetro Adicional (valores como '0.000', '0.851', etc.): Este terceiro valor na chave é um pouco mais enigmático sem mais contexto. No entanto, com base no que sabemos sobre forças de campo, ele pode representar algum tipo de ajuste ou correção específica para a interação entre os dois tipos de 
+átomos mencionados anteriormente. Poderia ser, por exemplo, uma correção baseada na eletronegatividade, polarizabilidade ou outra propriedade atômica/molecular.
+
+Valores associados à chave:
+'ka': É o valor da constante de força para o ângulo. O valor '108.900' provavelmente é em unidades de cal/mol·rad² e é usado para calcular a energia potencial associada a desvios do ângulo de equilíbrio.
+'theta0': Define os tipos de átomos envolvidos no ângulo. '0:-1-' parece ser uma notação que define os tipos de átomos nas posições do ângulo. O '*' pode se referir a qualquer tipo de átomo, e '-1-' indica o ângulo em si.
+'Comment/origin': Provavelmente é uma anotação ou comentário sobre a origem ou uso desse conjunto de parâmetros. Neste caso, indica que é uma definição padrão do MMFF94.
+"""
 ang_dict = {
+
     ('1', '0', '0.000'): {'ka': '108.900', 'theta0': '0:*-1-*', 'Comment/origin': 'MMFF94 DEF'},
     ('1', '1', '0.851'): {'ka': '109.608', 'theta0': 'C94', 'Comment/origin': ''},
     ('1', '2', '0.736'): {'ka': '109.445', 'theta0': 'C94', 'Comment/origin': ''},
