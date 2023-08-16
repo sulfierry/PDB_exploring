@@ -758,4 +758,5 @@ if __name__ == "__main__":
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     set_output(output_name, near_residues, ligand_residue)
 
+
 # verificar artigos sobre cinases + IA
