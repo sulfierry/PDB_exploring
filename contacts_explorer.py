@@ -8,142 +8,190 @@ import sys
 
 # Variaveis globais ################################################################################################
 
-molecular_group_dict = {
+aminoacid_group_dict = {
 
+     # Carbonos da cadeia lateral de valina, leucina, isoleucina e metionina são todos carbonos alquílicos
+     # Valina (VAL): CG1, CG2
+     # Leucina (LEU): CG, CD1, CD2
+     # Isoleucina (ILE): CG1, CG2, CD1
+     # Metionina (MET): CG, SD, CE
     'CR': {'PRIMARY MMF TYPE': '1', 'DEFAULT TYPES': ['1', '1', '1', '0'], 'DEFINITION': 'ALKYL CARBON'},
-    'C=C': {'PRIMARY MMF TYPE': '2', 'DEFAULT TYPES': ['2', '2', '1', '0'], 'DEFINITION': 'VINYLIC'},
-    'C=O': {'PRIMARY MMF TYPE': '3', 'DEFAULT TYPES': ['3', '3', '1', '0'], 'DEFINITION': 'GENERAL CARBONYL C'},
-    'CSP': {'PRIMARY MMF TYPE': '4', 'DEFAULT TYPES': ['4', '4', '1', '0'], 'DEFINITION': 'ACETYLENIC C'},
-    'HC': {'PRIMARY MMF TYPE': '5', 'DEFAULT TYPES': ['5', '5', '5', '0'], 'DEFINITION': 'H-C'},
-    'OR': {'PRIMARY MMF TYPE': '6', 'DEFAULT TYPES': ['6', '6', '6', '0'], 'DEFINITION': 'O-CSP3'},
-    'O=C': {'PRIMARY MMF TYPE': '7', 'DEFAULT TYPES': ['7', '7', '6', '0'], 'DEFINITION': 'O=C, GENERIC'},
-    'NR': {'PRIMARY MMF TYPE': '8', 'DEFAULT TYPES': ['8', '8', '8', '0'], 'DEFINITION': 'AMINE N'},
-    'N=C': {'PRIMARY MMF TYPE': '9', 'DEFAULT TYPES': ['9', '9', '8', '0'], 'DEFINITION': 'N=C, IMINES'},
-    'NC=O': {'PRIMARY MMF TYPE': '10', 'DEFAULT TYPES': ['10', '10', '8', '0'], 'DEFINITION': 'N-C=O, AMIDES'},
-    'F': {'PRIMARY MMF TYPE': '11', 'DEFAULT TYPES': ['11', '11', '11', '0'], 'DEFINITION': 'FLUORINE'},
-    'CL': {'PRIMARY MMF TYPE': '12', 'DEFAULT TYPES': ['12', '12', '12', '0'], 'DEFINITION': 'CHLORINE'},
-    'BR': {'PRIMARY MMF TYPE': '13', 'DEFAULT TYPES': ['13', '13', '13', '0'], 'DEFINITION': 'BROMINE'},
-    'I': {'PRIMARY MMF TYPE': '14', 'DEFAULT TYPES': ['14', '14', '14', '0'], 'DEFINITION': 'IODINE'},
-    'S': {'PRIMARY MMF TYPE': '15', 'DEFAULT TYPES': ['15', '15', '15', '0'], 'DEFINITION': 'THIOL, SULFIDE'},
-    'S=C': {'PRIMARY MMF TYPE': '16', 'DEFAULT TYPES': ['16', '16', '15', '0'], 'DEFINITION': 'S DOUBLY BONDED TO C'},
-    'S=O': {'PRIMARY MMF TYPE': '17', 'DEFAULT TYPES': ['17', '17', '15', '0'], 'DEFINITION': 'SULFOXIDE S'},
-    'SO2': {'PRIMARY MMF TYPE': '18', 'DEFAULT TYPES': ['18', '18', '15', '0'], 'DEFINITION': 'SULFONE S'},
-    'SI': {'PRIMARY MMF TYPE': '19', 'DEFAULT TYPES': ['19', '19', '19', '0'], 'DEFINITION': 'SILICON'},
-    'CR4R': {'PRIMARY MMF TYPE': '20', 'DEFAULT TYPES': ['20', '1', '1', '0'], 'DEFINITION': 'C IN CYCLOBUTYL'},
-    'HOR': {'PRIMARY MMF TYPE': '21', 'DEFAULT TYPES': ['21', '21', '5', '0'], 'DEFINITION': 'H-O, ALCOHOLS'},
-    'CR3R': {'PRIMARY MMF TYPE': '22', 'DEFAULT TYPES': ['22', '22', '1', '0'], 'DEFINITION': 'C IN CYCLOPROPLY'},
-    'HNR': {'PRIMARY MMF TYPE': '23', 'DEFAULT TYPES': ['23', '23', '5', '0'], 'DEFINITION': 'H-N, AMINES'},
-    'HOCO': {'PRIMARY MMF TYPE': '24', 'DEFAULT TYPES': ['24', '24', '5', '0'], 'DEFINITION': 'H-O, ACIDS'},
-    'PO4': {'PRIMARY MMF TYPE': '25', 'DEFAULT TYPES': ['25', '25', '25', '0'], 'DEFINITION': 'PHOSPHODIESTER'},
-    'P': {'PRIMARY MMF TYPE': '26', 'DEFAULT TYPES': ['26', '26', '25', '0'], 'DEFINITION': 'TRICOORDINATE P'},
-    'HN=C': {'PRIMARY MMF TYPE': '27', 'DEFAULT TYPES': ['27', '28', '5', '0'], 'DEFINITION': 'IMINE N-H'},
-    'HNCO': {'PRIMARY MMF TYPE': '28', 'DEFAULT TYPES': ['28', '28', '5', '0'], 'DEFINITION': 'H-N, AMIDES'},
-    'HOCC': {'PRIMARY MMF TYPE': '29', 'DEFAULT TYPES': ['29', '29', '5', '0'], 'DEFINITION': 'H-O, ENOLS, PHENOLS'},
-    'CE4R': {'PRIMARY MMF TYPE': '30', 'DEFAULT TYPES': ['30', '2', '1', '0'], 'DEFINITION': 'C=C IN 4-RING'},
-    'HOH': {'PRIMARY MMF TYPE': '31', 'DEFAULT TYPES': ['31', '31', '31', '0'], 'DEFINITION': 'H-OH'},
-    'O2CM': {'PRIMARY MMF TYPE': '32', 'DEFAULT TYPES': ['32', '7', '6', '0'], 'DEFINITION': 'O, CARBOXYLATE ANION'},
-    'HOS': {'PRIMARY MMF TYPE': '33', 'DEFAULT TYPES': ['33', '21', '5', '0'], 'DEFINITION': 'H-O-S, SULF ACIDS'},
-    'NR+': {'PRIMARY MMF TYPE': '34', 'DEFAULT TYPES': ['34', '8', '8', '0'], 'DEFINITION': 'N+, QUATERNARY N'},
-    'OM': {'PRIMARY MMF TYPE': '35', 'DEFAULT TYPES': ['35', '6', '6', '0'], 'DEFINITION': 'OXIDE OXYGEN ON SP3 C'},
-    'HNR+': {'PRIMARY MMF TYPE': '36', 'DEFAULT TYPES': ['36', '36', '5', '0'], 'DEFINITION': 'H-N+'},
-    'CB': {'PRIMARY MMF TYPE': '37', 'DEFAULT TYPES': ['37', '2', '1', '0'], 'DEFINITION': 'AROMATIC C'},
-    'NPYD': {'PRIMARY MMF TYPE': '38', 'DEFAULT TYPES': ['38', '9', '8', '0'], 'DEFINITION': 'AROMATIC N, PYRIDINE'},
-    'NPYL': {'PRIMARY MMF TYPE': '39', 'DEFAULT TYPES': ['39', '10', '8', '0'], 'DEFINITION': 'AROMATIC N, PYRROLE'},
-    'NC=C': {'PRIMARY MMF TYPE': '40', 'DEFAULT TYPES': ['40', '10', '8', '0'], 'DEFINITION': 'N-C=C (DELOC LP)'},
-    'CO2M': {'PRIMARY MMF TYPE': '41', 'DEFAULT TYPES': ['41', '3', '1', '0'], 'DEFINITION': 'C IN CO2- ANION'},
-    'NSP': {'PRIMARY MMF TYPE': '42', 'DEFAULT TYPES': ['42', '42', '8', '0'], 'DEFINITION': 'N TRIPLE BONDED'},
-    'NSO2': {'PRIMARY MMF TYPE': '43', 'DEFAULT TYPES': ['43', '10', '8', '0'], 'DEFINITION': 'N, SULFONAMIDES'},
-    'STHI': {'PRIMARY MMF TYPE': '44', 'DEFAULT TYPES': ['44', '16', '15', '0'], 'DEFINITION': 'S IN THIOPHENE'},
-    'NO2': {'PRIMARY MMF TYPE': '45', 'DEFAULT TYPES': ['45', '10', '8', '0'], 'DEFINITION': 'NITRO GROUP N'},
-    'N=O': {'PRIMARY MMF TYPE': '46', 'DEFAULT TYPES': ['46', '9', '8', '0'], 'DEFINITION': 'NITROSO GROUP N'},
-    'NAZT': {'PRIMARY MMF TYPE': '47', 'DEFAULT TYPES': ['47', '42', '8', '0'], 'DEFINITION': 'TERMINAL N, AZIDE'},
-    'NSO': {'PRIMARY MMF TYPE': '48', 'DEFAULT TYPES': ['48', '9', '8', '0'], 'DEFINITION': 'DIVAL. N IN S(N)(O) GP'},
-    'O+': {'PRIMARY MMF TYPE': '49', 'DEFAULT TYPES': ['49', '6', '6', '0'], 'DEFINITION': 'OXONIUM (TRICOORD) O'},
-    'HO+': {'PRIMARY MMF TYPE': '50', 'DEFAULT TYPES': ['50', '21', '5', '0'], 'DEFINITION': 'H ON OXONIUM OXYGEN'},
-    'O=+': {'PRIMARY MMF TYPE': '51', 'DEFAULT TYPES': ['51', '7', '6', '0'], 'DEFINITION': 'OXENIUM OXYGEN+'},
-    'HO=+': {'PRIMARY MMF TYPE': '52', 'DEFAULT TYPES': ['52', '21', '5', '0'], 'DEFINITION': 'H ON OXENIUM O+'},
-    '=N=': {'PRIMARY MMF TYPE': '53', 'DEFAULT TYPES': ['53', '42', '8', '0'], 'DEFINITION': 'N TWICE DOUBLE BONDED'},
-    'N+=C': {'PRIMARY MMF TYPE': '54', 'DEFAULT TYPES': ['54', '9', '8', '0'], 'DEFINITION': 'IMINIUM NITROGEN'},
-    'NCN+': {'PRIMARY MMF TYPE': '55', 'DEFAULT TYPES': ['55', '10', '8', '0'], 'DEFINITION': 'N IN +N=C-N: ; Q=1/2'},
-    'NGD+': {'PRIMARY MMF TYPE': '56', 'DEFAULT TYPES': ['56', '10', '8', '0'], 'DEFINITION': 'GUANIDINIUM N; Q=1/3'},
-    'CGD+': {'PRIMARY MMF TYPE': '57', 'DEFAULT TYPES': ['57', '2', '1', '0'], 'DEFINITION': 'GUANIDINIUM CARBON'},
-    'NPD+': {'PRIMARY MMF TYPE': '58', 'DEFAULT TYPES': ['58', '10', '8', '0'], 'DEFINITION': 'N PYRIDINIUM ION'},
-    'OFUR': {'PRIMARY MMF TYPE': '59', 'DEFAULT TYPES': ['59', '6', '6', '0'], 'DEFINITION': 'AROMATIC O, FURAN'},
-    'C%': {'PRIMARY MMF TYPE': '60', 'DEFAULT TYPES': ['60', '4', '1', '0'], 'DEFINITION': 'ISONITRILE CARBON'},
-    'NR%': {'PRIMARY MMF TYPE': '61', 'DEFAULT TYPES': ['61', '42', '8', '0'], 'DEFINITION': 'ISONITRILE N'},
-    'NM': {'PRIMARY MMF TYPE': '62', 'DEFAULT TYPES': ['62', '10', '8', '0'], 'DEFINITION': 'SULFONAMIDE N-'},
-    'C5A': {'PRIMARY MMF TYPE': '63', 'DEFAULT TYPES': ['63', '2', '1', '0'], 'DEFINITION': 'ALPHA AROM 5-RING C'},
-    'C5B': {'PRIMARY MMF TYPE': '64', 'DEFAULT TYPES': ['64', '2', '1', '0'], 'DEFINITION': 'BETA AROM 5-RING C'},
-    'N5A': {'PRIMARY MMF TYPE': '65', 'DEFAULT TYPES': ['65', '9', '8', '0'], 'DEFINITION': 'ALPHA AROM 5-RING N'},
-    'N5B': {'PRIMARY MMF TYPE': '66', 'DEFAULT TYPES': ['66', '9', '8', '0'], 'DEFINITION': 'ALPHA AROM 5-RING N'},
-    'N2OX': {'PRIMARY MMF TYPE': '67', 'DEFAULT TYPES': ['67', '9', '8', '0'], 'DEFINITION': 'NITROGEN IN N-OXIDE'},
-    'N3OX': {'PRIMARY MMF TYPE': '68', 'DEFAULT TYPES': ['68', '8', '8', '0'], 'DEFINITION': 'NITROGEN IN N-OXIDE'},
-    'NPOX': {'PRIMARY MMF TYPE': '69', 'DEFAULT TYPES': ['69', '9', '8', '0'], 'DEFINITION': 'NITROGEN IN N-OXIDE'},
-    'OH2': {'PRIMARY MMF TYPE': '70', 'DEFAULT TYPES': ['70', '70', '70', '70'], 'DEFINITION': 'OXYGEN IN WATER'},
-    'HS': {'PRIMARY MMF TYPE': '71', 'DEFAULT TYPES': ['71', '5', '5', '0'], 'DEFINITION': 'H-S'},
-    'S2CM': {'PRIMARY MMF TYPE': '72', 'DEFAULT TYPES': ['72', '16', '15', '0'], 'DEFINITION': 'THIOCARBOXYLATE S'},
-    'SO2M': {'PRIMARY MMF TYPE': '73', 'DEFAULT TYPES': ['73', '18', '15', '0'], 'DEFINITION': 'SULFUR IN SULFINATE'},
-    '=S=O': {'PRIMARY MMF TYPE': '74', 'DEFAULT TYPES': ['74', '17', '15', '0'], 'DEFINITION': 'SULFINYL SULFUR, C=S=O'},
-    '-P=C': {'PRIMARY MMF TYPE': '75', 'DEFAULT TYPES': ['75', '26', '25', '0'], 'DEFINITION': 'P DOUBLY BONDED TO C'},
-    'N5M': {'PRIMARY MMF TYPE': '76', 'DEFAULT TYPES': ['76', '9', '8', '0'], 'DEFINITION': 'NEG N IN TETRAZOLE AN'},
-    'CLO4': {'PRIMARY MMF TYPE': '77', 'DEFAULT TYPES': ['77', '12', '12', '0'], 'DEFINITION': 'CHLORINE IN CLO4(-)'},
-    'C5': {'PRIMARY MMF TYPE': '78', 'DEFAULT TYPES': ['78', '2', '1', '0'], 'DEFINITION': 'GENERAL AROM 5-RING C'},
-    'N5': {'PRIMARY MMF TYPE': '79', 'DEFAULT TYPES': ['79', '9', '8', '0'], 'DEFINITION': 'GENERAL AROM 5-RING N'},
-    'CIM+': {'PRIMARY MMF TYPE': '80', 'DEFAULT TYPES': ['80', '2', '1', '0'], 'DEFINITION': 'C IN N-C-N, IM+ ION'},
-    'NIM+': {'PRIMARY MMF TYPE': '81', 'DEFAULT TYPES': ['81', '10', '8', '0'], 'DEFINITION': 'N IN N-C-N, IM+ ION'},
-    'N5AX': {'PRIMARY MMF TYPE': '82', 'DEFAULT TYPES': ['82', '9', '8', '0'], 'DEFINITION': '5R NITROGEN IN N-OXIDE'},
-    'FE+2': {'PRIMARY MMF TYPE': '87', 'DEFAULT TYPES': ['87', '87', '87', '87'], 'DEFINITION': 'IRON +2 CATION'},
-    'FE+3': {'PRIMARY MMF TYPE': '88', 'DEFAULT TYPES': ['88', '88', '88', '88'], 'DEFINITION': 'IRON +3 CATION'},
-    'F-': {'PRIMARY MMF TYPE': '89', 'DEFAULT TYPES': ['89', '89', '89', '89'], 'DEFINITION': 'FLUORIDE ANION'},
-    'CL-': {'PRIMARY MMF TYPE': '90', 'DEFAULT TYPES': ['90', '90', '90', '90'], 'DEFINITION': 'CHLORIDE ANION'},
-    'BR-': {'PRIMARY MMF TYPE': '91', 'DEFAULT TYPES': ['91', '91', '91', '91'], 'DEFINITION': 'BROMIDE ANION'},
-    'LI+': {'PRIMARY MMF TYPE': '92', 'DEFAULT TYPES': ['92', '92', '92', '92'], 'DEFINITION': 'LITHIUM CATION'},
-    'NA+': {'PRIMARY MMF TYPE': '93', 'DEFAULT TYPES': ['93', '93', '93', '93'], 'DEFINITION': 'SODIUM CATION'},
-    'K+': {'PRIMARY MMF TYPE': '94', 'DEFAULT TYPES': ['94', '94', '94', '94'], 'DEFINITION': 'POTASSIUM CATION'},
-    'ZN+2': {'PRIMARY MMF TYPE': '95', 'DEFAULT TYPES': ['95', '95', '95', '95'], 'DEFINITION': 'DIPOSITIVE ZINC CATION'},
-    'CA+2': {'PRIMARY MMF TYPE': '96', 'DEFAULT TYPES': ['96', '96', '96', '96'], 'DEFINITION': 'DIPOSITIVE CALCIUM CATION'},
-    'CU+1': {'PRIMARY MMF TYPE': '97', 'DEFAULT TYPES': ['97', '97', '97', '97'], 'DEFINITION': 'MONOPOSITIVE COPPER CATION'},
-    'CU+2': {'PRIMARY MMF TYPE': '98', 'DEFAULT TYPES': ['98', '98', '98', '98'], 'DEFINITION': 'DIPOSITIVE COPPER CATION'},
-    'MG+2': {'PRIMARY MMF TYPE': '99', 'DEFAULT TYPES': ['99', '99', '99', '99'], 'DEFINITION': 'DIPOSITIVE MAGNESIUM CATION'},
+    
 
+    # Alanina (Ala, A) - Grupo lateral: CH3 . Valina (Val, V) - Grupo lateral: CH(CH3)2. Leucina (Leu, L) - Grupo lateral: CH2CH(CH3)2
+    # Isoleucina (Ile, I) - Grupo lateral: CH(CH3)CH2CH3. Proleína (Pro, P) - Grupo lateral: Anel alifático que se conecta ao nitrogênio e ao carbono alfa.
+    # Metionina (Met, M) - Grupo lateral: CH2CH2SCH3. Cisteína (Cys, C) - Grupo lateral: CH2SH Fenilalanina (Phe, F) - Grupo lateral: CH2 com anel aromático.
+    # Tirosina (Tyr, Y) - Grupo lateral: CH2 com anel aromático e OH. Treonina (Thr, T) - Grupo lateral: CH(OH)CH3. Lisina (Lys, K) - Grupo lateral: CH2 (4 vezes) terminando em NH3+.
+    # Arginina (Arg, R) - Grupo lateral: CH2 (3 vezes) seguido de um grupo guanidino. Glutamato (Glu, E) e Aspartato (Asp, D) - Estes possuem uma parte de sua cadeia lateral que é CH2.
+    # Observe que o esqueleto comum de aminoácidos (parte fora do grupo lateral) também possui ligações H-C.  
+    # O carbono alfa, que está ligado diretamente ao grupo amino e ao grupo carboxila, está ligado a um hidrogênio em todos os aminoácidos exceto a prolina.
+    'HC': {'PRIMARY MMF TYPE': '5', 'DEFAULT TYPES': ['5', '5', '5', '0'], 'DEFINITION': 'H-C'},
+
+    # O termo "O-CSP3" se refere a um átomo de oxigênio ligado a um átomo de carbono sp3 (carbono tetraédrico/saturado). 
+    # Nos aminoácidos padrão, o "O-CSP3" é comumente encontrado no grupo carboxila (COOH) e, para alguns aminoácidos, em grupos laterais específicos.
+    # Todos os aminoácidos: Na terminação carboxila (COOH). Portanto, todos os aminoácidos padrão terão pelo menos um O-CSP3 no carbono da carboxila. \
+    # Serina (Ser, S): Grupo lateral: CH2OH. O oxigênio do grupo hidroxila (OH) está ligado a um carbono sp3. 
+    # Treonina (Thr, T): Grupo lateral: CH(OH)CH3. O oxigênio do grupo hidroxila (OH) está ligado a um carbono sp3. 
+    # Tirosina (Tyr, Y): Grupo lateral: CH2 com anel aromático e OH. O oxigênio do grupo hidroxila (OH) está ligado a um carbono sp3. 
+    # Ácido aspártico (Asp, D) e Ácido glutâmico (Glu, E): Ambos têm um segundo O-CSP3 no grupo carboxilato de suas cadeias laterais. 
+    # Asparagina (Asn, N) e Glutamina (Gln, Q): Ambos têm um O-CSP3 em suas cadeias laterais ligado ao carbono do grupo amida.
+    'OR': {'PRIMARY MMF TYPE': '6', 'DEFAULT TYPES': ['6', '6', '6', '0'], 'DEFINITION': 'O-CSP3'},
+
+    # O termo "O=C" refere-se ao oxigênio de uma ligação dupla carbonílica, que é encontrado no grupo carboxila (COOH) e em outros grupos funcionais de aminoácidos.
+    # O grupo carboxila (COOH) presente em todos os aminoácidos padrão tem um oxigênio carbonílico. Portanto, todos os aminoácidos padrão terão pelo menos um "O=C" devido à sua terminação carboxila.
+    # Ácido aspártico (Asp, D) e Ácido glutâmico (Glu, E): Além do grupo carboxila, eles também têm um grupo carboxilato adicional em suas cadeias laterais, fornecendo um segundo "O=C".
+    # Asparagina (Asn, N) e Glutamina (Gln, Q): Ambos têm um grupo amida em suas cadeias laterais, que contém um "O=C". Tirosina (Tyr, Y): Contém um grupo fenol em sua cadeia lateral, 
+    # e embora o anel benzênico contenha oxigênios, eles não estão na forma "O=C". No entanto, estou mencionando a tirosina para esclarecer que, embora contenha oxigênio, não tem o grupo "O=C" na cadeia lateral.
+    # Cisteína (Cys, C): Possui um grupo tiol, mas, como se refere a enxofre, não é "O=C". Mais uma vez, estou mencionando a cisteína apenas para esclarecimento.
+    'O=C': {'PRIMARY MMF TYPE': '7', 'DEFAULT TYPES': ['7', '7', '6', '0'], 'DEFINITION': 'O=C, GENERIC'},
+    
+    # O termo "AMINE N" refere-se ao nitrogênio presente em aminas. Nos aminoácidos, o nitrogênio da amina é tipicamente encontrado no grupo amina (NH2, NH ou N).
+    # Todos os aminoácidos: Todos os 20 aminoácidos padrão têm um grupo amina na terminação N-terminal. Portanto, eles todos têm pelo menos um nitrogênio da amina.
+    # Lisina (Lys, K): Além do grupo amina no N-terminal, a lisina possui um segundo grupo amina em sua cadeia lateral. Arginina (Arg, R): A arginina tem um grupo 
+    # guanidina em sua cadeia lateral, que contém múltiplos nitrogênios. No entanto, nem todos esses nitrogênios são equivalentes a nitrogênios de amina típicos, 
+    # mas estão presentes na estrutura geral do grupo guanidina. Histidina (His, H): A histidina tem um anel imidazol em sua cadeia lateral que contém dois nitrogênios. 
+    # Novamente, embora estes não sejam nitrogênios de aminas típicas, eles são nitrogênios em um contexto de heterociclo.
+    'NR': {'PRIMARY MMF TYPE': '8', 'DEFAULT TYPES': ['8', '8', '8', '0'], 'DEFINITION': 'AMINE N'},
+
+
+    # Os amidos (N-C=O) são encontrados nos aminoácidos que possuem cadeias laterais contendo o grupo funcional conamida.
+    # Asparagina (Asn, N): Cadeia lateral: CH₂CONH₂. Posição atômica do amido: A nitrogênio da amida é denominado ND2, e o carbono da amida é denominado CG. 
+    # Glutamina (Gln, Q): Cadeia lateral: CH₂CH₂CONH₂. Posição atômica do amido: O nitrogênio da amida é denominado NE2, e o carbono da amida é denominado CD. 
+    # Além disso, a ligação peptídica que liga aminoácidos em uma proteína é, por definição, uma ligação amida, mas ela é formada entre o grupo carboxílico de 
+    # um aminoácido e o grupo amina do próximo, e não é parte da cadeia lateral de qualquer aminoácido.
+    'NC=O': {'PRIMARY MMF TYPE': '10', 'DEFAULT TYPES': ['10', '10', '8', '0'], 'DEFINITION': 'N-C=O, AMIDES'},
+
+    # Os aminoácidos que contêm grupos tiol (–SH) e sulfeto (ou dissulfeto, –S–S–) são:
+    # Cisteína (Cys, C): Contém um grupo tiol (–SH). Quando duas moléculas de cisteína estão próximas uma da outra em uma proteína, 
+    # elas podem formar uma ligação dissulfeto (–S–S–), que é covalente e ajuda a estabilizar a estrutura tridimensional da proteína. 
+    # Metionina (Met, M): Não possui um grupo tiol, mas possui um átomo de enxofre em sua cadeia lateral na forma de um grupo tioéter. 
+    # Embora não forme ligações dissulfeto como a cisteína, a metionina é relevante quando se fala de aminoácidos contendo enxofre.
+    'S': {'PRIMARY MMF TYPE': '15', 'DEFAULT TYPES': ['15', '15', '15', '0'], 'DEFINITION': 'THIOL, SULFIDE'},
+
+
+    # O aminoácido padrão metionina não possui um enxofre na forma de sulfona em sua estrutura natural. 
+    # No entanto, quando a metionina é exposta a agentes oxidantes mais fortes ou por um período mais longo, pode ocorrer uma oxidação adicional 
+    # do sulfoxido de metionina para formar sulfona de metionina. Em outras palavras, a metionina pode ser oxidada a metionina sulfoxido e, em 
+    # seguida, a metionina sulfoxido pode ser oxidada adicionalmente para formar sulfona de metionina.
+    'SO2': {'PRIMARY MMF TYPE': '18', 'DEFAULT TYPES': ['18', '18', '15', '0'], 'DEFINITION': 'SULFONE S'},
+
+    # Em relação aos aminoácidos padrão encontrados nas proteínas, os que contêm um grupo hidroxila (H-O) e, portanto, podem ser considerados alcoóis são: 
+    # Serina (Ser, S): Este aminoácido possui um grupo lateral -CH2OH. Treonina (Thr, T): Contém um grupo lateral -CHOHCH3.
+    'HOR': {'PRIMARY MMF TYPE': '21', 'DEFAULT TYPES': ['21', '21', '5', '0'], 'DEFINITION': 'H-O, ALCOHOLS'},
+
+    # Aminas primárias são caracterizadas pela presença de um grupo amino (-NH2). Os aminoácidos que possuem um grupo amino (em adição ao grupo amino terminal, que todos os aminoácidos têm) são: 
+    # Lisina (Lys, K): Possui uma cadeia lateral que termina em um grupo -NH2. A posição atômica em uma molécula típica de lisina para este nitrogênio é Nζ (ou, em alguns formatos de notação, NZ). 
+    # Arginina (Arg, R): Sua cadeia lateral contém três grupos nitrogênio, mas eles são parte de um grupo guanidino. Assim, embora a arginina contenha nitrogênios, eles não estão na forma de aminas primárias típicas.
+    'HNR': {'PRIMARY MMF TYPE': '23', 'DEFAULT TYPES': ['23', '23', '5', '0'], 'DEFINITION': 'H-N, AMINES'},
+
+    # Quando se refere a "H-O, ACIDS", parece estar se referindo aos grupos hidroxila que fazem parte de ácidos carboxílicos. No contexto dos aminoácidos, 
+    # todos eles possuem um grupo carboxílico (-COOH) na extremidade C-terminal, mas este grupo é geralmente desprotonado em pH fisiológico, tornando-se -COO^-. 
+    # Dentre os aminoácidos padrão, temos: Ácido aspártico (Asp, D): Possui um grupo carboxílico adicional em sua cadeia lateral. Em pH fisiológico, este grupo 
+    # geralmente está na forma desprotonada, -COO^-. Ácido glutâmico (Glu, E): Similar ao ácido aspártico, também tem um grupo carboxílico extra em sua cadeia 
+    # lateral que, em pH fisiológico, estará na forma -COO^-.
+    'HOCO': {'PRIMARY MMF TYPE': '24', 'DEFAULT TYPES': ['24', '24', '5', '0'], 'DEFINITION': 'H-O, ACIDS'},
+
+
+    # Todos os aminoácidos em peptídeos e proteínas, exceto os resíduos terminais, apresentarão um átomo de nitrogênio ligado por uma ligação 
+    # simples a um átomo de hidrogênio (H-N) em sua estrutura amida.
+    'HNCO': {'PRIMARY MMF TYPE': '28', 'DEFAULT TYPES': ['28', '28', '5', '0'], 'DEFINITION': 'H-N, AMIDES'},
+
+    #  A serina e a treonina, dois dos 20 aminoácidos padrão, têm um grupo hidroxila (-OH) como parte de suas cadeias laterais. Serina (Ser, S) tem a cadeia lateral: -CH₂-OH 
+    # Treonina (Thr, T) tem a cadeia lateral: -CH(OH)-CH₃
+    'HOH': {'PRIMARY MMF TYPE': '31', 'DEFAULT TYPES': ['31', '31', '31', '0'], 'DEFINITION': 'H-OH'},
+
+    # O grupo "O, CARBOXYLATE ANION" refere-se ao oxigênio encontrado no ânion carboxilato (COO⁻).
+    # Dos 20 aminoácidos padrão, somente dois são aminoácidos ácidos (também chamados de aminoácidos dicarboxílicos) porque possuem um grupo carboxilato adicional 
+    # em suas cadeias laterais quando estão no estado fisiológico (pH ~7.4). Esses aminoácidos são: 
+    # Ácido Aspártico (Asp, D): Sua cadeia lateral é -CH₂-COOH, mas em pH fisiológico, a forma predominante é -CH₂-COO⁻, onde o grupo carboxilato está desprotonado. 
+    # Ácido Glutâmico (Glu, E): Sua cadeia lateral é -CH₂-CH₂-COOH, e em pH fisiológico, a forma predominante é -CH₂-CH₂-COO⁻, com o grupo carboxilato desprotonado. 
+    # Assim, em ambientes de pH ao redor do neutro, esses aminoácidos terão um grupo carboxilato anionico (COO⁻) em suas cadeias laterais.
+    'O2CM': {'PRIMARY MMF TYPE': '32', 'DEFAULT TYPES': ['32', '7', '6', '0'], 'DEFINITION': 'O, CARBOXYLATE ANION'},
+
+    # Dentre os 20 aminoácidos padrão, a Lisina (Lys, K) é o aminoácido que possui potencial para ter um nitrogênio quaternário em sua cadeia lateral, 
+    # devido à sua terminação em amina primária. Em um ambiente fisiológico, com pH ao redor de 7,4, a terminação amina da lisina é frequentemente protonada, 
+    # adotando uma carga positiva, mas não é um nitrogênio quaternário verdadeiro porque só possui três substituintes.
+    'NR+': {'PRIMARY MMF TYPE': '34', 'DEFAULT TYPES': ['34', '8', '8', '0'], 'DEFINITION': 'N+, QUATERNARY N'},
+
+    # O grupo funcional "H-N+" corresponde a um átomo de hidrogênio ligado a um átomo de nitrogênio positivamente carregado, formando um cátion. 
+    # Esse tipo de grupo funcional é encontrado em aminoácidos que possuem um grupo amina protonado. Os aminoácidos que podem apresentar o grupo H-N+ 
+    # são aqueles cujos grupos amina passaram por uma protonação para formar íons aminium.
+    # Lisina (Lys): A lisina possui uma cadeia lateral que contém um grupo amina (NH2) na extremidade da cadeia. Quando a lisina ganha um próton (H+) nesse grupo amina, 
+    # ela forma o íon aminium (H3N+), que possui o grupo funcional H-N+.  Arginina (Arg): A arginina também possui uma cadeia lateral que contém um grupo guanidino (NH=C(NH2)2) 
+    # que é básico e pode facilmente ganhar um próton para formar o íon aminium (H3N+), criando o grupo funcional H-N+.
+    'HNR+': {'PRIMARY MMF TYPE': '36', 'DEFAULT TYPES': ['36', '36', '5', '0'], 'DEFINITION': 'H-N+'}, # Deixei o valor NR
+
+    # Os aminoácidos que apresentam um grupo funcional "AROMATIC C" são aqueles que possuem um anel aromático de carbono em sua estrutura
+    # Fenilalanina (Phe): A fenilalanina tem uma cadeia lateral que consiste em um anel benzênico, que é um exemplo clássico de anel aromático. 
+    # Tirosina (Tyr): A tirosina também possui um anel benzênico em sua cadeia lateral, semelhante ao da fenilalanina. Além disso, a tirosina contém um grupo hidroxila (-OH) na posição para.
+    # Triptofano (Trp): O triptofano tem uma cadeia lateral que contém um anel indol, que é um tipo de anel aromático derivado do benzênico. Esse anel contém um átomo de nitrogênio e é característico do triptofano.
+    'CB': {'PRIMARY MMF TYPE': '37', 'DEFAULT TYPES': ['37', '2', '1', '0'], 'DEFINITION': 'AROMATIC C'},
+    
+    # A piridina é um anel heterocíclico de seis membros, contendo um átomo de nitrogênio em uma das posições do anel.
+    # O aminoácido que contém um anel de piridina em sua estrutura é a histidina (His). 
+    'NPYD': {'PRIMARY MMF TYPE': '38', 'DEFAULT TYPES': ['38', '9', '8', '0'], 'DEFINITION': 'AROMATIC N, PYRIDINE'},
+
+    # O pirrol é um anel heterocíclico de cinco membros, contendo um átomo de nitrogênio em uma das posições do anel.
+    # O aminoácido que contém um anel de pirrol em sua estrutura é o triptofano (Trp). O triptofano é conhecido por 
+    # possuir um anel indol em sua cadeia lateral, que é um tipo de anel aromático derivado do benzênico. 
+    # O indol é um derivado do pirrol, contendo um grupo nitrogênio em uma das posições do anel, assim caracterizando o "AROMATIC N, PYRROLE".
+    'NPYL': {'PRIMARY MMF TYPE': '39', 'DEFAULT TYPES': ['39', '10', '8', '0'], 'DEFINITION': 'AROMATIC N, PYRROLE'},
+
+    # O grupo funcional "N-C=C (DELOC LP)" se refere a um átomo de nitrogênio (N) ligado a um átomo de carbono (C) com uma ligação dupla, 
+    # onde a carga da ligação dupla é delocalizada, ou seja, o par de elétrons da ligação está compartilhado entre os dois átomos. 
+    # Esse tipo de ligação é chamado de ligação dupla imina (ou ligação dupla C=N). O aminoácido que contém o grupo funcional "N-C=C (DELOC LP)" é a prolina (Pro).
+    # A prolina tem uma estrutura única na qual a sua cadeia lateral forma uma ligação imina com o grupo amino do esqueleto do aminoácido, resultando em uma conformação cíclica.
+    'NC=C': {'PRIMARY MMF TYPE': '40', 'DEFAULT TYPES': ['40', '10', '8', '0'], 'DEFINITION': 'N-C=C (DELOC LP)'},
+
+    # O grupo funcional "C IN CO2- ANION" refere-se a um átomo de carbono (C) presente no íon carboxilato (CO2-). 
+    # O íon carboxilato é formado quando um grupo carboxila (COOH) perde um próton (H+) e se torna carregado negativamente.
+    # Os aminoácidos com grupos carboxila são: ácido aspártico (Asp) e ácido glutâmico (Glu).
+    # Estes com cadeias laterais carregadas ou polares incluem o grupo carboxila, que pode perder um próton para formar um íon carboxilato.
+    'CO2M': {'PRIMARY MMF TYPE': '41', 'DEFAULT TYPES': ['41', '3', '1', '0'], 'DEFINITION': 'C IN CO2- ANION'},
+
+    # O grupo funcional "N TRIPLE BONDED" se refere a um átomo de nitrogênio (N) ligado a outro átomo por uma ligação tripla (triple bond). Essa ligação tripla pode ser chamada de ligação nitrila (C≡N).
+    # O único aminoácido que contém uma ligação tripla nitrila é a cisteína (Cys). A cisteína normalmente forma pontes dissulfeto com outras cisteínas, mas sob certas condições, pode ser modificada para formar um grupo nitrila na cadeia lateral.
+    'NSP': {'PRIMARY MMF TYPE': '42', 'DEFAULT TYPES': ['42', '42', '8', '0'], 'DEFINITION': 'N TRIPLE BONDED'},
+
+    # O termo "GUANIDINIUM N; Q=1/3" refere-se a um átomo de nitrogênio (N) em um grupo funcional guanidínio, onde o íon guanidínio possui uma carga positiva (Q=1/3). 
+    # O grupo guanidínio consiste em três átomos de nitrogênio ligados a um átomo de carbono, e é encontrado em aminoácidos como a arginina. 
+    # Na arginina, um dos aminoácidos padrão, a cadeia lateral contém um grupo guanidínio, que é importante para interações em proteínas e em várias reações bioquímicas. 
+    'NGD+': {'PRIMARY MMF TYPE': '56', 'DEFAULT TYPES': ['56', '10', '8', '0'], 'DEFINITION': 'GUANIDINIUM N; Q=1/3'},
+
+    # O termo "GUANIDINIUM CARBON" se refere a um átomo de carbono (C) em um grupo funcional guanidínio. O grupo guanidínio é composto por três átomos de nitrogênio (N) 
+    # e um átomo de carbono (C) ligados entre si de forma específica. A arginina é um aminoácido que contém o grupo funcional guanidínio, onde um dos átomos de carbono 
+    # está envolvido na estrutura do grupo.
+    'CGD+': {'PRIMARY MMF TYPE': '57', 'DEFAULT TYPES': ['57', '2', '1', '0'], 'DEFINITION': 'GUANIDINIUM CARBON'},
+
+    # A cisteína é um aminoácido que contém um grupo tiol (-SH), que pode formar ligações de dissulfeto com outros grupos tiol em outras moléculas de cisteína. 
+    'HS': {'PRIMARY MMF TYPE': '71', 'DEFAULT TYPES': ['71', '5', '5', '0'], 'DEFINITION': 'H-S'},
 }
 
-vdw_dict = {
+
+aminoacid_vdw_dict = {
     '1': {'alpha-i': '1.050', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CR', 'Origin': 'E94'},
-    '2': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C=C', 'Origin': 'E94'},
-    '3': {'alpha-i': '1.100', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C=O', 'Origin': 'E94'},
-    '4': {'alpha-i': '1.300', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CSP', 'Origin': 'E94'},
+
     '5': {'alpha-i': '0.250', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': '-', 'Symb': 'HC', 'Origin': 'C94'},
     '6': {'alpha-i': '0.70', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'OR', 'Origin': 'C94'},
     '7': {'alpha-i': '0.65', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'O=C', 'Origin': 'C94'},
     '8': {'alpha-i': '1.15', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NR', 'Origin': 'C94'},
-    '9': {'alpha-i': '0.90', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N=C', 'Origin': 'C94'},
+
     '10': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NC=O', 'Origin': 'E94'},
-    '11': {'alpha-i': '0.35', 'N-i': '3.480', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'F', 'Origin': 'C94'},
-    '12': {'alpha-i': '2.300', 'N-i': '5.100', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'CL', 'Origin': 'E94'},
-    '13': {'alpha-i': '3.400', 'N-i': '6.000', 'A-i': '3.190', 'G-i': '1.359', 'DA': 'A', 'Symb': 'BR', 'Origin': 'E94'},
-    '14': {'alpha-i': '5.500', 'N-i': '6.950', 'A-i': '3.080', 'G-i': '1.404', 'DA': 'A', 'Symb': 'I', 'Origin': 'E94'},
+ 
     '15': {'alpha-i': '3.00', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'S', 'Origin': 'C94'},
-    '16': {'alpha-i': '3.900', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'S=C', 'Origin': 'E94'},
-    '17': {'alpha-i': '2.700', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': 'SO', 'Origin': 'E94'},
+
     '18': {'alpha-i': '2.100', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': 'SO2', 'Origin': 'E94'},
-    '19': {'alpha-i': '4.500', 'N-i': '4.200', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': 'SI', 'Origin': 'E94'},
-    '20': {'alpha-i': '1.050', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CR3R', 'Origin': 'E94'},
+
     '21': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HOR', 'Origin': 'C94'},
-    '22': {'alpha-i': '1.100', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CR3R', 'Origin': 'E94'},
+
     '23': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HNR', 'Origin': 'C94'},
     '24': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HOCO', 'Origin': 'C94'},
-    '25': {'alpha-i': '1.600', 'N-i': '4.500', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': 'PO4', 'Origin': 'E94'},
-    '26': {'alpha-i': '3.600', 'N-i': '4.500', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'P', 'Origin': 'E94'},
-    '27': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HN=C', 'Origin': 'C94'},
-    '28': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HNCO', 'Origin': 'C94'},
-    '29': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HOCC', 'Origin': 'C94'},
-    '30': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CE4R', 'Origin': 'E94'},
+
     '31': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HOH', 'Origin': 'C94'},
     '32': {'alpha-i': '0.75', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'O2CM', 'Origin': 'C94'},
-    '33': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HOS', 'Origin': 'C94'},
+   
     '34': {'alpha-i': '1.00', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NR+', 'Origin': 'C94'},
-    '35': {'alpha-i': '1.50', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'OM', 'Origin': 'X94'},
+
     '36': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HNR+', 'Origin': 'C94'},
     '37': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CB', 'Origin': 'E94'},
     '38': {'alpha-i': '0.85', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NPYD', 'Origin': 'C94'},
@@ -151,59 +199,11 @@ vdw_dict = {
     '40': {'alpha-i': '1.00', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NC=C', 'Origin': 'E94'},
     '41': {'alpha-i': '1.100', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CO2M', 'Origin': 'C94'},
     '42': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NSP', 'Origin': 'E94'},
-    '43': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NSO2', 'Origin': 'E94'},
-    '44': {'alpha-i': '3.00', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'STHI', 'Origin': 'C94'},
-    '45': {'alpha-i': '1.150', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NO2', 'Origin': 'E94'},
-    '46': {'alpha-i': '1.300', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'N=O', 'Origin': 'E94'},
-    '47': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NAZT', 'Origin': 'X94'},
-    '48': {'alpha-i': '1.200', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NSO', 'Origin': 'X94'},
-    '49': {'alpha-i': '1.00', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'O+', 'Origin': 'X94'},
-    '50': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HO+', 'Origin': 'C94'},
-    '51': {'alpha-i': '0.400', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'O=+', 'Origin': 'E94'},
-    '52': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HO=+', 'Origin': 'C94'},
-    '53': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': '=N=', 'Origin': 'X94'},
-    '54': {'alpha-i': '1.30', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'N+=C', 'Origin': 'C94'},
-    '55': {'alpha-i': '0.80', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NCN+', 'Origin': 'E94'},
+    
     '56': {'alpha-i': '0.80', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NGD+', 'Origin': 'E94'},
     '57': {'alpha-i': '1.000', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CNN+', 'Origin': 'E94'},
-    '58': {'alpha-i': '0.80', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NPD+', 'Origin': 'E94'},
-    '59': {'alpha-i': '0.65', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'OFUR', 'Origin': 'C94'},
-    '60': {'alpha-i': '1.800', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'C%-', 'Origin': 'E94'},
-    '61': {'alpha-i': '0.800', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NR%', 'Origin': 'E94'},
-    '62': {'alpha-i': '1.300', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NM', 'Origin': 'X94'},
-    '63': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C5A', 'Origin': 'E94'},
-    '64': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C5B', 'Origin': 'E94'},
-    '65': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N5A', 'Origin': 'E94'},
-    '66': {'alpha-i': '0.75', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N5B', 'Origin': 'C94'},
-    '67': {'alpha-i': '0.950', 'N-i': '2.82', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N2OX', 'Origin': 'X94'},
-    '68': {'alpha-i': '0.90', 'N-i': '2.82', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N3OX', 'Origin': 'C94'},
-    '69': {'alpha-i': '0.950', 'N-i': '2.82', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NPOX', 'Origin': 'C94'},
-    '70': {'alpha-i': '0.87', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'OH2', 'Origin': 'C94'},
+ 
     '71': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HS', 'Origin': 'C94'},
-    '72': {'alpha-i': '4.000', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'SM', 'Origin': 'X94'},
-    '73': {'alpha-i': '3.000', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': 'SMO2', 'Origin': 'X94'},
-    '74': {'alpha-i': '3.000', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': '=S=O', 'Origin': 'X94'},
-    '75': {'alpha-i': '4.000', 'N-i': '4.500', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': '-P=C', 'Origin': 'X94'},
-    '76': {'alpha-i': '1.200', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N5M', 'Origin': 'X94'},
-    '77': {'alpha-i': '1.500', 'N-i': '5.100', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'CLO4', 'Origin': 'X94'},
-    '78': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C5', 'Origin': 'X94'},
-    '79': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N5', 'Origin': 'X94'},
-    '80': {'alpha-i': '1.000', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CIM+', 'Origin': 'C94'},
-    '81': {'alpha-i': '0.80', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NIM+', 'Origin': 'C94'},
-    '82': {'alpha-i': '0.950', 'N-i': '2.82', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N5OX', 'Origin': 'X94'},
-    '87': {'alpha-i': '0.45', 'N-i': '6.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'FE+2', 'Origin': 'X94'},
-    '88': {'alpha-i': '0.55', 'N-i': '6.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'FE+3', 'Origin': 'X94'},
-    '89': {'alpha-i': '1.4', 'N-i': '3.48', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'F-', 'Origin': 'X94'},
-    '90': {'alpha-i': '4.5', 'N-i': '5.100', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'CL-', 'Origin': 'X94'},
-    '91': {'alpha-i': '6.0', 'N-i': '6.000', 'A-i': '3.190', 'G-i': '1.359', 'DA': 'A', 'Symb': 'BR-', 'Origin': 'X94'},
-    '92': {'alpha-i': '0.15', 'N-i': '2.', 'A-i': '4.', 'G-i': '1.3', 'DA': '-', 'Symb': 'LI+', 'Origin': 'X94'},
-    '93': {'alpha-i': '0.4', 'N-i': '3.5', 'A-i': '4.', 'G-i': '1.3', 'DA': '-', 'Symb': 'NA+', 'Origin': 'X94'},
-    '94': {'alpha-i': '1.0', 'N-i': '5.', 'A-i': '4.', 'G-i': '1.3', 'DA': '-', 'Symb': 'K+', 'Origin': 'X94'},
-    '95': {'alpha-i': '0.43', 'N-i': '6.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'ZN+2', 'Origin': 'X94'},
-    '96': {'alpha-i': '0.9', 'N-i': '5.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'CA+2', 'Origin': 'X94'},
-    '97': {'alpha-i': '0.35', 'N-i': '6.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'CU+1', 'Origin': 'X94'},
-    '98': {'alpha-i': '0.40', 'N-i': '6.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'CU+2', 'Origin': 'X94'},
-    '99': {'alpha-i': '0.35', 'N-i': '3.5', 'A-i': '4.', 'G-i': '1.3', 'DA': '-', 'Symb': 'MG+2', 'Origin': 'X94'},
 }
 
 # Amino acids and nucleic acid bases classification
@@ -708,15 +708,15 @@ def lennard_jones_potential(atom1_name, atom2_name, residue, r):
     if not mapped_group1 or not mapped_group2: 
         return 0  # or handle this case as required
 
-    type1 = molecular_group_dict[mapped_group1]['PRIMARY MMF TYPE']
-    type2 = molecular_group_dict[mapped_group2]['PRIMARY MMF TYPE']
+    type1 = aminoacid_group_dict[mapped_group1]['PRIMARY MMF TYPE']
+    type2 = aminoacid_group_dict[mapped_group2]['PRIMARY MMF TYPE']
 
     # Get epsilon and sigma values for the atoms
-    epsilon1 = float(vdw_dict[type1]['alpha-i'])
-    epsilon2 = float(vdw_dict[type2]['alpha-i'])
+    epsilon1 = float(aminoacid_vdw_dict[type1]['alpha-i'])
+    epsilon2 = float(aminoacid_vdw_dict[type2]['alpha-i'])
 
-    sigma1 = float(vdw_dict[type1]['N-i'])
-    sigma2 = float(vdw_dict[type2]['N-i'])
+    sigma1 = float(aminoacid_vdw_dict[type1]['N-i'])
+    sigma2 = float(aminoacid_vdw_dict[type2]['N-i'])
 
     # Combine the epsilon and sigma values
     epsilon_combined = (epsilon1 * epsilon2) ** 0.5
