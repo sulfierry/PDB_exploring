@@ -443,7 +443,7 @@ def map_to_molecular_group(atom_name, residue_name):
         # Verificando condição de carbonos laterais
         elif atom_name.startswith("C") and residue_name in lateral_carbon_aminoacids:
             return "HC"
-            # Condição para os carbonos aromáticos
+        # Condição para os carbonos aromáticos
         if residue_name == "PHE" and atom_name.startswith("CZ"):  # Ajuste a nomeação do átomo conforme necessário
             return "CB"
         elif residue_name == "TYR" and atom_name.startswith("CZ"):  # Ajuste a nomeação do átomo conforme necessário
@@ -455,15 +455,14 @@ def map_to_molecular_group(atom_name, residue_name):
         # Condição para o carbono no grupo guanidínio da Arginina
         elif residue_name == "ARG" and atom_name == "CG":
             return "CGD"
-        
-        else: return "CR"
+        else: 
+            return "CR"
 
-    # Verificando as condições do oxigênio
     if atom_name.startswith("O"):
+
         # Condição de "O=C"
         if atom_name in ["OD1", "OE1", "OE2", "O"]:
             return "O=C"
-
         # Termino carboxila de todos os aminoácidos
         elif atom_name in ["OD2", "OG", "OG1", "OH"]:
             return "OR"
@@ -485,10 +484,11 @@ def map_to_molecular_group(atom_name, residue_name):
         # Condição para Ácido aspártico e Ácido glutâmico
         elif residue_name in ["ASP", "GLU"] and atom_name in ["OD1", "OD2", "OE1", "OE2"]:
             return "O2CM"
-        
-        else: return "OR"
+        else: 
+            return "OR"
 
     if atom_name.startswith("N"):
+
         # Verifica o nitrogênio do grupo amina terminal para todos os aminoácidos
         if atom_name == "N":
             return "NR"
@@ -513,15 +513,12 @@ def map_to_molecular_group(atom_name, residue_name):
         # Condição para o nitrogênio com ligação tripla em uma variante modificada da Cisteína
         elif residue_name == "CYS" and atom_name == "NSP":  # NSP seria um nome hipotético para esse nitrogênio com ligação tripla
             return "NSP"
-        else: return "NR"
+        else: 
+            return "NR"
 
-
-    # Condições para Hidrogênio
     if atom_name.startswith("H"):
-        # Checa se o átomo é um hidrogênio ligado a um nitrogênio amida em um peptídeo/proteína
-        # (Excluindo resíduos terminais). 
-        # A lógica aqui é simplificada, e você pode precisar de condições mais específicas 
-        # dependendo da nomenclatura e estrutura exatas dos seus dados.
+
+        # Checa se o átomo é um hidrogênio ligado a um nitrogênio amida em um peptídeo/proteína (Excluindo resíduos terminais). 
         if atom_name in ["HN"] or atom_name.startswith("H") and atom_name[1:].isdigit():
             return "HNCO"
         elif residue_name in ["SER", "THR"] and "HO" in atom_name: 
@@ -536,11 +533,12 @@ def map_to_molecular_group(atom_name, residue_name):
             return "HR"
     
     if atom_name.startswith("S"):
-    # Condição para grupos tiol e tioéter
+
+         # Condição para grupos tiol e tioéter
         if (residue_name == "MET" and atom_name == "SD"):
             return "S"
         # Condição para o átomo de enxofre no grupo tiol da Cisteína
-        if residue_name == "CYS" and atom_name == "SG":
+        elif residue_name == "CYS" and atom_name == "SG":
             return "HS"
              
 
@@ -622,9 +620,6 @@ def verify_near_residues(input_pdb, ligand_residue, treshold_distance):
     near_residues_info.sort(key=lambda x: x['distance'])
 
     return near_residues_info
-
-
-
 
 
 
