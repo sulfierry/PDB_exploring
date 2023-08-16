@@ -569,17 +569,19 @@ def is_interaction(atom1_name, atom2_name, residue_name, distance):
 
     global ionic_interactions, hydrogen_bond_acceptors, hydrophobic_residues, hydrophobic_atoms, hydrophobic_distance_threshold
 
-    if distance < 3.0:
-        # Check for ionic interaction
+    if distance <= 3:
+        # Check for hydrogen bond
+        if atom1_name.startswith(tuple(hydrogen_bond_acceptors)) and \
+           atom2_name.startswith(tuple(hydrogen_bond_acceptors)):
+            return "Hydrogen bond"
+
+            # Check for ionic interaction
+    if distance <= 4:
         if residue_name in ionic_interactions:
             if atom1_name.startswith(tuple(ionic_interactions.get(residue_name, []))) or \
                atom2_name.startswith(tuple(ionic_interactions.get(residue_name, []))):
                 return "Ionic"
 
-        # Check for hydrogen bond
-        if atom1_name.startswith(tuple(hydrogen_bond_acceptors)) and \
-           atom2_name.startswith(tuple(hydrogen_bond_acceptors)):
-            return "Hydrogen bond"
 
     # Check for hydrophobic interactions
     if residue_name in hydrophobic_residues:
