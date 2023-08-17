@@ -318,7 +318,7 @@ hydrophobic_distance_threshold = 4.0
 
 
 # Parser for PDB structure with consideration for protein structure, ligands, and cofactors
-def parse_pdb_extended_v5(pdb_file):
+def parse_pdb(pdb_file):
     """
     Parses a PDB file to extract chains, cofactors, ligands, and atom details.
 
@@ -727,21 +727,6 @@ def lennard_jones_potential(atom1_name, atom2_name, residue, r):
 
 
 
-def format_output(ligand_residue_tuple, near_residues_dict):
-    ligand, ligand_number = ligand_residue_tuple
-    formatted_results = []
-
-    for entry in near_residues_dict:
-        line = (f"LIGAND RESIDUE: {ligand} {ligand_number} | "
-                f"NEAR RESIDUE: {entry['molecule_name']} {entry['molecule_number']} {entry['chain']} "
-                f"ATOM: {entry['molecule_atom']} OF {entry['molecule_name']} "
-                f"DISTANCE TO {entry['ligand_atom']} OF {ligand} = {entry['distance']:.2f} A")
-        
-        formatted_results.append(line)
-
-    return formatted_results
-
-
 if __name__ == "__main__":
 
     # Arquivos de entrada e saida a serem fornecidos
@@ -751,9 +736,9 @@ if __name__ == "__main__":
 
     # Distance from the selected molecule
     treshold_distance = 4.0
-    input_pdb = parse_pdb_extended_v5(input_pdb)
 
     # executa e salva o resultados para a classificacao dos contatos
+    input_pdb = parse_pdb(input_pdb)
     ligand_residue = find_molecule(input_pdb, input_molecule)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     set_output(output_name, near_residues, ligand_residue)
