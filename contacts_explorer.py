@@ -243,7 +243,13 @@ molecule_class = {
     "K"  : "cofactor",
     "CA" : "cofactor",
     "NA" : "cofactor",
-    "HOH": "partial polar charge"
+    "HOH": "partial polar charge",
+
+    # ligands
+    "TPS": "ligand",
+    "ACP": "ligand",
+    "TMP": "ligand",
+    "TPP": "ligand",   
 }
 
 ionic_interactions = {
@@ -378,169 +384,6 @@ def parse_pdb(pdb_file):
         'ligands': ligands
     }
 
-
-def print_pdb_structure(pdb_dict):
-    """
-    Prints the PDB structure from the dictionary in an organized manner.
-
-    Parameters:
-        pdb_dict (dict): Dictionary containing the parsed PDB lists.
-
-    Returns:
-        None: Simply prints the PDB structured data.
-    """
-
-def format_line(atom_data, atom_type="ATOM  "):
-    return (
-        f"{atom_type:6s}{atom_data['serial_number']:5d} {atom_data['name']:<4s} {atom_data['alt_loc']:1s}{atom_data['res_name']:<3s} "
-        f"{atom_data['chain_id']:1s}{atom_data['res_seq']:4d}{atom_data['icode']:1s}   "
-        f"{atom_data['coord'][0]:8.3f}{atom_data['coord'][1]:8.3f}{atom_data['coord'][2]:8.3f}"
-        f"{atom_data['occupancy']:6.2f}{atom_data['temp_factor']:6.2f}          "
-        f"{atom_data['element']:^2s}{atom_data['charge']:2s}\n"
-    )
-
-def print_pdb_structure(pdb_dict):
-    # Print the chains first
-    for atom in pdb_dict['chains']:
-        print(format_line(atom), end='')
-
-    # Print cofactors
-    print("TER")
-    for atom in pdb_dict['cofactors']:
-        print(format_line(atom, "HETATM"), end='')
-
-    # Print ligands
-    print("TER")
-    for atom in pdb_dict['ligands']:
-        print(format_line(atom, "HETATM"), end='')
-
-    print("END")
-
-
-def map_to_molecular_group(atom_name, residue_name):
-
-    residue_name = residue_name.upper()  # Garante que o nome do resíduo esteja em maiúsculas
-    atom_name = atom_name.upper()  # Similarmente, para o nome do átomo
-
-    # Lista de aminoácidos com carbonos laterais específicos
-    lateral_carbon_aminoacids = ["ALA", "VAL", "LEU", "ILE", "PRO", "MET", "CYS", 
-                                 "PHE", "TYR", "THR", "LYS", "ARG", "GLU", "ASP"]
-    
-    if atom_name.startswith("C"):
-
-        # Verificar condição do grupo alquila
-        if residue_name == "VAL" and atom_name in ["CG1", "CG2"]:
-            return "CR"  
-        elif residue_name == "LEU" and atom_name in ["CG", "CD1", "CD2"]:
-            return "CR"
-        elif residue_name == "ILE" and atom_name in ["CG1", "CG2", "CD1"]:
-            return "CR"
-        elif residue_name == "MET" and atom_name in ["CG", "SD", "CE"]:
-            return "CR"  
-        # Verificando a condição de carbono alfa
-        elif atom_name == "CA" and residue_name != "PRO":
-            return "HC"
-        # Verificando condição de carbonos laterais
-        elif atom_name.startswith("C") and residue_name in lateral_carbon_aminoacids:
-            return "HC"
-        # Condição para os carbonos aromáticos
-        if residue_name == "PHE" and atom_name.startswith("CZ"):  # Ajuste a nomeação do átomo conforme necessário
-            return "CB"
-        elif residue_name == "TYR" and atom_name.startswith("CZ"):  # Ajuste a nomeação do átomo conforme necessário
-            return "CB"
-        elif residue_name == "TRP" and atom_name in ["CD2", "CE2", "CE3", "CZ2", "CZ3", "CH2"]:  # A nomeação dos átomos aqui é apenas uma suposição, ajuste conforme necessário
-            return "CB"
-        elif residue_name in ["ASP", "GLU"] and atom_name in ["CG", "CD"]:  # CG e CD são átomos de carbono em Asp e Glu, respectivamente, que fazem parte do grupo carboxila
-            return "CO2M"
-        # Condição para o carbono no grupo guanidínio da Arginina
-        elif residue_name == "ARG" and atom_name == "CG":
-            return "CGD"
-        else: 
-            return "CR"
-
-    if atom_name.startswith("O"):
-
-        # Condição de "O=C"
-        if atom_name in ["OD1", "OE1", "OE2", "O"]:
-            return "O=C"
-        # Termino carboxila de todos os aminoácidos
-        elif atom_name in ["OD2", "OG", "OG1", "OH"]:
-            return "OR"
-        # Condição de Serina
-        elif residue_name == "SER" and atom_name == "OG":
-            return "OR"
-        # Condição de Treonina
-        elif residue_name == "THR" and atom_name == "OG1":
-            return "OR"
-        # Condição de Tirosina
-        elif residue_name == "TYR" and atom_name == "OH":
-            return "OR"
-        # Condição para Ácido aspártico e Ácido glutâmico
-        elif residue_name in ["ASP", "GLU"] and atom_name in ["OD1", "OD2", "OE1", "OE2"]:
-            return "OR"
-        # Condição para Asparagina e Glutamina
-        elif residue_name in ["ASN", "GLN"] and atom_name in ["OD1", "OE1"]:
-            return "OR"
-        # Condição para Ácido aspártico e Ácido glutâmico
-        elif residue_name in ["ASP", "GLU"] and atom_name in ["OD1", "OD2", "OE1", "OE2"]:
-            return "O2CM"
-        else: 
-            return "OR"
-
-    if atom_name.startswith("N"):
-
-        # Verifica o nitrogênio do grupo amina terminal para todos os aminoácidos
-        if atom_name == "N":
-            return "NR"
-        # Condição específica para Lisina
-        elif residue_name == "LYS" and atom_name in ["NZ"]:
-            return "NR"
-        # Condição específica para Arginina
-        elif residue_name == "ARG" and atom_name in ["NE", "NH1", "NH2"]:
-            return "NGD+"
-        # Condição específica para Histidina
-        elif residue_name == "HIS" and atom_name in ["ND1", "NE2"]:
-            return "NPYD"
-        # Condição para grupo Amido (N-C=O)
-        elif (residue_name == "ASN" and atom_name == "ND2") or \
-        (residue_name == "GLN" and atom_name == "NE2"):
-            return "NC=O"
-        # Condição para o nitrogênio no anel pirrol do triptofano
-        elif residue_name == "TRP" and atom_name == "NE1":  # NE1 é o nitrogênio no anel de pirrol do triptofano
-            return "NPYL"
-        elif residue_name == "PRO" and atom_name == "N":  # N é o nitrogênio da prolina que forma a ligação imina
-            return "'NC=C"
-        # Condição para o nitrogênio com ligação tripla em uma variante modificada da Cisteína
-        elif residue_name == "CYS" and atom_name == "NSP":  # NSP seria um nome hipotético para esse nitrogênio com ligação tripla
-            return "NSP"
-        else: 
-            return "NR"
-
-    if atom_name.startswith("H"):
-
-        # Checa se o átomo é um hidrogênio ligado a um nitrogênio amida em um peptídeo/proteína (Excluindo resíduos terminais). 
-        if atom_name in ["HN"] or atom_name.startswith("H") and atom_name[1:].isdigit():
-            return "HNCO"
-        elif residue_name in ["SER", "THR"] and "HO" in atom_name: 
-            return "HOR"
-        elif residue_name == "LYS" and "HNZ" in atom_name:
-            return "HNR"
-        elif residue_name in ["ASP", "GLU"] and "HOCO" in atom_name:
-            return "HOCO"
-        elif residue_name in ["SER", "THR"] and "HO" in atom_name: 
-            return "HOH"
-        else:
-            return "HR"
-    
-    if atom_name.startswith("S"):
-
-         # Condição para grupos tiol e tioéter
-        if (residue_name == "MET" and atom_name == "SD"):
-            return "S"
-        # Condição para o átomo de enxofre no grupo tiol da Cisteína
-        elif residue_name == "CYS" and atom_name == "SG":
-            return "HS"
-             
 
 def find_molecule(pdb_dict, molecule_name):
     """
@@ -694,6 +537,16 @@ def is_interaction(atom1_name, atom2_name, residue_name, distance):
     v_lj = lennard_jones_potential(atom1_name, atom2_name, residue_name, distance)
 
     # Check for potential van der Waals interaction based on Lennard-Jones potential
+    # Valor Conservador: Se você deseja ser mais conservador e focar apenas nas interações 
+    # mais fortes de van der Waals, pode considerar um valor limiar de −0.5 kcal/mol ou mais negativo.
+    
+    # Valor Moderado: Um valor de −0.2 a −0.3 kcal/mol pode ser uma abordagem intermediária, 
+    # onde você identifica interações que têm uma contribuição notável, mas não são extremamente fracas.
+
+    # Análise Detalhada: Se o objetivo é uma análise mais detalhada e abrangente das interações, 
+    # incluindo as mais fracas, então −0.1 kcal/mol ou até um pouco mais positivo pode ser aceitável. 
+    # No entanto, essas interações devem ser interpretadas com cautela e corroboradas com outras evidências ou análises.
+
     if v_lj < -0.1:
         return "van der Waals"
 
@@ -701,10 +554,12 @@ def is_interaction(atom1_name, atom2_name, residue_name, distance):
 
 
 def lennard_jones_potential(atom1_name, atom2_name, residue, r):
+
     """Calculate Lennard-Jones potential between two atoms based on MMFF types."""
     # Get MMFF types for the atoms
     mapped_group1 = map_to_molecular_group(atom1_name, residue)
     mapped_group2 = map_to_molecular_group(atom2_name, residue)
+
     if not mapped_group1 or not mapped_group2: 
         return 0  # or handle this case as required
 
@@ -719,12 +574,180 @@ def lennard_jones_potential(atom1_name, atom2_name, residue, r):
     sigma2 = float(aminoacid_vdw_dict[type2]['N-i'])
 
     # Combine the epsilon and sigma values
+    # Este cálculo refere-se à combinação dos parâmetros de profundidade do poço de energia epsilon para dois átomos diferentes quando se modela uma interação via potencial de Lennard-Jones. 
+    # A combinação geométrica (média geométrica) é comum para este parâmetro.
     epsilon_combined = (epsilon1 * epsilon2) ** 0.5
+
+    # Este cálculo refere-se à combinação dos parâmetros de distância de sigma para os mesmos dois átomos. 
+    # Sigma é geralmente interpretado como a distância em que o potencial interatômico entre dois átomos neutros é zero.
+    # A combinação aritmética (média aritmética) é típica para este parâmetro.
     sigma_combined = (sigma1 + sigma2) / 2.0
 
     # Calculate the Lennard-Jones potential
     return 4 * epsilon_combined * ((sigma_combined / r)**12 - (sigma_combined / r)**6)
 
+def map_to_molecular_group(atom_name, residue_name):
+
+    residue_name = residue_name.upper()  # Garante que o nome do resíduo esteja em maiúsculas
+    atom_name = atom_name.upper()  # Similarmente, para o nome do átomo
+
+    # Lista de aminoácidos com carbonos laterais específicos
+    lateral_carbon_aminoacids = ["ALA", "VAL", "LEU", "ILE", "PRO", "MET", "CYS", 
+                                 "PHE", "TYR", "THR", "LYS", "ARG", "GLU", "ASP"]
+    
+    if atom_name.startswith("C"):
+
+        # Verificar condição do grupo alquila
+        if residue_name == "VAL" and atom_name in ["CG1", "CG2"]:
+            return "CR"  
+        elif residue_name == "LEU" and atom_name in ["CG", "CD1", "CD2"]:
+            return "CR"
+        elif residue_name == "ILE" and atom_name in ["CG1", "CG2", "CD1"]:
+            return "CR"
+        elif residue_name == "MET" and atom_name in ["CG", "SD", "CE"]:
+            return "CR"  
+        # Verificando a condição de carbono alfa
+        elif atom_name == "CA" and residue_name != "PRO":
+            return "HC"
+        # Condição para os carbonos aromáticos
+        if residue_name == "PHE" and atom_name.startswith("CZ"):  # Ajuste a nomeação do átomo conforme necessário
+            return "CB"
+        elif residue_name == "TYR" and atom_name.startswith("CZ"):  # Ajuste a nomeação do átomo conforme necessário
+            return "CB"
+        elif residue_name == "TRP" and atom_name in ["CD2", "CE2", "CE3", "CZ2", "CZ3", "CH2"]:  # A nomeação dos átomos aqui é apenas uma suposição, ajuste conforme necessário
+            return "CB"
+        elif residue_name in ["ASP", "GLU"] and atom_name in ["CG", "CD"]:  # CG e CD são átomos de carbono em Asp e Glu, respectivamente, que fazem parte do grupo carboxila
+            return "CO2M"
+        # Condição para o carbono no grupo guanidínio da Arginina
+        elif residue_name == "ARG" and atom_name == "CG":
+            return "CGD"
+        # Verificando condição de carbonos laterais
+        elif atom_name.startswith("C") and residue_name in lateral_carbon_aminoacids:
+            return "HC"
+        else: 
+            return "CR"
+
+    if atom_name.startswith("O"):
+
+        # Condição de "O=C"
+        if atom_name in ["OD1", "OE1", "OE2", "O"]:
+            return "O=C"
+        # Termino carboxila de todos os aminoácidos
+        elif atom_name in ["OD2", "OG", "OG1", "OH"]:
+            return "OR"
+        # Condição de Serina
+        elif residue_name == "SER" and atom_name == "OG":
+            return "OR"
+        # Condição de Treonina
+        elif residue_name == "THR" and atom_name == "OG1":
+            return "OR"
+        # Condição de Tirosina
+        elif residue_name == "TYR" and atom_name == "OH":
+            return "OR"
+        # Condição para Ácido aspártico e Ácido glutâmico
+        elif residue_name in ["ASP", "GLU"] and atom_name in ["OD1", "OD2", "OE1", "OE2"]:
+            return "OR"
+        # Condição para Asparagina e Glutamina
+        elif residue_name in ["ASN", "GLN"] and atom_name in ["OD1", "OE1"]:
+            return "OR"
+        # Condição para Ácido aspártico e Ácido glutâmico
+        elif residue_name in ["ASP", "GLU"] and atom_name in ["OD1", "OD2", "OE1", "OE2"]:
+            return "O2CM"
+        else: 
+            return "OR"
+
+    if atom_name.startswith("N"):
+
+        # Condição específica para Lisina
+        if residue_name == "LYS" and atom_name in ["NZ"]:
+            return "NR"
+        # Condição específica para Arginina
+        elif residue_name == "ARG" and atom_name in ["NE", "NH1", "NH2"]:
+            return "NGD+"
+        # Condição específica para Histidina
+        elif residue_name == "HIS" and atom_name in ["ND1", "NE2"]:
+            return "NPYD"
+        # Condição para grupo Amido (N-C=O)
+        elif (residue_name == "ASN" and atom_name == "ND2") or \
+        (residue_name == "GLN" and atom_name == "NE2"):
+            return "NC=O"
+        # Condição para o nitrogênio no anel pirrol do triptofano
+        elif residue_name == "TRP" and atom_name == "NE1":  # NE1 é o nitrogênio no anel de pirrol do triptofano
+            return "NPYL"
+        elif residue_name == "PRO" and atom_name == "N":  # N é o nitrogênio da prolina que forma a ligação imina
+            return "NC=C"
+        # Condição para o nitrogênio com ligação tripla em uma variante modificada da Cisteína
+        elif residue_name == "CYS" and atom_name == "NSP":  # NSP seria um nome hipotético para esse nitrogênio com ligação tripla
+            return "NSP"
+        else: 
+            return "NR"
+
+    if atom_name.startswith("H"):
+
+        # Checa se o átomo é um hidrogênio ligado a um nitrogênio amida em um peptídeo/proteína (Excluindo resíduos terminais). 
+
+        if residue_name in ["SER", "THR"] and "HO" in atom_name: 
+            return "HOR"
+        elif residue_name == "LYS" and "HNZ" in atom_name:
+            return "HNR"
+        elif residue_name in ["ASP", "GLU"] and "HOCO" in atom_name:
+            return "HOCO"
+        elif residue_name in ["SER", "THR"] and "HO" in atom_name: 
+            return "HOH"
+        elif atom_name in ["HN"] or atom_name.startswith("H") and atom_name[1:].isdigit():
+            return "HNCO"
+        else:
+            return "HR"
+    
+    if atom_name.startswith("S"):
+
+         # Condição para grupos tiol e tioéter
+        if (residue_name == "MET" and atom_name == "SD"):
+            return "S"
+        # Condição para o átomo de enxofre no grupo tiol da Cisteína
+        elif residue_name == "CYS" and atom_name == "SG":
+            return "HS"
+        else:
+            return "S"
+
+
+
+def print_pdb_structure(pdb_dict):
+    """
+    Prints the PDB structure from the dictionary in an organized manner.
+
+    Parameters:
+        pdb_dict (dict): Dictionary containing the parsed PDB lists.
+
+    Returns:
+        None: Simply prints the PDB structured data.
+    """
+
+def format_line(atom_data, atom_type="ATOM  "):
+    return (
+        f"{atom_type:6s}{atom_data['serial_number']:5d} {atom_data['name']:<4s} {atom_data['alt_loc']:1s}{atom_data['res_name']:<3s} "
+        f"{atom_data['chain_id']:1s}{atom_data['res_seq']:4d}{atom_data['icode']:1s}   "
+        f"{atom_data['coord'][0]:8.3f}{atom_data['coord'][1]:8.3f}{atom_data['coord'][2]:8.3f}"
+        f"{atom_data['occupancy']:6.2f}{atom_data['temp_factor']:6.2f}          "
+        f"{atom_data['element']:^2s}{atom_data['charge']:2s}\n"
+    )
+
+def print_pdb_structure(pdb_dict):
+    # Print the chains first
+    for atom in pdb_dict['chains']:
+        print(format_line(atom), end='')
+
+    # Print cofactors
+    print("TER")
+    for atom in pdb_dict['cofactors']:
+        print(format_line(atom, "HETATM"), end='')
+
+    # Print ligands
+    print("TER")
+    for atom in pdb_dict['ligands']:
+        print(format_line(atom, "HETATM"), end='')
+
+    print("END")
 
 
 if __name__ == "__main__":
@@ -742,6 +765,4 @@ if __name__ == "__main__":
     ligand_residue = find_molecule(input_pdb, input_molecule)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     set_output(output_name, near_residues, ligand_residue)
-
-
-# verificar artigos sobre cinases + IA
+    #print_pdb_structure(input_pdb)
