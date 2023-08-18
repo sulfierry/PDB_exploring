@@ -249,7 +249,8 @@ molecule_class = {
     "TPS": "ligand",
     "ACP": "ligand",
     "TMP": "ligand",
-    "TPP": "ligand",   
+    "TPP": "ligand",
+    "ANP": "ligand",   
 }
 
 ionic_interactions = {
@@ -263,7 +264,8 @@ ionic_interactions = {
 hydrogen_bond_acceptors = [
     "O",
     "N",
-    "F"
+    "F",
+    "H"
     ]
 
 # Hydrophobic residues and atoms for identifying hydrophobic interactions
@@ -363,8 +365,8 @@ def parse_pdb(pdb_file):
     cofactors = []
     ligands = []
 
-    cofactor_names = ["MG", "ZN", "CA", "K", "NA"]
-    ligand_names = ["ACP", "TPS"]
+    cofactor_names = ["MG", "ZN", "CA", "K", "NA", "FE", "CL", "HOH"]
+    ligand_names = ["ACP", "TPS", "TMP", "TPP", "LIG"]
 
     with open(pdb_file, 'r') as f:
         for line in f:
@@ -526,9 +528,8 @@ def is_interaction(atom1_name, atom2_name, residue_name, distance):
             if atom1_name.startswith(tuple(ionic_interactions.get(residue_name, []))) or \
                 atom2_name.startswith(tuple(ionic_interactions.get(residue_name, []))):
                 return "Ionic"
-            
-    if distance < 3:
-        # Check for hydrogen bond
+    # Check for hydrogen bond      
+    if distance < 3.7:   
         if atom1_name.startswith(tuple(hydrogen_bond_acceptors)) and \
            atom2_name.startswith(tuple(hydrogen_bond_acceptors)):
             return "Hydrogen bond"
@@ -574,7 +575,8 @@ def lennard_jones_potential(atom1_name, atom2_name, residue, r):
     sigma2 = float(aminoacid_vdw_dict[type2]['N-i'])
 
     # Combine the epsilon and sigma values
-    # Este cálculo refere-se à combinação dos parâmetros de profundidade do poço de energia epsilon para dois átomos diferentes quando se modela uma interação via potencial de Lennard-Jones. 
+    # Este cálculo refere-se à combinação dos parâmetros de profundidade do poço de energia epsilon para dois átomos 
+    # diferentes quando se modela uma interação via potencial de Lennard-Jones. 
     # A combinação geométrica (média geométrica) é comum para este parâmetro.
     epsilon_combined = (epsilon1 * epsilon2) ** 0.5
 
@@ -696,8 +698,7 @@ def map_to_molecular_group(atom_name, residue_name):
             return "HOH"
         elif atom_name in ["HN"] or atom_name.startswith("H") and atom_name[1:].isdigit():
             return "HNCO"
-        else:
-            return "HR"
+        else: "H"
     
     if atom_name.startswith("S"):
 
@@ -753,7 +754,7 @@ def print_pdb_structure(pdb_dict):
 if __name__ == "__main__":
 
     # Arquivos de entrada e saida a serem fornecidos
-    input_pdb      = sys.argv[1]    # example.pdb
+    input_pdb      = sys.argv[1]    # EXAMPLE.pdb
     input_molecule = sys.argv[2]    # ATP
     output_name    = sys.argv[3]    # ATP_OUT (csv)
 
@@ -765,4 +766,4 @@ if __name__ == "__main__":
     ligand_residue = find_molecule(input_pdb, input_molecule)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     set_output(output_name, near_residues, ligand_residue)
-    #print_pdb_structure(input_pdb)
+#    print_pdb_structure(input_pdb)
