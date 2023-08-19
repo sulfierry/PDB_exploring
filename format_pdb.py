@@ -64,6 +64,8 @@ def format_pdb(pdb_file, output_file):
     return formatted_lines
 
 if __name__ == "__main__":
-
+    if len(sys.argv) != 3:
+        print("Usage: script_name input.pdb output.pdb")
+        sys.exit(1)
 
     format_pdb(sys.argv[1], sys.argv[2])
