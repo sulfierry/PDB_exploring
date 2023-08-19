@@ -1,54 +1,60 @@
 import sys
 
+AMINO_ACIDS = [
+    "ALA", "ARG", "ASN", "ASP", "CYS", "GLN", "GLU", "GLY",
+    "HIS", "ILE", "LEU", "LYS", "MET", "PHE", "PRO", "SER",
+    "THR", "TRP", "TYR", "VAL"
+]
+
 def format_pdb(pdb_file, output_file):
+    try:
+        with open(pdb_file, 'r') as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        print(f"Error: {pdb_file} not found.")
+        return
 
-    with open(pdb_file, 'r') as f:
-        lines = f.readlines()
-
-    # Filter out lines we don't care about
     lines = [line for line in lines if line.startswith(("ATOM", "HETATM", "TER"))]
 
-    # Prepare to format PDB
-    hetatm_flag = False  # Flag to track HETATM entries
+    hetatm_flag = False
     atom_counter = 1
     residue_counter = 1
     prev_res_num = None
 
     formatted_lines = []
 
-    for line in lines:
-        # Check if the current line is a HETATM or after TER
+    for i, line in enumerate(lines):
         if line.startswith("TER"):
-            hetatm_flag = True
+            # Check the residue type of the next line (if it exists)
+            if i + 1 < len(lines) and lines[i + 1][17:20] in AMINO_ACIDS:
+                hetatm_flag = False
+            else:
+                hetatm_flag = True
             formatted_lines.append(line)
             continue
 
-        # Extract residue number from the line
-        res_num = int(line[22:26].strip())
+        try:
+            res_num = int(line[22:26].strip())
+        except ValueError:
+            print(f"Error parsing residue number in line: {line.strip()}")
+            continue
 
-        # If we encounter a new residue, increment the residue counter
         if prev_res_num is not None and res_num != prev_res_num:
             residue_counter += 1
 
-        # Assign residue counter for HETATM
         if hetatm_flag:
             line = line[:22] + f"{residue_counter:4}" + line[26:]
-
-        # Adjust the line type to HETATM after TER
-        if hetatm_flag:
             line = "HETATM" + line[6:]
+        else:
+            line = line[:22] + f"{residue_counter:4}" + line[26:]
+            line = "ATOM  " + line[6:]
 
-        # Format atom number and residue number
         line = line[:6] + f"{atom_counter:5}" + line[11:22] + f"{residue_counter:4}" + line[26:]
-
-        # Append the formatted line
         formatted_lines.append(line)
 
-        # Update the atom counter and set the previous residue number
         atom_counter += 1
         prev_res_num = res_num
 
-    # Add TER and END to the end of the file
     formatted_lines.append("TER\n")
     formatted_lines.append("END\n")
 
@@ -57,8 +63,9 @@ def format_pdb(pdb_file, output_file):
 
     return formatted_lines
 
-# Example usage:
-# format_pdb("input.pdb", "output.pdb")
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: script_name input.pdb output.pdb")
+        sys.exit(1)
 
-
-format_pdb(sys.argv[1], sys.argv[2])
+    format_pdb(sys.argv[1], sys.argv[2])
