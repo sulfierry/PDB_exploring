@@ -282,6 +282,7 @@ hydrophobic_residues = [
     ]
 
 hydrophobic_atoms = [
+    
     # Alanina
     "CB",
     # Valina
@@ -300,7 +301,7 @@ hydrophobic_atoms = [
     "CB", "CG", "CD1", "CD2", "NE1", "CE2", "CE3", "CZ2", "CZ3", "CH2",
     # Tirosina
     "CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ",
-
+    "H",
     # Átomos de carbono em grupos alquila e anéis alifáticos
     "C",
     # Nome comum para carbonos em anéis aromáticos
@@ -418,53 +419,44 @@ def find_molecule(pdb_dict, molecule_name):
                 return (atom['res_name'], atom['res_seq'], atom['chain_id'])
 
 
+def calculate_distance(atom1, atom2):
+    """Calculate Euclidean distance between two atoms based on their coordinates."""
+    return sum((a - b) ** 2 for a, b in zip(atom1['coord'], atom2['coord'])) ** 0.5
+
 
 def verify_near_residues(input_pdb, ligand_residue, treshold_distance):
-
-    # Extract ligand atoms based on ligand_residue tuple
     ligand_atoms = [atom for atom in input_pdb['ligands'] 
-                    if atom['res_name'] == ligand_residue[0] 
-                    and atom['res_seq'] == ligand_residue[1] 
-                    and atom['chain_id'] == ligand_residue[2]]
+                    if (atom['res_name'], atom['res_seq'], atom['chain_id']) == ligand_residue]
 
-    # List to store the next residues and the interaction
-    near_residues_info = []
-
-    # Check all atoms of all residues
+    # Combine all atom lists
     all_atoms = input_pdb['chains'] + input_pdb['cofactors'] + input_pdb['ligands']
 
+    # Filter out the ligand atoms from all_atoms
+    all_atoms = [atom for atom in all_atoms if (atom['res_name'], atom['res_seq'], atom['chain_id']) != ligand_residue]
+
+    near_residues_dict = []
+
     for atom in all_atoms:
-        if (atom['res_name'] != ligand_residue[0] or 
-           atom['res_seq'] != ligand_residue[1] or 
-           atom['chain_id'] != ligand_residue[2]):  # Ignore specified ligand
-            min_distance = float('inf')
-            interacting_atoms = None
+        # Find the closest ligand atom to the current atom
+        min_distance, closest_ligand_atom = min((calculate_distance(atom, ligand_atom), ligand_atom) for ligand_atom in ligand_atoms)
 
-            for ligand_atom in ligand_atoms:
-                # Calculate the euclidean distance manually
-                distance = ((atom['coord'][0] - ligand_atom['coord'][0]) ** 2 +
-                            (atom['coord'][1] - ligand_atom['coord'][1]) ** 2 +
-                            (atom['coord'][2] - ligand_atom['coord'][2]) ** 2) ** 0.5
+        if min_distance <= treshold_distance:
+            info = {
+                'molecule_name': atom['res_name'],
+                'molecule_number': atom['res_seq'],
+                'chain': atom['chain_id'],
+                'distance': min_distance,
+                'molecule_atom': atom['name'],
+                'ligand_atom': closest_ligand_atom['name'],
+                'molecule_atom_serial': atom['serial_number'],  # Added the serial number for molecule atom
+                'ligand_atom_serial': closest_ligand_atom['serial_number']  # Added the serial number for ligand atom
+            }
+            near_residues_dict.append(info)
 
-                if distance < min_distance:
-                    min_distance = distance
-                    interacting_atoms = (atom, ligand_atom)
+    # Sort the list based on distance
+    near_residues_dict.sort(key=lambda x: x['distance'])
 
-            if min_distance <= treshold_distance:
-                info = {
-                    'molecule_name': atom['res_name'],
-                    'molecule_number': atom['res_seq'],
-                    'chain': atom['chain_id'],
-                    'distance': min_distance,
-                    'molecule_atom': atom['name'],
-                    'ligand_atom': interacting_atoms[1]['name']
-                }
-                near_residues_info.append(info)
-
-    # Sort the near_residues_info list based on the distance
-    near_residues_info.sort(key=lambda x: x['distance'])
-
-    return near_residues_info
+    return near_residues_dict
 
 
 
@@ -475,14 +467,16 @@ def set_output(output_name, near_residues_dict, ligand_residue_tuple):
 
     with open(output_name, 'w', newline='') as file:
         writer = csv.writer(file)
-        columns = ["Molecule", "Classification", "Number", "Chain", "Nearby atoms", "Distance(Å)", "Interaction"]
+        columns = ["Molecule", "Classification", "Number", "Serial ATOM", "Chain", "Ligand Serial ATOM", "Nearby atoms", "Distance(Å)", "Interaction"]
         writer.writerow(columns)
 
-        print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10} {:^20}".format(*columns))
+        print("{:^20} {:^30} {:^10} {:^12} {:^5} {:^18} {:^20} {:^10} {:^20}".format(*columns))
 
         for entry in near_residues_dict:
             aa_name = entry['molecule_name']
             aa_num = entry['molecule_number']
+            serial_atom = entry['molecule_atom_serial']  # Extracted the serial number for molecule atom
+            ligand_serial_atom = entry['ligand_atom_serial']  # Extracted the serial number for ligand atom
             chain_id = entry['chain']
             distance = entry['distance']
             molecule_atom = entry['molecule_atom']
@@ -502,10 +496,10 @@ def set_output(output_name, near_residues_dict, ligand_residue_tuple):
             if probable_interaction:
                 interacting_molecules_count += 1
 
-            writer.writerow([aa_name, aa_class, aa_num, chain_id, nearby_atoms_str, round(distance, 2), probable_interaction])
+            writer.writerow([aa_name, aa_class, aa_num, serial_atom, chain_id, ligand_serial_atom, nearby_atoms_str, round(distance, 2), probable_interaction])
 
-            print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10.2f} {:^20}".format(
-                aa_name, aa_class, aa_num, chain_id, nearby_atoms_str, distance, probable_interaction))
+            print("{:^20} {:^30} {:^10} {:^12} {:^5} {:^18} {:^20} {:^10.2f} {:^20}".format(
+                aa_name, aa_class, aa_num, serial_atom, chain_id, ligand_serial_atom, nearby_atoms_str, distance, probable_interaction))
 
     print("\nTotal number of interacting molecules:", interacting_molecules_count)
     print("\n")
@@ -518,7 +512,12 @@ def is_interaction(atom1_name, atom2_name, residue_name, distance):
 
     # Check for hydrophobic interactions
     if residue_name in hydrophobic_residues:
+        # Check if one of the atoms is a known hydrophobic atom
         if atom1_name in hydrophobic_atoms or atom2_name in hydrophobic_atoms:
+            if distance <= hydrophobic_distance_threshold:
+                return "Hydrophobic"
+        # Specifically check for a carbon-hydrogen interaction
+        if (atom1_name.startswith("C") and atom2_name == "H") or (atom2_name.startswith("C") and atom1_name == "H"):
             if distance <= hydrophobic_distance_threshold:
                 return "Hydrophobic"
             
@@ -531,7 +530,8 @@ def is_interaction(atom1_name, atom2_name, residue_name, distance):
     # Check for hydrogen bond      
     if distance < 3.7:   
         if atom1_name.startswith(tuple(hydrogen_bond_acceptors)) and \
-           atom2_name.startswith(tuple(hydrogen_bond_acceptors)):
+           atom2_name.startswith(tuple(hydrogen_bond_acceptors)) and \
+           atom1_name != atom2_name:        
             return "Hydrogen bond"
 
     # Assuming lennard_jones_potential is defined elsewhere in your code
@@ -764,6 +764,8 @@ if __name__ == "__main__":
     # executa e salva o resultados para a classificacao dos contatos
     input_pdb = parse_pdb(input_pdb)
     ligand_residue = find_molecule(input_pdb, input_molecule)
+    #print(ligand_residue)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
+    #print(near_residues)
     set_output(output_name, near_residues, ligand_residue)
 #    print_pdb_structure(input_pdb)
