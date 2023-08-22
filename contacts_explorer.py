@@ -320,6 +320,12 @@ hydrophobic_atoms = [
     "I"
 ]
 
+ionic_atoms = {
+    'positive': ['NH1', 'NH2', 'NZ', 'ND1', 'NE2'],  # Átomos carregados positivamente
+    'negative': ['OD1', 'OD2', 'OE1', 'OE2']  # Átomos carregados negativamente
+}
+
+
 # Distance threshold for hydrophobic interactions
 hydrophobic_distance_threshold = 4.0
 
@@ -512,10 +518,10 @@ def is_interaction(atom1_name, atom2_name, residue_name, distance):
 
     # Check for hydrophobic interactions
     if residue_name in hydrophobic_residues:
-        # Check if one of the atoms is a known hydrophobic atom
         if atom1_name in hydrophobic_atoms or atom2_name in hydrophobic_atoms:
             if distance <= hydrophobic_distance_threshold:
                 return "Hydrophobic"
+            
         # Specifically check for a carbon-hydrogen interaction
         if (atom1_name.startswith("C") and atom2_name == "H") or (atom2_name.startswith("C") and atom1_name == "H"):
             if distance <= hydrophobic_distance_threshold:
@@ -526,7 +532,12 @@ def is_interaction(atom1_name, atom2_name, residue_name, distance):
         if residue_name in ionic_interactions:
             if atom1_name.startswith(tuple(ionic_interactions.get(residue_name, []))) or \
                 atom2_name.startswith(tuple(ionic_interactions.get(residue_name, []))):
-                return "Ionic"
+                return "Ionic with cofactor"
+            
+        elif (atom1_name in ionic_atoms['positive'] and atom2_name in ionic_atoms['negative']) or \
+           (atom2_name in ionic_atoms['positive'] and atom1_name in ionic_atoms['negative']):
+            return "Ionic interaction"
+        
     # Check for hydrogen bond      
     if distance < 3.7:   
         if atom1_name.startswith(tuple(hydrogen_bond_acceptors)) and \
@@ -764,8 +775,6 @@ if __name__ == "__main__":
     # executa e salva o resultados para a classificacao dos contatos
     input_pdb = parse_pdb(input_pdb)
     ligand_residue = find_molecule(input_pdb, input_molecule)
-    #print(ligand_residue)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
-    #print(near_residues)
     set_output(output_name, near_residues, ligand_residue)
-#    print_pdb_structure(input_pdb)
+    #print_pdb_structure(input_pdb)
