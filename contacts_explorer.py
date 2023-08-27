@@ -724,17 +724,6 @@ def map_to_molecular_group(atom_name, residue_name):
 
 
 
-def print_pdb_structure(pdb_dict):
-    """
-    Prints the PDB structure from the dictionary in an organized manner.
-
-    Parameters:
-        pdb_dict (dict): Dictionary containing the parsed PDB lists.
-
-    Returns:
-        None: Simply prints the PDB structured data.
-    """
-
 def format_line(atom_data, atom_type="ATOM  "):
     return (
         f"{atom_type:6s}{atom_data['serial_number']:5d} {atom_data['name']:<4s} {atom_data['alt_loc']:1s}{atom_data['res_name']:<3s} "
@@ -745,6 +734,15 @@ def format_line(atom_data, atom_type="ATOM  "):
     )
 
 def print_pdb_structure(pdb_dict):
+    """
+    Prints the PDB structure from the dictionary in an organized manner.
+
+    Parameters:
+        pdb_dict (dict): Dictionary containing the parsed PDB lists.
+
+    Returns:
+        None: Simply prints the PDB structured data.
+    """
     # Print the chains first
     for atom in pdb_dict['chains']:
         print(format_line(atom), end='')
