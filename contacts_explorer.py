@@ -776,3 +776,13 @@ if __name__ == "__main__":
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     set_output(output_name, near_residues, ligand_residue)
     #print_pdb_structure(input_pdb)
+
+    # Adicionar a função de calco dos angulos e diedros do sitio ativo
+    # Para isto será necessário criar os dicionarios dos angulos e diedros
+    # Em seguida converter esrta represetaçao para grafos
+    # ou calcar os anglus e diedros dieretamente no grafo!
+    # gear delineamento (obter medidas):
+    #   Somente Angulo
+    #   Somente Diedro
+    #   Angulo e Diedro
+    #   Angulo e Diedro com distancia
