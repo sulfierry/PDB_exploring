@@ -4,6 +4,7 @@
 
 import csv
 import sys
+import math
 
 
 # Variaveis globais ################################################################################################
@@ -760,11 +761,6 @@ def print_pdb_structure(pdb_dict):
     print("END")
 
 
-
-
-#############################################################
-import math
-
 # Função para calcular a distância entre dois átomos
 def calculate_distance(atom1, atom2):
     coord1 = atom1['coord']
@@ -868,7 +864,7 @@ def calculate_dihedrals_for_atoms(parsed_data, near_residues_dict):
     2 - O primeiro plano é definido pelos vetores BA e CB, e o segundo plano é definido pelos vetores CB e DC.
     3 - Calculamos os vetores normais a esses planos usando o produto vetorial (cross product). 
             O vetor normal ao primeiro plano é:  N1 = BA x CB    
-            E o vetor normal ao segundo plano é: N2 = CB × DC.
+            E o vetor normal ao segundo plano é: N2 = CB x DC.
     4 - Calculamos o cosseno do ângulo entre os vetores normais usando o produto escalar e as magnitudes:
             cos(θ) = N1⋅N2 / |N1|⋅|N2|
     5 - Usamos a função arco-cosseno (acos) para obter o ângulo θ em radianos.
@@ -894,7 +890,7 @@ def calculate_dihedrals_for_atoms(parsed_data, near_residues_dict):
 
 
 
-def set_output_angle_dihedral_updated(near_residues_dict, ligand_residue_tuple, parsed_data, output_name):
+def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_data, output_name):
     ligand_name, ligand_num, ligand_chain = ligand_residue_tuple
 
     # Calculate angles and dihedrals data within the function
@@ -905,10 +901,10 @@ def set_output_angle_dihedral_updated(near_residues_dict, ligand_residue_tuple, 
 
     with open(output_name, 'w', newline='') as file:
         writer = csv.writer(file)
-        columns = ["Nearby atoms", "Distance(Å)", "Interaction", "Angle (degrees)", "Angle Atoms", "Name Angle", "Dihedral (degrees)", "Dihedral Atoms", "Name Dihedral"]
+        columns = ["Nearby atoms", "Distance(Å)", "Interaction", "Angle (°)", "Angle Atoms", "Angle Molecule Atoms", "Dihedral (°)", "Dihedral Atoms", "Dihedral Molecule Atoms"]
         writer.writerow(columns)
         
-        print("{:^40} {:^10} {:^20} {:^15} {:^20} {:^30} {:^18} {:^20} {:^30}".format(*columns))
+        print("{:^40} {:^10} {:^20} {:^15} {:^20} {:^30} {:^20} {:^20} {:^30}".format(*columns))
         
         for idx, entry in enumerate(near_residues_dict):
             aa_name = entry['molecule_name']
@@ -945,7 +941,7 @@ def set_output_angle_dihedral_updated(near_residues_dict, ligand_residue_tuple, 
             writer.writerow([nearby_atoms_str, round(distance, 2), probable_interaction, 
                              angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names])
 
-            print("{:^40} {:^10.2f} {:^20} {:^15} {:^20} {:^30} {:^18} {:^20} {:^30}".format(
+            print("{:^40} {:^10.2f} {:^20} {:^15} {:^20} {:^30} {:^20} {:^20} {:^30}".format(
                 nearby_atoms_str, distance, probable_interaction, 
                 angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names))
 
@@ -970,15 +966,16 @@ if __name__ == "__main__":
 
 
     ligand_residue = find_molecule(input_pdb, input_molecule)
-    print(ligand_residue)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     #set_output(near_residues, ligand_residue, output_name)
     #print_pdb_structure(input_pdb)
-    set_output_angle_dihedral_updated(near_residues, ligand_residue, input_pdb, output_name)
+    set_output_angle_dihedral(near_residues, ligand_residue, input_pdb, output_name)
 
-    # Adicionar a função de calco dos angulos e diedros do sitio ativo
-    # Para isto será necessário criar os dicionarios dos angulos e diedros
-    # Em seguida converter esrta represetaçao para grafos
+    # Verificar utilizando o pymol os angulos e diedros calculados - Amanhã 29/08
+
+    # Adicionar a função de calco dos angulos e diedros do sitio ativo (FEITO)
+    # Para isto será necessário criar os dicionarios dos angulos e diedros (FEITO)
+    # Em seguida converter esta represetaçao para grafos
     # ou calcar os anglus e diedros dieretamente no grafo!
     # gear delineamento (obter medidas):
     #   Somente Angulo
