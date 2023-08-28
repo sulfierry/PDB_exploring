@@ -532,7 +532,7 @@ def is_interaction(atom1_name, atom2_name, residue_name, distance):
         if residue_name in ionic_interactions:
             if atom1_name.startswith(tuple(ionic_interactions.get(residue_name, []))) or \
                 atom2_name.startswith(tuple(ionic_interactions.get(residue_name, []))):
-                return "Ionic with cofactor"
+                return "Ionic interaction"
             
         elif (atom1_name in ionic_atoms['positive'] and atom2_name in ionic_atoms['negative']) or \
            (atom2_name in ionic_atoms['positive'] and atom1_name in ionic_atoms['negative']):
