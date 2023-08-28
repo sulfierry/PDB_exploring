@@ -821,35 +821,80 @@ def extract_coordinates(parsed_data, serial_numbers):
     serial_to_coord = {atom['serial_number']: atom['coord'] for atom in all_atoms}
     return [serial_to_coord[serial] for serial in serial_numbers if serial in serial_to_coord]
 
-# Função para calcular ângulos para átomos consecutivos em near_residues_dict
+
+def extract_atom_info(parsed_data, serial_numbers):
+    """
+    Retrieve the coordinates and atom names based on their serial numbers.
+    """
+    all_atoms = parsed_data['chains'] + parsed_data['cofactors'] + parsed_data['ligands']
+    serial_to_info = {atom['serial_number']: (atom['coord'], atom['name'] + str(atom['res_seq'])) for atom in all_atoms}
+    return [serial_to_info[serial] for serial in serial_numbers if serial in serial_to_info]
+
+
 def calculate_angles_for_atoms(parsed_data, near_residues_dict):
+    """
+    Para calcular um ângulo, precisamos de três pontos. O ângulo é formado entre o primeiro e o terceiro ponto, usando o segundo ponto como o vértice.
+    Se tivermos os pontos A, B e C, o ângulo que queremos calcular é o formado por  BA e BC.
+
+    1 - Obtemos os vetores BA e BC.
+    2 - Calculamos o produto escalar (dot product) desses dois vetores.
+    3 - Calculamos a magnitude (norma) de cada vetor.
+    4 - O cosseno do ângulo entre os vetores é dado por: cos(θ) = BA⋅BC / |BA|⋅|BC|
+    5 - Usamos a função arco-cosseno (acos) para obter o ângulo θ em radianos.
+    6 - Convertemos o ângulo de radianos para graus.
+    """
     serial_numbers = [entry['molecule_atom_serial'] for entry in near_residues_dict]
-    coordinates = extract_coordinates(parsed_data, serial_numbers)
+    atom_info = extract_atom_info(parsed_data, serial_numbers)
+    coordinates = [info[0] for info in atom_info]
+    atom_names = [info[1] for info in atom_info]
+    
     angles = []
     for i in range(len(coordinates) - 2):
         angle = calculate_angle(coordinates[i], coordinates[i+1], coordinates[i+2])
         angles.append({
             'Atoms': (serial_numbers[i], serial_numbers[i+1], serial_numbers[i+2]),
-            'Angle (degrees)': angle
+            'Angle (degrees)': angle,
+            'Atom Names': (atom_names[i], atom_names[i+1], atom_names[i+2])
         })
     return angles
 
-# Função para calcular diedros para átomos consecutivos em near_residues_dict
+
 def calculate_dihedrals_for_atoms(parsed_data, near_residues_dict):
+    """
+    Para calcular um diedro, precisamos de quatro pontos. O diedro é o ângulo entre dois planos, e esses planos são definidos pelos pontos.
+    Se tivermos os pontos A, B, C e D, queremos calcular o ângulo entre o plano formado por A, B e C e o plano formado por B, C e D.
+
+    1 - Calculamos os vetores BA, CB e DC.
+    2 - O primeiro plano é definido pelos vetores BA e CB, e o segundo plano é definido pelos vetores CB e DC.
+    3 - Calculamos os vetores normais a esses planos usando o produto vetorial (cross product). 
+            O vetor normal ao primeiro plano é:  N1 = BA x CB    
+            E o vetor normal ao segundo plano é: N2 = CB × DC.
+    4 - Calculamos o cosseno do ângulo entre os vetores normais usando o produto escalar e as magnitudes:
+            cos(θ) = N1⋅N2 / |N1|⋅|N2|
+    5 - Usamos a função arco-cosseno (acos) para obter o ângulo θ em radianos.
+    6 - Convertemos o ângulo de radianos para graus.
+    Além disso, para garantir que o diedro esteja no intervalo correto de -180° a 180°, 
+    levamos em consideração a direção do vetor formado pelo produto vetorial dos vetores normais e o vetor CB. 
+    Se a direção for negativa, invertemos o sinal do cosseno.
+    """
     serial_numbers = [entry['molecule_atom_serial'] for entry in near_residues_dict]
-    coordinates = extract_coordinates(parsed_data, serial_numbers)
+    atom_info = extract_atom_info(parsed_data, serial_numbers)
+    coordinates = [info[0] for info in atom_info]
+    atom_names = [info[1] for info in atom_info]
+    
     dihedrals = []
     for i in range(len(coordinates) - 3):
         dihedral = calculate_dihedral(coordinates[i], coordinates[i+1], coordinates[i+2], coordinates[i+3])
         dihedrals.append({
             'Atoms': (serial_numbers[i], serial_numbers[i+1], serial_numbers[i+2], serial_numbers[i+3]),
-            'Dihedral (degrees)': dihedral
+            'Dihedral (degrees)': dihedral,
+            'Atom Names': (atom_names[i], atom_names[i+1], atom_names[i+2], atom_names[i+3])
         })
     return dihedrals
 
 
 
-def set_output_modified_v2(near_residues_dict, ligand_residue_tuple, parsed_data, output_name):
+def set_output_angle_dihedral_updated(near_residues_dict, ligand_residue_tuple, parsed_data, output_name):
     ligand_name, ligand_num, ligand_chain = ligand_residue_tuple
 
     # Calculate angles and dihedrals data within the function
@@ -858,26 +903,20 @@ def set_output_modified_v2(near_residues_dict, ligand_residue_tuple, parsed_data
 
     interacting_molecules_count = 0  # contador para moléculas interagindo
 
+    output_lines = []
+
     with open(output_name, 'w', newline='') as file:
         writer = csv.writer(file)
         columns = ["Molecule", "Classification", "Number", "Chain", "Nearby atoms", "Distance(Å)", "Interaction",
-                   "Angle (degrees)", "Angle Atoms", "Dihedral (degrees)", "Dihedral Atoms"]
+                   "Angle (degrees)", "Angle Atoms", "Name Angle", "Dihedral (degrees)", "Dihedral Atoms", "Name Dihedral"]
         writer.writerow(columns)
-
-        print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10} {:^20} {:^15} {:^20} {:^18} {:^20}".format(*columns))
-
-        #columns = ["Molecule", "Classification", "Number", "Serial ATOM", "Chain", 
-        #           "Ligand Serial ATOM", "Nearby atoms", "Distance(Å)", "Interaction",
-        #           "Angle (degrees)", "Angle Atoms", "Dihedral (degrees)", "Dihedral Atoms"]
-        #writer.writerow(columns)
-
-        #print("{:^20} {:^30} {:^10} {:^12} {:^5} {:^18} {:^20} {:^10} {:^20} {:^15} {:^20} {:^18} {:^20}".format(*columns))
+        
+        header = "{:^20} {:^30} {:^10} {:^5} {:^20} {:^10} {:^20} {:^15} {:^20} {:^20} {:^18} {:^20} {:^20}".format(*columns)
+        output_lines.append(header)
 
         for idx, entry in enumerate(near_residues_dict):
             aa_name = entry['molecule_name']
             aa_num = entry['molecule_number']
-            #serial_atom = entry['molecule_atom_serial']
-            #ligand_serial_atom = entry['ligand_atom_serial']
             chain_id = entry['chain']
             distance = entry['distance']
             molecule_atom = entry['molecule_atom']
@@ -898,41 +937,32 @@ def set_output_modified_v2(near_residues_dict, ligand_residue_tuple, parsed_data
                 interacting_molecules_count += 1
 
             # Retrieve the angles and dihedrals data for the current atom (if available)
-            angle, angle_atoms = "", ""
+            angle, angle_atoms, angle_names = "", "", ""
             if idx < len(angles_data):
                 angle = round(angles_data[idx]['Angle (degrees)'], 2)
                 angle_atoms = "-".join(map(str, angles_data[idx]['Atoms']))
+                angle_names = "-".join(angles_data[idx]['Atom Names'])
 
-            dihedral, dihedral_atoms = "", ""
+            dihedral, dihedral_atoms, dihedral_names = "", "", ""
             if idx < len(dihedrals_data):
                 dihedral = round(dihedrals_data[idx]['Dihedral (degrees)'], 2)
                 dihedral_atoms = "-".join(map(str, dihedrals_data[idx]['Atoms']))
+                dihedral_names = "-".join(dihedrals_data[idx]['Atom Names'])
 
             # Write the data
             writer.writerow([aa_name, aa_class, aa_num, chain_id,
                              nearby_atoms_str, round(distance, 2), probable_interaction, 
-                             angle, angle_atoms, dihedral, dihedral_atoms])
-
-            print("{:^20} {:^30} {:^10} {:^5} {:^20} {:^10.2f} {:^20} {:^15} {:^20} {:^18} {:^20}".format(
+                             angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names])
+            
+            line = "{:^20} {:^30} {:^10} {:^5} {:^20} {:^10.2f} {:^20} {:^15} {:^20} {:^20} {:^18} {:^20} {:^20}".format(
                 aa_name, aa_class, aa_num, chain_id,
                 nearby_atoms_str, distance, probable_interaction, 
-                angle, angle_atoms, dihedral, dihedral_atoms))
+                angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names)
             
-            # Write the data
-            #writer.writerow([aa_name, aa_class, aa_num, serial_atom, chain_id, ligand_serial_atom, 
-            #                 nearby_atoms_str, round(distance, 2), probable_interaction, 
-            #                 angle, angle_atoms, dihedral, dihedral_atoms])
-
-            #print("{:^20} {:^30} {:^10} {:^12} {:^5} {:^18} {:^20} {:^10.2f} {:^20} {:^15} {:^20} {:^18} {:^20}".format(
-            #    aa_name, aa_class, aa_num, serial_atom, chain_id, ligand_serial_atom, 
-            #    nearby_atoms_str, distance, probable_interaction, 
-            #    angle, angle_atoms, dihedral, dihedral_atoms))
-
-    print("\nTotal number of interacting molecules:", interacting_molecules_count)
-    print("\n")
-    return f"Successfully processed and saved! Total interactions: {interacting_molecules_count}"
-
-# Note: This function is defined but not called. You will need to call it with appropriate arguments to run it.
+            output_lines.append(line)
+            
+    output_lines.append("\nTotal number of interacting molecules: {}".format(interacting_molecules_count))
+    return output_lines, f"Successfully processed and saved! Total interactions: {interacting_molecules_count}"
 
 
 
@@ -955,7 +985,7 @@ if __name__ == "__main__":
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     #set_output(near_residues, ligand_residue, output_name)
     #print_pdb_structure(input_pdb)
-    set_output_modified_v2(near_residues, ligand_residue, input_pdb, output_name)
+    set_output_angle_dihedral_updated(near_residues, ligand_residue, input_pdb, output_name)
 
     # Adicionar a função de calco dos angulos e diedros do sitio ativo
     # Para isto será necessário criar os dicionarios dos angulos e diedros
