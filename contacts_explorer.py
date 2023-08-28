@@ -903,17 +903,13 @@ def set_output_angle_dihedral_updated(near_residues_dict, ligand_residue_tuple, 
 
     interacting_molecules_count = 0  # contador para moléculas interagindo
 
-    output_lines = []
-
     with open(output_name, 'w', newline='') as file:
         writer = csv.writer(file)
-        columns = ["Molecule", "Classification", "Number", "Chain", "Nearby atoms", "Distance(Å)", "Interaction",
-                   "Angle (degrees)", "Angle Atoms", "Name Angle", "Dihedral (degrees)", "Dihedral Atoms", "Name Dihedral"]
+        columns = ["Nearby atoms", "Distance(Å)", "Interaction", "Angle (degrees)", "Angle Atoms", "Name Angle", "Dihedral (degrees)", "Dihedral Atoms", "Name Dihedral"]
         writer.writerow(columns)
         
-        header = "{:^20} {:^30} {:^10} {:^5} {:^20} {:^10} {:^20} {:^15} {:^20} {:^20} {:^18} {:^20} {:^20}".format(*columns)
-        output_lines.append(header)
-
+        print("{:^40} {:^10} {:^20} {:^15} {:^20} {:^30} {:^18} {:^20} {:^30}".format(*columns))
+        
         for idx, entry in enumerate(near_residues_dict):
             aa_name = entry['molecule_name']
             aa_num = entry['molecule_number']
@@ -922,12 +918,9 @@ def set_output_angle_dihedral_updated(near_residues_dict, ligand_residue_tuple, 
             molecule_atom = entry['molecule_atom']
             ligand_atom = entry['ligand_atom']
 
-            # Use molecule_class to obtain the classification, if available, otherwise, set it as 'unknown'
-            aa_class = molecule_class.get(aa_name, "unknown")
-
-            atom1_str = molecule_atom + "(" + aa_name + ")"
-            atom2_str = ligand_atom + "(" + ligand_name + ")"
-            nearby_atoms_str = "{:<10}-{:>10}".format(atom1_str, atom2_str)
+            atom1_str = molecule_atom + "(" + aa_name + str(aa_num) + ")"
+            atom2_str = ligand_atom + "(" + ligand_name + str(ligand_num) + ")"
+            nearby_atoms_str = "{:<15}-{:>15}".format(atom1_str, atom2_str)
 
             # Assuming the is_interaction function works this way
             probable_interaction = is_interaction(molecule_atom, ligand_atom, aa_name, distance)
@@ -949,21 +942,16 @@ def set_output_angle_dihedral_updated(near_residues_dict, ligand_residue_tuple, 
                 dihedral_atoms = "-".join(map(str, dihedrals_data[idx]['Atoms']))
                 dihedral_names = "-".join(dihedrals_data[idx]['Atom Names'])
 
-            # Write the data
-            writer.writerow([aa_name, aa_class, aa_num, chain_id,
-                             nearby_atoms_str, round(distance, 2), probable_interaction, 
+            writer.writerow([nearby_atoms_str, round(distance, 2), probable_interaction, 
                              angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names])
-            
-            line = "{:^20} {:^30} {:^10} {:^5} {:^20} {:^10.2f} {:^20} {:^15} {:^20} {:^20} {:^18} {:^20} {:^20}".format(
-                aa_name, aa_class, aa_num, chain_id,
-                nearby_atoms_str, distance, probable_interaction, 
-                angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names)
-            
-            output_lines.append(line)
-            
-    output_lines.append("\nTotal number of interacting molecules: {}".format(interacting_molecules_count))
-    return output_lines, f"Successfully processed and saved! Total interactions: {interacting_molecules_count}"
 
+            print("{:^40} {:^10.2f} {:^20} {:^15} {:^20} {:^30} {:^18} {:^20} {:^30}".format(
+                nearby_atoms_str, distance, probable_interaction, 
+                angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names))
+
+    print("\nTotal number of interacting molecules:", interacting_molecules_count)
+    print("\n")
+    return f"Successfully processed and saved! Total interactions: {interacting_molecules_count}"
 
 
 
@@ -982,6 +970,7 @@ if __name__ == "__main__":
 
 
     ligand_residue = find_molecule(input_pdb, input_molecule)
+    print(ligand_residue)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     #set_output(near_residues, ligand_residue, output_name)
     #print_pdb_structure(input_pdb)
