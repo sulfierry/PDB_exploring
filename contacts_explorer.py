@@ -466,7 +466,7 @@ def verify_near_residues(input_pdb, ligand_residue, treshold_distance):
 
 
 
-def set_output(output_name, near_residues_dict, ligand_residue_tuple):
+def set_output(near_residues_dict, ligand_residue_tuple, output_name):
     ligand_name, ligand_num, ligand_chain = ligand_residue_tuple
 
     interacting_molecules_count = 0  # contador para moléculas interagindo
@@ -760,6 +760,7 @@ def print_pdb_structure(pdb_dict):
     print("END")
 
 
+
 if __name__ == "__main__":
 
     # Arquivos de entrada e saida a serem fornecidos
@@ -772,9 +773,11 @@ if __name__ == "__main__":
 
     # executa e salva o resultados para a classificacao dos contatos
     input_pdb = parse_pdb(input_pdb)
+
+
     ligand_residue = find_molecule(input_pdb, input_molecule)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
-    set_output(output_name, near_residues, ligand_residue)
+    set_output(near_residues, ligand_residue, output_name)
     #print_pdb_structure(input_pdb)
 
     # Adicionar a função de calco dos angulos e diedros do sitio ativo
