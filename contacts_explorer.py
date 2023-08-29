@@ -929,14 +929,14 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
             angle, angle_atoms, angle_names = "", "", ""
             if idx < len(angles_data):
                 angle = round(angles_data[idx]['Angle (degrees)'], 2)
-                angle_atoms = "-".join(map(str, angles_data[idx]['Atoms']))
-                angle_names = "-".join(angles_data[idx]['Atom Names'])
+                angle_atoms = ", ".join(map(str, angles_data[idx]['Atoms']))
+                angle_names = ", ".join(angles_data[idx]['Atom Names'])
 
             dihedral, dihedral_atoms, dihedral_names = "", "", ""
             if idx < len(dihedrals_data):
                 dihedral = round(dihedrals_data[idx]['Dihedral (degrees)'], 2)
-                dihedral_atoms = "-".join(map(str, dihedrals_data[idx]['Atoms']))
-                dihedral_names = "-".join(dihedrals_data[idx]['Atom Names'])
+                dihedral_atoms = ", ".join(map(str, dihedrals_data[idx]['Atoms']))
+                dihedral_names = ", ".join(dihedrals_data[idx]['Atom Names'])
 
             writer.writerow([nearby_atoms_str, round(distance, 2), probable_interaction, 
                              angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names])
@@ -977,8 +977,7 @@ if __name__ == "__main__":
     # Para isto será necessário criar os dicionarios dos angulos e diedros (FEITO)
     # Em seguida converter esta represetaçao para grafos
     # ou calcar os anglus e diedros dieretamente no grafo!
-    # gear delineamento (obter medidas):
+    # obter medidas:
     #   Somente Angulo
     #   Somente Diedro
     #   Angulo e Diedro
-    #   Angulo e Diedro com distancia
