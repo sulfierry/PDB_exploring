@@ -904,7 +904,7 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
         columns = ["Chain", "Nearby atoms", "Distance(Å)", "Interaction", "Angle (°)", "Angle Atoms", "Angle Molecule Atoms", "Dihedral (°)", "Dihedral Atoms", "Dihedral Molecule Atoms"]
         writer.writerow(columns)
         
-        print("{:^40} {:^10} {:^20} {:^15} {:^20} {:^30} {:^20} {:^20} {:^30}".format(*columns))
+        print("{:^5} {:^40} {:^10} {:^20} {:^15} {:^20} {:^30} {:^20} {:^20} {:^30}".format(*columns))
         
         for idx, entry in enumerate(near_residues_dict):
             aa_name = entry['molecule_name']
