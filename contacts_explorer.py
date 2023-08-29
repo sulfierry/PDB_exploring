@@ -901,7 +901,7 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
 
     with open(output_name, 'w', newline='') as file:
         writer = csv.writer(file)
-        columns = ["Nearby atoms", "Distance(Å)", "Interaction", "Angle (°)", "Angle Atoms", "Angle Molecule Atoms", "Dihedral (°)", "Dihedral Atoms", "Dihedral Molecule Atoms"]
+        columns = ["Chain", "Nearby atoms", "Distance(Å)", "Interaction", "Angle (°)", "Angle Atoms", "Angle Molecule Atoms", "Dihedral (°)", "Dihedral Atoms", "Dihedral Molecule Atoms"]
         writer.writerow(columns)
         
         print("{:^40} {:^10} {:^20} {:^15} {:^20} {:^30} {:^20} {:^20} {:^30}".format(*columns))
@@ -938,11 +938,11 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
                 dihedral_atoms = ", ".join(map(str, dihedrals_data[idx]['Atoms']))
                 dihedral_names = ", ".join(dihedrals_data[idx]['Atom Names'])
 
-            writer.writerow([nearby_atoms_str, round(distance, 2), probable_interaction, 
+            writer.writerow([chain_id, nearby_atoms_str, round(distance, 2), probable_interaction, 
                              angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names])
 
-            print("{:^40} {:^10.2f} {:^20} {:^15} {:^20} {:^30} {:^20} {:^20} {:^30}".format(
-                nearby_atoms_str, distance, probable_interaction, 
+            print("{:^5} {:^40} {:^10.2f} {:^20} {:^15} {:^20} {:^30} {:^20} {:^20} {:^30}".format(
+                chain_id, nearby_atoms_str, distance, probable_interaction, 
                 angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names))
 
     print("\nTotal number of interacting molecules:", interacting_molecules_count)
