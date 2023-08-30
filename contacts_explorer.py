@@ -920,10 +920,14 @@ def calculate_angles_for_nearest_atoms(parsed_data, near_residues_dict):
         angle = calculate_angle(nearest_atoms[0]['coord'], target_atom['coord'], nearest_atoms[1]['coord'])
         
         angles.append({
-            'Target Atom': target_atom_serial,
-            'Nearest Atoms': (nearest_atoms[0]['serial_number'], nearest_atoms[1]['serial_number']),
-            'Angle (degrees)': angle
+            'Target Atom'     : target_atom_serial,
+            'Nearest Atoms'   : (nearest_atoms[0]['serial_number'], nearest_atoms[1]['serial_number']),
+            'Angle (degrees)' : angle,
+            'Atom Names'      : (nearest_atoms[0]['res_name'] + "("+ nearest_atoms[0]['name'] + ")" +  str(nearest_atoms[0]['res_seq']), 
+                                target_atom['res_name']       + "("+ target_atom['name']      + ")" +  str(target_atom['res_seq']),
+                                nearest_atoms[1]['res_name']  + "("+ nearest_atoms[1]['name'] + ")" +  str(nearest_atoms[1]['res_seq']))
         })
+
 
     return angles
 
@@ -948,7 +952,11 @@ def calculate_dihedrals_for_nearest_atoms(parsed_data, near_residues_dict):
         dihedrals.append({
             'Target Atom': target_atom_serial,
             'Nearest Atoms': (nearest_atoms[0]['serial_number'], nearest_atoms[1]['serial_number'], nearest_atoms[2]['serial_number']),
-            'Dihedral (degrees)': dihedral
+            'Dihedral (degrees)': dihedral,
+            'Atom Names': ("("+target_atom['name']+")"      + str(target_atom['res_seq']), 
+                           "("+nearest_atoms[0]['name']+")" + str(nearest_atoms[0]['res_seq']), 
+                           "("+nearest_atoms[1]['name']+")" + str(nearest_atoms[1]['res_seq']), 
+                           "("+nearest_atoms[2]['name']+")" + str(nearest_atoms[2]['res_seq']))
         })
 
     return dihedrals
@@ -964,10 +972,13 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
 
     with open(output_name, 'w', newline='') as file:
         writer = csv.writer(file)
-        columns = ["Chain", "Nearby atoms", "Interaction", "Distance(Å)", "Angle (°)", "Angle Atoms", "Dihedral (°)", "Dihedral Atoms"]
+
+        columns = ["Chain", "Nearby atoms", "Interaction", "Distance(Å)", 
+                   "Angle (°)",  "Angle Atoms Name", 
+                   "Dihedral (°)", "Dihedral Atoms Name"]
         writer.writerow(columns)
         
-        print("{:^5} {:^40} {:^20} {:^10} {:^15} {:^20} {:^15} {:^20}".format(*columns))
+        print("{:^5} {:^40} {:^20} {:^10} {:^15} {:^50} {:^15} {:^60}".format(*columns))
         
         for idx, entry in enumerate(near_residues_dict):
             chain_id = entry['chain']
@@ -987,19 +998,28 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
             if probable_interaction:
                 interacting_molecules_count += 1
 
-            angle, angle_atoms = "", ""
+            angle, angle_atoms, angle_names = "", "", ""
             if idx < len(angles_data):
                 angle = round(angles_data[idx]['Angle (degrees)'], 2)
                 angle_atoms = ", ".join(map(str, angles_data[idx]['Nearest Atoms']))
+                angle_names = ", ".join(angles_data[idx]['Atom Names'])
 
-            dihedral, dihedral_atoms = "", ""
+
+            dihedral, dihedral_atoms, dihedral_names = "", "", ""
             if idx < len(dihedrals_data):
                 dihedral = round(dihedrals_data[idx]['Dihedral (degrees)'], 2)
                 dihedral_atoms = ", ".join(map(str, dihedrals_data[idx]['Nearest Atoms']))
+                dihedral_names = ", ".join(dihedrals_data[idx]['Atom Names'])
 
-            writer.writerow([chain_id, nearby_atoms_str, probable_interaction, round(distance, 2),  angle, angle_atoms, dihedral, dihedral_atoms])
+            writer.writerow([chain_id, nearby_atoms_str, 
+                             probable_interaction, round(distance, 2),  
+                             angle, angle_atoms, angle_names, 
+                             dihedral, dihedral_atoms, dihedral_names])
 
-            print("{:^5} {:^40} {:^20} {:^10.2f}  {:^15} {:^20} {:^15} {:^20}".format(chain_id, nearby_atoms_str, probable_interaction, distance,  angle, angle_atoms, dihedral, dihedral_atoms))
+            print("{:^5} {:^40} {:^20} {:^10.2f}  {:^15} {:^50} {:^15} {:^60}".format(
+                chain_id, nearby_atoms_str, probable_interaction, distance,  
+                angle, angle_names,
+                dihedral, dihedral_names))
 
     print("\nTotal number of interacting molecules:", interacting_molecules_count)
     print("\n")
