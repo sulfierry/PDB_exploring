@@ -466,54 +466,6 @@ def verify_near_residues(input_pdb, ligand_residue, treshold_distance):
     return near_residues_dict
 
 
-
-def set_output(near_residues_dict, ligand_residue_tuple, output_name):
-    ligand_name, ligand_num, ligand_chain = ligand_residue_tuple
-
-    interacting_molecules_count = 0  # contador para moléculas interagindo
-
-    with open(output_name, 'w', newline='') as file:
-        writer = csv.writer(file)
-        columns = ["Molecule", "Classification", "Number", "Serial ATOM", "Chain", "Ligand Serial ATOM", "Nearby atoms", "Distance(Å)", "Interaction"]
-        writer.writerow(columns)
-
-        print("{:^20} {:^30} {:^10} {:^12} {:^5} {:^18} {:^20} {:^10} {:^20}".format(*columns))
-
-        for entry in near_residues_dict:
-            aa_name = entry['molecule_name']
-            aa_num = entry['molecule_number']
-            serial_atom = entry['molecule_atom_serial']  # Extracted the serial number for molecule atom
-            ligand_serial_atom = entry['ligand_atom_serial']  # Extracted the serial number for ligand atom
-            chain_id = entry['chain']
-            distance = entry['distance']
-            molecule_atom = entry['molecule_atom']
-            ligand_atom = entry['ligand_atom']
-
-            # Use molecule_class para obter a classificação, se disponível, caso contrário, defina como 'unknown'
-            aa_class = molecule_class.get(aa_name, "unknown")
-
-            atom1_str = molecule_atom + "(" + aa_name + ")"
-            atom2_str = ligand_atom + "(" + ligand_name + ")"
-            nearby_atoms_str = "{:<10}-{:>10}".format(atom1_str, atom2_str)
-
-            # Supondo que sua função is_interaction funcione assim
-            probable_interaction = is_interaction(molecule_atom, ligand_atom, aa_name, distance)
-
-            # Incrementa o contador se houver interação
-            if probable_interaction:
-                interacting_molecules_count += 1
-
-            writer.writerow([aa_name, aa_class, aa_num, serial_atom, chain_id, ligand_serial_atom, nearby_atoms_str, round(distance, 2), probable_interaction])
-
-            print("{:^20} {:^30} {:^10} {:^12} {:^5} {:^18} {:^20} {:^10.2f} {:^20}".format(
-                aa_name, aa_class, aa_num, serial_atom, chain_id, ligand_serial_atom, nearby_atoms_str, distance, probable_interaction))
-
-    print("\nTotal number of interacting molecules:", interacting_molecules_count)
-    print("\n")
-    return f"Successfully processed and saved! Total interactions: {interacting_molecules_count}"
-
-
-
 # Define a function to check for potential hydrogen bonds
 def is_interaction(atom1_name, atom2_name, residue_name, distance):
 
@@ -1061,17 +1013,5 @@ if __name__ == "__main__":
 
     ligand_residue = find_molecule(input_pdb, input_molecule)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
-    #set_output(near_residues, ligand_residue, output_name)
-    #print_pdb_structure(input_pdb)
     set_output_angle_dihedral(near_residues, ligand_residue, input_pdb, output_name)
 
-    # Verificar utilizando o pymol os angulos e diedros calculados - em algo de muito estranho no aclculo dos diedros.
-
-    # Adicionar a função de calco dos angulos e diedros do sitio ativo (FEITO)
-    # Para isto será necessário criar os dicionarios dos angulos e diedros (FEITO)
-    # Em seguida converter esta represetaçao para grafos
-    # ou calcar os anglus e diedros dieretamente no grafo!
-    # obter medidas:
-    #   Somente Angulo
-    #   Somente Diedro
-    #   Angulo e Diedro
