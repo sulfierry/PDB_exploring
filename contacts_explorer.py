@@ -953,10 +953,10 @@ def calculate_dihedrals_for_nearest_atoms(parsed_data, near_residues_dict):
             'Target Atom': target_atom_serial,
             'Nearest Atoms': (nearest_atoms[0]['serial_number'], nearest_atoms[1]['serial_number'], nearest_atoms[2]['serial_number']),
             'Dihedral (degrees)': dihedral,
-            'Atom Names': ("("+target_atom['name']+")"      + str(target_atom['res_seq']), 
-                           "("+nearest_atoms[0]['name']+")" + str(nearest_atoms[0]['res_seq']), 
+            'Atom Names': ("("+nearest_atoms[0]['name']+")" + str(nearest_atoms[0]['res_seq']), 
                            "("+nearest_atoms[1]['name']+")" + str(nearest_atoms[1]['res_seq']), 
-                           "("+nearest_atoms[2]['name']+")" + str(nearest_atoms[2]['res_seq']))
+                           "("+nearest_atoms[2]['name']+")" + str(nearest_atoms[2]['res_seq']),
+                           "("+target_atom['name']+")"      + str(target_atom['res_seq']))
         })
 
     return dihedrals
@@ -967,7 +967,7 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
     # Calculate angles and dihedrals data within the function using the nearest atoms approach
     angles_data = calculate_angles_for_nearest_atoms(parsed_data, near_residues_dict)
     dihedrals_data = calculate_dihedrals_for_nearest_atoms(parsed_data, near_residues_dict)
-
+   
     interacting_molecules_count = 0
 
     with open(output_name, 'w', newline='') as file:
@@ -978,13 +978,13 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
         #           "Dihedral (°)", "Dihedral Atoms Name"]
         columns = ["Chain", "Nearby atoms", "Interaction", "Distance(Å)", 
                    "Angle (°)", "Distance Angles", "Angle Atoms Name", 
-                   "Dihedral (°)", "Distance Dihedrals", "Dihedral Atoms Name"]
+                   "Dihedral (°)", "Dihedral Atoms Name"]
 
 
         writer.writerow(columns)
         
         #print("{:^5} {:^40} {:^20} {:^10} {:^15} {:^50} {:^15} {:^60}".format(*columns))
-        print("{:^5} {:^30} {:^20} {:^10} {:^10} {:^15} {:^50} {:^15} {:^15} {:^50}".format(*columns))
+        print("{:^5} {:^30} {:^20} {:^10} {:^10} {:^15} {:^50} {:^15} {:^50}".format(*columns))
 
         
         for idx, entry in enumerate(near_residues_dict):
@@ -1034,7 +1034,7 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
 
             writer.writerow([chain_id, nearby_atoms_str, probable_interaction, round(distance, 2), angle, angle_distance, angle_names, dihedral, dihedral_distance, dihedral_names])
 
-            print("{:^5} {:^30} {:^20} {:^10.2f} {:^10} {:^15} {:^50} {:^15} {:^15} {:^50}".format(chain_id, nearby_atoms_str, probable_interaction, distance, angle, angle_distance, angle_names, dihedral, dihedral_distance, dihedral_names))
+            print("{:^5} {:^30} {:^20} {:^10.2f} {:^10} {:^15} {:^50} {:^15} {:^50}".format(chain_id, nearby_atoms_str, probable_interaction, distance, angle, angle_distance, angle_names, dihedral, dihedral_names))
 
 
 
@@ -1065,7 +1065,7 @@ if __name__ == "__main__":
     #print_pdb_structure(input_pdb)
     set_output_angle_dihedral(near_residues, ligand_residue, input_pdb, output_name)
 
-    # Verificar utilizando o pymol os angulos e diedros calculados - Amanhã 29/08
+    # Verificar utilizando o pymol os angulos e diedros calculados - em algo de muito estranho no aclculo dos diedros.
 
     # Adicionar a função de calco dos angulos e diedros do sitio ativo (FEITO)
     # Para isto será necessário criar os dicionarios dos angulos e diedros (FEITO)
