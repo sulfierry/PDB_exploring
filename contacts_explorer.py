@@ -426,9 +426,9 @@ def find_molecule(pdb_dict, molecule_name):
                 return (atom['res_name'], atom['res_seq'], atom['chain_id'])
 
 
-def calculate_distance(atom1, atom2):
-    """Calculate Euclidean distance between two atoms based on their coordinates."""
-    return sum((a - b) ** 2 for a, b in zip(atom1['coord'], atom2['coord'])) ** 0.5
+#def calculate_distance(atom1, atom2):
+#    """Calculate Euclidean distance between two atoms based on their coordinates."""
+#    return sum((a - b) ** 2 for a, b in zip(atom1['coord'], atom2['coord'])) ** 0.5
 
 
 def verify_near_residues(input_pdb, ligand_residue, treshold_distance):
@@ -760,6 +760,8 @@ def print_pdb_structure(pdb_dict):
 
     print("END")
 
+#########################################################################################
+
 
 # Função para calcular a distância entre dois átomos
 def calculate_distance(atom1, atom2):
@@ -785,21 +787,45 @@ def cross_product(v1, v2):
 
 # Função para calcular o ângulo entre três pontos
 def calculate_angle(coord_A, coord_B, coord_C):
+
+    # 1 - Obtemos os vetores BA e BC.
     BA = [a-b for a, b in zip(coord_A, coord_B)]
     BC = [c-b for c, b in zip(coord_C, coord_B)]
+
+    # 2 - Calculamos o produto escalar (dot product) desses dois vetores.
+    # 3 - Calculamos a magnitude (norma) de cada vetor.
+    # 4 - O cosseno do ângulo entre os vetores é dado por: cos(θ) = BA⋅BC / |BA|⋅|BC|
     cosine_angle = dot_product(BA, BC) / (norm(BA) * norm(BC))
+    
+    # 5 - Usamos a função arco-cosseno (acos) para obter o ângulo θ em radianos.
     angle = math.acos(max(-1.0, min(1.0, cosine_angle)))
+
+    # 6 - Convertemos o ângulo de radianos para graus.
     return math.degrees(angle)
 
 # Função para calcular o diedro entre quatro pontos
 def calculate_dihedral(coord_A, coord_B, coord_C, coord_D):
+    
+    # 1 - Calculamos os vetores BA, CB e DC.
+    # 2 - O primeiro plano é definido pelos vetores BA e CB, e o segundo plano é definido pelos vetores CB e DC.
+
     BA = [a-b for a, b in zip(coord_A, coord_B)]
     CB = [b-c for b, c in zip(coord_B, coord_C)]
     DC = [c-d for c, d in zip(coord_C, coord_D)]
+
+    # 3 - Calculamos os vetores normais a esses planos usando o produto vetorial (cross product). 
+    # O vetor normal ao primeiro plano é:  N1 = BA x CB    
+    # E o vetor normal ao segundo plano é: N2 = CB x DC.
     normal1 = cross_product(BA, CB)
     normal2 = cross_product(CB, DC)
     n1_norm = norm(normal1)
     n2_norm = norm(normal2)
+
+    # 4 - Calculamos o cosseno do ângulo entre os vetores normais usando o produto escalar e as magnitudes:
+    #        cos(θ) = N1⋅N2 / |N1|⋅|N2|
+    # Além disso, para garantir que o diedro esteja no intervalo correto de -180° a 180°, 
+    # levamos em consideração a direção do vetor formado pelo produto vetorial dos vetores normais e o vetor CB. 
+    # Se a direção for negativa, invertemos o sinal do cosseno.
     if n1_norm != 0:
         normal1 = [n/n1_norm for n in normal1]
     if n2_norm != 0:
@@ -808,8 +834,14 @@ def calculate_dihedral(coord_A, coord_B, coord_C, coord_D):
     direction = dot_product(cross_product(normal1, normal2), CB)
     if direction < 0:
         cosine_angle = -cosine_angle
+
+    # 5 - Usamos a função arco-cosseno (acos) para obter o ângulo θ em radianos.
+    # 6 - Convertemos o ângulo de radianos para graus.
     angle = math.acos(max(-1.0, min(1.0, cosine_angle)))
+
     return math.degrees(angle)
+
+
 
 # Função para extrair coordenadas de átomos com base em seus números de série
 def extract_coordinates(parsed_data, serial_numbers):
@@ -828,17 +860,10 @@ def extract_atom_info(parsed_data, serial_numbers):
 
 
 def calculate_angles_for_atoms(parsed_data, near_residues_dict):
-    """
-    Para calcular um ângulo, precisamos de três pontos. O ângulo é formado entre o primeiro e o terceiro ponto, usando o segundo ponto como o vértice.
-    Se tivermos os pontos A, B e C, o ângulo que queremos calcular é o formado por  BA e BC.
+    
+    # Para calcular um ângulo, precisamos de três pontos. O ângulo é formado entre o primeiro e o terceiro ponto, usando o segundo ponto como o vértice.
+    # Se tivermos os pontos A, B e C, o ângulo que queremos calcular é o formado por  BA e BC.
 
-    1 - Obtemos os vetores BA e BC.
-    2 - Calculamos o produto escalar (dot product) desses dois vetores.
-    3 - Calculamos a magnitude (norma) de cada vetor.
-    4 - O cosseno do ângulo entre os vetores é dado por: cos(θ) = BA⋅BC / |BA|⋅|BC|
-    5 - Usamos a função arco-cosseno (acos) para obter o ângulo θ em radianos.
-    6 - Convertemos o ângulo de radianos para graus.
-    """
     serial_numbers = [entry['molecule_atom_serial'] for entry in near_residues_dict]
     atom_info = extract_atom_info(parsed_data, serial_numbers)
     coordinates = [info[0] for info in atom_info]
@@ -856,23 +881,10 @@ def calculate_angles_for_atoms(parsed_data, near_residues_dict):
 
 
 def calculate_dihedrals_for_atoms(parsed_data, near_residues_dict):
-    """
-    Para calcular um diedro, precisamos de quatro pontos. O diedro é o ângulo entre dois planos, e esses planos são definidos pelos pontos.
-    Se tivermos os pontos A, B, C e D, queremos calcular o ângulo entre o plano formado por A, B e C e o plano formado por B, C e D.
+    
+    # Para calcular um diedro, precisamos de quatro pontos. O diedro é o ângulo entre dois planos, e esses planos são definidos pelos pontos.
+    # Se tivermos os pontos A, B, C e D, queremos calcular o ângulo entre o plano formado por A, B e C e o plano formado por B, C e D.
 
-    1 - Calculamos os vetores BA, CB e DC.
-    2 - O primeiro plano é definido pelos vetores BA e CB, e o segundo plano é definido pelos vetores CB e DC.
-    3 - Calculamos os vetores normais a esses planos usando o produto vetorial (cross product). 
-            O vetor normal ao primeiro plano é:  N1 = BA x CB    
-            E o vetor normal ao segundo plano é: N2 = CB x DC.
-    4 - Calculamos o cosseno do ângulo entre os vetores normais usando o produto escalar e as magnitudes:
-            cos(θ) = N1⋅N2 / |N1|⋅|N2|
-    5 - Usamos a função arco-cosseno (acos) para obter o ângulo θ em radianos.
-    6 - Convertemos o ângulo de radianos para graus.
-    Além disso, para garantir que o diedro esteja no intervalo correto de -180° a 180°, 
-    levamos em consideração a direção do vetor formado pelo produto vetorial dos vetores normais e o vetor CB. 
-    Se a direção for negativa, invertemos o sinal do cosseno.
-    """
     serial_numbers = [entry['molecule_atom_serial'] for entry in near_residues_dict]
     atom_info = extract_atom_info(parsed_data, serial_numbers)
     coordinates = [info[0] for info in atom_info]
@@ -890,65 +902,110 @@ def calculate_dihedrals_for_atoms(parsed_data, near_residues_dict):
 
 
 
+def calculate_angles_for_nearest_atoms(parsed_data, near_residues_dict):
+    all_atoms = parsed_data['chains'] + parsed_data['cofactors'] + parsed_data['ligands']
+
+    def find_two_nearest_atoms(target_atom, atoms_list):
+        distances = [(atom, calculate_distance(target_atom, atom)) for atom in atoms_list if atom != target_atom]
+        distances.sort(key=lambda x: x[1])
+        return [distances[0][0], distances[1][0]]
+
+    angles = []
+    for entry in near_residues_dict:
+        target_atom_serial = entry['molecule_atom_serial']
+        target_atom = next(atom for atom in all_atoms if atom['serial_number'] == target_atom_serial)
+        
+        nearest_atoms = find_two_nearest_atoms(target_atom, all_atoms)
+        
+        angle = calculate_angle(nearest_atoms[0]['coord'], target_atom['coord'], nearest_atoms[1]['coord'])
+        
+        angles.append({
+            'Target Atom': target_atom_serial,
+            'Nearest Atoms': (nearest_atoms[0]['serial_number'], nearest_atoms[1]['serial_number']),
+            'Angle (degrees)': angle
+        })
+
+    return angles
+
+
+def calculate_dihedrals_for_nearest_atoms(parsed_data, near_residues_dict):
+    all_atoms = parsed_data['chains'] + parsed_data['cofactors'] + parsed_data['ligands']
+
+    def find_three_nearest_atoms(target_atom, atoms_list):
+        distances = [(atom, calculate_distance(target_atom, atom)) for atom in atoms_list if atom != target_atom]
+        distances.sort(key=lambda x: x[1])
+        return [distances[0][0], distances[1][0], distances[2][0]]
+
+    dihedrals = []
+    for entry in near_residues_dict:
+        target_atom_serial = entry['molecule_atom_serial']
+        target_atom = next(atom for atom in all_atoms if atom['serial_number'] == target_atom_serial)
+        
+        nearest_atoms = find_three_nearest_atoms(target_atom, all_atoms)
+        
+        dihedral = calculate_dihedral(nearest_atoms[0]['coord'], nearest_atoms[1]['coord'], nearest_atoms[2]['coord'], target_atom['coord'])
+        
+        dihedrals.append({
+            'Target Atom': target_atom_serial,
+            'Nearest Atoms': (nearest_atoms[0]['serial_number'], nearest_atoms[1]['serial_number'], nearest_atoms[2]['serial_number']),
+            'Dihedral (degrees)': dihedral
+        })
+
+    return dihedrals
+
 def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_data, output_name):
     ligand_name, ligand_num, ligand_chain = ligand_residue_tuple
 
-    # Calculate angles and dihedrals data within the function
-    angles_data = calculate_angles_for_atoms(parsed_data, near_residues_dict)
-    dihedrals_data = calculate_dihedrals_for_atoms(parsed_data, near_residues_dict)
+    # Calculate angles and dihedrals data within the function using the nearest atoms approach
+    angles_data = calculate_angles_for_nearest_atoms(parsed_data, near_residues_dict)
+    dihedrals_data = calculate_dihedrals_for_nearest_atoms(parsed_data, near_residues_dict)
 
-    interacting_molecules_count = 0  # contador para moléculas interagindo
+    interacting_molecules_count = 0
 
     with open(output_name, 'w', newline='') as file:
         writer = csv.writer(file)
-        columns = ["Chain", "Nearby atoms", "Distance(Å)", "Interaction", "Angle (°)", "Angle Atoms", "Angle Molecule Atoms", "Dihedral (°)", "Dihedral Atoms", "Dihedral Molecule Atoms"]
+        columns = ["Chain", "Nearby atoms", "Interaction", "Distance(Å)", "Angle (°)", "Angle Atoms", "Dihedral (°)", "Dihedral Atoms"]
         writer.writerow(columns)
         
-        print("{:^5} {:^40} {:^10} {:^20} {:^15} {:^20} {:^30} {:^20} {:^20} {:^30}".format(*columns))
+        print("{:^5} {:^40} {:^20} {:^10} {:^15} {:^20} {:^15} {:^20}".format(*columns))
         
         for idx, entry in enumerate(near_residues_dict):
-            aa_name = entry['molecule_name']
-            aa_num = entry['molecule_number']
             chain_id = entry['chain']
             distance = entry['distance']
             molecule_atom = entry['molecule_atom']
             ligand_atom = entry['ligand_atom']
+            aa_name = entry['molecule_name']
+            aa_num = entry['molecule_number']
 
             atom1_str = molecule_atom + "(" + aa_name + str(aa_num) + ")"
-            atom2_str = ligand_atom + "(" + ligand_name + str(ligand_num) + ")"
+            atom2_str = ligand_atom + "(" + ligand_name +str(ligand_num) + ")"
             nearby_atoms_str = "{:<15}-{:>15}".format(atom1_str, atom2_str)
 
-            # Assuming the is_interaction function works this way
+            # Placeholder for the is_interaction function, for now will set it to True
             probable_interaction = is_interaction(molecule_atom, ligand_atom, aa_name, distance)
 
-            # Increment the counter if there is interaction
             if probable_interaction:
                 interacting_molecules_count += 1
 
-            # Retrieve the angles and dihedrals data for the current atom (if available)
-            angle, angle_atoms, angle_names = "", "", ""
+            angle, angle_atoms = "", ""
             if idx < len(angles_data):
                 angle = round(angles_data[idx]['Angle (degrees)'], 2)
-                angle_atoms = ", ".join(map(str, angles_data[idx]['Atoms']))
-                angle_names = ", ".join(angles_data[idx]['Atom Names'])
+                angle_atoms = ", ".join(map(str, angles_data[idx]['Nearest Atoms']))
 
-            dihedral, dihedral_atoms, dihedral_names = "", "", ""
+            dihedral, dihedral_atoms = "", ""
             if idx < len(dihedrals_data):
                 dihedral = round(dihedrals_data[idx]['Dihedral (degrees)'], 2)
-                dihedral_atoms = ", ".join(map(str, dihedrals_data[idx]['Atoms']))
-                dihedral_names = ", ".join(dihedrals_data[idx]['Atom Names'])
+                dihedral_atoms = ", ".join(map(str, dihedrals_data[idx]['Nearest Atoms']))
 
-            writer.writerow([chain_id, nearby_atoms_str, round(distance, 2), probable_interaction, 
-                             angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names])
+            writer.writerow([chain_id, nearby_atoms_str, probable_interaction, round(distance, 2),  angle, angle_atoms, dihedral, dihedral_atoms])
 
-            print("{:^5} {:^40} {:^10.2f} {:^20} {:^15} {:^20} {:^30} {:^20} {:^20} {:^30}".format(
-                chain_id, nearby_atoms_str, distance, probable_interaction, 
-                angle, angle_atoms, angle_names, dihedral, dihedral_atoms, dihedral_names))
+            print("{:^5} {:^40} {:^20} {:^10.2f}  {:^15} {:^20} {:^15} {:^20}".format(chain_id, nearby_atoms_str, probable_interaction, distance,  angle, angle_atoms, dihedral, dihedral_atoms))
 
     print("\nTotal number of interacting molecules:", interacting_molecules_count)
     print("\n")
     return f"Successfully processed and saved! Total interactions: {interacting_molecules_count}"
 
+# The functions are now modified as per your requirements.
 
 
 if __name__ == "__main__":

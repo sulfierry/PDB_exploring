@@ -1,0 +1,29 @@
+Molecule,Classification,Number,Chain,Nearby atoms,Distance(Å),Interaction
+MG,cofactor,313,B,MG(MG)    -  O3G(ACP),2.43,Non-specific
+MG,cofactor,314,A,MG(MG)    -  O3G(ACP),2.44,Non-specific
+SER,polar charge: 0,209,B,OG(SER)   -  O1G(ACP),2.7,Hydrogen bond
+HOH,cofactor,318,B,O(HOH)    -  O1B(ACP),2.74,Hydrogen bond
+TYR,polar charge: 0,101,A,OH(TYR)   -   N1(ACP),2.78,Hydrogen bond
+MG,cofactor,310,B,MG(MG)    -  O2G(ACP),2.81,Non-specific
+HOH,cofactor,318,A,O(HOH)    -  O2'(ACP),2.83,Hydrogen bond
+TPS,unknown,308,B,O2(TPS)   -  O3G(ACP),2.84,Hydrogen bond
+ASP,polar charge: -,26,B,O(ASP)    -  O3'(ACP),2.85,Hydrogen bond
+MG,cofactor,312,B,MG(MG)    -  C3B(ACP),2.85,Non-specific
+ARG,polar charge: +,142,B,NH1(ARG)  -  O2A(ACP),2.89,Hydrogen bond
+GLY,hydrophobic,118,A,N(GLY)    -  O2'(ACP),2.89,Hydrogen bond
+HOH,cofactor,321,A,O(HOH)    -  O1A(ACP),2.9,Hydrogen bond
+GLY,hydrophobic,117,A,CA(GLY)   -  O2'(ACP),2.94,van der Waals
+ASN,polar charge: 0,119,A,O(ASN)    -   N6(ACP),2.96,Hydrogen bond
+HIS,polar charge: +,218,B,CD2(HIS)  -  O2A(ACP),2.98,van der Waals
+GLY,hydrophobic,25,B,N(GLY)    -  O3'(ACP),3.03,van der Waals
+ASP,polar charge: -,43,B,OD1(ASP)  -  O3G(ACP),3.27,van der Waals
+ASP,polar charge: -,27,B,CA(ASP)   -  O1B(ACP),3.33,van der Waals
+ILE,hydrophobic,24,B,CD1(ILE)  -   N3(ACP),3.42,van der Waals
+ILE,hydrophobic,84,A,O(ILE)    -   N6(ACP),3.48,van der Waals
+ASP,polar charge: -,71,B,OD1(ASP)  -  C3B(ACP),3.51,van der Waals
+ILE,hydrophobic,12,B,CD1(ILE)  -   C8(ACP),3.55,van der Waals
+ILE,hydrophobic,120,A,CG2(ILE)  -   N7(ACP),3.58,van der Waals
+LEU,hydrophobic,86,A,CD1(LEU)  -   N6(ACP),3.62,van der Waals
+ILE,hydrophobic,15,B,CD1(ILE)  -   N6(ACP),3.77,van der Waals
+ASP,polar charge: -,210,B,OD1(ASP)  -  O2G(ACP),3.8,van der Waals
+GLU,polar charge: -,8,B,OE2(GLU)  -  O1A(ACP),3.87,van der Waals
