@@ -913,32 +913,30 @@ def calculate_dihedrals_for_nearest_atoms(parsed_data, near_residues_dict):
 
     return dihedrals
 
+
+
+def get_distance_between_atoms(parsed_data, atom1_idx, atom2_idx):
+    atom1 = next(atom for atom in parsed_data['chains'] + parsed_data['cofactors'] + parsed_data['ligands'] if atom['serial_number'] == atom1_idx)
+    atom2 = next(atom for atom in parsed_data['chains'] + parsed_data['cofactors'] + parsed_data['ligands'] if atom['serial_number'] == atom2_idx)
+    return calculate_distance(atom1, atom2)
+
 def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_data, output_name):
     ligand_name, ligand_num, ligand_chain = ligand_residue_tuple
-
-    # Calculate angles and dihedrals data within the function using the nearest atoms approach
-    angles_data = calculate_angles_for_nearest_atoms(parsed_data, near_residues_dict)
-    dihedrals_data = calculate_dihedrals_for_nearest_atoms(parsed_data, near_residues_dict)
-   
+    
+    # Ensure that angles_data and dihedrals_data have at least the same length as near_residues_dict
+    angles_data = calculate_angles_for_nearest_atoms(parsed_data, near_residues_dict) + [{} for _ in range(len(near_residues_dict))]
+    dihedrals_data = calculate_dihedrals_for_nearest_atoms(parsed_data, near_residues_dict) + [{} for _ in range(len(near_residues_dict))]
+    
     interacting_molecules_count = 0
 
     with open(output_name, 'w', newline='') as file:
         writer = csv.writer(file)
-
-        #columns = ["Chain", "Nearby atoms", "Interaction", "Distance(Å)", 
-        #           "Angle (°)",  "Angle Atoms Name", 
-        #           "Dihedral (°)", "Dihedral Atoms Name"]
         columns = ["Chain", "Nearby atoms", "Interaction", "Distance(Å)", 
-                   "Angle (°)", "Distance Angles", "Angle Atoms Name", 
-                   "Dihedral (°)", "Dihedral Atoms Name"]
-
-
+                   "Angle (°)", "Angle distance", "Angle atoms name", 
+                   "Dihedral (°)", "Dihedral distance", "Dihedral atoms name"]
         writer.writerow(columns)
-        
-        #print("{:^5} {:^40} {:^20} {:^10} {:^15} {:^50} {:^15} {:^60}".format(*columns))
-        print("{:^5} {:^30} {:^20} {:^10} {:^10} {:^15} {:^50} {:^15} {:^50}".format(*columns))
+        print("{:^5} {:^30} {:^20} {:^10} {:^10} {:^15} {:^50} {:^15} {:^15} {:^50}".format(*columns))
 
-        
         for idx, entry in enumerate(near_residues_dict):
             chain_id = entry['chain']
             distance = entry['distance']
@@ -947,52 +945,30 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
             aa_name = entry['molecule_name']
             aa_num = entry['molecule_number']
 
-            atom1_str = molecule_atom + "(" + aa_name + str(aa_num) + ")"
-            atom2_str = ligand_atom + "(" + ligand_name +str(ligand_num) + ")"
-            nearby_atoms_str = "{:<12}-{:>13}".format(atom1_str, atom2_str)
+            atom1_str = f"{molecule_atom}({aa_name}{aa_num})"
+            atom2_str = f"{ligand_atom}({ligand_name}{ligand_num})"
+            nearby_atoms_str = f"{atom1_str:<12}-{atom2_str:>13}"
 
-            # Placeholder for the is_interaction function, for now will set it to True
             probable_interaction = is_interaction(molecule_atom, ligand_atom, aa_name, distance)
-
-            if probable_interaction:
+            if probable_interaction not in ["Non-specific"]:
                 interacting_molecules_count += 1
 
-            angle, angle_atoms, angle_names = "", "", ""
-            if idx < len(angles_data):
-                angle = round(angles_data[idx]['Angle (degrees)'], 2)
-                angle_atoms = ", ".join(map(str, angles_data[idx]['Nearest Atoms']))
-                angle_names = ", ".join(angles_data[idx]['Atom Names'])
+            angle_data = angles_data[idx]
+            angle, angle_atoms, angle_names = round(angle_data.get('Angle (degrees)', ""), 2), angle_data.get('Nearest Atoms', ""), ", ".join(angle_data.get('Atom Names', ""))
+            angle_distance = round(get_distance_between_atoms(parsed_data, *angle_atoms[:2]), 2) if 'Nearest Atoms' in angle_data else ""
 
-            # Angle distance
-            angle_distance = ""
-            if idx < len(angles_data):
-                atom1_angle = next(atom for atom in parsed_data['chains'] + parsed_data['cofactors'] + parsed_data['ligands'] if atom['serial_number'] == angles_data[idx]['Nearest Atoms'][0])
-                atom2_angle = next(atom for atom in parsed_data['chains'] + parsed_data['cofactors'] + parsed_data['ligands'] if atom['serial_number'] == angles_data[idx]['Nearest Atoms'][1])
-                angle_distance = round(calculate_distance(atom1_angle, atom2_angle), 2)
+            dihedral_data = dihedrals_data[idx]
+            dihedral, dihedral_atoms, dihedral_names = round(dihedral_data.get('Dihedral (degrees)', ""), 2), dihedral_data.get('Nearest Atoms', ""), ", ".join(dihedral_data.get('Atom Names', ""))
+            dihedral_distance = round(get_distance_between_atoms(parsed_data, *dihedral_atoms[1:3]), 2) if 'Nearest Atoms' in dihedral_data else ""
 
-            dihedral, dihedral_atoms, dihedral_names = "", "", ""
-            if idx < len(dihedrals_data):
-                dihedral = round(dihedrals_data[idx]['Dihedral (degrees)'], 2)
-                dihedral_atoms = ", ".join(map(str, dihedrals_data[idx]['Nearest Atoms']))
-                dihedral_names = ", ".join(dihedrals_data[idx]['Atom Names'])
-            
-            # Distance calculation for dihedrals
-            dihedral_distance = ""
-            if idx < len(dihedrals_data):
-                atom1_dihedral = next(atom for atom in parsed_data['chains'] + parsed_data['cofactors'] + parsed_data['ligands'] if atom['serial_number'] == dihedrals_data[idx]['Nearest Atoms'][1])
-                atom2_dihedral = next(atom for atom in parsed_data['chains'] + parsed_data['cofactors'] + parsed_data['ligands'] if atom['serial_number'] == dihedrals_data[idx]['Nearest Atoms'][2])
-                dihedral_distance = round(calculate_distance(atom1_dihedral, atom2_dihedral), 2)
-
-
-            writer.writerow([chain_id, nearby_atoms_str, probable_interaction, round(distance, 2), angle, angle_distance, angle_names, dihedral, dihedral_distance, dihedral_names])
-
-            print("{:^5} {:^30} {:^20} {:^10.2f} {:^10} {:^15} {:^50} {:^15} {:^50}".format(chain_id, nearby_atoms_str, probable_interaction, distance, angle, angle_distance, angle_names, dihedral, dihedral_names))
-
-
+            writer.writerow([chain_id, nearby_atoms_str, probable_interaction, round(distance, 2), round(angle,2), angle_distance, angle_names, dihedral, dihedral_distance, dihedral_names])
+            print("{:^5} {:^30} {:^20} {:^10.2f} {:^10} {:^15} {:^50} {:^15} {:^15} {:^50}".format(chain_id, nearby_atoms_str, probable_interaction, distance, angle, angle_distance, angle_names, dihedral, dihedral_distance, dihedral_names))
 
     print("\nTotal number of interacting molecules:", interacting_molecules_count)
     print("\n")
     return f"Successfully processed and saved! Total interactions: {interacting_molecules_count}"
+
+
 
 # The functions are now modified as per your requirements.
 
