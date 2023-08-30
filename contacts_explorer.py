@@ -935,7 +935,7 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
                    "Angle (°)", "Angle distance (Å)", "Angle atoms name", 
                    "Dihedral (°)", "Dihedral distance (Å)", "Dihedral atoms name"]
         writer.writerow(columns)
-        print("{:^5} {:^30} {:^20} {:^10} {:^10} {:^15} {:^40} {:^20} {:^15} {:^40}".format(*columns))
+        print("{:^5} {:^30} {:^20} {:^10} {:^10} {:^15} {:^40} {:^20} {:^5} {:^40}".format(*columns))
 
         for idx, entry in enumerate(near_residues_dict):
             chain_id = entry['chain']
@@ -985,7 +985,6 @@ if __name__ == "__main__":
 
     # executa e salva o resultados para a classificacao dos contatos
     input_pdb = parse_pdb(input_pdb)
-
 
     ligand_residue = find_molecule(input_pdb, input_molecule)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
