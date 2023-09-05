@@ -166,33 +166,47 @@ aminoacid_group_dict = {
 
     # A cisteína é um aminoácido que contém um grupo tiol (-SH), que pode formar ligações de dissulfeto com outros grupos tiol em outras moléculas de cisteína. 
     'HS': {'PRIMARY MMF TYPE': '71', 'DEFAULT TYPES': ['71', '5', '5', '0'], 'DEFINITION': 'H-S'},
-}
+    
+    'MG+2': {'PRIMARY MMF TYPE': '99', 'DEFAULT TYPES': ['99', '99', '99', '99'], 'DEFINITION': 'DIPOSITIVE MAGNESIUM CATION'},
 
+}
 
 aminoacid_vdw_dict = {
     '1': {'alpha-i': '1.050', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CR', 'Origin': 'E94'},
-
+    '2': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C=C', 'Origin': 'E94'},
+    '3': {'alpha-i': '1.100', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C=O', 'Origin': 'E94'},
+    '4': {'alpha-i': '1.300', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CSP', 'Origin': 'E94'},
     '5': {'alpha-i': '0.250', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': '-', 'Symb': 'HC', 'Origin': 'C94'},
     '6': {'alpha-i': '0.70', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'OR', 'Origin': 'C94'},
     '7': {'alpha-i': '0.65', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'O=C', 'Origin': 'C94'},
     '8': {'alpha-i': '1.15', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NR', 'Origin': 'C94'},
-
+    '9': {'alpha-i': '0.90', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N=C', 'Origin': 'C94'},
     '10': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NC=O', 'Origin': 'E94'},
- 
+    '11': {'alpha-i': '0.35', 'N-i': '3.480', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'F', 'Origin': 'C94'},
+    '12': {'alpha-i': '2.300', 'N-i': '5.100', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'CL', 'Origin': 'E94'},
+    '13': {'alpha-i': '3.400', 'N-i': '6.000', 'A-i': '3.190', 'G-i': '1.359', 'DA': 'A', 'Symb': 'BR', 'Origin': 'E94'},
+    '14': {'alpha-i': '5.500', 'N-i': '6.950', 'A-i': '3.080', 'G-i': '1.404', 'DA': 'A', 'Symb': 'I', 'Origin': 'E94'},
     '15': {'alpha-i': '3.00', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'S', 'Origin': 'C94'},
-
+    '16': {'alpha-i': '3.900', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'S=C', 'Origin': 'E94'},
+    '17': {'alpha-i': '2.700', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': 'SO', 'Origin': 'E94'},
     '18': {'alpha-i': '2.100', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': 'SO2', 'Origin': 'E94'},
-
+    '19': {'alpha-i': '4.500', 'N-i': '4.200', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': 'SI', 'Origin': 'E94'},
+    '20': {'alpha-i': '1.050', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CR3R', 'Origin': 'E94'},
     '21': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HOR', 'Origin': 'C94'},
-
+    '22': {'alpha-i': '1.100', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CR3R', 'Origin': 'E94'},
     '23': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HNR', 'Origin': 'C94'},
     '24': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HOCO', 'Origin': 'C94'},
-
+    '25': {'alpha-i': '1.600', 'N-i': '4.500', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': 'PO4', 'Origin': 'E94'},
+    '26': {'alpha-i': '3.600', 'N-i': '4.500', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'P', 'Origin': 'E94'},
+    '27': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HN=C', 'Origin': 'C94'},
+    '28': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HNCO', 'Origin': 'C94'},
+    '29': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HOCC', 'Origin': 'C94'},
+    '30': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CE4R', 'Origin': 'E94'},
     '31': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HOH', 'Origin': 'C94'},
     '32': {'alpha-i': '0.75', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'O2CM', 'Origin': 'C94'},
-   
+    '33': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HOS', 'Origin': 'C94'},
     '34': {'alpha-i': '1.00', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NR+', 'Origin': 'C94'},
-
+    '35': {'alpha-i': '1.50', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'OM', 'Origin': 'X94'},
     '36': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HNR+', 'Origin': 'C94'},
     '37': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CB', 'Origin': 'E94'},
     '38': {'alpha-i': '0.85', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NPYD', 'Origin': 'C94'},
@@ -200,12 +214,61 @@ aminoacid_vdw_dict = {
     '40': {'alpha-i': '1.00', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NC=C', 'Origin': 'E94'},
     '41': {'alpha-i': '1.100', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CO2M', 'Origin': 'C94'},
     '42': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NSP', 'Origin': 'E94'},
-    
+    '43': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NSO2', 'Origin': 'E94'},
+    '44': {'alpha-i': '3.00', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'STHI', 'Origin': 'C94'},
+    '45': {'alpha-i': '1.150', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NO2', 'Origin': 'E94'},
+    '46': {'alpha-i': '1.300', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'N=O', 'Origin': 'E94'},
+    '47': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NAZT', 'Origin': 'X94'},
+    '48': {'alpha-i': '1.200', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NSO', 'Origin': 'X94'},
+    '49': {'alpha-i': '1.00', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'O+', 'Origin': 'X94'},
+    '50': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HO+', 'Origin': 'C94'},
+    '51': {'alpha-i': '0.400', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'O=+', 'Origin': 'E94'},
+    '52': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HO=+', 'Origin': 'C94'},
+    '53': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': '=N=', 'Origin': 'X94'},
+    '54': {'alpha-i': '1.30', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'N+=C', 'Origin': 'C94'},
+    '55': {'alpha-i': '0.80', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NCN+', 'Origin': 'E94'},
     '56': {'alpha-i': '0.80', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NGD+', 'Origin': 'E94'},
     '57': {'alpha-i': '1.000', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CNN+', 'Origin': 'E94'},
- 
+    '58': {'alpha-i': '0.80', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NPD+', 'Origin': 'E94'},
+    '59': {'alpha-i': '0.65', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'OFUR', 'Origin': 'C94'},
+    '60': {'alpha-i': '1.800', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'C%-', 'Origin': 'E94'},
+    '61': {'alpha-i': '0.800', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NR%', 'Origin': 'E94'},
+    '62': {'alpha-i': '1.300', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NM', 'Origin': 'X94'},
+    '63': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C5A', 'Origin': 'E94'},
+    '64': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C5B', 'Origin': 'E94'},
+    '65': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N5A', 'Origin': 'E94'},
+    '66': {'alpha-i': '0.75', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N5B', 'Origin': 'C94'},
+    '67': {'alpha-i': '0.950', 'N-i': '2.82', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N2OX', 'Origin': 'X94'},
+    '68': {'alpha-i': '0.90', 'N-i': '2.82', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N3OX', 'Origin': 'C94'},
+    '69': {'alpha-i': '0.950', 'N-i': '2.82', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'NPOX', 'Origin': 'C94'},
+    '70': {'alpha-i': '0.87', 'N-i': '3.150', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'OH2', 'Origin': 'C94'},
     '71': {'alpha-i': '0.150', 'N-i': '0.800', 'A-i': '4.200', 'G-i': '1.209', 'DA': 'D', 'Symb': 'HS', 'Origin': 'C94'},
+    '72': {'alpha-i': '4.000', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'SM', 'Origin': 'X94'},
+    '73': {'alpha-i': '3.000', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': 'SMO2', 'Origin': 'X94'},
+    '74': {'alpha-i': '3.000', 'N-i': '4.800', 'A-i': '3.320', 'G-i': '1.345', 'DA': '-', 'Symb': '=S=O', 'Origin': 'X94'},
+    '75': {'alpha-i': '4.000', 'N-i': '4.500', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': '-P=C', 'Origin': 'X94'},
+    '76': {'alpha-i': '1.200', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N5M', 'Origin': 'X94'},
+    '77': {'alpha-i': '1.500', 'N-i': '5.100', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'CLO4', 'Origin': 'X94'},
+    '78': {'alpha-i': '1.350', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'C5', 'Origin': 'X94'},
+    '79': {'alpha-i': '1.000', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N5', 'Origin': 'X94'},
+    '80': {'alpha-i': '1.000', 'N-i': '2.490', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'CIM+', 'Origin': 'C94'},
+    '81': {'alpha-i': '0.80', 'N-i': '2.820', 'A-i': '3.890', 'G-i': '1.282', 'DA': '-', 'Symb': 'NIM+', 'Origin': 'C94'},
+    '82': {'alpha-i': '0.950', 'N-i': '2.82', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'N5OX', 'Origin': 'X94'},
+    '87': {'alpha-i': '0.45', 'N-i': '6.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'FE+2', 'Origin': 'X94'},
+    '88': {'alpha-i': '0.55', 'N-i': '6.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'FE+3', 'Origin': 'X94'},
+    '89': {'alpha-i': '1.4', 'N-i': '3.48', 'A-i': '3.890', 'G-i': '1.282', 'DA': 'A', 'Symb': 'F-', 'Origin': 'X94'},
+    '90': {'alpha-i': '4.5', 'N-i': '5.100', 'A-i': '3.320', 'G-i': '1.345', 'DA': 'A', 'Symb': 'CL-', 'Origin': 'X94'},
+    '91': {'alpha-i': '6.0', 'N-i': '6.000', 'A-i': '3.190', 'G-i': '1.359', 'DA': 'A', 'Symb': 'BR-', 'Origin': 'X94'},
+    '92': {'alpha-i': '0.15', 'N-i': '2.', 'A-i': '4.', 'G-i': '1.3', 'DA': '-', 'Symb': 'LI+', 'Origin': 'X94'},
+    '93': {'alpha-i': '0.4', 'N-i': '3.5', 'A-i': '4.', 'G-i': '1.3', 'DA': '-', 'Symb': 'NA+', 'Origin': 'X94'},
+    '94': {'alpha-i': '1.0', 'N-i': '5.', 'A-i': '4.', 'G-i': '1.3', 'DA': '-', 'Symb': 'K+', 'Origin': 'X94'},
+    '95': {'alpha-i': '0.43', 'N-i': '6.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'ZN+2', 'Origin': 'X94'},
+    '96': {'alpha-i': '0.9', 'N-i': '5.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'CA+2', 'Origin': 'X94'},
+    '97': {'alpha-i': '0.35', 'N-i': '6.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'CU+1', 'Origin': 'X94'},
+    '98': {'alpha-i': '0.40', 'N-i': '6.', 'A-i': '4.', 'G-i': '1.4', 'DA': '-', 'Symb': 'CU+2', 'Origin': 'X94'},
+    '99': {'alpha-i': '0.35', 'N-i': '3.5', 'A-i': '4.', 'G-i': '1.3', 'DA': '-', 'Symb': 'MG+2', 'Origin': 'X94'},
 }
+
 
 # Amino acids and nucleic acid bases classification
 molecule_class = {
@@ -553,127 +616,98 @@ def lennard_jones_potential(atom1_name, atom2_name, residue, r):
     return 4 * epsilon_combined * ((sigma_combined / r)**12 - (sigma_combined / r)**6)
 
 def map_to_molecular_group(atom_name, residue_name):
+    residue_name = residue_name.upper()
+    atom_name = atom_name.upper()
 
-    residue_name = residue_name.upper()  # Garante que o nome do resíduo esteja em maiúsculas
-    atom_name = atom_name.upper()  # Similarmente, para o nome do átomo
-
-    # Lista de aminoácidos com carbonos laterais específicos
-    lateral_carbon_aminoacids = ["ALA", "VAL", "LEU", "ILE", "PRO", "MET", "CYS", 
-                                 "PHE", "TYR", "THR", "LYS", "ARG", "GLU", "ASP"]
-    
+    # Verificação de Carbonos
+    # Verificação de Carbonos
     if atom_name.startswith("C"):
-
-        # Verificar condição do grupo alquila
-        if residue_name == "VAL" and atom_name in ["CG1", "CG2"]:
-            return "CR"  
-        elif residue_name == "LEU" and atom_name in ["CG", "CD1", "CD2"]:
-            return "CR"
-        elif residue_name == "ILE" and atom_name in ["CG1", "CG2", "CD1"]:
-            return "CR"
-        elif residue_name == "MET" and atom_name in ["CG", "SD", "CE"]:
-            return "CR"  
-        # Verificando a condição de carbono alfa
-        elif atom_name == "CA" and residue_name != "PRO":
+        carbon_mappings = {
+            ("VAL", ("CG1", "CG2")): "CR",
+            ("LEU", ("CG", "CD1", "CD2")): "CR",
+            ("ILE", ("CG1", "CG2", "CD1")): "CR",
+            ("MET", ("CG", "SD", "CE")): "CR",
+            ("PHE", ("CZ",)): "CB",
+            ("TYR", ("CZ",)): "CB",
+            ("TRP", ("CD2", "CE2", "CE3", "CZ2", "CZ3", "CH2")): "CB",
+            ("ASP", ("CG", "CD")): "CO2M",
+            ("GLU", ("CG", "CD")): "CO2M",
+            ("ARG", ("CG",)): "CGD"
+        }
+        for key, value in carbon_mappings.items():
+            if residue_name == key[0] and atom_name in key[1]:
+                return value
+        if atom_name == "CA" and residue_name != "PRO":
             return "HC"
-        # Condição para os carbonos aromáticos
-        if residue_name == "PHE" and atom_name.startswith("CZ"):  # Ajuste a nomeação do átomo conforme necessário
-            return "CB"
-        elif residue_name == "TYR" and atom_name.startswith("CZ"):  # Ajuste a nomeação do átomo conforme necessário
-            return "CB"
-        elif residue_name == "TRP" and atom_name in ["CD2", "CE2", "CE3", "CZ2", "CZ3", "CH2"]:  # A nomeação dos átomos aqui é apenas uma suposição, ajuste conforme necessário
-            return "CB"
-        elif residue_name in ["ASP", "GLU"] and atom_name in ["CG", "CD"]:  # CG e CD são átomos de carbono em Asp e Glu, respectivamente, que fazem parte do grupo carboxila
-            return "CO2M"
-        # Condição para o carbono no grupo guanidínio da Arginina
-        elif residue_name == "ARG" and atom_name == "CG":
-            return "CGD"
-        # Verificando condição de carbonos laterais
-        elif atom_name.startswith("C") and residue_name in lateral_carbon_aminoacids:
-            return "HC"
-        else: 
-            return "CR"
-
+        
+        else: return "CR"
+        
+    # Verificação de Oxigênios
     if atom_name.startswith("O"):
-
-        # Condição de "O=C"
         if atom_name in ["OD1", "OE1", "OE2", "O"]:
             return "O=C"
-        # Termino carboxila de todos os aminoácidos
         elif atom_name in ["OD2", "OG", "OG1", "OH"]:
             return "OR"
-        # Condição de Serina
-        elif residue_name == "SER" and atom_name == "OG":
-            return "OR"
-        # Condição de Treonina
-        elif residue_name == "THR" and atom_name == "OG1":
-            return "OR"
-        # Condição de Tirosina
-        elif residue_name == "TYR" and atom_name == "OH":
-            return "OR"
-        # Condição para Ácido aspártico e Ácido glutâmico
-        elif residue_name in ["ASP", "GLU"] and atom_name in ["OD1", "OD2", "OE1", "OE2"]:
-            return "OR"
-        # Condição para Asparagina e Glutamina
-        elif residue_name in ["ASN", "GLN"] and atom_name in ["OD1", "OE1"]:
-            return "OR"
-        # Condição para Ácido aspártico e Ácido glutâmico
         elif residue_name in ["ASP", "GLU"] and atom_name in ["OD1", "OD2", "OE1", "OE2"]:
             return "O2CM"
         else: 
             return "OR"
 
+
+    # Verificação de Nitrogênios
     if atom_name.startswith("N"):
+        nitrogen_mappings = {
+            ("LYS", "NZ"): "NR",
+            ("ARG", "NE", "NH1", "NH2"): "NGD+",
+            ("HIS", "ND1", "NE2"): "NPYD",
+            ("ASN", "ND2"): "NC=O",
+            ("GLN", "NE2"): "NC=O",
+            ("TRP", "NE1"): "NPYL",
+            ("PRO", "N"): "NC=C",
+            ("CYS", "NSP"): "NSP"
+        }
+        for key, value in nitrogen_mappings.items():
+            if residue_name == key[0]:
+                if atom_name in key[1]:
+                    return value
+            else:
+                return "NR"
 
-        # Condição específica para Lisina
-        if residue_name == "LYS" and atom_name in ["NZ"]:
-            return "NR"
-        # Condição específica para Arginina
-        elif residue_name == "ARG" and atom_name in ["NE", "NH1", "NH2"]:
-            return "NGD+"
-        # Condição específica para Histidina
-        elif residue_name == "HIS" and atom_name in ["ND1", "NE2"]:
-            return "NPYD"
-        # Condição para grupo Amido (N-C=O)
-        elif (residue_name == "ASN" and atom_name == "ND2") or \
-        (residue_name == "GLN" and atom_name == "NE2"):
-            return "NC=O"
-        # Condição para o nitrogênio no anel pirrol do triptofano
-        elif residue_name == "TRP" and atom_name == "NE1":  # NE1 é o nitrogênio no anel de pirrol do triptofano
-            return "NPYL"
-        elif residue_name == "PRO" and atom_name == "N":  # N é o nitrogênio da prolina que forma a ligação imina
-            return "NC=C"
-        # Condição para o nitrogênio com ligação tripla em uma variante modificada da Cisteína
-        elif residue_name == "CYS" and atom_name == "NSP":  # NSP seria um nome hipotético para esse nitrogênio com ligação tripla
-            return "NSP"
-        else: 
-            return "NR"
-
+    # Verificação de Hidrogênios
     if atom_name.startswith("H"):
-
-        # Checa se o átomo é um hidrogênio ligado a um nitrogênio amida em um peptídeo/proteína (Excluindo resíduos terminais). 
-
-        if residue_name in ["SER", "THR"] and "HO" in atom_name: 
-            return "HOR"
-        elif residue_name == "LYS" and "HNZ" in atom_name:
-            return "HNR"
-        elif residue_name in ["ASP", "GLU"] and "HOCO" in atom_name:
-            return "HOCO"
-        elif residue_name in ["SER", "THR"] and "HO" in atom_name: 
-            return "HOH"
-        elif atom_name in ["HN"] or atom_name.startswith("H") and atom_name[1:].isdigit():
+        hydrogen_mappings = {
+            ("SER", "HO"): "HOR",
+            ("THR", "HO"): "HOR",
+            ("LYS", "HNZ"): "HNR",
+            ("ASP", "HOCO"): "HOCO",
+            ("GLU", "HOCO"): "HOCO"
+        }
+        for key, value in hydrogen_mappings.items():
+            if residue_name == key[0]:
+                if atom_name in key[1]:
+                    return value
+        if atom_name == "HN" or atom_name[1:].isdigit():
             return "HNCO"
-        else: "H"
-    
-    if atom_name.startswith("S"):
-
-         # Condição para grupos tiol e tioéter
-        if (residue_name == "MET" and atom_name == "SD"):
-            return "S"
-        # Condição para o átomo de enxofre no grupo tiol da Cisteína
-        elif residue_name == "CYS" and atom_name == "SG":
-            return "HS"
         else:
-            return "S"
+            return "H"
+
+    # Verificação de Enxofres
+    if atom_name.startswith("S"):
+        sulfur_mappings = {
+            ("MET", ["SD"]): "S",
+            ("CYS", ["SG"]): "HS"
+        }
+        for key, value in sulfur_mappings.items():
+            if residue_name == key[0]:
+                if atom_name in key[1]:
+                    return value
+                
+    if atom_name.startswith("MG"):
+        return "MG+2"
+                
+    print(f"O átomo {atom_name} não foi reconhecido.")
+    return "UNKNOWN"
+
 
 
 
