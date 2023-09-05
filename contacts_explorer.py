@@ -920,6 +920,8 @@ def get_distance_between_atoms(parsed_data, atom1_idx, atom2_idx):
     atom2 = next(atom for atom in parsed_data['chains'] + parsed_data['cofactors'] + parsed_data['ligands'] if atom['serial_number'] == atom2_idx)
     return calculate_distance(atom1, atom2)
 
+
+
 def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_data, output_name):
     ligand_name, ligand_num, ligand_chain = ligand_residue_tuple
     
@@ -970,23 +972,20 @@ def set_output_angle_dihedral(near_residues_dict, ligand_residue_tuple, parsed_d
 
 
 
-# The functions are now modified as per your requirements.
-
-
 if __name__ == "__main__":
 
     # Arquivos de entrada e saida a serem fornecidos
-    input_pdb      = sys.argv[1]    # EXAMPLE.pdb
-    input_molecule = sys.argv[2]    # ATP
-    output_name    = sys.argv[3]    # ATP_OUT (csv)
-
+    input_pdb      = "./3c9t.pdb"  #sys.argv[1]    # EXAMPLE.pdb
+    input_molecule = "ACP"         #sys.argv[2]    # ATP
+    output_name    = "out.csv"     #sys.argv[3]    # ATP_OUT (csv)
+ 
     # Distance from the selected molecule
     treshold_distance = 4.0
 
     # executa e salva o resultados para a classificacao dos contatos
-    input_pdb = parse_pdb(input_pdb)
-
+    input_pdb      = parse_pdb(input_pdb)
     ligand_residue = find_molecule(input_pdb, input_molecule)
     near_residues  = verify_near_residues(input_pdb, ligand_residue, treshold_distance)
     set_output_angle_dihedral(near_residues, ligand_residue, input_pdb, output_name)
 
+    # consertar a formatacao da coluna "Dihedral atoms name"
