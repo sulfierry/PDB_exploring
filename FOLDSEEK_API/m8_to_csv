@@ -34,16 +34,15 @@ class M8:
                 writer.writerow(row)
 
     def print_formatted(self, data):
-        headers = data[0].keys()
+        headers = [key for key in data[0].keys() if key != 'query_id']
         
         # Definindo larguras para cada coluna
         col_widths = {
-            "query_id": 15, "subject_id": 20, "scientific_name": 50,
-            "perc_identity": 15, "alignment_length": 17, "mismatches": 12,
+            "subject_id": 30, "scientific_name": 80,
+            "perc_identity": 15, "alignment_length": 20, "mismatches": 15,
             "gap_opens": 12, "query_start": 12, "query_end": 12,
-            "subject_start": 15, "subject_end": 12, "evalue": 10, "bit_score": 10
+            "subject_start": 15, "subject_end": 15, "evalue": 12, "bit_score": 15
         }
-
         # Imprimindo os cabeçalhos formatados
         print("".join([f"{h:{col_widths[h]}}" for h in headers]))
         print("-" * sum(col_widths.values()))
