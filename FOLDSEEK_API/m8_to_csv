@@ -103,7 +103,6 @@ def main():
     total_organisms = m8_processor.total_organisms_in_directory()
     print(f"Total de organismos em todos os arquivos .m8: {total_organisms}")
 
-    keyword = "Homo sapiens"
     m8_processor.save_filtered_to_csv("Homo sapiens", "filtered_Homo.csv")
 
 
