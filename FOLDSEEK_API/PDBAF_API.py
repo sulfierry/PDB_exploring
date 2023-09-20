@@ -1,3 +1,5 @@
+import os
+import csv
 import requests
 
 class PDB_AF:
@@ -38,6 +40,10 @@ class PDB_AF:
                 print("URL do arquivo PDB não encontrado para este UniProt ID.")
 
     def download_pdb_file(self, pdb_url, filename):
+        if os.path.exists(filename):
+            print(f"O arquivo {filename} já foi baixado. Como os PDBs são iguais, somente uma cópia será salva.")
+            return
+
         response = requests.get(pdb_url)
         
         if response.status_code == 200:
@@ -48,8 +54,28 @@ class PDB_AF:
             print(f"Erro ao baixar o arquivo PDB. Código de status: {response.status_code}")
 
 
+
+    @classmethod
+    def process_csv(cls, filename):
+        with open(filename, 'r') as file:
+            reader = csv.reader(file)
+            next(reader)  # Skip the header row
+            for row in reader:
+                api, structure_id = row
+                if api == "pdb":
+                    pdb_instance = cls(pdb_id=structure_id)
+                    pdb_instance.download_pdb()
+                elif api == "af":
+                    af_instance = cls(uniprot_id=structure_id)
+                    af_instance.download_alfafold_pdb()
+                else:
+                    print(f"API desconhecida: {api}")
+
 if __name__ == "__main__":
-    
-    pdb = PDB_AF(pdb_id="3FD5", uniprot_id="O15067")
-    pdb.download_pdb()
-    pdb.download_alfafold_pdb()
+     
+
+     PDB_AF.process_csv("struct.csv")
+
+    # pdb = PDB_AF(pdb_id="3FD5", uniprot_id="O15067")
+    # pdb.download_pdb()
+    # pdb.download_alfafold_pdb()
