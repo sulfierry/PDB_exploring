@@ -77,7 +77,7 @@ class PDB_AF:
 if __name__ == "__main__":
      
 
-     PDB_AF.process_csv("example.csv")
+     PDB_AF.process_csv("struct.csv")
 
     # pdb = PDB_AF(pdb_id="3FD5", uniprot_id="O15067")
     # pdb.download_pdb()
