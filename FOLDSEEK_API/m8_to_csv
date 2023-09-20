@@ -2,14 +2,17 @@ import csv
 import os
 
 class M8:
+    """Classe para processar arquivos .m8 gerados pelo MMseqs2"""
 
     def __init__(self, dir_path):
+        
         self.dir_path = dir_path
 
     def read_m8(self, file_path):
+        
         results = []
         headers = [
-            "query_id", "subject_id", "scientific_name", "perc_identity",
+            "query_id", "subject_id", "specie", "perc_identity",
             "alignment_length", "mismatches", "gap_opens", "query_start", 
             "query_end", "subject_start", "subject_end", "evalue", "bit_score"
         ]
@@ -19,8 +22,8 @@ class M8:
                 columns = line.strip().split('\t')
                 
                 # Inserir o nome científico (penúltima coluna) na terceira posição
-                scientific_name = columns[-1]
-                columns.insert(2, scientific_name)
+                species = columns[-1]
+                columns.insert(2, species)
 
                 results.append(dict(zip(headers, columns)))
 
@@ -38,7 +41,7 @@ class M8:
         
         # Definindo larguras para cada coluna
         col_widths = {
-            "subject_id": 30, "scientific_name": 60,
+            "subject_id": 30, "specie": 60,
             "perc_identity": 15, "alignment_length": 20, "mismatches": 15,
             "gap_opens": 12, "query_start": 12, "query_end": 12,
             "subject_start": 15, "subject_end": 15, "evalue": 12, "bit_score": 15
@@ -86,6 +89,11 @@ class M8:
             if filename.endswith(".m8"):
                 file_path = os.path.join(self.dir_path, filename)
                 data = self.read_m8(file_path)
+                
+                # Adicionar nome do banco de dados (arquivo .m8) a cada linha do data
+                for entry in data:
+                    entry["database"] = filename.replace(".m8", "")
+                
                 all_data.extend(data)
 
         # Filtra os dados baseados no keyword, verifica em todas as colunas
@@ -93,6 +101,7 @@ class M8:
 
         # Salva os dados filtrados no CSV
         self.save_to_csv(filtered_data, output_file)
+
 
 
 
