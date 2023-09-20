@@ -98,9 +98,9 @@ class M8:
 
 def main():
 
-    work_dir = "./mmseqs_results/"
+    m8_dir = "./mmseqs_results/"
     
-    m8_processor = M8(work_dir) 
+    m8_processor = M8(m8_dir) 
     m8_processor.process_files()
     
     total_organisms = m8_processor.total_organisms_in_directory()
