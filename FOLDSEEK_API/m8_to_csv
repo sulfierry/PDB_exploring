@@ -3,7 +3,7 @@ import os
 
 class M8:
 
-    def __init__(self, dir_path="./mmseqs_results/"):
+    def __init__(self, dir_path):
         self.dir_path = dir_path
 
     def read_m8(self, file_path):
@@ -97,10 +97,13 @@ class M8:
 
 
 def main():
-    m8_processor = M8()
 
+    work_dir = "./mmseqs_results/"
+    
+    m8_processor = M8(work_dir) 
     m8_processor.process_files()
     total_organisms = m8_processor.total_organisms_in_directory()
+
     print(f"Total de organismos em todos os arquivos .m8: {total_organisms}")
 
     m8_processor.save_filtered_to_csv("Homo sapiens", "filtered_Homo.csv")
