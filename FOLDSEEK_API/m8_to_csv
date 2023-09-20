@@ -1,17 +1,23 @@
 import csv
+import os
 
 def read_m8(file_path):
     """Lê um arquivo .m8 e retorna uma lista de dicionários."""
     results = []
     headers = [
-        "query_id", "subject_id", "perc_identity", "alignment_length",
-        "mismatches", "gap_opens", "query_start", "query_end",
-        "subject_start", "subject_end", "evalue", "bit_score"
+        "query_id", "subject_id", "scientific_name", "perc_identity",
+        "alignment_length", "mismatches", "gap_opens", "query_start", 
+        "query_end", "subject_start", "subject_end", "evalue", "bit_score"
     ]
 
     with open(file_path, 'r') as file:
         for line in file:
             columns = line.strip().split('\t')
+            
+            # Inserir o nome científico (penúltima coluna) na terceira posição
+            scientific_name = columns[-1]
+            columns.insert(2, scientific_name)
+
             results.append(dict(zip(headers, columns)))
 
     return results
@@ -34,19 +40,51 @@ def print_formatted(data):
     for entry in data:
         print("\t".join([str(entry[h]) for h in headers]))
 
-# Caminho do arquivo .m8
-file_path = "/mmseqs_results/*.m8"
-# Caminho de saída para o CSV
-output_csv_path = "saida.csv"
 
-# Lê o arquivo
-data = read_m8(file_path)
+import os
+import os
 
-# Salva em CSV
-save_to_csv(data, output_csv_path)
-print(f"Arquivo salvo em {output_csv_path}")
+def count_lines_in_m8(file_path):
+    """Conta o número de linhas em um arquivo .m8."""
+    with open(file_path, 'r') as file:
+        return sum(1 for _ in file)
 
-# Imprime as primeiras 10 entradas formatadas
-print("\nPrimeiras 10 entradas:")
-print_formatted(data[:10])
+def total_organisms_in_directory(dir_path):
+    """Conta o total de linhas (organismos) em todos os arquivos .m8 do diretório."""
+    total_count = 0
 
+    for filename in os.listdir(dir_path):
+        if filename.endswith(".m8"):
+            file_path = os.path.join(dir_path, filename)
+            total_count += count_lines_in_m8(file_path)
+
+    return total_count
+
+
+
+# Caminho do diretório contendo os arquivos .m8
+dir_path = "./mmseqs_results/"
+
+
+# Caminho do diretório contendo os arquivos .m8
+
+
+# Para cada arquivo .m8 no diretório, leia, salve em CSV e imprima
+for filename in os.listdir(dir_path):
+    if filename.endswith(".m8"):
+        file_path = os.path.join(dir_path, filename)
+        output_csv_path = os.path.join(dir_path, filename.replace(".m8", ".csv"))
+
+        # Lê o arquivo
+        data = read_m8(file_path)
+
+        # Salva em CSV
+        save_to_csv(data, output_csv_path)
+        print(f"Arquivo {filename} salvo em {output_csv_path}")
+
+        # Imprime as primeiras 10 entradas formatadas
+        print(f"\nPrimeiras 10 entradas de {filename}:")
+        print_formatted(data[:10])
+        print("\n\n")
+
+print(f"Total de organismos em todos os arquivos .m8: {total_organisms_in_directory(dir_path)}")
