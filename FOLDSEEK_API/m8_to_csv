@@ -40,10 +40,6 @@ def print_formatted(data):
     for entry in data:
         print("\t".join([str(entry[h]) for h in headers]))
 
-
-import os
-import os
-
 def count_lines_in_m8(file_path):
     """Conta o número de linhas em um arquivo .m8."""
     with open(file_path, 'r') as file:
