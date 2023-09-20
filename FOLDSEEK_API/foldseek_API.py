@@ -20,10 +20,14 @@ class FoldseekAPI:
     def download_results(self, ticket_id):
         url = f"{self.MMSEQS2_BASE_URL}/result/download/{ticket_id}"
         response = requests.get(url, stream=True)
+        if "MMseqs2 search will be back" in response.text:
+            print("MMseqs2 service is currently unavailable. Please try again later.")
+            return
         with open(f"results_{ticket_id}.pdb", 'wb') as fd:
             for chunk in response.iter_content(chunk_size=128):
                 fd.write(chunk)
         print("Download concluído.")
+
 
     def submit_to_foldseek(self, file_path):
         url = f"{self.FOLDSEEK_BASE_URL}/ticket"
@@ -69,6 +73,8 @@ class FoldseekAPI:
         return False
 
 # Exemplo de uso da classe:
+# main
+
 
 api = FoldseekAPI()
 
