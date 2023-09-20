@@ -1,3 +1,4 @@
+import requests
 
 def submit_to_foldseek(file_path):
     # URL para a API
