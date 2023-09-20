@@ -3,6 +3,9 @@ import csv
 import requests
 
 class PDB_AF:
+
+    """Classe para baixar arquivos PDB e PDBs gerados pelo AlphaFold a partir de um UniProt ID."""
+
     ALPHAFOLD_API_ENDPOINT = "https://www.alphafold.ebi.ac.uk/api/prediction/"
 
     def __init__(self, pdb_id=None, uniprot_id=None):
