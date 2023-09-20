@@ -1,5 +1,6 @@
 import requests
 import time
+from tqdm import tqdm
 
 class FoldseekAPI:
     
@@ -48,16 +49,16 @@ class FoldseekAPI:
             return None
 
     def wait_for_completion(self, ticket_id, polling_interval=60):
-        while True:
+        for _ in tqdm(range(0, 100), desc="Aguardando processamento", unit="poll"):
             status = self.check_ticket_status(ticket_id)
             if status and status.get('status') == "COMPLETED":
+                print("\nProcessamento concluído!")
                 return True
             elif status and status.get('status') == "ERROR":
-                print("Houve um erro no processamento.")
+                print("\nHouve um erro no processamento.")
                 return False
-            else:
-                time.sleep(polling_interval)
-
+            time.sleep(polling_interval)
+        return False
 
 # Exemplo de uso da classe:
 
