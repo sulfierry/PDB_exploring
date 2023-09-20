@@ -1,0 +1,52 @@
+import csv
+
+def read_m8(file_path):
+    """Lê um arquivo .m8 e retorna uma lista de dicionários."""
+    results = []
+    headers = [
+        "query_id", "subject_id", "perc_identity", "alignment_length",
+        "mismatches", "gap_opens", "query_start", "query_end",
+        "subject_start", "subject_end", "evalue", "bit_score"
+    ]
+
+    with open(file_path, 'r') as file:
+        for line in file:
+            columns = line.strip().split('\t')
+            results.append(dict(zip(headers, columns)))
+
+    return results
+
+def save_to_csv(data, output_file):
+    """Salva os dados em formato CSV."""
+    with open(output_file, 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=data[0].keys())
+        writer.writeheader()
+        for row in data:
+            writer.writerow(row)
+
+def print_formatted(data):
+    """Imprime os dados de forma formatada no terminal."""
+    headers = data[0].keys()
+    # Imprime os cabeçalhos
+    print("\t".join(headers))
+    print("-" * 120)
+
+    for entry in data:
+        print("\t".join([str(entry[h]) for h in headers]))
+
+# Caminho do arquivo .m8
+file_path = "/mmseqs_results/*.m8"
+# Caminho de saída para o CSV
+output_csv_path = "saida.csv"
+
+# Lê o arquivo
+data = read_m8(file_path)
+
+# Salva em CSV
+save_to_csv(data, output_csv_path)
+print(f"Arquivo salvo em {output_csv_path}")
+
+# Imprime as primeiras 10 entradas formatadas
+print("\nPrimeiras 10 entradas:")
+print_formatted(data[:10])
+
