@@ -1,0 +1,1001 @@
+query_id,subject_id,scientific_name,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
+job.pdb,AF-A0A0H3FSL2-F1-model_v4 Thiamine-monophosphate kinase,Klebsiella aerogenes KCTC 2190,92.200,321,25,0,1,321,3,323,1.000,4.386E-60
+job.pdb,AF-A0A7U5UFA8-F1-model_v4 Thiamine-monophosphate kinase,Enterobacter cloacae complex sp.,82.800,321,55,0,1,321,3,323,1.000,3.081E-58
+job.pdb,AF-W1DNJ1-F1-model_v4 Thiamine-monophosphate kinase,Klebsiella pneumoniae IS43,97.900,291,6,0,31,321,25,315,1.000,2.596E-56
+job.pdb,AF-A0A2X1TER1-F1-model_v4 Thiamine-monophosphate kinase,Morganella morganii,68.200,321,102,0,1,321,3,323,1.000,8.945E-52
+job.pdb,AF-A0A6M8RG92-F1-model_v4 Thiamine-monophosphate kinase,Proteus vulgaris,68.200,321,102,0,1,321,3,323,1.000,2.364E-51
+job.pdb,AF-A0A6H0T6A7-F1-model_v4 Thiamine-monophosphate kinase,Pasteurellaceae bacterium RH1A,54.300,322,134,6,1,321,1,310,1.000,8.753E-45
+job.pdb,AF-A6VPE7-F1-model_v4 Thiamine-monophosphate kinase,Actinobacillus succinogenes 130Z,48.600,331,159,6,1,321,2,331,1.000,2.949E-44
+job.pdb,AF-A0A534A0K3-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,47.700,329,156,7,1,321,3,323,1.000,9.939E-44
+job.pdb,AF-A0A1E3GD85-F1-model_v4 Thiamine-monophosphate kinase,Piscirickettsia litoralis,46.700,325,167,5,1,320,12,335,1.000,4.537E-43
+job.pdb,AF-A0A846HUU2-F1-model_v4 Thiamine-phosphate kinase,Halochromatium sp.,50.900,322,151,4,1,321,1,316,1.000,8.851E-43
+job.pdb,AF-A0A3M1UGL6-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,48.000,327,160,6,1,320,2,325,1.000,6.148E-43
+job.pdb,AF-A0A3D0LSG0-F1-model_v4 Thiamine-phosphate kinase,Betaproteobacteria bacterium,45.800,323,163,6,2,320,3,317,1.000,1.835E-42
+job.pdb,AF-A0A521RC64-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,45.600,322,169,5,1,320,3,320,1.000,6.981E-42
+job.pdb,AF-K1ZXQ3-F1-model_v4 Thiamine-monophosphate kinase,uncultured bacterium,49.300,322,151,7,1,320,1,312,1.000,1.005E-41
+job.pdb,AF-A0A4R6UVY5-F1-model_v4 Thiamine-monophosphate kinase,Permianibacter aggregans,45.600,322,172,2,2,321,3,323,1.000,1.447E-41
+job.pdb,AF-A0A3B0ZZC9-F1-model_v4 Thiamine-monophosphate kinase,hydrothermal vent metagenome,42.500,327,169,6,2,321,4,318,1.000,3.803E-42
+job.pdb,AF-A0A318CB42-F1-model_v4 Thiamine-monophosphate kinase,Pokkaliibacter plantistimulans,46.800,322,167,4,1,320,3,322,1.000,3.387E-41
+job.pdb,AF-A0A1G4WQQ8-F1-model_v4 Thiamine-monophosphate kinase,Nitrosomonas eutropha,44.600,334,163,8,1,321,2,326,1.000,1.281E-41
+job.pdb,AF-A0A381Q3F3-F1-model_v4 Uncharacterized protein,marine metagenome,40.200,323,183,5,1,320,1,316,1.000,1.960E-41
+job.pdb,AF-A0A2E7XKW3-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,42.500,322,177,5,1,320,1,316,1.000,2.352E-41
+job.pdb,AF-A0A2A4V466-F1-model_v4 Thiamine-monophosphate kinase,Moraxellaceae bacterium,43.800,326,171,6,1,321,3,321,1.000,4.318E-41
+job.pdb,AF-Q0K6Z2-F1-model_v4 Thiamine-monophosphate kinase,Cupriavidus necator H16,45.000,322,168,6,2,321,65,379,1.000,2.999E-41
+job.pdb,AF-A0A3B0ZKW1-F1-model_v4 Thiamine-monophosphate kinase,hydrothermal vent metagenome,45.100,339,162,8,1,320,2,335,1.000,1.634E-41
+job.pdb,AF-A0A3M1S3F9-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,43.600,323,174,3,1,321,1,317,1.000,1.546E-40
+job.pdb,AF-E6QQV2-F1-model_v4 Thiamine-monophosphate kinase (Thiamine-phosphate kinase),mine drainage metagenome,43.400,357,157,8,1,321,2,349,1.000,2.822E-41
+job.pdb,AF-A0A3B0ZU65-F1-model_v4 Thiamine-monophosphate kinase,hydrothermal vent metagenome,41.900,324,180,3,1,321,7,325,1.000,5.536E-40
+job.pdb,AF-A0A534J9E7-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,45.200,323,171,4,1,321,3,321,1.000,8.423E-41
+job.pdb,AF-A0A1G5SD07-F1-model_v4 Thiamine-monophosphate kinase,Nitrosomonas mobilis,43.800,331,170,8,1,321,2,326,1.000,2.513E-40
+job.pdb,AF-A0A1G0HDL1-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium RIFCSPHIGHO2_12_FULL_38_11,42.200,324,170,7,1,320,1,311,1.000,2.838E-40
+job.pdb,AF-A0A562M2M4-F1-model_v4 Thiamine-monophosphate kinase,Lysobacter ruishenii,42.800,322,173,6,3,321,25,338,1.000,5.505E-41
+job.pdb,AF-A0A812ZCK8-F1-model_v4 ThiL protein,Symbiodinium microadriaticum,40.200,333,185,5,2,321,4,335,1.000,1.982E-39
+job.pdb,AF-A0A5A9WA55-F1-model_v4 Thiamine-monophosphate kinase,Nitrincola tapanii,44.300,325,171,4,1,321,1,319,1.000,9.000E-40
+job.pdb,AF-A0A5C7ZYZ3-F1-model_v4 Thiamine-monophosphate kinase,Dechloromonas sp.,46.000,328,165,5,2,321,33,356,1.000,3.405E-40
+job.pdb,AF-A0A080M2B1-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Accumulibacter cognatus,44.500,330,160,8,2,321,3,319,1.000,6.643E-40
+job.pdb,AF-A0A2U1CLW4-F1-model_v4 Thiamine-monophosphate kinase,Pusillimonas noertemannii,43.400,327,170,9,1,321,1,318,1.000,1.555E-39
+job.pdb,AF-A0A6G7YUH1-F1-model_v4 Thiamine-monophosphate kinase,Lysobacter sp. HDW10,44.400,322,168,5,1,320,4,316,1.000,1.756E-39
+job.pdb,AF-A0A2E2DB67-F1-model_v4 Thiamine-monophosphate kinase,Methylophaga sp.,46.000,326,165,7,1,321,3,322,1.000,2.838E-40
+job.pdb,AF-A0A5Q0TBC4-F1-model_v4 Thiamine-monophosphate kinase,Vibrio algicola,46.100,355,150,9,1,320,2,350,1.000,5.850E-41
+job.pdb,AF-A0A1D2QRS3-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Endobugula sertula,42.500,327,180,4,1,321,3,327,1.000,4.109E-39
+job.pdb,AF-A0A3M3TIF4-F1-model_v4 Thiamine-monophosphate kinase,Pseudomonas cichorii,46.000,328,160,8,1,321,1,318,1.000,1.377E-39
+job.pdb,AF-A0A7D7ZPC0-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,40.200,323,190,3,1,321,1,322,1.000,8.517E-39
+job.pdb,AF-A0A0C2HVX9-F1-model_v4 Thiamine-monophosphate kinase,Pseudomonas batumici,43.200,328,169,8,1,321,1,318,1.000,3.223E-39
+job.pdb,AF-A0A1G0G322-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium RIFCSPHIGHO2_12_FULL_35_23,41.900,322,176,6,1,320,11,323,1.000,3.639E-39
+job.pdb,AF-A0A7H5FNB0-F1-model_v4 Thiamine-monophosphate kinase,Cobetia sp. MM1IDA2H-1,41.100,335,178,4,1,320,2,332,1.000,2.118E-38
+job.pdb,AF-A0A6I1NPP6-F1-model_v4 Thiamine-monophosphate kinase,Pseudomonas sp. MWU12-2323,44.000,325,171,7,1,321,1,318,1.000,1.385E-38
+job.pdb,AF-A0A1Y0I3T2-F1-model_v4 Thiamine-monophosphate kinase,Oleiphilus messinensis,43.900,341,168,8,1,320,2,340,1.000,9.000E-40
+job.pdb,AF-A0A2N4YYY9-F1-model_v4 Thiamine-phosphate kinase,Klebsiella variicola,98.300,247,4,0,1,247,3,249,1.000,7.059E-40
+job.pdb,AF-A0A1Y0EK72-F1-model_v4 Thiamine-monophosphate kinase,Comamonas serinivorans,42.100,365,165,8,1,321,1,363,1.000,4.132E-38
+job.pdb,AF-A0A4V1IN69-F1-model_v4 Thiamine-monophosphate kinase,Zooshikella ganghwensis,45.100,328,167,9,2,321,3,325,1.000,9.050E-39
+job.pdb,AF-M1LRR6-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Kinetoplastibacterium desouzaii TCC079E,35.100,327,196,9,1,320,1,318,1.000,1.886E-37
+job.pdb,AF-A0A6L8CZ52-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,40.400,331,181,6,2,321,4,329,1.000,4.640E-39
+job.pdb,AF-A0A1S7LNR6-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Magnetococcus massalia,37.400,334,191,9,2,320,10,340,1.000,1.775E-37
+job.pdb,AF-L0WFX4-F1-model_v4 Thiamine-monophosphate kinase,Alcanivorax hongdengensis A-11-3,42.500,329,156,10,2,320,3,308,1.000,1.233E-37
+job.pdb,AF-A0A2E8UDK1-F1-model_v4 Thiamine-monophosphate kinase,Porticoccaceae bacterium,40.300,325,183,5,1,321,8,325,1.000,1.233E-37
+job.pdb,AF-A0A662ZKH1-F1-model_v4 Thiamine-monophosphate kinase,Ruminobacter amylophilus,39.000,338,184,10,1,320,1,334,1.000,1.765E-38
+job.pdb,AF-A0A3B0WZW8-F1-model_v4 Thiamine-monophosphate kinase,hydrothermal vent metagenome,42.100,332,171,9,1,321,1,322,1.000,5.268E-38
+job.pdb,AF-A0A0Q7EH31-F1-model_v4 Thiamine-monophosphate kinase,Massilia sp. Root418,37.800,388,169,10,2,321,3,386,1.000,7.543E-39
+job.pdb,AF-A0A520S9P6-F1-model_v4 Thiamine-monophosphate kinase,Halieaceae bacterium,44.200,321,163,6,1,321,3,307,1.000,3.241E-38
+job.pdb,AF-A0A7Y6XYQ2-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium,38.700,328,181,9,1,320,2,317,1.000,4.391E-38
+job.pdb,AF-A0A3C7W4F0-F1-model_v4 Thiamine-monophosphate kinase,Halieaceae bacterium,45.500,325,150,8,1,320,3,305,1.000,4.666E-38
+job.pdb,AF-A0A176NM92-F1-model_v4 Thiamine-monophosphate kinase,Pseudomonas thivervalensis,43.300,325,173,7,1,321,1,318,1.000,3.463E-37
+job.pdb,AF-A0A366D7T1-F1-model_v4 Thiamine-monophosphate kinase,Marinomonas aquiplantarum,41.800,306,166,5,17,320,6,301,1.000,4.132E-38
+job.pdb,AF-A0A0C5JJF2-F1-model_v4 Thiamine-monophosphate kinase,Rugosibacter aromaticivorans,43.200,335,160,7,1,321,2,320,1.000,9.671E-38
+job.pdb,AF-A0A2A4XY23-F1-model_v4 Thiamine-monophosphate kinase,Oceanospirillales bacterium,45.200,303,148,6,23,320,1,290,1.000,1.671E-37
+job.pdb,AF-A0A2E9E1D4-F1-model_v4 Thiamine-monophosphate kinase,Rhodospirillaceae bacterium,37.900,324,194,6,1,319,9,330,1.000,9.152E-37
+job.pdb,AF-A0A845V8X9-F1-model_v4 Thiamine-phosphate kinase,Wenzhouxiangella limi,38.400,328,182,8,1,321,2,316,1.000,1.039E-35
+job.pdb,AF-A0A7C5PI88-F1-model_v4 Thiamine-phosphate kinase,Gammaproteobacteria bacterium,49.100,291,146,1,2,292,3,291,1.000,4.178E-36
+job.pdb,AF-A0A1L5PMM9-F1-model_v4 Thiamine-monophosphate kinase,Pseudomonas putida,44.100,331,161,9,1,320,1,318,1.000,8.612E-37
+job.pdb,AF-A0A2S6QUY3-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium MarineAlpha9_Bin7,39.000,328,187,8,1,320,5,327,1.000,3.277E-36
+job.pdb,AF-A0A2E7I4A2-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium,41.000,334,178,9,1,321,1,328,1.000,1.400E-36
+job.pdb,AF-A0A7C1ZG42-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,41.600,286,159,4,39,321,29,309,1.000,9.203E-36
+job.pdb,AF-A0A1G1GHL9-F1-model_v4 Thiamine-monophosphate kinase,Nitrospirae bacterium RBG_16_43_11,36.300,333,186,11,2,321,7,326,1.000,5.327E-36
+job.pdb,AF-A0A2E8T524-F1-model_v4 Thiamine-monophosphate kinase,Rhodospirillaceae bacterium,37.900,327,193,6,1,320,7,330,1.000,4.465E-35
+job.pdb,AF-A0A1Y5D321-F1-model_v4 Thiamine-monophosphate kinase,Bermanella sp. 47_1433_sub80_T6,38.900,326,172,9,1,320,1,305,1.000,1.104E-35
+job.pdb,AF-A0A7C5GR86-F1-model_v4 Thiamine-monophosphate kinase,Thiotrichales bacterium,40.900,293,161,6,31,318,20,305,1.000,5.692E-35
+job.pdb,AF-A0A3B1CS77-F1-model_v4 Thiamine-monophosphate kinase,hydrothermal vent metagenome,36.500,312,183,8,20,320,23,330,1.000,7.258E-35
+job.pdb,AF-A0A6N9DZY6-F1-model_v4 Thiamine-monophosphate kinase,Nitrospira sp. SB0677_bin_15,36.900,336,191,9,2,320,62,393,1.000,2.289E-35
+job.pdb,AF-A0A450ZY97-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Kentron sp. TUN,44.400,288,150,5,39,321,2,284,1.000,1.699E-34
+job.pdb,AF-A0A2E4BVK9-F1-model_v4 Thiamine-monophosphate kinase,Rhodospirillaceae bacterium,36.100,329,196,8,1,320,1,324,1.000,1.110E-34
+job.pdb,AF-A0A3M1KJ99-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,39.100,324,177,8,1,321,1,307,1.000,1.045E-34
+job.pdb,AF-A0A2E6A1F0-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,38.000,326,168,9,2,320,13,311,1.000,3.721E-35
+job.pdb,AF-A0A3A1Y5I2-F1-model_v4 Thiamine-monophosphate kinase,Psittacicella melopsittaci,35.000,394,174,9,1,312,3,396,1.000,5.041E-35
+job.pdb,AF-A0A371WTV6-F1-model_v4 Thiamine-monophosphate kinase,Methylovirgula sp. 4M-Z18,36.800,334,188,10,2,320,67,392,1.000,2.446E-34
+job.pdb,AF-A0A7D4P565-F1-model_v4 Thiamine-monophosphate kinase,Thiomicrorhabdus xiamenensis,38.800,340,183,11,2,320,1,336,1.000,2.935E-34
+job.pdb,AF-A0A521K0X4-F1-model_v4 Thiamine-monophosphate kinase,Nitrospirae bacterium,39.400,345,177,11,1,321,50,386,1.000,1.599E-34
+job.pdb,AF-A0A7W6VY57-F1-model_v4 Thiamine-monophosphate kinase,Rhodoblastus acidophilus,36.100,332,186,11,1,319,1,319,1.000,4.771E-34
+job.pdb,AF-A0A2V6NPC6-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Rokubacteria bacterium,37.200,330,182,13,2,321,7,321,1.000,3.976E-34
+job.pdb,AF-A0A2V7UK24-F1-model_v4 Thiamine-monophosphate kinase,Acidobacteria bacterium,39.400,335,179,12,5,320,16,345,1.000,7.299E-34
+job.pdb,AF-A0A7V9SAI2-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium,39.000,323,178,7,1,320,1,307,1.000,1.051E-33
+job.pdb,AF-A0A424YA86-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Syntrophonatronum acetioxidans,36.200,339,193,10,2,320,7,342,1.000,3.742E-34
+job.pdb,AF-A0A839ACX6-F1-model_v4 Thiamine-phosphate kinase,Stappia albiluteola,38.200,335,184,8,1,320,6,332,1.000,1.424E-33
+job.pdb,AF-A0A3B1CZT1-F1-model_v4 Thiamine-monophosphate kinase,hydrothermal vent metagenome,35.700,333,192,10,2,320,5,329,1.000,2.314E-33
+job.pdb,AF-A0A257S843-F1-model_v4 Thiamine-monophosphate kinase,Acidiphilium sp. 21-60-14,36.000,325,186,8,2,320,3,311,1.000,1.051E-33
+job.pdb,AF-A0A3A4KAI2-F1-model_v4 Thiamine-monophosphate kinase,Myxococcales bacterium,37.900,340,170,13,2,321,16,334,1.000,6.464E-34
+job.pdb,AF-A1WVF9-F1-model_v4 Thiamine-monophosphate kinase,Halorhodospira halophila SL1,46.300,328,159,8,1,321,4,321,1.000,8.660E-36
+job.pdb,AF-A0A4Q9DQN4-F1-model_v4 Thiamine-monophosphate kinase,Paenibacillus thalictri,30.600,339,217,9,1,321,3,341,1.000,1.708E-33
+job.pdb,AF-A0A3D3A8M3-F1-model_v4 Thiamine-monophosphate kinase,Rhodobiaceae bacterium,34.800,324,186,9,1,320,7,309,1.000,5.098E-33
+job.pdb,AF-A0A117KXM1-F1-model_v4 Thiamine-monophosphate kinase,Clostridia bacterium 41_269,35.800,332,197,10,2,321,9,336,1.000,2.050E-33
+job.pdb,AF-A0A3D4F2T5-F1-model_v4 Thiamine-monophosphate kinase,Rhodobiaceae bacterium,36.100,326,193,9,1,320,11,327,1.000,4.249E-33
+job.pdb,AF-W4MBW8-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Entotheonella gemina,37.100,334,191,12,2,321,12,340,1.000,2.314E-33
+job.pdb,AF-A0A3M1K5J0-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium,33.100,329,198,8,1,319,1,317,1.000,5.098E-33
+job.pdb,AF-A0A257VVY4-F1-model_v4 Thiamine-monophosphate kinase,Rhodospirillales bacterium 12-54-5,35.900,328,194,10,1,319,1,321,1.000,5.756E-33
+job.pdb,AF-A0A1F9VH97-F1-model_v4 Thiamine-monophosphate kinase,Elusimicrobia bacterium RIFOXYA12_FULL_49_49,35.000,331,196,10,2,321,7,329,1.000,3.763E-33
+job.pdb,AF-A0A3C1GUZ2-F1-model_v4 Thiamine-monophosphate kinase,Psychrobacter sp.,36.400,351,177,13,1,320,1,336,1.000,1.513E-33
+job.pdb,AF-A0A5C7K1T8-F1-model_v4 Thiamine-monophosphate kinase,Thermomicrobiales bacterium,36.300,336,196,10,1,321,45,377,1.000,2.473E-32
+job.pdb,AF-A0A2H0QXQ1-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium CG11_big_fil_rev_8_21_14_0_20_39_49,33.600,333,183,12,1,321,1,307,1.000,5.756E-33
+job.pdb,AF-A0A3M5CKY1-F1-model_v4 Thiamine-monophosphate kinase,Pseudomonas coronafaciens pv. garcae,46.300,285,138,6,41,320,2,276,1.000,4.249E-33
+job.pdb,AF-A0A831TWK4-F1-model_v4 Thiamine-phosphate kinase,Armatimonadetes bacterium,40.000,312,169,9,21,321,7,311,1.000,6.907E-33
+job.pdb,AF-A0A7W2GRI3-F1-model_v4 Thiamine-monophosphate kinase,Hyphomicrobiales bacterium,32.600,337,198,10,1,320,5,329,1.000,6.500E-33
+job.pdb,AF-A0A1H9U1J3-F1-model_v4 Thiamine-monophosphate kinase,Salipaludibacillus aurantiacus,31.100,331,210,10,2,320,3,327,1.000,7.380E-32
+job.pdb,AF-T1BHH6-F1-model_v4 Thiamine-monophosphate kinase,mine drainage metagenome,42.300,300,157,8,25,321,1,287,1.000,2.190E-32
+job.pdb,AF-A0A812V390-F1-model_v4 RhlG protein,Symbiodinium microadriaticum,36.900,322,184,10,1,313,1,312,1.000,1.347E-32
+job.pdb,AF-A0A7C0ZAC6-F1-model_v4 Thiamine-monophosphate kinase,Desulfobacteraceae bacterium,31.200,333,208,10,2,320,10,335,1.000,2.327E-32
+job.pdb,AF-A0A6M1TZZ7-F1-model_v4 Thiamine-monophosphate kinase,Brevibacillus sp. SYP-B805,32.300,331,208,8,3,321,5,331,1.000,4.272E-32
+job.pdb,AF-A0A257WTX0-F1-model_v4 Thiamine-monophosphate kinase,Methyloversatilis sp. 12-65-5,39.900,328,142,7,1,321,2,281,1.000,5.447E-32
+job.pdb,AF-A0A3N5HQT4-F1-model_v4 Thiamine-monophosphate kinase,Myxococcaceae bacterium,34.300,332,200,10,1,321,2,326,1.000,6.945E-32
+job.pdb,AF-A0A3D1GMJ2-F1-model_v4 Thiamine-phosphate kinase,Halieaceae bacterium,48.700,279,122,7,45,320,1,261,1.000,1.940E-32
+job.pdb,AF-A0A1F4QYU8-F1-model_v4 Thiamine-monophosphate kinase,candidate division NC10 bacterium RIFCSPLOWO2_12_FULL_66_18,37.200,346,186,10,2,321,9,349,1.000,2.967E-32
+job.pdb,AF-A0A7W2A8F9-F1-model_v4 Thiamine-monophosphate kinase,Paenactinomyces guangxiensis,32.500,329,204,9,3,321,1,321,1.000,4.824E-32
+job.pdb,AF-A0A848V3A4-F1-model_v4 Thiamine-phosphate kinase,Hellea sp.,31.400,328,202,9,1,321,1,312,1.000,1.440E-31
+job.pdb,AF-A0A124IIB7-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium BRH_c36,36.600,341,187,12,1,321,3,334,1.000,2.793E-32
+job.pdb,AF-A0A7C4IZX4-F1-model_v4 Thiamine-monophosphate kinase,Desulfobacterales bacterium,31.700,334,209,10,2,321,10,338,1.000,2.202E-31
+job.pdb,AF-A0A7D8BCV9-F1-model_v4 Thiamine-monophosphate kinase,Granulicella sp. 5B5,34.100,337,196,12,1,321,11,337,1.000,2.808E-31
+job.pdb,AF-A0A134C3Z9-F1-model_v4 Thiamine-monophosphate kinase,Veillonella sp. DNF00869,31.800,327,205,8,1,320,332,647,1.000,1.530E-31
+job.pdb,AF-A0A520XNI8-F1-model_v4 Thiamine-monophosphate kinase,Acidimicrobiales bacterium,34.400,331,198,11,2,320,45,368,1.000,1.727E-31
+job.pdb,AF-F3KRE2-F1-model_v4 Thiamine-monophosphate kinase,Hylemonella gracilis ATCC 19624,41.900,360,165,14,1,321,16,370,1.000,1.254E-34
+job.pdb,AF-A0A538U4N5-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Eisenbacteria bacterium,35.000,331,200,11,2,321,80,406,1.000,7.380E-32
+job.pdb,AF-A0A6I7WN90-F1-model_v4 Thiamine-monophosphate kinase,Methylococcaceae bacterium HT4,46.400,265,130,3,57,321,1,253,1.000,9.463E-31
+job.pdb,AF-A0A839UYD5-F1-model_v4 Thiamine-monophosphate kinase,Endobacter medicaginis,34.900,295,171,8,31,321,1,278,1.000,4.565E-31
+job.pdb,AF-A0A3B0VMA5-F1-model_v4 Thiamine-monophosphate kinase,hydrothermal vent metagenome,35.800,287,155,9,41,320,1,265,1.000,1.727E-31
+job.pdb,AF-A0A0T6A7Q2-F1-model_v4 Thiamine-monophosphate kinase,candidate division NC10 bacterium CSP1-5,31.800,345,207,11,2,321,11,352,1.000,1.836E-31
+job.pdb,AF-A0A1Z8WU20-F1-model_v4 Thiamine-monophosphate kinase,Methylococcaceae bacterium TMED69,33.800,328,202,10,1,321,1,320,1.000,6.117E-33
+job.pdb,AF-A0A532URU2-F1-model_v4 Thiamine-monophosphate kinase,candidate division LCP-89 bacterium B3_LCP,34.000,332,202,11,2,321,3,329,1.000,1.282E-30
+job.pdb,AF-A0A2V8TJU9-F1-model_v4 Thiamine-monophosphate kinase,Acidobacteria bacterium,32.000,349,205,11,2,321,14,359,1.000,8.905E-31
+job.pdb,AF-A0A3D0Z335-F1-model_v4 Thiamine-monophosphate kinase,Clostridiales bacterium,36.200,334,191,12,1,320,4,329,1.000,2.202E-31
+job.pdb,AF-A0A2V9RXC6-F1-model_v4 Thiamine-monophosphate kinase,Acidobacteria bacterium,36.500,342,171,17,1,321,3,319,1.000,8.334E-32
+job.pdb,AF-A0A2S6QH67-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium MarineAlpha12_Bin1,34.600,335,195,9,1,320,5,330,1.000,6.117E-33
+job.pdb,AF-A0A538S5Y7-F1-model_v4 Thiamine-monophosphate kinase,Planctomycetota bacterium,33.300,330,182,8,1,321,5,305,1.000,1.129E-31
+job.pdb,AF-A0A653I2W5-F1-model_v4 Thiamine-monophosphate kinase,Limnobacter sp. 130,34.500,362,187,13,2,321,1,354,1.000,6.573E-31
+job.pdb,AF-A0A7Z9M348-F1-model_v4 Thiamine-monophosphate kinase,Dehalococcoidia bacterium,29.700,333,211,11,1,321,7,328,1.000,3.189E-30
+job.pdb,AF-A0A1J5J1W7-F1-model_v4 Thiamine-monophosphate kinase,Zetaproteobacteria bacterium CG2_30_59_37,32.600,325,198,9,1,321,1,308,1.000,2.657E-30
+job.pdb,AF-A0A4Q5P3I8-F1-model_v4 Thiamine-monophosphate kinase,Bradyrhizobiaceae bacterium,38.700,325,179,8,5,320,7,320,1.000,7.339E-33
+job.pdb,AF-A0A259R7U4-F1-model_v4 Thiamine-monophosphate kinase,Thiomonas sp. 13-64-67,40.500,323,145,9,1,321,5,282,1.000,1.355E-31
+job.pdb,AF-A0A7X7Z2F4-F1-model_v4 Thiamine-monophosphate kinase,Myxococcales bacterium,34.700,334,189,15,1,321,1,318,1.000,1.207E-30
+job.pdb,AF-A0A5C9DB78-F1-model_v4 Thiamine-monophosphate kinase,Methylocystaceae bacterium,37.700,331,176,12,1,320,4,315,1.000,6.984E-31
+job.pdb,AF-A0A7C4FVT7-F1-model_v4 Thiamine-monophosphate kinase,bacterium,32.200,298,179,10,36,321,3,289,1.000,1.846E-30
+job.pdb,AF-A0A7C3S8S2-F1-model_v4 Thiamine-monophosphate kinase,Deltaproteobacteria bacterium,36.400,332,192,10,2,320,45,370,1.000,8.856E-32
+job.pdb,"AF-B9TLX7-F1-model_v4 Thiamine-monophosphate kinase, putative",Ricinus communis,44.300,257,135,4,68,321,2,253,1.000,1.448E-30
+job.pdb,AF-A0A7C2ZQF9-F1-model_v4 Thiamine-monophosphate kinase,Deltaproteobacteria bacterium,36.800,326,186,11,2,319,7,320,1.000,1.825E-32
+job.pdb,AF-A0A2E7W3T2-F1-model_v4 Thiamine-monophosphate kinase,Rhodospirillaceae bacterium,29.300,334,207,10,3,319,10,331,1.000,8.856E-32
+job.pdb,AF-A0A2D7DWD1-F1-model_v4 Thiamine-monophosphate kinase,Rickettsiales bacterium,30.200,331,207,11,1,320,2,319,1.000,1.282E-30
+job.pdb,AF-A0A7C2EMZ9-F1-model_v4 Thiamine-monophosphate kinase,Blastocatellia bacterium,35.600,339,195,11,3,321,4,339,1.000,2.340E-31
+job.pdb,AF-A0A7C3UX12-F1-model_v4 Thiamine-monophosphate kinase,Deltaproteobacteria bacterium,28.400,327,214,12,1,320,3,316,1.000,3.388E-30
+job.pdb,AF-A0A1J5DX99-F1-model_v4 Thiamine-monophosphate kinase,Deltaproteobacteria bacterium CG2_30_63_29,33.900,333,195,13,2,320,4,325,1.000,1.207E-30
+job.pdb,AF-A0A7V3VCV6-F1-model_v4 Thiamine-monophosphate kinase,bacterium,33.300,363,190,12,2,320,7,361,1.000,6.151E-32
+job.pdb,AF-A0A2H0XG03-F1-model_v4 Thiamine-monophosphate kinase,bacterium (Candidatus Stahlbacteria) CG08_land_8_20_14_0_20_40_26,35.600,325,178,12,1,321,2,299,1.000,4.878E-30
+job.pdb,AF-A0A3D4B0G8-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Latescibacteria bacterium,31.900,344,202,12,1,321,3,337,1.000,1.011E-29
+job.pdb,AF-A0A7V2SZ25-F1-model_v4 Thiamine-monophosphate kinase,Dissulfuribacter thermophilus,31.800,336,204,13,1,319,10,337,1.000,8.427E-30
+job.pdb,AF-A0A532UFX7-F1-model_v4 Thiamine-monophosphate kinase,bacterium (candidate division B38) B3_B38,35.700,344,195,10,2,320,8,350,1.000,9.410E-32
+job.pdb,AF-A0A6I5ZUR4-F1-model_v4 Thiamine-monophosphate kinase,Moorella glycerini,35.000,337,193,10,2,321,7,334,1.000,1.626E-31
+job.pdb,AF-A0A534Y9T7-F1-model_v4 Thiamine-monophosphate kinase,Deltaproteobacteria bacterium,35.800,324,178,13,5,321,562,862,1.000,7.886E-31
+job.pdb,AF-A0A2S8ST58-F1-model_v4 Thiamine-monophosphate kinase,Abditibacterium utsteinense,31.500,342,204,15,2,320,7,341,1.000,4.878E-30
+job.pdb,AF-A0A317H223-F1-model_v4 Thiamine-monophosphate kinase,Chloroflexi bacterium,34.200,339,198,10,2,321,8,340,1.000,1.440E-31
+job.pdb,AF-A0A353XHL7-F1-model_v4 Thiamine-monophosphate kinase,Desulfofustis sp.,36.000,336,189,13,2,321,7,332,1.000,2.340E-31
+job.pdb,AF-A0A419F5U3-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Abyssubacteria bacterium SURF_17,34.900,329,203,9,2,320,8,335,1.000,6.185E-31
+job.pdb,AF-A0A257ALM4-F1-model_v4 Thiamine-monophosphate kinase,ANME-1 cluster archaeon ex4572_4,31.800,374,196,17,2,320,13,382,1.000,1.961E-30
+job.pdb,AF-A0A534XFE1-F1-model_v4 Thiamine-monophosphate kinase,Deltaproteobacteria bacterium,32.600,331,193,13,2,321,116,427,1.000,9.463E-31
+job.pdb,AF-A0A7V9SXS1-F1-model_v4 Thiamine-monophosphate kinase,Acidobacteria bacterium,35.600,342,190,11,1,320,2,335,1.000,4.565E-31
+job.pdb,AF-A0A7C2CII1-F1-model_v4 Thiamine-monophosphate kinase,Blastocatellia bacterium,37.900,332,191,8,1,321,2,329,1.000,2.340E-31
+job.pdb,AF-A0A7T1ALT4-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Atribacteria bacterium,33.100,332,205,11,2,321,8,334,1.000,5.155E-31
+job.pdb,AF-A0A1I3RA22-F1-model_v4 Thiamine-monophosphate kinase,Paenibacillus sp. UNC496MF,30.700,374,200,15,1,321,1,368,1.000,2.824E-30
+job.pdb,AF-I4C3G3-F1-model_v4 Thiamine-monophosphate kinase,Desulfomonile tiedjei DSM 6799,37.100,334,189,12,2,321,7,333,1.000,5.478E-31
+job.pdb,AF-A0A3M0ZQ26-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Dadabacteria bacterium,35.500,332,185,16,2,321,8,322,1.000,9.516E-30
+job.pdb,AF-A0A142VTI2-F1-model_v4 Thiamine-monophosphate kinase,Sphingopyxis terrae subsp. terrae NBRC 15098,35.600,286,171,7,40,319,32,310,1.000,1.653E-28
+job.pdb,AF-A0A351WMG4-F1-model_v4 Thiamine-monophosphate kinase,Verrucomicrobia bacterium,35.600,328,176,9,2,320,8,309,1.000,3.369E-31
+job.pdb,AF-A0A1F9CJD0-F1-model_v4 Thiamine-monophosphate kinase,Deltaproteobacteria bacterium RBG_13_65_10,37.800,341,181,14,2,317,7,341,1.000,1.530E-31
+job.pdb,AF-A0A1W1XV08-F1-model_v4 Thiamine-monophosphate kinase,Desulfacinum hydrothermale DSM 13146,36.200,331,199,9,2,320,15,345,1.000,7.422E-31
+job.pdb,AF-A0A3N5F8Z9-F1-model_v4 Thiamine-phosphate kinase,Xanthomonadales bacterium,45.300,256,133,4,66,320,1,250,1.000,2.515E-29
+job.pdb,AF-A0A6B1BNA8-F1-model_v4 Thiamine-monophosphate kinase,Gemmatimonadetes bacterium,35.600,337,184,10,2,320,24,345,1.000,1.200E-31
+job.pdb,AF-A0A6G6KAS9-F1-model_v4 Thiamine-monophosphate kinase,Roseimicrobium sp. ORNL1,30.700,328,181,11,2,321,8,297,1.000,3.206E-29
+job.pdb,AF-E6PJ50-F1-model_v4 Putative thiamin-monophosphate kinase,mine drainage metagenome,31.100,337,203,14,1,320,3,327,1.000,7.975E-29
+job.pdb,AF-A0A520K8X6-F1-model_v4 Thiamine-monophosphate kinase,Methanophagales archaeon ANME-1-THS,32.300,340,200,14,2,320,7,337,1.000,1.370E-29
+job.pdb,AF-A0A6N8YPY7-F1-model_v4 Thiamine-monophosphate kinase,Chloroflexi bacterium,34.900,332,195,13,2,321,8,330,1.000,1.220E-28
+job.pdb,AF-A0A316TQ22-F1-model_v4 Thiamine-monophosphate kinase,Rhodohalobacter mucosus,34.100,331,205,10,2,321,14,342,1.000,8.380E-31
+job.pdb,AF-A0A1G1GYX4-F1-model_v4 Thiamine-phosphate kinase,Nitrospirae bacterium RBG_19FT_COMBO_42_15,34.600,271,165,6,57,321,5,269,1.000,5.539E-29
+job.pdb,AF-A0A2N2EYR9-F1-model_v4 Thiamine-monophosphate kinase,Elusimicrobia bacterium HGW-Elusimicrobia-1,31.000,357,202,14,2,320,15,365,1.000,2.380E-28
+job.pdb,AF-A0A133UW50-F1-model_v4 Thiamine-monophosphate kinase,candidate division MSBL1 archaeon SCGC-AAA259I09,30.900,326,209,8,3,321,1,317,1.000,9.463E-31
+job.pdb,AF-A0A1Y3QGJ7-F1-model_v4 Thiamine-monophosphate kinase,Firmicutes bacterium ZCTH02-B6,36.700,337,180,11,2,320,9,330,1.000,4.851E-31
+job.pdb,AF-A0A845K055-F1-model_v4 Thiamine-phosphate kinase,Nitrospinae bacterium,36.900,336,185,13,2,320,8,333,1.000,1.846E-30
+job.pdb,AF-A0A2H0P3A0-F1-model_v4 Thiamine-monophosphate kinase,Deltaproteobacteria bacterium CG11_big_fil_rev_8_21_14_0_20_49_13,35.300,331,193,11,3,319,13,336,1.000,2.657E-30
+job.pdb,AF-A0A2E4S2S3-F1-model_v4 Thiamine-monophosphate kinase,Hyphomonadaceae bacterium,31.000,328,197,14,1,319,1,308,1.000,3.224E-28
+job.pdb,AF-A0A2G9IFR2-F1-model_v4 Thiamine-monophosphate kinase,Prevotella intermedia,28.100,366,209,13,2,319,7,366,1.000,9.005E-29
+job.pdb,AF-A0A1F8XA45-F1-model_v4 Thiamine-phosphate kinase,Deltaproteobacteria bacterium GWA2_55_82,34.600,335,192,11,4,320,13,338,1.000,1.737E-30
+job.pdb,AF-A0A538BZ67-F1-model_v4 Thiamine-monophosphate kinase,Actinomycetia bacterium,34.500,313,184,15,20,319,8,312,1.000,2.227E-29
+job.pdb,AF-A0A1F8LUI0-F1-model_v4 Thiamine-monophosphate kinase,Chloroflexi bacterium RBG_13_46_9,35.100,327,195,13,4,321,17,335,1.000,3.826E-30
+job.pdb,AF-A0A2H6FDF0-F1-model_v4 Thiamine-monophosphate kinase,bacterium BMS3Abin07,29.400,340,199,15,2,320,7,326,1.000,5.213E-29
+job.pdb,AF-A0A2E6I0G6-F1-model_v4 Thiamine-monophosphate kinase,Gemmatimonadetes bacterium,39.400,335,171,14,2,320,16,334,1.000,4.296E-31
+job.pdb,AF-A0A2V6WGQ9-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Rokubacteria bacterium,36.100,335,195,13,1,321,39,368,1.000,4.591E-30
+job.pdb,AF-A0A2T4UJA9-F1-model_v4 Thiamine-monophosphate kinase,Paraconexibacter algicola,31.100,340,201,15,1,320,1,327,1.000,1.464E-28
+job.pdb,AF-A0A1F2R084-F1-model_v4 Thiamine-monophosphate kinase,Acidobacteria bacterium RIFCSPHIGHO2_12_FULL_67_30,34.500,330,187,12,4,321,9,321,1.000,5.184E-30
+job.pdb,AF-A0A7V4SUS2-F1-model_v4 Thiamine-monophosphate kinase,Armatimonadetes bacterium,34.900,329,192,11,4,320,20,338,1.000,4.066E-30
+job.pdb,AF-A0A0F9ZAQ7-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Peregrinibacteria bacterium GW2011_GWC2_33_13,31.900,354,199,11,1,320,1,346,1.000,4.320E-30
+job.pdb,AF-A0A348Y802-F1-model_v4 Thiamine-phosphate kinase,Psychrobacter sp.,41.500,284,143,9,1,270,1,275,1.000,1.148E-28
+job.pdb,AF-A0A3N0EAI0-F1-model_v4 Thiamine-monophosphate kinase,Nocardiopsaceae bacterium YIM 96095,33.900,333,184,15,2,321,9,318,1.000,2.227E-29
+job.pdb,AF-A0A7C3IDB5-F1-model_v4 Thiamine-monophosphate kinase,Armatimonadetes bacterium,33.300,330,205,10,2,320,8,333,1.000,5.853E-30
+job.pdb,AF-A0A2E9B5T2-F1-model_v4 Thiamine-monophosphate kinase,Rhodobiaceae bacterium,30.300,333,211,8,1,321,1,324,1.000,1.296E-28
+job.pdb,AF-A0A3D2RGU9-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Latescibacteria bacterium,37.100,334,182,13,2,320,7,327,1.000,3.805E-31
+job.pdb,AF-A0A2N1USW7-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Melainabacteria bacterium HGW-Melainabacteria-1,31.300,332,195,13,1,321,1,310,1.000,4.111E-28
+job.pdb,AF-A0A2W6B7H8-F1-model_v4 Thiamine-monophosphate kinase,Chloroflexi bacterium,32.600,309,190,10,23,320,36,337,1.000,2.840E-29
+job.pdb,AF-A0A5Q4EDR3-F1-model_v4 Thiamine-monophosphate kinase,Leptolyngbya sp. DLM2.Bin27,35.000,337,191,14,2,321,11,336,1.000,2.529E-28
+job.pdb,AF-A0A2E1LUJ8-F1-model_v4 Thiamine-monophosphate kinase,Hyphomonadaceae bacterium,33.300,327,181,14,1,319,1,298,1.000,5.570E-28
+job.pdb,AF-A0A1G3PPJ9-F1-model_v4 Thiamine-monophosphate kinase,Spirochaetes bacterium GWF1_51_8,35.100,336,186,16,1,320,3,322,1.000,3.224E-28
+job.pdb,AF-D8K1E8-F1-model_v4 Thiamine-monophosphate kinase,Dehalogenimonas lykanthroporepellens BL-DC-9,36.300,330,194,11,1,320,6,329,1.000,1.074E-29
+job.pdb,AF-D6Z3R9-F1-model_v4 Thiamine-monophosphate kinase,Desulfurivibrio alkaliphilus AHT 2,35.700,333,194,11,4,321,11,338,1.000,2.672E-29
+job.pdb,AF-A0A1F9IIQ6-F1-model_v4 Thiamine-monophosphate kinase,Deltaproteobacteria bacterium RIFCSPLOWO2_02_FULL_50_16,34.400,334,194,10,2,320,9,332,1.000,1.289E-29
+job.pdb,AF-A0A356FD12-F1-model_v4 Thiamine-monophosphate kinase,Planctomycetota bacterium,28.300,339,213,11,4,320,24,354,1.000,9.005E-29
+job.pdb,AF-A0A7X9DYL8-F1-model_v4 Thiamine-monophosphate kinase,Myxococcales bacterium,38.700,315,175,9,17,318,24,333,1.000,5.539E-29
+job.pdb,AF-A0A2V9KQ49-F1-model_v4 Thiamine-monophosphate kinase,Acidobacteria bacterium,33.000,330,196,12,4,320,19,336,1.000,1.856E-29
+job.pdb,AF-A0A6I2Y8F1-F1-model_v4 Thiamine-monophosphate kinase,Actinomycetia bacterium,33.200,334,188,15,1,321,1,312,1.000,9.569E-29
+job.pdb,AF-A0A2E7RMU6-F1-model_v4 Thiamine-monophosphate kinase,Gammaproteobacteria bacterium,28.500,322,196,13,2,321,18,307,1.000,5.570E-28
+job.pdb,AF-H1Q3K1-F1-model_v4 Thiamine-monophosphate kinase,Prevotella micans F0438,28.500,368,201,14,2,317,7,364,1.000,3.641E-28
+job.pdb,AF-A0A2H6GYZ8-F1-model_v4 Thiamine-monophosphate kinase,archaeon BMS3Abin16,28.200,311,207,8,18,321,24,325,1.000,4.933E-28
+job.pdb,AF-A0A1G1A597-F1-model_v4 Thiamine-monophosphate kinase,Lentisphaerae bacterium RIFOXYC12_FULL_60_16,32.500,326,188,7,2,320,8,308,1.000,6.646E-29
+job.pdb,AF-A0A521AJ06-F1-model_v4 Thiamine-monophosphate kinase,Aliifodinibius sediminis,37.800,333,189,10,2,320,16,344,1.000,4.616E-29
+job.pdb,AF-A0A2S6S006-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium MarineAlpha6_Bin4,29.400,339,204,14,1,320,1,323,1.000,6.255E-29
+job.pdb,AF-A0A7V1N0E1-F1-model_v4 Thiamine-phosphate kinase,Nitrospirae bacterium,39.100,281,149,9,1,267,4,276,1.000,1.564E-27
+job.pdb,AF-A0A3D2PAA4-F1-model_v4 Thiamine-phosphate kinase,Elusimicrobia bacterium,30.100,335,191,11,18,320,7,330,1.000,6.255E-29
+job.pdb,AF-A0A1Q6DNR4-F1-model_v4 Thiamine-monophosphate kinase,Desulfobulbaceae bacterium DB1,33.600,327,192,11,5,317,46,361,1.000,1.747E-29
+job.pdb,AF-A0A0K1E9K4-F1-model_v4 Thiamine-monophosphate kinase,Chondromyces crocatus,34.000,329,189,13,2,321,10,319,1.000,1.022E-27
+job.pdb,AF-A0A3B8WIL4-F1-model_v4 Thiamine-phosphate kinase,Marinobacter nauticus,47.000,251,124,4,1,246,1,247,1.000,2.006E-26
+job.pdb,AF-A0A7K1Z201-F1-model_v4 Thiamine-monophosphate kinase,Rhodothermaceae bacterium,35.600,334,188,12,2,320,8,329,1.000,5.213E-29
+job.pdb,AF-A0A1C4PP82-F1-model_v4 Thiamine-monophosphate kinase,Streptomyces sp. DvalAA-14,34.300,332,184,17,2,321,64,373,1.000,3.034E-28
+job.pdb,AF-E9T3Y4-F1-model_v4 Thiamine-monophosphate kinase,Prescottella equi ATCC 33707,31.500,333,197,14,2,321,44,358,1.000,1.464E-28
+job.pdb,AF-A0A2S6TJ97-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium MarineAlpha3_Bin7,34.900,303,166,11,27,311,26,315,1.000,7.930E-30
+job.pdb,AF-A0A838HKF0-F1-model_v4 Thiamine-phosphate kinase,Gemmatimonadetes bacterium,32.200,326,205,10,3,319,12,330,1.000,2.367E-29
+job.pdb,AF-A0A3M1PI03-F1-model_v4 Thiamine-phosphate kinase,Alphaproteobacteria bacterium,38.200,277,155,8,52,319,2,271,1.000,1.480E-26
+job.pdb,AF-A0A522D9F8-F1-model_v4 Thiamine-monophosphate kinase,Spirochaetes bacterium,30.800,340,199,13,3,321,21,345,1.000,2.227E-29
+job.pdb,AF-A0A2S6QN76-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium MarineAlpha9_Bin3,29.000,334,203,14,1,320,2,315,1.000,3.051E-27
+job.pdb,AF-Q6AKX6-F1-model_v4 Thiamine-monophosphate kinase,Desulfotalea psychrophila LSv54,36.100,332,185,12,4,319,7,327,1.000,1.220E-28
+job.pdb,AF-A0A7C4RDM6-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Bathyarchaeota archaeon,24.600,328,231,11,1,321,2,320,1.000,1.093E-26
+job.pdb,AF-A0A2H5YE18-F1-model_v4 Thiamine-monophosphate kinase,bacterium HR23,33.400,332,190,15,4,319,16,332,1.000,4.616E-29
+job.pdb,AF-A0A5M4ELL1-F1-model_v4 Thiamine-monophosphate kinase,SAR202 cluster bacterium,24.800,330,225,12,1,321,3,318,1.000,1.234E-26
+job.pdb,AF-A0A831XKZ7-F1-model_v4 Thiamine-phosphate kinase,Armatimonadetes bacterium,37.300,335,185,15,1,321,1,324,1.000,2.240E-28
+job.pdb,AF-A0A1U7N4X6-F1-model_v4 Thiamine-monophosphate kinase,Moorena bouillonii PNG,29.300,388,189,16,2,320,10,381,1.000,5.952E-27
+job.pdb,AF-A0A1G6TY00-F1-model_v4 Thiamine-monophosphate kinase,Glycomyces harbinensis,35.300,328,182,16,2,321,52,357,1.000,1.227E-27
+job.pdb,AF-A0A2D2Q5B2-F1-model_v4 Thiamine-monophosphate kinase,Thermostichus lividus PCC 6715,31.800,339,197,14,1,321,6,328,1.000,5.271E-27
+job.pdb,AF-A0A1F5U6P1-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Firestonebacteria bacterium RIFOXYA2_FULL_40_8,29.000,331,202,10,2,321,8,316,1.000,1.653E-28
+job.pdb,AF-A0A536LWD4-F1-model_v4 Thiamine-phosphate kinase,Chloroflexi bacterium,36.800,285,159,11,47,321,2,275,1.000,1.093E-26
+job.pdb,AF-A0A7Y5IWQ6-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Omnitrophica bacterium,28.000,331,209,11,4,321,17,331,1.000,1.385E-27
+job.pdb,AF-A0A7V3YG20-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Caldatribacterium californiense,32.400,333,202,13,2,321,7,329,1.000,8.019E-28
+job.pdb,AF-A0A0U3S755-F1-model_v4 Thiamine-monophosphate kinase,Thermococcus sp. 2319x1,30.500,304,195,8,22,321,18,309,1.000,4.960E-27
+job.pdb,AF-A0A0H3G8C7-F1-model_v4 Thiamine-monophosphate kinase,Zymomonas mobilis subsp. mobilis ATCC 10988,30.700,299,197,7,27,319,26,320,1.000,2.887E-26
+job.pdb,AF-A0A2P8DEG9-F1-model_v4 Thiamine-monophosphate kinase,Murinocardiopsis flavida,31.000,335,191,15,2,321,11,320,1.000,3.051E-27
+job.pdb,AF-A0A5N8Z6I5-F1-model_v4 Thiamine-monophosphate kinase,SAR202 cluster bacterium AD-802-E10_MRT_200m,32.900,334,202,13,2,320,9,335,1.000,8.521E-28
+job.pdb,AF-A0A7X3YBB6-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium,36.600,327,164,13,1,319,4,295,1.000,4.111E-28
+job.pdb,AF-A0A832HZ35-F1-model_v4 Thiamine-monophosphate kinase,Verrucomicrobia subdivision 3 bacterium,33.000,336,184,12,1,321,1,310,1.000,7.102E-28
+job.pdb,AF-A0A2E9F1L7-F1-model_v4 Thiamine-monophosphate kinase,Dehalococcoidia bacterium,33.100,335,193,16,2,319,8,328,1.000,1.220E-28
+job.pdb,AF-A0A1B9F987-F1-model_v4 Thiamine-monophosphate kinase,Dissulfuribacter thermophilus,33.100,341,196,16,1,319,5,335,1.000,3.224E-28
+job.pdb,AF-A0A7C3UJQ7-F1-model_v4 Thiamine-monophosphate kinase,Elusimicrobia bacterium,31.200,349,199,12,2,321,10,346,1.000,3.426E-28
+job.pdb,AF-A0A7X6PXD3-F1-model_v4 Thiamine-phosphate kinase,Deltaproteobacteria bacterium,31.100,299,185,9,2,285,9,301,1.000,1.573E-26
+job.pdb,AF-A0A0S2KID7-F1-model_v4 Thiamine-monophosphate kinase,Prevotella enoeca,32.700,354,192,14,2,318,8,352,1.000,2.108E-28
+job.pdb,AF-A0A849ZFS7-F1-model_v4 Thiamine-phosphate kinase,Candidatus Sumerlaeia bacterium,33.600,333,189,13,2,313,12,333,1.000,5.213E-29
+job.pdb,AF-A0A2D8ZT98-F1-model_v4 Thiamine-monophosphate kinase,Hyphomonadaceae bacterium,30.300,330,199,12,1,319,1,310,1.000,1.385E-27
+job.pdb,AF-Q54757-F1-model_v4 Thiamine-monophosphate kinase,Synechococcus elongatus PCC 7942 = FACHB-805,34.000,335,177,16,5,321,17,325,1.000,5.919E-28
+job.pdb,AF-A0A521US48-F1-model_v4 Thiamine-monophosphate kinase,Chloroflexi bacterium,31.900,332,189,14,17,320,37,359,1.000,4.111E-28
+job.pdb,AF-A0A1D2REK3-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Altiarchaeales archaeon IMC4,32.700,299,181,7,25,320,21,302,1.000,1.887E-26
+job.pdb,AF-A0A7V4SZ37-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Margulisbacteria bacterium,30.300,330,190,11,2,321,7,306,1.000,3.869E-28
+job.pdb,AF-A0A7J9WUB3-F1-model_v4 Thiamine-monophosphate kinase,Actinomycetia bacterium,33.300,315,196,8,2,309,58,365,1.000,3.641E-28
+job.pdb,AF-A0A0F0CR86-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Omnitrophus magneticus,29.300,324,194,8,1,320,1,293,1.000,4.134E-27
+job.pdb,AF-W5WWF8-F1-model_v4 Thiamine-monophosphate kinase,Bdellovibrio bacteriovorus W,28.600,328,201,15,4,320,11,316,1.000,4.960E-27
+job.pdb,AF-A0A3B8YAU7-F1-model_v4 Thiamine-phosphate kinase,Pseudomonas sp.,40.500,254,138,5,71,320,2,246,1.000,1.401E-25
+job.pdb,AF-A0A0F2QAJ7-F1-model_v4 Thiamine-monophosphate kinase,Clostridiaceae bacterium BRH_c20a,30.100,338,209,11,2,321,7,335,1.000,4.134E-27
+job.pdb,AF-A0A7X7C8S6-F1-model_v4 Thiamine-monophosphate kinase,Myxococcales bacterium,34.100,340,184,14,2,320,9,329,1.000,1.155E-27
+job.pdb,AF-A0A662GJW0-F1-model_v4 Thiamine-monophosphate kinase,Thermoprotei archaeon,25.800,294,198,11,39,321,1,285,1.000,7.631E-26
+job.pdb,AF-A0A7W7KBF9-F1-model_v4 Thiamine-monophosphate kinase,Novosphingobium chloroacetimidivorans,33.400,287,175,9,45,321,2,282,1.000,7.631E-26
+job.pdb,AF-A0A843EB82-F1-model_v4 Thiamine-phosphate kinase,Candidatus Methanomethylophilaceae archaeon,32.600,285,171,9,40,317,5,275,1.000,4.417E-26
+job.pdb,AF-A0A662T415-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Korarchaeota archaeon,31.800,308,197,9,18,320,76,375,1.000,1.671E-26
+job.pdb,AF-A0A2E7CZ10-F1-model_v4 Thiamine-monophosphate kinase,Planctomycetaceae bacterium,32.800,329,185,11,3,321,7,309,1.000,1.022E-27
+job.pdb,AF-T2J032-F1-model_v4 Thiamine-monophosphate kinase,Crocosphaera watsonii WH 0005,31.100,305,186,13,32,321,1,296,1.000,5.300E-26
+job.pdb,AF-A0A522TSL2-F1-model_v4 Thiamine-monophosphate kinase,Actinomycetia bacterium,28.600,321,198,13,4,319,14,308,1.000,2.252E-27
+job.pdb,AF-A0A1F4TLF9-F1-model_v4 Thiamine-monophosphate kinase,candidate division WOR-1 bacterium RIFOXYB2_FULL_48_7,29.900,334,185,15,2,321,7,305,1.000,5.985E-26
+job.pdb,AF-A0A800DG09-F1-model_v4 Thiamine-monophosphate kinase,Armatimonadetes bacterium,31.800,348,204,12,1,320,6,348,1.000,2.702E-27
+job.pdb,AF-A0A534JH64-F1-model_v4 Thiamine-monophosphate kinase,Euryarchaeota archaeon,29.500,332,206,11,2,320,61,377,1.000,9.676E-27
+job.pdb,AF-A0A7C2K096-F1-model_v4 Thiamine-monophosphate kinase,Schlesneria paludicola,35.800,324,175,10,2,317,4,302,1.000,1.227E-27
+job.pdb,AF-A0A520KRN9-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Methanoliparum thermophilum,32.200,322,202,10,2,319,7,316,1.000,4.668E-27
+job.pdb,AF-A0A2P8E8V7-F1-model_v4 Thiamine-monophosphate kinase,Haloactinopolyspora alba,28.100,337,206,14,2,321,9,326,1.000,7.181E-26
+job.pdb,AF-A0A1H6V7T9-F1-model_v4 Thiamine-monophosphate kinase,Demequina mangrovi,29.000,327,201,13,2,320,8,311,1.000,6.758E-26
+job.pdb,AF-A0A6I2FVV7-F1-model_v4 Thiamine-monophosphate kinase,Nocardia sp. SYP-A9097,32.200,341,185,19,2,321,5,320,1.000,2.543E-27
+job.pdb,AF-Q0W120-F1-model_v4 Thiamine-monophosphate kinase,Methanocella arvoryzae MRE50,30.200,324,203,10,2,319,7,313,1.000,8.064E-27
+job.pdb,AF-A0A534MHW9-F1-model_v4 Thiamine-monophosphate kinase,Euryarchaeota archaeon,28.800,326,208,13,4,320,42,352,1.000,6.325E-27
+job.pdb,AF-A0A0G3EEB4-F1-model_v4 Thiamine-monophosphate kinase,Kiritimatiella glycovorans,34.300,309,168,10,17,320,23,301,1.000,7.589E-27
+job.pdb,AF-A0A0S3QU22-F1-model_v4 Thiamine-monophosphate kinase,Thermosulfidibacter takaii ABI70S6,31.700,309,189,11,25,321,22,320,1.000,5.632E-26
+job.pdb,AF-A0A2E2WXV6-F1-model_v4 Thiamine-monophosphate kinase,Rickettsiales bacterium,28.300,346,207,11,1,319,8,339,1.000,3.661E-27
+job.pdb,AF-A0A1G0LKA5-F1-model_v4 Thiamine-monophosphate kinase,Gemmatimonadetes bacterium GWC2_71_10,32.700,324,191,12,4,321,17,319,1.000,2.393E-27
+job.pdb,AF-A0A7J3SA18-F1-model_v4 Thiamine-monophosphate kinase,Methanobacteriaceae archaeon,28.700,313,201,12,20,319,29,332,1.000,4.417E-26
+job.pdb,AF-A0A1F6QWK9-F1-model_v4 AIRS domain-containing protein,Candidatus Micrarchaeota archaeon RBG_16_36_9,23.700,328,222,12,1,315,1,313,1.000,5.985E-26
+job.pdb,AF-A0A6S4QFH7-F1-model_v4 Thiamine-monophosphate kinase,Spirochaetes bacterium,30.500,327,201,11,2,320,8,316,1.000,2.265E-26
+job.pdb,AF-A0A3R7D504-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Bathyarchaeota archaeon,28.600,328,210,10,4,320,13,327,1.000,1.311E-26
+job.pdb,AF-A0A2M7M2M7-F1-model_v4 Thiamine-monophosphate kinase,bacterium (Candidatus Ratteibacteria) CG_4_10_14_3_um_filter_41_18,30.300,352,172,12,2,320,9,320,1.000,9.055E-28
+job.pdb,AF-A0A7X8UWE8-F1-model_v4 Thiamine-monophosphate kinase,Phycisphaerales bacterium,27.500,337,193,15,2,321,4,306,1.000,4.720E-25
+job.pdb,AF-A0A6C1P925-F1-model_v4 Thiamine-monophosphate kinase,Balneolaceae bacterium,27.800,337,215,11,2,316,13,343,1.000,8.569E-27
+job.pdb,AF-A0A151EDM7-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Proteinoplasmatales archaeon SG8-5,29.900,301,186,11,25,320,28,308,1.000,1.241E-25
+job.pdb,AF-A0RWJ0-F1-model_v4 Thiamine-monophosphate kinase,Cenarchaeum symbiosum A,27.300,303,201,9,31,321,18,313,1.000,3.484E-25
+job.pdb,AF-A0A5N8YC38-F1-model_v4 Thiamine-monophosphate kinase,SAR202 cluster bacterium AC-647-N09_OGT_505m,33.400,335,197,14,2,320,44,368,1.000,1.887E-26
+job.pdb,AF-A0A519BGQ6-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Acididesulfobacter guangdongensis,21.700,410,221,16,1,313,1,407,1.000,1.241E-25
+job.pdb,AF-A0A2N0L472-F1-model_v4 Thiamine-monophosphate kinase,SAR202 cluster bacterium Io17-Chloro-G3,28.800,326,200,12,20,320,33,351,1.000,6.758E-26
+job.pdb,AF-A0A2U1EQ94-F1-model_v4 Thiamine-monophosphate kinase,Promicromonospora sukumoe,29.000,372,194,18,1,320,7,360,1.000,1.234E-26
+job.pdb,AF-A0A2E7I8H9-F1-model_v4 Thiamine-monophosphate kinase,Rhodobiaceae bacterium,29.700,336,184,14,3,319,4,306,1.000,7.589E-27
+job.pdb,AF-A0A1F5FHS8-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Coatesbacteria bacterium RBG_13_66_14,27.300,322,202,13,20,320,56,366,1.000,1.582E-25
+job.pdb,AF-A0A542SSK9-F1-model_v4 Thiamine-monophosphate kinase,Rarobacter incanus,27.100,346,205,16,1,321,8,331,1.000,2.571E-25
+job.pdb,AF-A0A2T4DEL4-F1-model_v4 Thiamine-monophosphate kinase,Marinobacter sp. B9-2,24.200,334,235,12,2,321,17,346,1.000,4.442E-25
+job.pdb,AF-A0A2W6CNE0-F1-model_v4 Thiamine-monophosphate kinase,Acidimicrobiales bacterium,33.000,315,179,17,16,319,97,390,1.000,2.557E-26
+job.pdb,AF-A0A2V9ALE1-F1-model_v4 Thiamine-phosphate kinase,Acidobacteria bacterium,35.700,285,159,11,50,321,4,277,1.000,1.174E-24
+job.pdb,AF-A0A800ERH9-F1-model_v4 Thiamine-phosphate kinase,Gemmatimonadetes bacterium,28.500,326,196,13,1,306,1,309,1.000,2.420E-25
+job.pdb,AF-A0A651H9Z9-F1-model_v4 Thiamine-monophosphate kinase,Gemmatimonadales bacterium,31.800,314,190,13,18,320,69,369,1.000,8.617E-26
+job.pdb,AF-A0A0A2DZT5-F1-model_v4 Thiamine-monophosphate kinase,Porphyromonas sp. COT-239 OH1446,28.600,345,210,13,2,320,10,344,1.000,5.952E-27
+job.pdb,AF-K0ZJG1-F1-model_v4 Thiamine-monophosphate kinase,Winkia neuii BV029A5,28.900,335,197,18,1,321,6,313,1.000,5.016E-25
+job.pdb,AF-A0A832Z0H0-F1-model_v4 Thiamine-phosphate kinase,Archaeoglobus profundus,30.500,311,190,11,14,320,14,302,1.000,1.241E-25
+job.pdb,AF-A0A6G9YNA4-F1-model_v4 Thiamine-monophosphate kinase,Nocardia arthritidis,30.000,353,193,20,2,321,47,378,1.000,1.898E-25
+job.pdb,AF-A0A842NID4-F1-model_v4 Thiamine-phosphate kinase,Candidatus Bathyarchaeota archaeon,28.000,324,217,9,4,320,13,327,1.000,9.156E-26
+job.pdb,AF-A0A2E7R688-F1-model_v4 Thiamine-monophosphate kinase,Pelagibacteraceae bacterium,27.700,332,208,11,1,317,1,315,1.000,4.694E-26
+job.pdb,AF-A0A3D1G762-F1-model_v4 Thiamine-monophosphate kinase,Balneolaceae bacterium,27.700,335,208,12,2,311,12,337,1.000,3.465E-26
+job.pdb,AF-A0A7C4GAL4-F1-model_v4 Thiamine-monophosphate kinase,Phycisphaerae bacterium,29.700,336,190,17,1,321,178,482,1.000,5.330E-25
+job.pdb,AF-A0A1Q5PN85-F1-model_v4 Thiamine-monophosphate kinase,Boudabousia liubingyangii,24.000,354,218,18,1,321,13,348,1.000,4.180E-25
+job.pdb,AF-A0A849U573-F1-model_v4 Thiamine-phosphate kinase,Nitrospira sp.,37.400,267,149,6,72,321,4,269,1.000,4.720E-25
+job.pdb,AF-A0A2W4S2W0-F1-model_v4 Thiamine-monophosphate kinase,bacterium,34.000,335,192,14,1,321,54,373,1.000,1.671E-26
+job.pdb,AF-A0A800FWQ0-F1-model_v4 Thiamine-monophosphate kinase,Gemmatimonadetes bacterium,27.700,332,213,10,1,321,12,327,1.000,2.017E-25
+job.pdb,AF-D3SL70-F1-model_v4 Thiamine-monophosphate kinase,Thermocrinis albus DSM 14484,31.100,324,191,12,2,319,7,304,1.000,5.300E-26
+job.pdb,AF-A0A3P1SH07-F1-model_v4 Thiamine-monophosphate kinase,Schaalia canis,27.200,348,199,15,1,321,1,321,1.000,2.277E-25
+job.pdb,AF-A0A382NHG4-F1-model_v4 Uncharacterized protein,marine metagenome,38.300,245,130,6,41,275,2,235,1.000,1.333E-23
+job.pdb,AF-A0A356JPH6-F1-model_v4 Thiamine-monophosphate kinase,Lentisphaeria bacterium,29.900,311,176,11,18,319,18,295,1.000,1.034E-25
+job.pdb,AF-A0A524F340-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Lokiarchaeota archaeon,24.700,307,209,10,30,320,37,337,1.000,6.395E-25
+job.pdb,AF-A0A248YJ90-F1-model_v4 Thiamine-monophosphate kinase,Plantactinospora sp. KBS50,26.600,308,211,9,27,320,159,465,1.000,1.796E-24
+job.pdb,AF-A0A7C1GU39-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Omnitrophica bacterium,30.300,267,152,8,59,320,4,241,1.000,8.200E-24
+job.pdb,AF-A0A7X3V125-F1-model_v4 Thiamine-phosphate kinase,Gemmatimonadetes bacterium,37.400,262,145,7,70,319,1,255,1.000,3.956E-24
+job.pdb,AF-A0A7C4CIC3-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Korarchaeota archaeon,26.500,313,208,13,18,321,18,317,1.000,5.016E-25
+job.pdb,AF-A0A6B0XFQ2-F1-model_v4 Thiamine-monophosphate kinase,Holophagales bacterium,35.100,319,172,13,26,321,23,329,1.000,1.318E-25
+job.pdb,AF-A0A2H0QBK1-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium CG11_big_fil_rev_8_21_14_0_20_44_7,36.700,283,137,13,40,317,35,280,1.000,5.300E-26
+job.pdb,AF-A0A6J7PG40-F1-model_v4 Unannotated protein,freshwater metagenome,27.100,332,189,16,5,320,10,304,1.000,4.442E-25
+job.pdb,AF-A0A5M4ERV8-F1-model_v4 Thiamine-monophosphate kinase,SAR202 cluster bacterium,28.600,339,211,14,1,319,13,340,1.000,3.934E-25
+job.pdb,AF-Q7NG75-F1-model_v4 Thiamine-monophosphate kinase,Gloeobacter violaceus PCC 7421,33.500,334,192,14,2,320,7,325,1.000,7.181E-26
+job.pdb,AF-A0A1J5QVJ4-F1-model_v4 Thiamine-monophosphate kinase,mine drainage metagenome,28.600,339,195,17,2,320,13,324,1.000,3.934E-25
+job.pdb,AF-A0A843BXC6-F1-model_v4 Thiamine-phosphate kinase,Candidatus Heimdallarchaeota archaeon,25.300,300,209,10,32,321,35,329,1.000,5.044E-24
+job.pdb,AF-A0A2W4I7N5-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Margulisbacteria bacterium,32.000,309,168,12,21,320,19,294,1.000,9.730E-26
+job.pdb,AF-A0A2K5AR46-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Nitrosocaldus cavascurensis,26.400,295,192,10,40,321,38,320,1.000,7.717E-24
+job.pdb,AF-A0A7C2XGH4-F1-model_v4 Thiamine-monophosphate kinase,Crenarchaeota archaeon,25.200,297,204,8,33,320,37,324,1.000,8.200E-24
+job.pdb,AF-A0A497JN47-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Bathyarchaeota archaeon,25.200,313,211,11,19,321,22,321,1.000,1.796E-24
+job.pdb,AF-A0A239F4B7-F1-model_v4 Thiamine-monophosphate kinase,Micrococcales bacterium KH10,26.500,366,204,17,4,321,18,366,1.000,5.016E-25
+job.pdb,AF-A0A2Y8ZWV9-F1-model_v4 Thiamine-monophosphate kinase,Branchiibius hedensis,27.300,333,207,15,1,321,11,320,1.000,3.956E-24
+job.pdb,AF-S7TS55-F1-model_v4 Thiamine-monophosphate kinase,Desulfovibrio sp. X2,29.800,332,196,18,4,321,11,319,1.000,5.016E-25
+job.pdb,AF-A0A1F9VDN4-F1-model_v4 Thiamine-monophosphate kinase,Elusimicrobia bacterium RIFCSPLOWO2_12_FULL_39_28,26.000,349,217,13,2,320,8,345,1.000,2.277E-25
+job.pdb,AF-A0A5Q4D3V9-F1-model_v4 Thiamine-monophosphate kinase,Gemmatimonadales bacterium,31.000,335,201,17,1,321,47,365,1.000,5.985E-26
+job.pdb,AF-A0A662FZD5-F1-model_v4 Thiamine-monophosphate kinase,Thermoprotei archaeon,27.200,330,222,12,2,321,21,342,1.000,2.277E-25
+job.pdb,AF-A0A843CQG1-F1-model_v4 Thiamine-phosphate kinase,Candidatus Methanomethylophilaceae archaeon,28.700,323,205,11,1,317,7,310,1.000,2.420E-25
+job.pdb,AF-A0A524R233-F1-model_v4 Thiamine-monophosphate kinase,Gemmatimonadales bacterium,32.200,338,192,16,1,321,45,362,1.000,5.632E-26
+job.pdb,AF-A0A401G0I2-F1-model_v4 Thiamine-monophosphate kinase,Desulfonema ishimotonii,31.400,299,176,12,2,276,7,300,1.000,4.747E-24
+job.pdb,AF-W9V2M2-F1-model_v4 Thiamine-monophosphate kinase,Nitrincola nitratireducens,48.100,214,105,2,1,212,1,210,1.000,4.517E-22
+job.pdb,AF-A0A257AR05-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Bathyarchaeota archaeon ex4484_205,25.600,312,217,9,18,321,23,327,1.000,3.297E-24
+job.pdb,AF-A0A7J2LYA1-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Korarchaeota archaeon,28.000,299,200,10,27,318,30,320,1.000,1.690E-24
+job.pdb,AF-Q04PS9-F1-model_v4 Thiamine-monophosphate kinase,Leptospira borgpetersenii serovar Hardjo-bovis str. JB197,31.300,303,168,14,33,320,22,299,1.000,2.433E-24
+job.pdb,AF-A0A349S997-F1-model_v4 Thiamine-phosphate kinase,Gammaproteobacteria bacterium,40.400,240,131,4,83,312,2,239,1.000,9.839E-24
+job.pdb,AF-A0A1J4Q888-F1-model_v4 Thiamine-monophosphate kinase,Streptomyces malaysiense,24.800,342,222,14,2,321,24,352,1.000,3.503E-24
+job.pdb,AF-A0A1Q3MVP4-F1-model_v4 Thiamine-monophosphate kinase,Alphaproteobacteria bacterium 40-19,32.200,326,183,13,4,311,9,314,1.000,4.694E-26
+job.pdb,AF-A0A7C4IL22-F1-model_v4 Thiamine-monophosphate kinase,Phycisphaerae bacterium,29.300,330,183,13,3,319,4,296,1.000,1.040E-24
+job.pdb,AF-A0A7S7FL05-F1-model_v4 Thiamine-phosphate kinase,Nanchangia anserum,25.700,345,203,17,4,321,22,340,1.000,1.796E-24
+job.pdb,AF-A0A7M3ME18-F1-model_v4 Thiamine-monophosphate kinase,Oceanidesulfovibrio indonesiensis,29.200,335,202,15,4,321,26,342,1.000,4.180E-25
+job.pdb,AF-A0A3N5MBU4-F1-model_v4 Thiamine-phosphate kinase,Nitrospiraceae bacterium,29.700,326,181,15,2,304,7,307,1.000,1.681E-25
+job.pdb,AF-A0A2A2Y8H6-F1-model_v4 Thiamine-monophosphate kinase,Verrucomicrobiae bacterium AMD-G2,31.000,332,175,12,2,321,9,298,1.000,4.180E-25
+job.pdb,AF-A0A7C5XN30-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Bathyarchaeota archaeon,28.000,332,213,13,2,320,7,325,1.000,1.591E-24
+job.pdb,AF-A0A7X7GU83-F1-model_v4 Thiamine-phosphate kinase,Myxococcales bacterium,32.500,298,170,11,21,306,82,360,1.000,3.956E-24
+job.pdb,AF-A0A840VD25-F1-model_v4 Thiamine-monophosphate kinase,Haloferula luteola,28.900,325,185,10,2,320,8,292,1.000,2.290E-24
+job.pdb,AF-C7LY34-F1-model_v4 Thiamine-monophosphate kinase,Acidimicrobium ferrooxidans DSM 10331,33.100,305,168,18,26,321,25,302,1.000,2.920E-24
+job.pdb,AF-A0A1H3DX00-F1-model_v4 Thiamine-monophosphate kinase,Halopenitus persicus,27.900,336,204,13,1,321,24,336,1.000,2.571E-25
+job.pdb,AF-A0A399JH04-F1-model_v4 Thiamine-monophosphate kinase,Galactobacter valiniphilus,28.200,361,184,21,1,321,22,347,1.000,1.318E-25
+job.pdb,AF-A0A151FAC8-F1-model_v4 Thiamine-monophosphate kinase,Theionarchaea archaeon DG-70,27.700,296,170,12,33,320,24,283,1.000,1.105E-24
+job.pdb,AF-U7D8Q8-F1-model_v4 Thiamine-monophosphate kinase,Chitinivibrio alkaliphilus ACht1,29.000,331,198,14,4,321,9,315,1.000,2.571E-25
+job.pdb,AF-A0A2V9P1C3-F1-model_v4 Thiamine-phosphate kinase,Acidobacteria bacterium,39.600,260,131,12,72,321,2,245,1.000,2.936E-23
+job.pdb,AF-A0A518BVH5-F1-model_v4 Thiamine-monophosphate kinase,Mucisphaera calidilacus,28.300,339,180,18,4,321,3,299,1.000,5.664E-25
+job.pdb,AF-A0A6H9XMR7-F1-model_v4 Thiamine-monophosphate kinase,Corynebacterium matruchotii,25.400,334,209,17,2,320,44,352,1.000,3.523E-23
+job.pdb,AF-A0A7C4UGA8-F1-model_v4 Thiamine-phosphate kinase,bacterium,24.800,310,201,7,1,306,14,295,1.000,6.431E-24
+job.pdb,AF-A0A2H5W482-F1-model_v4 Thiamine-monophosphate kinase,bacterium HR11,23.900,338,207,13,18,321,18,339,1.000,3.297E-24
+job.pdb,AF-V2QBZ9-F1-model_v4 Thiamine-monophosphate kinase,Mucispirillum schaedleri ASF457,26.900,326,211,13,1,321,1,304,1.000,3.297E-24
+job.pdb,AF-A0A6B2CGH4-F1-model_v4 Thiamine-monophosphate kinase,Thermogladius sp.,22.200,333,232,12,1,321,6,323,1.000,3.523E-23
+job.pdb,AF-A0A842WFZ6-F1-model_v4 Thiamine-phosphate kinase,Candidatus Micrarchaeota archaeon,34.500,295,172,9,2,282,7,294,1.000,5.360E-24
+job.pdb,AF-A0A0A0MBT4-F1-model_v4 Thiamine-monophosphate kinase,Lysobacter defluvii IMMIB APB-9 = DSM 18482,50.400,204,89,4,1,202,1,194,1.000,2.969E-21
+job.pdb,AF-A0A7Y5SWD5-F1-model_v4 Thiamine-monophosphate kinase,Phycisphaerales bacterium,29.000,317,183,10,14,319,17,302,1.000,1.174E-24
+job.pdb,AF-A0A1Q2TP85-F1-model_v4 Thiamine-monophosphate kinase,Actinomyces sp. Chiba101,31.700,347,184,16,23,321,1,342,1.000,1.497E-24
+job.pdb,AF-A0A355M7Q8-F1-model_v4 Thiamine-monophosphate kinase,Lentisphaeria bacterium,25.600,324,195,11,1,310,1,292,1.000,1.326E-24
+job.pdb,AF-A0A3N5HP48-F1-model_v4 Thiamine-phosphate kinase,Nitrospiraceae bacterium,36.200,306,170,9,1,285,13,314,1.000,8.154E-25
+job.pdb,AF-A0A838TS47-F1-model_v4 Thiamine-phosphate kinase,Chitinophagaceae bacterium,30.000,319,188,12,2,297,11,317,1.000,8.665E-25
+job.pdb,AF-A0A7Y3RMJ4-F1-model_v4 Thiamine-monophosphate kinase,Parvularcula mediterranea,32.500,329,183,14,1,320,1,299,1.000,6.834E-24
+job.pdb,AF-A0A2W5KKL4-F1-model_v4 Thiamine-monophosphate kinase,Lawsonella clevelandensis,24.500,366,207,22,2,321,27,369,1.000,6.431E-24
+job.pdb,AF-A0A5J4RUG4-F1-model_v4 Thiamine-monophosphate kinase,termite gut metagenome,23.400,316,218,13,20,321,27,332,1.000,6.834E-24
+job.pdb,AF-A0A2R6L8H7-F1-model_v4 Thiamine-monophosphate kinase,Halobacteriales archaeon SW_10_66_29,28.800,322,192,13,1,319,1,288,1.000,5.390E-23
+job.pdb,AF-A0A3N5VJ65-F1-model_v4 Thiamine-monophosphate kinase,Verrucomicrobiaceae bacterium,31.400,334,172,16,2,321,40,330,1.000,4.442E-25
+job.pdb,AF-A0A2U4EXQ7-F1-model_v4 Thiamine-monophosphate kinase,Brachyspira hampsonii 30446,26.600,342,202,17,1,320,1,315,1.000,8.713E-24
+job.pdb,AF-A0A2E5XEI8-F1-model_v4 Thiamine-monophosphate kinase,Verrucomicrobiaceae bacterium,29.200,332,180,13,1,320,47,335,1.000,1.248E-24
+job.pdb,AF-E2SAZ7-F1-model_v4 Thiamine-monophosphate kinase,Aeromicrobium marinum DSM 15272,30.000,330,196,15,2,321,161,465,1.000,4.747E-24
+job.pdb,AF-F3GKE8-F1-model_v4 Thiamine monophosphate kinase,Pseudomonas syringae pv. pisi str. 1704B,54.300,195,86,2,34,227,1,193,1.000,6.540E-21
+job.pdb,AF-A0A520BKL7-F1-model_v4 Thiamine-phosphate kinase,Rubrivivax sp.,49.400,176,87,1,1,176,1,174,1.000,1.531E-20
+job.pdb,AF-A0A2E8CV76-F1-model_v4 Thiamine-monophosphate kinase,Verrucomicrobiales bacterium,30.800,305,168,9,2,295,12,284,1.000,1.181E-23
+job.pdb,AF-A0A7C5PHR6-F1-model_v4 Thiamine-monophosphate kinase,Planctomycetota bacterium,30.600,320,173,14,24,321,22,314,1.000,7.302E-23
+job.pdb,AF-X0U811-F1-model_v4 Uncharacterized protein,marine sediment metagenome,29.600,270,170,7,23,282,2,261,1.000,1.057E-21
+job.pdb,AF-A0A1Q8B8E2-F1-model_v4 Thiamine-monophosphate kinase,Crenarchaeota archaeon 13_1_20CM_2_51_8,25.100,330,218,9,4,321,12,324,1.000,1.930E-22
+job.pdb,AF-A0A7R8X2L7-F1-model_v4 Hypothetical protein,Cyprideis torosa,51.900,183,87,1,19,201,9,190,1.000,1.355E-20
+job.pdb,AF-A0A2V5UPJ5-F1-model_v4 Thiamine-monophosphate kinase,Verrucomicrobia bacterium,27.100,328,191,12,2,320,7,295,1.000,2.936E-23
+job.pdb,AF-A0A7C4SQ40-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Bathyarchaeota archaeon,24.800,334,221,15,2,320,9,327,1.000,3.120E-23
+job.pdb,AF-A0A524C7G6-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Heimdallarchaeota archaeon,23.100,277,196,10,56,321,1,271,1.000,4.251E-22
+job.pdb,AF-A0A6J6TNH1-F1-model_v4 Unannotated protein,freshwater metagenome,28.200,315,184,15,17,320,5,288,1.000,1.424E-22
+job.pdb,AF-A0A2X1N428-F1-model_v4 Thiamine-monophosphate kinase,Escherichia coli,79.500,166,34,0,156,321,2,167,1.000,6.540E-21
+job.pdb,AF-A0A849Q1E0-F1-model_v4 Thiamine-phosphate kinase,Methanococcoides sp.,30.300,280,176,8,17,289,27,294,1.000,5.420E-22
+job.pdb,AF-A0A3D2MYQ0-F1-model_v4 Thiamine-phosphate kinase,Halieaceae bacterium,43.900,207,107,3,1,202,1,203,1.000,7.425E-20
+job.pdb,AF-A0A3M1KH23-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Dadabacteria bacterium,29.200,335,190,15,5,318,15,323,1.000,8.246E-23
+job.pdb,AF-A0A517QX43-F1-model_v4 Thiamine-monophosphate kinase,Planctomycetes bacterium Pan189,31.600,313,159,13,5,309,12,277,1.000,1.505E-23
+job.pdb,AF-A0A2J6WQX4-F1-model_v4 Thiamine-monophosphate kinase,Calditerrivibrio nitroreducens,25.800,337,204,16,1,320,1,308,1.000,2.039E-23
+job.pdb,AF-A0A7C4D9V5-F1-model_v4 Thiamine-monophosphate kinase,Staphylothermus marinus,18.200,318,238,9,2,309,12,317,1.000,1.194E-21
+job.pdb,AF-A0A7C5HSV1-F1-model_v4 Thiamine-phosphate kinase,Candidatus Atribacteria bacterium,32.300,300,173,11,2,282,8,296,1.000,1.051E-22
+job.pdb,AF-K9SP10-F1-model_v4 Thiamine-monophosphate kinase,Synechococcus sp. PCC 7502,29.500,332,190,15,4,320,13,315,1.000,3.978E-23
+job.pdb,AF-S6AFL7-F1-model_v4 Thiamine-monophosphate kinase,Sulfuricella denitrificans skB26,42.700,192,96,5,136,321,20,203,1.000,2.986E-20
+job.pdb,AF-D3P8N5-F1-model_v4 Thiamine-monophosphate kinase,Deferribacter desulfuricans SSM1,28.500,284,174,11,40,319,33,291,1.000,5.759E-22
+job.pdb,AF-A0A424KM29-F1-model_v4 Thiamine-monophosphate kinase,Phycisphaera sp. TMED9,26.100,340,197,11,1,321,6,310,1.000,2.167E-23
+job.pdb,AF-A0A426QIL5-F1-model_v4 Uncharacterized protein,Thiohalobacter thiocyanaticus,24.800,322,213,12,2,311,8,312,1.000,3.523E-23
+job.pdb,AF-A0A3D2WCM1-F1-model_v4 Thiamine-phosphate kinase,Gemmatimonadetes bacterium,29.100,302,189,11,1,294,15,299,1.000,6.431E-24
+job.pdb,AF-A0A3D4JB03-F1-model_v4 AIRS domain-containing protein,Anaerolineae bacterium,25.900,320,204,16,18,320,22,325,1.000,6.872E-23
+job.pdb,AF-A0A3C1HNH4-F1-model_v4 Thiamine-phosphate kinase,Alcanivorax sp.,37.500,248,124,9,81,320,2,226,1.000,3.155E-21
+job.pdb,AF-A0A2H9L341-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Micrarchaeota archaeon CG10_big_fil_rev_8_21_14_0_10_59_7,24.700,283,188,11,40,317,31,293,1.000,2.969E-21
+job.pdb,"AF-A0A2W6ZSJ4-F1-model_v4 Selenide, water dikinase SelD",Leptolyngbya sp.,20.700,342,212,16,4,304,20,343,1.000,1.709E-22
+job.pdb,AF-A0A7C5Z9I2-F1-model_v4 Thiamine-phosphate kinase,Phycisphaerae bacterium,32.100,249,158,6,81,321,2,247,1.000,1.626E-20
+job.pdb,AF-W7V7B0-F1-model_v4 Thiamine-monophosphate kinase,Micromonospora sp. M42,22.700,299,208,9,24,310,7,294,1.000,6.503E-22
+job.pdb,AF-A0A3D3M0B2-F1-model_v4 Thiamine-monophosphate kinase,Rothia sp.,27.700,353,196,16,1,320,7,333,1.000,8.713E-24
+job.pdb,AF-A0A075I052-F1-model_v4 Thiamine-monophosphate kinase,uncultured marine thaumarchaeote KM3_98_C03,25.000,260,184,7,33,287,14,267,1.000,1.531E-20
+job.pdb,AF-A0A535WID5-F1-model_v4 Thiamine-monophosphate kinase,Chloroflexi bacterium,27.900,333,182,19,2,321,8,295,1.000,1.269E-21
+job.pdb,AF-A0A832ZN89-F1-model_v4 Thiamine-phosphate kinase,Desulfurococcales archaeon,20.500,316,235,9,16,321,21,330,1.000,2.191E-21
+job.pdb,AF-A0A359CWH8-F1-model_v4 Thiamine monophosphate kinase,Bacteroidales bacterium,23.900,305,199,13,28,321,29,311,1.000,1.719E-21
+job.pdb,AF-A0A1J5QZV9-F1-model_v4 Thiamine-monophosphate kinase,mine drainage metagenome,30.800,308,164,14,24,319,85,355,1.000,8.292E-22
+job.pdb,"AF-A0A839UM80-F1-model_v4 Selenide,water dikinase",Simiduia aestuariiviva,22.000,363,204,20,1,308,401,739,1.000,8.811E-22
+job.pdb,"AF-A0A2S6NP82-F1-model_v4 Selenide, water dikinase SelD",Rhodopila globiformis,20.500,355,205,18,1,304,378,706,1.000,2.615E-22
+job.pdb,AF-A0A834IAM7-F1-model_v4 Uncharacterized protein,Rhynchophorus ferrugineus,46.200,147,76,2,1,146,1,145,1.000,1.995E-16
+job.pdb,AF-A0A7Y5S939-F1-model_v4 Thiamine-monophosphate kinase,Phycisphaerales bacterium,26.000,322,186,12,20,319,23,314,1.000,6.910E-22
+job.pdb,AF-A0A848T300-F1-model_v4 Uncharacterized protein,Chitinophagales bacterium,20.100,323,221,17,5,313,10,309,1.000,1.057E-21
+job.pdb,AF-A0A2E5FGK5-F1-model_v4 Thiamine-monophosphate kinase,bacterium,25.100,278,186,12,25,294,17,280,1.000,1.952E-20
+job.pdb,AF-A0A3B1CWL6-F1-model_v4 Thiamine-monophosphate kinase,hydrothermal vent metagenome,32.100,292,164,11,2,269,7,288,1.000,2.062E-21
+job.pdb,"AF-A0A2D5RDR9-F1-model_v4 Selenide, water dikinase SelD",Alcanivorax sp.,20.900,344,207,16,6,304,405,728,1.000,3.562E-21
+job.pdb,"AF-A0A356F7M4-F1-model_v4 Selenide, water dikinase SelD",Planctomycetota bacterium,21.100,350,205,18,4,305,53,379,1.000,3.353E-21
+job.pdb,AF-A0A5M4D0T7-F1-model_v4 Thiamine-monophosphate kinase,Cyanobacteria bacterium CYA,27.700,349,171,15,17,321,69,380,1.000,1.719E-21
+job.pdb,AF-U1N1S3-F1-model_v4 Thiamine-monophosphate kinase,Haloquadratum walsbyi J07HQW1,28.200,258,168,8,26,279,18,262,1.000,3.390E-19
+job.pdb,AF-A0A2V6NLI1-F1-model_v4 Thiamine-monophosphate kinase,Verrucomicrobia bacterium,30.500,285,156,9,2,277,9,260,1.000,1.837E-20
+job.pdb,AF-A0A256XMA2-F1-model_v4 Thiamine-monophosphate kinase,Thermofilum sp. ex4484_79,20.800,298,205,15,40,321,53,335,1.000,3.582E-20
+job.pdb,AF-A0A2E9YKZ6-F1-model_v4 Thiamine-monophosphate kinase,Rhodobiaceae bacterium,42.500,188,99,6,136,320,17,198,1.000,3.849E-18
+job.pdb,AF-A0A2G9MZU2-F1-model_v4 Thiamine-phosphate kinase,Candidatus Micrarchaeota archaeon CG11_big_fil_rev_8_21_14_0_20_47_5,23.900,251,175,8,33,274,27,270,1.000,4.090E-18
+job.pdb,"AF-A0A6P0LDK3-F1-model_v4 Selenide, water dikinase SelD",Moorena sp. SIO3H5,21.100,355,204,20,3,304,451,782,1.000,1.826E-21
+job.pdb,AF-A0A432SJ54-F1-model_v4 Thiamine-monophosphate kinase,Sulfurimonas sp.,24.600,276,171,10,24,294,17,260,1.000,9.468E-20
+job.pdb,AF-A0A4R6PX57-F1-model_v4 Hydrogenase expression/formation protein HypE,Aminicella lysinilytica,21.400,340,225,16,1,318,8,327,1.000,1.269E-21
+job.pdb,AF-A0A7C3IQ86-F1-model_v4 Uncharacterized protein,Deltaproteobacteria bacterium,20.000,324,233,14,1,311,31,341,1.000,4.023E-21
+job.pdb,AF-A0A2T9WQD2-F1-model_v4 Uncharacterized protein,Sulfolobales archaeon SCGC AB-777_K20,20.200,282,200,11,40,311,40,306,1.000,1.531E-20
+job.pdb,AF-A0A538HJ51-F1-model_v4 Thiamine-monophosphate kinase,Actinomycetia bacterium,32.100,323,170,17,1,319,139,416,1.000,2.474E-21
+job.pdb,AF-A0A7Z9JFZ6-F1-model_v4 Thiamine-monophosphate kinase,Phycisphaerales bacterium,25.000,328,183,15,4,319,15,291,1.000,1.728E-20
+job.pdb,AF-A0A3D4G9Y8-F1-model_v4 Thiamine-phosphate kinase,Sutterellaceae bacterium,40.100,249,138,4,2,241,15,261,1.000,1.539E-19
+job.pdb,AF-A0A2V8TLI8-F1-model_v4 Thiamine-phosphate kinase,Acidobacteria bacterium,31.500,244,135,8,1,240,1,216,1.000,1.081E-17
+job.pdb,AF-A0A7J4DUN1-F1-model_v4 AIRS domain-containing protein,Pyrodictiaceae archaeon,18.500,297,213,13,40,321,19,301,1.000,8.431E-19
+job.pdb,AF-A0A0P0N3T2-F1-model_v4 Thiamine-monophosphate kinase,Pyrodictium delaneyi,20.600,310,206,15,20,310,39,327,1.000,1.006E-19
+job.pdb,"AF-A0A7X3S0W2-F1-model_v4 Selenide, water dikinase SelD",Gemmatimonadetes bacterium,21.000,357,202,19,4,304,433,765,1.000,2.810E-20
+job.pdb,AF-A0A5E7S781-F1-model_v4 Thiamine-monophosphate kinase,Pseudomonas fluorescens,21.000,328,220,16,4,313,19,325,1.000,1.531E-20
+job.pdb,AF-A0A0N0MKN2-F1-model_v4 Thiamine-monophosphate kinase,Actinobacteria bacterium OK074,19.800,327,221,16,17,320,43,351,1.000,1.531E-20
+job.pdb,AF-H5VEE2-F1-model_v4 Thiamine-monophosphate kinase,Helicobacter bizzozeronii CCUG 35545,22.800,276,183,12,25,295,1,251,1.000,3.002E-19
+job.pdb,AF-A0A268TYY3-F1-model_v4 Thiamine-monophosphate kinase,Helicobacter sp. 12S02232-10,22.600,261,171,10,39,295,48,281,1.000,8.431E-19
+job.pdb,AF-A0A832ZFN2-F1-model_v4 Hydrogenase,Thermococcus paralvinellae,20.900,330,219,15,2,310,8,316,1.000,4.827E-21
+job.pdb,AF-A0A5C9BEU8-F1-model_v4 Selenophosphate synthase,Planctomycetota bacterium,17.000,347,223,17,5,306,4,330,1.000,8.910E-20
+job.pdb,AF-A0A4Q3GW65-F1-model_v4 Thiamine-monophosphate kinase,Sphingobacteriales bacterium,26.900,330,201,19,1,313,7,313,1.000,1.837E-20
+job.pdb,AF-A0A455V3K8-F1-model_v4 Uncharacterized protein,Halomonas axialensis,35.900,242,136,7,87,320,2,232,1.000,4.090E-18
+job.pdb,AF-A0A1Q9P2Z0-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Heimdallarchaeota archaeon LC_2,22.700,312,198,16,20,320,27,306,1.000,6.576E-20
+job.pdb,AF-A0A7S3R7W9-F1-model_v4 Hypothetical protein,Dunaliella tertiolecta,18.400,358,216,22,2,304,10,346,1.000,3.807E-20
+job.pdb,AF-A0A356VL59-F1-model_v4 Thiamine-phosphate kinase,Halieaceae bacterium,47.300,188,78,7,136,320,14,183,1.000,3.208E-18
+job.pdb,AF-A0A257WRC0-F1-model_v4 Thiamine-phosphate kinase,Hydrogenophilales bacterium 12-63-5,44.500,202,110,2,100,301,2,201,1.000,7.551E-17
+job.pdb,AF-A0A329ZFN1-F1-model_v4 Thiamine-monophosphate kinase,Helicobacter sp. 16-1353,19.900,296,195,11,18,308,19,277,1.000,3.002E-19
+job.pdb,AF-A0A2U8Q2D2-F1-model_v4 Thiamine-monophosphate kinase,Bradyrhizobium amphicarpaeae,27.100,321,186,13,2,301,13,306,1.000,6.949E-21
+job.pdb,"AF-A0A1Y5G2V0-F1-model_v4 Selenide, water dikinase SelD",Gammaproteobacteria bacterium 50_400_T64,20.600,363,210,21,1,306,419,760,1.000,1.847E-19
+job.pdb,AF-A0A356SEK3-F1-model_v4 Thiamine-phosphate kinase,Halieaceae bacterium,46.600,135,71,1,1,135,1,134,1.000,8.621E-15
+job.pdb,AF-A0A2N1UJM4-F1-model_v4 Thiamine-monophosphate kinase,Nitrospira bacterium HGW-Nitrospira-1,30.400,269,159,10,2,251,13,272,1.000,9.574E-18
+job.pdb,AF-A0A3T1DM94-F1-model_v4 AIRS_C domain-containing protein,Halomonas olivaria,40.600,187,102,3,136,321,4,182,1.000,9.627E-17
+job.pdb,AF-A0A1F5E1J7-F1-model_v4 Uncharacterized protein,Candidatus Bathyarchaeota archaeon RBG_13_52_12,18.600,337,231,17,1,314,11,327,1.000,3.807E-20
+job.pdb,AF-A0A401TZS9-F1-model_v4 AIRS domain-containing protein,Chiloscyllium punctatum,42.200,187,101,3,27,207,11,196,1.000,1.087E-16
+job.pdb,"AF-A0A2H6FLZ7-F1-model_v4 Selenide, water dikinase",bacterium BMS3Abin08,22.700,329,216,14,5,313,18,328,1.000,8.910E-20
+job.pdb,AF-A0A3A4W7X2-F1-model_v4 Uncharacterized protein,Desulfobacteraceae bacterium,19.300,290,203,12,38,311,2,276,1.000,1.075E-18
+job.pdb,AF-A0A1B7LUW5-F1-model_v4 Thiamine-monophosphate kinase,Enteractinococcus helveticum,25.000,331,190,15,16,320,31,329,1.000,6.988E-20
+job.pdb,AF-E4Q9M7-F1-model_v4 AIR synthase related protein domain protein,Caldicellulosiruptor hydrothermalis 108,20.700,327,222,15,2,310,4,311,1.000,3.582E-20
+job.pdb,"AF-A0A2E7I0K0-F1-model_v4 Selenide, water dikinase SelD",Alphaproteobacteria bacterium,20.400,323,206,17,18,304,1,308,1.000,1.371E-18
+job.pdb,AF-U3TCH6-F1-model_v4 Thiamine-monophosphate kinase,Aeropyrum camini SY1 = JCM 12091,20.000,295,210,12,35,320,33,310,1.000,8.959E-19
+job.pdb,AF-A0A0W8IGH2-F1-model_v4 Thiamine-monophosphate kinase,Nesterenkonia jeotgali,29.800,345,167,19,2,296,17,336,1.000,6.949E-21
+job.pdb,AF-A0A7S3R7W3-F1-model_v4 Hypothetical protein,Dunaliella tertiolecta,18.100,369,212,22,1,304,458,801,1.000,1.006E-19
+job.pdb,AF-A0A0R2V6R2-F1-model_v4 AIRS domain-containing protein,Methylophilales bacterium BACL14 MAG-120920-bin58,38.500,223,133,2,2,224,3,221,1.000,4.619E-18
+job.pdb,AF-X1FUU8-F1-model_v4 AIRS domain-containing protein,marine sediment metagenome,38.000,189,104,4,27,205,37,222,1.000,1.473E-16
+job.pdb,AF-A0A535N9J9-F1-model_v4 Thiamine-monophosphate kinase,Chloroflexi bacterium,24.100,335,181,21,2,321,32,308,1.000,6.613E-19
+job.pdb,AF-A0A524F1N6-F1-model_v4 Hydrogenase expression/formation protein,Candidatus Lokiarchaeota archaeon,20.500,335,222,17,4,313,33,348,1.000,3.371E-20
+job.pdb,AF-A8A901-F1-model_v4 AIR synthase related protein domain protein,Ignicoccus hospitalis KIN4/I,20.300,304,193,15,20,320,25,282,1.000,7.467E-19
+job.pdb,AF-A0A662GDC7-F1-model_v4 Hydrogenase assembly protein HupF,Thermoprotei archaeon,20.000,335,220,17,1,311,4,314,1.000,5.158E-20
+job.pdb,AF-A0A2V5ST75-F1-model_v4 Thiamine-monophosphate kinase,Verrucomicrobia bacterium,27.300,292,170,10,2,284,7,265,1.000,3.002E-19
+job.pdb,AF-A0A843HZK2-F1-model_v4 Thiamine-monophosphate kinase,Sulfolobus sp.,19.900,336,220,17,2,320,8,311,1.000,4.045E-20
+job.pdb,AF-A0A2P6V3W5-F1-model_v4 Water dikinase,Micractinium conductrix,17.600,356,205,21,4,304,462,784,1.000,2.659E-19
+job.pdb,AF-A0A0P9CX08-F1-model_v4 Thiamine monophosphate kinase,Acidiplasma aeolicum,25.600,269,178,9,2,265,7,258,1.000,7.979E-18
+job.pdb,AF-A0A4V1UIN9-F1-model_v4 Thiamine-phosphate kinase,Caulobacteraceae bacterium,36.900,192,107,5,136,319,10,195,1.000,1.023E-16
+job.pdb,AF-A0A7C5JUK0-F1-model_v4 AIR synthase,Chloroflexi bacterium,18.200,340,206,17,5,309,18,320,1.000,2.342E-20
+job.pdb,AF-A0A382I7U1-F1-model_v4 AIRS domain-containing protein,marine metagenome,45.200,157,85,1,24,179,4,160,1.000,3.244E-16
+job.pdb,AF-A0A150Z7P9-F1-model_v4 Thiamine-monophosphate kinase,Bradyrhizobium sp. DOA1,37.500,192,112,4,136,320,33,223,1.000,5.955E-16
+job.pdb,"AF-A0A2H5YCC7-F1-model_v4 Selenide, water dikinase",bacterium HR23,20.400,327,202,14,18,305,3,310,1.000,1.748E-18
+job.pdb,AF-A0A7J3QEM8-F1-model_v4 AIRS domain-containing protein,Ignisphaera aggregans,16.700,322,235,13,4,310,43,346,1.000,7.935E-19
+job.pdb,"AF-A0A1V6HTP7-F1-model_v4 Selenide, water dikinase",Acidobacteria bacterium ADurb.Bin051,18.900,306,199,12,33,304,14,304,1.000,1.973E-18
+job.pdb,"AF-A0A2E5VBP9-F1-model_v4 Selenide, water dikinase SelD",Gammaproteobacteria bacterium,19.800,332,204,18,18,304,427,741,1.000,6.613E-19
+job.pdb,AF-A0A0S7YLL5-F1-model_v4 Uncharacterized protein,Deltaproteobacteria bacterium SG8_13,17.300,328,229,13,4,311,17,322,1.000,4.593E-19
+job.pdb,AF-A0A415BGV1-F1-model_v4 Hydrogenase expression/formation protein HypE,Collinsella sp. AM13-34,20.700,309,206,12,27,313,42,333,1.000,2.109E-17
+job.pdb,AF-A0A4Y7S284-F1-model_v4 Hydrogenase isoenzymes formation protein HypE,Pelotomaculum sp. FP,20.800,302,203,14,27,310,86,369,1.000,1.654E-17
+job.pdb,"AF-A0A7I9VIE1-F1-model_v4 Selenide, water dikinase",Anaeromyxobacter diazotrophicus,19.800,313,199,14,31,306,1,298,1.000,4.908E-18
+job.pdb,"AF-A0A3M1QCG3-F1-model_v4 Selenide, water dikinase SelD",Chloroflexi bacterium,20.100,322,206,15,20,305,19,325,1.000,1.142E-18
+job.pdb,"AF-P59392-F1-model_v4 Selenide, water dikinase",Pseudomonas putida KT2440,17.900,335,223,16,5,304,27,344,1.000,9.520E-19
+job.pdb,"AF-Q488J7-F1-model_v4 Selenide, water dikinase",Colwellia psychrerythraea 34H,19.100,319,214,14,18,304,37,343,1.000,2.841E-18
+job.pdb,AF-A0A0D8J8L7-F1-model_v4 AIRS domain-containing protein,Draconibacterium sediminis,24.000,320,193,18,4,306,8,294,1.000,1.207E-19
+job.pdb,"AF-A0A7G1KXX1-F1-model_v4 Selenide, water dikinase",Aeromonas hydrophila,21.200,320,207,14,18,304,37,344,1.000,1.857E-18
+job.pdb,"AF-A0A3M1KJ37-F1-model_v4 Selenide, water dikinase SelD",Gammaproteobacteria bacterium,21.000,361,200,20,1,306,409,739,1.000,2.355E-19
+job.pdb,"AF-A0A2V7UL77-F1-model_v4 Selenide, water dikinase SelD",Acidobacteria bacterium,18.400,325,209,14,17,304,8,313,1.000,2.516E-18
+job.pdb,AF-A0A2Z4Y994-F1-model_v4 [NiFe] hydrogenase metallocenter assembly protein HypE,Candidatus Sumerlaea chitinivorans,21.000,328,214,16,6,313,40,342,1.000,5.215E-18
+job.pdb,"AF-A0A379SLF3-F1-model_v4 Selenide, water dikinase",Salmonella enterica subsp. arizonae,18.100,320,218,15,18,304,15,323,1.000,3.622E-18
+job.pdb,AF-A0A854C747-F1-model_v4 Thiamine-phosphate kinase,Deltaproteobacteria bacterium 13_1_40CM_4_54_4,42.100,249,130,8,2,242,7,249,1.000,4.935E-17
+job.pdb,AF-A0A5J4XSD6-F1-model_v4 Water dikinase,Trebouxia sp. A1-2,19.200,368,214,22,1,313,514,853,1.000,7.935E-19
+job.pdb,AF-A0A524CAU8-F1-model_v4 Uncharacterized protein,Candidatus Lokiarchaeota archaeon,15.900,333,232,18,4,313,14,321,1.000,1.457E-18
+job.pdb,"AF-A0A2E7D9F6-F1-model_v4 Selenide, water dikinase SelD",Planctomycetaceae bacterium,19.800,362,203,20,2,304,411,744,1.000,1.757E-17
+job.pdb,AF-A0A538TYF7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Eisenbacteria bacterium,19.000,336,227,14,4,306,21,344,1.000,1.645E-18
+job.pdb,AF-A0A419V5X9-F1-model_v4 Selenophosphate synthase,Sinobaca qinghaiensis,17.500,308,202,17,34,304,1,293,1.000,4.347E-18
+job.pdb,"AF-A0A2H5W9G2-F1-model_v4 Selenide, water dikinase",bacterium HR11,18.300,311,198,15,34,305,9,302,1.000,7.509E-18
+job.pdb,"AF-B6B6K5-F1-model_v4 Selenide, water dikinase",Rhodobacterales bacterium Y4I,23.500,336,205,16,1,304,50,365,1.000,1.075E-18
+job.pdb,"AF-A0A2E9F2P1-F1-model_v4 Selenide, water dikinase",Dehalococcoidia bacterium,18.100,325,214,15,17,304,5,314,1.000,9.009E-18
+job.pdb,AF-A0A1J5EA69-F1-model_v4 Hydrogenase expression/formation protein HypE,Desulfobacterales bacterium CG2_30_60_27,20.200,326,220,15,4,310,18,322,1.000,3.036E-17
+job.pdb,"AF-Q889F7-F1-model_v4 Selenide, water dikinase",Pseudomonas syringae pv. tomato str. DC3000,18.500,335,221,16,5,304,27,344,1.000,3.409E-18
+job.pdb,"AF-A0A0T6UR15-F1-model_v4 Selenide, water dikinase",Aeromonas allosaccharophila,20.300,320,210,14,18,304,37,344,1.000,4.347E-18
+job.pdb,"AF-A0A7K1IBA5-F1-model_v4 Selenide, water dikinase",Nitriliruptoraceae bacterium ZYF776,21.500,343,219,15,1,304,54,385,1.000,1.290E-18
+job.pdb,AF-A0A7J3I9E3-F1-model_v4 AIRS domain-containing protein,Ignisphaera aggregans,17.900,328,240,14,4,319,5,315,1.000,2.381E-17
+job.pdb,AF-F9VMS8-F1-model_v4 Putative thiamine-monophosphate kinase,Sulfurisphaera tokodaii str. 7,18.700,341,217,18,1,320,1,302,1.000,2.825E-19
+job.pdb,AF-A0A0T9QF25-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia massiliensis,19.300,341,224,19,4,306,74,401,1.000,3.622E-18
+job.pdb,"AF-A0A5W8R5M5-F1-model_v4 Selenide, water dikinase",Salmonella enterica subsp. enterica serovar Corvallis,17.600,339,232,15,1,304,21,347,1.000,3.019E-18
+job.pdb,"AF-A0A542RQS5-F1-model_v4 Selenide, water dikinase",Nocardioides sp. SLBN-35,19.800,338,213,18,5,304,39,356,1.000,2.228E-18
+job.pdb,"AF-A0A5I0BHI7-F1-model_v4 Selenide, water dikinase",Salmonella enterica subsp. enterica serovar Koketime,18.100,342,227,17,1,304,21,347,1.000,1.457E-18
+job.pdb,"AF-A0A2E0HCW9-F1-model_v4 Selenide, water dikinase",Pseudomonadales bacterium,21.400,327,208,16,17,307,38,351,1.000,6.650E-18
+job.pdb,AF-A0A497LGK3-F1-model_v4 Hydrogenase,Candidatus Bathyarchaeota archaeon,20.100,337,221,17,2,313,9,322,1.000,3.409E-18
+job.pdb,"AF-A0A3G2IKD6-F1-model_v4 Selenide, water dikinase",Buttiauxella sp. 3AFRM03,20.000,329,210,14,18,315,39,345,1.000,3.409E-18
+job.pdb,AF-A0A7C4FL05-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,bacterium,16.800,338,228,16,5,304,20,342,1.000,4.347E-18
+job.pdb,AF-A0A7Y9VIM8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sphingomonas sp. R3G8D,18.100,325,223,14,15,305,35,350,1.000,7.066E-18
+job.pdb,"AF-A0A7X3XLZ2-F1-model_v4 Selenide, water dikinase SelD",Candidatus Poribacteria bacterium,20.700,328,205,17,16,304,8,319,1.000,1.081E-17
+job.pdb,"AF-A0A0N1DBQ5-F1-model_v4 Selenide, water dikinase",Pseudomonas sp. RIT-PI-q,20.200,336,214,18,5,304,27,344,1.000,3.208E-18
+job.pdb,"AF-A0A2V5KIN1-F1-model_v4 Selenide, water dikinase SelD",Verrucomicrobia bacterium,20.300,320,204,16,25,307,91,396,1.000,2.857E-17
+job.pdb,"AF-A0A537WHC9-F1-model_v4 Selenide, water dikinase SelD",Alphaproteobacteria bacterium,23.700,353,207,16,4,313,402,735,1.000,4.347E-18
+job.pdb,"AF-A0A1C5NF53-F1-model_v4 Selenide, water dikinase",uncultured Eubacterium sp.,16.500,333,233,15,4,305,32,350,1.000,1.149E-17
+job.pdb,AF-A0A7V6FEP9-F1-model_v4 Uncharacterized protein,Tissierellia bacterium,19.800,327,229,14,1,313,5,312,1.000,7.066E-18
+job.pdb,AF-A0A6N4TP02-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia sp. THE68,18.500,339,225,18,4,304,14,339,1.000,6.650E-18
+job.pdb,AF-I4C8I0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Desulfomonile tiedjei DSM 6799,18.400,341,224,16,4,306,52,376,1.000,5.889E-18
+job.pdb,"AF-D2TZB0-F1-model_v4 Selenide, water dikinase",Arsenophonus nasoniae,17.200,337,229,14,4,304,24,346,1.000,1.297E-17
+job.pdb,AF-A0A1B3LZU3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Hydrogenophaga sp. RAC07,17.200,342,225,18,4,305,70,393,1.000,1.221E-17
+job.pdb,"AF-A0A7Y5FGS3-F1-model_v4 Selenide, water dikinase SelD",candidate division KSB1 bacterium,20.700,327,201,17,18,306,9,315,1.000,4.090E-18
+job.pdb,AF-A0A1I0AQ73-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Anaerobranca gottschalkii DSM 13577,16.800,333,229,17,4,304,16,332,1.000,7.106E-17
+job.pdb,AF-A0A202DYZ2-F1-model_v4 Hydrogenase expression/formation protein HypE,bacterium M21,20.600,339,217,18,1,313,11,323,1.000,3.447E-16
+job.pdb,"AF-A0A7X9PE38-F1-model_v4 Selenide, water dikinase",Anaerolineaceae bacterium,19.800,322,204,15,20,304,38,342,1.000,7.979E-18
+job.pdb,"AF-A0A4Q4B0J5-F1-model_v4 Selenide, water dikinase",Alcaligenaceae bacterium,18.500,335,221,16,5,304,27,344,1.000,2.381E-17
+job.pdb,"AF-A0A0M2V5C3-F1-model_v4 Selenide, water dikinase",Arsukibacterium ikkense,19.700,324,207,17,18,304,39,346,1.000,1.465E-17
+job.pdb,"AF-A0A1F9GQ84-F1-model_v4 Selenide, water dikinase SelD",Deltaproteobacteria bacterium RIFCSPHIGHO2_12_FULL_43_9,16.300,312,207,14,32,305,13,308,1.000,7.551E-17
+job.pdb,AF-A0A151BII0-F1-model_v4 Hydrogenase,Candidatus Bathyarchaeota archaeon B26-2,16.000,306,208,15,33,313,8,289,1.000,8.526E-17
+job.pdb,AF-A0A1M6QAC1-F1-model_v4 Selenophosphate synthase,Anaerobranca californiensis DSM 14826,18.900,316,202,16,26,304,8,306,1.000,3.226E-17
+job.pdb,AF-Q9F6I8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli,17.700,333,234,18,3,304,1,324,1.000,2.689E-17
+job.pdb,AF-A0A3M1V9K2-F1-model_v4 Thiamine-monophosphate kinase,Euryarchaeota archaeon,23.800,302,185,16,33,321,40,309,1.000,8.023E-17
+job.pdb,AF-A0A1S2STX1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pediococcus acidilactici,16.400,335,236,18,4,304,21,345,1.000,3.036E-17
+job.pdb,"AF-A0A1F8SDZ9-F1-model_v4 Selenide, water dikinase",Chloroflexi bacterium RBG_16_72_14,20.900,329,200,16,17,305,43,351,1.000,1.378E-17
+job.pdb,"AF-A0A3D1GD71-F1-model_v4 Selenide, water dikinase",Balneolaceae bacterium,19.500,322,211,14,18,306,37,343,1.000,3.036E-17
+job.pdb,AF-A0A2N7W175-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Trinickia dabaoshanensis,18.200,334,227,17,5,304,34,355,1.000,9.574E-18
+job.pdb,"AF-A0A836CG72-F1-model_v4 Selenide, water dikinase",Tribonema minus,18.500,388,190,19,20,298,606,976,1.000,5.244E-17
+job.pdb,"AF-A0A1M6CYU2-F1-model_v4 Selenide, water dikinase",Dethiosulfatibacter aminovorans DSM 17477,16.800,345,222,17,1,304,1,321,1.000,3.036E-17
+job.pdb,"AF-A0A1E4EMG8-F1-model_v4 Selenide, water dikinase SelD",bacterium SCN 62-11,19.600,316,202,13,26,305,8,307,1.000,7.106E-17
+job.pdb,"AF-A0A1W9VRZ5-F1-model_v4 Selenide, water dikinase SelD",Candidatus Cloacimonetes bacterium 4572_65,15.900,327,217,13,18,304,13,321,1.000,2.381E-17
+job.pdb,"AF-A0A537RJT5-F1-model_v4 Selenide, water dikinase SelD",Alphaproteobacteria bacterium,19.400,344,215,15,4,306,329,651,1.000,1.149E-17
+job.pdb,AF-A0A3D3CNP2-F1-model_v4 Thiamine-phosphate kinase,Nitrospiraceae bacterium,34.500,226,126,10,2,215,10,225,1.000,3.914E-15
+job.pdb,"AF-A0A7Y9AV71-F1-model_v4 Selenide, water dikinase",Alteromonadaceae bacterium,17.600,323,218,14,18,306,34,342,1.000,3.871E-17
+job.pdb,"AF-A0A425WPI9-F1-model_v4 Selenide, water dikinase",Coriobacteriaceae bacterium,19.900,346,215,19,5,309,30,354,1.000,1.017E-17
+job.pdb,"AF-A0A539ECA8-F1-model_v4 Selenide, water dikinase",bacterium,20.800,316,187,15,34,306,1,296,1.000,1.155E-16
+job.pdb,AF-A0A1G7CEJ2-F1-model_v4 Selenophosphate synthase,Glycomyces harbinensis,20.100,338,217,14,4,304,37,358,1.000,6.293E-17
+job.pdb,"AF-V5AWX3-F1-model_v4 Selenide, water dikinase",Enterobacter cloacae S611,18.400,347,229,15,1,315,21,345,1.000,1.221E-17
+job.pdb,AF-A0A7C2K538-F1-model_v4 Hydrogenase expression/formation protein HypE,Caldimicrobium sp.,20.200,326,217,19,6,313,24,324,1.000,2.394E-16
+job.pdb,AF-U1P6J2-F1-model_v4 Hydrogenase maturation factor,halophilic archaeon J07HX5,18.900,338,227,16,1,313,51,366,1.000,2.109E-17
+job.pdb,AF-A0A3C0VNP4-F1-model_v4 Thiamine-phosphate kinase,Rhodobiaceae bacterium,34.500,197,111,7,3,193,6,190,1.000,2.144E-14
+job.pdb,AF-A0A3D2UC31-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Gemmatimonadetes bacterium,18.600,333,222,16,5,304,26,342,1.000,1.149E-17
+job.pdb,AF-A0A3N5J724-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xanthomonadales bacterium,16.700,347,228,22,4,304,27,358,1.000,2.381E-17
+job.pdb,"AF-A0A7X2PAN0-F1-model_v4 Selenide, water dikinase",Bullifex porci,17.200,336,222,17,4,304,23,337,1.000,2.109E-17
+job.pdb,AF-A0A6P1VXE1-F1-model_v4 Sll0787 family AIR synthase-like protein,Spirosoma endbachense,21.200,296,192,18,25,310,47,311,1.000,3.871E-17
+job.pdb,AF-A0A285F2Z1-F1-model_v4 Hydrogenase maturation factor,Orenia metallireducens,16.200,339,228,19,1,312,5,314,1.000,2.241E-17
+job.pdb,AF-A0A2E5KW61-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alphaproteobacteria bacterium,18.300,344,232,17,4,308,40,373,1.000,1.565E-16
+job.pdb,AF-A0A7C5Q9F0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Gammaproteobacteria bacterium,18.900,338,229,18,4,307,71,397,1.000,1.995E-16
+job.pdb,AF-A0A2G8MLS6-F1-model_v4 Thiamine-phosphate kinase,Methylobacterium frigidaeris,31.900,191,124,3,136,320,10,200,1.000,6.399E-14
+job.pdb,"AF-A0A0S3QSM0-F1-model_v4 Selenide, water dikinase",Thermosulfidibacter takaii ABI70S6,15.000,333,232,14,2,304,1,312,1.000,2.381E-17
+job.pdb,"AF-A0A1B1U6M5-F1-model_v4 Selenide, water dikinase SelD",Helicobacter enhydrae,18.200,318,219,13,18,304,9,316,1.000,6.293E-17
+job.pdb,AF-A0A524EU42-F1-model_v4 Uncharacterized protein,Candidatus Lokiarchaeota archaeon,16.800,321,224,15,4,310,32,323,1.000,3.849E-18
+job.pdb,AF-A0A2V9KJW3-F1-model_v4 Thiamine-monophosphate kinase,Acidobacteria bacterium,32.800,253,144,8,4,239,15,258,1.000,8.526E-17
+job.pdb,AF-A0A2N1Y0U6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Gammaproteobacteria bacterium HGW-Gammaproteobacteria-2,19.500,342,208,21,5,304,28,344,1.000,9.574E-18
+job.pdb,AF-A0A3D1AQG9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bryobacterales bacterium,17.900,346,230,17,2,304,55,389,1.000,1.155E-16
+job.pdb,AF-A0A7C7NZE5-F1-model_v4 Uncharacterized protein,Gemmatimonadetes bacterium,34.900,189,107,7,139,321,42,220,1.000,1.583E-14
+job.pdb,AF-A0A6J6F0T6-F1-model_v4 Unannotated protein,freshwater metagenome,18.200,313,194,14,27,304,13,298,1.000,1.087E-16
+job.pdb,"AF-E6PEE5-F1-model_v4 Selenide, water dikinase (Selenophosphate synthetase) (Selenium donor protein)",mine drainage metagenome,18.800,323,209,14,19,304,7,313,1.000,3.871E-17
+job.pdb,"AF-C4B1K0-F1-model_v4 Selenide, water dikinase",Burkholderia mallei GB8 horse 4,17.300,341,224,16,4,304,97,419,1.000,5.244E-17
+job.pdb,AF-A0A7Y7J0K8-F1-model_v4 Thiamine-monophosphate kinase,Nguyenibacter vanlangensis,41.400,147,80,4,1,144,15,158,1.000,2.921E-13
+job.pdb,"AF-A0A418GGR8-F1-model_v4 Selenide, water dikinase SelD",Escherichia coli,18.300,284,194,12,53,304,1,278,1.000,1.312E-15
+job.pdb,AF-A0A7Y3DA70-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Myxococcales bacterium,18.800,351,225,20,4,309,28,363,1.000,4.113E-17
+job.pdb,AF-A0A2T5MJW8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Stenotrophobium rhamnosiphilum,17.500,324,220,16,14,304,31,340,1.000,7.551E-17
+job.pdb,"AF-A0A3R7SBS2-F1-model_v4 Selenide, water dikinase SelD",Gammaproteobacteria bacterium TMED243,21.800,334,211,16,4,304,419,735,1.000,1.556E-17
+job.pdb,AF-A0A7C3A616-F1-model_v4 Thiamine-phosphate kinase,Candidatus Poribacteria bacterium,39.100,235,122,8,2,222,14,241,1.000,9.681E-16
+job.pdb,AF-G0ED44-F1-model_v4 Thiamine-monophosphate kinase,Pyrolobus fumarii 1A,26.200,316,198,17,2,298,10,309,1.000,2.381E-17
+job.pdb,"AF-A0A839WH71-F1-model_v4 Selenide,water dikinase",Atlantibacter sp. RC6,19.500,348,224,17,1,315,20,344,1.000,1.465E-17
+job.pdb,AF-A0A1H2HNK8-F1-model_v4 Thiamine-monophosphate kinase,Nitrosomonas ureae,20.000,319,225,18,2,306,12,314,1.000,1.304E-16
+job.pdb,"AF-A0A6J4D176-F1-model_v4 Selenide, water dikinase",Helicobacter suis,16.700,298,198,17,39,304,1,280,1.000,2.544E-16
+job.pdb,"AF-A0A7J7PRR5-F1-model_v4 Selenide, water dikinase",Scenedesmus sp. NREL 46B-D3,20.600,319,180,17,26,295,494,788,1.000,2.857E-17
+job.pdb,AF-A0A7C5AKD0-F1-model_v4 Hydrogenase expression/formation protein HypE,Desulfobacca acetoxidans,21.800,325,214,18,4,310,16,318,1.000,1.663E-16
+job.pdb,AF-A0A2E2XN93-F1-model_v4 Hydrogenase expression/formation protein HypE,Cellvibrionaceae bacterium,17.400,303,215,16,30,313,41,327,1.000,5.955E-16
+job.pdb,AF-A0A3M1RU56-F1-model_v4 Methanogenesis marker 2 protein,Candidatus Schekmanbacteria bacterium,19.200,317,210,17,5,310,26,307,1.000,2.857E-17
+job.pdb,AF-G4D223-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Peptoniphilus indolicus ATCC 29427,17.800,331,227,18,5,304,18,334,1.000,2.704E-16
+job.pdb,AF-A0A2E5FVX3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xanthomonadales bacterium,18.200,328,220,15,14,304,72,388,1.000,2.253E-16
+job.pdb,AF-A0A6J6U3P1-F1-model_v4 Unannotated protein,freshwater metagenome,18.900,332,213,15,4,304,30,336,1.000,4.935E-17
+job.pdb,"AF-F8E532-F1-model_v4 Selenide, water dikinase",Flexistipes sinusarabici DSM 4947,17.700,326,212,17,18,304,6,314,1.000,1.995E-16
+job.pdb,"AF-A0A7T4FPB2-F1-model_v4 Selenide, water dikinase SelD",Fusobacterium canifelinum,15.700,342,227,19,4,306,22,341,1.000,1.155E-16
+job.pdb,AF-A0A7C6BJ67-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Atribacteria bacterium,16.000,343,235,17,2,304,12,341,1.000,2.544E-16
+job.pdb,AF-A0A564Q1J4-F1-model_v4 Thiamine monophosphate kinase,Candidatus Methanolliviera sp. GoM_oil,19.200,337,214,16,1,310,1,306,1.000,3.036E-17
+job.pdb,AF-A0A1F6DTP4-F1-model_v4 AIR synthase,Candidatus Kaiserbacteria bacterium RIFCSPHIGHO2_02_FULL_54_11b,14.800,336,236,13,4,305,22,341,1.000,2.253E-16
+job.pdb,"AF-A0A258D8R4-F1-model_v4 Selenide, water dikinase",Rhizobiales bacterium 32-66-8,17.100,356,225,16,20,321,41,380,1.000,2.873E-16
+job.pdb,"AF-A0A836RU29-F1-model_v4 Selenide, water dikinase SelD",Calditrichaeota bacterium,17.000,310,198,17,38,304,2,295,1.000,6.328E-16
+job.pdb,AF-A0A5C9D5H7-F1-model_v4 Selenide water dikinase,Spirochaetes bacterium,19.200,317,199,16,20,295,24,324,1.000,3.643E-17
+job.pdb,"AF-A0A1F9E951-F1-model_v4 Selenide, water dikinase",Deltaproteobacteria bacterium RIFCSPHIGHO2_02_FULL_38_15,16.600,342,226,17,3,304,1,323,1.000,4.113E-17
+job.pdb,"AF-U7KG34-F1-model_v4 Selenide, water dikinase",Corynebacterium sp. KPL1986,20.200,336,199,18,5,304,71,373,1.000,1.556E-17
+job.pdb,"AF-A0A292YAT2-F1-model_v4 Selenide, water dikinase",Lebetimonas natsushimae,15.300,299,203,13,41,304,1,284,1.000,1.672E-15
+job.pdb,AF-A0A6J4QEG9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,uncultured Ramlibacter sp.,18.000,338,226,17,3,305,1,322,1.000,2.120E-16
+job.pdb,AF-A0A256XTN3-F1-model_v4 AIR synthase,Thermofilum sp. ex4484_79,17.000,341,223,19,1,310,6,317,1.000,3.428E-17
+job.pdb,AF-A0A6V1Q2W0-F1-model_v4 Hypothetical protein,Heterosigma akashiwo,16.900,343,224,19,4,304,95,418,1.000,1.995E-16
+job.pdb,AF-A0A1V6A889-F1-model_v4 Multifunctional fusion protein,Firmicutes bacterium ADurb.Bin153,18.000,332,229,17,5,303,511,832,1.000,3.053E-16
+job.pdb,AF-A0A7Y5FUP2-F1-model_v4 AIRS_C domain-containing protein,candidate division KSB1 bacterium,15.100,304,223,13,33,319,14,299,1.000,1.029E-15
+job.pdb,AF-A0A6A0R083-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Armatimonadetes bacterium,19.700,339,211,19,4,304,23,338,1.000,2.381E-17
+job.pdb,AF-A0A450U8E4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Kentron sp. LFY,18.100,358,232,16,5,320,28,366,1.000,7.551E-17
+job.pdb,"AF-A0A2U3KIW7-F1-model_v4 Selenide, water dikinase",Candidatus Sulfopaludibacter sp. SbA4,20.400,342,208,19,3,304,1,318,1.000,1.473E-16
+job.pdb,"AF-A0A355FTW9-F1-model_v4 Selenide, water dikinase",Flavobacteriales bacterium,20.800,345,206,20,5,304,26,348,1.000,1.304E-16
+job.pdb,AF-A0A838IWV5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Trueperaceae bacterium,18.500,334,225,19,4,305,27,345,1.000,1.162E-15
+job.pdb,AF-A0A1G3PJ96-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Spirochaetes bacterium GWF1_51_8,17.200,324,225,16,14,304,25,338,1.000,3.663E-16
+job.pdb,AF-A0A2A5Y0R5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,alpha proteobacterium MED-G10,15.000,345,239,17,4,308,20,350,1.000,1.565E-16
+job.pdb,AF-A0A7C2URN1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Armatimonadetes bacterium,14.900,342,243,16,2,304,12,344,1.000,1.029E-15
+job.pdb,AF-A0A0R2SGA0-F1-model_v4 Thiamine-monophosphate kinase,Pelagibacteraceae bacterium BACL5 MAG-120813-bin20,24.400,245,161,8,87,319,2,234,1.000,5.333E-14
+job.pdb,AF-A0A4Q1SYL9-F1-model_v4 Hydrogenase expression/formation protein HypE,Ammoniphilus sp. CFH 90114,19.200,333,214,21,4,310,15,318,1.000,1.029E-15
+job.pdb,AF-A0A7W1NIX9-F1-model_v4 Thiamine-phosphate kinase,Solirubrobacterales bacterium,36.200,248,135,11,1,238,6,240,1.000,7.635E-15
+job.pdb,AF-A0A433K1J2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Legionella sp. km772,16.200,338,231,18,5,304,27,350,1.000,3.447E-16
+job.pdb,AF-V2Q0Q3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Mucispirillum schaedleri ASF457,17.000,334,234,16,4,304,26,349,1.000,4.963E-16
+job.pdb,AF-A0A1H0NSV6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Phyllobacterium sp. OV277,16.600,348,238,19,4,312,105,439,1.000,1.029E-15
+job.pdb,AF-A0A7K4BY22-F1-model_v4 Methanogenesis marker 2 protein,Candidatus Methanofastidiosa archaeon,16.400,304,205,18,20,310,38,305,1.000,5.274E-16
+job.pdb,AF-A0A1F6QQQ2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Melainabacteria bacterium RIFCSPLOWO2_12_FULL_35_11,16.500,326,227,16,14,304,25,340,1.000,8.068E-16
+job.pdb,AF-A0A0Q4I4Y3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sphingomonas sp. Leaf22,16.100,328,224,15,16,305,37,351,1.000,3.447E-16
+job.pdb,AF-A0A2D5XC20-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Woesearchaeota archaeon,12.700,330,247,17,5,304,107,425,1.000,1.672E-15
+job.pdb,"AF-A0A1Z8WRB8-F1-model_v4 Selenide, water dikinase SelD",Methylococcaceae bacterium TMED69,18.400,315,190,16,33,303,411,702,1.000,3.892E-16
+job.pdb,AF-A0A538B6E7-F1-model_v4 Thiamine-monophosphate kinase,Actinomycetia bacterium,35.700,252,118,12,88,321,2,227,1.000,2.734E-14
+job.pdb,"AF-A0A354SGW7-F1-model_v4 Selenide, water dikinase SelD",Syntrophaceae bacterium,15.700,312,194,18,39,304,2,290,1.000,9.681E-16
+job.pdb,AF-A0A424YIH4-F1-model_v4 Hydrogenase expression/formation protein HypE,Candidatus Syntrophonatronum acetioxidans,19.400,308,207,14,27,313,88,375,1.000,4.670E-16
+job.pdb,AF-A0A2H6BFH2-F1-model_v4 Selenide water dikinase,Methylopila sp. Yamaguchi,20.400,337,195,15,17,304,428,740,1.000,1.767E-16
+job.pdb,AF-A0A356U333-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alphaproteobacteria bacterium,21.100,326,211,16,14,304,30,344,1.000,8.573E-16
+job.pdb,AF-A0A2E9YIT1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhodobiaceae bacterium,17.500,331,222,17,14,304,32,351,1.000,7.593E-16
+job.pdb,AF-A0A4Q7YWI2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Edaphobacter modestus,19.800,332,209,18,14,304,74,389,1.000,2.253E-16
+job.pdb,AF-A0A7C1YPP7-F1-model_v4 AIRS domain-containing protein,Gammaproteobacteria bacterium,34.000,138,86,3,2,137,4,138,1.000,1.506E-12
+job.pdb,AF-A0A2J6XX77-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Dictyoglomus sp. NZ13-RE01,15.500,335,236,17,4,304,21,342,1.000,5.604E-16
+job.pdb,AF-A0A839HM72-F1-model_v4 Sll0787 family AIR synthase-like protein,Aquariibacter albus,22.900,292,187,17,32,310,95,361,1.000,1.162E-15
+job.pdb,AF-A0A522CVL3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Spirochaetes bacterium,17.500,342,223,21,5,304,20,344,1.000,4.963E-16
+job.pdb,AF-A0A7Y5MMU8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Omnitrophica bacterium,16.600,331,224,15,14,304,30,348,1.000,8.573E-16
+job.pdb,AF-U7D7F0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Chitinivibrio alkaliphilus ACht1,15.900,332,230,17,14,308,13,332,1.000,6.724E-16
+job.pdb,AF-A0A800DEY3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Armatimonadetes bacterium,18.800,329,202,20,14,304,43,344,1.000,1.995E-16
+job.pdb,AF-A0A256BQQ7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Aerococcus sp. 1KP-2016,15.900,345,231,21,4,308,19,344,1.000,3.053E-16
+job.pdb,AF-A0A4U1L4N4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sphingomonas baiyangensis,16.700,329,223,15,15,305,36,351,1.000,7.145E-16
+job.pdb,AF-A0A6A5C4Y7-F1-model_v4 Cysteine desulfurase,Naegleria fowleri,16.300,355,231,16,4,304,609,951,1.000,5.955E-16
+job.pdb,AF-R5JN79-F1-model_v4 AIRS domain-containing protein,Coprococcus sp. CAG:782,17.300,305,212,16,34,318,40,324,1.000,9.681E-16
+job.pdb,"AF-A0A101XTC2-F1-model_v4 Selenide, water dikinase",Acidibacillus ferrooxidans,15.500,329,226,14,18,308,10,324,1.000,9.681E-16
+job.pdb,AF-A0A368DSA4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alphaproteobacteria bacterium,18.300,332,218,18,4,304,28,337,1.000,2.544E-16
+job.pdb,AF-A0A1V5K513-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Firmicutes bacterium ADurb.Bin506,16.700,328,222,18,14,303,392,706,1.000,5.604E-16
+job.pdb,AF-A0A353BYG5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Firmicutes bacterium,16.300,337,223,17,5,304,24,338,1.000,9.110E-16
+job.pdb,AF-A0A351EX36-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acidimicrobiaceae bacterium,15.700,337,234,17,4,304,19,341,1.000,9.110E-16
+job.pdb,AF-A0A847X461-F1-model_v4 Uncharacterized protein,Gallicola sp.,16.800,321,219,17,18,317,22,315,1.000,1.767E-16
+job.pdb,AF-A0A7X7X6B1-F1-model_v4 Hydrogenase expression/formation protein HypE,Caldisericales bacterium,19.600,311,196,16,27,310,36,319,1.000,4.963E-16
+job.pdb,AF-A0A835SB37-F1-model_v4 Uncharacterized protein,Chlamydomonas incerta,18.000,344,210,17,14,304,50,374,1.000,1.312E-15
+job.pdb,AF-A0A2V7Z6X2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acidobacteria bacterium,13.400,343,232,17,5,308,187,503,1.000,9.110E-16
+job.pdb,AF-A0A349AMM5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Dehalococcoidia bacterium,15.800,340,228,21,3,306,1,318,1.000,1.029E-15
+job.pdb,AF-A0A2S6QHP0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alphaproteobacteria bacterium MarineAlpha12_Bin1,16.200,333,223,19,15,306,2,319,1.000,4.670E-16
+job.pdb,"AF-A0A7X9DSM3-F1-model_v4 Selenide, water dikinase",Myxococcales bacterium,18.400,358,220,19,4,318,24,352,1.000,1.995E-16
+job.pdb,AF-A0A1W9VV09-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Cloacimonetes bacterium 4572_65,14.900,328,227,20,14,304,25,337,1.000,6.328E-16
+job.pdb,AF-A0A0A0K173-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Knoellia aerolata DSM 18566,16.900,360,231,20,5,308,25,372,1.000,1.162E-15
+job.pdb,AF-R5F5Q1-F1-model_v4 Uncharacterized protein,Clostridium bolteae CAG:59,17.700,293,196,12,45,304,2,282,1.000,8.621E-15
+job.pdb,AF-A0A536TWH5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Betaproteobacteria bacterium,17.900,340,224,19,4,304,9,332,1.000,2.544E-16
+job.pdb,AF-A0A2Z5YM72-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Mycobacterium marinum,17.100,333,221,17,14,305,18,336,1.000,2.394E-16
+job.pdb,AF-A0A7K2VRT8-F1-model_v4 Thiamine-phosphate kinase,Streptomyces sp. SID1328,35.600,205,118,10,2,201,9,204,1.000,3.104E-13
+job.pdb,AF-A0A3D3QUD9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Flavobacteriaceae bacterium,17.900,328,219,19,5,304,24,329,1.000,1.093E-15
+job.pdb,"AF-A0A2E5ENN9-F1-model_v4 Selenide, water dikinase SelD",Verrucomicrobiales bacterium,18.400,325,198,18,26,308,423,722,1.000,9.627E-17
+job.pdb,AF-A0A7V6FCE4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Tissierellia bacterium,17.000,334,218,16,5,304,24,332,1.000,4.963E-16
+job.pdb,AF-A0A519BIA5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Acididesulfobacter guangdongensis,15.300,358,231,20,4,304,21,363,1.000,2.394E-16
+job.pdb,AF-A0A7K1YZU7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhodothermaceae bacterium,14.900,321,230,11,5,294,23,331,1.000,1.574E-15
+job.pdb,AF-A0A850DMX7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Mycobacteriaceae bacterium,18.000,333,219,17,14,304,33,353,1.000,4.670E-16
+job.pdb,AF-A0A7C5CQN5-F1-model_v4 AIRS domain-containing protein,Thiotrichales bacterium,39.500,139,75,5,2,139,4,134,1.000,3.317E-12
+job.pdb,AF-A0A1G0Z1D1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lentisphaerae bacterium GWF2_52_8,14.400,340,240,17,4,304,13,340,1.000,5.635E-15
+job.pdb,AF-A0A7X0ACZ3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhodanobacter sp. MP1X3,17.000,340,224,19,5,304,26,347,1.000,9.681E-16
+job.pdb,AF-A0A1G3BVW9-F1-model_v4 AIRS domain-containing protein,Planctomycetes bacterium RIFCSPLOWO2_12_FULL_39_13,31.600,234,128,8,1,226,1,210,1.000,1.319E-14
+job.pdb,AF-A0A7W4P9P6-F1-model_v4 Sll0787 family AIR synthase-like protein,Gluconacetobacter tumulicola,22.100,320,198,17,5,310,25,307,1.000,1.878E-16
+job.pdb,AF-A0A660WNK9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Omnitrophica bacterium,16.600,331,228,14,4,304,18,330,1.000,2.266E-15
+job.pdb,AF-A0A317Z8L8-F1-model_v4 AIR synthase,Staphylococcus pseudintermedius,17.500,296,210,16,39,308,2,289,1.000,6.363E-15
+job.pdb,AF-H0HHZ3-F1-model_v4 Selenophosphate synthetase-related protein,Agrobacterium tumefaciens 5A,19.500,296,191,17,27,309,41,302,1.000,2.007E-15
+job.pdb,AF-A0A0L0FQA5-F1-model_v4 AIR synthase,Sphaeroforma arctica JP610,17.800,336,233,18,6,307,506,832,1.000,3.914E-15
+job.pdb,AF-A0A7Y3BLS7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Ignavibacteriaceae bacterium,15.800,316,219,16,14,294,27,330,1.000,1.888E-15
+job.pdb,AF-A0A5C1Y614-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Protaetiibacter larvae,13.500,348,235,17,14,308,45,379,1.000,1.093E-15
+job.pdb,AF-A0A7S0Q9V3-F1-model_v4 5'-phosphoribosylglycinamide transformylase,Coccolithus braarudii,18.900,327,217,17,4,294,660,974,1.000,4.991E-15
+job.pdb,AF-A0A117L650-F1-model_v4 Thiamine-monophosphate kinase,Thermococcus sp. 40_45,29.800,211,142,5,18,226,14,220,1.000,3.725E-13
+job.pdb,"AF-A0A3C7VVI1-F1-model_v4 Selenide, water dikinase SelD",Halieaceae bacterium,21.100,322,174,22,33,304,199,490,1.000,3.053E-16
+job.pdb,AF-A0A3M7CLJ0-F1-model_v4 AIR synthase,Hortaea werneckii,18.500,340,228,19,5,307,373,700,1.000,2.266E-15
+job.pdb,AF-A0A7V0JWP7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Omnitrophica bacterium,17.400,292,209,12,36,306,5,285,1.000,5.635E-15
+job.pdb,AF-A0A3B8RGB7-F1-model_v4 AIR synthase,Lactobacillus sp.,16.600,331,223,19,15,304,2,320,1.000,2.559E-15
+job.pdb,AF-A0A081Q8B1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus mitis,16.600,336,229,19,4,304,10,329,1.000,3.914E-15
+job.pdb,AF-A0A0Q8M5N1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhodanobacter sp. Root179,16.800,339,221,20,5,304,26,342,1.000,1.574E-15
+job.pdb,AF-A0A843BRW6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Heimdallarchaeota archaeon,16.600,313,207,16,35,310,56,351,1.000,7.593E-16
+job.pdb,AF-H6LAY2-F1-model_v4 AIR synthase,Saprospira grandis str. Lewin,14.100,347,245,19,4,310,22,355,1.000,1.888E-15
+job.pdb,AF-G0WGH5-F1-model_v4 AIR synthase,Naumovozyma dairenensis CBS 421,17.200,342,232,18,4,303,548,880,1.000,7.185E-15
+job.pdb,AF-A0A7C7AJ88-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Tissierellia bacterium,14.900,341,239,19,5,308,20,346,1.000,3.684E-15
+job.pdb,AF-A0A5B0MDS5-F1-model_v4 AIR synthase,Puccinia graminis f. sp. tritici,16.000,343,234,18,4,303,191,522,1.000,1.034E-14
+job.pdb,AF-A0A401ZDN9-F1-model_v4 Multifunctional fusion protein,Dictyobacter aurantiacus,17.900,339,221,18,5,304,294,614,1.000,1.888E-15
+job.pdb,AF-A0A2H5W7D6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,bacterium HR11,19.400,340,212,21,5,304,22,339,1.000,6.724E-16
+job.pdb,"AF-A0A838T7N5-F1-model_v4 Selenide, water dikinase SelD",Chitinophagales bacterium,16.000,342,226,18,4,304,27,348,1.000,7.185E-15
+job.pdb,AF-A0A4Y8PAI7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methylacidiphilum sp. Yel,17.400,338,217,22,5,304,23,336,1.000,1.481E-15
+job.pdb,AF-A0A829X3V0-F1-model_v4 Phosphoribosylaminoimidazole synthetase,Gluconobacter oxydans NBRC 3293,16.900,330,226,17,14,308,99,415,1.000,6.762E-15
+job.pdb,"AF-A0A6L7N1V7-F1-model_v4 Selenide, water dikinase SelD",Gammaproteobacteria bacterium,19.400,344,206,25,18,311,7,329,1.000,1.663E-16
+job.pdb,AF-A0A093ZRU9-F1-model_v4 AIR synthase,Pseudogymnoascus sp. VKM F-3775,16.200,338,232,19,5,306,69,391,1.000,5.988E-15
+job.pdb,AF-D3P8Z5-F1-model_v4 Hydrogenase expression/formation protein HypE,Deferribacter desulfuricans SSM1,16.300,324,233,17,4,313,16,315,1.000,4.991E-15
+job.pdb,AF-A0A368ZHB7-F1-model_v4 Uncharacterized protein,Marinomonas foliarum,18.400,330,202,21,4,310,16,301,1.000,6.687E-17
+job.pdb,AF-A0A7J4LIG0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Woesearchaeota archaeon,15.700,342,230,20,5,304,18,343,1.000,7.185E-15
+job.pdb,AF-A9FYZ4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sorangium cellulosum So ce56,17.300,351,222,19,4,304,16,348,1.000,1.093E-15
+job.pdb,AF-A0A1D1UER2-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Ramazzottius varieornatus,15.700,342,232,19,4,303,472,799,1.000,1.099E-14
+job.pdb,AF-A0A2E2UPL6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Trueperaceae bacterium,18.600,322,213,18,14,303,29,333,1.000,8.113E-15
+job.pdb,AF-A0A0G1A5I3-F1-model_v4 Peptidoglycan synthetase FtsI,Candidatus Roizmanbacteria bacterium GW2011_GWC2_41_7,33.000,203,123,8,2,196,353,550,1.000,1.112E-12
+job.pdb,AF-A0A3C1FB99-F1-model_v4 Thiamine-phosphate kinase,Propionibacteriaceae bacterium,35.200,173,104,6,2,170,10,178,1.000,6.089E-12
+job.pdb,AF-A0A350S185-F1-model_v4 AIR synthase,Roseburia sp.,16.800,303,205,12,36,304,23,312,1.000,8.573E-16
+job.pdb,AF-E8R5Y0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Isosphaera pallida ATCC 43644,14.200,365,236,20,2,304,27,376,1.000,3.466E-15
+job.pdb,AF-A0A6J3M491-F1-model_v4 AIR synthase,Dissoconium aciculare CBS 342.82,19.900,341,216,22,5,303,424,749,1.000,2.132E-15
+job.pdb,AF-A0A1J5DQB4-F1-model_v4 Multifunctional fusion protein,Deltaproteobacteria bacterium CG2_30_63_29,19.400,344,222,24,2,304,454,783,1.000,4.991E-15
+job.pdb,AF-A0A351M0X9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acidimicrobiaceae bacterium,18.000,332,214,18,14,303,55,370,1.000,2.889E-15
+job.pdb,"AF-A0A842TLN0-F1-model_v4 Selenide, water dikinase SelD",Candidatus Lokiarchaeota archaeon,17.200,330,229,18,2,304,5,317,1.000,2.266E-15
+job.pdb,AF-A0A851F4W2-F1-model_v4 PUR2 protein,Pitta sordida,16.800,345,226,21,4,303,450,778,1.000,1.034E-14
+job.pdb,AF-A0A382GJY4-F1-model_v4 AIRS domain-containing protein,marine metagenome,28.500,221,138,9,1,213,12,220,1.000,2.040E-12
+job.pdb,AF-A0A2H6GWT9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,archaeon BMS3Abin16,17.500,336,230,14,5,312,44,360,1.000,3.892E-16
+job.pdb,AF-A0A7J8HZV9-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Molossus molossus,15.800,353,239,19,16,321,348,689,1.000,1.888E-15
+job.pdb,AF-A0A833G3Q2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bauldia sp.,17.100,303,219,13,36,312,10,306,1.000,1.899E-14
+job.pdb,AF-A0A315XAX6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Dehalococcoidia bacterium,16.400,329,224,19,14,303,29,345,1.000,8.621E-15
+job.pdb,AF-A0A4S2ETR7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Coriobacteriaceae bacterium,14.800,343,222,20,14,304,29,353,1.000,4.420E-15
+job.pdb,AF-A0A0C3PIS4-F1-model_v4 AIR synthase,Pisolithus tinctorius Marx 270,17.000,335,234,17,5,306,666,989,1.000,2.734E-14
+job.pdb,AF-A0A539DP92-F1-model_v4 Thiamine-monophosphate kinase,bacterium,37.900,182,97,6,1,169,25,203,1.000,5.075E-12
+job.pdb,AF-A0A1S3AUL1-F1-model_v4 AIR synthase,Cucumis melo,16.000,300,214,17,33,304,113,402,1.000,6.363E-15
+job.pdb,AF-A0A7C8NFR1-F1-model_v4 AIR synthase,Orbilia oligospora,17.100,345,227,22,4,303,347,677,1.000,1.241E-14
+job.pdb,AF-A0A2D6LIU1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Woesearchaeota archaeon,14.500,336,225,18,14,306,26,342,1.000,7.185E-15
+job.pdb,AF-A0A7W0QJD7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acidimicrobiia bacterium,16.000,330,224,20,14,304,318,633,1.000,1.241E-14
+job.pdb,AF-A0A5C9D8X8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methylocystaceae bacterium,16.100,334,231,17,15,312,73,393,1.000,1.899E-14
+job.pdb,AF-A0A537DU39-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Bathyarchaeota archaeon,14.500,330,235,15,14,311,30,344,1.000,1.312E-15
+job.pdb,AF-A0A2N1W7S3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Goldbacteria bacterium HGW-Goldbacteria-1,16.300,324,226,16,14,304,28,339,1.000,2.408E-15
+job.pdb,AF-A0A1U9KX94-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Gluconobacter albidus,17.900,340,214,20,14,311,48,364,1.000,6.363E-15
+job.pdb,AF-A0A5J9U0G8-F1-model_v4 AIR synthase,Eragrostis curvula,15.900,294,207,14,33,304,89,364,1.000,2.144E-14
+job.pdb,AF-Q83FJ9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Tropheryma whipplei str. Twist,17.400,332,208,20,14,304,27,333,1.000,2.559E-15
+job.pdb,AF-A0A7S3XJX6-F1-model_v4 5'-phosphoribosylglycinamide transformylase,Heterosigma akashiwo,18.800,335,218,19,15,308,268,589,1.000,1.168E-14
+job.pdb,AF-A0A256KK01-F1-model_v4 Thiamine-phosphate kinase,Halorubrum ezzemoulense,33.600,187,104,8,142,321,49,222,1.000,2.448E-12
+job.pdb,AF-A0A0F9LV24-F1-model_v4 AIR synthase,marine sediment metagenome,16.500,320,226,12,14,304,27,334,1.000,3.914E-15
+job.pdb,AF-A0A7J4ACC5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Crenarchaeota archaeon,15.100,316,224,17,30,313,50,353,1.000,6.363E-15
+job.pdb,AF-A0A2E5FFL3-F1-model_v4 AIR synthase,bacterium,12.300,307,230,16,29,304,45,343,1.000,1.402E-14
+job.pdb,AF-A0A7C5RVQ9-F1-model_v4 AIR synthase,Candidatus Calescamantes bacterium,15.800,328,220,21,14,304,24,332,1.000,4.159E-15
+job.pdb,AF-A0A1Q3SNK8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Chloroflexi bacterium 54-19,16.400,317,216,16,14,295,31,333,1.000,1.583E-14
+job.pdb,AF-A0A0Q9LZ27-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Phycicoccus sp. Soil748,18.200,324,208,17,14,295,29,337,1.000,6.363E-15
+job.pdb,AF-A0A1D1ZR36-F1-model_v4 AIR synthase,Auxenochlorella protothecoides,16.600,301,207,18,34,304,159,445,1.000,1.099E-14
+job.pdb,AF-A0A2M8CN49-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Anaerolineae bacterium CG_4_9_14_3_um_filter_57_17,15.000,338,230,19,5,304,225,543,1.000,2.144E-14
+job.pdb,AF-A0A3D3X1A8-F1-model_v4 AIRS_C domain-containing protein,Candidatus Acetothermia bacterium,29.700,185,97,7,142,319,10,168,1.000,1.701E-12
+job.pdb,AF-C0NX78-F1-model_v4 AIR synthase,Histoplasma capsulatum G186AR,17.000,305,204,19,38,303,495,789,1.000,1.319E-14
+job.pdb,AF-A0A0D3FQY7-F1-model_v4 AIR synthase,Oryza barthii,16.900,306,211,18,31,304,158,452,1.000,1.402E-14
+job.pdb,AF-A0A3M2ISR7-F1-model_v4 Thiamine-phosphate kinase,Cellulomonas sp. NEAU-YY56,34.400,174,107,6,1,170,5,175,1.000,1.710E-11
+job.pdb,AF-A0A093P0C8-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Pygoscelis adeliae,15.100,344,233,20,4,303,450,778,1.000,5.019E-14
+job.pdb,AF-A0A838V9R2-F1-model_v4 Thiamine-phosphate kinase,Solirubrobacterales bacterium,37.300,174,103,6,1,170,1,172,1.000,4.253E-11
+job.pdb,AF-A0A1M4MVJ9-F1-model_v4 Uncharacterized protein,Donghicola eburneus,17.100,298,184,19,34,310,46,301,1.000,2.421E-14
+job.pdb,AF-A0A6M5YUZ5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Frigoriglobus tundricola,15.500,348,230,18,5,304,26,357,1.000,1.319E-14
+job.pdb,AF-A0A1H0T2J0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pedococcus dokdonensis,17.900,324,209,17,14,295,29,337,1.000,1.034E-14
+job.pdb,AF-A0A842NAG6-F1-model_v4 Uncharacterized protein,Candidatus Bathyarchaeota archaeon,30.600,189,113,6,142,321,2,181,1.000,8.767E-12
+job.pdb,AF-A0A2E6J017-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pelagibacteraceae bacterium,12.200,336,239,16,5,301,23,341,1.000,5.019E-14
+job.pdb,AF-A0A357B890-F1-model_v4 AIR synthase,Candidatus Acetothermia bacterium,15.700,336,234,19,15,310,39,365,1.000,1.489E-14
+job.pdb,AF-A0A7Y5NJQ6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Dermatophilaceae bacterium,16.200,357,219,21,14,305,28,369,1.000,1.489E-14
+job.pdb,AF-A0A811RZ29-F1-model_v4 Hypothetical protein,Miscanthus lutarioriparius,15.700,304,213,19,33,305,95,386,1.000,2.144E-14
+job.pdb,AF-A0A4Q5WRR6-F1-model_v4 Thiamine-phosphate kinase,Chitinophagaceae bacterium,29.500,237,147,9,2,221,12,245,1.000,2.921E-13
+job.pdb,AF-E7QUT9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Haladaptatus paucihalophilus DX253,18.900,327,220,20,4,311,24,324,1.000,2.559E-15
+job.pdb,AF-A0A7J5B495-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudoclavibacter terrae,16.700,364,229,19,5,311,63,409,1.000,1.899E-14
+job.pdb,AF-A0A660TRY6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Spirochaetes bacterium,17.700,287,203,13,36,295,49,329,1.000,1.591E-13
+job.pdb,AF-A0A7X8AF80-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Caldisericales bacterium,17.400,332,208,23,14,304,27,333,1.000,8.621E-15
+job.pdb,AF-A0A852WPA5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pedococcus badiiscoriae,17.100,321,215,15,14,295,29,337,1.000,1.787E-14
+job.pdb,AF-A0A812V2T4-F1-model_v4 GART protein,Symbiodinium microadriaticum,16.500,321,218,18,14,294,41,351,1.000,6.800E-14
+job.pdb,AF-I1K506-F1-model_v4 AIR synthase,Glycine max,17.600,300,209,16,33,304,98,387,1.000,3.936E-14
+job.pdb,AF-M8BHI7-F1-model_v4 AIR synthase,Aegilops tauschii,14.200,345,237,26,1,304,103,429,1.000,4.183E-14
+job.pdb,AF-A0A7J9QZR9-F1-model_v4 Thiamine-phosphate kinase,Nitrosopumilaceae archaeon,28.100,188,116,7,142,321,14,190,1.000,3.139E-11
+job.pdb,AF-F5TB40-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Parvimonas sp. oral taxon 110 str. F0139,12.400,297,215,19,41,304,2,286,1.000,2.144E-14
+job.pdb,AF-A0A6V7IWW7-F1-model_v4 AIR synthase,Bracon brevicornis,14.200,350,234,23,4,306,454,784,1.000,1.175E-13
+job.pdb,AF-A0A7S2JNH4-F1-model_v4 AIR synthase,Brandtodinium nutricula,16.300,343,230,17,4,307,474,798,1.000,3.087E-14
+job.pdb,AF-A0A355CDR9-F1-model_v4 Thiamine-phosphate kinase,Microcoleaceae bacterium UBA10368,31.600,237,135,9,2,222,7,232,1.000,2.435E-13
+job.pdb,AF-A0A524IJ52-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Spirochaetales bacterium,19.500,291,180,16,36,295,50,317,1.000,2.573E-14
+job.pdb,AF-F7PH41-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Halorhabdus tiamatea SARL4B,19.500,312,205,19,26,311,50,341,1.000,4.159E-15
+job.pdb,AF-A0A224YVX6-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Rhipicephalus zambeziensis,17.700,333,217,20,14,306,459,774,1.000,9.789E-14
+job.pdb,AF-A0A7C4BM77-F1-model_v4 Thiamine-monophosphate kinase,bacterium,33.800,213,124,9,2,207,10,212,1.000,4.749E-13
+job.pdb,AF-A0A849WME0-F1-model_v4 Uncharacterized protein,Bdellovibrionaceae bacterium,23.200,249,159,12,40,274,46,276,1.000,1.691E-13
+job.pdb,AF-A0A6A3C6R4-F1-model_v4 AIR synthase,Hibiscus syriacus,16.300,337,227,21,4,304,13,330,1.000,5.635E-15
+job.pdb,AF-A0A1Z9G066-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pelagibacteraceae bacterium TMED136,16.200,333,226,19,5,304,27,339,1.000,7.225E-14
+job.pdb,AF-A0A1I7SM67-F1-model_v4 AIR synthase,Bursaphelenchus xylophilus,14.300,342,241,21,4,306,432,760,1.000,3.725E-13
+job.pdb,AF-A0A2H0LK15-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Omnitrophica bacterium CG11_big_fil_rev_8_21_14_0_20_63_9,17.700,322,213,18,4,294,25,325,1.000,5.019E-14
+job.pdb,AF-A0A2E8T3C8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhodospirillaceae bacterium,16.400,328,227,20,14,305,33,349,1.000,3.704E-14
+job.pdb,AF-X1CHV9-F1-model_v4 AIRS domain-containing protein,marine sediment metagenome,31.500,225,117,6,18,226,16,219,1.000,1.910E-13
+job.pdb,AF-A0A0A9WHI9-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Lygus hesperus,15.000,333,222,19,14,303,460,774,1.000,5.667E-14
+job.pdb,AF-A0A836CEA2-F1-model_v4 Uncharacterized protein,Tribonema minus,18.400,314,223,14,37,321,551,860,1.000,2.905E-14
+job.pdb,AF-A0A7F5RKJ7-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Agrilus planipennis,14.900,327,231,21,14,303,349,665,1.000,1.040E-13
+job.pdb,AF-A0A532V5X4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,candidate division LCP-89 bacterium B3_LCP,15.800,322,225,17,5,294,24,331,1.000,1.591E-13
+job.pdb,AF-A0A388P0W5-F1-model_v4 Thiamine-monophosphate kinase,Clavibacter sp.,26.100,176,119,6,1,170,1,171,1.000,9.954E-11
+job.pdb,AF-A0A1M3KXQ5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,'Candidatus Kapabacteria' thiocyanatum,14.100,326,229,17,5,295,20,329,1.000,5.363E-13
+job.pdb,AF-A0A177QC76-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,bacterium SCGC AG-212-C10,18.400,331,215,16,14,304,29,344,1.000,7.225E-14
+job.pdb,AF-M2Y499-F1-model_v4 AIR synthase,Galdieria sulphuraria,17.100,338,196,19,30,305,109,424,1.000,5.303E-15
+job.pdb,AF-A0A7K6GJ69-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Malurus elegans,14.200,345,237,20,4,304,249,578,1.000,3.958E-13
+job.pdb,AF-A0A0D2U0I0-F1-model_v4 AIR synthase,Capsaspora owczarzaki ATCC 30864,15.300,352,227,15,15,306,922,1262,1.000,5.333E-14
+job.pdb,AF-A0A257AM18-F1-model_v4 Methanogenesis marker 2 protein,ANME-1 cluster archaeon ex4572_4,20.900,296,190,13,4,282,40,308,1.000,1.099E-14
+job.pdb,AF-A0A800EFQ1-F1-model_v4 AIR synthase,Dehalococcoidia bacterium,17.300,358,215,23,6,312,34,361,1.000,1.682E-14
+job.pdb,AF-A0A2A2LW33-F1-model_v4 AIR synthase,Diploscapter pachys,14.100,333,235,17,5,298,446,766,1.000,3.505E-13
+job.pdb,AF-A0A078F385-F1-model_v4 AIR synthase,Brassica napus,16.900,312,215,17,24,304,87,385,1.000,6.800E-14
+job.pdb,AF-A0A347VQ69-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Helicobacter saguini,18.000,333,221,18,5,305,25,337,1.000,1.248E-13
+job.pdb,AF-A0A7V3YBT9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,bacterium,15.500,315,223,16,14,294,25,330,1.000,3.958E-13
+job.pdb,AF-A0A373LP04-F1-model_v4 AIRS_C domain-containing protein,Eubacterium sp. AF36-5BH,14.500,364,217,21,5,313,14,338,1.000,2.018E-14
+job.pdb,AF-A0A183VBF1-F1-model_v4 5'-phosphoribosylglycinamide transformylase,Toxocara canis,15.200,347,232,22,5,304,58,389,1.000,4.469E-13
+job.pdb,AF-A0A7L3T4Z7-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Rissa tridactyla,14.200,345,235,21,4,303,450,778,1.000,5.047E-13
+job.pdb,AF-H5VF49-F1-model_v4 [NiFe] hydrogenase metallocenter assembly protein HypE,Helicobacter bizzozeronii CCUG 35545,17.200,272,198,11,57,313,1,260,1.000,1.112E-12
+job.pdb,AF-A0A833DXD4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pyrodictium sp.,14.600,321,210,19,33,317,39,331,1.000,8.670E-14
+job.pdb,AF-A0A7K1TD56-F1-model_v4 AIR synthase,Hymenobacter ginkgonis,18.000,344,206,19,26,318,47,365,1.000,8.159E-14
+job.pdb,AF-D2NR50-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rothia mucilaginosa DY-18,16.100,328,215,18,16,295,67,382,1.000,1.498E-13
+job.pdb,AF-A0A7N8WNS6-F1-model_v4 AIR synthase,Mastacembelus armatus,15.500,353,230,21,2,303,440,775,1.000,3.104E-13
+job.pdb,AF-A0A7W1PY90-F1-model_v4 Thiamine-phosphate kinase,Pseudonocardiales bacterium,34.700,144,86,7,2,141,21,160,1.000,5.794E-10
+job.pdb,AF-W1NZV7-F1-model_v4 AIR synthase,Amborella trichopoda,16.000,300,213,17,33,304,91,379,1.000,6.435E-13
+job.pdb,AF-A0A2E9IIM0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Euryarchaeota archaeon,18.200,335,207,17,30,310,92,413,1.000,1.040E-13
+job.pdb,AF-A0A7G3A7F9-F1-model_v4 5'-phosphoribosylglycinamide transformylase,Lutzomyia longipalpis,17.800,336,214,20,14,303,94,413,1.000,2.587E-13
+job.pdb,AF-A0A1F6QVK9-F1-model_v4 AIR synthase,Candidatus Micrarchaeota archaeon RBG_16_36_9,12.700,337,244,20,4,313,15,328,1.000,1.175E-13
+job.pdb,AF-A0A4Q9XZP3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lactiplantibacillus paraplantarum,15.400,357,229,18,4,308,16,351,1.000,2.921E-13
+job.pdb,AF-A0A2U4AC04-F1-model_v4 AIR synthase,Tursiops truncatus,14.500,343,237,17,16,316,461,789,1.000,1.248E-13
+job.pdb,AF-A0A7Z9IKC0-F1-model_v4 Thiamine-phosphate kinase,Gemmatimonadetes bacterium,29.600,246,155,9,1,241,15,247,1.000,5.075E-12
+job.pdb,AF-A0A383CNM5-F1-model_v4 AIRS domain-containing protein,marine metagenome,30.700,218,127,9,2,201,7,218,1.000,1.255E-12
+job.pdb,AF-A0A2E9UP13-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Dehalococcoidia bacterium,17.000,347,226,19,2,304,15,343,1.000,3.936E-14
+job.pdb,AF-A0A2W6BCG7-F1-model_v4 AIR synthase,Chloroflexi bacterium,19.100,303,191,18,36,306,70,350,1.000,5.019E-14
+job.pdb,AF-A0A0G0Q4C8-F1-model_v4 AIR synthase,Candidatus Peregrinibacteria bacterium GW2011_GWC2_39_14,15.700,323,216,19,30,310,48,356,1.000,8.159E-14
+job.pdb,AF-T0QQ67-F1-model_v4 AIR synthase,Saprolegnia diclina VS20,16.000,330,225,19,15,307,815,1129,1.000,5.047E-13
+job.pdb,AF-A0A484LN98-F1-model_v4 AIR synthase,Cuscuta campestris,16.000,300,212,17,33,304,113,400,1.000,6.837E-13
+job.pdb,AF-A0A536MFB1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Chloroflexi bacterium,17.300,340,211,20,2,306,8,312,1.000,5.047E-13
+job.pdb,AF-U1MG85-F1-model_v4 AIR synthase,halophilic archaeon J07HX5,16.400,322,202,22,33,310,77,375,1.000,1.040E-13
+job.pdb,AF-A0A3R7DW76-F1-model_v4 AIR synthase,Candidatus Bathyarchaeota archaeon,14.300,299,209,13,53,313,5,294,1.000,2.291E-13
+job.pdb,AF-A0A534J989-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Euryarchaeota archaeon,16.900,349,222,21,4,313,20,339,1.000,1.099E-14
+job.pdb,AF-A0A0F7PCU5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Halanaeroarchaeum sulfurireducens,18.300,311,211,21,24,311,36,326,1.000,2.921E-13
+job.pdb,AF-A0A2E4YVC5-F1-model_v4 AIR synthase,Euryarchaeota archaeon,16.600,355,223,24,4,303,18,354,1.000,2.144E-14
+job.pdb,AF-A0A534MI12-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Euryarchaeota archaeon,16.400,340,227,21,4,310,20,335,1.000,6.800E-14
+job.pdb,AF-D8SHG9-F1-model_v4 AIR synthase,Selaginella moellendorffii,16.200,326,222,19,33,321,67,378,1.000,1.105E-13
+job.pdb,AF-A0A1G1W7B9-F1-model_v4 AIR synthase,Candidatus Woykebacteria bacterium GWB1_45_5,12.300,341,237,16,4,304,24,342,1.000,1.591E-13
+job.pdb,AF-A0A537X0Y5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alphaproteobacteria bacterium,15.700,324,212,16,21,306,44,344,1.000,5.667E-14
+job.pdb,AF-A0A7K0A0E2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Actinomycetia bacterium,18.100,364,229,18,1,309,9,358,1.000,7.225E-14
+job.pdb,AF-D8SP76-F1-model_v4 AIR synthase,Selaginella moellendorffii,12.600,308,215,17,33,304,65,354,1.000,6.055E-13
+job.pdb,AF-A0A485N675-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Lynx pardinus,14.000,350,229,19,26,321,489,820,1.000,2.029E-13
+job.pdb,AF-A0A1F8MCT0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Chloroflexi bacterium RBG_13_51_36,13.600,365,225,23,4,304,17,355,1.000,3.958E-13
+job.pdb,AF-N6YRL8-F1-model_v4 Thiamine-phosphate kinase,Thauera linaloolentis 47Lol = DSM 12138,42.700,138,78,1,185,321,5,142,1.000,1.953E-09
+job.pdb,AF-A0A523UBN8-F1-model_v4 AIR synthase,Elusimicrobia bacterium,16.400,267,186,11,58,304,5,254,1.000,8.767E-12
+job.pdb,AF-A0A379T724-F1-model_v4 AIR synthase,Salmonella enterica subsp. arizonae,14.700,278,203,16,54,304,1,271,1.000,1.920E-12
+job.pdb,AF-A0A6I8QB19-F1-model_v4 AIR synthase,Xenopus tropicalis,12.600,357,235,23,1,303,397,730,1.000,5.363E-13
+job.pdb,AF-A0A7X9IZ05-F1-model_v4 Thiamine-phosphate kinase,Myxococcales bacterium,35.200,156,91,6,2,151,3,154,1.000,1.262E-11
+job.pdb,AF-A0A2E4WUL3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Euryarchaeota archaeon,16.200,332,211,20,30,309,174,490,1.000,1.175E-13
+job.pdb,AF-A0A539EG95-F1-model_v4 AIR synthase,Elusimicrobia bacterium,16.400,334,219,23,4,295,17,332,1.000,7.721E-13
+job.pdb,AF-A0A388QKT6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Nitrosarchaeum sp.,16.600,307,204,15,21,293,68,356,1.000,2.156E-13
+job.pdb,AF-A0A2V7GC46-F1-model_v4 AIR synthase,Gemmatimonadetes bacterium,17.100,286,201,14,14,270,27,305,1.000,3.525E-12
+job.pdb,AF-A0A1W9QKI4-F1-model_v4 AIR synthase,Candidatus Cloacimonas sp. 4484_275,17.300,322,218,18,30,318,49,355,1.000,5.363E-13
+job.pdb,AF-A0A2H8TH71-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Melanaphis sacchari,11.900,334,231,19,14,303,457,771,1.000,8.767E-12
+job.pdb,AF-A0A3S1BU38-F1-model_v4 AIR synthase,Elysia chlorotica,18.000,311,199,16,38,306,506,802,1.000,5.047E-13
+job.pdb,AF-A0A497GVS5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Thermoplasmata archaeon,16.700,329,214,20,4,305,18,313,1.000,2.749E-13
+job.pdb,AF-A0A7C4VWZ8-F1-model_v4 Thiamine-phosphate kinase,Candidatus Bathyarchaeota archaeon,22.200,153,109,7,1,148,7,154,1.000,5.483E-09
+job.pdb,AF-A0A3B9YZ14-F1-model_v4 AIR synthase,Chloroflexi bacterium,16.700,275,192,16,60,308,13,276,1.000,8.718E-13
+job.pdb,AF-P00967-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Drosophila melanogaster,19.000,342,203,24,14,304,466,784,1.000,4.749E-13
+job.pdb,AF-A0A2H1W1D8-F1-model_v4 AIR synthase,Spodoptera frugiperda,15.200,309,208,20,36,306,428,720,1.000,1.112E-12
+job.pdb,"AF-A0A356U230-F1-model_v4 Selenide, water dikinase SelD",Alphaproteobacteria bacterium,16.800,302,187,20,34,290,243,525,1.000,3.725E-13
+job.pdb,AF-A0A6P8W3I9-F1-model_v4 5'-phosphoribosylglycinamide transformylase,Drosophila albomicans,14.200,309,207,19,37,303,40,332,1.000,1.920E-12
+job.pdb,AF-A0A7J4RIS3-F1-model_v4 AIR synthase,Candidatus Poseidoniaceae archaeon,16.400,323,208,20,33,309,11,317,1.000,8.204E-13
+job.pdb,AF-W2U0M4-F1-model_v4 AIR synthase,Necator americanus,14.700,333,220,20,4,294,299,609,1.000,5.075E-12
+job.pdb,AF-A0A6A0A1D9-F1-model_v4 AIR synthase,Haematococcus lacustris,14.900,295,201,17,34,294,13,291,1.000,1.506E-12
+job.pdb,AF-A0A1B0DAK6-F1-model_v4 5'-phosphoribosylglycinamide transformylase,Phlebotomus papatasi,15.700,336,221,22,14,303,396,715,1.000,2.954E-11
+job.pdb,AF-A0A4Y9RN83-F1-model_v4 Thiamine-phosphate kinase,Oxalobacteraceae bacterium OM1,52.100,117,56,0,2,118,3,119,1.000,3.392E-08
+job.pdb,AF-H1S2B2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cupriavidus basilensis OR16,16.600,348,232,23,5,312,29,358,1.000,3.122E-12
+job.pdb,AF-A0A350D082-F1-model_v4 Thiamine-phosphate kinase,Aquificaceae bacterium,31.200,179,109,5,2,179,7,172,1.000,7.807E-11
+job.pdb,AF-A0A5C5Y2D5-F1-model_v4 Thiamine monophosphate kinase,Crateriforma conspicua,22.900,192,125,8,142,321,51,231,1.000,7.851E-10
+job.pdb,AF-A0A7J9R0G5-F1-model_v4 AIR synthase,Nitrosopumilaceae archaeon,16.700,280,192,14,58,311,12,276,1.000,2.448E-12
+job.pdb,AF-A0A440JN43-F1-model_v4 AIR synthase,Mesorhizobium sp.,17.000,310,215,17,4,278,25,327,1.000,3.336E-11
+job.pdb,AF-A0A3M1UZ25-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Euryarchaeota archaeon,15.000,351,220,21,4,319,25,332,1.000,4.749E-13
+job.pdb,AF-A0A431FUQ4-F1-model_v4 Thiamine-phosphate kinase,Campylobacter jejuni,26.600,218,135,9,1,215,1,196,1.000,5.794E-10
+job.pdb,AF-A0A6C0KEH8-F1-model_v4 AIR synthase,viral metagenome,13.100,334,218,24,4,294,464,768,1.000,9.899E-12
+job.pdb,AF-A0A7Y8FWR4-F1-model_v4 Thiamine-phosphate kinase,Pseudomonas edaphica,48.300,120,60,2,1,118,1,120,1.000,5.514E-08
+job.pdb,AF-M1CN35-F1-model_v4 AIR synthase,Solanum tuberosum,14.000,305,206,19,41,308,64,349,1.000,6.089E-12
+job.pdb,AF-A0A336LUT8-F1-model_v4 5'-phosphoribosylglycinamide transformylase,Culicoides sonorensis,15.000,299,216,18,38,306,611,901,1.000,2.462E-11
+job.pdb,AF-T0Y8T9-F1-model_v4 Thiamine monophosphate kinase,mine drainage metagenome,41.400,123,69,2,201,321,2,123,1.000,1.070E-08
+job.pdb,AF-A0A522N1V5-F1-model_v4 AIR synthase,Chloroflexi bacterium,18.700,294,184,16,62,305,2,290,1.000,2.938E-12
+job.pdb,AF-A0A258JQK6-F1-model_v4 AIR synthase,Azorhizobium sp. 32-67-21,16.200,326,197,18,5,280,23,322,1.000,1.920E-12
+job.pdb,AF-A0A832X8X9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Naiadarchaeales archaeon SRR2090159.bin1288,16.300,318,222,17,18,311,32,329,1.000,6.837E-13
+job.pdb,AF-A0A2N2EXE7-F1-model_v4 AIRS domain-containing protein,Elusimicrobia bacterium HGW-Elusimicrobia-2,26.800,201,133,4,25,217,10,204,1.000,4.545E-10
+job.pdb,AF-A0A3D5L0K7-F1-model_v4 Uncharacterized protein,Lachnospiraceae bacterium,15.600,306,183,15,34,313,31,287,1.000,2.602E-12
+job.pdb,AF-D8SHG8-F1-model_v4 AIR synthase,Selaginella moellendorffii,16.300,306,198,18,30,306,39,315,1.000,1.058E-10
+job.pdb,AF-A0A843D9C1-F1-model_v4 Thiamine-phosphate kinase,Methanocorpusculaceae archaeon,26.900,126,89,2,27,151,21,144,1.000,1.636E-08
+job.pdb,AF-A0A536PHA5-F1-model_v4 AIR synthase,Chloroflexi bacterium,18.300,316,197,19,4,273,91,391,1.000,6.123E-11
+job.pdb,AF-A0A5E4R7U7-F1-model_v4 AIR synthase,Leptidea sinapis,14.900,342,208,22,5,294,819,1129,1.000,1.931E-11
+job.pdb,AF-A0A3M1Q3I3-F1-model_v4 AIR synthase,Alphaproteobacteria bacterium,17.100,321,206,19,4,281,19,322,1.000,1.269E-10
+job.pdb,AF-A0A3C1NW30-F1-model_v4 Thiamine-phosphate kinase,Halieaceae bacterium,45.000,160,67,8,164,320,2,143,1.000,1.729E-09
+job.pdb,AF-A0A497HIX9-F1-model_v4 Thiamine-phosphate kinase,Thermoplasmata archaeon,30.200,152,97,4,2,151,7,151,1.000,1.953E-09
+job.pdb,AF-A0A843FDV6-F1-model_v4 Thiamine-monophosphate kinase,Candidatus Methanomethylophilaceae archaeon,31.400,156,103,3,27,181,18,170,1.000,6.192E-09
+job.pdb,AF-A0A7L4CIN8-F1-model_v4 5'-phosphoribosylglycinamide transformylase,Nyctiprogne leucopyga,14.800,276,194,16,60,303,11,277,1.000,7.347E-11
+job.pdb,AF-A0A7J9R8F2-F1-model_v4 Thiamine-phosphate kinase,Nitrosopumilaceae archaeon,22.800,114,84,3,33,144,30,141,1.000,8.436E-08
+job.pdb,AF-A0A534J0M3-F1-model_v4 Thiamine-monophosphate kinase,Euryarchaeota archaeon,32.200,155,93,4,2,151,46,193,1.000,2.811E-09
+job.pdb,AF-A0A3C1DYX8-F1-model_v4 AIR synthase,Microbacteriaceae bacterium,14.800,317,205,15,14,283,27,325,1.000,3.545E-11
+job.pdb,AF-A0A524CX12-F1-model_v4 AIRS domain-containing protein,Candidatus Lokiarchaeota archaeon,22.700,193,123,7,2,180,11,191,1.000,1.070E-08
+job.pdb,AF-A0A1B6FPT9-F1-model_v4 5'-phosphoribosylglycinamide transformylase,Cuerna arida,17.300,276,185,16,60,306,17,278,1.000,9.368E-11
+job.pdb,AF-A0A538E442-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Actinomycetia bacterium,19.700,294,175,16,30,295,153,413,1.000,6.914E-11
+job.pdb,AF-A0A2X1TMT4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Mobiluncus mulieris,11.900,477,212,20,14,296,28,490,1.000,3.157E-10
+job.pdb,AF-A0A7K0MYZ7-F1-model_v4 AIRS,Actinomycetia bacterium,17.100,152,110,5,4,142,33,181,1.000,5.514E-08
+job.pdb,AF-A0A7V9BPT2-F1-model_v4 Thiamine-monophosphate kinase,Actinomycetia bacterium,34.800,175,102,8,2,170,12,180,1.000,1.953E-09
+job.pdb,AF-A0A3C1HUM8-F1-model_v4 AIR synthase,Alcanivorax sp.,22.000,222,141,12,4,201,21,234,1.000,1.953E-09
+job.pdb,AF-A0A2T4DGD6-F1-model_v4 AIRS,Marinobacter sp. B9-2,16.700,167,111,7,4,150,21,179,1.000,2.827E-08
+job.pdb,AF-A0A1Q7X1Q0-F1-model_v4 AIR synthase,Actinobacteria bacterium 13_1_20CM_3_68_9,18.800,286,185,14,5,257,19,290,1.000,1.276E-09
+job.pdb,AF-A0A536SGS8-F1-model_v4 AIR synthase,Betaproteobacteria bacterium,20.600,155,100,5,14,151,29,177,1.000,2.086E-08
+job.pdb,AF-X0U1I4-F1-model_v4 AIR synthase,marine sediment metagenome,16.800,208,145,9,5,191,21,221,1.000,2.645E-09
+job.pdb,AF-A0A537WDE3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Actinomycetia bacterium,20.500,292,175,15,30,295,102,362,1.000,6.543E-10
+job.pdb,AF-Q50029-F1-model_v4 AIRS,Mycobacterium leprae,22.000,145,90,5,14,141,49,187,1.000,5.859E-08
+job.pdb,AF-A0A849H0L2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Silicimonas sp.,19.900,241,158,14,2,212,14,249,1.000,4.047E-09
+job.pdb,AF-A0A7W0HCI4-F1-model_v4 Thiamine-phosphate kinase,Acidimicrobiia bacterium,33.700,157,92,8,1,151,2,152,1.000,6.992E-09
+job.pdb,AF-A0A6G9CZ97-F1-model_v4 AIR synthase,Rhodococcus erythropolis,20.700,227,141,10,14,209,35,253,1.000,1.837E-09
+job.pdb,AF-A0A6I2XVL0-F1-model_v4 AIRS,Actinomycetia bacterium,21.300,164,106,6,5,151,19,176,1.000,2.217E-08
+job.pdb,AF-A0A1E7GX44-F1-model_v4 AIR synthase,Desulfuromonadales bacterium C00003096,21.200,221,145,10,5,201,18,233,1.000,1.729E-09
+job.pdb,AF-A0A2N1QNE6-F1-model_v4 AIR synthase,Synergistetes bacterium HGW-Synergistetes-2,16.200,326,209,17,2,293,10,305,1.000,2.954E-11
+job.pdb,AF-X0ZW47-F1-model_v4 AIRS domain-containing protein,marine sediment metagenome,16.100,161,117,5,4,150,29,185,1.000,1.076E-07
+job.pdb,AF-A0A3M2DMR3-F1-model_v4 AIR synthase,Alphaproteobacteria bacterium,23.500,251,160,15,14,236,36,282,1.000,1.007E-08
+job.pdb,AF-A0A7V2J5D7-F1-model_v4 AIR synthase,Nitrospirae bacterium,17.000,170,118,6,2,151,10,176,1.000,1.143E-07
+job.pdb,AF-A0A382IL72-F1-model_v4 AIR synthase,marine metagenome,16.900,236,160,11,14,222,30,256,1.000,4.301E-09
+job.pdb,AF-A0A382I3B3-F1-model_v4 AIR synthase,marine metagenome,17.400,258,163,14,4,222,21,267,1.000,2.490E-09
+job.pdb,AF-A0A3P8K9S2-F1-model_v4 AIRS,Raoultella terrigena,18.900,195,121,8,2,178,14,189,1.000,1.007E-08
+job.pdb,AF-A0A6V8QA24-F1-model_v4 AIRS,Candidatus Hakubanella thermoalkaliphilus,19.600,153,105,5,14,151,5,154,1.000,2.369E-07
+job.pdb,AF-A0A1G1NED7-F1-model_v4 AIRS,Omnitrophica WOR_2 bacterium RIFCSPHIGHO2_01_FULL_49_10,20.800,163,109,6,4,151,19,176,1.000,1.215E-07
+job.pdb,AF-I5BRJ2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Nitratireductor aquibiodomus RA22,17.700,169,118,5,2,151,16,182,1.000,1.749E-07
+job.pdb,AF-C7G6J9-F1-model_v4 AIRS,Roseburia intestinalis L1-82,22.000,163,106,6,5,151,40,197,1.000,4.596E-08
+job.pdb,AF-A0A7W1HC61-F1-model_v4 AIR synthase,Gemmatimonadetes bacterium,14.400,249,177,12,5,225,23,263,1.000,1.848E-08
+job.pdb,AF-A0A2E7W5Q4-F1-model_v4 AIR synthase,Rhodospirillaceae bacterium,11.700,289,197,17,33,294,132,389,1.000,2.205E-09
+job.pdb,AF-M2Y3W9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase isoform 2,Galdieria sulphuraria,23.700,143,99,4,19,152,95,236,1.000,6.226E-08
+job.pdb,AF-A0A848RNI7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Mobiluncus mulieris,18.000,200,121,9,14,181,28,216,1.000,2.205E-09
+job.pdb,AF-A0A3C0EBZ9-F1-model_v4 AIRS,Dehalococcoidia bacterium,15.800,208,135,9,14,192,68,264,1.000,1.739E-08
+job.pdb,AF-A0A3D3K7Y0-F1-model_v4 AIR synthase,Alistipes sp.,19.900,241,155,14,14,223,27,260,1.000,1.283E-08
+job.pdb,AF-A0A4D8Y0X2-F1-model_v4 AIR synthase,Salvia splendens,16.800,238,162,10,15,222,49,280,1.000,1.449E-08
+job.pdb,AF-A0A833DWM9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Archaeoglobus profundus,13.700,299,202,16,4,269,20,295,1.000,6.157E-10
+job.pdb,AF-A0A7V1ILL3-F1-model_v4 AIRS,Deltaproteobacteria bacterium,16.800,154,107,4,14,151,42,190,1.000,2.843E-07
+job.pdb,AF-A0A520WM13-F1-model_v4 AIRS,Acidimicrobiales bacterium,19.400,201,134,7,14,191,29,224,1.000,1.739E-08
+job.pdb,AF-A0A382G1J6-F1-model_v4 AIR synthase,marine metagenome,18.500,210,142,9,15,199,4,209,1.000,4.596E-08
+job.pdb,AF-A0A3L6EDQ2-F1-model_v4 AIR synthase,Zea mays,16.000,193,133,9,33,201,4,191,1.000,8.914E-09
+job.pdb,AF-A0A1F9FDI6-F1-model_v4 AIR synthase,Deltaproteobacteria bacterium RBG_16_71_12,20.500,224,143,12,5,201,23,238,1.000,1.963E-08
+job.pdb,AF-A0A7S0P4R7-F1-model_v4 Hypothetical protein,Calcidiscus leptoporus,17.900,145,99,5,14,142,120,260,1.000,9.014E-07
+job.pdb,AF-A0A7K4MRM8-F1-model_v4 AIR synthase,Marine Group I thaumarchaeote,13.100,290,200,14,33,294,23,288,1.000,2.660E-08
+job.pdb,AF-A0A382GDN8-F1-model_v4 AIR synthase,marine metagenome,17.100,204,135,9,4,181,17,212,1.000,6.226E-08
+job.pdb,AF-A0A538E0E0-F1-model_v4 AIR synthase,Actinomycetia bacterium,20.300,256,156,14,57,295,1,225,1.000,8.389E-09
+job.pdb,AF-A0A0M3K9V9-F1-model_v4 AIR synthase,Anisakis simplex,10.500,331,199,16,4,315,137,389,1.000,4.856E-09
+job.pdb,AF-A0A350CYL5-F1-model_v4 Thiamine-phosphate kinase,Sutterellaceae bacterium,37.100,140,76,6,2,132,15,151,1.000,8.389E-09
+job.pdb,AF-T0Y6A1-F1-model_v4 AIR synthase,mine drainage metagenome,23.600,241,147,13,8,222,5,234,1.000,4.301E-09
+job.pdb,AF-A0A349EGH9-F1-model_v4 AIRS,Gammaproteobacteria bacterium,19.800,156,100,6,2,136,18,169,1.000,1.082E-06
+job.pdb,AF-A0A382HGX1-F1-model_v4 AIR synthase,marine metagenome,18.900,201,128,8,18,191,36,228,1.000,1.963E-08
+job.pdb,AF-A0A7Z9JGC4-F1-model_v4 AIRS,Phycisphaerales bacterium,18.500,205,126,8,5,179,26,219,1.000,5.859E-08
+job.pdb,AF-X1G5E3-F1-model_v4 AIRS domain-containing protein,marine sediment metagenome,21.600,111,81,2,33,142,14,119,1.000,5.247E-06
+job.pdb,AF-A0A7J2HY26-F1-model_v4 AIRS domain-containing protein,Candidatus Korarchaeota archaeon,26.400,155,104,7,2,151,11,160,1.000,4.349E-07
+job.pdb,AF-A0A2N5A2U0-F1-model_v4 AIRS domain-containing protein,Klebsiella variicola,24.200,128,87,7,25,150,3,122,1.000,8.483E-07
+job.pdb,AF-A0A2H5QWQ5-F1-model_v4 AIRS domain-containing protein,Citrus unshiu,19.400,139,97,5,24,151,37,171,1.000,8.483E-07
+job.pdb,AF-A0A843G4E6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Methanomethylophilaceae archaeon,18.800,159,115,5,4,151,18,173,1.000,2.675E-07
+job.pdb,AF-A0A3M1RGN7-F1-model_v4 AIR synthase,Euryarchaeota archaeon,18.900,248,168,10,4,229,33,269,1.000,1.007E-08
+job.pdb,AF-A0A382N6B8-F1-model_v4 AIR synthase,marine metagenome,14.900,314,194,17,4,269,27,315,1.000,5.483E-09
+job.pdb,AF-A0A438IY34-F1-model_v4 AIR synthase,Vitis vinifera,13.800,325,181,18,5,304,101,351,1.000,4.301E-09
+job.pdb,AF-A0A3C0M311-F1-model_v4 Sll0787 family AIR synthase-like protein,Alcanivorax sp.,21.000,223,135,11,22,227,35,233,1.000,1.974E-07
+job.pdb,AF-A0A811S058-F1-model_v4 Hypothetical protein,Miscanthus lutarioriparius,18.300,120,84,4,33,141,101,217,1.000,4.938E-06
+job.pdb,AF-A0A842M6P1-F1-model_v4 Methanogenesis marker 2 protein,Methanobacteriaceae archaeon,21.100,184,118,7,4,185,26,184,1.000,6.616E-08
+job.pdb,AF-A0A2E5WMY1-F1-model_v4 Phosphoribosylglycinamide formyltransferase,bacterium,14.700,298,198,18,14,279,433,706,1.000,1.848E-08
+job.pdb,AF-A0A6M0Q751-F1-model_v4 ATPase,Bacillus mesophilus,14.800,296,174,23,20,296,3,239,1.000,6.616E-08
+job.pdb,AF-A0A382H566-F1-model_v4 AIRS domain-containing protein,marine metagenome,16.800,208,137,6,13,191,1,201,1.000,2.369E-07
+job.pdb,AF-A0A2G9FX31-F1-model_v4 AIR synthase,Handroanthus impetiginosus,15.600,217,148,11,33,222,114,322,1.000,3.210E-07
+job.pdb,AF-A0A2A2LJV7-F1-model_v4 Glycinamide ribonucleotide synthetase,Diploscapter pachys,12.100,156,110,6,4,139,442,590,1.000,8.530E-06
+job.pdb,AF-A0A2A2LVY5-F1-model_v4 AIR synthase,Diploscapter pachys,12.600,222,154,11,4,195,30,241,1.000,6.261E-07
+job.pdb,AF-A0A842MY55-F1-model_v4 Thiamine-phosphate kinase,Candidatus Bathyarchaeota archaeon,23.900,138,96,4,2,134,8,141,1.000,3.228E-06
+job.pdb,AF-A0A2I0NV62-F1-model_v4 Methanogenesis marker 2 protein,Methanomicrobiales archaeon HGW-Methanomicrobiales-5,18.100,149,111,6,4,150,26,165,1.000,1.557E-06
+job.pdb,AF-A0A2D7Z9X2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Euryarchaeota archaeon,22.600,163,106,7,4,151,15,172,1.000,3.210E-07
+job.pdb,AF-A0A7I6N534-F1-model_v4 AIR synthase,Pythium monospermum,16.500,229,146,11,5,201,43,258,1.000,2.843E-07
+job.pdb,AF-A0A662W624-F1-model_v4 RHH_1 domain-containing protein,Archaeoglobales archaeon,14.800,309,180,19,4,294,92,335,1.000,5.483E-09
+job.pdb,AF-L5NIS5-F1-model_v4 Hydrogenase expression/formation protein,Haloferax sp. BAB-2207,24.800,157,101,5,1,151,4,149,1.000,4.911E-07
+job.pdb,AF-A0A531J1C3-F1-model_v4 AIR synthase,Mesorhizobium sp.,17.500,182,129,7,39,201,2,181,1.000,1.868E-06
+job.pdb,AF-A0A2V8TJ78-F1-model_v4 AIRS,Acidobacteria bacterium,18.500,205,126,10,4,189,42,224,1.000,3.037E-06
+job.pdb,AF-A0A1F9XLF0-F1-model_v4 AIRS,Elusimicrobia bacterium RIFOXYA2_FULL_69_6,19.100,146,94,5,24,151,28,167,1.000,2.531E-06
+job.pdb,AF-A0A537S117-F1-model_v4 AIR synthase,Alphaproteobacteria bacterium,16.700,197,126,8,21,192,44,227,1.000,1.749E-07
+job.pdb,AF-A0A2E7G8A2-F1-model_v4 AIR synthase,Bdellovibrionaceae bacterium,16.500,278,175,16,4,253,16,264,1.000,7.031E-08
+job.pdb,AF-X7ZWG1-F1-model_v4 AIR synthase,Mycobacterium xenopi 4042,18.900,206,143,9,60,244,15,217,1.000,5.247E-06
+job.pdb,AF-A0A382R591-F1-model_v4 AIR synthase,marine metagenome,18.200,126,86,4,40,151,28,150,1.000,2.705E-05
+job.pdb,AF-A0A382IGZ0-F1-model_v4 AIR synthase,marine metagenome,15.800,183,127,8,41,201,2,179,1.000,4.373E-06
+job.pdb,AF-A0A660W2I2-F1-model_v4 AIRS,Planctomycetota bacterium,19.100,115,77,4,32,134,21,131,1.000,4.138E-05
+job.pdb,AF-A0A147K862-F1-model_v4 Uncharacterized protein,Bacillus coahuilensis p1.1.43,10.300,280,172,20,34,294,7,226,1.000,6.261E-07
+job.pdb,AF-A0A316CZ27-F1-model_v4 Alpha-ribazole kinase,Oceanotoga teriensis,10.700,242,156,16,65,294,2,195,1.000,2.705E-05

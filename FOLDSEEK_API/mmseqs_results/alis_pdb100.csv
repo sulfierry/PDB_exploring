@@ -1,0 +1,541 @@
+query_id,subject_id,scientific_name,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
+job.pdb,"6mfm_B Structure of thiamine-monophosphate kinase from Acinetobacter baumannii in complex with adenosine diphosphate (ADP) and thiamine diphosphate (TPP), orthorhombic crystal form",Acinetobacter baumannii,43.600,321,163,7,1,320,1,304,1.000,3.885E-44
+job.pdb,"6mfm_A Structure of thiamine-monophosphate kinase from Acinetobacter baumannii in complex with adenosine diphosphate (ADP) and thiamine diphosphate (TPP), orthorhombic crystal form",Acinetobacter baumannii,44.200,321,161,7,2,321,1,304,1.000,7.132E-44
+job.pdb,5dd7_A Structure of thiamine-monophosphate kinase from Acinetobacter baumannii in complex with AMPPNP and thiamine-monophosphate,Acinetobacter baumannii,43.900,323,161,7,1,321,1,305,1.000,1.669E-43
+job.pdb,5cc8_A Structure of thiamine-monophosphate kinase from Acinetobacter baumannii in complex with AMPPNP,unclassified,43.900,312,157,7,3,313,1,295,1.000,3.697E-42
+job.pdb,7du3_B ThiL in complex with AMP-PNP,Pseudomonas aeruginosa PAO1,45.200,325,161,8,2,319,13,327,1.000,1.439E-37
+job.pdb,7du3_A ThiL in complex with AMP-PNP,Pseudomonas aeruginosa PAO1,44.300,316,159,8,2,310,6,311,1.000,9.455E-37
+job.pdb,6xep_A Crystal structure of Thiamine-monophosphate kinase from Stenotrophomonas maltophilia K279a,Stenotrophomonas maltophilia K279a,44.100,317,161,5,2,310,8,316,1.000,3.186E-36
+job.pdb,3mcq_A Crystal structure of Thiamine-monophosphate kinase (Mfla_0573) from METHYLOBACILLUS FLAGELLATUS KT at 1.91 A resolution,Methylobacillus flagellatus KT,42.600,284,148,11,32,311,23,295,1.000,2.934E-29
+job.pdb,3c9t_A AaThiL complexed with AMPPCP and TMP,Aquifex aeolicus VF5,30.900,326,192,11,2,320,8,307,1.000,6.115E-28
+job.pdb,3c9u_A AaThiL complexed with ADP and TPP,Aquifex aeolicus VF5,29.300,327,196,12,2,320,9,308,1.000,9.356E-28
+job.pdb,3c9u_B AaThiL complexed with ADP and TPP,Aquifex aeolicus VF5,29.300,327,196,12,2,320,13,312,1.000,1.431E-27
+job.pdb,3c9s_A AaThiL complexed with AMPPCP,Aquifex aeolicus VF5,30.600,316,188,10,2,310,11,302,1.000,6.535E-27
+job.pdb,3c9t_B AaThiL complexed with AMPPCP and TMP,Aquifex aeolicus VF5,29.800,328,193,13,2,320,10,309,1.000,2.642E-26
+job.pdb,3c9r_B AaThiL complexed with ATP,Aquifex aeolicus VF5,30.500,314,187,11,2,308,12,301,1.000,4.295E-26
+job.pdb,1vqv_A Crystal Structure of Thiamine Monophosphate Kinase (thil) from Aquifex Aeolicus,Aquifex aeolicus VF5,30.300,290,159,12,35,310,25,285,1.000,1.017E-23
+job.pdb,1vqv_B Crystal Structure of Thiamine Monophosphate Kinase (thil) from Aquifex Aeolicus,Aquifex aeolicus VF5,30.000,320,176,16,2,310,6,288,1.000,3.034E-23
+job.pdb,2yxz_D Crystal structure of tt0281 from Thermus thermophilus HB8,Thermus thermophilus HB8,25.400,283,192,12,35,312,36,304,1.000,1.098E-20
+job.pdb,2yxz_A Crystal structure of tt0281 from Thermus thermophilus HB8,Thermus thermophilus HB8,25.500,293,196,12,26,312,29,305,1.000,2.264E-21
+job.pdb,2zod_A Crystal structure of selenophosphate synthetase from Aquifex aeolicus,Aquifex aeolicus VF5,18.300,305,200,15,33,304,27,315,1.000,2.289E-19
+job.pdb,3u0o_A The crystal structure of selenophosphate synthetase from E. coli,Escherichia coli K-12,17.700,315,215,13,24,305,15,318,1.000,3.503E-19
+job.pdb,2yye_B Crystal structure of selenophosphate synthetase from Aquifex aeolicus complexed with AMPCPP,Aquifex aeolicus VF5,17.700,333,223,16,4,304,30,343,1.000,1.408E-19
+job.pdb,2yye_A Crystal structure of selenophosphate synthetase from Aquifex aeolicus complexed with AMPCPP,Aquifex aeolicus VF5,17.700,338,222,16,2,304,23,339,1.000,6.794E-20
+job.pdb,2zau_A Crystal structure of an N-terminally truncated selenophosphate synthetase from Aquifex aeolicus,Aquifex aeolicus VF5,18.700,315,204,17,23,304,12,307,1.000,1.599E-18
+job.pdb,2zod_B Crystal structure of selenophosphate synthetase from Aquifex aeolicus,Aquifex aeolicus VF5,17.200,319,208,16,22,304,23,321,1.000,7.715E-19
+job.pdb,2zau_B Crystal structure of an N-terminally truncated selenophosphate synthetase from Aquifex aeolicus,Aquifex aeolicus VF5,18.900,301,193,17,36,304,22,303,1.000,3.315E-18
+job.pdb,2z1u_A Crystal Structure of Hydrogenase Maturation Protein HypE in complex with ATP,Desulfovibrio vulgaris str. Hildenborough,20.600,344,208,20,2,310,10,323,1.000,5.388E-18
+job.pdb,"2i6r_A Crystal structure of E. coli HypE, a hydrogenase maturation protein",Escherichia coli K-12,22.700,330,207,16,4,313,7,308,1.000,6.870E-18
+job.pdb,2z1t_A Crystal Structure of Hydrogenase Maturation Protein HypE,Desulfovibrio vulgaris str. Hildenborough,19.500,342,220,18,6,321,4,316,1.000,3.137E-17
+job.pdb,3vyt_C Crystal structure of the HypC-HypD-HypE complex (form I inward),Thermococcus kodakarensis KOD1,19.400,313,214,15,14,306,23,317,1.000,1.929E-17
+job.pdb,2z1e_A Crystal structure of HypE from Thermococcus kodakaraensis (outward form),Thermococcus kodakarensis KOD1,19.700,299,197,17,34,310,11,288,1.000,5.419E-17
+job.pdb,"2i6r_C Crystal structure of E. coli HypE, a hydrogenase maturation protein",Escherichia coli K-12,22.500,337,216,16,4,320,6,317,1.000,1.424E-17
+job.pdb,3vys_C Crystal structure of the HypC-HypD-HypE complex (form I),Thermococcus kodakarensis KOD1,19.100,323,221,16,4,306,15,317,1.000,1.187E-17
+job.pdb,"2i6r_B Crystal structure of E. coli HypE, a hydrogenase maturation protein",Escherichia coli K-12,23.100,337,208,17,4,320,6,311,1.000,2.315E-17
+job.pdb,3vyu_C Crystal structure of the HypC-HypD-HypE complex (form II),Thermococcus kodakarensis KOD1,19.700,298,198,16,34,310,16,293,1.000,6.909E-17
+job.pdb,2rb9_D Crystal structure of E.coli HypE,Escherichia coli O157:H7,23.200,331,208,17,4,313,7,312,1.000,3.137E-17
+job.pdb,2z1f_A Crystal structure of HypE from Thermococcus kodakaraensis (inward form),Thermococcus kodakarensis KOD1,20.100,298,197,16,34,310,13,290,1.000,6.502E-17
+job.pdb,2zau_C Crystal structure of an N-terminally truncated selenophosphate synthetase from Aquifex aeolicus,Aquifex aeolicus VF5,17.400,321,200,16,31,304,2,304,1.000,9.308E-18
+job.pdb,2rb9_C Crystal structure of E.coli HypE,Escherichia coli O157:H7,23.000,339,213,18,4,320,6,318,1.000,7.801E-17
+job.pdb,"2i6r_D Crystal structure of E. coli HypE, a hydrogenase maturation protein",Escherichia coli K-12,23.200,331,207,16,4,313,7,311,1.000,1.268E-16
+job.pdb,3wjp_A Crystal structure of the HypE CA form,Thermococcus kodakarensis KOD1,19.700,329,221,18,4,310,15,322,1.000,7.801E-17
+job.pdb,"1cli_D X-RAY CRYSTAL STRUCTURE OF AMINOIMIDAZOLE RIBONUCLEOTIDE SYNTHETASE (PURM), FROM THE E. COLI PURINE BIOSYNTHETIC PATHWAY, AT 2.5 A RESOLUTION",Escherichia coli K-12,17.100,332,233,17,5,304,4,325,1.000,1.057E-16
+job.pdb,3vti_C Crystal structure of HypE-HypF complex,Caldanaerobacter subterraneus subsp. tengcongensis MB4,19.300,326,220,17,4,313,5,303,1.000,1.348E-16
+job.pdb,5vk4_B Crystal structure of a phosphoribosylformylglycinamidine cyclo-ligase from Neisseria gonorrhoeae bound to AMPPNP and magnesium,Neisseria gonorrhoeae FA 1090,15.800,334,238,16,4,304,7,330,1.000,3.352E-16
+job.pdb,3u0o_B The crystal structure of selenophosphate synthetase from E. coli,Escherichia coli K-12,19.200,312,204,17,27,304,38,335,1.000,2.062E-16
+job.pdb,"1cli_C X-RAY CRYSTAL STRUCTURE OF AMINOIMIDAZOLE RIBONUCLEOTIDE SYNTHETASE (PURM), FROM THE E. COLI PURINE BIOSYNTHETIC PATHWAY, AT 2.5 A RESOLUTION",Escherichia coli K-12,19.100,340,221,22,4,304,16,340,1.000,3.562E-16
+job.pdb,"5avm_H Crystal structures of 5-aminoimidazole ribonucleotide (AIR) synthetase, PurM, from Thermus thermophilus",Thermus thermophilus HB8,21.100,298,192,17,35,304,1,283,1.000,1.530E-15
+job.pdb,2z01_A Crystal structure of phosphoribosylaminoimidazole synthetase from Geobacillus kaustophilus,Geobacillus kaustophilus HTA426,19.600,330,216,21,4,304,3,312,1.000,1.626E-15
+job.pdb,2btu_A Crystal structure of Phosphoribosylformylglycinamidine cyclo-ligase from Bacillus Anthracis at 2.3A resolution.,Bacillus anthracis,15.400,323,226,18,14,304,15,322,1.000,4.297E-15
+job.pdb,"5avm_G Crystal structures of 5-aminoimidazole ribonucleotide (AIR) synthetase, PurM, from Thermus thermophilus",Thermus thermophilus HB8,21.500,292,188,17,40,304,4,281,1.000,8.908E-15
+job.pdb,5vk4_A Crystal structure of a phosphoribosylformylglycinamidine cyclo-ligase from Neisseria gonorrhoeae bound to AMPPNP and magnesium,Neisseria gonorrhoeae FA 1090,16.700,335,228,22,4,304,7,324,1.000,5.822E-15
+job.pdb,3p4e_A Phosphoribosylformylglycinamidine cyclo-ligase from Vibrio cholerae,Vibrio cholerae O1 biovar El Tor str. N16961,16.800,314,207,16,31,306,26,323,1.000,1.836E-15
+job.pdb,3qty_B Crystal structure of Phosphoribosylaminoimidazole Synthetase from Francisella tularensis complexed with pyrophosphate,Francisella tularensis subsp. tularensis SCHU S4,18.700,326,212,18,14,304,10,317,1.000,2.341E-15
+job.pdb,3qty_A Crystal structure of Phosphoribosylaminoimidazole Synthetase from Francisella tularensis complexed with pyrophosphate,Francisella tularensis subsp. tularensis SCHU S4,16.100,340,230,17,1,304,14,334,1.000,5.479E-15
+job.pdb,3fd6_A Crystal structure of human selenophosphate synthetase 1 complex with ADP and phosphate,Homo sapiens,16.500,320,214,20,24,315,44,338,1.000,8.908E-15
+job.pdb,2v9y_B Human aminoimidazole ribonucleotide synthetase,Homo sapiens,14.700,306,207,17,36,303,11,300,1.000,1.539E-14
+job.pdb,3fd6_B Crystal structure of human selenophosphate synthetase 1 complex with ADP and phosphate,Homo sapiens,16.400,323,223,19,24,314,45,352,1.000,3.602E-14
+job.pdb,2v9y_A Human aminoimidazole ribonucleotide synthetase,Homo sapiens,14.900,307,205,18,36,303,11,300,1.000,2.085E-14
+job.pdb,3fd5_B Crystal structure of human selenophosphate synthetase 1 complex with AMPCP,Homo sapiens,14.700,340,232,19,1,304,28,345,1.000,6.986E-15
+job.pdb,5l16_A Crystal Structure of N-terminus truncated selenophosphate synthetase from Leishmania major,Leishmania major,14.500,324,229,18,31,315,7,321,1.000,1.644E-13
+job.pdb,3fd5_A Crystal structure of human selenophosphate synthetase 1 complex with AMPCP,Homo sapiens,17.600,317,213,20,24,315,42,335,1.000,4.067E-14
+job.pdb,3m84_B Crystal Structure of Phosphoribosylaminoimidazole Synthetase from Francisella tularensis,Francisella tularensis subsp. tularensis SCHU S4,17.100,326,217,17,14,304,29,336,1.000,3.002E-14
+job.pdb,2btu_B Crystal structure of Phosphoribosylformylglycinamidine cyclo-ligase from Bacillus Anthracis at 2.3A resolution.,Bacillus anthracis,16.700,323,213,18,4,295,5,302,1.000,7.064E-13
+job.pdb,2hs0_A T. maritima PurL complexed with ATP,Thermotoga maritima MSB8,13.900,302,189,19,33,311,57,310,1.000,3.408E-13
+job.pdb,2hs4_A T. maritima PurL complexed with FGAR and AMPPCP,Thermotoga maritima MSB8,15.900,332,219,21,4,311,34,329,1.000,2.367E-13
+job.pdb,3d54_I Structure of PurLQS from Thermotoga maritima,Thermotoga maritima MSB8,16.600,294,185,20,37,311,58,310,1.000,1.148E-12
+job.pdb,3viu_A Crystal structure of PurL from thermus thermophilus,Thermus thermophilus HB8,18.900,317,188,19,21,309,393,668,1.000,2.096E-13
+job.pdb,2hry_A T. maritima PurL complexed with AMPPCP,Thermotoga maritima MSB8,15.200,321,207,18,4,311,34,302,1.000,1.017E-12
+job.pdb,2hru_A T. maritima PurL complexed with ADP,Thermotoga maritima MSB8,14.900,327,207,20,4,311,34,308,1.000,3.848E-13
+job.pdb,1vk3_A Crystal structure of Phosphoribosylformylglycinamidine synthase II (TM1246) from Thermotoga maritima at 2.15 A resolution,Thermotoga maritima MSB8,15.600,294,186,20,33,310,56,303,1.000,5.954E-11
+job.pdb,7lvp_A Cryptococcus neoformans AIR synthetase,Cryptococcus neoformans var. grubii H99,15.500,290,201,17,36,304,12,278,1.000,1.573E-10
+job.pdb,3ugj_A Formyl Glycinamide ribonucletide amidotransferase from Salmonella Typhimurum: Role of the ATP complexation and glutaminase domain in catalytic coupling,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,15.600,332,190,23,28,309,670,961,1.000,1.311E-10
+job.pdb,6jt9_A Crystal Structure of D464A mutant of FGAM Synthetase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,16.100,329,194,21,28,309,670,963,1.000,7.633E-10
+job.pdb,4lgy_A Importance of Hydrophobic Cavities in Allosteric Regulation of Formylglycinamide Synthetase: Insight from Xenon Trapping and Statistical Coupling Analysis,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,15.300,332,193,21,28,309,672,965,1.000,7.633E-10
+job.pdb,6lyl_A Crystal structure of S1052D mutant of Formylglycinamidine synthetase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,15.800,334,189,23,28,309,672,965,1.000,4.989E-10
+job.pdb,1t3t_A Structure of Formylglycinamide synthetase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,15.100,324,185,21,36,309,678,961,1.000,7.633E-10
+job.pdb,6jta_A Crystal Structure of D464A L465A mutant of FGAM Synthetase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,16.200,333,189,23,28,309,682,975,1.000,8.619E-10
+job.pdb,6lym_A Crystal structure of D657A mutant of formylglycinamidine synthetase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,14.400,340,187,24,28,309,665,958,1.000,5.987E-10
+job.pdb,6jt8_A Crystal structure of 450-451_deletion mutant of FGAM Synthetase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,15.300,339,185,23,28,309,672,965,1.000,7.633E-10
+job.pdb,4r7g_A Determination of the formylglycinamide ribonucleotide amidotransferase ammonia pathway by combining 3D-RISM theory with experiment,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,13.300,337,194,20,28,309,668,961,1.000,1.401E-09
+job.pdb,6lyo_A Crystal Structure of H296A mutant of Formylglycinamidine Synthetase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,15.300,339,185,24,28,309,673,966,1.000,1.319E-09
+job.pdb,7dw7_A Crystal Structure of N1051A mutant of Formylglycinamidine Synthetase,unclassified,15.500,341,182,23,28,309,674,967,1.000,2.144E-09
+job.pdb,4l78_A Xenon Trapping and Statistical Coupling Analysis Uncover Regions Important for Structure and Function of Multidomain Protein StPurL,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,14.300,342,185,24,28,309,669,962,1.000,1.099E-09
+job.pdb,6jt7_A Crystal structure of 452-453_deletion mutant of FGAM Synthetase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,15.100,331,177,22,36,309,676,959,1.000,3.280E-09
+job.pdb,3kiz_B Crystal structure of Putative phosphoribosylformylglycinamidine cyclo-ligase (YP_676759.1) from CYTOPHAGA HUTCHINSONII ATCC 33406 at 1.50 A resolution,unclassified,14.500,329,190,29,59,318,55,361,1.000,5.017E-09
+job.pdb,3umm_A Formylglycinamide ribonucleotide amidotransferase from Salmonella typhimurium: Role of the ATP complexation and glutaminase domain in catalytic coupling,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,16.200,338,183,23,28,309,669,962,1.000,1.497E-08
+job.pdb,6lyk_A Crystal Structure of R1263A mutant of Formylglycinamidine Synthetase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,15.400,344,179,25,28,309,677,970,1.000,5.665E-09
+job.pdb,3kiz_A Crystal structure of Putative phosphoribosylformylglycinamidine cyclo-ligase (YP_676759.1) from CYTOPHAGA HUTCHINSONII ATCC 33406 at 1.50 A resolution,unclassified,13.700,327,195,26,59,318,51,357,1.000,1.326E-08
+job.pdb,3ujn_A Formyl Glycinamide Ribonucleotide Amidotransferase from Salmonella Typhimurium : Role of the ATP complexation and glutaminase domain in catalytic coupling,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,16.400,335,190,23,28,311,670,965,1.000,1.797E-08
+job.pdb,3mdo_A Crystal structure of a Putative phosphoribosylformylglycinamidine cyclo-ligase (BDI_2101) from Parabacteroides distasonis ATCC 8503 at 1.91 A resolution,Parabacteroides distasonis ATCC 8503,13.200,309,192,25,59,306,52,345,1.000,2.029E-08
+job.pdb,3mdo_B Crystal structure of a Putative phosphoribosylformylglycinamidine cyclo-ligase (BDI_2101) from Parabacteroides distasonis ATCC 8503 at 1.91 A resolution,Parabacteroides distasonis ATCC 8503,13.000,314,187,25,59,306,50,343,1.000,6.433E-08
+job.pdb,4dxd_A Staphylococcal Aureus FtsZ in complex with 723,Staphylococcus aureus,12.600,103,72,6,38,135,213,302,0.912,3.391E-03
+job.pdb,"6rvm_C Cell division protein FtsZ from Staphylococcus aureus, apo form",Staphylococcus aureus subsp. aureus NCTC 8325,14.200,105,72,8,38,137,214,305,0.900,3.391E-03
+job.pdb,7cd3_B Crystal structure of the S103F mutant of Bacillus subtilis (natto) YabJ protein.,Bacillus subtilis subsp. natto BEST195,9.000,111,87,5,33,136,4,107,0.855,2.098E-02
+job.pdb,3vpa_C Staphylococcus aureus FtsZ apo-form,Staphylococcus aureus subsp. aureus Mu50,13.500,103,69,8,38,134,209,297,0.855,9.523E-03
+job.pdb,3ct4_B Structure of Dha-kinase subunit DhaK from L. Lactis,Lactococcus lactis subsp. lactis Il1403,8.700,80,65,6,59,132,220,297,0.855,4.092E-02
+job.pdb,7cd4_C Crystal structure of the S103F mutant of Bacillus subtilis (natto) YabJ protein.,Bacillus subtilis subsp. natto BEST195,11.000,109,87,4,33,136,17,120,0.837,4.092E-02
+job.pdb,3vpa_A Staphylococcus aureus FtsZ apo-form,Staphylococcus aureus subsp. aureus Mu50,12.500,104,69,8,38,134,198,286,0.817,6.615E-03
+job.pdb,"6rvm_D Cell division protein FtsZ from Staphylococcus aureus, apo form",Staphylococcus aureus subsp. aureus NCTC 8325,13.300,105,67,7,38,134,211,299,0.817,5.188E-03
+job.pdb,5v4f_B Crystal Structure of the Protein of Unknown Function of the Conserved Rid Protein Family YyfB from Yersinia pestis,Yersinia pestis,12.000,116,83,6,33,136,23,131,0.772,2.098E-02
+job.pdb,3vpa_B Staphylococcus aureus FtsZ apo-form,Staphylococcus aureus subsp. aureus Mu50,12.600,103,70,8,38,134,189,277,0.772,7.937E-03
+job.pdb,5h5g_A Staphylococcus aureus FtsZ-GDP in T and R states,Staphylococcus aureus subsp. aureus NCTC 8325,13.800,108,67,8,38,136,214,304,0.772,2.098E-02
+job.pdb,3vpa_D Staphylococcus aureus FtsZ apo-form,Staphylococcus aureus subsp. aureus Mu50,13.000,107,65,9,38,134,204,292,0.747,7.029E-03
+job.pdb,6umk_A Structure of E. coli FtsZ(L178E)-GDP complex,Escherichia coli K-12,11.400,105,70,8,40,135,210,300,0.747,3.410E-02
+job.pdb,5h5i_A Staphylococcus aureus FtsZ-GDP R29A mutant in R state,Staphylococcus aureus subsp. aureus NCTC 8325,13.200,106,66,8,40,136,216,304,0.747,1.858E-02
+job.pdb,5yu2_A Structure of Ribonuclease YabJ,Staphylococcus aureus subsp. aureus Mu50,8.900,123,95,8,20,134,12,125,0.720,4.092E-02
+job.pdb,5mn5_B S. aureus FtsZ 12-316 T66W GTP Closed form (2TCm),Staphylococcus aureus,15.200,105,67,8,38,135,195,284,0.720,2.098E-02
+job.pdb,5mn7_B S. aureus FtsZ 12-316 F138A GTP Closed form (3FCm),Staphylococcus aureus,14.000,107,76,7,34,135,206,301,0.720,4.620E-02
+job.pdb,4u39_C Crystal Structure of FtsZ:MciZ Complex from Bacillus subtilis,Bacillus subtilis subsp. subtilis str. 168,17.000,94,64,5,42,132,203,285,0.692,9.576E-02
+job.pdb,7ojd_A SaFtsZ(D46A) complexed with GDP,Staphylococcus aureus subsp. aureus NCTC 8325,14.000,107,66,8,38,135,215,304,0.692,3.209E-02
+job.pdb,2vxy_A The structure of FTsZ from Bacillus subtilis at 1.7A resolution,Bacillus subtilis subsp. subtilis str. 168,17.000,100,69,5,38,134,214,302,0.663,7.068E-02
+job.pdb,6unx_A Structure of E. coli FtsZ(L178E)-GTP complex,Escherichia coli K-12,11.400,105,70,8,40,135,213,303,0.663,5.544E-02
+job.pdb,7cd4_B Crystal structure of the S103F mutant of Bacillus subtilis (natto) YabJ protein.,Bacillus subtilis subsp. natto BEST195,10.800,111,85,6,33,136,4,107,0.632,7.068E-02
+job.pdb,"6rvm_B Cell division protein FtsZ from Staphylococcus aureus, apo form",Staphylococcus aureus subsp. aureus NCTC 8325,14.600,109,69,9,34,134,192,284,0.632,1.858E-02
+job.pdb,6ll6_A Crsyal structure of EcFtsZ (residues 11-316),Escherichia coli K-12,10.500,104,72,9,40,135,208,298,0.632,5.891E-02
+job.pdb,7kgc_A Crystal structure of a perchloric acid-soluble protein (PSP) from Trichomonas vaginalis at 1.95 A,Trichomonas vaginalis G3,13.100,129,87,9,20,136,9,124,0.601,2.229E-02
+job.pdb,2vaw_A FtsZ Pseudomonas aeruginosa GDP,Pseudomonas aeruginosa PAO1,11.800,101,74,7,40,135,223,313,0.601,4.348E-02
+job.pdb,7cd4_A Crystal structure of the S103F mutant of Bacillus subtilis (natto) YabJ protein.,Bacillus subtilis subsp. natto BEST195,9.000,111,87,5,33,136,20,123,0.569,1.081E-01
+job.pdb,5mn6_A S. aureus FtsZ 12-316 F138A GDP Closed form (3FCm),Staphylococcus aureus,10.200,107,70,8,38,135,205,294,0.569,3.209E-02
+job.pdb,"6rvm_A Cell division protein FtsZ from Staphylococcus aureus, apo form",Staphylococcus aureus subsp. aureus NCTC 8325,13.400,104,68,9,38,134,205,293,0.569,2.674E-02
+job.pdb,"3wgk_B STAPHYLOCOCCUS AUREUS FTSZ T7 mutant substituted for GAG, DeltaT7GAG-GDP",Staphylococcus aureus subsp. aureus Mu50,15.500,103,69,8,38,135,212,301,0.569,3.850E-02
+job.pdb,5mn4_A S. aureus FtsZ 12-316 F138A GDP Open form (1FOf),Staphylococcus aureus,15.000,106,64,9,38,134,213,301,0.569,6.260E-02
+job.pdb,3wgn_B STAPHYLOCOCCUS AUREUS FTSZ bound with GTP-gamma-S,Staphylococcus aureus subsp. aureus Mu50,12.900,108,66,9,38,135,213,302,0.537,3.850E-02
+job.pdb,2rhl_A Synthetic Gene Encoded Bacillus Subtilis FtsZ NCS Dimer with Bound GDP,Bacillus subtilis subsp. subtilis str. 168,15.500,103,64,7,38,132,213,300,0.537,7.511E-02
+job.pdb,5xdw_A Staphylococcus aureus FtsZ 12-316 G196S,Staphylococcus aureus subsp. aureus NCTC 8325,12.000,108,67,9,38,135,215,304,0.537,3.209E-02
+job.pdb,4u39_F Crystal Structure of FtsZ:MciZ Complex from Bacillus subtilis,Bacillus subtilis subsp. subtilis str. 168,15.300,98,63,6,38,132,202,282,0.505,7.981E-02
+job.pdb,4u39_A Crystal Structure of FtsZ:MciZ Complex from Bacillus subtilis,Bacillus subtilis subsp. subtilis str. 168,14.500,103,68,8,38,134,204,292,0.505,7.068E-02
+job.pdb,5mn8_A S. aureus FtsZ 12-316 F138A GTP Closed form (5FCm),Staphylococcus aureus,15.500,103,69,7,38,135,208,297,0.505,5.217E-02
+job.pdb,7oja_A SaFtsZ(D210N) complexed with GDP,Staphylococcus aureus subsp. aureus NCTC 8325,12.900,108,66,9,38,135,216,305,0.505,4.620E-02
+job.pdb,"1w5f_A FtsZ, T7 mutated, domain swapped (T. maritima)",Thermotoga maritima MSB8,12.700,110,75,7,36,138,213,308,0.505,4.620E-02
+job.pdb,4b45_A CetZ2 from Haloferax volcanii - GTPgS bound protofilament,Haloferax volcanii DS2,17.000,100,69,9,40,132,216,308,0.505,9.576E-02
+job.pdb,7cd2_C Crystal structure of the S103F mutant of Bacillus subtilis (natto) YabJ protein.,Bacillus subtilis subsp. natto BEST195,11.400,114,81,6,33,136,15,118,0.473,1.557E-01
+job.pdb,5u1h_D Crystal structure of the C-terminal peptidoglycan binding domain of OprF (PA1777) from Pseudomonas aeruginosa,Pseudomonas aeruginosa PAO1,8.300,120,82,5,40,136,8,122,0.473,6.260E-02
+job.pdb,5yu2_C Structure of Ribonuclease YabJ,Staphylococcus aureus subsp. aureus Mu50,9.200,108,88,5,34,136,21,123,0.473,2.858E-01
+job.pdb,3v4d_D Crystal structure of RutC protein a member of the YjgF family from E.coli,Escherichia coli CFT073,9.500,115,85,9,30,136,23,126,0.473,1.379E-01
+job.pdb,6ll5_A Crystal structure of KpFtsZ (residues 11-316),Klebsiella pneumoniae subsp. pneumoniae HS11286,8.700,103,75,8,40,135,213,303,0.473,5.217E-02
+job.pdb,1ofu_B Crystal structure of SulA:FtsZ from Pseudomonas aeruginosa,Pseudomonas aeruginosa PAO1,13.400,104,69,8,40,135,214,304,0.473,9.576E-02
+job.pdb,"7ohk_A SaFtsZ complexed with GDP, BeF3- and Mg2+",Staphylococcus aureus subsp. aureus NCTC 8325,12.800,109,65,7,38,135,216,305,0.473,2.517E-02
+job.pdb,2xkb_D Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,8.500,105,78,5,40,134,263,359,0.473,2.689E-01
+job.pdb,"3i7t_A Crystal structure of Rv2704, a member of highly conserved YjgF/YER057c/UK114 family, from Mycobacterium tuberculosis",Mycobacterium tuberculosis CDC1551,10.800,83,61,4,60,136,43,118,0.442,1.081E-01
+job.pdb,5u1h_B Crystal structure of the C-terminal peptidoglycan binding domain of OprF (PA1777) from Pseudomonas aeruginosa,Pseudomonas aeruginosa PAO1,8.000,124,84,6,33,133,3,119,0.442,2.098E-02
+job.pdb,"5esv_E Crystal Structure of Broadly Neutralizing Antibody CH03, Isolated from Donor CH0219, in Complex with Scaffolded Trimeric HIV-1 Env V1V2 Domain from the Clade C Superinfecting Strain of Donor CAP256.",Haemophilus influenzae Rd KW20,10.900,110,68,5,54,139,70,173,0.442,1.149E-01
+job.pdb,2q1y_B Crystal Structure of cell division protein FtsZ from Mycobacterium tuberculosis in complex with GTP-gamma-S,Mycobacterium tuberculosis H37Rv,10.000,109,70,9,38,136,202,292,0.442,5.891E-02
+job.pdb,2rhj_A Synthetic Gene Encoded Bacillus Subtilis FtsZ with Two Sulfate Ions and Sodium Ion in the Nucleotide Pocket,Bacillus subtilis subsp. subtilis str. 168,12.000,108,71,9,38,137,213,304,0.442,4.620E-02
+job.pdb,7ung_TP 48-nm repeat of the human respiratory doublet microtubule,unclassified,4.600,65,52,4,79,137,308,368,0.442,4.348E-02
+job.pdb,2uyp_B Crystal structure of E. coli TdcF with bound propionate,Escherichia coli K-12,9.500,126,96,8,21,134,5,124,0.411,8.481E-02
+job.pdb,"3f0d_B High resolution crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphatase synthase from Burkholderia pseudomallei",Burkholderia pseudomallei 1710b,8.900,145,81,6,37,135,2,141,0.411,3.410E-02
+job.pdb,"3f0g_E Co-crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase with CMP",Burkholderia pseudomallei 1710b,9.500,146,82,10,37,135,2,144,0.411,1.548E-02
+job.pdb,5mn5_A S. aureus FtsZ 12-316 T66W GTP Closed form (2TCm),Staphylococcus aureus,14.500,110,62,10,38,135,201,290,0.411,4.620E-02
+job.pdb,3vo8_A Staphylococcus aureus FtsZ GDP-form,Staphylococcus aureus subsp. aureus Mu50,10.900,110,66,7,38,135,213,302,0.411,1.748E-02
+job.pdb,"7ohl_A SaFtsZ complexed with GDP, BeF3- and Mn2+",Staphylococcus aureus subsp. aureus NCTC 8325,12.800,109,65,7,38,135,214,303,0.411,3.410E-02
+job.pdb,7ojb_A SaFtsZ(R143K) complexed with GDP,Staphylococcus aureus subsp. aureus NCTC 8325,12.800,109,65,7,38,135,216,305,0.411,3.624E-02
+job.pdb,"1w59_A FtsZ dimer, empty (M. jannaschii)",Methanocaldococcus jannaschii DSM 2661,17.400,109,70,7,38,140,245,339,0.411,1.149E-01
+job.pdb,2xkb_C Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,9.300,107,75,7,40,134,256,352,0.411,1.557E-01
+job.pdb,7z0g_B CPAP:TUBULIN:IE5 ALPHAREP COMPLEX P1 SPACE GROUP,unclassified,9.300,86,59,6,64,132,273,356,0.411,1.557E-01
+job.pdb,7vmj_B Crystal structure of tubulin with 17a,unclassified,8.300,108,77,7,42,134,265,365,0.411,2.109E-01
+job.pdb,"3wgl_B STAPHYLOCOCCUS AUREUS FTSZ T7 mutant substituted for GAN bound with GDP, DeltaT7GAN-GDP",Staphylococcus aureus subsp. aureus Mu50,13.800,108,65,8,38,135,212,301,0.382,6.260E-02
+job.pdb,1fnk_A CRYSTAL STRUCTURE ANALYSIS OF CHORISMATE MUTASE MUTANT C88K/R90S,Bacillus subtilis subsp. subtilis str. 168,6.900,101,81,5,39,134,2,94,0.353,5.924E-01
+job.pdb,2dyy_G Crystal structure of putative translation initiation inhibitor PH0854 from Pyrococcus horikoshii,Pyrococcus horikoshii OT3,10.900,91,58,5,58,136,45,124,0.353,1.985E-01
+job.pdb,"1iv4_F Structure of 2C-Methyl-D-erythritol-2,4-cyclodiphosphate Synthase (bound form Substrate)",Thermus thermophilus HB8,19.400,67,43,5,78,136,87,150,0.353,1.758E-01
+job.pdb,"5dte_C Crystal Structure of an ABC transporter periplasmic solute binding protein (IPR025997) from Actinobacillus succinogenes 130z(Asuc_0081, TARGET EFI-511065) with bound D-allose",Actinobacillus succinogenes 130Z,15.100,66,44,5,58,121,115,170,0.353,1.465E-01
+job.pdb,2rho_B Synthetic Gene Encoded Bacillus Subtilis FtsZ NCS Dimer with Bound GDP and GTP-gamma-S,Bacillus subtilis subsp. subtilis str. 168,9.000,110,66,10,38,134,211,299,0.353,6.260E-02
+job.pdb,"3wgj_B STAPHYLOCOCCUS AUREUS FTSZ T7 chimera mutant, T7Bs",Staphylococcus aureus subsp. aureus Mu50,10.900,110,66,7,38,135,213,302,0.353,1.748E-02
+job.pdb,6rvq_A SaFtsz-GDP-EthGLy,Staphylococcus aureus subsp. aureus NCTC 8325,12.800,109,65,7,38,135,217,306,0.353,4.909E-02
+job.pdb,4b46_A CetZ1 from Haloferax volcanii - GDP bound monomer,Haloferax volcanii DS2,12.200,106,67,7,40,133,217,308,0.353,9.576E-02
+job.pdb,2xkb_H Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,8.400,106,77,7,40,134,255,351,0.353,3.644E-01
+job.pdb,2xkb_K Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,8.500,105,78,6,40,134,267,363,0.353,4.646E-01
+job.pdb,2xkb_I Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,9.500,105,77,6,40,134,265,361,0.353,4.646E-01
+job.pdb,"6h9b_B 1,1-Diheterocyclic Ethylenes Derived from Quinaldine and Carbazole as New Tubulin Polymerization Inhibitors: Synthesis, Metabolism, and Biological Evaluation",Ovis aries,8.700,114,73,10,40,132,266,369,0.353,1.868E-01
+job.pdb,3v4d_A Crystal structure of RutC protein a member of the YjgF family from E.coli,Escherichia coli CFT073,10.500,114,80,8,34,136,16,118,0.326,2.858E-01
+job.pdb,5y6u_C Crystal structure of wild-type YabJ protein from Bacillus subtilis (natto).,Bacillus subtilis subsp. natto BEST195,9.300,118,97,4,24,136,11,123,0.326,4.372E-01
+job.pdb,"1oni_I Crystal structure of a human p14.5, a translational inhibitor reveals different mode of ligand binding near the invariant residues of the Yjgf/UK114 protein family",Homo sapiens,7.900,113,85,7,36,138,27,130,0.326,1.465E-01
+job.pdb,3d01_C Crystal structure of the protein Atu1372 with unknown function from Agrobacterium tumefaciens,Agrobacterium fabrum str. C58,15.600,128,79,9,33,136,31,153,0.326,7.981E-02
+job.pdb,"3f0d_A High resolution crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphatase synthase from Burkholderia pseudomallei",Burkholderia pseudomallei 1710b,7.800,153,84,7,37,135,2,151,0.326,5.544E-02
+job.pdb,"3f0d_D High resolution crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphatase synthase from Burkholderia pseudomallei",Burkholderia pseudomallei 1710b,7.700,155,84,7,37,135,2,153,0.326,5.891E-02
+job.pdb,"3wgl_A STAPHYLOCOCCUS AUREUS FTSZ T7 mutant substituted for GAN bound with GDP, DeltaT7GAN-GDP",Staphylococcus aureus subsp. aureus Mu50,14.000,107,66,7,38,135,212,301,0.326,1.149E-01
+job.pdb,2b33_B CRYSTAL STRUCTURE OF A PUTATIVE ENDORIBONUCLEASE (TM0215) FROM THERMOTOGA MARITIMA MSB8 AT 2.30 A RESOLUTION,Thermotoga maritima MSB8,6.100,130,96,8,20,136,8,124,0.301,3.227E-01
+job.pdb,2b33_A CRYSTAL STRUCTURE OF A PUTATIVE ENDORIBONUCLEASE (TM0215) FROM THERMOTOGA MARITIMA MSB8 AT 2.30 A RESOLUTION,Thermotoga maritima MSB8,6.400,125,91,8,25,136,14,125,0.301,3.227E-01
+job.pdb,6tcd_E Crystal structure of Salmo salar RidA-2,Salmo salar,11.100,135,94,10,15,138,11,130,0.301,1.985E-01
+job.pdb,"3mbm_C Crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase from Burkholderia pseudomallei with cytosine and FoL fragment 717, imidazo[2,1-b][1,3]thiazol-6-ylmethanol",Burkholderia pseudomallei 1710b,9.200,152,80,8,37,135,2,148,0.301,5.217E-02
+job.pdb,"3qhd_B Crystal structure of 2-C-METHYL-D-ERYTHRITOL 2,4-CYCLODIPHOSPHATE Synthase from BURKHOLDERIA PSEUDOMALLEI bound to CYTIDINE, FOL795 and FOL955",Burkholderia pseudomallei 1710b,7.900,151,82,11,37,135,2,147,0.301,3.020E-02
+job.pdb,"5l12_A Crystal structure of 2C-methyl-D-erythritol 2,4-clycodiphosphate synthase from BURKHOLDERIA PSEUDOMALLEI double mutant",Burkholderia pseudomallei 1106a,8.300,156,83,8,37,135,2,154,0.301,5.891E-02
+job.pdb,"2pmp_A Structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase from the isoprenoid biosynthetic pathway of Arabidopsis thaliana",Arabidopsis thaliana,9.400,159,83,9,35,135,1,156,0.301,4.620E-02
+job.pdb,4u39_G Crystal Structure of FtsZ:MciZ Complex from Bacillus subtilis,Bacillus subtilis subsp. subtilis str. 168,17.700,96,61,4,38,132,199,277,0.301,3.429E-01
+job.pdb,1rq7_B MYCOBACTERIUM TUBERCULOSIS FTSZ IN COMPLEX WITH GDP,Mycobacterium tuberculosis H37Rv,12.100,107,70,9,38,136,203,293,0.301,9.576E-02
+job.pdb,2vam_A FtsZ B. subtilis,Bacillus subtilis subsp. subtilis str. 168,9.200,108,68,8,38,134,213,301,0.301,1.985E-01
+job.pdb,4m8i_A 1.43 Angstrom resolution crystal structure of cell division protein FtsZ (ftsZ) from Staphylococcus epidermidis RP62A in complex with GDP,Staphylococcus epidermidis RP62A,10.100,118,74,7,38,143,214,311,0.301,2.674E-02
+job.pdb,2xkb_L Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,9.300,107,75,7,40,134,260,356,0.301,4.114E-01
+job.pdb,6y4m_D Structure of Tubulin Tyrosine Ligase in Complex with Tb111,Sus scrofa,8.900,89,56,8,64,132,282,365,0.301,2.241E-01
+job.pdb,3zo8_F Wild-type chorismate mutase of Bacillus subtilis at 1.6 A resolution,Bacillus subtilis subsp. subtilis str. 168,7.700,103,79,7,39,134,2,95,0.277,7.108E-01
+job.pdb,3l7q_I Crystal structure of AldR from streptococcus mutans,Streptococcus mutans UA159,9.900,131,86,9,20,134,7,121,0.277,8.481E-02
+job.pdb,1jd1_C Crystal Structure of YEO7_yeast,Saccharomyces cerevisiae S288C,10.900,128,88,6,21,134,8,123,0.277,2.382E-01
+job.pdb,"6nmo_B Crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase (IspF) Burkholderia pseudomallei in complex with ligand SR-4",Burkholderia pseudomallei 1710b,8.900,157,82,9,37,135,2,155,0.277,9.012E-02
+job.pdb,"3iew_A Crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase from Burkholderia pseudomallei with bound CTP and CDP",Burkholderia pseudomallei K96243,8.800,159,84,9,35,135,1,156,0.277,5.891E-02
+job.pdb,6y1v_B Mycobacterium tuberculosis FtsZ-GTP-gamma-S in complex with 4-hydroxycoumarin,unclassified,12.200,106,69,9,38,135,204,293,0.277,1.081E-01
+job.pdb,"3wgm_B STAPHYLOCOCCUS AUREUS FTSZ T7 mutant substituted for GAN bound with GTP, DeltaT7GAN-GTP",Staphylococcus aureus subsp. aureus Mu50,14.200,105,70,8,38,136,211,301,0.277,1.557E-01
+job.pdb,6yd6_A SaFtsZ-UCM152 (comp.20),Staphylococcus aureus subsp. aureus NCTC 8325,13.800,108,65,9,38,135,216,305,0.277,1.018E-01
+job.pdb,2rhl_B Synthetic Gene Encoded Bacillus Subtilis FtsZ NCS Dimer with Bound GDP,Bacillus subtilis subsp. subtilis str. 168,10.900,110,64,10,38,134,213,301,0.277,6.652E-02
+job.pdb,1fsz_A CRYSTAL STRUCTURE OF THE CELL-DIVISION PROTEIN FTSZ AT 2.8A RESOLUTION,Methanocaldococcus jannaschii DSM 2661,10.000,110,77,8,38,140,227,321,0.277,1.758E-01
+job.pdb,3pnm_B Crystal Structure of E.coli Dha kinase DhaK (H56A),Escherichia coli K-12,8.600,58,47,3,83,134,261,318,0.277,3.037E-01
+job.pdb,2xka_G Crystal structure of a GTPyS-form protofilament of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,11.200,107,73,8,40,134,278,374,0.277,2.858E-01
+job.pdb,7qud_B D. melanogaster alpha/beta tubulin heterodimer in the GTP form,unclassified,6.200,64,48,4,79,132,295,356,0.277,6.295E-01
+job.pdb,3v4d_B Crystal structure of RutC protein a member of the YjgF family from E.coli,Escherichia coli CFT073,7.100,112,86,8,34,136,21,123,0.254,3.644E-01
+job.pdb,5yu2_F Structure of Ribonuclease YabJ,Staphylococcus aureus subsp. aureus Mu50,6.300,111,84,8,34,134,21,121,0.254,1.758E-01
+job.pdb,"2uzh_B Mycobacterium smegmatis 2C-methyl-D-erythritol-2,4-cyclodiphosphate synthase (IspF)",Mycolicibacterium smegmatis MC2 155,8.500,152,81,8,38,135,2,149,0.254,7.511E-02
+job.pdb,"2uzh_C Mycobacterium smegmatis 2C-methyl-D-erythritol-2,4-cyclodiphosphate synthase (IspF)",Mycolicibacterium smegmatis MC2 155,7.800,153,83,7,38,135,2,151,0.254,9.576E-02
+job.pdb,"6mwj_C Crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase (IspF) Burkholderia pseudomallei in complex with ligand HGN-0863",Burkholderia pseudomallei 1710b,8.900,156,82,9,35,135,1,151,0.254,5.544E-02
+job.pdb,4u39_D Crystal Structure of FtsZ:MciZ Complex from Bacillus subtilis,Bacillus subtilis subsp. subtilis str. 168,13.700,102,56,7,38,131,200,277,0.254,2.241E-01
+job.pdb,4u39_E Crystal Structure of FtsZ:MciZ Complex from Bacillus subtilis,Bacillus subtilis subsp. subtilis str. 168,11.400,105,63,8,38,134,203,285,0.254,1.018E-01
+job.pdb,4u39_B Crystal Structure of FtsZ:MciZ Complex from Bacillus subtilis,Bacillus subtilis subsp. subtilis str. 168,14.400,104,63,8,38,134,203,287,0.254,1.868E-01
+job.pdb,7on2_A SaFtsZ complexed with GDP (soaking in 10 mM CyDTA),Staphylococcus aureus subsp. aureus NCTC 8325,10.000,110,67,7,38,135,216,305,0.254,6.652E-02
+job.pdb,7ojc_A SaFtsZ(Q48A) complexed with GDP,Staphylococcus aureus subsp. aureus NCTC 8325,10.900,110,66,7,38,135,217,306,0.254,6.260E-02
+job.pdb,2r6r_1 Aquifex aeolicus FtsZ,Aquifex aeolicus VF5,13.300,112,65,10,40,138,214,306,0.254,2.241E-01
+job.pdb,2xka_A Crystal structure of a GTPyS-form protofilament of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,8.100,110,73,7,40,134,269,365,0.254,3.037E-01
+job.pdb,2xka_B Crystal structure of a GTPyS-form protofilament of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,10.200,107,74,7,40,134,271,367,0.254,2.241E-01
+job.pdb,7x4n_B Crystal Structure of C. elegans kinesin-4 KLP-12 complexed with tubulin and DARPin,unclassified,9.800,112,76,6,40,134,266,369,0.254,1.758E-01
+job.pdb,2cht_K CRYSTAL STRUCTURES OF THE MONOFUNCTIONAL CHORISMATE MUTASE FROM BACILLUS SUBTILIS AND ITS COMPLEX WITH A TRANSITION STATE ANALOG,Bacillus subtilis subsp. subtilis str. 168,7.600,105,77,7,39,134,1,94,0.233,5.574E-01
+job.pdb,1jd1_B Crystal Structure of YEO7_yeast,Saccharomyces cerevisiae S288C,9.800,122,86,8,26,134,13,123,0.233,3.429E-01
+job.pdb,2dyy_D Crystal structure of putative translation initiation inhibitor PH0854 from Pyrococcus horikoshii,Pyrococcus horikoshii OT3,11.400,70,47,4,70,136,68,125,0.233,3.227E-01
+job.pdb,6tcd_C Crystal structure of Salmo salar RidA-2,Salmo salar,10.400,124,87,9,24,136,18,128,0.233,4.372E-01
+job.pdb,3d01_B Crystal structure of the protein Atu1372 with unknown function from Agrobacterium tumefaciens,Agrobacterium fabrum str. C58,15.200,138,88,9,23,136,20,152,0.233,1.221E-01
+job.pdb,3d01_G Crystal structure of the protein Atu1372 with unknown function from Agrobacterium tumefaciens,Agrobacterium fabrum str. C58,15.200,138,88,11,23,136,22,154,0.233,1.465E-01
+job.pdb,"3f0e_A Crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase from Burkholderia pseudomallei",Burkholderia pseudomallei 1710b,8.900,157,82,9,37,135,2,155,0.233,9.012E-02
+job.pdb,6ym1_A Mycobacterium tuberculosis FtsZ in complex with GDP,unclassified,12.100,107,70,9,38,136,208,298,0.233,2.109E-01
+job.pdb,6kvq_A S. aureus FtsZ in complex with BOFP (compound 3),Staphylococcus aureus,10.900,110,66,7,38,135,216,305,0.233,7.511E-02
+job.pdb,6ym9_A Mycobacterium tuberculosis FtsZ in complex with GTP-gamma-S,unclassified,12.200,106,71,8,38,136,217,307,0.233,2.109E-01
+job.pdb,"5zue_A GTP-bound, double-stranded, curved FtsZ protofilament structure",Mycobacterium tuberculosis H37Rv,11.200,107,68,8,38,134,218,307,0.233,2.531E-01
+job.pdb,2iu6_B REGULATION OF THE DHA OPERON OF LACTOCOCCUS LACTIS,Lactococcus lactis subsp. lactis Il1403,10.500,57,43,3,83,132,238,293,0.233,5.574E-01
+job.pdb,2vap_A FtsZ GDP M. jannaschii,Methanocaldococcus jannaschii DSM 2661,14.200,112,70,9,38,140,230,324,0.233,1.758E-01
+job.pdb,3pnq_B Crystal Structure of E.coli Dha kinase DhaK (H56N) complex with Dha,Escherichia coli K-12,10.300,58,46,3,83,134,257,314,0.233,4.646E-01
+job.pdb,"1w59_B FtsZ dimer, empty (M. jannaschii)",Methanocaldococcus jannaschii DSM 2661,12.800,109,75,6,38,140,228,322,0.233,1.557E-01
+job.pdb,3m8k_A Protein structure of type III plasmid segregation TubZ,Bacillus thuringiensis serovar israelensis,9.700,113,69,11,40,136,264,359,0.233,3.037E-01
+job.pdb,5w3j_B Yeast microtubule stabilized with Taxol assembled from mutated tubulin,Saccharomyces cerevisiae S288C,12.900,108,77,7,40,134,266,369,0.233,2.689E-01
+job.pdb,7ung_RF 48-nm repeat of the human respiratory doublet microtubule,unclassified,4.400,67,55,3,79,137,308,373,0.233,3.429E-01
+job.pdb,7ung_PK 48-nm repeat of the human respiratory doublet microtubule,unclassified,8.000,75,52,4,79,137,310,383,0.233,2.382E-01
+job.pdb,2dyy_K Crystal structure of putative translation initiation inhibitor PH0854 from Pyrococcus horikoshii,Pyrococcus horikoshii OT3,10.700,93,58,6,56,136,43,122,0.214,1.985E-01
+job.pdb,3v4d_F Crystal structure of RutC protein a member of the YjgF family from E.coli,Escherichia coli CFT073,7.200,110,84,8,34,134,28,128,0.214,4.114E-01
+job.pdb,3d01_D Crystal structure of the protein Atu1372 with unknown function from Agrobacterium tumefaciens,Agrobacterium fabrum str. C58,15.600,128,79,11,33,136,31,153,0.214,2.858E-01
+job.pdb,3d01_K Crystal structure of the protein Atu1372 with unknown function from Agrobacterium tumefaciens,Agrobacterium fabrum str. C58,14.800,135,74,10,33,137,30,153,0.214,1.149E-01
+job.pdb,"3k2x_A Crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase from Burkholderia pseudomallei in complex with 5'-iodo-cytosine",Burkholderia pseudomallei 1710b,9.600,155,83,10,37,137,2,153,0.214,9.576E-02
+job.pdb,2q1x_B Crystal Structure of cell division protein FtsZ from Mycobacterium tuberculosis in complex with citrate.,Mycobacterium tuberculosis H37Rv,11.400,105,73,8,38,136,196,286,0.214,3.037E-01
+job.pdb,5v68_F Crystal structure of cell division protein FtsZ from Mycobacterium tuberculosis bounded via the T9 loop,Mycobacterium tuberculosis H37Rv,12.100,107,68,8,38,135,208,297,0.214,2.382E-01
+job.pdb,6y1v_A Mycobacterium tuberculosis FtsZ-GTP-gamma-S in complex with 4-hydroxycoumarin,unclassified,11.100,108,70,8,38,136,213,303,0.214,2.382E-01
+job.pdb,3m9x_A Open liganded crystal structure of xylose binding protein from Escherichia coli,Escherichia coli K-12,15.200,72,50,6,57,124,102,166,0.214,3.037E-01
+job.pdb,"1w5e_I FtsZ W319Y mutant, P1 (M. jannaschii)",Methanocaldococcus jannaschii DSM 2661,13.300,112,71,9,38,140,227,321,0.214,1.868E-01
+job.pdb,3pnq_D Crystal Structure of E.coli Dha kinase DhaK (H56N) complex with Dha,Escherichia coli K-12,12.000,58,45,3,83,134,255,312,0.214,4.372E-01
+job.pdb,3pnm_C Crystal Structure of E.coli Dha kinase DhaK (H56A),Escherichia coli K-12,5.000,59,48,3,83,134,259,316,0.214,7.108E-01
+job.pdb,7rs5_R Cryo-EM structure of Kip3 (AMPPNP) bound to Taxol-Stabilized Microtubules,Sus scrofa,8.000,75,52,3,79,137,298,371,0.214,2.382E-01
+job.pdb,7un1_DE 8-nm repeat of the human sperm tip singlet microtubule,unclassified,6.600,120,79,8,38,132,257,368,0.214,1.985E-01
+job.pdb,7ung_JK 48-nm repeat of the human respiratory doublet microtubule,unclassified,8.700,126,77,8,38,137,262,375,0.214,1.868E-01
+job.pdb,3cb2_A Crystal structure of human gamma-tubulin bound to GDP,Homo sapiens,8.600,69,44,6,78,133,305,367,0.214,3.227E-01
+job.pdb,2otm_A Crystal structure of a putative endoribonuclease (so_1960) from shewanella oneidensis mr-1 at 1.85 A resolution,Shewanella oneidensis MR-1,12.700,141,86,12,23,132,12,146,0.196,1.149E-01
+job.pdb,"5iwx_D Crystal structure of 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase from Bacillus subtitis",Bacillus subtilis subsp. subtilis str. 168,8.700,149,82,8,38,135,2,147,0.196,1.654E-01
+job.pdb,3jvd_A Crystal structure of putative transcription regulation repressor (LACI family) FROM Corynebacterium glutamicum,Corynebacterium glutamicum ATCC 13032,9.200,65,51,2,58,122,89,145,0.196,7.108E-01
+job.pdb,6y1u_A Mycobacterium tuberculosis FtsZ-GDP in complex with 4-hydroxycoumarin,unclassified,10.100,108,69,9,38,135,210,299,0.196,2.858E-01
+job.pdb,"4kwe_A GDP-bound, double-stranded, curved FtsZ protofilament structure",Mycobacterium tuberculosis H37Rv,11.900,109,66,10,38,135,214,303,0.196,1.758E-01
+job.pdb,"1w5a_A FtsZ dimer, MgGTP soak (M. jannaschii)",Methanocaldococcus jannaschii DSM 2661,10.300,116,70,8,38,140,228,322,0.196,2.689E-01
+job.pdb,1uoe_B Crystal structure of the dihydroxyacetone kinase from E. coli in complex with glyceraldehyde,Escherichia coli K-12,3.400,58,50,5,83,134,257,314,0.196,7.553E-01
+job.pdb,3pnm_D Crystal Structure of E.coli Dha kinase DhaK (H56A),Escherichia coli K-12,6.800,58,48,3,83,134,262,319,0.196,5.246E-01
+job.pdb,1z5v_A Crystal structure of human gamma-tubulin bound to GTPgammaS,Homo sapiens,9.600,114,69,9,42,133,252,353,0.196,2.689E-01
+job.pdb,2cht_F CRYSTAL STRUCTURES OF THE MONOFUNCTIONAL CHORISMATE MUTASE FROM BACILLUS SUBTILIS AND ITS COMPLEX WITH A TRANSITION STATE ANALOG,Bacillus subtilis subsp. subtilis str. 168,7.400,107,75,6,39,134,1,94,0.179,1.228E+00
+job.pdb,"3m4s_F Crystal structure of a putative endoribonuclease L-PSP from Entamoeba histolytica, orthorhombic form",Entamoeba histolytica HM-1:IMSS,6.800,88,68,5,56,136,46,126,0.179,4.114E-01
+job.pdb,6tcc_A Crystal structure of Salmo salar RidA-1,Salmo salar,8.300,84,65,3,60,138,54,130,0.179,5.246E-01
+job.pdb,"5iwy_E Crystal structure of 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase from Bacillus subtitis complexed with CMP and Mg2+",Bacillus subtilis subsp. subtilis str. 168,8.700,148,82,8,38,135,2,146,0.179,1.557E-01
+job.pdb,"3ghz_B 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase from Salmonella typhimurium",Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,6.600,150,85,7,38,135,2,148,0.179,2.109E-01
+job.pdb,3d01_E Crystal structure of the protein Atu1372 with unknown function from Agrobacterium tumefaciens,Agrobacterium fabrum str. C58,14.900,134,73,10,33,136,29,151,0.179,1.654E-01
+job.pdb,"1t0a_C Crystal Structure of 2C-Methyl-D-Erythritol-2,4-cyclodiphosphate Synthase from Shewanella Oneidensis",Shewanella oneidensis MR-1,9.600,155,80,7,37,135,1,151,0.179,1.557E-01
+job.pdb,3d01_F Crystal structure of the protein Atu1372 with unknown function from Agrobacterium tumefaciens,Agrobacterium fabrum str. C58,15.600,128,79,10,33,136,32,154,0.179,2.531E-01
+job.pdb,1ba2_B D67R MUTANT OF D-RIBOSE-BINDING PROTEIN FROM ESCHERICHIA COLI,Escherichia coli K-12,9.200,65,52,4,58,121,103,161,0.179,6.295E-01
+job.pdb,"4kwe_C GDP-bound, double-stranded, curved FtsZ protofilament structure",Mycobacterium tuberculosis H37Rv,12.100,107,68,11,38,135,204,293,0.179,1.758E-01
+job.pdb,3o1i_C Crystal Structure of the TorS sensor domain - TorT complex in the absence of ligand,Vibrio parahaemolyticus RIMD 2210633,13.200,68,53,4,57,122,109,172,0.179,8.528E-01
+job.pdb,2iu6_A REGULATION OF THE DHA OPERON OF LACTOCOCCUS LACTIS,Lactococcus lactis subsp. lactis Il1403,10.900,82,61,6,60,132,211,289,0.179,8.528E-01
+job.pdb,"1w5e_E FtsZ W319Y mutant, P1 (M. jannaschii)",Methanocaldococcus jannaschii DSM 2661,10.300,116,70,8,38,140,227,321,0.179,2.382E-01
+job.pdb,3pnl_A Crystal Structure of E.coli Dha kinase DhaK-DhaL complex,Escherichia coli K-12,10.300,58,46,3,83,134,277,334,0.179,3.872E-01
+job.pdb,3n2g_B TUBULIN-NSC 613863: RB3 Stathmin-like domain complex,Ovis aries,6.100,65,47,3,79,132,299,360,0.179,8.528E-01
+job.pdb,5zxh_B The structure of MT189-tubulin complex,Bos taurus,10.400,86,60,6,64,134,282,365,0.179,3.429E-01
+job.pdb,"2e4y_B Crystal structure of the extracellular region of the group II metabotropic glutamate receptor complexed with 2R,4R-APDC",Rattus norvegicus,3.000,65,53,2,59,123,145,199,0.179,1.305E+00
+job.pdb,2cht_H CRYSTAL STRUCTURES OF THE MONOFUNCTIONAL CHORISMATE MUTASE FROM BACILLUS SUBTILIS AND ITS COMPLEX WITH A TRANSITION STATE ANALOG,Bacillus subtilis subsp. subtilis str. 168,7.400,107,75,6,39,134,1,94,0.164,1.473E+00
+job.pdb,3v4d_C Crystal structure of RutC protein a member of the YjgF family from E.coli,Escherichia coli CFT073,8.600,116,80,9,34,136,20,122,0.164,3.872E-01
+job.pdb,3i3f_C Hypothetical protein from Giardia lamblia GL50803_14299,Giardia lamblia ATCC 50803,12.000,75,55,6,69,134,53,125,0.164,7.553E-01
+job.pdb,"1oni_D Crystal structure of a human p14.5, a translational inhibitor reveals different mode of ligand binding near the invariant residues of the Yjgf/UK114 protein family",Homo sapiens,9.100,131,95,9,20,138,12,130,0.164,2.858E-01
+job.pdb,3d01_A Crystal structure of the protein Atu1372 with unknown function from Agrobacterium tumefaciens,Agrobacterium fabrum str. C58,14.900,134,73,10,33,136,33,155,0.164,1.985E-01
+job.pdb,3d01_I Crystal structure of the protein Atu1372 with unknown function from Agrobacterium tumefaciens,Agrobacterium fabrum str. C58,14.900,134,73,10,33,136,33,155,0.164,1.758E-01
+job.pdb,3byq_B Crystal structure of a duf1185 family protein (bb2672) from bordetella bronchiseptica rb50 at 1.70 A resolution,Bordetella bronchiseptica RB50,15.900,157,86,10,21,137,12,162,0.164,1.557E-01
+job.pdb,1rq7_A MYCOBACTERIUM TUBERCULOSIS FTSZ IN COMPLEX WITH GDP,Mycobacterium tuberculosis H37Rv,11.400,105,73,8,38,136,209,299,0.164,4.646E-01
+job.pdb,5xdv_A Staphylococcus aureus FtsZ 12-316 G196S complexed with TXA6101,Staphylococcus aureus subsp. aureus NCTC 8325,12.200,114,62,9,38,136,214,304,0.164,9.576E-02
+job.pdb,3ma0_A Closed liganded crystal structure of xylose binding protein from Escherichia coli,Escherichia coli K-12,17.900,78,51,5,56,125,97,169,0.164,3.227E-01
+job.pdb,"1w5b_B FtsZ dimer, GTP soak (M. jannaschii)",Methanocaldococcus jannaschii DSM 2661,14.600,109,73,8,38,140,228,322,0.164,4.937E-01
+job.pdb,2xkb_F Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,10.200,107,74,7,40,134,261,357,0.164,5.574E-01
+job.pdb,"2e4y_A Crystal structure of the extracellular region of the group II metabotropic glutamate receptor complexed with 2R,4R-APDC",Rattus norvegicus,7.600,65,50,2,59,123,145,199,0.164,9.630E-01
+job.pdb,5hp8_B Crystal structures of RidA in complex with pyruvate,Arabidopsis thaliana,9.700,82,62,4,60,136,34,108,0.150,4.114E-01
+job.pdb,1fnj_A CRYSTAL STRUCTURE ANALYSIS OF CHORISMATE MUTASE MUTANT C88S/R90K,Bacillus subtilis subsp. subtilis str. 168,8.600,104,76,7,39,134,1,93,0.150,1.386E+00
+job.pdb,1jd1_E Crystal Structure of YEO7_yeast,Saccharomyces cerevisiae S288C,9.900,131,91,7,15,134,7,121,0.150,4.937E-01
+job.pdb,"3re3_C Crystal Structure of 2-C-Methyl-D-Erythritol 2,4-Cyclodiphosphate Synthase from Francisella tularensis",Francisella tularensis subsp. tularensis SCHU S4,7.500,145,83,7,37,136,5,143,0.150,1.758E-01
+job.pdb,"5iwx_E Crystal structure of 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase from Bacillus subtitis",Bacillus subtilis subsp. subtilis str. 168,8.800,147,82,8,38,135,2,145,0.150,2.689E-01
+job.pdb,"5iwx_C Crystal structure of 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase from Bacillus subtitis",Bacillus subtilis subsp. subtilis str. 168,6.400,156,85,7,38,135,2,154,0.150,2.109E-01
+job.pdb,"5esz_C Crystal Structure of Broadly Neutralizing Antibody CH04, Isolated from Donor CH0219, in Complex with Scaffolded Trimeric HIV-1 Env V1V2 Domain from the Clade AE Strain A244",Haemophilus influenzae Rd KW20,5.300,75,60,4,65,134,92,160,0.150,7.108E-01
+job.pdb,"5ibq_A Crystal structure of an ABC solute binding protein from Rhizobium etli CFN 42 (RHE_PF00037,TARGET EFI-511357) in complex with alpha-D-apiose",Rhizobium etli CFN 42,9.200,65,49,3,58,121,109,164,0.150,8.528E-01
+job.pdb,2xkb_G Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,8.500,105,78,6,40,134,272,368,0.150,1.386E+00
+job.pdb,"7quq_E BtubA(R284G,K286D,F287G):BtubB bacterial tubulin M-loop mutant forming a single protofilament (Prosthecobacter dejongeii)",unclassified,10.900,110,69,6,40,134,267,362,0.150,3.872E-01
+job.pdb,4x20_D Discovery of cytotoxic Dolastatin 10 analogs with N-terminal modifications,Ovis aries,7.800,115,77,7,40,134,265,370,0.150,8.528E-01
+job.pdb,5cnj_B mGlur2 with glutamate analog,Homo sapiens,11.900,67,50,3,57,123,142,199,0.150,1.228E+00
+job.pdb,"3m4s_D Crystal structure of a putative endoribonuclease L-PSP from Entamoeba histolytica, orthorhombic form",Entamoeba histolytica HM-1:IMSS,7.300,82,64,4,60,136,51,125,0.138,4.937E-01
+job.pdb,1qu9_A 1.2 A CRYSTAL STRUCTURE OF YJGF GENE PRODUCT FROM E. COLI,Escherichia coli K-12,3.300,60,48,3,80,134,69,123,0.138,1.023E+00
+job.pdb,3vcz_C 1.80 Angstrom resolution crystal structure of a putative translation initiation inhibitor from Vibrio vulnificus CMCP6,unclassified,9.200,130,95,12,20,136,8,127,0.138,1.087E+00
+job.pdb,3lme_L Structure of probable translation initiation inhibitor from (RPA2473) from Rhodopseudomonas palustris,Rhodopseudomonas palustris CGA009,11.100,135,101,10,13,137,3,128,0.138,7.553E-01
+job.pdb,3lyb_C Structure of putative endoribonuclease(KP1_3112) from Klebsiella pneumoniae,unclassified,7.100,84,64,4,60,137,57,132,0.138,4.937E-01
+job.pdb,"3re3_A Crystal Structure of 2-C-Methyl-D-Erythritol 2,4-Cyclodiphosphate Synthase from Francisella tularensis",Francisella tularensis subsp. tularensis SCHU S4,7.600,144,83,8,37,136,7,144,0.138,1.758E-01
+job.pdb,3d01_L Crystal structure of the protein Atu1372 with unknown function from Agrobacterium tumefaciens,Agrobacterium fabrum str. C58,15.100,132,71,10,33,134,33,153,0.138,2.382E-01
+job.pdb,4kq9_A Crystal structure of periplasmic ribose ABC transporter from Conexibacter woesei DSM 14684,Conexibacter woesei DSM 14684,7.600,65,50,5,58,121,111,166,0.138,9.062E-01
+job.pdb,2q1x_A Crystal Structure of cell division protein FtsZ from Mycobacterium tuberculosis in complex with citrate.,Mycobacterium tuberculosis H37Rv,13.600,110,65,11,38,136,207,297,0.138,3.644E-01
+job.pdb,"4rzs_C Lac repressor engineered to bind sucralose, unliganded tetramer",Escherichia coli K-12,11.800,59,48,3,63,121,103,157,0.138,1.023E+00
+job.pdb,1w58_1 FtsZ GMPCPP soak I213 (M. jannaschii),Methanocaldococcus jannaschii DSM 2661,14.500,110,72,7,38,140,227,321,0.138,7.108E-01
+job.pdb,"4rzs_B Lac repressor engineered to bind sucralose, unliganded tetramer",Escherichia coli K-12,11.800,59,48,3,63,121,161,215,0.138,1.023E+00
+job.pdb,2xkb_E Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,9.400,106,76,9,40,134,262,358,0.138,1.305E+00
+job.pdb,2xkb_B Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,8.400,106,77,7,40,134,265,361,0.138,1.664E+00
+job.pdb,4ffb_B A TOG:alpha/beta-tubulin Complex Structure Reveals Conformation-Based Mechanisms For a Microtubule Polymerase,Saccharomyces cerevisiae S288C,9.100,109,75,7,40,134,260,358,0.138,1.023E+00
+job.pdb,7rro_OL Structure of the 48-nm repeat doublet microtubule from bovine tracheal cilia,unclassified,2.800,70,53,6,79,137,308,373,0.138,5.246E-01
+job.pdb,1dp4_A DIMERIZED HORMONE BINDING DOMAIN OF THE ATRIAL NATRIURETIC PEPTIDE RECEPTOR,Rattus norvegicus,9.500,63,51,3,59,120,130,187,0.138,7.108E-01
+job.pdb,5ij9_A Cryo EM density of microtubule assembled from human TUBB3-D417H mutant,Homo sapiens,9.000,122,77,9,38,135,263,374,0.138,4.372E-01
+job.pdb,4xaq_A mGluR2 ECD and mGluR3 ECD with ligands,Homo sapiens,13.800,65,46,3,59,123,144,198,0.138,7.553E-01
+job.pdb,6qvp_F Crystal structure of the peptidoglycan-binding domain of SiiA from Salmonella enterica,Salmonella enterica subsp. enterica serovar Typhimurium,13.300,75,54,7,63,133,27,94,0.126,8.528E-01
+job.pdb,1jd1_D Crystal Structure of YEO7_yeast,Saccharomyces cerevisiae S288C,10.600,131,85,8,21,134,7,122,0.126,8.528E-01
+job.pdb,6tcd_F Crystal structure of Salmo salar RidA-2,Salmo salar,10.000,90,57,5,60,138,50,126,0.126,4.372E-01
+job.pdb,3i3f_A Hypothetical protein from Giardia lamblia GL50803_14299,Giardia lamblia ATCC 50803,10.800,74,57,6,67,134,58,128,0.126,7.108E-01
+job.pdb,6tcd_D Crystal structure of Salmo salar RidA-2,Salmo salar,13.700,138,87,11,15,138,14,133,0.126,6.689E-01
+job.pdb,"1vh8_A Crystal structure of a 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Haemophilus influenzae Rd KW20,6.200,159,83,10,36,137,1,150,0.126,3.644E-01
+job.pdb,3jvd_B Crystal structure of putative transcription regulation repressor (LACI family) FROM Corynebacterium glutamicum,Corynebacterium glutamicum ATCC 13032,9.200,65,51,2,58,122,90,146,0.126,1.664E+00
+job.pdb,5v68_A Crystal structure of cell division protein FtsZ from Mycobacterium tuberculosis bounded via the T9 loop,Mycobacterium tuberculosis H37Rv,12.900,108,65,9,38,134,172,261,0.126,4.937E-01
+job.pdb,"4zjp_A Structure of an ABC-Transporter Solute Binding Protein (SBP_IPR025997) from Actinobacillus Succinogenes (Asuc_0197, TARGET EFI-511067) with bound beta-D-ribopyranose",Actinobacillus succinogenes 130Z,4.600,65,53,4,58,121,104,160,0.126,1.664E+00
+job.pdb,"4rzs_D Lac repressor engineered to bind sucralose, unliganded tetramer",Escherichia coli K-12,11.800,59,48,3,63,121,103,157,0.126,1.305E+00
+job.pdb,1w55_A Structure of the Bifunctional IspDF from Campylobacter jejuni,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819,7.300,163,83,8,38,137,209,366,0.126,3.644E-01
+job.pdb,2xkb_A Crystal structure of GDP-form protofilaments of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,9.300,107,75,6,40,134,266,362,0.126,1.023E+00
+job.pdb,2bto_A Structure of BtubA from Prosthecobacter dejongeii,Prosthecobacter dejongeii,12.200,114,63,8,40,134,262,357,0.126,3.644E-01
+job.pdb,5lov_B DZ-2384 tubulin complex,Bos taurus,8.000,62,51,2,79,134,299,360,0.126,6.295E-01
+job.pdb,6ls4_A A novel anti-tumor agent S-40 in complex with tubulin,Sus scrofa,8.000,125,75,7,38,137,267,376,0.126,3.872E-01
+job.pdb,6l8p_C Crystal structure of RidA from Antarctic bacterium Psychrobacter sp. PAMC 21119,Psychrobacter sp. MES7-P7E,7.100,126,98,8,20,136,9,124,0.116,1.155E+00
+job.pdb,1dbf_C CHORISMATE MUTASE FROM BACILLUS SUBTILIS AT 1.30 ANGSTROM,Bacillus subtilis subsp. subtilis str. 168,3.700,106,80,5,39,134,2,95,0.116,1.768E+00
+job.pdb,1nq3_D Crystal structure of the mammalian tumor associated antigen UK114,Capra hircus,10.900,64,45,3,80,138,73,129,0.116,5.246E-01
+job.pdb,3mqw_A Crystal structure of a putative endoribonuclease L-PSP from Entamoeba histolytica with higher solvent content and an ordered N-terminal tag,Entamoeba histolytica HM-1:IMSS,7.300,82,64,4,60,136,58,132,0.116,7.553E-01
+job.pdb,2paf_B Crystal Structure of the Lactose Repressor bound to anti-inducer ONPF in induced state,Escherichia coli K-12,14.700,61,48,1,63,123,102,158,0.116,1.155E+00
+job.pdb,1drk_A PROBING PROTEIN-PROTEIN INTERACTIONS: THE RIBOSE-BINDING PROTEIN IN BACTERIAL TRANSPORT AND CHEMOTAXIS,Escherichia coli K-12,9.200,65,52,4,58,121,103,161,0.116,1.473E+00
+job.pdb,1rpj_A CRYSTAL STRUCTURE OF D-ALLOSE BINDING PROTEIN FROM ESCHERICHIA COLI,Escherichia coli K-12,16.400,67,46,7,58,121,113,172,0.116,2.121E+00
+job.pdb,5v68_E Crystal structure of cell division protein FtsZ from Mycobacterium tuberculosis bounded via the T9 loop,Mycobacterium tuberculosis H37Rv,7.200,110,70,8,38,135,207,296,0.116,5.924E-01
+job.pdb,5o09_1A BtubABC mini microtubule,Prosthecobacter dejongeii,10.400,67,47,3,76,132,309,372,0.116,9.062E-01
+job.pdb,6qvp_E Crystal structure of the peptidoglycan-binding domain of SiiA from Salmonella enterica,Salmonella enterica subsp. enterica serovar Typhimurium,13.700,116,61,12,39,133,1,98,0.106,2.858E-01
+job.pdb,2cht_G CRYSTAL STRUCTURES OF THE MONOFUNCTIONAL CHORISMATE MUTASE FROM BACILLUS SUBTILIS AND ITS COMPLEX WITH A TRANSITION STATE ANALOG,Bacillus subtilis subsp. subtilis str. 168,6.700,103,80,5,39,134,1,94,0.106,2.704E+00
+job.pdb,5yxy_D Crystal structure of the HyhL-HypA complex (form I),Thermococcus kodakarensis KOD1,10.600,66,55,3,60,123,2,65,0.106,1.996E+00
+job.pdb,5yy0_B Crystal structure of the HyhL-HypA complex (form II),Thermococcus kodakarensis KOD1,9.200,65,55,1,60,124,6,66,0.106,2.254E+00
+job.pdb,"3fpi_A Crystal Structure of 2-C-Methyl-D-Erythritol 2,4-Cyclodiphosphate Synthase IspF complexed with Cytidine Triphosphate",Yersinia pestis,11.700,85,53,4,67,137,80,156,0.106,8.528E-01
+job.pdb,"5brn_B Human HGPRT in complex with (S)-HPEPHx, an acyclic nucleoside phosphonate",Homo sapiens,15.100,66,50,3,59,123,37,97,0.106,7.108E-01
+job.pdb,5v68_D Crystal structure of cell division protein FtsZ from Mycobacterium tuberculosis bounded via the T9 loop,Mycobacterium tuberculosis H37Rv,10.300,106,67,9,38,133,124,211,0.106,6.295E-01
+job.pdb,7e7m_C Crystal Structure Analysis of the Streptococcus agalactiae Ribose Binding Protein RbsB,Streptococcus agalactiae 2603V/R,10.600,66,50,4,58,122,111,168,0.106,3.245E+00
+job.pdb,2xka_C Crystal structure of a GTPyS-form protofilament of Bacillus thuringiensis serovar israelensis TubZ,Bacillus thuringiensis serovar israelensis,9.700,113,77,10,40,138,272,373,0.106,2.121E+00
+job.pdb,7z2p_B Tubulin-nocodazole complex,Bos taurus,8.200,85,64,4,63,134,281,364,0.106,8.026E-01
+job.pdb,7rro_HB Structure of the 48-nm repeat doublet microtubule from bovine tracheal cilia,unclassified,6.000,66,48,4,79,134,308,369,0.106,1.386E+00
+job.pdb,3quw_A Crystal structure of yeast Mmf1,Saccharomyces cerevisiae S288C,6.100,81,62,5,60,134,50,122,0.098,1.473E+00
+job.pdb,3lme_F Structure of probable translation initiation inhibitor from (RPA2473) from Rhodopseudomonas palustris,Rhodopseudomonas palustris CGA009,9.600,114,83,9,34,136,23,127,0.098,1.386E+00
+job.pdb,3mqw_F Crystal structure of a putative endoribonuclease L-PSP from Entamoeba histolytica with higher solvent content and an ordered N-terminal tag,Entamoeba histolytica HM-1:IMSS,6.000,82,65,3,60,136,59,133,0.098,1.023E+00
+job.pdb,5aup_H Crystal structure of the HypAB complex,Thermococcus kodakarensis KOD1,14.000,71,54,5,57,124,1,67,0.098,2.121E+00
+job.pdb,3mqw_C Crystal structure of a putative endoribonuclease L-PSP from Entamoeba histolytica with higher solvent content and an ordered N-terminal tag,Entamoeba histolytica HM-1:IMSS,6.000,82,65,3,60,136,62,136,0.098,1.087E+00
+job.pdb,3mqw_D Crystal structure of a putative endoribonuclease L-PSP from Entamoeba histolytica with higher solvent content and an ordered N-terminal tag,Entamoeba histolytica HM-1:IMSS,6.000,82,65,3,60,136,67,141,0.098,1.087E+00
+job.pdb,"3b6n_A Crystal structure of 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase PV003920 from Plasmodium vivax",Plasmodium vivax Sal-1,12.500,80,56,5,67,135,69,145,0.098,3.037E-01
+job.pdb,5xss_X XylFII molecule,Clostridium beijerinckii NCIMB 8052,10.600,66,47,4,60,121,106,163,0.098,3.227E-01
+job.pdb,7rro_O0 Structure of the 48-nm repeat doublet microtubule from bovine tracheal cilia,unclassified,7.100,70,56,3,76,137,305,373,0.098,6.295E-01
+job.pdb,5kx5_D Crystal structure of tubulin-stathmin-TTL-Compound 11 complex,Ovis aries,10.100,89,57,8,64,134,281,364,0.098,1.305E+00
+job.pdb,4xaq_B mGluR2 ECD and mGluR3 ECD with ligands,Homo sapiens,13.400,67,48,4,59,125,143,199,0.098,1.386E+00
+job.pdb,5flz_D Cryo-EM structure of gamma-TuSC oligomers in a closed conformation,Saccharomyces cerevisiae S288C,7.800,115,83,7,42,135,268,380,0.098,8.026E-01
+job.pdb,6g81_A Solution structure of the Ni metallochaperone HypA from Helicobacter pylori,Helicobacter pylori J99,10.200,68,56,3,57,120,1,67,0.090,2.545E+00
+job.pdb,"1com_C THE MONOFUNCTIONAL CHORISMATE MUTASE FROM BACILLUS SUBTILIS: STRUCTURE DETERMINATION OF CHORISMATE MUTASE AND ITS COMPLEXES WITH A TRANSITION STATE ANALOG AND PREPHENATE, AND IMPLICATIONS ON THE MECHANISM OF ENZYMATIC REACTION",Bacillus subtilis subsp. subtilis str. 168,5.600,107,77,6,39,134,1,94,0.090,2.121E+00
+job.pdb,5yxy_F Crystal structure of the HyhL-HypA complex (form I),Thermococcus kodakarensis KOD1,9.300,64,54,1,60,123,6,65,0.090,2.704E+00
+job.pdb,1jd1_F Crystal Structure of YEO7_yeast,Saccharomyces cerevisiae S288C,10.600,122,85,7,26,134,12,122,0.090,9.062E-01
+job.pdb,1x25_A Crystal Structure of a Member of YjgF Family from Sulfolobus Tokodaii (ST0811),Sulfurisphaera tokodaii str. 7,14.200,70,41,5,70,134,69,124,0.090,4.937E-01
+job.pdb,6tcd_A Crystal structure of Salmo salar RidA-2,Salmo salar,10.000,90,57,5,60,138,51,127,0.090,8.026E-01
+job.pdb,1x25_B Crystal Structure of a Member of YjgF Family from Sulfolobus Tokodaii (ST0811),Sulfurisphaera tokodaii str. 7,14.200,70,41,5,70,134,70,125,0.090,4.937E-01
+job.pdb,2dri_A PROBING PROTEIN-PROTEIN INTERACTIONS: THE RIBOSE BINDING PROTEIN IN BACTERIAL TRANSPORT AND CHEMOTAXIS,Escherichia coli K-12,9.200,65,52,4,58,121,103,161,0.090,2.254E+00
+job.pdb,2gx6_A Rational stabilization of E. coli ribose binding protein,Escherichia coli K-12,10.700,65,51,4,58,121,103,161,0.090,1.768E+00
+job.pdb,1jyf_A Structure of the Dimeric Lac Repressor with an 11-residue C-terminal Deletion.,Escherichia coli K-12,14.500,62,46,2,60,121,102,156,0.090,1.996E+00
+job.pdb,2ipn_A Crystal structure of a disulfide mutant glucose binding protein,Escherichia coli K-12,19.100,68,50,3,58,124,117,180,0.090,1.305E+00
+job.pdb,3ma0_C Closed liganded crystal structure of xylose binding protein from Escherichia coli,Escherichia coli K-12,15.300,78,53,6,56,125,96,168,0.090,9.630E-01
+job.pdb,3pnq_C Crystal Structure of E.coli Dha kinase DhaK (H56N) complex with Dha,Escherichia coli K-12,11.800,59,44,5,83,134,256,313,0.090,1.878E+00
+job.pdb,3cb2_B Crystal structure of human gamma-tubulin bound to GDP,Homo sapiens,8.600,69,45,6,78,133,296,359,0.090,1.155E+00
+job.pdb,6qvp_A Crystal structure of the peptidoglycan-binding domain of SiiA from Salmonella enterica,Salmonella enterica subsp. enterica serovar Typhimurium,8.100,111,73,11,39,133,1,98,0.082,1.087E+00
+job.pdb,3r0p_F Crystal structure of L-PSP putative endoribonuclease from uncultured organism,uncultured organism,9.600,114,82,8,34,136,23,126,0.082,2.704E+00
+job.pdb,3a44_B Crystal structure of HypA in the dimeric form,Thermococcus kodakarensis KOD1,12.100,66,57,1,59,124,2,66,0.082,6.330E+00
+job.pdb,1qah_B CRYSTAL STRUCTURE OF PERCHLORIC ACID SOLUBLE PROTEIN-A TRANSLATIONAL INHIBITOR,Rattus norvegicus,7.600,65,46,4,80,138,74,130,0.082,9.062E-01
+job.pdb,1nq3_A Crystal structure of the mammalian tumor associated antigen UK114,Capra hircus,6.100,65,47,4,80,138,73,129,0.082,5.924E-01
+job.pdb,3mqw_E Crystal structure of a putative endoribonuclease L-PSP from Entamoeba histolytica with higher solvent content and an ordered N-terminal tag,Entamoeba histolytica HM-1:IMSS,6.000,82,65,3,60,136,61,135,0.082,1.473E+00
+job.pdb,3mqw_B Crystal structure of a putative endoribonuclease L-PSP from Entamoeba histolytica with higher solvent content and an ordered N-terminal tag,Entamoeba histolytica HM-1:IMSS,6.000,82,65,3,60,136,66,140,0.082,1.473E+00
+job.pdb,"5esv_F Crystal Structure of Broadly Neutralizing Antibody CH03, Isolated from Donor CH0219, in Complex with Scaffolded Trimeric HIV-1 Env V1V2 Domain from the Clade C Superinfecting Strain of Donor CAP256.",Haemophilus influenzae Rd KW20,8.000,112,65,5,60,139,71,176,0.082,1.023E+00
+job.pdb,"5bsk_C Human HGPRT in complex with (S)-HPEPG, an acyclic nucleoside phosphonate",Homo sapiens,15.100,66,50,4,59,123,35,95,0.082,1.386E+00
+job.pdb,1dbp_A IDENTICAL MUTATIONS AT CORRESPONDING POSITIONS IN TWO HOMOLOGOUS PROTEINS WITH NON-IDENTICAL EFFECTS,Escherichia coli K-12,9.200,65,52,4,58,121,103,161,0.082,2.545E+00
+job.pdb,2iu4_A Dihydroxyacetone kinase operon co-activator Dha-DhaQ,Lactococcus lactis subsp. lactis Il1403,10.700,84,56,6,64,132,220,299,0.082,1.473E+00
+job.pdb,3qw2_D L-myo-inositol 1-phosphate synthase from Archaeoglobus mutant N255A,Archaeoglobus fulgidus DSM 4304,14.400,90,56,6,61,135,231,314,0.082,8.026E-01
+job.pdb,1dp4_C DIMERIZED HORMONE BINDING DOMAIN OF THE ATRIAL NATRIURETIC PEPTIDE RECEPTOR,Rattus norvegicus,9.000,66,51,4,60,124,131,188,0.082,1.155E+00
+job.pdb,7rro_VE Structure of the 48-nm repeat doublet microtubule from bovine tracheal cilia,unclassified,5.100,78,48,4,76,132,299,371,0.082,8.026E-01
+job.pdb,"2cwj_A crystal structure of APE1501, a putative endonuclease from Aeropyrum pernix",Aeropyrum pernix K1,7.200,69,48,4,73,136,59,116,0.076,5.924E-01
+job.pdb,1vm6_B Crystal structure of Dihydrodipicolinate reductase (TM1520) from Thermotoga maritima at 2.27 A resolution,Thermotoga maritima MSB8,12.300,89,62,6,57,142,105,180,0.076,1.155E+00
+job.pdb,"4lrt_D Crystal and solution structures of the bifunctional enzyme (Aldolase/Aldehyde dehydrogenase) from Thermomonospora curvata, reveal a cofactor-binding domain motion during NAD+ and CoA accommodation whithin the shared cofactor-binding site",Thermomonospora curvata DSM 43183,7.200,96,74,6,56,141,123,213,0.076,1.566E+00
+job.pdb,"4e6e_A Crystal structure of a putative cell division protein FtsZ (Tfu_1113) from Thermobifida fusca YX-ER1 at 2.22 A resolution (PSI Community Target, van Wezel G.P.)",Thermobifida fusca YX,14.400,104,66,7,40,135,211,299,0.076,2.395E+00
+job.pdb,3gbp_A STRUCTURE OF THE PERIPLASMIC GLUCOSE/GALACTOSE RECEPTOR OF SALMONELLA TYPHIMURIUM,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,14.000,71,52,3,58,123,112,178,0.076,3.245E+00
+job.pdb,1gca_A THE 1.7 ANGSTROMS REFINED X-RAY STRUCTURE OF THE PERIPLASMIC GLUCOSE(SLASH)GALACTOSE RECEPTOR FROM SALMONELLA TYPHIMURIUM,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,14.000,71,52,3,58,123,114,180,0.076,3.054E+00
+job.pdb,1u1i_D Myo-inositol phosphate synthase mIPS from A. fulgidus,Archaeoglobus fulgidus DSM 4304,15.000,73,51,4,61,125,231,300,0.076,1.228E+00
+job.pdb,5cnj_A mGlur2 with glutamate analog,Homo sapiens,9.000,66,50,4,59,124,145,200,0.076,2.704E+00
+job.pdb,3a43_B Crystal structure of HypA,Thermococcus kodakarensis KOD1,7.400,67,57,3,59,123,2,65,0.069,3.448E+00
+job.pdb,3a44_C Crystal structure of HypA in the dimeric form,Thermococcus kodakarensis KOD1,10.000,70,54,2,59,124,2,66,0.069,4.396E+00
+job.pdb,5yxy_E Crystal structure of the HyhL-HypA complex (form I),Thermococcus kodakarensis KOD1,12.100,66,55,2,59,123,2,65,0.069,6.330E+00
+job.pdb,5aup_A Crystal structure of the HypAB complex,Thermococcus kodakarensis KOD1,12.600,71,53,5,57,123,1,66,0.069,3.054E+00
+job.pdb,1eke_B CRYSTAL STRUCTURE OF CLASS II RIBONUCLEASE H (RNASE HII) WITH MES LIGAND,Methanocaldococcus jannaschii DSM 2661,7.100,70,63,2,55,122,74,143,0.069,3.894E+00
+job.pdb,1drj_A PROBING PROTEIN-PROTEIN INTERACTIONS: THE RIBOSE-BINDING PROTEIN IN BACTERIAL TRANSPORT AND CHEMOTAXIS,Escherichia coli K-12,9.200,65,52,4,58,121,103,161,0.069,3.448E+00
+job.pdb,2ipm_A Crystal structure of a disulfide mutant glucose binding protein,Escherichia coli K-12,19.100,68,50,3,58,124,118,181,0.069,2.254E+00
+job.pdb,"4y9t_A CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM AGROBACTERIUM VITIS S4 (Avi_5305, TARGET EFI-511224) WITH BOUND ALPHA-D-GLUCOSAMINE",Agrobacterium vitis S4,5.900,67,56,4,60,122,102,165,0.069,3.245E+00
+job.pdb,2liv_A PERIPLASMIC BINDING PROTEIN STRUCTURE AND FUNCTION. REFINED X-RAY STRUCTURES OF THE LEUCINE/ISOLEUCINE/VALINE-BINDING PROTEIN AND ITS COMPLEX WITH LEUCINE,Escherichia coli K-12,10.400,67,48,3,58,124,123,177,0.069,2.254E+00
+job.pdb,7cbg_B Crystal structure of threonyl-tRNA synthetase (ThrRS) from Salmonella enterica in complex with an inhibitor,Salmonella enterica subsp. enterica serovar Cubana str. 76814,8.600,81,66,4,58,132,152,230,0.069,4.396E+00
+job.pdb,7m2z_A Monomeric single-particle reconstruction of the Yeast gamma-TuSC,Saccharomyces cerevisiae S288C,4.100,72,50,4,78,134,306,373,0.069,3.054E+00
+job.pdb,"3m1x_A Crystal structure of a putative endoribonuclease L-PSP from Entamoeba histolytica, rhomobohedral form",Entamoeba histolytica HM-1:IMSS,6.400,78,61,3,60,132,51,121,0.063,2.121E+00
+job.pdb,3r0p_A Crystal structure of L-PSP putative endoribonuclease from uncultured organism,uncultured organism,8.300,131,92,10,20,136,9,125,0.063,2.704E+00
+job.pdb,1nq3_E Crystal structure of the mammalian tumor associated antigen UK114,Capra hircus,6.100,65,47,4,80,138,74,130,0.063,1.386E+00
+job.pdb,2ig8_C Crystal structure of a Protein of Unknown Function PA3499 from Pseudomonas aeruginosa,Pseudomonas aeruginosa PAO1,8.300,84,64,4,60,137,57,133,0.063,1.878E+00
+job.pdb,"2amt_F Structure of 2C-Methyl-D-Erythritol 2,4-Clycodiphosphate Synthase complexed with a CDP derived fluorescent inhibitor",Escherichia coli K-12,8.000,87,61,5,64,136,74,155,0.063,1.305E+00
+job.pdb,"7san_A Crystal structure of human hypoxanthine guanine phosphoribzosyltransferase in complex with (4S,7S)-7-hydroxy-4-((guanin-9-yl)methyl)-2,5-dioxaheptan-1,7-diphosphonate",Homo sapiens,14.900,67,51,4,59,124,37,98,0.063,2.874E+00
+job.pdb,"4rao_A Aza-acyclic nucleoside phosphonates containing a second phosphonate group as inhibitors of the human, Plasmodium falciparum and vivax 6-oxopurine phosphoribosyltransferases and their pro-drugs as antimalarial agents",Homo sapiens,12.100,66,51,6,59,123,40,99,0.063,2.545E+00
+job.pdb,"6bnj_D Human hypoxanthine guanine phosphoribosyltransferase in complex with [3R,4R]-4-guanin-9-yl-3-((R)-2-hydroxy-2-phosphonoethyl)oxy-1-N-(phosphonopropionyl)pyrrolidine",Homo sapiens,10.600,66,53,5,59,123,41,101,0.063,1.768E+00
+job.pdb,"4joq_A Putative ribose ABC transporter, periplasmic solute-binding protein from Rhodobacter sphaeroides",Cereibacter sphaeroides ATCC 17025,5.000,59,51,3,63,120,114,168,0.063,2.121E+00
+job.pdb,1nvm_D Crystal structure of a bifunctional aldolase-dehydrogenase : sequestering a reactive and volatile intermediate,Pseudomonas sp. CF600,6.500,76,59,7,57,125,128,198,0.063,3.054E+00
+job.pdb,7rro_SE Structure of the 48-nm repeat doublet microtubule from bovine tracheal cilia,unclassified,5.000,79,50,4,79,137,300,373,0.063,8.528E-01
+job.pdb,"5kzq_A Metabotropic Glutamate Receptor in complex with antagonist (1~{S},2~{R},3~{S},4~{S},5~{R},6~{R})-2-azanyl-3-[[3,4-bis(fluoranyl)phenyl]sulfanylmethyl]-4-oxidanyl-bicyclo[3.1.0]hexane-2,6-dicarboxylic acid",Homo sapiens,13.000,115,61,5,57,171,138,213,0.063,1.386E+00
+job.pdb,1la2_B Structural analysis of Saccharomyces cerevisiae myo-inositol phosphate synthase,Saccharomyces cerevisiae S288C,13.100,91,60,4,65,136,312,402,0.063,2.121E+00
+job.pdb,7e9g_S Cryo-EM structure of Gi-bound metabotropic glutamate receptor mGlu2,Homo sapiens,13.600,66,46,3,58,123,143,197,0.063,3.448E+00
+job.pdb,6iev_A Crystal structure of a designed protein,unclassified,6.300,47,40,3,76,122,18,60,0.057,1.768E+00
+job.pdb,2iks_B Crystal structure of N-terminal truncated DNA-binding transcriptional dual regulator from Escherichia coli K12,Escherichia coli K-12,18.400,65,41,4,58,122,105,157,0.057,1.386E+00
+job.pdb,1nve_D Crystal structure of 3-dehydroquinate synthase (DHQS) in complex with ZN2+ and NAD,Aspergillus nidulans FGSC A4,10.900,55,47,2,71,125,25,77,0.057,3.448E+00
+job.pdb,7l3o_D Crystal Structure of the RNA binding domain of Threonyl-tRNA synthetase from Cryptosporidium parvum Iowa II,Cryptosporidium parvum Iowa II,18.500,70,49,4,58,124,153,217,0.057,4.137E+00
+job.pdb,4xas_A mGluR2 ECD ligand complex,Homo sapiens,13.000,69,51,3,57,125,139,198,0.057,3.448E+00
+job.pdb,1qf6_A STRUCTURE OF E. COLI THREONYL-TRNA SYNTHETASE COMPLEXED WITH ITS COGNATE TRNA,Escherichia coli K-12,11.500,69,52,3,60,124,393,456,0.057,3.664E+00
+job.pdb,7mtq_A CryoEM Structure of Full-Length mGlu2 in Inactive-State Bound to Antagonist LY341495,Homo sapiens,12.500,64,47,4,61,124,142,196,0.057,2.704E+00
+job.pdb,2w8b_H Crystal structure of processed TolB in complex with Pal,Escherichia coli K-12,11.700,94,54,6,61,130,17,105,0.051,1.473E+00
+job.pdb,3a43_A Crystal structure of HypA,Thermococcus kodakarensis KOD1,6.000,99,61,4,60,158,6,72,0.051,2.254E+00
+job.pdb,5xss_C XylFII molecule,Clostridium beijerinckii NCIMB 8052,10.600,66,47,4,60,121,106,163,0.051,1.566E+00
+job.pdb,"4z0n_A Crystal Structure of a Periplasmic Solute binding protein (IPR025997) from Streptobacillus moniliformis DSM-12112 (Smon_0317, TARGET EFI-511281) with bound D-Galactose",Streptobacillus moniliformis DSM 12112,14.100,120,61,6,58,170,112,196,0.051,1.155E+00
+job.pdb,2fw0_A Apo Open Form of Glucose/Galactose Binding Protein,Escherichia coli K-12,14.600,75,48,6,58,121,110,179,0.051,4.137E+00
+job.pdb,3wxm_D Crystal structure of archaeal Pelota and GTP-bound EF1 alpha complex,Aeropyrum pernix K1,19.600,61,37,5,63,120,277,328,0.051,1.878E+00
+job.pdb,3qvw_A L-myo-inositol 1-phosphate synthase from Archaeoglobus fulgidus mutant K278A,Archaeoglobus fulgidus DSM 4304,14.700,95,65,7,61,142,231,322,0.051,3.245E+00
+job.pdb,7rro_QA Structure of the 48-nm repeat doublet microtubule from bovine tracheal cilia,unclassified,6.900,86,49,6,75,137,298,375,0.051,5.924E-01
+job.pdb,3n2o_C X-ray crystal structure of arginine decarboxylase complexed with Arginine from Vibrio vulnificus,Vibrio vulnificus YJ016,6.800,29,27,0,96,124,306,334,0.051,8.071E+00
+job.pdb,3n2o_D X-ray crystal structure of arginine decarboxylase complexed with Arginine from Vibrio vulnificus,Vibrio vulnificus YJ016,6.800,29,27,0,96,124,307,335,0.051,8.576E+00
+job.pdb,3r0p_C Crystal structure of L-PSP putative endoribonuclease from uncultured organism,uncultured organism,11.200,125,85,10,25,136,16,127,0.045,4.396E+00
+job.pdb,4p98_A ABC transporter system solute-bindng protein from Conexibacter woesei DSM 14684,Conexibacter woesei DSM 14684,15.100,66,46,4,58,122,106,162,0.045,4.964E+00
+job.pdb,1vbk_A Crystal structure of PH1313 from Pyrococcus horikoshii Ot3,Pyrococcus horikoshii OT3,8.400,83,66,4,59,133,87,167,0.045,5.606E+00
+job.pdb,1glg_A CRYSTALLOGRAPHIC ANALYSIS OF THE EPIMERIC AND ANOMERIC SPECIFICITY OF THE PERIPLASMIC TRANSPORT(SLASH)CHEMOTACTIC PROTEIN RECEPTOR FOR D-GLUCOSE AND D-GALACTOSE,Escherichia coli K-12,17.900,67,48,5,59,123,119,180,0.045,2.874E+00
+job.pdb,6l2q_A Threonyl-tRNA synthetase from Salmonella enterica in complex with an inhibitor,Salmonella enterica subsp. enterica serovar Cubana str. 76814,8.500,129,64,6,58,137,152,275,0.045,2.395E+00
+job.pdb,4ttv_D Crystal structure of human ThrRS complexing with a bioengineered macrolide BC194,Homo sapiens,16.900,71,51,4,58,125,151,216,0.045,5.275E+00
+job.pdb,7rro_WG Structure of the 48-nm repeat doublet microtubule from bovine tracheal cilia,unclassified,5.000,80,51,4,76,135,307,381,0.045,1.305E+00
+job.pdb,1txx_A ACTIVE-SITE VARIANT OF E.COLI THIOREDOXIN,Escherichia coli K-12,19.500,41,32,1,82,122,20,59,0.040,4.137E+00
+job.pdb,2o8v_B PAPS reductase in a covalent complex with thioredoxin C35A,Escherichia coli K-12,13.900,43,36,1,80,122,18,59,0.040,3.245E+00
+job.pdb,4g4x_A Crystal structure of peptidoglycan-associated lipoprotein from Acinetobacter baumannii,unclassified,10.400,115,69,7,46,136,4,108,0.040,2.254E+00
+job.pdb,7a4h_BK Aquifex aeolicus lumazine synthase-derived nucleocapsid variant NC-2 (180-mer),Aquifex aeolicus VF5,3.800,105,60,5,58,124,46,147,0.040,3.894E+00
+job.pdb,"6top_A Structure of the PorE C-terminal domain, a protein of T9SS from Porphyromonas gingivalis",Porphyromonas gingivalis JCVI SC001,9.300,86,63,4,43,120,21,99,0.040,3.245E+00
+job.pdb,5kzn_A Metabotropic Glutamate Receptor,Homo sapiens,14.700,115,59,6,57,171,141,216,0.040,3.054E+00
+job.pdb,2w8b_E Crystal structure of processed TolB in complex with Pal,Escherichia coli K-12,10.100,69,52,2,62,125,19,82,0.034,3.054E+00
+job.pdb,5hr2_A Crystal structure of thioredoxin L94A mutant,Escherichia coli K-12,11.500,52,45,1,71,122,9,59,0.034,2.395E+00
+job.pdb,"6top_C Structure of the PorE C-terminal domain, a protein of T9SS from Porphyromonas gingivalis",Porphyromonas gingivalis JCVI SC001,8.000,87,68,3,44,125,18,97,0.034,3.448E+00
+job.pdb,7a4f_JB Aquifex aeolicus lumazine synthase-derived nucleocapsid variant NC-1 (120-mer),unclassified,7.400,81,53,4,62,125,49,124,0.034,8.576E+00
+job.pdb,4ry8_B Crystal structure of 5-methylthioribose transporter solute binding protein TLET_1677 from Thermotoga lettingae TMO TARGET EFI-511109 in complex with 5-methylthioribose,Pseudothermotoga lettingae TMO,11.400,61,43,4,60,119,116,166,0.034,9.113E+00
+job.pdb,3cin_A CRYSTAL STRUCTURE OF A MYO-INOSITOL-1-PHOSPHATE SYNTHASE-RELATED PROTEIN (TM_1419) FROM THERMOTOGA MARITIMA MSB8 AT 1.70 A RESOLUTION,Thermotoga maritima MSB8,10.100,89,65,6,65,139,216,303,0.034,6.330E+00
+job.pdb,3h5l_A Crystal structure of a putative branched-chain amino acid ABC transporter from Silicibacter pomeroyi,Ruegeria pomeroyi DSS-3,9.800,71,53,5,60,125,128,192,0.034,5.957E+00
+job.pdb,7rro_PL Structure of the 48-nm repeat doublet microtubule from bovine tracheal cilia,unclassified,13.600,66,45,4,78,134,306,368,0.034,3.894E+00
+job.pdb,1p1h_C Crystal structure of the 1L-myo-inositol/NAD+ complex,Saccharomyces cerevisiae S288C,11.200,116,61,10,60,137,317,428,0.034,1.996E+00
+job.pdb,5j7d_D Computationally Designed Thioredoxin dF106,unclassified,17.500,40,30,2,83,120,19,57,0.029,4.964E+00
+job.pdb,2h72_B Crystal Structure of Thioredoxin mutant E85D in Hexagonal (p61) Space Group,Escherichia coli K-12,13.900,43,36,1,80,122,18,59,0.029,4.964E+00
+job.pdb,4hu7_A E. coli thioredoxin variant with Pro76 as single proline residue,Escherichia coli K-12,13.900,43,36,1,80,122,18,59,0.029,4.964E+00
+job.pdb,4xhm_B Archaeoglobus fulgidus thioredoxin 3 M60H,Archaeoglobus fulgidus DSM 4304,10.000,50,41,2,73,122,16,61,0.029,3.245E+00
+job.pdb,2ig8_B Crystal structure of a Protein of Unknown Function PA3499 from Pseudomonas aeruginosa,Pseudomonas aeruginosa PAO1,8.000,87,61,6,60,137,57,133,0.029,2.121E+00
+job.pdb,3v3t_A Crystal structure of Clostridium botulinum phage c-st TubZ,Clostridium phage c-st,8.400,59,42,2,81,139,237,283,0.029,4.137E+00
+job.pdb,3n0x_A Crystal structure of an ABC-type branched-chain amino acid transporter (RPA4397) from Rhodopseudomonas palustris CGA009 at 1.50 A resolution,Rhodopseudomonas palustris CGA009,12.100,66,44,5,60,123,120,173,0.029,2.874E+00
+job.pdb,7wm7_B Threonyl-tRNA synthetase from Salmonella enterica in complex with an inhibitor,Salmonella enterica subsp. enterica serovar Cubana str. 76814,11.300,79,58,4,58,129,152,225,0.029,9.684E+00
+job.pdb,4p3n_C Structural Basis for Full-Spectrum Inhibition of Threonyl-tRNA Synthetase by Borrelidin 1,Homo sapiens,17.100,70,49,5,60,125,151,215,0.029,8.071E+00
+job.pdb,4tn8_A Crystal structure of Thermus Thermophilus thioredoxin solved by sulfur SAD using Swiss Light Source data,Thermus thermophilus HB27,15.700,38,31,1,84,121,18,54,0.024,7.147E+00
+job.pdb,6h7j_F ACTIVATED TURKEY BETA1 ADRENOCEPTOR WITH BOUND AGONIST ISOPRENALINE AND NANOBODY Nb80,Escherichia coli K-12,14.600,41,34,1,82,122,19,58,0.024,5.606E+00
+job.pdb,4hua_A E. coli thioredoxin variant with (4R)-FluoroPro76 as single proline residue,Escherichia coli K-12,13.900,43,36,1,80,122,18,59,0.024,6.726E+00
+job.pdb,5hr0_B Crystal structure of thioredoxin E101G mutant,Escherichia coli K-12,15.300,39,32,1,84,122,22,59,0.024,6.726E+00
+job.pdb,2tir_A CRYSTAL STRUCTURE ANALYSIS OF A MUTANT ESCHERICHIA COLI THIOREDOXIN IN WHICH LYSINE 36 IS REPLACED BY GLUTAMIC ACID,Escherichia coli K-12,17.000,41,33,1,82,122,20,59,0.024,6.726E+00
+job.pdb,5hr0_A Crystal structure of thioredoxin E101G mutant,Escherichia coli K-12,13.900,43,36,1,80,122,18,59,0.024,6.330E+00
+job.pdb,6lyx_A Crystal structure of oxidized ACHT1,Arabidopsis thaliana,4.400,45,39,2,78,122,27,67,0.024,4.964E+00
+job.pdb,2hph_A High resolution structure of E. coli glucose/galactose binding protein bound with glucose,Escherichia coli K-12,10.600,75,48,7,58,121,114,180,0.024,2.874E+00
+job.pdb,7scd_A Ternary complex of fixed-arm Trx-3ost5 (I299E) with 8mer-1 octasaccharide substrate and co-factor product PAP,Homo sapiens,14.600,41,34,1,82,122,20,59,0.024,6.330E+00
+job.pdb,1nva_B Crystal structure of 3-dehydroquinate synthase (DHQS) in complex with ZN2+ and ADP,Aspergillus nidulans FGSC A4,10.700,56,46,3,71,124,24,77,0.024,6.330E+00
+job.pdb,2yzu_A Crystal structure of oxidized thioredoxin from Thermus thermophilus HB8,Thermus thermophilus HB8,15.700,38,30,1,84,121,19,54,0.020,6.726E+00
+job.pdb,2oe3_B Crystal Structure of Mitochondrial Thioredoxin 3 from Saccharomyces cerevisiae (oxidized form),Saccharomyces cerevisiae S288C,10.500,38,32,2,84,120,22,58,0.020,7.595E+00
+job.pdb,4hu7_B E. coli thioredoxin variant with Pro76 as single proline residue,Escherichia coli K-12,13.900,43,36,1,80,122,15,56,0.020,6.726E+00
+job.pdb,6h7j_E ACTIVATED TURKEY BETA1 ADRENOCEPTOR WITH BOUND AGONIST ISOPRENALINE AND NANOBODY Nb80,Escherichia coli K-12,15.300,39,32,1,84,122,20,57,0.020,7.595E+00
+job.pdb,2eiq_B Design of Disulfide-linked Thioredoxin Dimers and Multimers Through Analysis of Crystal Contacts,Escherichia coli K-12,15.300,39,32,1,84,122,22,59,0.020,8.071E+00
+job.pdb,6h7o_F ACTIVATED TURKEY BETA1 ADRENOCEPTOR WITH BOUND WEAK PARTIAL AGONIST CYANOPINDOLOL AND NANOBODY Nb6B9,Escherichia coli K-12,13.900,43,36,1,80,122,17,58,0.020,6.726E+00
+job.pdb,2trx_B CRYSTAL STRUCTURE OF THIOREDOXIN FROM ESCHERICHIA COLI AT 1.68 ANGSTROMS RESOLUTION,Escherichia coli K-12,13.400,52,43,2,72,122,9,59,0.020,5.606E+00
+job.pdb,5wtp_A Crystal structure of the C-terminal domain of outer membrane protein A (OmpA) from Capnocytophaga gingivalis,Capnocytophaga gingivalis ATCC 33624,7.300,68,50,3,68,125,35,99,0.020,5.957E+00
+job.pdb,5xoc_B Crystal structure of human Smad3-FoxH1 complex,Escherichia coli K-12,13.700,51,42,2,72,122,10,58,0.020,4.964E+00
+job.pdb,6nf8_c Structure of human mitochondrial translation initiation factor 3 bound to the small ribosomal subunit -Class I,Bos taurus,12.000,58,43,4,69,120,12,67,0.020,3.894E+00
+job.pdb,7unf_c CryoEM structure of a mEAK7 bound human V-ATPase complex,Homo sapiens,8.000,62,49,3,60,120,106,160,0.020,8.071E+00
+job.pdb,4xkz_A Crystal structure of the C-terminal anticodon loop binding domain of a valyl-tRNA synthetase from Pseudomonas aeruginosa,Pseudomonas aeruginosa PAO1,8.700,91,53,6,61,130,165,246,0.020,9.113E+00
+job.pdb,3qou_A Crystal Structure of E. coli YbbN,Escherichia coli K-12,15.300,39,32,1,84,122,23,60,0.020,7.147E+00
+job.pdb,1vbk_B Crystal structure of PH1313 from Pyrococcus horikoshii Ot3,Pyrococcus horikoshii OT3,7.400,107,72,8,44,137,72,164,0.020,6.726E+00
+job.pdb,5kws_A Crystal Structure of Galactose Binding Protein from Yersinia pestis in the Complex with beta D Glucose,Yersinia pestis,10.600,75,48,5,58,121,114,180,0.020,4.396E+00
+job.pdb,5bz4_J Crystal structure of a T1-like thiolase (CoA-complex) from Mycobacterium smegmatis,Mycolicibacterium smegmatis MC2 155,11.800,93,65,4,36,120,1,84,0.020,5.606E+00
+job.pdb,5zy9_E Structural basis for a tRNA synthetase,Phytophthora sojae,17.900,78,44,6,60,125,147,216,0.020,9.684E+00
+job.pdb,7brg_A Atrial Natriuretic Peptide Receptor complexed with rat Atrial Natriuretic Peptide,Rattus norvegicus,11.400,70,47,7,59,124,130,188,0.020,4.137E+00
+job.pdb,6yev_E Crystal structure of MsrA C206 and Trx C35S complex from Escherichia coli,Escherichia coli K-12,13.900,43,36,1,80,122,18,59,0.016,8.576E+00
+job.pdb,5hr1_F Crystal structure of thioredoxin L107A mutant,Escherichia coli K-12,14.600,41,34,1,82,122,19,58,0.016,8.576E+00
+job.pdb,6h1y_B CRYSTAL STRUCTURE OF A CHIMERIC VARIANT OF THIOREDOXIN FROM ESCHERICHIA COLI,Saccharolobus solfataricus P2,17.900,39,31,1,84,122,21,58,0.016,8.576E+00
+job.pdb,7c3f_C Crystal structure of ferredoxin: thioredoxin reductase and thioredoxin m2 complex,Arabidopsis thaliana,2.400,41,39,1,82,122,20,59,0.016,9.113E+00
+job.pdb,"1keb_B Crystal Structure of Double Mutant M37L,P40S E.coli Thioredoxin",Escherichia coli K-12,13.900,43,36,1,80,122,18,59,0.016,8.071E+00
+job.pdb,2h75_B Crystal Structure of Thioredoxin Mutant D13E in Hexagonal (p61) Space Group,Escherichia coli K-12,13.900,43,36,1,80,122,18,59,0.016,9.684E+00
+job.pdb,5e4w_B Crystal structure of cpSRP43 chromodomains 2 and 3 in complex with the Alb3 tail,Escherichia coli O157:H7,13.900,43,36,1,80,122,17,58,0.016,8.576E+00
+job.pdb,6lyw_B Structural insight into the biological functions of Arabidopsis thaliana ACHT1,Arabidopsis thaliana,7.400,54,43,2,69,122,22,68,0.016,5.275E+00
+job.pdb,6ckp_A Crystal structure of a thioredoxin domain 2 from Brucella melitensis at 1.15 Angstrom resolution,Brucella abortus 2308,4.600,43,40,1,80,122,29,70,0.016,7.147E+00
+job.pdb,4ju5_B Crystal structure of the dimeric form of the bb' domains of human protein disulfide isomerase,Homo sapiens,15.000,40,33,1,82,120,118,157,0.016,5.957E+00
+job.pdb,"7fde_K CryoEM Structures of Reconstituted V-ATPase, Oxr1 bound V1",Saccharomyces cerevisiae S288C,11.800,76,57,7,50,124,79,145,0.016,9.113E+00
+job.pdb,3ksd_R Crystal Structure of C151S+H178N mutant of Glyceraldehyde-3-phosphate dehydrogenase 1 (GAPDH1) from Staphylococcus aureus MRSA252 complexed with NAD at 2.2 angstrom resolution,Staphylococcus aureus subsp. aureus MRSA252,13.100,114,62,8,51,130,135,245,0.016,5.275E+00
+job.pdb,1p1i_A Crystal structure of the NAD+-bound 1L-myo-inositol 1-phosphate synthase,Saccharomyces cerevisiae S288C,12.300,97,56,6,65,137,319,410,0.016,7.147E+00
+job.pdb,1p1k_B Crystal structure of the 1L-myo-inositol 1-phosphate synthase complexed with NADH in the presence of EDTA,Saccharomyces cerevisiae S288C,11.200,107,61,8,65,137,318,424,0.016,6.726E+00
+job.pdb,5ayl_A Crystal structure of ERdj5 form II,Mus musculus,15.300,39,33,0,82,120,326,364,0.016,6.726E+00
+job.pdb,6p7e_H Structure of T7 DNA Polymerase Bound to a Primer/Template DNA and a Peptide that Mimics the C-terminal Tail of the Primase-Helicase,Escherichia coli K-12,15.000,40,31,2,84,122,20,57,0.014,9.113E+00
+job.pdb,2oe3_A Crystal Structure of Mitochondrial Thioredoxin 3 from Saccharomyces cerevisiae (oxidized form),Saccharomyces cerevisiae S288C,8.100,37,34,0,84,120,24,60,0.014,6.726E+00
+job.pdb,2h72_A Crystal Structure of Thioredoxin mutant E85D in Hexagonal (p61) Space Group,Escherichia coli K-12,13.700,51,38,4,73,121,12,58,0.014,9.113E+00
+job.pdb,2h75_A Crystal Structure of Thioredoxin Mutant D13E in Hexagonal (p61) Space Group,Escherichia coli K-12,12.700,55,44,3,68,122,8,58,0.014,6.330E+00
+job.pdb,3dyr_B Crystal structure of E. coli thioredoxin mutant I76T in its oxidized form,Escherichia coli K-12,14.200,42,33,2,82,122,19,58,0.014,8.576E+00
+job.pdb,5hr3_B Crystal structure of thioredoxin N106A mutant,Escherichia coli K-12,11.500,52,45,1,71,122,8,58,0.014,8.576E+00
+job.pdb,7vqw_B de novo designed protein based on 1r26,unclassified,13.700,51,38,2,72,122,20,64,0.014,7.147E+00
+job.pdb,5nym_A Crystal structure of the atypical poplar thioredoxin-like2.1 in reduced state,Populus tremula x Populus tremuloides,8.400,59,44,3,64,120,15,65,0.014,6.330E+00
+job.pdb,5uhw_A Crystal Structure of an Oxidoreductase from Agrobacterium radiobacter in Complex with NAD+ and Magnesium,Agrobacterium radiobacter K84,10.100,69,43,4,60,112,122,187,0.014,8.576E+00
+job.pdb,2xdq_A Dark Operative Protochlorophyllide Oxidoreductase (ChlN-ChlB)2 Complex,Thermosynechococcus vestitus BP-1,10.200,88,60,1,53,121,258,345,0.014,6.726E+00
+job.pdb,1p1j_A Crystal structure of the 1L-myo-inositol 1-phosphate synthase complexed with NADH,Saccharomyces cerevisiae S288C,12.100,107,58,9,64,136,318,422,0.014,9.684E+00
+job.pdb,5ykw_A Structural basis of the thiol resolving mechanism in yeast mitochondrial 1-Cys peroxiredoxin via glutathione/thioredoxin systems,Saccharomyces cerevisiae S288C,9.400,53,42,3,69,120,13,60,0.011,8.576E+00
+job.pdb,2eir_D Design of Disulfide-linked Thioredoxin Dimers and Multimers Through Analysis of Crystal Contacts,Escherichia coli K-12,12.000,50,41,2,73,122,13,59,0.011,9.684E+00
+job.pdb,5nyn_A Crystal structure of the atypical poplar thioredoxin-like2.1 in complex with gluathione,Populus tremula x Populus tremuloides,8.900,56,41,3,67,120,19,66,0.011,7.595E+00
+job.pdb,1faa_A CRYSTAL STRUCTURE OF THIOREDOXIN F FROM SPINACH CHLOROPLAST (LONG FORM),Spinacia oleracea,8.900,56,46,1,65,120,22,72,0.011,6.726E+00
+job.pdb,"3fhk_D Crystal structure of APC1446, B.subtilis YphP disulfide isomerase",Bacillus subtilis subsp. subtilis str. 168,14.400,76,57,5,54,125,14,85,0.011,9.684E+00
+job.pdb,4c2j_D Crystal structure of human mitochondrial 3-ketoacyl-CoA thiolase in complex with CoA,Homo sapiens,16.400,91,63,5,38,123,10,92,0.011,9.684E+00
+job.pdb,1tho_A CRYSTAL STRUCTURE OF A MUTANT ESCHERICHIA COLI THIOREDOXIN WITH AN ARGININE INSERTION IN THE ACTIVE SITE,Escherichia coli K-12,12.900,54,37,5,73,122,13,60,0.010,9.684E+00
+job.pdb,7vu4_A de novo design based on 1r26,unclassified,7.400,54,44,2,69,122,17,64,0.010,9.684E+00
+job.pdb,5nyo_A Crystal structure of an atypical poplar thioredoxin-like2.1 variant in dimeric form,Populus tremula x Populus tremuloides,5.000,59,46,4,64,120,15,65,0.010,8.071E+00
+job.pdb,3hut_A Crystal structure of a putative branched-chain amino acid ABC transporter from Rhodospirillum rubrum,Rhodospirillum rubrum ATCC 11170,9.200,65,46,5,64,124,119,174,0.010,7.147E+00

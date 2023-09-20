@@ -1,0 +1,390 @@
+query_id,subject_id,scientific_name,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
+job.pdb,AF-A0A0H3GP01-F1-model_v4 Thiamine-monophosphate kinase,Klebsiella pneumoniae subsp. pneumoniae HS11286,99.600,321,1,0,1,321,3,323,1.000,3.101E-63
+job.pdb,AF-P0AGG0-F1-model_v4 Thiamine-monophosphate kinase,Escherichia coli K-12,84.400,321,50,0,1,321,3,323,1.000,1.737E-58
+job.pdb,AF-Q32JH1-F1-model_v4 Thiamine-monophosphate kinase,Shigella dysenteriae Sd197,83.400,321,53,0,1,321,3,323,1.000,3.389E-58
+job.pdb,AF-P55881-F1-model_v4 Thiamine-monophosphate kinase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,83.800,321,52,0,1,321,3,323,1.000,3.189E-58
+job.pdb,AF-Q57190-F1-model_v4 Thiamine-monophosphate kinase,Haemophilus influenzae Rd KW20,51.500,328,147,5,1,321,3,325,1.000,5.574E-45
+job.pdb,AF-Q5F6I3-F1-model_v4 Thiamine-monophosphate kinase,Neisseria gonorrhoeae FA 1090,42.000,328,173,7,1,321,1,318,1.000,1.920E-40
+job.pdb,AF-Q9HWX7-F1-model_v4 Thiamine-monophosphate kinase,Pseudomonas aeruginosa PAO1,45.100,328,163,8,1,321,1,318,1.000,9.317E-40
+job.pdb,AF-P9WG71-F1-model_v4 Thiamine-monophosphate kinase,Mycobacterium tuberculosis H37Rv,29.200,328,202,15,2,321,19,324,1.000,7.434E-26
+job.pdb,AF-K0F4Y5-F1-model_v4 Thiamine-monophosphate kinase,Nocardia brasiliensis ATCC 700358,28.000,363,191,19,2,320,5,341,1.000,1.637E-25
+job.pdb,AF-Q9CBS2-F1-model_v4 Thiamine-monophosphate kinase,Mycobacterium leprae TN,28.200,340,190,16,2,321,19,324,1.000,1.007E-25
+job.pdb,AF-X8FC79-F1-model_v4 Thiamine-monophosphate kinase,Mycobacterium ulcerans str. Harvey,31.000,293,166,14,41,321,1,269,1.000,2.384E-23
+job.pdb,AF-Q60337-F1-model_v4 Thiamine-monophosphate kinase,Methanocaldococcus jannaschii DSM 2661,25.900,312,191,16,17,308,17,308,1.000,4.914E-24
+job.pdb,AF-Q0P8F7-F1-model_v4 Thiamine-monophosphate kinase,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819,25.000,299,183,11,1,296,1,261,1.000,1.030E-21
+job.pdb,"AF-Q32GA8-F1-model_v4 Selenide, water dikinase",Shigella dysenteriae Sd197,18.500,339,229,15,1,304,21,347,1.000,2.032E-19
+job.pdb,"AF-P16456-F1-model_v4 Selenide, water dikinase",Escherichia coli K-12,18.200,339,230,15,1,304,21,347,1.000,5.369E-19
+job.pdb,"AF-Q8ZPV5-F1-model_v4 Selenide, water dikinase",Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,17.600,339,232,15,1,304,21,347,1.000,2.043E-18
+job.pdb,"AF-A0A0H3GVV9-F1-model_v4 Selenide, water dikinase",Klebsiella pneumoniae subsp. pneumoniae HS11286,18.100,347,230,15,1,315,21,345,1.000,8.214E-19
+job.pdb,AF-Q58089-F1-model_v4 Putative hydrogenase expression/formation protein MJ0676,Methanocaldococcus jannaschii DSM 2661,22.200,301,197,14,30,313,44,324,1.000,1.419E-18
+job.pdb,"AF-Q9I383-F1-model_v4 Selenide, water dikinase",Pseudomonas aeruginosa PAO1,19.900,311,201,14,27,304,49,344,1.000,2.320E-17
+job.pdb,AF-Q8ZMI5-F1-model_v4 Putative hydrogenase expression/formation protein,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,22.400,329,213,16,4,313,6,311,1.000,5.109E-17
+job.pdb,AF-P43848-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Haemophilus influenzae Rd KW20,18.900,337,226,20,4,304,19,344,1.000,3.143E-17
+job.pdb,AF-P74883-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,15.800,341,240,16,2,304,14,345,1.000,2.320E-17
+job.pdb,AF-Q32D69-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shigella dysenteriae Sd197,17.300,335,234,19,4,304,20,345,1.000,1.712E-17
+job.pdb,AF-Q2FZI8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus NCTC 8325,17.800,330,232,17,5,304,20,340,1.000,3.771E-17
+job.pdb,AF-P08178-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli K-12,17.900,335,232,20,4,304,20,345,1.000,1.712E-17
+job.pdb,AF-A0A132Z199-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Enterococcus faecium,17.900,334,232,15,4,304,19,343,1.000,5.109E-17
+job.pdb,AF-P24193-F1-model_v4 Carbamoyl dehydratase HypE,Escherichia coli K-12,23.500,331,211,17,4,313,16,325,1.000,5.109E-17
+job.pdb,AF-A0A0H3GRL0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Klebsiella pneumoniae subsp. pneumoniae HS11286,16.500,333,239,14,4,304,20,345,1.000,6.922E-17
+job.pdb,AF-Q32CK1-F1-model_v4 HypE,Shigella dysenteriae Sd197,23.500,331,207,16,4,313,6,311,1.000,9.379E-17
+job.pdb,AF-A0A0H3H1Y3-F1-model_v4 Uncharacterized protein,Klebsiella pneumoniae subsp. pneumoniae HS11286,22.800,332,212,16,4,313,16,325,1.000,1.059E-16
+job.pdb,AF-A0A044RVS2-F1-model_v4 AIR synthase,Onchocerca volvulus,16.100,335,222,18,14,304,26,345,1.000,2.958E-17
+job.pdb,AF-Q9I513-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas aeruginosa PAO1,19.300,341,220,22,4,303,21,347,1.000,1.516E-17
+job.pdb,AF-K0EH52-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Nocardia brasiliensis ATCC 700358,18.800,335,218,17,14,308,34,354,1.000,1.427E-17
+job.pdb,AF-A0A077ZL32-F1-model_v4 AIRS and AIRS C domain containing protein,Trichuris trichiura,22.900,331,209,17,4,313,6,311,1.000,2.799E-16
+job.pdb,AF-Q58057-F1-model_v4 Uncharacterized protein MJ0640,Methanocaldococcus jannaschii DSM 2661,17.900,318,216,15,7,310,25,311,1.000,2.783E-17
+job.pdb,AF-Q8DRM4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae R6,17.600,334,228,21,4,304,21,340,1.000,5.801E-16
+job.pdb,AF-P20772-F1-model_v4 Bifunctional purine biosynthetic protein ADE1,Schizosaccharomyces pombe 972h-,16.900,342,232,19,4,304,450,780,1.000,6.165E-16
+job.pdb,AF-I6Y4V6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Mycobacterium tuberculosis H37Rv,16.400,334,226,16,14,305,41,363,1.000,1.525E-16
+job.pdb,AF-Q9CBC2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Mycobacterium leprae TN,17.200,336,221,16,14,305,41,363,1.000,1.944E-16
+job.pdb,"AF-O62461-F1-model_v4 Probable selenide, water dikinase",Caenorhabditis elegans,18.300,332,216,19,23,312,60,378,1.000,9.966E-17
+job.pdb,AF-Q5F973-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Neisseria gonorrhoeae FA 1090,16.000,336,235,18,4,304,21,344,1.000,4.862E-15
+job.pdb,AF-U7PQC9-F1-model_v4 AIR synthase,Sporothrix schenckii ATCC 58251,14.900,342,236,18,5,306,482,808,1.000,2.991E-15
+job.pdb,"AF-P07244-F1-model_v4 Bifunctional purine biosynthetic protein ADE5,7",Saccharomyces cerevisiae S288C,17.800,353,226,22,4,308,463,799,1.000,2.814E-15
+job.pdb,AF-Q54GJ2-F1-model_v4 Bifunctional purine biosynthetic protein purD,Dictyostelium discoideum,15.300,333,228,18,16,306,495,815,1.000,1.132E-15
+job.pdb,"AF-A0A0J9XLV4-F1-model_v4 BMA-SELD-1, isoform a",Brugia malayi,17.300,340,236,16,1,312,38,360,1.000,1.358E-15
+job.pdb,AF-I1KNV7-F1-model_v4 AIR synthase,Glycine max,15.900,301,213,16,33,304,102,391,1.000,3.813E-15
+job.pdb,AF-Q0PAP1-F1-model_v4 Hydrogenase isoenzymes formation protein,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819,19.800,292,199,15,34,310,39,310,1.000,8.925E-15
+job.pdb,AF-A0A175W0D7-F1-model_v4 AIR synthase,Madurella mycetomatis,17.700,305,213,14,35,307,487,785,1.000,8.925E-15
+job.pdb,AF-A0A1D8PE67-F1-model_v4 AIR synthase,Candida albicans SC5314,16.100,353,227,24,4,306,463,796,1.000,3.377E-15
+job.pdb,AF-P22102-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Homo sapiens,15.000,332,224,17,16,303,461,778,1.000,4.052E-15
+job.pdb,AF-Q2FZJ0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus NCTC 8325,14.400,318,231,13,16,311,69,367,1.000,1.955E-15
+job.pdb,AF-C0NX78-F1-model_v4 AIR synthase,Histoplasma capsulatum G186AR,17.000,305,204,19,38,303,495,789,1.000,3.588E-15
+job.pdb,AF-X8FL29-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium ulcerans str. Harvey,19.300,320,211,17,20,311,30,330,1.000,9.431E-16
+job.pdb,AF-Q58660-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanocaldococcus jannaschii DSM 2661,16.300,331,231,17,5,311,43,351,1.000,1.065E-15
+job.pdb,AF-Q0P896-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819,17.800,331,216,22,5,304,24,329,1.000,4.306E-15
+job.pdb,AF-Q64737-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Mus musculus,14.900,334,225,18,14,303,460,778,1.000,7.000E-15
+job.pdb,AF-O24888-F1-model_v4 Hydrogenase expression/formation protein (HypE),Helicobacter pylori 26695,17.500,337,220,23,2,310,12,318,1.000,1.850E-14
+job.pdb,AF-I1K506-F1-model_v4 AIR synthase,Glycine max,17.600,300,209,16,33,304,98,387,1.000,1.071E-14
+job.pdb,AF-Q58811-F1-model_v4 Uncharacterized protein MJ1416,Methanocaldococcus jannaschii DSM 2661,17.400,310,198,18,27,310,117,394,1.000,1.008E-14
+job.pdb,AF-A0A133CSB1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Enterococcus faecium,15.600,320,227,15,16,311,70,370,1.000,2.346E-15
+job.pdb,AF-P9WHL7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium tuberculosis H37Rv,19.400,318,209,19,20,311,90,386,1.000,5.834E-15
+job.pdb,AF-Q850Z8-F1-model_v4 AIR synthase,Oryza sativa Japonica Group,16.400,304,211,17,33,304,106,398,1.000,2.220E-14
+job.pdb,AF-A0A0N4U586-F1-model_v4 Uncharacterized protein,Dracunculus medinensis,17.200,347,222,21,1,309,39,358,1.000,2.346E-15
+job.pdb,AF-A0A0K0DYH3-F1-model_v4 Uncharacterized protein,Strongyloides stercoralis,13.700,341,253,19,1,307,47,380,1.000,3.588E-15
+job.pdb,"AF-Q05728-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase, chloroplastic",Arabidopsis thaliana,15.000,299,219,15,33,304,99,389,1.000,5.195E-14
+job.pdb,AF-A0A0D2GT58-F1-model_v4 AIR synthase,Fonsecaea pedrosoi CBS 271.37,17.300,340,226,19,5,303,461,786,1.000,6.587E-15
+job.pdb,"AF-O18373-F1-model_v4 Inactive selenide, water dikinase-like protein",Drosophila melanogaster,16.900,325,227,17,24,318,87,398,1.000,5.166E-15
+job.pdb,AF-Q50023-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium leprae TN,17.700,315,218,15,20,311,78,374,1.000,1.365E-14
+job.pdb,AF-Q20143-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Caenorhabditis elegans,15.700,337,223,21,14,304,448,769,1.000,1.860E-13
+job.pdb,AF-Q58209-F1-model_v4 Uncharacterized protein MJ0799,Methanocaldococcus jannaschii DSM 2661,20.100,302,170,19,20,309,36,278,1.000,1.741E-14
+job.pdb,AF-Q57656-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanocaldococcus jannaschii DSM 2661,15.800,340,237,19,4,314,19,338,1.000,2.814E-15
+job.pdb,AF-C1GXF6-F1-model_v4 AIR synthase,Paracoccidioides lutzii Pb01,16.800,308,215,17,33,306,497,797,1.000,8.975E-14
+job.pdb,AF-A0A077ZDU5-F1-model_v4 5'-phosphoribosylglycinamide transformylase,Trichuris trichiura,17.400,344,221,19,14,306,523,854,1.000,8.975E-14
+job.pdb,"AF-D3ZFY0-F1-model_v4 Selenide, water dikinase",Rattus norvegicus,16.300,331,218,19,24,314,65,376,1.000,7.438E-15
+job.pdb,AF-A0A1D6M0B3-F1-model_v4 AIR synthase,Zea mays,15.500,316,213,18,33,305,95,399,1.000,5.521E-14
+job.pdb,AF-A0A0G2KGL2-F1-model_v4 AIR synthase,Danio rerio,14.300,348,238,18,2,303,443,776,1.000,2.232E-13
+job.pdb,AF-A0A044TBT1-F1-model_v4 Uncharacterized protein,Onchocerca volvulus,18.600,332,204,16,23,312,75,382,1.000,5.490E-15
+job.pdb,AF-Q9PNY0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819,13.800,324,230,18,16,311,57,359,1.000,5.195E-14
+job.pdb,"AF-Q38A34-F1-model_v4 Selenide, water dikinase",Trypanosoma brucei brucei TREU927,15.500,316,212,18,31,306,76,376,1.000,2.359E-14
+job.pdb,AF-G3V918-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Rattus norvegicus,14.700,333,224,18,16,303,461,778,1.000,8.446E-14
+job.pdb,AF-K0ENN1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Nocardia brasiliensis ATCC 700358,17.200,318,187,16,30,310,464,742,1.000,1.542E-14
+job.pdb,AF-A0A1C1D209-F1-model_v4 AIR synthase,Cladophialophora carrionii,17.700,327,225,20,15,303,467,787,1.000,5.521E-14
+job.pdb,AF-A0A077Z0K1-F1-model_v4 Selenophosphate synthetase,Trichuris trichiura,16.200,344,235,22,4,315,48,370,1.000,4.075E-14
+job.pdb,"AF-Q8BH69-F1-model_v4 Selenide, water dikinase 1",Mus musculus,16.300,331,218,19,24,314,65,376,1.000,2.359E-14
+job.pdb,"AF-Q7ZW38-F1-model_v4 Selenide, water dikinase 1",Danio rerio,16.200,333,216,21,24,314,65,376,1.000,1.638E-14
+job.pdb,"AF-P49903-F1-model_v4 Selenide, water dikinase 1",Homo sapiens,13.500,354,238,19,1,304,32,367,1.000,2.089E-14
+job.pdb,"AF-Q4CNK4-F1-model_v4 Selenophosphate synthetase, putative",Trypanosoma cruzi strain CL Brener,17.600,345,229,21,4,305,44,376,1.000,7.948E-14
+job.pdb,"AF-Q4D9H8-F1-model_v4 Selenophosphate synthetase, putative",Trypanosoma cruzi strain CL Brener,17.900,340,226,20,4,309,48,368,1.000,1.013E-13
+job.pdb,AF-P00967-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Drosophila melanogaster,19.000,342,203,24,14,304,466,784,1.000,1.292E-13
+job.pdb,AF-A4IDV5-F1-model_v4 Putative selenophosphate synthetase,Leishmania infantum,17.500,358,226,26,4,315,56,390,1.000,9.590E-13
+job.pdb,AF-Q0JH25-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Oryza sativa Japonica Group,14.800,324,194,23,30,309,174,459,1.000,2.245E-12
+job.pdb,"AF-Q8I348-F1-model_v4 Selenide water dikinase, putative",Plasmodium falciparum 3D7,12.600,481,207,26,4,303,718,1166,1.000,1.770E-11
+job.pdb,AF-K7LRK7-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Glycine max,15.700,318,198,21,30,309,791,1076,1.000,1.025E-11
+job.pdb,AF-I1MZA8-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Glycine max,15.500,316,201,20,30,309,772,1057,1.000,2.257E-11
+job.pdb,AF-Q8DRM6-F1-model_v4 Phosphoribosylformylglycinamide synthetase,Streptococcus pneumoniae R6,13.800,333,220,22,20,311,292,598,1.000,1.770E-11
+job.pdb,AF-O15067-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Homo sapiens,17.200,325,193,24,30,311,709,1000,1.000,1.025E-11
+job.pdb,AF-A0A175VPN0-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Madurella mycetomatis,15.100,350,199,26,21,309,713,1025,1.000,2.708E-11
+job.pdb,AF-A0A0G2JTN4-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Rattus norvegicus,16.300,325,196,23,30,311,708,999,1.000,3.250E-11
+job.pdb,AF-C0NTE1-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Histoplasma capsulatum G186AR,16.700,322,195,22,37,309,725,1022,1.000,1.780E-10
+job.pdb,"AF-Q9M8D3-F1-model_v4 Probable phosphoribosylformylglycinamidine synthase, chloroplastic/mitochondrial",Arabidopsis thaliana,14.000,320,202,23,30,309,789,1075,1.000,1.576E-10
+job.pdb,AF-A0A5K4EIR5-F1-model_v4 AIRS_C domain-containing protein,Schistosoma mansoni,15.000,285,187,18,59,304,2,270,1.000,1.780E-10
+job.pdb,AF-Q5SUR0-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Mus musculus,16.600,324,194,23,30,310,708,998,1.000,7.157E-11
+job.pdb,AF-B9FM04-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Oryza sativa Japonica Group,14.300,321,199,21,30,309,796,1081,1.000,1.030E-10
+job.pdb,AF-A0A1D6DVJ0-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Zea mays,15.300,320,197,23,30,309,799,1084,1.000,1.314E-10
+job.pdb,AF-A0A1D6L245-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Zea mays,15.000,325,192,23,30,309,799,1084,1.000,3.250E-11
+job.pdb,AF-Q5TZ72-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Danio rerio,16.200,332,188,24,30,311,698,989,1.000,7.606E-11
+job.pdb,AF-Q5F7J4-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Neisseria gonorrhoeae FA 1090,15.500,348,202,22,28,310,675,995,1.000,2.010E-10
+job.pdb,AF-U7Q4J8-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Sporothrix schenckii ATCC 58251,14.400,326,202,23,37,309,740,1041,1.000,9.697E-11
+job.pdb,AF-Q19311-F1-model_v4 Probable phosphoribosylformylglycinamidine synthase,Caenorhabditis elegans,15.200,334,193,19,38,309,294,599,1.000,2.563E-10
+job.pdb,AF-P35421-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Drosophila melanogaster,14.700,326,208,23,30,308,717,1019,1.000,6.374E-10
+job.pdb,AF-A0A0D2GMG4-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Fonsecaea pedrosoi CBS 271.37,15.800,329,195,23,37,311,719,1019,1.000,4.166E-10
+job.pdb,AF-P43847-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Haemophilus influenzae Rd KW20,16.100,329,192,26,30,309,682,975,1.000,9.126E-11
+job.pdb,AF-Q54JC8-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Dictyostelium discoideum,14.100,333,214,22,30,311,706,1017,1.000,1.404E-09
+job.pdb,AF-Q32D15-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Shigella dysenteriae Sd197,14.800,331,192,21,30,309,681,972,1.000,1.780E-10
+job.pdb,AF-Q9HXN2-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Pseudomonas aeruginosa PAO1,14.700,338,193,25,28,309,677,975,1.000,2.412E-10
+job.pdb,AF-C1H902-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Paracoccidioides lutzii Pb01,15.500,321,200,22,37,309,725,1022,1.000,2.739E-09
+job.pdb,AF-P38972-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Saccharomyces cerevisiae S288C,14.700,345,194,27,21,309,723,1023,1.000,8.082E-11
+job.pdb,AF-Q59MZ5-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Candida albicans SC5314,13.500,340,194,27,28,311,748,1043,1.000,6.374E-10
+job.pdb,AF-A0A1C1CVD1-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Cladophialophora carrionii,13.400,387,231,24,4,311,246,607,1.000,7.648E-10
+job.pdb,AF-P74881-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,16.100,335,187,24,28,309,679,972,1.000,6.773E-10
+job.pdb,AF-P15254-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Escherichia coli K-12,15.000,333,189,22,30,309,681,972,1.000,5.645E-10
+job.pdb,AF-X8FIH1-F1-model_v4 AIRS,Mycobacterium ulcerans str. Harvey,19.400,190,119,8,14,181,44,221,1.000,2.439E-08
+job.pdb,AF-A0A158Q6L1-F1-model_v4 Formylglycinamide ribonucleotide amidotransferase,Dracunculus medinensis,11.800,396,227,21,4,303,67,436,1.000,1.404E-09
+job.pdb,AF-A0A0H3GWU2-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Klebsiella pneumoniae subsp. pneumoniae HS11286,15.600,338,181,25,30,309,681,972,1.000,5.998E-10
+job.pdb,AF-O14228-F1-model_v4 Probable phosphoribosylformylglycinamidine synthase,Schizosaccharomyces pombe 972h-,16.500,320,189,23,37,309,705,993,1.000,2.754E-08
+job.pdb,AF-A0A1D6F7U6-F1-model_v4 AIR synthase,Zea mays,18.000,188,129,10,36,201,68,252,1.000,2.452E-07
+job.pdb,AF-A0A044R8N1-F1-model_v4 AIR synthase,Onchocerca volvulus,15.000,180,123,11,147,304,32,203,1.000,5.804E-05
+job.pdb,AF-K0F5Q2-F1-model_v4 Endoribonuclease L-PSP,Nocardia brasiliensis ATCC 700358,11.700,119,84,7,30,134,21,132,0.941,5.869E-03
+job.pdb,"AF-A0A0D2EIE3-F1-model_v4 Unplaced genomic scaffold supercont1.10, whole genome shotgun sequence",Fonsecaea pedrosoi CBS 271.37,16.300,116,79,8,33,137,25,133,0.923,1.217E-02
+job.pdb,AF-A0A1C1CIH1-F1-model_v4 L-PSP endoribonuclease family protein,Cladophialophora carrionii,15.600,115,79,7,33,136,24,131,0.900,1.374E-02
+job.pdb,AF-K0ET89-F1-model_v4 Uncharacterized protein,Nocardia brasiliensis ATCC 700358,11.300,115,87,5,34,137,19,129,0.887,3.858E-02
+job.pdb,AF-K0ESN1-F1-model_v4 Uncharacterized protein,Nocardia brasiliensis ATCC 700358,14.400,118,85,8,30,137,23,134,0.872,3.858E-02
+job.pdb,AF-K0ESD9-F1-model_v4 Endoribonuclease L-PSP,Nocardia brasiliensis ATCC 700358,8.700,114,91,6,33,136,11,121,0.837,4.356E-02
+job.pdb,AF-K7LHW9-F1-model_v4 Uncharacterized protein,Glycine max,19.600,107,70,6,38,139,338,433,0.837,3.858E-02
+job.pdb,AF-I1JQ15-F1-model_v4 Uncharacterized protein,Glycine max,20.100,109,65,7,38,138,330,424,0.817,3.858E-02
+job.pdb,AF-Q0PBI2-F1-model_v4 Putative endoribonuclease L-PSP family protein,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819,12.200,106,78,5,34,134,16,111,0.795,5.554E-02
+job.pdb,AF-Q2G0S6-F1-model_v4 Uncharacterized protein,Staphylococcus aureus subsp. aureus NCTC 8325,8.100,122,101,6,20,136,8,123,0.772,6.272E-02
+job.pdb,AF-K0F2G3-F1-model_v4 Endoribonuclease L-PSP,Nocardia brasiliensis ATCC 700358,11.400,114,84,6,32,136,23,128,0.772,6.665E-02
+job.pdb,AF-Q6F2N1-F1-model_v4 Os05g0443800 protein,Oryza sativa Japonica Group,22.600,119,71,8,38,148,330,435,0.772,2.373E-02
+job.pdb,AF-Q9HTH2-F1-model_v4 Uncharacterized protein,Pseudomonas aeruginosa PAO1,12.800,125,87,8,28,139,22,137,0.747,3.631E-02
+job.pdb,AF-Q58039-F1-model_v4 Cell division protein FtsZ 2,Methanocaldococcus jannaschii DSM 2661,13.700,109,75,7,40,139,248,346,0.720,6.272E-02
+job.pdb,AF-I1NAM9-F1-model_v4 Uncharacterized protein,Glycine max,20.100,109,67,7,38,139,333,428,0.720,5.902E-02
+job.pdb,"AF-Q9LXJ0-F1-model_v4 Cell division protein FtsZ homolog 2-2, chloroplastic",Arabidopsis thaliana,16.000,106,71,7,38,138,329,421,0.692,3.858E-02
+job.pdb,AF-P0AGL2-F1-model_v4 Putative reactive intermediate deaminase TdcF,Escherichia coli K-12,8.200,109,87,5,36,136,24,127,0.663,1.381E-01
+job.pdb,"AF-O82533-F1-model_v4 Cell division protein FtsZ homolog 2-1, chloroplastic",Arabidopsis thaliana,15.000,106,72,7,38,138,333,425,0.663,4.919E-02
+job.pdb,AF-X8F4X0-F1-model_v4 Endoribonuclease L-PSP family protein,Mycobacterium ulcerans str. Harvey,18.100,121,71,11,30,139,24,127,0.632,4.629E-02
+job.pdb,AF-Q8ZRU0-F1-model_v4 Cell division protein FtsZ,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,9.600,104,71,9,40,134,223,312,0.632,3.858E-02
+job.pdb,AF-A0A077ZNN9-F1-model_v4 Cell division protein,Trichuris trichiura,10.700,112,75,9,40,140,195,292,0.601,5.227E-02
+job.pdb,AF-P0A9A6-F1-model_v4 Cell division protein FtsZ,Escherichia coli K-12,9.800,112,76,10,40,140,223,320,0.601,4.629E-02
+job.pdb,AF-I1LZJ8-F1-model_v4 Uncharacterized protein,Glycine max,11.100,108,74,8,38,138,339,431,0.601,5.227E-02
+job.pdb,AF-X8F4Z5-F1-model_v4 Cell division protein FtsZ,Mycobacterium ulcerans str. Harvey,14.900,127,78,9,38,150,214,324,0.569,2.680E-02
+job.pdb,AF-P56097-F1-model_v4 Cell division protein FtsZ,Helicobacter pylori 26695,17.100,105,65,8,38,134,241,331,0.569,2.373E-02
+job.pdb,AF-P47204-F1-model_v4 Cell division protein FtsZ,Pseudomonas aeruginosa PAO1,10.500,104,70,9,40,134,224,313,0.569,8.497E-02
+job.pdb,AF-B4FT34-F1-model_v4 Cell division protein FtsZ homolog 1 chloroplastic,Zea mays,13.600,110,71,8,38,139,264,357,0.569,4.100E-02
+job.pdb,AF-K0ER53-F1-model_v4 Putative Endoribonuclease,Nocardia brasiliensis ATCC 700358,10.000,120,85,8,29,136,22,130,0.537,1.223E-01
+job.pdb,AF-Q32JZ7-F1-model_v4 Cell division protein FtsZ,Shigella dysenteriae Sd197,9.600,104,71,9,40,134,223,312,0.537,5.902E-02
+job.pdb,AF-A0A0H3GRR0-F1-model_v4 Cell division protein FtsZ,Klebsiella pneumoniae subsp. pneumoniae HS11286,10.500,104,70,8,40,134,223,312,0.537,7.525E-02
+job.pdb,AF-Q2FZ89-F1-model_v4 Cell division protein FtsZ,Staphylococcus aureus subsp. aureus NCTC 8325,13.200,121,80,9,38,148,224,329,0.537,3.417E-02
+job.pdb,AF-I1JJF1-F1-model_v4 Uncharacterized protein,Glycine max,12.200,106,69,8,38,135,276,365,0.537,5.227E-02
+job.pdb,AF-B7EYF6-F1-model_v4 Os04g0665400 protein,Oryza sativa Japonica Group,13.600,110,71,8,38,139,260,353,0.505,6.272E-02
+job.pdb,AF-I1M6L0-F1-model_v4 Uncharacterized protein,Glycine max,12.200,106,69,8,38,135,276,365,0.505,6.665E-02
+job.pdb,AF-Q9CCE4-F1-model_v4 Cell division protein FtsZ,Mycobacterium leprae TN,11.700,111,72,9,38,139,221,314,0.473,5.902E-02
+job.pdb,AF-K7LA88-F1-model_v4 Uncharacterized protein,Glycine max,12.200,106,69,8,38,135,272,361,0.473,8.497E-02
+job.pdb,"AF-Q42545-F1-model_v4 Cell division protein FtsZ homolog 1, chloroplastic",Arabidopsis thaliana,11.200,107,69,7,38,135,286,375,0.473,9.030E-02
+job.pdb,AF-A0A3P7GF13-F1-model_v4 ATP-dependent dihydroxyacetone kinase,Wuchereria bancrofti,13.600,88,65,5,60,138,259,344,0.473,2.113E-01
+job.pdb,AF-A0A175W9E9-F1-model_v4 2-iminobutanoate/2-iminopropanoate deaminase,Madurella mycetomatis,15.000,80,56,6,60,134,52,124,0.411,1.560E-01
+job.pdb,AF-Q9HT71-F1-model_v4 Uncharacterized protein,Pseudomonas aeruginosa PAO1,13.800,94,65,7,41,130,177,258,0.411,2.863E-01
+job.pdb,AF-P9WN95-F1-model_v4 Cell division protein FtsZ,Mycobacterium tuberculosis H37Rv,11.200,116,73,9,38,140,221,319,0.411,9.595E-02
+job.pdb,AF-I1N0I5-F1-model_v4 Uncharacterized protein,Glycine max,12.200,106,69,8,38,135,272,361,0.411,1.020E-01
+job.pdb,AF-Q86KR5-F1-model_v4 Uncharacterized protein,Dictyostelium discoideum,10.600,113,79,11,34,134,24,126,0.382,1.761E-01
+job.pdb,AF-C1H982-F1-model_v4 Uncharacterized protein,Paracoccidioides lutzii Pb01,10.100,118,78,10,32,134,26,130,0.382,3.233E-01
+job.pdb,AF-P39265-F1-model_v4 D-allose-binding periplasmic protein,Escherichia coli K-12,13.600,66,49,5,58,121,136,195,0.382,6.702E-01
+job.pdb,AF-A0A044RKV0-F1-model_v4 Uncharacterized protein,Onchocerca volvulus,12.100,123,74,7,42,139,260,373,0.382,9.595E-02
+job.pdb,"AF-P9WKG5-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Mycobacterium tuberculosis H37Rv,6.300,157,88,9,35,135,1,154,0.353,4.919E-02
+job.pdb,AF-X8FCC7-F1-model_v4 Dihydroxyacetone kinase family protein,Mycobacterium ulcerans str. Harvey,12.000,75,58,2,60,132,137,205,0.353,1.158E+00
+job.pdb,AF-Q5F6I1-F1-model_v4 Membrane protein,Neisseria gonorrhoeae FA 1090,13.400,164,79,9,31,140,77,231,0.353,7.997E-02
+job.pdb,AF-Q57816-F1-model_v4 Cell division protein FtsZ 1,Methanocaldococcus jannaschii DSM 2661,14.400,111,71,9,38,140,249,343,0.353,2.246E-01
+job.pdb,AF-A0A0N4UCN6-F1-model_v4 ATP-dependent dihydroxyacetone kinase,Dracunculus medinensis,4.500,87,67,6,57,132,239,320,0.353,4.946E-01
+job.pdb,AF-P40037-F1-model_v4 Protein HMF1,Saccharomyces cerevisiae S288C,11.700,111,74,8,36,134,27,125,0.326,3.651E-01
+job.pdb,AF-I6YA21-F1-model_v4 Conserved protein,Mycobacterium tuberculosis H37Rv,13.800,130,83,8,30,149,24,134,0.326,1.381E-01
+job.pdb,"AF-K0ERW1-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Nocardia brasiliensis ATCC 700358,10.300,155,81,8,36,135,3,154,0.326,6.665E-02
+job.pdb,AF-A0A044RD81-F1-model_v4 Uncharacterized protein,Onchocerca volvulus,13.100,145,85,10,17,139,200,325,0.326,6.665E-02
+job.pdb,AF-J9FAF3-F1-model_v4 Uncharacterized protein,Wuchereria bancrofti,14.400,118,67,8,42,139,299,402,0.326,1.083E-01
+job.pdb,AF-K0ETB6-F1-model_v4 Cell division protein FtsZ,Nocardia brasiliensis ATCC 700358,10.800,111,73,9,38,139,221,314,0.326,8.497E-02
+job.pdb,AF-A0A1D6FPC6-F1-model_v4 Cell division protein FtsZ homolog 2-2 chloroplastic,Zea mays,16.600,108,68,8,38,138,329,421,0.326,1.989E-01
+job.pdb,AF-Q54Z54-F1-model_v4 Mitochondrial division protein fszA,Dictyostelium discoideum,14.100,106,65,7,38,133,262,351,0.326,1.300E-01
+job.pdb,"AF-Q9CCW5-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Mycobacterium leprae TN,7.000,156,85,9,36,135,3,154,0.301,1.020E-01
+job.pdb,AF-I1KY80-F1-model_v4 Uncharacterized protein,Glycine max,9.700,82,62,4,60,136,113,187,0.301,1.658E-01
+job.pdb,AF-K0EZL0-F1-model_v4 Sugar ABC transporter periplasmic protein,Nocardia brasiliensis ATCC 700358,11.900,67,51,5,58,121,157,218,0.301,1.307E+00
+job.pdb,AF-P45069-F1-model_v4 Cell division protein FtsZ,Haemophilus influenzae Rd KW20,8.400,106,75,9,38,134,248,340,0.301,1.300E-01
+job.pdb,AF-A0A0H3GL84-F1-model_v4 Putative aminoacrylate peracid reductase RutC,Klebsiella pneumoniae subsp. pneumoniae HS11286,7.200,110,85,7,34,134,23,124,0.277,3.043E-01
+job.pdb,AF-A0A044U4A9-F1-model_v4 Uncharacterized protein,Onchocerca volvulus,12.100,115,72,5,42,139,332,434,0.277,1.381E-01
+job.pdb,AF-A0A0H3GS95-F1-model_v4 Uncharacterized protein,Klebsiella pneumoniae subsp. pneumoniae HS11286,17.600,113,75,6,34,137,26,129,0.254,3.879E-01
+job.pdb,AF-P44839-F1-model_v4 RutC family protein HI_0719,Haemophilus influenzae Rd KW20,8.100,110,87,6,36,136,25,129,0.254,8.545E-01
+job.pdb,AF-I1N0P5-F1-model_v4 Uncharacterized protein,Glycine max,9.700,82,62,4,60,136,113,187,0.254,2.536E-01
+job.pdb,"AF-Q6EPN6-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase, chloroplastic",Oryza sativa Japonica Group,11.200,178,97,9,16,135,44,218,0.254,5.902E-02
+job.pdb,"AF-A0A1D6Q704-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Zea mays,10.100,167,88,10,28,135,215,378,0.254,7.082E-02
+job.pdb,AF-B4F946-F1-model_v4 Tubulin beta chain,Zea mays,8.400,107,81,6,40,132,268,371,0.254,5.935E-01
+job.pdb,AF-A0A1D6HNY1-F1-model_v4 Diphthamide synthase,Zea mays,6.900,143,90,9,33,137,614,751,0.254,4.381E-01
+job.pdb,AF-P64421-F1-model_v4 Hydrogenase maturation factor HybF,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,14.400,69,54,3,57,123,1,66,0.233,1.089E+00
+job.pdb,AF-A4I058-F1-model_v4 Endoribonuclease_L-PSP_(Pb5)_-_putative,Leishmania infantum,10.700,139,91,13,33,143,30,163,0.233,3.043E-01
+job.pdb,AF-Q8H4B9-F1-model_v4 Os07g0516200 protein,Oryza sativa Japonica Group,9.800,91,68,5,53,136,97,180,0.233,4.381E-01
+job.pdb,AF-A0A132Z7D2-F1-model_v4 Cell division protein FtsZ,Enterococcus faecium,13.300,105,69,8,38,135,225,314,0.233,2.246E-01
+job.pdb,AF-I1JT28-F1-model_v4 Tubulin beta chain,Glycine max,7.100,112,86,8,40,137,268,375,0.233,5.585E-01
+job.pdb,AF-Q9HWK8-F1-model_v4 Uncharacterized protein,Pseudomonas aeruginosa PAO1,10.400,115,87,5,34,140,26,132,0.214,4.946E-01
+job.pdb,"AF-B6TL41-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Zea mays,10.900,173,89,10,25,135,52,221,0.214,7.997E-02
+job.pdb,AF-Q41782-F1-model_v4 Tubulin beta-4 chain,Zea mays,8.400,106,82,6,40,132,268,371,0.214,8.545E-01
+job.pdb,AF-P0A703-F1-model_v4 Hydrogenase maturation factor HybF,Escherichia coli K-12,12.800,70,56,3,57,124,1,67,0.196,1.476E+00
+job.pdb,AF-Q9HTQ1-F1-model_v4 Uncharacterized protein,Pseudomonas aeruginosa PAO1,7.000,128,95,8,21,137,3,117,0.196,3.436E-01
+job.pdb,AF-Q2TFP1-F1-model_v4 Tubulin beta chain,Glycine max,7.100,112,86,8,40,137,266,373,0.196,7.121E-01
+job.pdb,"AF-Q6ASW3-F1-model_v4 3,4-dihydroxy-2-butanone kinase, putative, expressed",Oryza sativa Japonica Group,12.900,93,61,8,57,134,236,323,0.196,9.649E-01
+job.pdb,AF-Q328T8-F1-model_v4 Uncharacterized protein,Shigella dysenteriae Sd197,10.900,110,82,8,36,137,28,129,0.179,1.389E+00
+job.pdb,AF-A0A044S6H7-F1-model_v4 Tubulin beta chain,Onchocerca volvulus,9.500,115,80,8,40,137,266,373,0.179,5.585E-01
+job.pdb,AF-Q43697-F1-model_v4 Tubulin beta-5 chain,Zea mays,6.000,115,84,8,40,137,266,373,0.179,7.121E-01
+job.pdb,AF-Q43594-F1-model_v4 Tubulin beta-1 chain,Oryza sativa Japonica Group,7.100,112,86,8,40,137,266,373,0.179,9.080E-01
+job.pdb,AF-C6T4P6-F1-model_v4 Uncharacterized protein,Glycine max,8.100,86,59,6,60,136,114,188,0.164,2.863E-01
+job.pdb,AF-Q2G1Z0-F1-model_v4 DhaK domain-containing protein,Staphylococcus aureus subsp. aureus NCTC 8325,8.900,89,65,6,57,138,225,304,0.164,1.667E+00
+job.pdb,AF-Q8DNV9-F1-model_v4 Cell division protein FtsZ,Streptococcus pneumoniae R6,14.600,109,74,8,38,140,225,320,0.164,6.307E-01
+job.pdb,AF-A0A0R0JYY8-F1-model_v4 Tubulin beta chain,Glycine max,9.000,111,78,8,40,134,266,369,0.164,6.702E-01
+job.pdb,AF-I1JLU8-F1-model_v4 Tubulin beta chain,Glycine max,7.100,112,86,8,40,137,266,373,0.164,1.089E+00
+job.pdb,AF-P77718-F1-model_v4 tRNA sulfurtransferase,Escherichia coli K-12,10.300,97,68,6,40,128,75,160,0.164,7.567E-01
+job.pdb,AF-Q6AXL2-F1-model_v4 2-iminobutanoate/2-iminopropanoate deaminase,Danio rerio,10.000,129,95,9,20,138,13,130,0.150,8.545E-01
+job.pdb,"AF-P44815-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Haemophilus influenzae Rd KW20,6.400,156,85,7,38,135,2,154,0.150,3.879E-01
+job.pdb,AF-Q57865-F1-model_v4 4-hydroxy-tetrahydrodipicolinate reductase,Methanocaldococcus jannaschii DSM 2661,11.600,103,66,5,59,142,134,230,0.150,2.695E-01
+job.pdb,AF-Q9GPZ7-F1-model_v4 Mitochondrial division protein fszB,Dictyostelium discoideum,13.300,112,63,9,38,136,276,366,0.150,5.585E-01
+job.pdb,AF-Q41783-F1-model_v4 Tubulin beta-6 chain,Zea mays,9.900,111,77,8,40,134,266,369,0.150,7.567E-01
+job.pdb,AF-P45960-F1-model_v4 Tubulin beta-4 chain,Oryza sativa Japonica Group,6.900,115,83,8,40,137,266,373,0.150,9.649E-01
+job.pdb,AF-I1LDR2-F1-model_v4 Tubulin beta chain,Glycine max,7.800,115,82,8,40,137,266,373,0.150,9.080E-01
+job.pdb,AF-I1NGT9-F1-model_v4 Tubulin beta chain,Glycine max,6.900,115,83,8,40,137,266,373,0.150,1.025E+00
+job.pdb,AF-A0A0N4UC12-F1-model_v4 Tubulin beta chain,Dracunculus medinensis,7.800,115,82,8,40,137,285,392,0.150,7.567E-01
+job.pdb,AF-C0PH33-F1-model_v4 Dihydroxyacetone kinase,Zea mays,13.300,90,60,7,57,132,236,321,0.150,1.667E+00
+job.pdb,AF-P64419-F1-model_v4 Hydrogenase maturation factor HypA,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,12.800,70,56,3,57,124,1,67,0.138,2.125E+00
+job.pdb,AF-Q0P8M1-F1-model_v4 Putative endoribonuclease L-PSP,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819,9.900,121,87,8,25,134,8,117,0.138,7.567E-01
+job.pdb,AF-I1M6R4-F1-model_v4 Uncharacterized protein,Glycine max,8.300,84,61,5,60,136,114,188,0.138,4.946E-01
+job.pdb,AF-G4VTA4-F1-model_v4 Tubulin beta chain,Schistosoma mansoni,8.800,113,83,5,40,137,266,373,0.138,9.649E-01
+job.pdb,AF-A0A0K0EJ28-F1-model_v4 Tubulin beta chain,Strongyloides stercoralis,6.900,115,83,10,40,137,266,373,0.138,1.476E+00
+job.pdb,AF-A0A0R0IHF9-F1-model_v4 Tubulin beta chain,Glycine max,6.900,115,83,8,40,137,266,373,0.138,1.158E+00
+job.pdb,AF-Q76FS2-F1-model_v4 Tubulin beta-8 chain,Oryza sativa Japonica Group,5.200,115,85,8,40,137,266,373,0.138,1.230E+00
+job.pdb,AF-A0A077Z8Z3-F1-model_v4 Ribonuclease UK114,Trichuris trichiura,7.800,128,96,9,20,136,13,129,0.126,1.089E+00
+job.pdb,AF-A0A0K0DT50-F1-model_v4 Uncharacterized protein,Strongyloides stercoralis,6.500,91,67,6,56,136,53,135,0.126,1.307E+00
+job.pdb,"AF-A0A0D2GS03-F1-model_v4 Unplaced genomic scaffold supercont1.2, whole genome shotgun sequence",Fonsecaea pedrosoi CBS 271.37,8.700,91,68,4,56,138,48,131,0.126,1.569E+00
+job.pdb,AF-P28551-F1-model_v4 Tubulin beta chain,Glycine max,5.900,117,82,9,40,137,266,373,0.126,1.230E+00
+job.pdb,AF-Q6PE34-F1-model_v4 Tubulin beta chain,Danio rerio,6.900,101,76,4,50,137,278,373,0.126,1.476E+00
+job.pdb,AF-I1L0G9-F1-model_v4 Tubulin beta chain,Glycine max,7.100,112,86,8,40,137,266,373,0.126,1.569E+00
+job.pdb,AF-P29516-F1-model_v4 Tubulin beta-8 chain,Arabidopsis thaliana,7.800,115,82,8,40,137,266,373,0.126,1.389E+00
+job.pdb,AF-G4VTA5-F1-model_v4 Tubulin beta chain,Schistosoma mansoni,8.100,98,69,5,50,132,296,387,0.126,1.882E+00
+job.pdb,AF-B4FTM1-F1-model_v4 Tubulin beta chain,Zea mays,10.100,108,80,8,40,134,316,419,0.126,1.307E+00
+job.pdb,AF-C1GV63-F1-model_v4 Dihydroxyacetone kinase,Paracoccidioides lutzii Pb01,16.000,75,47,7,80,141,269,340,0.126,1.089E+00
+job.pdb,AF-A0A0N4U761-F1-model_v4 LITAF domain-containing protein,Dracunculus medinensis,10.700,65,49,3,59,123,119,174,0.126,2.400E+00
+job.pdb,AF-Q32CK5-F1-model_v4 Hydrogenase maturation factor HypA,Shigella dysenteriae Sd197,11.400,70,57,3,57,124,1,67,0.116,2.879E+00
+job.pdb,AF-O25598-F1-model_v4 RutC family protein HP_0944,Helicobacter pylori 26695,8.400,83,62,5,60,136,51,125,0.116,8.545E-01
+job.pdb,AF-P55913-F1-model_v4 tRNA sulfurtransferase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,8.200,97,70,5,40,128,75,160,0.116,1.158E+00
+job.pdb,AF-A0A0H3GKE9-F1-model_v4 tRNA sulfurtransferase,Klebsiella pneumoniae subsp. pneumoniae HS11286,7.000,100,72,7,37,128,74,160,0.116,6.702E-01
+job.pdb,AF-Q9HU66-F1-model_v4 tRNA sulfurtransferase,Pseudomonas aeruginosa PAO1,12.700,110,71,8,37,137,76,169,0.116,8.545E-01
+job.pdb,AF-Q0IZQ8-F1-model_v4 Os09g0555600 protein,Oryza sativa Japonica Group,11.300,115,66,8,40,139,257,350,0.116,5.585E-01
+job.pdb,AF-Q9HUA0-F1-model_v4 Uncharacterized protein,Pseudomonas aeruginosa PAO1,12.000,108,69,9,41,135,20,114,0.106,1.476E+00
+job.pdb,AF-A0A0H3H1N4-F1-model_v4 Iron-regulated membrane protein,Klebsiella pneumoniae subsp. pneumoniae HS11286,8.600,127,80,8,33,132,40,157,0.106,7.567E-01
+job.pdb,AF-C0PH85-F1-model_v4 Tubulin beta chain,Zea mays,6.900,115,83,9,40,137,266,373,0.106,2.000E+00
+job.pdb,AF-P24636-F1-model_v4 Tubulin beta-4 chain,Arabidopsis thaliana,8.000,112,85,9,40,137,266,373,0.106,2.400E+00
+job.pdb,AF-G4VHK8-F1-model_v4 Tubulin beta chain,Schistosoma mansoni,8.800,113,83,5,40,137,266,373,0.106,1.667E+00
+job.pdb,AF-P0A700-F1-model_v4 Hydrogenase maturation factor HypA,Escherichia coli K-12,11.400,70,57,3,57,124,1,67,0.098,4.145E+00
+job.pdb,AF-A0A0H3GZG2-F1-model_v4 Putative translation initiation inhibitor,Klebsiella pneumoniae subsp. pneumoniae HS11286,9.800,112,66,10,40,134,21,114,0.098,1.025E+00
+job.pdb,AF-Q9HYB0-F1-model_v4 Uncharacterized protein,Pseudomonas aeruginosa PAO1,8.600,81,63,4,60,134,57,132,0.098,2.258E+00
+job.pdb,"AF-Q8ZMF7-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,6.300,157,85,8,40,137,3,156,0.098,8.041E-01
+job.pdb,AF-Q9I2F8-F1-model_v4 Binding protein component of ABC ribose transporter,Pseudomonas aeruginosa PAO1,13.200,68,45,4,58,121,147,204,0.098,2.258E+00
+job.pdb,AF-P45047-F1-model_v4 D-xylose-binding periplasmic protein,Haemophilus influenzae Rd KW20,16.200,74,49,6,56,121,120,188,0.098,7.121E-01
+job.pdb,AF-A4HW82-F1-model_v4 Inositol-3-phosphate synthase,Leishmania infantum,12.900,108,63,7,60,142,200,301,0.098,9.080E-01
+job.pdb,AF-P12456-F1-model_v4 Tubulin beta-1 chain,Caenorhabditis elegans,12.000,91,62,7,57,134,284,369,0.098,1.389E+00
+job.pdb,"AF-P57708-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Pseudomonas aeruginosa PAO1,15.500,109,61,8,50,137,58,156,0.090,4.122E-01
+job.pdb,AF-B4FQQ1-F1-model_v4 Reactive Intermediate Deaminase A chloroplastic,Zea mays,8.300,84,61,5,60,136,105,179,0.090,1.158E+00
+job.pdb,AF-P37387-F1-model_v4 D-xylose-binding periplasmic protein,Escherichia coli K-12,17.900,78,51,5,56,125,120,192,0.090,1.569E+00
+job.pdb,AF-Q32HR6-F1-model_v4 TorT,Shigella dysenteriae Sd197,4.400,67,59,2,57,123,145,206,0.090,8.593E+00
+job.pdb,AF-Q32JI1-F1-model_v4 tRNA sulfurtransferase,Shigella dysenteriae Sd197,12.800,140,87,11,40,165,75,193,0.090,8.041E-01
+job.pdb,AF-A0A175W9V7-F1-model_v4 Dihydroxyacetone kinase,Madurella mycetomatis,12.600,103,56,9,53,132,227,318,0.090,1.882E+00
+job.pdb,AF-Q07553-F1-model_v4 Guanylate cyclase 32E,Drosophila melanogaster,10.200,68,53,3,56,123,157,216,0.090,3.060E+00
+job.pdb,"AF-A0A0D2DAJ1-F1-model_v4 Unplaced genomic scaffold supercont1.8, whole genome shotgun sequence",Fonsecaea pedrosoi CBS 271.37,7.300,123,92,9,24,134,12,124,0.082,2.000E+00
+job.pdb,AF-P42271-F1-model_v4 Tubulin gamma-2 chain,Drosophila melanogaster,8.200,73,45,6,78,133,315,382,0.082,1.476E+00
+job.pdb,"AF-X8F378-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Mycobacterium ulcerans str. Harvey,9.200,119,68,6,56,137,18,133,0.076,2.258E+00
+job.pdb,AF-P0A2C5-F1-model_v4 Ribose import binding protein RbsB,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,9.200,65,52,4,58,121,128,186,0.076,4.974E+00
+job.pdb,"AF-A0A0D2DHM7-F1-model_v4 Unplaced genomic scaffold supercont1.6, whole genome shotgun sequence",Fonsecaea pedrosoi CBS 271.37,27.500,40,25,2,85,121,261,299,0.076,2.125E+00
+job.pdb,AF-O04660-F1-model_v4 Glutamate receptor 2.1,Arabidopsis thaliana,9.000,66,50,4,58,123,147,202,0.076,3.901E+00
+job.pdb,AF-P43834-F1-model_v4 Valine--tRNA ligase,Haemophilus influenzae Rd KW20,9.600,93,65,4,53,130,792,880,0.076,3.901E+00
+job.pdb,AF-Q32C57-F1-model_v4 Hydrogenase maturation factor HybF,Shigella dysenteriae Sd197,9.700,72,59,3,54,124,1,67,0.069,2.400E+00
+job.pdb,"AF-A0A143ZWM3-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Plasmodium falciparum 3D7,7.800,89,57,7,68,137,155,237,0.069,7.121E-01
+job.pdb,AF-A0A0H3H0T6-F1-model_v4 D-galactose-binding periplasmic protein,Klebsiella pneumoniae subsp. pneumoniae HS11286,10.900,73,54,3,58,124,147,214,0.069,3.251E+00
+job.pdb,AF-Q9QYS2-F1-model_v4 Metabotropic glutamate receptor 3,Mus musculus,15.900,69,44,7,59,125,194,250,0.069,2.550E+00
+job.pdb,AF-O81776-F1-model_v4 Glutamate receptor 2.4,Arabidopsis thaliana,7.500,66,51,3,58,123,147,202,0.069,4.974E+00
+job.pdb,AF-A0A5S6PGE9-F1-model_v4 Guanylate cyclase,Brugia malayi,8.600,69,56,4,56,123,71,133,0.069,3.901E+00
+job.pdb,AF-Q8I4N4-F1-model_v4 Receptor-type guanylate cyclase daf-11,Caenorhabditis elegans,16.400,67,48,5,59,123,45,105,0.069,5.286E+00
+job.pdb,AF-A0A077Z0P5-F1-model_v4 Isoleucyl-tRNA synthetase,Trichuris trichiura,7.100,70,51,4,61,124,818,879,0.069,1.882E+00
+job.pdb,AF-A0A132Z6G7-F1-model_v4 4-hydroxy-tetrahydrodipicolinate reductase,Enterococcus faecium,8.800,90,57,6,60,130,104,187,0.063,2.000E+00
+job.pdb,AF-A0A077Z570-F1-model_v4 THUMP and UPF0020 domain containing protein,Trichuris trichiura,6.400,62,49,4,80,133,123,183,0.063,3.455E+00
+job.pdb,AF-Q9VRX3-F1-model_v4 Probable tubulin beta chain CG32396,Drosophila melanogaster,6.800,88,61,4,71,137,285,372,0.063,2.000E+00
+job.pdb,AF-F1QEY8-F1-model_v4 D-3-phosphoglycerate dehydrogenase,Danio rerio,7.000,157,97,9,54,167,326,476,0.063,1.158E+00
+job.pdb,"AF-A0A0D2H5G4-F1-model_v4 Unplaced genomic scaffold supercont1.1, whole genome shotgun sequence",Fonsecaea pedrosoi CBS 271.37,15.700,57,39,3,84,132,271,326,0.063,3.060E+00
+job.pdb,AF-A0A0D2GYY6-F1-model_v4 Valyl-tRNA synthetase,Fonsecaea pedrosoi CBS 271.37,6.100,98,67,5,54,132,861,952,0.063,4.145E+00
+job.pdb,"AF-Q5F830-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Neisseria gonorrhoeae FA 1090,2.800,69,53,3,78,135,91,156,0.057,3.455E+00
+job.pdb,AF-A0A044VAU1-F1-model_v4 Uncharacterized protein,Onchocerca volvulus,8.400,106,68,7,42,137,197,283,0.057,3.671E+00
+job.pdb,AF-A0A132P8P1-F1-model_v4 BMP family ABC transporter substrate-binding protein,Enterococcus faecium,8.400,71,50,6,58,123,141,201,0.057,3.455E+00
+job.pdb,AF-C1H4J5-F1-model_v4 ZT_dimer domain-containing protein,Paracoccidioides lutzii Pb01,9.700,41,36,1,85,124,461,501,0.057,8.593E+00
+job.pdb,AF-P21170-F1-model_v4 Biosynthetic arginine decarboxylase,Escherichia coli K-12,7.100,28,26,0,97,124,335,362,0.057,8.593E+00
+job.pdb,AF-P02925-F1-model_v4 Ribose import binding protein RbsB,Escherichia coli K-12,9.200,65,52,4,58,121,128,186,0.051,9.131E+00
+job.pdb,AF-A0A5K4EKH5-F1-model_v4 Protein arginine methyltransferase NDUFAF7,Schistosoma mansoni,8.500,35,32,0,87,121,143,177,0.051,9.703E+00
+job.pdb,AF-Q4CP13-F1-model_v4 Delta-tubulin,Trypanosoma cruzi strain CL Brener,8.900,123,73,8,42,131,320,436,0.051,3.671E+00
+job.pdb,AF-A0A368UHX5-F1-model_v4 DhaK domain-containing protein,Glycine max,8.700,103,69,8,53,138,718,812,0.051,4.681E+00
+job.pdb,AF-A0A044SK90-F1-model_v4 Guanylate cyclase,Onchocerca volvulus,5.900,67,56,4,58,123,106,166,0.051,9.131E+00
+job.pdb,"AF-Q3U2A8-F1-model_v4 Valine--tRNA ligase, mitochondrial",Mus musculus,14.900,87,51,7,59,132,909,985,0.051,4.145E+00
+job.pdb,AF-Q32EN5-F1-model_v4 D-galactose-binding periplasmic protein,Shigella dysenteriae Sd197,11.100,72,53,3,58,123,137,203,0.045,7.161E+00
+job.pdb,AF-P0AEE5-F1-model_v4 D-galactose-binding periplasmic protein,Escherichia coli K-12,11.100,72,53,4,58,123,137,203,0.045,7.161E+00
+job.pdb,AF-C0NUJ2-F1-model_v4 Ornithine decarboxylase,Histoplasma capsulatum G186AR,22.500,40,30,1,85,124,261,299,0.045,8.086E+00
+job.pdb,AF-P18910-F1-model_v4 Atrial natriuretic peptide receptor 1,Rattus norvegicus,9.200,65,49,5,59,120,158,215,0.045,4.974E+00
+job.pdb,AF-A0A0K0EQ03-F1-model_v4 L51_S25_CI-B8 domain-containing protein,Strongyloides stercoralis,25.000,44,30,2,80,120,27,70,0.040,5.968E+00
+job.pdb,AF-P0A912-F1-model_v4 Peptidoglycan-associated lipoprotein,Escherichia coli K-12,8.100,49,40,1,82,125,101,149,0.040,4.974E+00
+job.pdb,AF-Q7CQW9-F1-model_v4 Peptidoglycan-associated protein,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,12.500,72,51,3,61,125,84,150,0.040,3.251E+00
+job.pdb,AF-P44883-F1-model_v4 D-galactose-binding periplasmic protein,Haemophilus influenzae Rd KW20,12.300,73,53,3,58,124,138,205,0.040,9.131E+00
+job.pdb,AF-B0S5C5-F1-model_v4 Acetyl-CoA acyltransferase 2,Danio rerio,13.400,89,66,4,40,123,7,89,0.040,8.086E+00
+job.pdb,"AF-D3ZSV7-F1-model_v4 Similar to THUMP domain containing 3 (Predicted), isoform CRA_a",Rattus norvegicus,4.900,61,49,4,81,133,226,285,0.040,6.739E+00
+job.pdb,AF-G5ED01-F1-model_v4 Inositol-3-phosphate synthase,Caenorhabditis elegans,10.100,79,54,2,64,125,318,396,0.040,4.681E+00
+job.pdb,AF-Q8IIA4-F1-model_v4 Threonyl-tRNA synthetase,Plasmodium falciparum 3D7,11.200,71,53,3,59,125,681,745,0.040,7.610E+00
+job.pdb,AF-A0A1C1CLA7-F1-model_v4 Valyl-tRNA synthetase,Cladophialophora carrionii,13.100,91,53,5,59,132,872,953,0.040,6.342E+00
+job.pdb,AF-A0A1D8PHR0-F1-model_v4 Valyl-tRNA synthetase,Candida albicans SC5314,10.400,96,58,7,60,139,966,1049,0.040,3.455E+00
+job.pdb,AF-A0A0H3GQC1-F1-model_v4 Peptidoglycan-associated protein,Klebsiella pneumoniae subsp. pneumoniae HS11286,12.800,70,44,4,61,118,84,148,0.034,3.060E+00
+job.pdb,AF-A0A0N4UB84-F1-model_v4 Phosducin domain-containing protein,Dracunculus medinensis,14.500,48,39,2,74,121,128,173,0.034,3.671E+00
+job.pdb,"AF-Q10M18-F1-model_v4 Thioredoxin-like 1-2, chloroplastic",Oryza sativa Japonica Group,9.000,55,46,2,68,122,102,152,0.034,3.455E+00
+job.pdb,AF-P9WG61-F1-model_v4 Uncharacterized protein Rv1324,Mycobacterium tuberculosis H37Rv,7.000,57,43,2,66,122,56,102,0.034,4.681E+00
+job.pdb,AF-A4HY85-F1-model_v4 Extracellular_receptor_-_putative,Leishmania infantum,9.000,66,50,3,61,124,172,229,0.034,9.703E+00
+job.pdb,AF-P16066-F1-model_v4 Atrial natriuretic peptide receptor 1,Homo sapiens,16.100,68,46,6,59,124,162,220,0.034,5.968E+00
+job.pdb,AF-Q59RI1-F1-model_v4 Isoleucyl-tRNA synthetase,Candida albicans SC5314,7.600,65,51,3,59,122,840,896,0.034,9.703E+00
+job.pdb,AF-A0A175VZV9-F1-model_v4 Valyl-tRNA synthetase,Madurella mycetomatis,9.100,87,61,6,59,132,950,1031,0.034,8.086E+00
+job.pdb,AF-C1H3J8-F1-model_v4 Uncharacterized protein,Paracoccidioides lutzii Pb01,15.100,66,52,2,61,124,6,69,0.029,7.161E+00
+job.pdb,AF-Q2FV89-F1-model_v4 Thioredoxin domain-containing protein,Staphylococcus aureus subsp. aureus NCTC 8325,7.500,40,34,1,84,123,20,56,0.029,9.703E+00
+job.pdb,AF-A0A3P7E755-F1-model_v4 Thioredoxin domain-containing protein,Wuchereria bancrofti,2.300,42,37,2,84,122,54,94,0.029,7.610E+00
+job.pdb,AF-A0A0K0EI05-F1-model_v4 L51_S25_CI-B8 domain-containing protein,Strongyloides stercoralis,13.500,74,52,3,51,124,4,65,0.029,3.671E+00
+job.pdb,"AF-O64654-F1-model_v4 Thioredoxin-like 1-1, chloroplastic",Arabidopsis thaliana,10.900,55,45,2,68,122,105,155,0.029,4.145E+00
+job.pdb,AF-I1N864-F1-model_v4 Thioredoxin domain-containing protein,Glycine max,9.000,55,46,2,68,122,118,168,0.029,3.901E+00
+job.pdb,AF-Q9CC76-F1-model_v4 Thioredoxin domain-containing protein,Mycobacterium leprae TN,5.300,56,43,2,67,122,54,99,0.029,5.968E+00
+job.pdb,AF-H2FLL2-F1-model_v4 Uncharacterized protein,Caenorhabditis elegans,7.500,40,36,1,84,122,112,151,0.029,6.342E+00
+job.pdb,AF-A0A0H3GZN6-F1-model_v4 Uncharacterized protein,Klebsiella pneumoniae subsp. pneumoniae HS11286,9.000,155,77,11,37,133,101,249,0.029,6.342E+00
+job.pdb,AF-A0A3P7EHA7-F1-model_v4 Tubulin beta chain,Wuchereria bancrofti,9.900,101,63,10,53,138,236,323,0.029,6.739E+00
+job.pdb,AF-Q498R3-F1-model_v4 DnaJ homolog subfamily C member 10,Rattus norvegicus,18.100,55,38,2,68,122,355,402,0.029,3.455E+00
+job.pdb,AF-A0A0K0E0E9-F1-model_v4 Valyl-tRNA synthetase,Strongyloides stercoralis,9.300,96,56,7,58,132,780,865,0.029,5.617E+00
+job.pdb,AF-A0A3P7PQI1-F1-model_v4 Isoleucyl-tRNA synthetase,Dracunculus medinensis,4.300,115,69,7,60,153,992,1086,0.029,4.681E+00
+job.pdb,AF-P0AA28-F1-model_v4 Thioredoxin 1,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,12.100,41,35,1,82,122,21,60,0.024,7.161E+00
+job.pdb,AF-P0AA25-F1-model_v4 Thioredoxin 1,Escherichia coli K-12,12.100,41,35,1,82,122,21,60,0.024,7.161E+00
+job.pdb,AF-A0A0H3GLK1-F1-model_v4 Thioredoxin,Klebsiella pneumoniae subsp. pneumoniae HS11286,13.900,43,36,1,80,122,19,60,0.024,6.342E+00
+job.pdb,AF-U7PHJ1-F1-model_v4 Actin-depolymerizing factor 1,Sporothrix schenckii ATCC 58251,9.700,41,37,0,85,125,104,144,0.024,9.703E+00
+job.pdb,"AF-Q5TKD8-F1-model_v4 Thioredoxin-like 2, chloroplastic",Oryza sativa Japonica Group,7.400,54,46,2,69,122,88,137,0.024,5.617E+00
+job.pdb,AF-B6UHV8-F1-model_v4 Thioredoxin-like 2-2 chloroplastic,Zea mays,11.100,54,44,2,69,122,90,139,0.024,5.617E+00
+job.pdb,"AF-Q8LCT3-F1-model_v4 Thioredoxin-like 2-2, chloroplastic",Arabidopsis thaliana,13.400,52,40,3,71,122,115,161,0.024,5.286E+00
+job.pdb,"AF-Q4DFA1-F1-model_v4 Thioredoxin-like protein, putative",Trypanosoma cruzi strain CL Brener,10.300,58,43,3,64,121,44,92,0.024,4.405E+00
+job.pdb,AF-Q8ZR92-F1-model_v4 Putative thioredoxin protein,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,11.500,52,40,2,71,122,17,62,0.024,6.342E+00
+job.pdb,AF-I1ML39-F1-model_v4 Thioredoxin domain-containing protein,Glycine max,9.000,55,46,2,68,122,118,168,0.024,5.286E+00
+job.pdb,AF-Q9BV44-F1-model_v4 THUMP domain-containing protein 3,Homo sapiens,7.200,69,52,4,81,141,225,289,0.024,5.968E+00
+job.pdb,AF-I1M319-F1-model_v4 TPR_REGION domain-containing protein,Glycine max,5.100,39,37,0,82,120,606,644,0.024,5.968E+00
+job.pdb,AF-Q8IXB1-F1-model_v4 DnaJ homolog subfamily C member 10,Homo sapiens,18.100,55,38,2,68,122,355,402,0.024,4.405E+00
+job.pdb,AF-Q9DC23-F1-model_v4 DnaJ homolog subfamily C member 10,Mus musculus,18.100,55,38,2,68,122,355,402,0.024,4.405E+00
+job.pdb,AF-C6TNF4-F1-model_v4 Thioredoxin domain-containing protein,Glycine max,7.800,38,35,0,83,120,33,70,0.020,6.342E+00
+job.pdb,AF-Q329V9-F1-model_v4 Thioredoxin,Shigella dysenteriae Sd197,12.100,41,35,1,82,122,39,78,0.020,7.610E+00
+job.pdb,AF-K7K8P4-F1-model_v4 Thioredoxin domain-containing protein,Glycine max,11.600,43,36,2,84,124,100,142,0.020,9.131E+00
+job.pdb,"AF-Q9XFI1-F1-model_v4 Thioredoxin-like 1-2, chloroplastic",Arabidopsis thaliana,7.200,55,47,2,68,122,93,143,0.020,6.739E+00
+job.pdb,AF-Q9D8U3-F1-model_v4 Endoplasmic reticulum resident protein 27,Mus musculus,10.700,56,43,2,67,122,151,199,0.020,7.161E+00
+job.pdb,AF-A0A1D6FGG9-F1-model_v4 Thioredoxin superfamily protein,Zea mays,16.300,55,43,2,69,122,150,202,0.020,5.617E+00
+job.pdb,AF-A0A1D6HPV8-F1-model_v4 RING/U-box superfamily protein,Zea mays,13.800,94,52,7,57,130,128,212,0.020,6.739E+00
+job.pdb,AF-F4IXE4-F1-model_v4 TPR repeat-containing thioredoxin TTL2,Arabidopsis thaliana,7.600,52,44,1,69,120,635,682,0.020,5.968E+00
+job.pdb,AF-A4IG47-F1-model_v4 DnaJ homolog subfamily C member 10,Danio rerio,16.600,48,32,4,75,122,359,398,0.020,7.610E+00
+job.pdb,AF-C0NG27-F1-model_v4 Valyl-tRNA synthetase,Histoplasma capsulatum G186AR,14.600,89,50,7,60,130,895,975,0.020,8.086E+00
+job.pdb,AF-A0A1C1CEW5-F1-model_v4 Isoleucyl-tRNA synthetase,Cladophialophora carrionii,10.300,77,52,5,57,124,817,885,0.020,8.593E+00
+job.pdb,"AF-A0A0D2G479-F1-model_v4 Unplaced genomic scaffold supercont1.7, whole genome shotgun sequence",Fonsecaea pedrosoi CBS 271.37,7.600,52,47,1,73,124,3,53,0.016,8.593E+00
+job.pdb,AF-A0A044QP51-F1-model_v4 Uncharacterized protein,Onchocerca volvulus,11.100,72,46,3,56,123,2,59,0.016,6.342E+00
+job.pdb,AF-A0A0K0JJY6-F1-model_v4 Bm5685,Brugia malayi,11.500,52,45,1,72,123,9,59,0.016,7.161E+00
+job.pdb,"AF-Q9XFH8-F1-model_v4 Thioredoxin F1, chloroplastic",Arabidopsis thaliana,11.600,43,36,1,78,120,85,125,0.016,8.593E+00
+job.pdb,"AF-Q8IJX5-F1-model_v4 Phosducin-like protein 3, putative",Plasmodium falciparum 3D7,5.400,37,35,0,84,120,93,129,0.016,9.131E+00
+job.pdb,"AF-Q6YTI3-F1-model_v4 Thioredoxin-like 4, chloroplastic",Oryza sativa Japonica Group,13.700,58,42,2,67,120,94,147,0.016,8.593E+00
+job.pdb,AF-C6T8M7-F1-model_v4 Thioredoxin domain-containing protein,Glycine max,7.200,55,47,2,68,122,103,153,0.016,8.593E+00
+job.pdb,AF-Q9CQM9-F1-model_v4 Glutaredoxin-3,Mus musculus,5.700,52,42,2,71,122,27,71,0.016,7.161E+00
+job.pdb,AF-I1LV56-F1-model_v4 TPR_REGION domain-containing protein,Glycine max,5.100,39,37,0,82,120,612,650,0.016,8.593E+00
+job.pdb,AF-K7LIC7-F1-model_v4 Thioredoxin domain-containing protein,Glycine max,7.100,56,48,1,65,120,19,70,0.014,9.703E+00
+job.pdb,"AF-O94504-F1-model_v4 Thioredoxin-2, mitochondrial",Schizosaccharomyces pombe 972h-,6.800,44,39,1,76,119,43,84,0.014,9.703E+00
+job.pdb,AF-J9FF55-F1-model_v4 Uncharacterized protein,Wuchereria bancrofti,12.300,73,52,3,51,123,6,66,0.014,9.131E+00
+job.pdb,AF-C6SZV5-F1-model_v4 Thioredoxin domain-containing protein,Glycine max,6.900,43,38,1,78,120,89,129,0.014,9.703E+00
+job.pdb,AF-B4FB80-F1-model_v4 Thioredoxin F2 chloroplastic,Zea mays,7.800,51,42,1,70,120,104,149,0.014,9.703E+00
+job.pdb,AF-K7KKM8-F1-model_v4 Thioredoxin domain-containing protein,Glycine max,7.200,55,47,2,68,122,103,153,0.014,9.131E+00
+job.pdb,"AF-O22779-F1-model_v4 Thioredoxin-like 1-3, chloroplastic",Arabidopsis thaliana,7.100,56,44,2,67,122,104,151,0.014,8.593E+00
+job.pdb,AF-A0A175VWS8-F1-model_v4 Phosducin-like protein,Madurella mycetomatis,9.400,53,47,1,68,120,182,233,0.014,8.593E+00
+job.pdb,AF-Q69ST6-F1-model_v4 Protein disulfide isomerase-like 1-3,Oryza sativa Japonica Group,20.000,40,28,2,84,120,318,356,0.014,8.086E+00
+job.pdb,AF-Q5XHX6-F1-model_v4 Thioredoxin domain-containing protein 2,Rattus norvegicus,9.600,52,45,1,69,120,454,503,0.014,9.703E+00
+job.pdb,AF-B4F8Q0-F1-model_v4 TPR repeat-containing thioredoxin TTL1,Zea mays,8.300,48,41,1,73,120,583,627,0.014,8.086E+00
+job.pdb,AF-O74551-F1-model_v4 Uncharacterized protein C777.12c,Schizosaccharomyces pombe 972h-,10.700,56,43,4,69,122,62,112,0.011,9.703E+00
+job.pdb,AF-A0A0K0E766-F1-model_v4 J domain-containing protein,Strongyloides stercoralis,9.500,42,26,2,84,122,268,300,0.011,9.703E+00

@@ -1,0 +1,395 @@
+query_id,subject_id,scientific_name,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
+job.pdb,af_P0AGG0_145_323_3.90.650.10,Escherichia coli,79.800,179,36,0,143,321,1,179,1.000,1.861E-27
+job.pdb,5d9uB01,unclassified,46.100,143,74,2,1,142,1,141,1.000,3.379E-18
+job.pdb,5cc8B02,unclassified,42.000,169,83,5,144,312,2,155,1.000,2.360E-17
+job.pdb,3mcqA02,Methylobacillus flagellatus KT,38.900,172,94,8,144,311,2,166,1.000,3.902E-14
+job.pdb,af_P9WG71_14_154_3.30.1330.10,Mycobacterium tuberculosis,29.400,136,91,5,2,134,6,139,1.000,3.755E-10
+job.pdb,af_P9WG71_161_323_3.90.650.10,Mycobacterium tuberculosis,29.800,181,104,8,144,320,2,163,1.000,2.928E-11
+job.pdb,3mcqA01,Methylobacillus flagellatus KT,48.600,111,53,3,32,142,23,129,1.000,2.945E-10
+job.pdb,1yawA01,unclassified,28.500,105,73,2,35,137,25,129,1.000,3.344E-09
+job.pdb,1vqvB02,Aquifex aeolicus VF5,32.900,176,86,10,144,310,2,154,1.000,1.265E-09
+job.pdb,2yxzB02,Thermus thermophilus HB8,25.700,175,113,10,142,312,1,162,1.000,1.613E-09
+job.pdb,af_Q60337_1_142_3.30.1330.10,Methanocaldococcus jannaschii,28.500,140,97,2,1,137,1,140,1.000,5.087E-10
+job.pdb,af_Q60337_145_317_3.90.650.10,Methanocaldococcus jannaschii,23.900,188,109,13,148,319,4,173,1.000,6.931E-09
+job.pdb,2yxzD01,Thermus thermophilus HB8,24.700,105,77,2,35,137,36,140,1.000,5.173E-07
+job.pdb,2yydA02,unclassified,17.400,189,121,9,143,304,1,181,1.000,4.287E-08
+job.pdb,3u0oA01,Escherichia coli K-12,21.000,119,86,4,26,141,21,134,1.000,1.204E-07
+job.pdb,af_A0A1D6F7U6_39_182_3.30.1330.10,Propioniferax innocua,18.600,118,82,4,36,142,30,144,1.000,1.631E-07
+job.pdb,3vtiD02,Caldanaerobacter subterraneus subsp. tengcongensis MB4,19.800,176,129,9,142,313,1,168,1.000,6.559E-08
+job.pdb,2z01A01,Geobacillus kaustophilus HTA426,18.400,146,102,7,4,142,3,138,1.000,6.206E-07
+job.pdb,2zodA01,Aquifex aeolicus VF5,20.100,114,81,4,33,142,27,134,1.000,1.367E-06
+job.pdb,af_P00967_819_956_3.30.1330.10,Drosophila melanogaster,12.700,141,105,5,16,142,2,138,1.000,1.367E-06
+job.pdb,2yyeA01,Aquifex aeolicus VF5,20.000,145,103,6,2,142,23,158,1.000,1.445E-07
+job.pdb,2i6rA02,Escherichia coli K-12,22.800,188,119,11,143,321,2,172,1.000,1.279E-07
+job.pdb,3u0oB01,Escherichia coli K-12,22.600,115,79,4,27,137,38,146,1.000,6.595E-07
+job.pdb,5avmH01,Thermus thermophilus HB8,25.000,116,73,4,38,142,2,114,1.000,1.852E-06
+job.pdb,2rb9D01,Escherichia coli O157:H7,23.100,147,92,6,4,139,7,143,1.000,1.367E-06
+job.pdb,3wjpA02,Thermococcus kodakarensis KOD1,17.000,182,125,11,142,310,1,169,1.000,1.453E-06
+job.pdb,2z1fA01,Thermococcus kodakarensis KOD1,23.400,111,76,4,34,138,5,112,1.000,2.509E-06
+job.pdb,3qtyB01,Francisella tularensis subsp. tularensis SCHU S4,20.400,142,91,8,14,140,10,144,1.000,4.581E-07
+job.pdb,af_G3V918_434_598_3.30.1330.10,Rattus norvegicus,17.100,140,94,5,16,138,28,162,1.000,4.335E-06
+job.pdb,3m84A01,Francisella tularensis subsp. tularensis SCHU S4,18.800,159,103,9,1,142,14,163,1.000,3.182E-07
+job.pdb,af_Q58057_153_321_3.90.650.10,Methanocaldococcus jannaschii,17.500,177,115,11,142,310,6,159,1.000,1.139E-06
+job.pdb,2zauB01,Aquifex aeolicus VF5,18.500,108,80,4,36,142,22,122,1.000,1.217E-05
+job.pdb,af_Q58811_94_234_3.30.1330.10,Methanocaldococcus jannaschii,19.300,124,82,5,27,139,24,140,1.000,9.548E-06
+job.pdb,af_Q58057_21_152_3.30.1330.10,Methanocaldococcus jannaschii,20.400,137,101,5,3,136,1,132,1.000,1.743E-06
+job.pdb,3fd6B01,Homo sapiens,19.400,113,77,7,35,139,27,133,1.000,1.294E-05
+job.pdb,3vtiD01,Caldanaerobacter subterraneus subsp. tengcongensis MB4,20.500,107,75,4,40,139,30,133,1.000,3.200E-06
+job.pdb,af_Q57656_2_157_3.30.1330.10,Methanocaldococcus jannaschii,18.600,145,101,7,4,138,18,155,1.000,2.362E-06
+job.pdb,3vysC01,Thermococcus kodakarensis KOD1,23.100,147,96,7,2,137,11,151,1.000,2.818E-07
+job.pdb,af_Q4CNK4_62_184_3.30.1330.10,Trypanosoma cruzi,21.900,123,79,7,31,142,7,123,1.000,7.047E-06
+job.pdb,2z1tA02,Desulfovibrio vulgaris str. Hildenborough,18.500,194,130,14,143,321,2,182,1.000,5.873E-06
+job.pdb,af_Q20143_423_585_3.30.1330.10,Caenorhabditis elegans,14.700,142,95,6,14,136,26,160,1.000,2.103E-05
+job.pdb,af_Q58089_159_335_3.90.650.10,Methanocaldococcus jannaschii,20.000,180,118,11,145,313,2,166,1.000,1.649E-05
+job.pdb,af_Q8I348_690_858_3.30.1330.10,Plasmodium falciparum,20.500,146,94,8,4,136,29,165,1.000,5.873E-06
+job.pdb,af_Q58660_368_551_3.30.1330.10,Methanocaldococcus jannaschii,20.600,155,98,7,1,137,35,182,1.000,1.544E-06
+job.pdb,af_O14228_427_611_3.90.650.10,Schizosaccharomyces pombe,15.500,187,121,12,142,309,7,175,1.000,6.241E-06
+job.pdb,3viuA02,Thermus thermophilus HB8,17.000,129,91,5,18,137,22,143,1.000,2.523E-05
+job.pdb,af_Q58209_150_293_3.90.650.10,Methanocaldococcus jannaschii,17.600,170,93,11,145,309,2,129,1.000,3.861E-05
+job.pdb,af_Q58811_235_402_3.90.650.10,Methanocaldococcus jannaschii,14.500,185,116,13,142,310,2,160,1.000,3.028E-05
+job.pdb,3viuA04,Thermus thermophilus HB8,19.400,175,101,11,147,310,5,150,1.000,5.873E-06
+job.pdb,2hs4A01,Thermotoga maritima MSB8,15.500,186,122,13,142,311,36,202,1.000,1.461E-05
+job.pdb,3viuA01,Thermus thermophilus HB8,20.200,183,90,9,143,311,36,176,1.000,1.552E-05
+job.pdb,af_Q58209_37_144_3.30.1330.10,Methanocaldococcus jannaschii,20.000,110,70,5,33,138,12,107,1.000,3.028E-05
+job.pdb,1vk3A01,Thermotoga maritima MSB8,16.800,172,113,12,142,310,27,171,1.000,4.632E-05
+job.pdb,af_Q54JC8_437_623_3.90.650.10,Dictyostelium discoideum,15.700,190,118,13,143,309,7,177,1.000,2.235E-05
+job.pdb,af_Q2FZJ0_383_560_3.30.1330.10,Staphylococcus aureus,15.300,150,107,8,1,137,34,176,1.000,1.015E-05
+job.pdb,af_O15067_835_1007_3.90.650.10,Homo sapiens,20.000,185,109,13,142,310,4,165,1.000,2.849E-05
+job.pdb,af_P9WHL7_412_590_3.30.1330.10,Mycobacterium tuberculosis,22.300,152,95,9,1,137,33,176,1.000,3.839E-06
+job.pdb,af_B9FM04_927_1089_3.90.650.10,Oryza sativa,19.200,171,108,8,150,311,8,157,1.000,9.036E-05
+job.pdb,af_P15254_808_980_3.90.650.10,Escherichia coli,17.400,189,108,12,142,311,8,167,1.000,3.419E-05
+job.pdb,af_P9WHL7_599_765_3.90.650.10,Mycobacterium tuberculosis,21.800,174,104,11,147,311,1,151,1.000,1.224E-04
+job.pdb,5avmA02,Thermus thermophilus HB8,19.100,178,111,14,146,304,4,167,1.000,8.503E-05
+job.pdb,1vk3A02,Thermotoga maritima MSB8,13.500,140,94,6,5,138,13,131,1.000,1.382E-04
+job.pdb,af_Q2FZI8_168_339_3.90.650.10,Staphylococcus aureus,18.900,179,118,14,143,302,1,171,1.000,1.224E-04
+job.pdb,3p4eA02,Vibrio cholerae O1 biovar El Tor str. N16961,14.600,184,128,12,143,306,1,175,1.000,8.002E-05
+job.pdb,af_I1KNV7_220_391_3.90.650.10,Glycine max,17.300,179,116,14,147,304,5,172,1.000,1.152E-04
+job.pdb,3viuA03,Thermus thermophilus HB8,20.000,150,99,10,1,137,36,177,1.000,5.906E-05
+job.pdb,af_O62461_184_360_3.90.650.10,Caenorhabditis elegans,14.800,182,116,11,146,298,3,174,1.000,7.573E-04
+job.pdb,af_Q54JC8_838_1025_3.90.650.10,Dictyostelium discoideum,16.500,193,123,11,142,311,3,180,1.000,3.045E-04
+job.pdb,2btuA02,Bacillus anthracis,14.000,178,129,12,143,304,1,170,1.000,1.090E-03
+job.pdb,af_Q54GJ2_634_814_3.90.650.10,Dictyostelium discoideum,14.600,184,128,12,145,304,2,180,1.000,3.653E-04
+job.pdb,5vk4B02,Neisseria gonorrhoeae FA 1090,12.700,181,134,8,143,304,1,176,1.000,8.047E-04
+job.pdb,af_P07244_618_801_3.90.650.10,Saccharomyces cerevisiae,17.000,188,119,15,147,308,6,182,1.000,2.247E-04
+job.pdb,af_Q20143_590_782_3.90.650.10,Caenorhabditis elegans,17.700,180,119,11,148,304,7,180,1.000,7.573E-04
+job.pdb,3fd5A02,Homo sapiens,17.100,192,134,13,136,315,24,202,1.000,1.390E-03
+job.pdb,af_Q57656_158_337_3.90.650.10,Methanocaldococcus jannaschii,14.500,186,131,11,142,310,3,177,1.000,5.589E-04
+job.pdb,1vk3A03,Thermotoga maritima MSB8,19.500,123,66,7,34,138,32,139,1.000,2.538E-04
+job.pdb,3qtyA02,Francisella tularensis subsp. tularensis SCHU S4,14.900,181,125,10,143,304,1,171,0.999,1.390E-03
+job.pdb,af_O18373_210_383_3.90.650.10,Drosophila melanogaster,17.800,174,113,12,146,296,3,169,0.999,3.904E-03
+job.pdb,2v9yB02,Homo sapiens,12.200,180,125,12,147,303,6,175,0.999,1.308E-03
+job.pdb,af_I1MZA8_520_677_3.90.650.10,Glycine max,15.800,170,104,12,147,305,9,150,0.998,1.026E-03
+job.pdb,af_I6Y4V6_182_356_3.90.650.10,Mycobacterium tuberculosis,14.900,167,119,9,147,295,4,165,0.996,3.674E-03
+job.pdb,af_K7LRK7_729_913_3.30.1330.10,Glycine max,10.600,132,84,7,30,136,63,185,0.996,3.457E-03
+job.pdb,af_P00967_957_1151_3.90.650.10,Drosophila melanogaster,15.200,184,123,14,147,306,6,180,0.988,4.408E-03
+job.pdb,af_B9FM04_318_524_3.30.1330.10,Oryza sativa,12.300,146,76,8,30,134,72,206,0.961,2.552E-03
+job.pdb,af_A0A0G2KGL2_601_790_3.90.650.10,Danio rerio,12.600,182,123,11,147,303,6,176,0.956,2.138E-02
+job.pdb,af_O14228_221_426_3.30.1330.10,Schizosaccharomyces pombe,6.400,171,106,7,19,136,37,206,0.837,7.615E-03
+job.pdb,4b45A02,Haloferax volcanii DS2,17.300,98,67,9,41,131,1,91,0.817,1.096E-02
+job.pdb,3ct4A02,Lactococcus lactis subsp. lactis Il1403,7.500,80,67,4,59,133,38,115,0.795,3.272E-02
+job.pdb,2rhhA02,Bacillus subtilis subsp. subtilis str. 168,15.200,105,65,8,38,134,3,91,0.772,2.272E-02
+job.pdb,5mn7B02,Staphylococcus aureus,14.000,107,76,7,34,135,41,136,0.720,3.477E-02
+job.pdb,3mdoB01,Parabacteroides distasonis ATCC 8503,14.200,91,58,7,59,134,50,135,0.692,1.587E-01
+job.pdb,3mdoB02,Parabacteroides distasonis ATCC 8503,11.600,214,127,16,142,306,6,206,0.632,3.926E-02
+job.pdb,af_I1N0I5_269_374_3.30.1330.20,Glycine max,12.000,108,71,8,35,134,1,92,0.601,2.138E-02
+job.pdb,3gtzB00,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,13.200,121,80,7,26,136,10,115,0.569,1.165E-02
+job.pdb,1w5fB02,Thermotoga maritima MSB8,12.900,108,73,7,38,138,20,113,0.569,2.272E-02
+job.pdb,af_A4HUE9_191_342_3.30.1180.20,Leishmania infantum,10.700,149,89,12,21,140,7,140,0.569,8.598E-03
+job.pdb,5hy0D01,Frankia inefficax,15.000,113,68,7,40,136,5,105,0.537,2.727E-02
+job.pdb,af_P0A9A6_224_341_3.30.1330.20,Escherichia coli,9.000,111,76,9,41,140,1,97,0.505,3.926E-02
+job.pdb,4b46A02,Haloferax volcanii DS2,12.500,104,65,7,41,132,1,90,0.473,3.079E-02
+job.pdb,af_Q58039_249_363_3.30.1330.20,Methanocaldococcus jannaschii,16.500,115,81,9,41,149,1,106,0.473,9.763E-02
+job.pdb,af_Q9N5C4_187_332_3.30.1180.20,Caenorhabditis elegans,4.900,81,68,4,59,133,46,123,0.473,2.285E-01
+job.pdb,1gudA02,Escherichia coli K-12,13.800,65,50,4,58,121,3,62,0.473,3.947E-01
+job.pdb,af_B4G011_363_515_3.30.1330.90,Propioniferax innocua,10.700,102,65,6,54,129,5,106,0.473,2.897E-02
+job.pdb,3vo9A00,Staphylococcus aureus subsp. aureus Mu50,13.200,98,65,6,40,132,199,281,0.473,4.710E-02
+job.pdb,4nq3B01,Azorhizobium caulinodans ORS 571,13.100,99,70,6,41,134,2,89,0.442,6.781E-02
+job.pdb,3i7tA00,Mycobacterium tuberculosis CDC1551,10.800,83,61,4,60,136,43,118,0.442,8.137E-02
+job.pdb,5u1hB00,Pseudomonas aeruginosa PAO1,8.000,124,84,6,33,133,3,119,0.442,1.578E-02
+job.pdb,3td4B00,Acinetobacter baumannii ATCC 19606 = CIP 70.34 = JCM 6841,12.500,135,70,11,35,136,4,123,0.411,3.694E-02
+job.pdb,af_I1N8C3_307_410_3.30.1330.40,Glycine max,7.700,103,79,6,40,133,8,103,0.382,8.137E-02
+job.pdb,af_Q54Z54_259_372_3.30.1330.20,Dictyostelium discoideum,14.800,108,66,7,35,132,1,92,0.382,5.005E-02
+job.pdb,af_Q3LXA3_189_342_3.30.1180.20,Homo sapiens,12.600,87,54,6,60,130,46,126,0.382,6.382E-02
+job.pdb,af_P39265_134_311_3.40.50.2300,Escherichia coli,13.600,66,49,5,58,121,3,62,0.382,3.496E-01
+job.pdb,1ofuB02,Pseudomonas aeruginosa PAO1,15.800,107,66,10,41,139,1,91,0.353,1.037E-01
+job.pdb,af_Q9USQ7_300_402_3.30.1330.40,Schizosaccharomyces pombe,10.700,102,75,6,40,134,8,100,0.353,1.102E-01
+job.pdb,2dyyG00,Pyrococcus horikoshii OT3,10.900,91,58,5,58,136,45,124,0.353,1.494E-01
+job.pdb,3pnmA02,Escherichia coli K-12,8.600,58,47,3,83,134,87,144,0.353,1.494E-01
+job.pdb,af_A0A1D6FPC6_326_437_3.30.1330.20,Propioniferax innocua,14.600,116,67,9,35,138,1,96,0.301,4.171E-02
+job.pdb,3zgrA02,unclassified,10.100,148,86,11,34,138,1,144,0.301,1.102E-01
+job.pdb,4rxtA02,Agrobacterium radiobacter K84,15.100,66,48,5,59,121,5,65,0.301,2.150E-01
+job.pdb,af_Q58424_319_450_3.30.1330.90,Methanocaldococcus jannaschii,10.400,86,58,4,54,122,3,86,0.277,3.926E-02
+job.pdb,af_P0AFQ5_1_128_3.30.1330.40,Escherichia coli,9.800,112,80,9,34,134,23,124,0.254,2.024E-01
+job.pdb,2uzhA00,Mycolicibacterium smegmatis MC2 155,7.900,151,83,7,38,135,2,149,0.254,7.657E-02
+job.pdb,af_B6TL41_66_225_3.30.1330.50,Propioniferax innocua,10.000,159,82,9,35,135,1,156,0.254,5.005E-02
+job.pdb,4bvrA01,Pseudomonas sp. ADP,9.400,116,71,7,40,137,3,102,0.233,7.657E-02
+job.pdb,5ibqA02,Rhizobium etli CFN 42,9.200,65,49,3,58,121,4,59,0.233,2.914E-01
+job.pdb,af_A4I058_2_156_3.30.1330.40,Leishmania infantum,10.800,129,83,11,33,134,29,152,0.233,1.102E-01
+job.pdb,af_Q9GPZ7_59_366_3.40.50.1440,Dictyostelium discoideum,10.200,107,72,7,38,136,218,308,0.214,2.024E-01
+job.pdb,4yj2D02,Bos taurus,8.100,111,71,6,39,134,6,100,0.196,3.096E-01
+job.pdb,af_P0A703_1_113_3.30.2320.80,Escherichia coli,12.800,70,56,3,57,124,1,67,0.196,7.700E-01
+job.pdb,af_Q86KR5_2_129_3.30.1330.40,Dictyostelium discoideum,12.300,113,77,11,34,134,23,125,0.196,2.428E-01
+job.pdb,5dteD02,Actinobacillus succinogenes 130Z,15.300,65,45,4,58,121,6,61,0.196,5.033E-01
+job.pdb,2fn9B02,Thermotoga maritima MSB8,14.400,69,52,3,57,121,2,67,0.196,5.033E-01
+job.pdb,1w5eE02,Methanocaldococcus jannaschii DSM 2661,11.700,111,67,8,39,139,1,90,0.179,1.792E-01
+job.pdb,5hp8A00,Arabidopsis thaliana,10.700,112,73,7,40,136,9,108,0.179,2.742E-01
+job.pdb,2r75102,Aquifex aeolicus VF5,13.300,105,60,9,41,132,1,87,0.179,3.290E-01
+job.pdb,1dbpA02,Escherichia coli K-12,12.100,66,50,5,57,121,2,60,0.179,3.290E-01
+job.pdb,3d01E00,Agrobacterium fabrum str. C58,14.900,134,73,10,33,136,29,151,0.179,1.245E-01
+job.pdb,3a3kA02,Rattus norvegicus,9.200,65,53,3,57,120,1,60,0.179,3.496E-01
+job.pdb,af_Q8IK81_1_397_3.40.50.1440,Plasmodium falciparum,9.000,111,70,10,40,132,297,394,0.179,8.695E-01
+job.pdb,af_Q4DTQ7_2_404_3.40.50.1440,Trypanosoma cruzi,8.500,70,50,4,75,133,334,400,0.179,3.715E-01
+job.pdb,4u39H02,Bacillus subtilis subsp. subtilis str. 168,11.100,54,36,6,80,130,23,67,0.164,4.457E-01
+job.pdb,3i3fC00,Giardia lamblia ATCC 50803,12.000,75,55,6,69,134,53,125,0.164,5.683E-01
+job.pdb,2iu6A02,Lactococcus lactis subsp. lactis Il1403,12.000,83,57,5,59,130,30,107,0.164,6.039E-01
+job.pdb,af_G5EF01_263_371_3.30.1330.20,Caenorhabditis elegans,11.300,115,68,10,41,132,2,105,0.150,8.182E-01
+job.pdb,af_F4J3Q1_288_408_3.30.1330.40,Arabidopsis thaliana,9.700,123,74,10,37,134,9,119,0.150,1.323E-01
+job.pdb,1iv1B00,Thermus thermophilus HB8,21.700,69,39,5,78,136,87,150,0.150,2.428E-01
+job.pdb,af_P37387_129_330_3.40.50.2300,Escherichia coli,16.400,67,48,4,61,124,2,63,0.150,3.715E-01
+job.pdb,2btqA01,Prosthecobacter dejongeii,11.700,111,67,7,40,132,271,368,0.150,3.947E-01
+job.pdb,2btoA02,Escherichia coli K-12,11.500,113,65,6,39,134,1,95,0.138,4.195E-01
+job.pdb,3lybC00,unclassified,7.100,84,64,4,60,137,57,132,0.138,3.715E-01
+job.pdb,5hqjA02,Paraburkholderia graminis C4D1M,12.500,64,44,3,59,121,5,57,0.138,5.033E-01
+job.pdb,af_P77718_1_174_3.30.2130.30,Escherichia coli,10.300,97,68,6,40,128,75,160,0.138,5.348E-01
+job.pdb,3byqA00,Bordetella bronchiseptica RB50,17.100,157,84,10,21,137,12,162,0.138,1.587E-01
+job.pdb,2xkbE00,Bacillus thuringiensis serovar israelensis,9.400,106,76,9,40,134,262,358,0.138,9.818E-01
+job.pdb,af_A0A1D8PGY1_281_387_3.30.1330.40,Candida albicans,11.300,106,77,9,39,135,8,105,0.126,6.819E-01
+job.pdb,af_Q8MRI4_457_563_3.30.1330.40,Drosophila melanogaster,9.400,85,59,7,60,136,32,106,0.126,8.695E-01
+job.pdb,af_O74215_190_351_3.30.1180.20,Schizosaccharomyces pombe,13.500,103,63,7,57,142,46,139,0.126,5.683E-01
+job.pdb,af_P54838_187_359_3.30.1180.20,Saccharomyces cerevisiae,17.200,58,35,4,84,130,79,134,0.126,9.239E-01
+job.pdb,4kq9A02,Conexibacter woesei DSM 14684,7.600,65,50,5,58,121,13,68,0.126,8.182E-01
+job.pdb,af_Q57865_2_266_3.40.50.720,Methanocaldococcus jannaschii,11.600,103,66,5,59,142,133,229,0.126,2.024E-01
+job.pdb,af_A0A368UHX5_707_830_3.30.1180.20,Glycine max,7.800,102,71,8,53,138,12,106,0.116,6.819E-01
+job.pdb,1nq3C00,Capra hircus,12.500,64,44,3,80,138,74,130,0.116,3.496E-01
+job.pdb,af_Q2G1Z0_180_322_3.30.1180.20,Staphylococcus aureus,11.400,87,65,4,57,138,46,125,0.116,9.818E-01
+job.pdb,af_P37387_122_310_3.50.50.60,Escherichia coli,15.800,82,51,7,47,124,3,70,0.116,5.348E-01
+job.pdb,af_P0A700_1_115_3.30.2320.80,Escherichia coli,11.400,70,57,3,57,124,1,67,0.106,1.915E+00
+job.pdb,af_Q12429_297_418_3.30.1330.40,Saccharomyces cerevisiae,9.500,126,94,7,26,136,2,122,0.106,4.195E-01
+job.pdb,af_B9F460_288_412_3.30.1330.40,Oryza sativa,10.000,120,80,9,36,134,12,124,0.106,5.683E-01
+job.pdb,3lmeH00,Rhodopseudomonas palustris CGA009,12.900,116,79,9,34,137,23,128,0.106,1.109E+00
+job.pdb,2pafA02,Escherichia coli K-12,14.000,64,48,2,60,123,2,58,0.106,1.109E+00
+job.pdb,af_P02925_131_294_3.40.50.2300,Escherichia coli,4.400,67,51,5,57,121,1,56,0.106,1.043E+00
+job.pdb,2vk2A02,Escherichia coli K-12,10.000,70,49,6,57,121,1,61,0.106,1.109E+00
+job.pdb,af_Q70MR5_72_295_3.20.20.10,Glycine max,11.600,43,34,2,85,124,183,224,0.106,7.700E-01
+job.pdb,af_Q9W1D1_165_456_3.90.550.10,Drosophila melanogaster,10.100,69,54,2,54,122,1,61,0.106,6.819E-01
+job.pdb,3mqwD00,Entamoeba histolytica HM-1:IMSS,6.000,82,65,3,60,136,67,141,0.098,8.182E-01
+job.pdb,af_P39265_140_289_3.40.50.2300,Escherichia coli,12.300,65,44,6,60,121,2,56,0.098,1.252E+00
+job.pdb,3b6nA00,Plasmodium vivax Sal-1,12.500,80,56,5,67,135,69,145,0.098,2.285E-01
+job.pdb,4ry8D02,Pseudothermotoga lettingae TMO,12.100,66,45,5,57,119,1,56,0.098,1.413E+00
+job.pdb,af_P0AEE5_132_321_3.40.50.2300,Escherichia coli,12.300,73,53,5,58,124,6,73,0.098,1.178E+00
+job.pdb,af_P76142_130_338_3.40.50.2300,Escherichia coli,7.500,66,52,7,59,121,4,63,0.098,1.252E+00
+job.pdb,af_Q0IZQ8_101_346_3.40.50.1440,Oryza sativa,10.900,110,62,7,40,134,157,245,0.098,4.457E-01
+job.pdb,af_Q2FZ58_236_548_3.40.50.510,Staphylococcus aureus,7.500,53,46,2,80,132,263,312,0.098,2.162E+00
+job.pdb,3qw2D02,Archaeoglobus fulgidus DSM 4304,12.600,87,58,6,64,135,3,86,0.090,9.239E-01
+job.pdb,1jd1F00,Saccharomyces cerevisiae S288C,10.600,122,85,7,26,134,12,122,0.090,6.819E-01
+job.pdb,af_I1M611_384_512_3.30.1330.90,Glycine max,11.100,108,68,6,59,142,11,114,0.090,8.182E-01
+job.pdb,4pz0A02,Bacillus anthracis,7.600,65,50,7,60,121,4,61,0.090,1.915E+00
+job.pdb,af_I6YGW9_1_150_3.30.1330.40,Mycobacterium tuberculosis,11.600,137,74,12,33,136,28,150,0.090,3.496E-01
+job.pdb,af_Q494P3_193_346_3.30.1180.20,Arabidopsis thaliana,14.400,90,61,7,56,132,43,129,0.090,1.915E+00
+job.pdb,af_Q55EE0_214_393_3.30.1180.20,Dictyostelium discoideum,12.500,56,43,4,83,132,102,157,0.090,1.330E+00
+job.pdb,af_P76142_28_264_3.40.605.10,Escherichia coli,11.400,70,51,5,56,121,103,165,0.090,1.696E+00
+job.pdb,3a44B01,Thermococcus kodakarensis KOD1,12.100,66,57,1,59,124,2,66,0.082,4.763E+00
+job.pdb,2chsI00,Bacillus subtilis subsp. subtilis str. 168,7.400,107,75,6,39,134,1,94,0.082,3.113E+00
+job.pdb,af_F1QEY8_321_451_3.30.1330.90,Danio rerio,8.800,102,68,5,50,129,2,100,0.082,8.695E-01
+job.pdb,3huuA02,Staphylococcus haemolyticus JCSC1435,13.800,65,44,4,58,120,1,55,0.082,2.298E+00
+job.pdb,2x7xB02,Bacteroides thetaiotaomicron VPI-5482,12.500,64,44,5,60,121,5,58,0.082,1.252E+00
+job.pdb,4ei7B01,Bacillus cereus ATCC 10987,8.100,122,82,8,42,140,15,129,0.082,7.700E-01
+job.pdb,4yr7A02,Vibrio harveyi,8.000,62,50,4,61,121,2,57,0.082,1.802E+00
+job.pdb,2rjoA02,Paraburkholderia phytofirmans PsJN,10.400,67,45,7,58,121,3,57,0.082,7.246E-01
+job.pdb,af_A0A1D8PEI2_192_361_3.30.1180.20,Candida albicans,9.800,91,67,5,53,130,43,131,0.082,2.035E+00
+job.pdb,3i45A02,Rhodospirillum rubrum ATCC 11170,11.400,61,46,4,63,121,2,56,0.082,7.700E-01
+job.pdb,af_K7LLW6_114_369_3.40.50.1440,Glycine max,11.700,111,60,9,40,134,167,255,0.082,1.330E+00
+job.pdb,3a44C01,Thermococcus kodakarensis KOD1,10.000,70,54,2,59,124,2,66,0.076,2.930E+00
+job.pdb,af_O77331_471_604_3.30.1330.30,Plasmodium falciparum,7.000,100,63,5,59,130,16,113,0.076,5.033E-01
+job.pdb,af_Q8MRI4_584_718_3.30.1330.40,Drosophila melanogaster,12.900,62,40,3,80,136,83,135,0.076,1.596E+00
+job.pdb,3hs3B02,Lactobacillus acidophilus NCFM,6.300,63,49,5,60,121,2,55,0.076,1.915E+00
+job.pdb,1usiA02,Escherichia coli K-12,9.300,64,50,3,61,124,2,57,0.076,1.109E+00
+job.pdb,af_A0A143ZWM3_57_240_3.30.1330.50,Plasmodium falciparum,7.800,89,57,7,68,137,99,181,0.076,2.914E-01
+job.pdb,af_B7ZYV4_72_368_3.20.20.10,Propioniferax innocua,17.800,28,23,0,97,124,264,291,0.076,3.113E+00
+job.pdb,3cinA02,Thermotoga maritima MSB8,15.100,86,60,2,67,139,6,91,0.069,1.915E+00
+job.pdb,af_Q7XJ15_66_191_3.40.50.620,Oryza sativa,17.500,80,56,4,47,124,7,78,0.069,2.035E+00
+job.pdb,4z0nA02,Streptobacillus moniliformis DSM 12112,12.200,122,62,7,59,170,2,88,0.069,4.457E-01
+job.pdb,af_Q8I4N4_46_205_3.40.50.2300,Caenorhabditis elegans,12.500,64,49,4,62,123,2,60,0.069,2.930E+00
+job.pdb,3lkbB02,Thermus thermophilus HB8,10.100,59,45,3,64,122,6,56,0.069,2.162E+00
+job.pdb,af_O13902_185_353_3.30.1180.20,Schizosaccharomyces pombe,13.400,104,63,7,53,137,45,140,0.069,1.109E+00
+job.pdb,af_A4I172_436_609_3.30.1330.40,Leishmania infantum,6.500,76,51,6,70,136,109,173,0.069,9.239E-01
+job.pdb,4iilA02,Treponema pallidum subsp. pallidum str. Nichols,13.400,67,51,3,59,123,5,66,0.069,2.930E+00
+job.pdb,af_P9WQH3_6_225_3.40.50.1000,Mycobacterium tuberculosis,5.400,91,68,6,60,141,128,209,0.069,9.818E-01
+job.pdb,af_A4IAQ0_28_95_3.20.20.60,Leishmania infantum,5.500,72,56,1,53,124,9,68,0.063,4.482E+00
+job.pdb,af_P23257_270_386_3.30.1330.20,Drosophila melanogaster,16.100,62,33,5,84,130,56,113,0.063,1.696E+00
+job.pdb,6g81A00,Helicobacter pylori J99,13.200,68,54,4,57,120,1,67,0.063,2.298E+00
+job.pdb,3m1xA00,Entamoeba histolytica HM-1:IMSS,6.400,78,61,3,60,132,51,121,0.063,1.596E+00
+job.pdb,2ig8C00,Pseudomonas aeruginosa PAO1,8.300,84,64,4,60,137,57,133,0.063,1.413E+00
+job.pdb,af_P38683_147_299_3.40.50.2300,Escherichia coli,4.600,65,54,4,59,123,4,60,0.063,3.113E+00
+job.pdb,4nqrA02,Trichormus variabilis ATCC 29413,10.000,70,51,5,54,123,1,58,0.063,1.330E+00
+job.pdb,af_Q12229_129_283_3.40.30.10,Saccharomyces cerevisiae,17.800,56,40,3,69,120,42,95,0.063,7.700E-01
+job.pdb,af_Q07553_43_245_3.40.50.2300,Drosophila melanogaster,7.100,70,53,4,56,123,115,174,0.063,2.595E+00
+job.pdb,af_A0A1D6IAQ3_139_360_3.40.50.1440,Propioniferax innocua,11.900,109,60,8,40,133,133,220,0.063,1.178E+00
+job.pdb,1qf6A04,Escherichia coli K-12,8.400,71,52,4,60,124,156,219,0.063,1.330E+00
+job.pdb,af_A0A1D8PMD4_3_407_3.40.50.1440,Candida albicans,4.600,65,46,3,84,136,345,405,0.063,1.330E+00
+job.pdb,1z5vA02,Homo sapiens,9.000,111,69,7,43,133,1,99,0.057,2.298E+00
+job.pdb,3oonA00,Borreliella burgdorferi B31,7.800,115,75,7,39,132,3,107,0.057,1.043E+00
+job.pdb,af_A0A1D6J8M6_7_118_3.30.420.10,Propioniferax innocua,10.000,110,70,6,37,124,10,112,0.057,1.330E+00
+job.pdb,af_B9F1C0_1067_1224_3.40.50.10130,Oryza sativa,15.000,80,50,6,51,121,69,139,0.057,2.298E+00
+job.pdb,2iksB02,Escherichia coli K-12,18.400,65,41,4,58,122,11,63,0.057,1.043E+00
+job.pdb,4mqfB02,Homo sapiens,13.800,65,47,4,60,124,2,57,0.057,2.757E+00
+job.pdb,1twiA02,Methanocaldococcus jannaschii DSM 2661,15.100,79,58,4,54,124,179,256,0.057,2.442E+00
+job.pdb,af_Q9M3B6_236_303_3.20.20.60,Arabidopsis thaliana,5.700,70,57,3,57,125,7,68,0.051,4.482E+00
+job.pdb,3jvdB02,Corynebacterium glutamicum ATCC 13032,7.600,65,49,3,58,122,3,56,0.051,1.596E+00
+job.pdb,3l6uB02,Exiguobacterium sibiricum 255-15,8.400,71,56,6,57,125,1,64,0.051,2.757E+00
+job.pdb,4n03A02,Thermomonospora curvata DSM 43183,6.600,60,51,2,63,122,4,58,0.051,2.595E+00
+job.pdb,af_Q2FYN4_34_283_3.20.20.10,Staphylococcus aureus,12.100,74,53,4,60,124,178,248,0.051,3.515E+00
+job.pdb,af_A0A0R0L5B0_30_94_3.20.20.60,Glycine max,9.700,72,50,3,53,124,7,63,0.045,4.763E+00
+job.pdb,3obwA03,Saccharolobus solfataricus P2,16.900,53,36,4,71,120,31,78,0.045,1.502E+00
+job.pdb,af_Q55H05_247_368_3.30.420.10,Dictyostelium discoideum,13.100,76,52,3,56,120,34,106,0.045,2.442E+00
+job.pdb,af_A4IAQ0_27_165_3.20.20.60,Leishmania infantum,6.800,73,56,1,53,125,10,70,0.045,6.857E+00
+job.pdb,af_Q4DJD0_2_146_3.40.30.10,Trypanosoma cruzi,11.500,69,48,5,57,122,11,69,0.045,1.330E+00
+job.pdb,af_A0A1D6EAJ9_234_394_3.40.30.10,Propioniferax innocua,14.000,71,46,4,61,122,6,70,0.045,9.818E-01
+job.pdb,4ey3A02,Rhodopseudomonas palustris BisB5,8.100,61,46,5,63,121,2,54,0.045,2.442E+00
+job.pdb,af_Q54BM7_872_1047_3.30.870.10,Dictyostelium discoideum,13.800,65,46,4,62,123,6,63,0.045,1.178E+00
+job.pdb,af_Q6F6B5_116_365_3.40.50.1440,Arabidopsis thaliana,10.300,116,59,10,38,136,163,250,0.045,1.802E+00
+job.pdb,af_K7K2L0_387_743_3.40.50.150,Glycine max,18.600,59,45,3,67,123,120,177,0.045,6.453E+00
+job.pdb,af_Q9VDN3_1_370_3.40.50.2300,Drosophila melanogaster,12.600,71,52,6,56,122,2,66,0.045,1.330E+00
+job.pdb,af_Q8I717_215_294_3.65.10.20,Plasmodium falciparum,9.700,41,36,1,84,124,8,47,0.040,7.743E+00
+job.pdb,2btqB02,Prosthecobacter dejongeii,13.200,68,38,5,79,133,31,90,0.040,2.930E+00
+job.pdb,af_Q54WY4_279_377_3.30.1330.30,Dictyostelium discoideum,10.200,88,52,7,57,132,10,82,0.040,2.298E+00
+job.pdb,af_A4IB19_1_112_3.40.30.10,Leishmania infantum,13.700,51,40,2,72,122,13,59,0.040,2.298E+00
+job.pdb,3bilB02,Corynebacterium glutamicum ATCC 13032,7.300,68,53,4,57,124,1,58,0.040,3.970E+00
+job.pdb,af_Q57746_4_148_3.40.50.360,Methanocaldococcus jannaschii,20.000,25,20,0,100,124,87,111,0.040,3.970E+00
+job.pdb,af_Q58654_4_161_3.30.2130.30,Methanocaldococcus jannaschii,6.600,90,64,6,60,136,74,156,0.040,1.696E+00
+job.pdb,af_Q9VU79_52_220_3.40.50.2300,Drosophila melanogaster,6.400,62,51,1,60,121,113,167,0.040,6.073E+00
+job.pdb,2vfaA00,Homo sapiens,13.800,65,48,5,59,123,35,91,0.040,2.595E+00
+job.pdb,2pl5A01,Leptospira interrogans serovar Lai str. 56601,13.100,38,32,1,87,124,199,235,0.040,3.515E+00
+job.pdb,af_Q84R40_123_196_3.30.2320.30,Oryza sativa,9.300,43,35,2,84,125,3,42,0.034,8.228E+00
+job.pdb,2zf8A02,Vibrio alginolyticus,14.200,49,40,2,84,130,40,88,0.034,8.228E+00
+job.pdb,2jaxA01,Mycobacterium tuberculosis H37Rv,13.700,80,57,4,48,125,5,74,0.034,3.970E+00
+job.pdb,af_Q8MR62_92_225_3.40.30.10,Drosophila melanogaster,0.000,40,38,1,83,122,30,67,0.034,3.308E+00
+job.pdb,2f9zD00,Thermotoga maritima MSB8,19.700,76,50,6,60,129,63,133,0.034,5.378E+00
+job.pdb,4f06A02,Rhodopseudomonas palustris HaA2,8.400,59,48,3,64,122,2,54,0.034,2.757E+00
+job.pdb,af_Q4DFE1_47_237_3.40.50.1000,Trypanosoma cruzi,10.600,47,34,2,82,123,60,103,0.034,8.228E+00
+job.pdb,af_P13437_5_396_2.60.40.420,Rattus norvegicus,15.200,85,64,4,41,123,7,85,0.034,4.482E+00
+job.pdb,af_Q7JNG1_146_228_3.30.2320.30,Caenorhabditis elegans,14.600,75,47,6,74,143,3,65,0.029,5.061E+00
+job.pdb,af_Q9N361_24_110_3.40.30.10,Caenorhabditis elegans,15.900,44,34,2,80,120,4,47,0.029,4.482E+00
+job.pdb,af_Q9VR00_3_95_3.40.30.10,Drosophila melanogaster,13.400,52,41,3,74,122,6,56,0.029,2.930E+00
+job.pdb,af_D3ZHS5_18_116_3.30.70.340,Rattus norvegicus,9.900,151,57,7,147,293,1,76,0.029,5.715E+00
+job.pdb,af_Q2FV89_2_105_3.40.30.10,Staphylococcus aureus,7.500,40,34,1,84,123,19,55,0.029,5.061E+00
+job.pdb,af_Q54JC3_2_105_3.40.30.10,Dictyostelium discoideum,10.200,39,32,2,83,120,18,54,0.029,4.218E+00
+job.pdb,af_Q8IB72_188_303_3.40.30.10,Plasmodium falciparum,17.900,39,31,1,84,122,18,55,0.029,4.482E+00
+job.pdb,af_A0A1D8PR99_259_379_3.40.30.10,Candida albicans,15.000,40,32,1,83,122,19,56,0.029,5.715E+00
+job.pdb,af_Q17967_228_361_3.40.30.10,Caenorhabditis elegans,10.200,39,34,1,84,122,28,65,0.029,3.113E+00
+job.pdb,3e61B02,Staphylococcus saprophyticus subsp. saprophyticus ATCC 15305 = NCTC 7292,6.800,58,48,3,63,118,3,56,0.029,4.218E+00
+job.pdb,3n0xA02,Rhodopseudomonas palustris CGA009,14.500,55,39,4,71,123,6,54,0.029,2.298E+00
+job.pdb,2xdqA01,Thermosynechococcus vestitus BP-1,14.200,35,30,0,87,121,51,85,0.029,9.873E+00
+job.pdb,af_Q4E4F8_157_322_3.30.360.10,Trypanosoma cruzi,8.900,112,67,7,61,144,2,106,0.029,2.442E+00
+job.pdb,6iqmA02,Lactiplantibacillus plantarum subsp. plantarum ATCC 14917 = JCM 1149 = CGMCC 1.2437,11.500,95,59,5,61,130,2,96,0.029,3.736E+00
+job.pdb,3hp4A00,Pseudoalteromonas sp. 643A,14.200,28,24,0,91,118,113,140,0.029,9.873E+00
+job.pdb,af_H2KZ05_281_485_3.30.870.10,Caenorhabditis elegans,9.500,94,68,5,34,120,1,84,0.029,2.757E+00
+job.pdb,1vbkB02,Pyrococcus horikoshii OT3,7.800,76,60,5,60,127,5,78,0.024,7.287E+00
+job.pdb,2vgmA03,Saccharomyces cerevisiae S288C,10.900,55,45,1,66,120,27,77,0.024,6.857E+00
+job.pdb,af_Q8IBS1_207_331_3.40.30.10,Plasmodium falciparum,2.400,41,36,2,84,120,38,78,0.024,3.113E+00
+job.pdb,af_Q9JLZ1_1_132_3.40.30.10,Rattus norvegicus,5.700,52,42,2,71,122,27,71,0.024,2.757E+00
+job.pdb,af_Q8IJX5_54_189_3.40.30.10,Plasmodium falciparum,5.400,37,35,0,84,120,40,76,0.024,4.218E+00
+job.pdb,3gbvB02,Bacteroides fragilis NCTC 9343,9.300,64,55,2,60,123,2,62,0.024,6.857E+00
+job.pdb,af_Q9VMI0_25_201_3.40.47.10,Drosophila melanogaster,11.700,85,67,6,38,120,5,83,0.024,9.873E+00
+job.pdb,af_C6KSU1_344_532_3.30.870.10,Plasmodium falciparum,11.100,54,42,3,67,120,2,49,0.024,3.113E+00
+job.pdb,1vjzA00,Thermotoga maritima MSB8,12.100,41,31,2,87,125,252,289,0.024,8.228E+00
+job.pdb,af_Q9W3P4_1_326_3.40.50.2300,Drosophila melanogaster,14.900,67,50,4,58,123,22,82,0.024,6.453E+00
+job.pdb,1jqgA01,Helicoverpa armigera,18.100,77,53,5,227,299,6,76,0.020,4.218E+00
+job.pdb,af_E1JGY6_1637_1729_3.40.30.10,Drosophila melanogaster,13.200,53,38,4,71,120,13,60,0.020,2.298E+00
+job.pdb,4ju5B02,Homo sapiens,15.000,40,33,1,82,120,19,58,0.020,4.218E+00
+job.pdb,2oe3B00,Saccharomyces cerevisiae S288C,10.500,38,32,2,84,120,22,58,0.020,5.715E+00
+job.pdb,5j7dE00,unclassified,11.400,70,47,3,53,121,1,56,0.020,3.308E+00
+job.pdb,af_I1NE04_569_675_3.40.30.10,Glycine max,4.800,41,39,0,80,120,20,60,0.020,3.515E+00
+job.pdb,af_P34475_271_379_3.30.1330.20,Caenorhabditis elegans,10.000,109,70,9,44,130,3,105,0.020,7.743E+00
+job.pdb,af_Q2FWA9_216_326_3.30.70.1350,Staphylococcus aureus,5.000,79,61,5,57,123,5,81,0.020,7.743E+00
+job.pdb,af_Q8I2V9_37_149_3.40.30.10,Plasmodium falciparum,12.700,55,42,3,68,120,15,65,0.020,3.308E+00
+job.pdb,af_E7FC06_377_490_3.40.30.10,Danio rerio,18.300,49,34,2,75,120,23,68,0.020,3.308E+00
+job.pdb,af_Q9VJZ6_1_115_3.40.30.10,Drosophila melanogaster,20.500,39,30,1,84,122,21,58,0.020,6.453E+00
+job.pdb,1jkiA02,Saccharomyces cerevisiae S288C,11.800,101,65,5,65,141,5,105,0.020,6.453E+00
+job.pdb,af_Q9U1X7_126_242_3.40.30.10,Caenorhabditis elegans,9.400,53,42,2,69,121,13,59,0.020,3.970E+00
+job.pdb,af_Q4DPX5_44_163_3.40.30.10,Trypanosoma cruzi,12.100,74,51,3,52,122,5,67,0.020,3.736E+00
+job.pdb,af_Q4DFA1_30_153_3.40.30.10,Trypanosoma cruzi,10.300,58,43,3,64,121,15,63,0.020,2.930E+00
+job.pdb,4ys6A02,Lachnoclostridium phytofermentans ISDg,9.800,61,52,3,57,116,1,59,0.020,8.228E+00
+job.pdb,5br1A02,Allorhizobium ampelinum S4,12.300,65,46,5,60,122,12,67,0.020,6.073E+00
+job.pdb,3nzpB02,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819,9.100,87,50,4,59,124,175,253,0.020,8.743E+00
+job.pdb,2vg2A01,Mycobacterium tuberculosis H37Rv,7.500,66,54,2,60,125,113,171,0.020,5.061E+00
+job.pdb,2e29A01,Homo sapiens,12.600,87,53,3,208,290,7,74,0.016,5.378E+00
+job.pdb,af_Q8I399_147_243_3.40.30.10,Plasmodium falciparum,7.500,40,34,1,84,123,2,38,0.016,7.287E+00
+job.pdb,af_A0A1D6HNY1_318_426_3.30.1330.40,Propioniferax innocua,11.700,85,54,6,53,125,19,94,0.016,3.515E+00
+job.pdb,af_P9WG61_44_154_3.40.30.10,Mycobacterium tuberculosis,14.000,57,39,3,66,122,13,59,0.016,5.378E+00
+job.pdb,af_Q8H2V6_78_188_3.40.30.10,Oryza sativa,5.100,39,36,1,84,122,25,62,0.016,6.453E+00
+job.pdb,2pu9C00,Synechocystis sp. PCC 6803 substr. Kazusa,5.800,51,44,2,72,122,16,62,0.016,4.482E+00
+job.pdb,af_Q9Y2G8_144_258_3.40.30.10,Homo sapiens,9.500,42,33,2,84,123,18,56,0.016,8.743E+00
+job.pdb,af_Q54EN4_249_366_3.40.30.10,Dictyostelium discoideum,5.200,38,34,2,84,121,20,55,0.016,6.073E+00
+job.pdb,af_B8A5M6_45_163_3.40.30.10,Danio rerio,12.500,56,43,3,68,121,19,70,0.016,5.715E+00
+job.pdb,af_Q9TZA9_107_231_2.40.50.140,Caenorhabditis elegans,10.100,69,44,6,84,139,19,82,0.016,3.736E+00
+job.pdb,af_Q69ST6_286_419_3.40.30.10,Oryza sativa,20.000,40,28,2,84,120,33,71,0.016,3.113E+00
+job.pdb,3cs3A02,Enterococcus faecalis V583,15.300,65,41,4,58,120,4,56,0.016,6.453E+00
+job.pdb,af_I1K3R5_582_733_3.30.300.30,Glycine max,14.200,35,29,1,92,125,86,120,0.016,8.228E+00
+job.pdb,af_A0A0R0JKV3_1_160_3.40.50.2300,Glycine max,15.200,59,42,4,65,123,2,52,0.016,9.873E+00
+job.pdb,3h5lB02,Ruegeria pomeroyi DSS-3,11.700,68,50,5,61,125,2,62,0.016,7.287E+00
+job.pdb,af_P50874_8_190_3.30.70.790,Saccharomyces cerevisiae,13.200,83,62,3,51,124,84,165,0.016,8.743E+00
+job.pdb,af_Q8CAY6_6_396_3.40.47.10,Mus musculus,7.600,91,68,6,40,123,3,84,0.016,8.228E+00
+job.pdb,af_Q2FWE7_104_179_3.30.2320.30,Staphylococcus aureus,23.200,43,29,4,83,125,4,42,0.014,8.743E+00
+job.pdb,1v98B00,Thermus thermophilus HB8,11.900,42,31,3,84,123,2,39,0.014,9.873E+00
+job.pdb,af_F4HPP4_219_313_3.40.30.10,Arabidopsis thaliana,7.100,42,37,2,82,123,9,48,0.014,9.873E+00
+job.pdb,af_Q54QZ6_272_374_3.40.30.10,Dictyostelium discoideum,10.200,39,33,2,84,122,32,68,0.014,8.228E+00
+job.pdb,af_A0A1L1SUL6_2_114_3.40.30.10,Mus musculus,6.500,46,37,3,80,122,24,66,0.014,7.287E+00
+job.pdb,af_Q8IIR6_171_285_3.40.30.10,Plasmodium falciparum,3.800,52,43,2,71,122,16,60,0.014,5.061E+00
+job.pdb,af_Q10057_231_346_3.40.30.10,Schizosaccharomyces pombe,7.100,56,44,3,67,122,9,56,0.014,5.061E+00
+job.pdb,af_Q9VUG9_1_121_3.40.30.10,Drosophila melanogaster,7.600,39,35,1,84,122,29,66,0.014,7.287E+00
+job.pdb,af_Q57673_82_206_3.30.2320.30,Methanocaldococcus jannaschii,11.700,68,46,4,60,124,25,81,0.014,5.378E+00
+job.pdb,3cg6B00,Mus musculus,12.800,78,50,3,57,118,2,77,0.014,5.715E+00
+job.pdb,af_A0A2R8QUS4_240_368_3.40.30.10,Danio rerio,10.500,38,34,0,84,121,24,61,0.014,6.857E+00
+job.pdb,af_Q9VEN6_71_200_3.30.420.80,Drosophila melanogaster,13.800,65,46,3,61,124,61,116,0.014,7.287E+00
+job.pdb,af_Q04004_79_209_3.40.30.10,Saccharomyces cerevisiae,5.700,52,45,2,69,120,13,60,0.014,5.061E+00
+job.pdb,2l5lA00,Phocaeicola vulgatus ATCC 8482,5.100,39,36,1,84,122,40,77,0.014,8.228E+00
+job.pdb,af_I1KL32_193_359_3.30.360.10,Glycine max,6.600,105,70,7,59,138,5,106,0.014,5.061E+00
+job.pdb,2nv9D02,Paramecium bursaria Chlorella virus 1,15.900,44,30,4,85,125,186,225,0.014,5.715E+00
+job.pdb,af_Q4D3G6_70_312_3.90.550.10,Trypanosoma cruzi,15.700,70,50,3,60,124,9,74,0.014,7.743E+00
+job.pdb,af_A0A0R0ER15_970_1246_3.40.50.300,Glycine max,14.500,55,44,3,69,122,118,170,0.014,9.291E+00
+job.pdb,2qsiB01,Rhodopseudomonas palustris CGA009,11.900,42,32,2,84,122,19,58,0.011,5.061E+00
+job.pdb,af_Q6PHV5_17_115_3.30.70.340,Danio rerio,18.900,79,52,4,227,297,6,80,0.011,9.291E+00
+job.pdb,af_A0A1D6QJW5_19_123_3.40.30.10,Propioniferax innocua,11.100,54,41,2,69,122,11,57,0.011,7.287E+00
+job.pdb,af_E1JGY6_802_911_3.40.30.10,Drosophila melanogaster,10.000,40,32,2,84,120,24,62,0.011,7.287E+00
+job.pdb,af_Q8N807_38_151_3.40.30.10,Homo sapiens,7.000,57,45,3,69,122,14,65,0.011,6.453E+00
+job.pdb,af_B4FH04_90_206_3.40.30.10,Propioniferax innocua,10.900,55,45,2,68,122,16,66,0.011,6.073E+00
+job.pdb,af_Q4E3F7_221_340_3.40.30.10,Trypanosoma cruzi,15.000,40,29,2,84,121,23,59,0.011,6.073E+00
+job.pdb,af_Q8II23_18_138_3.40.30.10,Plasmodium falciparum,12.900,54,40,4,71,123,23,70,0.011,5.715E+00
+job.pdb,af_O74551_45_166_3.40.30.10,Schizosaccharomyces pombe,10.500,57,44,4,68,122,17,68,0.011,5.378E+00
+job.pdb,af_Q8SWX6_124_245_3.40.30.10,Drosophila melanogaster,14.600,41,30,2,84,122,25,62,0.011,8.228E+00
+job.pdb,af_Q2QTV8_898_1028_3.40.30.10,Oryza sativa,7.200,55,45,1,66,120,31,79,0.011,6.453E+00
+job.pdb,af_I1K6B8_103_235_3.30.2320.30,Glycine max,13.700,80,56,4,48,121,1,73,0.011,5.715E+00
+job.pdb,af_F1QTL0_145_278_3.40.30.10,Danio rerio,16.600,42,32,1,83,124,38,76,0.011,9.873E+00
+job.pdb,af_A9CPA7_152_291_3.40.30.10,Glycine max,5.100,39,36,1,84,122,31,68,0.011,8.228E+00
+job.pdb,af_Q12404_15_155_3.40.30.10,Saccharomyces cerevisiae,10.000,50,42,2,73,122,26,72,0.011,5.378E+00
+job.pdb,af_A4I9Z2_25_169_3.40.30.10,Leishmania infantum,5.200,38,34,2,84,120,29,65,0.011,6.453E+00
+job.pdb,af_F7F487_1_147_1.25.40.20,Rattus norvegicus,8.600,69,56,3,59,123,47,112,0.011,6.857E+00
+job.pdb,af_Q8I2H1_218_371_3.40.30.10,Plasmodium falciparum,15.700,57,40,2,67,121,37,87,0.011,6.073E+00
+job.pdb,4wwhB02,Mycolicibacterium smegmatis MC2 155,11.400,61,48,3,57,114,1,58,0.011,8.228E+00
+job.pdb,5bz4J01,Mycolicibacterium smegmatis MC2 155,12.700,94,63,6,36,120,1,84,0.011,6.857E+00
+job.pdb,af_Q9VRE9_86_299_3.40.395.10,Drosophila melanogaster,12.500,40,30,1,85,124,111,145,0.011,7.287E+00
+job.pdb,af_E7FC06_1_376_3.40.30.10,Danio rerio,17.500,57,38,3,67,123,141,188,0.011,9.291E+00
+job.pdb,af_Q7JYV3_25_108_3.30.70.340,Drosophila melanogaster,12.900,93,54,4,208,297,8,76,0.010,9.873E+00
+job.pdb,2e0qA00,Sulfurisphaera tokodaii str. 7,16.000,50,36,2,72,121,11,54,0.010,9.291E+00
+job.pdb,af_Q4CNX6_1_105_3.30.300.10,Trypanosoma cruzi,13.300,90,55,5,58,125,12,100,0.010,8.743E+00
+job.pdb,af_Q869Q9_164_269_3.40.30.10,Dictyostelium discoideum,13.700,51,38,3,74,122,14,60,0.010,7.743E+00
+job.pdb,af_P47938_1_107_3.40.30.10,Drosophila melanogaster,10.900,73,42,4,84,141,21,85,0.010,8.228E+00
+job.pdb,af_Q5XJ54_1_109_3.40.30.10,Danio rerio,5.400,55,44,2,67,121,13,59,0.010,8.743E+00
+job.pdb,af_A0A0R0K134_277_390_3.40.30.10,Glycine max,11.200,62,49,3,60,120,9,65,0.010,7.743E+00
+job.pdb,af_Q8VZT6_77_191_3.40.30.10,Arabidopsis thaliana,5.200,38,35,1,84,120,24,61,0.010,8.743E+00
+job.pdb,af_Q8II88_23_138_3.40.30.10,Plasmodium falciparum,6.600,60,45,3,68,122,13,66,0.010,5.715E+00
+job.pdb,af_Q20063_45_168_3.40.30.10,Caenorhabditis elegans,8.600,46,32,3,83,122,25,66,0.010,7.287E+00
+job.pdb,2l57A00,Clostridium perfringens ATCC 13124,8.600,58,44,3,73,123,10,65,0.010,9.291E+00
+job.pdb,2modA00,unclassified,10.200,68,46,5,57,122,26,80,0.010,7.743E+00
+job.pdb,af_B0UXN0_42_172_3.40.30.10,Danio rerio,13.200,53,40,3,73,122,18,67,0.010,5.715E+00
+job.pdb,af_O14096_491_621_3.40.30.10,Schizosaccharomyces pombe,6.000,50,43,2,71,120,26,71,0.010,8.743E+00
+job.pdb,3ph9A00,Homo sapiens,7.600,39,32,2,84,118,31,69,0.010,9.291E+00
+job.pdb,af_Q9XUR6_122_261_2.40.50.140,Caenorhabditis elegans,15.200,59,33,5,74,124,31,80,0.010,5.378E+00
+job.pdb,1v0yA01,Streptomyces sp. PMF,13.200,53,34,3,67,114,24,69,0.010,5.378E+00
+job.pdb,af_Q54IQ1_93_203_3.40.30.10,Dictyostelium discoideum,10.900,55,40,5,70,122,15,62,0.009,9.873E+00
+job.pdb,af_P07237_13_131_3.40.30.10,Homo sapiens,9.400,53,41,2,71,121,23,70,0.009,8.228E+00
+job.pdb,af_Q9N4L6_20_146_3.40.30.10,Caenorhabditis elegans,9.600,52,40,3,73,122,20,66,0.009,9.291E+00
+job.pdb,af_Q9VER7_26_156_3.40.30.10,Drosophila melanogaster,16.300,55,35,4,72,120,13,62,0.009,7.743E+00
+job.pdb,af_P91442_17_159_3.40.30.10,Caenorhabditis elegans,11.300,44,33,4,83,122,40,81,0.009,8.228E+00
+job.pdb,af_Q8IKB2_20_136_3.40.30.10,Plasmodium falciparum,15.200,59,35,6,69,122,19,67,0.008,8.743E+00

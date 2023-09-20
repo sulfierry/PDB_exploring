@@ -1,0 +1,970 @@
+query_id,subject_id,scientific_name,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
+job.pdb,AF-Q8XE87-F1-model_v4 Thiamine-monophosphate kinase,Escherichia coli O157:H7,84.400,321,50,0,1,321,3,323,1.000,1.519E-58
+job.pdb,AF-P0AGG0-F1-model_v4 Thiamine-monophosphate kinase,Escherichia coli K-12,84.400,321,50,0,1,321,3,323,1.000,1.614E-58
+job.pdb,AF-P0AGG1-F1-model_v4 Thiamine-monophosphate kinase,Escherichia coli CFT073,84.400,321,50,0,1,321,3,323,1.000,1.937E-58
+job.pdb,AF-P55881-F1-model_v4 Thiamine-monophosphate kinase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,83.800,321,52,0,1,321,3,323,1.000,2.963E-58
+job.pdb,AF-P57532-F1-model_v4 Thiamine-monophosphate kinase,Buchnera aphidicola str. APS (Acyrthosiphon pisum),48.900,321,164,0,1,321,3,323,1.000,3.385E-45
+job.pdb,AF-Q57190-F1-model_v4 Thiamine-monophosphate kinase,Haemophilus influenzae Rd KW20,51.500,328,147,5,1,321,3,325,1.000,5.179E-45
+job.pdb,AF-Q8K9A5-F1-model_v4 Thiamine-monophosphate kinase,Buchnera aphidicola str. Sg (Schizaphis graminum),49.200,321,163,0,1,321,3,323,1.000,4.062E-45
+job.pdb,AF-Q9A8J2-F1-model_v4 Thiamine-monophosphate kinase,Caulobacter vibrioides CB15,35.700,333,187,8,1,319,32,351,1.000,6.607E-34
+job.pdb,AF-O05514-F1-model_v4 Thiamine-monophosphate kinase,Bacillus subtilis subsp. subtilis str. 168,34.100,328,206,8,1,321,1,325,1.000,2.855E-32
+job.pdb,AF-O27447-F1-model_v4 Thiamine-monophosphate kinase,Methanothermobacter thermautotrophicus str. Delta H,32.100,330,201,13,2,321,9,325,1.000,1.104E-28
+job.pdb,AF-Q54757-F1-model_v4 Thiamine-monophosphate kinase,Synechococcus elongatus PCC 7942 = FACHB-805,34.000,335,177,16,5,321,17,325,1.000,1.496E-28
+job.pdb,AF-O67883-F1-model_v4 Thiamine-monophosphate kinase,Aquifex aeolicus VF5,31.200,326,191,12,2,320,7,306,1.000,2.747E-28
+job.pdb,AF-O59497-F1-model_v4 Thiamine-monophosphate kinase,Pyrococcus horikoshii OT3,29.300,300,188,9,24,319,21,300,1.000,1.261E-26
+job.pdb,AF-A9A3T2-F1-model_v4 Thiamine-monophosphate kinase,Nitrosopumilus maritimus SCM1,22.800,328,225,12,1,321,4,310,1.000,3.763E-26
+job.pdb,AF-P9WG71-F1-model_v4 Thiamine-monophosphate kinase,Mycobacterium tuberculosis H37Rv,29.200,328,202,15,2,321,19,324,1.000,6.908E-26
+job.pdb,AF-P9WG70-F1-model_v4 Thiamine-monophosphate kinase,Mycobacterium tuberculosis CDC1551,29.200,328,202,16,2,321,19,324,1.000,5.757E-26
+job.pdb,AF-Q9V1N8-F1-model_v4 Thiamine-monophosphate kinase,Pyrococcus abyssi GE5,28.000,324,196,12,4,321,11,303,1.000,5.418E-26
+job.pdb,AF-Q2FSV9-F1-model_v4 Thiamine-monophosphate kinase,Methanospirillum hungatei JF-1,31.600,297,170,9,27,321,21,286,1.000,4.021E-25
+job.pdb,AF-Q8NQV0-F1-model_v4 Thiamine-monophosphate kinase,Corynebacterium glutamicum ATCC 13032,28.200,333,201,15,2,320,23,331,1.000,8.808E-26
+job.pdb,AF-Q8F0S9-F1-model_v4 Thiamine-monophosphate kinase,Leptospira interrogans serovar Lai str. 56601,30.800,298,178,10,33,320,28,307,1.000,6.947E-25
+job.pdb,AF-Q7UPP0-F1-model_v4 Thiamine-monophosphate kinase,Rhodopirellula baltica SH 1,28.800,333,190,12,4,320,7,308,1.000,6.118E-26
+job.pdb,AF-Q7VEI9-F1-model_v4 Thiamine-monophosphate kinase,Prochlorococcus marinus subsp. marinus str. CCMP1375,26.500,343,204,19,2,320,15,333,1.000,5.479E-24
+job.pdb,AF-Q9HNP1-F1-model_v4 Thiamine-monophosphate kinase,Halobacterium salinarum NRC-1,25.800,294,182,10,34,319,23,288,1.000,1.448E-23
+job.pdb,AF-Q60337-F1-model_v4 Thiamine-monophosphate kinase,Methanocaldococcus jannaschii DSM 2661,25.900,312,191,16,17,308,17,308,1.000,4.566E-24
+job.pdb,AF-O29525-F1-model_v4 Thiamine-monophosphate kinase,Archaeoglobus fulgidus DSM 4304,24.400,295,187,12,30,320,34,296,1.000,2.240E-21
+job.pdb,AF-Q8TXQ3-F1-model_v4 Thiamine-monophosphate kinase,Methanopyrus kandleri AV19,28.900,287,173,15,27,306,41,303,1.000,7.506E-22
+job.pdb,"AF-Q1DAT6-F1-model_v4 Selenide, water dikinase",Myxococcus xanthus DK 1622,19.900,341,211,17,5,304,32,351,1.000,1.393E-19
+job.pdb,"AF-Q0T4X1-F1-model_v4 Selenide, water dikinase",Shigella flexneri 5 str. 8401,18.200,339,230,15,1,304,21,347,1.000,1.776E-19
+job.pdb,"AF-Q32GA8-F1-model_v4 Selenide, water dikinase",Shigella dysenteriae Sd197,18.500,339,229,15,1,304,21,347,1.000,1.888E-19
+job.pdb,"AF-A7ZMN3-F1-model_v4 Selenide, water dikinase",Escherichia coli O139:H28 str. E24377A,18.500,339,229,15,1,304,21,347,1.000,2.006E-19
+job.pdb,"AF-P59392-F1-model_v4 Selenide, water dikinase",Pseudomonas putida KT2440,17.900,335,223,16,5,304,27,344,1.000,2.407E-19
+job.pdb,"AF-Q488J7-F1-model_v4 Selenide, water dikinase",Colwellia psychrerythraea 34H,19.100,319,214,14,18,304,37,343,1.000,7.183E-19
+job.pdb,"AF-P59393-F1-model_v4 Selenide, water dikinase",Shigella flexneri,18.200,339,230,15,1,304,21,347,1.000,2.407E-19
+job.pdb,"AF-A0KKE7-F1-model_v4 Selenide, water dikinase",Aeromonas hydrophila subsp. hydrophila ATCC 7966,21.200,320,207,14,18,304,37,344,1.000,4.418E-19
+job.pdb,AF-P26412-F1-model_v4 Carbamoyl dehydratase HypE,Rhodobacter capsulatus,23.200,336,200,18,4,310,20,326,1.000,7.183E-19
+job.pdb,"AF-A8A0V7-F1-model_v4 Selenide, water dikinase",Escherichia coli HS,18.200,339,230,15,1,304,21,347,1.000,2.558E-19
+job.pdb,"AF-P66793-F1-model_v4 Selenide, water dikinase",Escherichia coli CFT073,18.500,339,229,15,1,304,21,347,1.000,5.986E-19
+job.pdb,"AF-Q0TH64-F1-model_v4 Selenide, water dikinase",Escherichia coli 536,18.500,339,229,15,1,304,21,347,1.000,3.682E-19
+job.pdb,AF-P40595-F1-model_v4 Carbamoyl dehydratase HypE,Azotobacter vinelandii,22.100,298,205,15,27,310,43,327,1.000,2.278E-18
+job.pdb,AF-P31905-F1-model_v4 Carbamoyl dehydratase HypE,Cupriavidus necator H16,20.800,307,199,15,27,310,52,337,1.000,2.278E-18
+job.pdb,"AF-Q3Z2B0-F1-model_v4 Selenide, water dikinase",Shigella sonnei Ss046,18.200,339,230,15,1,304,21,347,1.000,6.361E-19
+job.pdb,"AF-Q321Q8-F1-model_v4 Selenide, water dikinase",Shigella boydii Sb227,18.500,339,229,15,1,304,21,347,1.000,5.633E-19
+job.pdb,"AF-P16456-F1-model_v4 Selenide, water dikinase",Escherichia coli K-12,18.200,339,230,15,1,304,21,347,1.000,4.989E-19
+job.pdb,"AF-P66794-F1-model_v4 Selenide, water dikinase",Escherichia coli O157:H7,18.500,339,229,15,1,304,21,347,1.000,5.986E-19
+job.pdb,AF-P40599-F1-model_v4 Carbamoyl dehydratase HypE,Rhizobium leguminosarum bv. viciae,21.400,303,202,13,27,310,51,336,1.000,1.241E-18
+job.pdb,"AF-Q889F7-F1-model_v4 Selenide, water dikinase",Pseudomonas syringae pv. tomato str. DC3000,18.500,335,221,16,5,304,27,344,1.000,8.618E-19
+job.pdb,"AF-Q7WE97-F1-model_v4 Selenide, water dikinase",Bordetella bronchiseptica RB50,19.100,335,219,16,5,304,27,344,1.000,1.034E-18
+job.pdb,"AF-A4SMM1-F1-model_v4 Selenide, water dikinase",Aeromonas salmonicida subsp. salmonicida A449,20.300,320,210,13,18,304,37,344,1.000,2.572E-18
+job.pdb,"AF-Q66AP0-F1-model_v4 Selenide, water dikinase",Yersinia pseudotuberculosis IP 32953,20.100,322,209,16,18,304,39,347,1.000,8.618E-19
+job.pdb,"AF-Q8ZPV5-F1-model_v4 Selenide, water dikinase",Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,17.600,339,232,15,1,304,21,347,1.000,1.898E-18
+job.pdb,"AF-Q6LP05-F1-model_v4 Selenide, water dikinase",Photobacterium profundum SS9,19.400,324,212,16,17,304,36,346,1.000,3.086E-18
+job.pdb,AF-Q0AW29-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Syntrophomonas wolfei subsp. wolfei str. Goettingen G311,19.600,336,223,17,4,304,22,345,1.000,9.732E-19
+job.pdb,"AF-Q7N406-F1-model_v4 Selenide, water dikinase",Photorhabdus laumondii subsp. laumondii TTO1,18.300,321,216,13,18,304,38,346,1.000,2.733E-18
+job.pdb,"AF-A1APP9-F1-model_v4 Selenide, water dikinase",Pelobacter propionicus DSM 2379,19.800,328,205,15,18,304,38,348,1.000,2.143E-18
+job.pdb,AF-B2JGD2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Paraburkholderia phymatum STM815,18.800,334,227,16,4,304,33,355,1.000,1.319E-18
+job.pdb,"AF-Q8Z6F4-F1-model_v4 Selenide, water dikinase",Salmonella enterica subsp. enterica serovar Typhi,17.600,339,232,15,1,304,21,347,1.000,1.786E-18
+job.pdb,AF-P31906-F1-model_v4 Carbamoyl dehydratase HypE,Bradyrhizobium diazoefficiens USDA 110,20.700,299,209,13,27,310,47,332,1.000,5.331E-18
+job.pdb,AF-Q0BI09-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia ambifaria AMMD,17.500,341,234,16,2,304,20,351,1.000,2.572E-18
+job.pdb,"AF-Q8ZEK1-F1-model_v4 Selenide, water dikinase",Yersinia pestis,19.800,322,210,16,18,304,39,347,1.000,2.017E-18
+job.pdb,AF-Q7W0A7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bordetella pertussis Tohama I,17.900,339,229,17,4,305,22,348,1.000,6.397E-18
+job.pdb,"AF-Q9CMM8-F1-model_v4 Selenide, water dikinase",Pasteurella multocida subsp. multocida str. Pm70,17.400,343,229,15,1,304,24,351,1.000,2.278E-18
+job.pdb,AF-Q4QKF3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Haemophilus influenzae 86-028NP,18.000,338,228,18,4,304,19,344,1.000,3.485E-18
+job.pdb,AF-A7MY25-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Vibrio campbellii CAIM 519 = NBRC 15631 = ATCC 25920,17.900,334,233,16,4,304,21,346,1.000,3.086E-18
+job.pdb,AF-A4JBT0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia vietnamiensis G4,17.300,341,235,14,2,304,20,351,1.000,4.721E-18
+job.pdb,AF-Q2SYY5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia thailandensis E264,17.900,334,230,17,4,304,29,351,1.000,1.786E-18
+job.pdb,AF-Q1QVP5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Chromohalobacter salexigens DSM 3043,18.600,337,229,19,4,304,28,355,1.000,3.086E-18
+job.pdb,AF-Q58089-F1-model_v4 Putative hydrogenase expression/formation protein MJ0676,Methanocaldococcus jannaschii DSM 2661,22.200,301,197,14,30,313,44,324,1.000,1.319E-18
+job.pdb,"AF-A4W9I2-F1-model_v4 Selenide, water dikinase",Enterobacter sp. 638,18.100,347,230,15,1,315,21,345,1.000,1.099E-18
+job.pdb,AF-Q1BYW4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia orbicola AU 1054,17.500,341,234,16,2,304,20,351,1.000,6.397E-18
+job.pdb,AF-B0KT52-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas putida GB-1,19.300,336,226,18,4,303,20,346,1.000,3.703E-18
+job.pdb,AF-A4XWN5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas mendocina ymp,20.000,335,225,19,4,303,20,346,1.000,2.904E-18
+job.pdb,AF-Q8ES94-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Oceanobacillus iheyensis HTE831,17.300,322,225,16,14,304,27,338,1.000,3.279E-18
+job.pdb,AF-B1XAX4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli str. K-12 substr. DH10B,17.600,334,234,17,4,304,20,345,1.000,9.209E-18
+job.pdb,"AF-Q9I383-F1-model_v4 Selenide, water dikinase",Pseudomonas aeruginosa PAO1,19.900,311,201,14,27,304,49,344,1.000,2.155E-17
+job.pdb,AF-Q167K4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Roseobacter denitrificans OCh 114,19.300,326,223,14,14,308,32,348,1.000,6.797E-18
+job.pdb,AF-Q3KFT0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas fluorescens Pf0-1,19.300,336,226,20,4,303,20,346,1.000,4.721E-18
+job.pdb,AF-B7LKE3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia fergusonii ATCC 35469,18.400,336,229,19,4,304,20,345,1.000,5.331E-18
+job.pdb,AF-B4TR76-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Salmonella enterica subsp. enterica serovar Schwarzengrund str. CVM19633,16.100,334,239,16,4,304,20,345,1.000,1.326E-17
+job.pdb,AF-Q1LJ92-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cupriavidus metallidurans CH34,18.200,340,233,16,2,304,19,350,1.000,6.797E-18
+job.pdb,AF-A1V0V7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia mallei SAVP1,17.300,334,232,16,4,304,29,351,1.000,5.017E-18
+job.pdb,AF-Q1IDL2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas entomophila L48,19.200,338,224,19,4,303,20,346,1.000,4.721E-18
+job.pdb,AF-B1J1M3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas putida W619,19.500,337,224,20,4,303,20,346,1.000,3.485E-18
+job.pdb,AF-B1IWG1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli ATCC 8739,17.900,334,233,17,4,304,20,345,1.000,1.326E-17
+job.pdb,"AF-A7MNU8-F1-model_v4 Selenide, water dikinase",Cronobacter sakazakii ATCC BAA-894,18.100,347,230,15,1,315,21,345,1.000,1.401E-18
+job.pdb,AF-B1JW28-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia orbicola MC0-3,17.800,341,233,16,2,305,20,350,1.000,4.721E-18
+job.pdb,"AF-Q0HNW1-F1-model_v4 Selenide, water dikinase",Shewanella sp. MR-4,17.300,322,217,13,18,304,45,352,1.000,1.326E-17
+job.pdb,AF-A8Z1L3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus USA300_TCH1516,17.800,330,232,17,5,304,20,340,1.000,1.105E-17
+job.pdb,AF-P42034-F1-model_v4 Hydrogenase expression/formation protein HupE,Azotobacter chroococcum (strain mcd 1),22.500,311,212,16,6,303,25,319,1.000,2.028E-17
+job.pdb,AF-B0BQ30-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Actinobacillus pleuropneumoniae serovar 3 str. JL03,18.000,338,229,17,4,304,19,345,1.000,5.665E-18
+job.pdb,AF-Q8Z4R2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Salmonella enterica subsp. enterica serovar Typhi,16.500,333,239,15,4,304,20,345,1.000,1.691E-17
+job.pdb,AF-A5F643-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Vibrio cholerae O395,17.600,335,233,16,4,304,21,346,1.000,1.591E-17
+job.pdb,AF-A5UC39-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Haemophilus influenzae PittEE,17.700,338,229,19,4,304,19,344,1.000,1.248E-17
+job.pdb,AF-B7UGN7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli O127:H6 str. E2348/69,16.600,337,234,19,4,304,20,345,1.000,1.248E-17
+job.pdb,AF-B4EY89-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Proteus mirabilis HI4320,19.500,337,227,19,4,306,20,346,1.000,3.279E-18
+job.pdb,AF-Q88MA9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas putida KT2440,19.300,336,226,19,4,303,20,346,1.000,6.020E-18
+job.pdb,AF-Q145C6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Paraburkholderia xenovorans LB400,17.800,336,228,15,4,304,33,355,1.000,4.721E-18
+job.pdb,AF-Q3A515-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Syntrophotalea carbinolica DSM 2380,20.900,339,219,20,4,304,23,350,1.000,8.156E-18
+job.pdb,"AF-Q0I0C9-F1-model_v4 Selenide, water dikinase",Shewanella sp. MR-7,17.600,323,215,14,18,304,45,352,1.000,1.591E-17
+job.pdb,AF-Q2YX52-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus RF122,17.800,330,232,17,5,304,20,340,1.000,1.497E-17
+job.pdb,AF-B1LNF0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli SMS-3-5,17.900,334,233,18,4,304,20,345,1.000,7.675E-18
+job.pdb,"AF-B2TKP6-F1-model_v4 Selenide, water dikinase",Clostridium botulinum B str. Eklund 17B (NRP),16.900,336,237,13,1,304,20,345,1.000,1.909E-17
+job.pdb,AF-B6I571-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli SE11,17.900,334,233,17,4,304,20,345,1.000,2.290E-17
+job.pdb,AF-Q60BU2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methylococcus capsulatus str. Bath,20.000,319,221,15,14,304,33,345,1.000,2.748E-17
+job.pdb,AF-Q8DBC2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Vibrio vulnificus CMCP6,17.200,337,232,17,4,304,21,346,1.000,1.326E-17
+job.pdb,AF-C5BHQ4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Edwardsiella ictaluri 93-146,19.500,342,221,19,4,305,20,347,1.000,1.409E-17
+job.pdb,"AF-B2RLG7-F1-model_v4 Selenide, water dikinase",Porphyromonas gingivalis ATCC 33277,18.300,337,222,18,5,304,28,348,1.000,3.935E-18
+job.pdb,AF-Q2KX26-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bordetella avium 197N,17.900,324,226,14,14,304,33,349,1.000,1.409E-17
+job.pdb,AF-C3K102-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas fluorescens SBW25,20.000,339,220,22,4,303,20,346,1.000,4.721E-18
+job.pdb,AF-B2T067-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Paraburkholderia phytofirmans PsJN,17.500,336,229,16,4,304,33,355,1.000,7.675E-18
+job.pdb,AF-Q5HH13-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus COL,17.700,332,230,19,5,304,20,340,1.000,1.105E-17
+job.pdb,AF-A4SL28-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Aeromonas salmonicida subsp. salmonicida A449,18.300,337,228,22,4,304,20,345,1.000,1.248E-17
+job.pdb,AF-Q2NS68-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sodalis glossinidius str. 'morsitans',19.100,340,230,16,2,305,14,344,1.000,1.796E-17
+job.pdb,AF-A0K4T7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia cenocepacia HI2424,18.000,333,231,16,4,305,29,350,1.000,5.017E-18
+job.pdb,AF-A3NYW6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia pseudomallei 1106a,17.600,335,230,16,4,304,29,351,1.000,7.675E-18
+job.pdb,AF-Q48FI4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas savastanoi pv. phaseolicola 1448A,20.100,337,222,21,4,303,20,346,1.000,5.331E-18
+job.pdb,AF-Q6GI13-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus MRSA252,17.500,330,233,17,5,304,20,340,1.000,1.909E-17
+job.pdb,AF-A0KM24-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Aeromonas hydrophila subsp. hydrophila ATCC 7966,18.100,337,229,21,4,304,20,345,1.000,8.667E-18
+job.pdb,AF-Q21VH4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhodoferax ferrireducens T118,18.200,335,230,16,4,305,25,348,1.000,1.796E-17
+job.pdb,AF-Q62HE4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia mallei ATCC 23344,17.300,334,232,16,4,304,29,351,1.000,1.591E-17
+job.pdb,AF-A3MN88-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia mallei NCTC 10247,17.300,334,232,16,4,304,29,351,1.000,1.591E-17
+job.pdb,AF-Q3JP21-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia pseudomallei 1710b,18.000,332,232,17,4,304,29,351,1.000,1.248E-17
+job.pdb,AF-Q0TTB2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium perfringens ATCC 13124,16.100,334,229,15,4,304,18,333,1.000,8.667E-18
+job.pdb,AF-C4ZX74-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli BW2952,17.900,334,233,18,4,304,20,345,1.000,1.040E-17
+job.pdb,AF-B7MHY0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli S88,17.000,335,235,18,4,304,20,345,1.000,2.586E-17
+job.pdb,AF-B8FJY6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Desulfatibacillum aliphaticivorans,17.000,347,233,20,2,304,12,347,1.000,1.691E-17
+job.pdb,AF-A9AGA9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia multivorans ATCC 17616,17.600,334,231,16,4,304,29,351,1.000,1.497E-17
+job.pdb,AF-B4EDH7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia cenocepacia J2315,18.000,333,231,16,4,305,29,350,1.000,9.786E-18
+job.pdb,AF-B7LCN9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli 55989,17.300,335,234,17,4,304,20,345,1.000,2.290E-17
+job.pdb,AF-A4WD72-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Enterobacter sp. 638,17.600,334,234,16,4,304,20,345,1.000,2.434E-17
+job.pdb,AF-Q2LTT5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Syntrophus aciditrophicus SB,18.200,339,227,18,4,304,21,347,1.000,6.797E-18
+job.pdb,AF-A9I602-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bordetella petrii DSM 12804,18.400,325,223,15,14,304,33,349,1.000,1.497E-17
+job.pdb,AF-A2S554-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia mallei NCTC 10229,17.900,335,229,16,4,304,29,351,1.000,5.017E-18
+job.pdb,"AF-A6WHQ5-F1-model_v4 Selenide, water dikinase",Shewanella baltica OS185,17.000,322,218,14,18,304,45,352,1.000,2.586E-17
+job.pdb,AF-A6QFS9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus str. Newman,17.800,331,231,18,5,304,20,340,1.000,2.028E-17
+job.pdb,AF-Q2FI07-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus USA300,18.400,336,228,20,4,304,16,340,1.000,1.591E-17
+job.pdb,AF-B8F5E6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Glaesserella parasuis SH0165,18.700,336,228,19,4,304,19,344,1.000,2.434E-17
+job.pdb,AF-P43848-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Haemophilus influenzae Rd KW20,18.900,337,226,20,4,304,19,344,1.000,2.920E-17
+job.pdb,AF-A8A2Z1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli HS,17.000,335,235,18,4,304,20,345,1.000,3.103E-17
+job.pdb,AF-Q57LL0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Salmonella enterica subsp. enterica serovar Choleraesuis str. SC-B67,16.100,335,238,16,4,304,20,345,1.000,2.434E-17
+job.pdb,AF-A7ZPU2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli O139:H28 str. E24377A,17.000,335,235,17,4,304,20,345,1.000,2.748E-17
+job.pdb,AF-P74883-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,15.800,341,240,16,2,304,14,345,1.000,2.155E-17
+job.pdb,AF-Q5E3H3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Aliivibrio fischeri ES114,18.100,337,229,20,4,304,21,346,1.000,1.409E-17
+job.pdb,AF-B1JSF4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia pseudotuberculosis YPIII,19.100,345,227,19,2,306,14,346,1.000,7.675E-18
+job.pdb,AF-A5G3H3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Geotalea uraniireducens Rf4,18.700,336,229,18,4,304,22,348,1.000,2.290E-17
+job.pdb,AF-Q74CB6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Geobacter sulfurreducens PCA,18.700,342,220,19,5,304,23,348,1.000,8.156E-18
+job.pdb,AF-C4K4D1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Candidatus Hamiltonella defensa 5AT (Acyrthosiphon pisum),17.400,339,239,19,4,308,20,351,1.000,3.103E-17
+job.pdb,AF-Q15SY3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudoalteromonas atlantica T6c,17.900,335,231,19,4,304,21,345,1.000,1.248E-17
+job.pdb,AF-Q5PNJ8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150,16.100,335,238,16,4,304,20,345,1.000,2.748E-17
+job.pdb,AF-Q8FF72-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli CFT073,17.300,335,234,18,4,304,20,345,1.000,3.504E-17
+job.pdb,AF-Q7N3F7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Photorhabdus laumondii subsp. laumondii TTO1,17.000,340,232,18,4,306,20,346,1.000,2.028E-17
+job.pdb,AF-B3E3K3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Trichlorobacter lovleyi SZ,17.500,331,222,17,14,304,30,349,1.000,1.105E-17
+job.pdb,AF-Q2RGU7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Moorella thermoacetica ATCC 39073,18.200,335,227,19,4,303,23,345,1.000,6.797E-18
+job.pdb,AF-A3ND57-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia pseudomallei 668,17.300,334,232,16,4,304,29,351,1.000,1.409E-17
+job.pdb,AF-Q39JB9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia lata,18.200,340,233,16,2,305,20,350,1.000,7.675E-18
+job.pdb,AF-A6U0N9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus JH1,18.500,335,229,19,4,304,16,340,1.000,2.748E-17
+job.pdb,AF-A5IRV8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus JH9,17.800,330,232,17,5,304,20,340,1.000,2.586E-17
+job.pdb,AF-B5XNQ0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Klebsiella pneumoniae 342,16.500,339,240,15,2,304,14,345,1.000,3.298E-17
+job.pdb,AF-B4TD75-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Salmonella enterica subsp. enterica serovar Heidelberg str. SL476,16.100,335,238,16,4,304,20,345,1.000,3.103E-17
+job.pdb,AF-Q32D69-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shigella dysenteriae Sd197,17.300,335,234,19,4,304,20,345,1.000,1.591E-17
+job.pdb,AF-B5FQJ2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Salmonella enterica subsp. enterica serovar Dublin str. CT_02021853,15.700,336,238,17,4,304,20,345,1.000,3.504E-17
+job.pdb,AF-Q7WG60-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bordetella bronchiseptica RB50,17.800,331,218,17,14,305,33,348,1.000,8.156E-18
+job.pdb,AF-Q46XJ9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cupriavidus pinatubonensis JMP134,17.000,340,237,15,2,304,19,350,1.000,4.748E-17
+job.pdb,AF-Q63R55-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia pseudomallei K96243,17.900,335,229,17,4,304,29,351,1.000,9.786E-18
+job.pdb,AF-Q4K8A5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas protegens Pf-5,19.300,336,226,19,4,303,20,346,1.000,1.174E-17
+job.pdb,AF-Q2FZI8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus NCTC 8325,17.800,330,232,17,5,304,20,340,1.000,3.504E-17
+job.pdb,AF-Q3YZ53-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shigella sonnei Ss046,17.900,334,233,18,4,304,20,345,1.000,1.796E-17
+job.pdb,AF-P08178-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli K-12,17.900,335,232,20,4,304,20,345,1.000,1.591E-17
+job.pdb,AF-A9QZW5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia pestis Angola,19.500,343,228,20,2,306,14,346,1.000,1.326E-17
+job.pdb,AF-B2K9K0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia pseudotuberculosis PB1/+,19.100,344,228,20,2,306,14,346,1.000,9.786E-18
+job.pdb,"AF-A1RP94-F1-model_v4 Selenide, water dikinase",Shewanella sp. W3-18-1,17.700,322,216,13,18,305,45,351,1.000,2.290E-17
+job.pdb,"AF-Q8EK99-F1-model_v4 Selenide, water dikinase",Shewanella oneidensis MR-1,18.000,322,215,14,18,304,45,352,1.000,1.409E-17
+job.pdb,AF-Q7NMP5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Gloeobacter violaceus PCC 7421,18.000,344,219,21,4,304,14,337,1.000,1.248E-17
+job.pdb,AF-Q6GAE2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus MSSA476,18.000,333,228,19,5,304,20,340,1.000,1.409E-17
+job.pdb,AF-P99163-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus N315,18.000,332,229,18,5,304,20,340,1.000,2.028E-17
+job.pdb,AF-Q87MH0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Vibrio parahaemolyticus RIMD 2210633,17.900,334,233,17,4,304,21,346,1.000,1.248E-17
+job.pdb,AF-B7VIN4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Vibrio atlanticus LGP32,17.300,335,234,18,4,304,21,346,1.000,4.468E-17
+job.pdb,AF-C1DRW0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Azotobacter vinelandii DJ,20.200,335,223,19,4,303,20,345,1.000,1.174E-17
+job.pdb,AF-Q4ZQ51-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas syringae pv. syringae B728a,20.000,339,220,23,4,303,20,346,1.000,8.156E-18
+job.pdb,AF-A1TZ73-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Marinobacter nauticus VT8,17.900,328,223,18,14,305,32,349,1.000,1.248E-17
+job.pdb,AF-Q6D7S1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pectobacterium atrosepticum SCRI1043,16.800,339,233,18,4,306,20,345,1.000,2.748E-17
+job.pdb,AF-A3N1A1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Actinobacillus pleuropneumoniae serovar 5b str. L20,18.300,338,228,18,4,304,19,345,1.000,1.796E-17
+job.pdb,AF-A7GKI0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus cytotoxicus NVH 391-98,17.300,329,230,18,14,308,27,347,1.000,1.040E-17
+job.pdb,"AF-B8EBM9-F1-model_v4 Selenide, water dikinase",Shewanella baltica OS223,17.100,321,219,13,18,305,45,351,1.000,2.586E-17
+job.pdb,"AF-Q63NL2-F1-model_v4 Selenide, water dikinase",Burkholderia pseudomallei K96243,18.300,344,216,17,4,304,33,354,1.000,1.497E-17
+job.pdb,AF-Q8NX90-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus MW2,17.900,334,227,20,5,304,20,340,1.000,1.497E-17
+job.pdb,AF-A6TCB3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Klebsiella pneumoniae subsp. pneumoniae MGH 78578,16.100,334,239,15,4,304,20,345,1.000,6.432E-17
+job.pdb,AF-C6DBR0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pectobacterium carotovorum subsp. carotovorum PC1,16.800,339,233,18,4,306,20,345,1.000,3.298E-17
+job.pdb,AF-B7NQN8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli IAI39,18.200,335,231,22,4,304,20,345,1.000,1.796E-17
+job.pdb,AF-B5FGY5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Aliivibrio fischeri MJ11,17.600,335,233,18,4,304,21,346,1.000,3.298E-17
+job.pdb,AF-A7Z251-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus velezensis FZB42,18.500,329,220,18,14,306,27,343,1.000,1.691E-17
+job.pdb,AF-B6EJU3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Aliivibrio salmonicida LFI1238,17.200,336,233,19,4,304,21,346,1.000,4.468E-17
+job.pdb,AF-Q39UK1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Geobacter metallireducens GS-15,18.200,339,227,18,4,304,22,348,1.000,4.468E-17
+job.pdb,"AF-A0KRK1-F1-model_v4 Selenide, water dikinase",Shewanella sp. ANA-3,17.300,323,216,14,18,304,45,352,1.000,4.748E-17
+job.pdb,"AF-A3DA84-F1-model_v4 Selenide, water dikinase",Shewanella baltica OS155,17.300,323,216,15,18,304,45,352,1.000,2.748E-17
+job.pdb,"AF-A9KW79-F1-model_v4 Selenide, water dikinase",Shewanella baltica OS195,17.000,322,218,14,18,304,45,352,1.000,4.748E-17
+job.pdb,"AF-A4YBB9-F1-model_v4 Selenide, water dikinase",Shewanella putrefaciens CN-32,17.700,322,216,13,18,305,45,351,1.000,3.103E-17
+job.pdb,AF-B7UXY9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas aeruginosa LESB58,19.000,336,227,19,4,303,21,347,1.000,1.326E-17
+job.pdb,AF-A5UEU3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Haemophilus influenzae PittGG,18.500,339,225,19,4,304,19,344,1.000,3.504E-17
+job.pdb,AF-B0URN5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Histophilus somni 2336,16.000,336,238,17,4,304,19,345,1.000,4.748E-17
+job.pdb,AF-B7MYC7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli ED1a,17.300,335,234,19,4,304,20,345,1.000,2.290E-17
+job.pdb,AF-Q8ZCX8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia pestis,19.500,343,228,20,2,306,14,346,1.000,1.909E-17
+job.pdb,AF-Q1C5P2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia pestis Antiqua,19.500,343,228,20,2,306,14,346,1.000,1.909E-17
+job.pdb,AF-B9M1P4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Geotalea daltonii FRC-32,17.900,340,227,18,4,304,22,348,1.000,3.103E-17
+job.pdb,AF-B1YTV3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Burkholderia ambifaria MC40-6,18.000,333,231,16,4,305,29,350,1.000,1.497E-17
+job.pdb,AF-P67721-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus Mu50,18.000,332,229,18,5,304,20,340,1.000,3.103E-17
+job.pdb,AF-Q31XZ3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shigella boydii Sb227,17.500,336,232,20,4,304,20,345,1.000,3.957E-17
+job.pdb,AF-Q47Z78-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Colwellia psychrerythraea 34H,16.200,338,234,18,4,304,21,346,1.000,2.586E-17
+job.pdb,AF-Q65MS6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus licheniformis DSM 13 = ATCC 14580,17.800,330,223,19,14,307,27,344,1.000,2.434E-17
+job.pdb,AF-A1JKZ7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia enterocolitica subsp. enterocolitica 8081,19.400,339,225,18,4,306,20,346,1.000,2.290E-17
+job.pdb,"AF-Q7MU19-F1-model_v4 Selenide, water dikinase",Porphyromonas gingivalis W83,18.600,337,221,19,5,304,28,348,1.000,1.174E-17
+job.pdb,AF-Q7W4N4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bordetella parapertussis 12822,18.200,328,220,17,14,305,33,348,1.000,1.796E-17
+job.pdb,AF-Q2N8X9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Erythrobacter litoralis HTCC2594,17.200,325,226,14,15,305,36,351,1.000,5.361E-17
+job.pdb,AF-Q8XMK4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium perfringens str. 13,17.100,333,227,16,4,304,18,333,1.000,2.028E-17
+job.pdb,AF-Q5HQ99-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus epidermidis RP62A,15.400,330,240,14,5,304,20,340,1.000,7.263E-17
+job.pdb,AF-C4L2A1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Exiguobacterium sp. AT1b,18.100,330,229,16,5,303,20,339,1.000,3.504E-17
+job.pdb,AF-C6E6M9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Geobacter sp. M21,17.800,341,226,20,4,304,22,348,1.000,2.434E-17
+job.pdb,AF-A4WX36-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cereibacter sphaeroides ATCC 17025,20.000,324,221,15,14,308,32,346,1.000,3.103E-17
+job.pdb,AF-Q3J517-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cereibacter sphaeroides 2.4.1,19.800,327,220,17,14,308,32,348,1.000,2.434E-17
+job.pdb,AF-A1KA97-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Azoarcus olearius,17.500,342,235,15,2,305,19,351,1.000,4.204E-17
+job.pdb,AF-A0LA23-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Magnetococcus marinus MC-1,17.500,337,228,16,5,304,30,353,1.000,1.909E-17
+job.pdb,AF-Q4L580-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus haemolyticus JCSC1435,17.500,337,234,18,4,307,16,341,1.000,5.045E-17
+job.pdb,AF-Q9CPL6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pasteurella multocida subsp. multocida str. Pm70,17.900,335,233,16,4,304,19,345,1.000,6.432E-17
+job.pdb,AF-Q126R8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Polaromonas sp. JS666,19.800,323,218,15,14,305,33,345,1.000,2.155E-17
+job.pdb,AF-C3LPN0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Vibrio cholerae M66-2,17.100,339,230,20,4,304,21,346,1.000,3.957E-17
+job.pdb,AF-Q0VP77-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alcanivorax borkumensis SK2,18.000,338,224,17,5,307,25,344,1.000,9.786E-18
+job.pdb,AF-Q668E5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia pseudotuberculosis IP 32953,19.500,342,221,20,4,306,20,346,1.000,1.326E-17
+job.pdb,AF-Q5QUP9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Idiomarina loihiensis L2TR,17.500,325,228,15,14,306,32,348,1.000,1.796E-17
+job.pdb,AF-Q885Y1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas syringae pv. tomato str. DC3000,20.000,339,220,22,4,303,20,346,1.000,1.909E-17
+job.pdb,AF-Q2SKT3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Hahella chejuensis KCTC 2396,19.200,322,220,18,4,294,23,335,1.000,2.028E-17
+job.pdb,AF-Q8XW52-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Ralstonia solanacearum GMI1000,18.600,333,229,16,4,305,31,352,1.000,2.155E-17
+job.pdb,AF-A7X0W4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus aureus subsp. aureus Mu3,18.000,332,229,18,5,304,20,340,1.000,3.504E-17
+job.pdb,AF-Q0T221-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shigella flexneri 5 str. 8401,18.200,334,232,18,4,304,20,345,1.000,4.204E-17
+job.pdb,AF-Q5WJ84-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alkalihalobacillus clausii KSM-K16,19.700,335,227,17,4,307,19,342,1.000,7.263E-17
+job.pdb,AF-B5Z036-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli O157:H7 str. EC4115,17.800,336,231,21,4,304,20,345,1.000,2.290E-17
+job.pdb,AF-B2VE71-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Erwinia tasmaniensis Et1/99,16.600,342,236,19,2,304,14,345,1.000,5.045E-17
+job.pdb,AF-C4LC65-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Tolumonas auensis DSM 9187,16.700,340,230,18,4,304,20,345,1.000,3.103E-17
+job.pdb,AF-B7N681-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli UMN026,17.900,334,233,19,4,304,20,345,1.000,3.724E-17
+job.pdb,AF-B2TXS4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shigella boydii CDC 3083-94,16.900,337,233,18,4,304,20,345,1.000,5.697E-17
+job.pdb,AF-Q0I5D1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Histophilus somni 129PT,15.600,339,236,17,4,304,19,345,1.000,1.409E-17
+job.pdb,AF-Q8EDI8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella oneidensis MR-1,17.900,335,229,19,4,304,23,345,1.000,3.298E-17
+job.pdb,AF-A7ML12-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cronobacter sakazakii ATCC BAA-894,17.600,335,233,17,4,304,20,345,1.000,2.586E-17
+job.pdb,AF-Q7MIK1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Vibrio vulnificus YJ016,17.100,338,231,19,4,304,21,346,1.000,3.103E-17
+job.pdb,"AF-B1K568-F1-model_v4 Selenide, water dikinase",Burkholderia orbicola MC0-3,16.800,339,229,15,5,304,30,354,1.000,3.298E-17
+job.pdb,AF-Q24QH4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Desulfitobacterium hafniense Y51,16.000,324,228,12,14,304,27,339,1.000,5.361E-17
+job.pdb,AF-Q8CT29-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus epidermidis ATCC 12228,15.400,331,239,16,5,304,20,340,1.000,1.046E-16
+job.pdb,AF-Q8XAC5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli O157:H7,17.600,335,233,19,4,304,20,345,1.000,3.957E-17
+job.pdb,AF-B7M7K3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli IAI1,17.300,335,234,18,4,304,20,345,1.000,3.724E-17
+job.pdb,AF-Q0TEY9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli 536,17.300,335,234,19,4,304,20,345,1.000,3.957E-17
+job.pdb,AF-A3PHH4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cereibacter sphaeroides ATCC 17029,20.100,327,217,17,14,308,32,346,1.000,1.796E-17
+job.pdb,AF-Q28RA9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Jannaschia sp. CCS1,20.300,334,223,18,4,304,22,345,1.000,2.040E-16
+job.pdb,AF-Q0K769-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cupriavidus necator H16,18.000,333,231,15,4,305,28,349,1.000,3.298E-17
+job.pdb,AF-A5W7R7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas putida F1,19.400,340,221,19,4,303,20,346,1.000,2.920E-17
+job.pdb,AF-A5VHU0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Limosilactobacillus reuteri subsp. reuteri,17.500,342,230,18,4,304,15,345,1.000,3.504E-17
+job.pdb,AF-B5BB05-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Salmonella enterica subsp. enterica serovar Paratyphi A str. AKU_12601,16.000,336,237,18,4,304,20,345,1.000,4.204E-17
+job.pdb,AF-Q47B77-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Dechloromonas aromatica RCB,17.400,343,234,17,2,304,14,347,1.000,5.045E-17
+job.pdb,AF-B9KMR6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cereibacter sphaeroides KD131,20.100,327,217,17,14,308,32,346,1.000,2.028E-17
+job.pdb,AF-C0PYQ6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Salmonella enterica subsp. enterica serovar Paratyphi C str. RKS4594,16.300,337,235,20,4,304,20,345,1.000,6.835E-17
+job.pdb,AF-Q9KPY6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Vibrio cholerae O1 biovar El Tor str. N16961,17.400,339,229,21,4,304,21,346,1.000,2.748E-17
+job.pdb,AF-Q9A1Z0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes serotype M1,17.400,332,231,20,4,304,21,340,1.000,1.417E-16
+job.pdb,AF-Q1R8N9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Escherichia coli UTI89,17.900,334,233,18,4,304,20,345,1.000,6.053E-17
+job.pdb,AF-A4TMP3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia pestis Pestoides F,19.400,344,219,22,4,306,20,346,1.000,1.105E-17
+job.pdb,AF-Q9I513-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas aeruginosa PAO1,19.300,341,220,22,4,303,21,347,1.000,1.409E-17
+job.pdb,AF-Q49WJ5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus saprophyticus subsp. saprophyticus ATCC 15305 = NCTC 7292,16.400,334,237,14,4,304,16,340,1.000,1.255E-16
+job.pdb,"AF-A6QBB7-F1-model_v4 Selenide, water dikinase",Sulfurovum sp. NBC37-1,16.700,328,215,16,16,304,35,343,1.000,5.045E-17
+job.pdb,AF-Q81ZH0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus anthracis,16.400,329,229,18,14,308,27,343,1.000,2.920E-17
+job.pdb,"AF-Q47H71-F1-model_v4 Selenide, water dikinase",Dechloromonas aromatica RCB,18.200,335,225,15,5,304,28,348,1.000,3.724E-17
+job.pdb,"AF-Q6MK42-F1-model_v4 Selenide, water dikinase",Bdellovibrio bacteriovorus HD100,19.100,345,213,20,4,304,27,349,1.000,1.174E-17
+job.pdb,"AF-B1Z181-F1-model_v4 Selenide, water dikinase",Burkholderia ambifaria MC40-6,16.600,342,226,16,5,304,30,354,1.000,4.748E-17
+job.pdb,AF-Q65UX7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,[Mannheimia] succiniciproducens MBEL55E,16.700,335,234,16,4,305,22,344,1.000,3.103E-17
+job.pdb,AF-Q21MC3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Saccharophagus degradans 2-40,16.800,339,236,19,4,308,26,352,1.000,4.204E-17
+job.pdb,AF-Q83QL4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shigella flexneri,17.800,336,231,21,4,304,20,345,1.000,4.204E-17
+job.pdb,AF-C5D4I2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Geobacillus sp. WCH70,16.300,337,232,19,5,305,20,342,1.000,4.468E-17
+job.pdb,AF-Q1G9G0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lactobacillus delbrueckii subsp. bulgaricus ATCC 11842 = JCM 1002,15.700,343,236,20,4,305,17,347,1.000,2.601E-16
+job.pdb,"AF-B4EJQ7-F1-model_v4 Selenide, water dikinase",Burkholderia cenocepacia J2315,17.700,343,219,16,4,304,33,354,1.000,6.053E-17
+job.pdb,AF-P0DD63-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes SSI-1,17.400,332,231,20,4,304,21,340,1.000,2.601E-16
+job.pdb,AF-Q3BQX8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xanthomonas campestris pv. vesicatoria str. 85-10,17.100,333,218,17,14,304,25,341,1.000,2.586E-17
+job.pdb,AF-C4ZH75-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,[Eubacterium] rectale ATCC 33656,14.400,339,238,16,4,304,17,341,1.000,1.181E-16
+job.pdb,AF-B2G5C0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Limosilactobacillus reuteri JCM 1112,17.200,342,231,18,4,304,15,345,1.000,7.263E-17
+job.pdb,AF-Q1CK40-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia pestis Nepal516,19.500,343,220,21,4,306,20,346,1.000,1.248E-17
+job.pdb,AF-B5YKG0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Thermodesulfovibrio yellowstonii DSM 11347,17.900,335,229,19,5,304,20,343,1.000,1.417E-16
+job.pdb,AF-A6VMA4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Actinobacillus succinogenes 130Z,17.000,334,234,18,4,305,22,344,1.000,1.046E-16
+job.pdb,AF-C3PBN2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus anthracis str. A0248,16.400,329,229,17,14,308,27,343,1.000,4.468E-17
+job.pdb,AF-A8FAM9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus pumilus SAFR-032,19.000,325,217,18,14,303,27,340,1.000,9.261E-17
+job.pdb,AF-Q1H4W1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methylobacillus flagellatus KT,14.500,336,239,16,4,305,24,345,1.000,3.957E-17
+job.pdb,AF-Q31GT2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Hydrogenovibrio crunogenus XCL-2,17.500,341,224,18,4,305,24,346,1.000,5.331E-18
+job.pdb,AF-Q3AUU9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechococcus sp. CC9902,17.000,351,228,23,4,310,14,345,1.000,5.045E-17
+job.pdb,AF-A9VRF3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus mycoides KBAB4,16.500,332,227,18,14,308,27,345,1.000,5.697E-17
+job.pdb,AF-C0ZKC8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brevibacillus brevis NBRC 100599,18.600,337,225,18,5,308,24,344,1.000,3.724E-17
+job.pdb,AF-A0R8Z8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus thuringiensis str. Al Hakam,15.800,329,227,17,14,305,27,342,1.000,6.053E-17
+job.pdb,AF-P12043-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus subtilis subsp. subtilis str. 168,17.500,337,224,18,14,313,27,346,1.000,5.697E-17
+job.pdb,AF-Q2RSC8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhodospirillum rubrum ATCC 11170,17.000,346,227,17,4,306,34,362,1.000,1.181E-16
+job.pdb,AF-Q9HR49-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Halobacterium salinarum NRC-1,21.200,334,211,19,4,311,41,348,1.000,1.681E-18
+job.pdb,AF-A7GH98-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium botulinum F str. Langeland,14.400,332,235,19,4,304,18,331,1.000,1.333E-16
+job.pdb,AF-B8FP03-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Desulfitobacterium hafniense DCB-2,16.000,325,227,13,14,304,27,339,1.000,1.181E-16
+job.pdb,AF-Q03MZ8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus thermophilus LMD-9,16.800,333,234,19,4,306,20,339,1.000,2.601E-16
+job.pdb,AF-A4Y5T8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella putrefaciens CN-32,17.300,340,225,20,4,304,23,345,1.000,1.909E-17
+job.pdb,AF-A4IJX5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Geobacillus thermodenitrificans NG80-2,18.300,344,228,21,4,308,16,345,1.000,1.181E-16
+job.pdb,AF-A7FG37-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Yersinia pseudotuberculosis IP 31758,19.700,344,226,21,2,306,14,346,1.000,4.204E-17
+job.pdb,AF-Q4FR86-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Psychrobacter arcticus 273-4,18.100,330,220,17,14,304,31,349,1.000,4.204E-17
+job.pdb,AF-Q7UI59-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhodopirellula baltica SH 1,16.800,363,227,18,2,304,10,357,1.000,4.748E-17
+job.pdb,AF-Q58057-F1-model_v4 Uncharacterized protein MJ0640,Methanocaldococcus jannaschii DSM 2661,17.900,318,216,15,7,310,25,311,1.000,2.586E-17
+job.pdb,AF-Q1JJ82-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes MGAS10270,17.400,332,231,20,4,304,21,340,1.000,3.524E-16
+job.pdb,"AF-Q30RE1-F1-model_v4 Selenide, water dikinase",Sulfurimonas denitrificans DSM 1251,17.200,337,227,16,5,304,22,343,1.000,1.181E-16
+job.pdb,AF-B9DQ40-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Staphylococcus carnosus subsp. carnosus TM300,18.100,325,226,17,14,307,27,342,1.000,1.046E-16
+job.pdb,AF-Q6LN73-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Photobacterium profundum SS9,17.400,326,223,18,14,304,32,346,1.000,3.724E-17
+job.pdb,AF-Q81IQ1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus cereus ATCC 14579,16.300,325,230,16,14,305,27,342,1.000,8.201E-17
+job.pdb,AF-B3R6D1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cupriavidus taiwanensis LMG 19424,17.900,339,235,15,2,305,19,349,1.000,2.303E-16
+job.pdb,AF-Q3SS83-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Nitrobacter winogradskyi Nb-255,18.200,340,230,19,5,308,25,352,1.000,9.841E-17
+job.pdb,AF-Q9XAT2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhizobium leguminosarum,17.700,343,237,17,4,311,25,357,1.000,3.121E-16
+job.pdb,AF-Q2G9X9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Novosphingobium aromaticivorans DSM 12444,16.700,323,230,13,15,305,36,351,1.000,2.040E-16
+job.pdb,AF-B2SJY0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xanthomonas oryzae pv. oryzae PXO99A,17.400,343,223,18,4,304,17,341,1.000,8.201E-17
+job.pdb,AF-A0KYA3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella sp. ANA-3,17.600,334,231,19,4,304,23,345,1.000,4.468E-17
+job.pdb,AF-Q1GGK7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Ruegeria sp. TM1040,19.800,327,220,15,14,308,32,348,1.000,3.979E-16
+job.pdb,AF-B7H4T8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus cereus B4264,15.600,332,228,18,14,308,27,343,1.000,3.957E-17
+job.pdb,AF-A6TLS5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alkaliphilus metalliredigens QYMF,16.100,329,229,16,14,306,30,347,1.000,7.718E-17
+job.pdb,AF-Q71YQ1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Listeria monocytogenes serotype 4b str. F2365,17.100,339,237,19,4,308,20,348,1.000,1.417E-16
+job.pdb,AF-Q1Q9M0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Psychrobacter cryohalolentis K5,18.100,330,220,17,14,304,31,349,1.000,5.045E-17
+job.pdb,AF-B9JCV0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Agrobacterium radiobacter K84,18.600,338,234,18,4,308,25,354,1.000,2.937E-16
+job.pdb,AF-Q3AMJ2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechococcus sp. CC9605,15.800,347,237,18,4,310,14,345,1.000,2.764E-16
+job.pdb,"AF-B2V0F0-F1-model_v4 Selenide, water dikinase",Clostridium botulinum E3 str. Alaska E43,17.400,338,233,15,1,304,20,345,1.000,7.263E-17
+job.pdb,AF-B8EAL4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella baltica OS223,15.800,341,229,17,4,304,23,345,1.000,3.957E-17
+job.pdb,AF-A8H5R0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella pealeana ATCC 700345,18.300,322,225,19,14,304,32,346,1.000,2.028E-17
+job.pdb,AF-B5EFU7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Citrifermentans bemidjiense Bem,17.900,339,228,19,4,304,22,348,1.000,1.111E-16
+job.pdb,AF-Q311C7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Oleidesulfovibrio alaskensis G20,17.600,340,237,18,4,308,20,351,1.000,2.601E-16
+job.pdb,AF-Q92QW2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sinorhizobium meliloti 1021,17.800,342,238,18,4,312,25,356,1.000,1.600E-16
+job.pdb,AF-Q8E7W9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus agalactiae NEM316,16.800,333,232,20,4,304,21,340,1.000,6.087E-16
+job.pdb,AF-B2GF76-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Limosilactobacillus fermentum IFO 3956,16.600,343,232,19,4,304,15,345,1.000,1.920E-16
+job.pdb,AF-Q6F973-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acinetobacter baylyi ADP1,18.000,344,227,19,4,304,25,356,1.000,1.506E-16
+job.pdb,AF-A3M7X8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acinetobacter baumannii ATCC 17978,17.600,346,226,20,4,304,25,356,1.000,9.261E-17
+job.pdb,AF-Q8RC57-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Caldanaerobacter subterraneus subsp. tengcongensis MB4,17.600,311,220,15,14,295,25,328,1.000,1.111E-16
+job.pdb,AF-Q48VX3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes MGAS6180,17.100,332,232,20,4,304,21,340,1.000,5.728E-16
+job.pdb,AF-Q93MM7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Latilactobacillus sakei subsp. sakei 23K,16.700,335,236,17,4,305,16,340,1.000,5.045E-17
+job.pdb,AF-C3L534-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus anthracis str. CDC 684,16.300,331,227,17,14,308,27,343,1.000,5.045E-17
+job.pdb,AF-B8EJY5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methylocella silvestris BL2,18.300,327,226,14,15,308,32,350,1.000,2.168E-16
+job.pdb,AF-B4UGX9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Anaeromyxobacter sp. K,18.300,337,228,16,5,305,20,345,1.000,4.493E-16
+job.pdb,AF-A1S7E6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella amazonensis SB2B,17.200,337,229,20,4,304,23,345,1.000,4.748E-17
+job.pdb,AF-Q5NXR0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Aromatoleum aromaticum EbN1,19.000,320,216,13,14,300,32,341,1.000,1.181E-16
+job.pdb,AF-A8LNB8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Dinoroseobacter shibae DFL 12 = DSM 16493,18.400,331,221,17,14,308,36,353,1.000,2.601E-16
+job.pdb,AF-B7I5C6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acinetobacter baumannii AB0057,17.600,346,226,20,4,304,25,356,1.000,1.181E-16
+job.pdb,AF-Q3JBW2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Nitrosococcus oceani ATCC 19707,17.700,350,235,21,2,310,21,358,1.000,1.920E-16
+job.pdb,AF-Q2YN59-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brucella abortus 2308,17.700,344,235,18,4,312,29,359,1.000,3.524E-16
+job.pdb,AF-P0DD62-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes MGAS315,17.100,333,231,20,4,304,21,340,1.000,5.728E-16
+job.pdb,AF-C4Z478-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,[Eubacterium] eligens ATCC 27750,15.500,328,229,16,14,304,25,341,1.000,2.447E-16
+job.pdb,AF-Q55422-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechocystis sp. PCC 6803 substr. Kazusa,17.000,335,236,17,4,304,14,340,1.000,6.468E-16
+job.pdb,AF-Q0HTW8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella sp. MR-7,17.900,334,230,19,4,304,23,345,1.000,1.181E-16
+job.pdb,"AF-B8ES21-F1-model_v4 Selenide, water dikinase",Methylocella silvestris BL2,20.200,350,211,18,1,304,21,348,1.000,1.909E-17
+job.pdb,AF-Q5LRF9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Ruegeria pomeroyi DSS-3,19.300,326,219,17,14,306,32,346,1.000,1.700E-16
+job.pdb,AF-Q049L9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lactobacillus delbrueckii subsp. bulgaricus ATCC BAA-365,15.800,340,239,19,4,305,17,347,1.000,7.304E-16
+job.pdb,AF-C5BP01-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Teredinibacter turnerae T7901,17.900,328,223,18,14,306,36,352,1.000,1.333E-16
+job.pdb,AF-B9EAZ0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Macrococcus caseolyticus JCSC5402,18.200,324,218,16,14,303,27,337,1.000,7.263E-17
+job.pdb,AF-B4RZX7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alteromonas mediterranea DE,16.300,342,227,21,4,306,24,345,1.000,5.045E-17
+job.pdb,AF-B8DDZ0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Listeria monocytogenes HCC23,16.700,341,236,19,4,308,20,348,1.000,2.040E-16
+job.pdb,AF-Q5M6J5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus thermophilus LMG 18311,17.000,335,231,21,4,306,20,339,1.000,4.228E-16
+job.pdb,AF-Q8DRM4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae R6,17.600,334,228,21,4,304,21,340,1.000,5.391E-16
+job.pdb,AF-Q3AD62-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Carboxydothermus hydrogenoformans Z-2901,17.100,338,231,18,4,304,17,342,1.000,4.493E-16
+job.pdb,AF-A1RKQ5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella sp. W3-18-1,18.200,340,222,20,4,304,23,345,1.000,1.409E-17
+job.pdb,AF-Q2IQE7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Anaeromyxobacter dehalogenans 2CP-C,19.000,336,227,16,5,305,20,345,1.000,6.873E-16
+job.pdb,AF-Q7V9S9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus subsp. marinus str. CCMP1375,16.900,353,226,19,4,310,14,345,1.000,9.841E-17
+job.pdb,AF-A3D3D1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella baltica OS155,17.600,334,231,19,4,304,23,345,1.000,1.181E-16
+job.pdb,AF-Q92AP1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Listeria innocua Clip11262,15.200,341,241,17,4,308,20,348,1.000,1.920E-16
+job.pdb,AF-Q82Y02-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Nitrosomonas europaea ATCC 19718,19.700,345,222,21,2,305,21,351,1.000,1.591E-17
+job.pdb,AF-Q02IA6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudomonas aeruginosa UCBPP-PA14,18.900,343,219,23,4,303,21,347,1.000,5.697E-17
+job.pdb,AF-C3M9F7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sinorhizobium fredii NGR234,19.200,337,232,17,4,308,25,353,1.000,3.744E-16
+job.pdb,AF-Q2KA45-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhizobium etli CFN 42,17.800,342,238,17,4,311,25,357,1.000,3.744E-16
+job.pdb,AF-A3MTW6-F1-model_v4 Thiamine-monophosphate kinase,Pyrobaculum calidifontis JCM 11548,19.200,302,188,15,33,320,30,289,1.000,5.697E-17
+job.pdb,AF-Q5XEF4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes MGAS10394,17.400,333,230,21,4,304,21,340,1.000,8.247E-16
+job.pdb,AF-Q8DHY2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Thermosynechococcus vestitus BP-1,16.300,331,230,14,14,311,25,341,1.000,3.121E-16
+job.pdb,AF-Q2P674-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xanthomonas oryzae pv. oryzae MAFF 311018,17.900,334,214,19,14,304,25,341,1.000,1.111E-16
+job.pdb,AF-Q0HHL6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella sp. MR-4,17.900,340,223,22,4,304,23,345,1.000,4.204E-17
+job.pdb,AF-Q63GT1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus cereus E33L,16.600,331,226,16,14,308,27,343,1.000,7.718E-17
+job.pdb,AF-Q5M203-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus thermophilus CNRZ1066,17.000,334,232,20,4,306,20,339,1.000,5.391E-16
+job.pdb,AF-A8MLI7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alkaliphilus oremlandii OhILAs,15.100,330,237,16,5,301,20,339,1.000,3.744E-16
+job.pdb,AF-Q12MF0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella denitrificans OS217,17.600,334,231,20,4,304,23,345,1.000,8.715E-17
+job.pdb,AF-B0VT70-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acinetobacter baumannii SDF,17.400,350,230,21,2,304,19,356,1.000,1.806E-16
+job.pdb,AF-B5ZX12-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhizobium leguminosarum bv. trifolii WSM2304,18.300,343,236,18,4,312,25,357,1.000,5.073E-16
+job.pdb,AF-Q984K6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Mesorhizobium japonicum MAFF 303099,17.500,331,231,16,15,312,48,369,1.000,7.761E-16
+job.pdb,AF-B1IL59-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium botulinum B1 str. Okra,13.500,332,236,17,5,304,19,331,1.000,2.601E-16
+job.pdb,AF-A8F8I1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudothermotoga lettingae TMO,19.000,330,222,16,4,301,19,335,1.000,2.764E-16
+job.pdb,AF-C1C9V1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae 70585,17.100,333,231,19,4,304,21,340,1.000,6.468E-16
+job.pdb,AF-B2IR37-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae CGSP14,17.100,332,232,19,4,304,21,340,1.000,8.247E-16
+job.pdb,AF-A8FUD3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella sediminis HAW-EB3,17.300,323,227,16,14,304,31,345,1.000,6.053E-17
+job.pdb,AF-Q73EN3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus cereus ATCC 10987,15.300,332,229,18,14,308,27,343,1.000,1.111E-16
+job.pdb,AF-Q6HPA2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,[Bacillus thuringiensis] serovar konkukian str. 97-27,16.300,331,227,16,14,308,27,343,1.000,9.261E-17
+job.pdb,"AF-Q13R51-F1-model_v4 Selenide, water dikinase",Paraburkholderia xenovorans LB400,19.000,341,217,16,4,304,33,354,1.000,1.806E-16
+job.pdb,AF-Q6AK63-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Desulfotalea psychrophila LSv54,16.200,339,235,18,5,307,31,356,1.000,3.121E-16
+job.pdb,AF-A3DEV1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acetivibrio thermocellus ATCC 27405,16.000,343,229,19,4,304,15,340,1.000,1.920E-16
+job.pdb,AF-B1YJ07-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Exiguobacterium sibiricum 255-15,17.700,327,220,16,14,304,27,340,1.000,2.303E-16
+job.pdb,AF-P20772-F1-model_v4 Bifunctional purine biosynthetic protein ADE1,Schizosaccharomyces pombe 972h-,16.900,342,232,19,4,304,450,780,1.000,5.728E-16
+job.pdb,AF-Q3K400-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus agalactiae A909,16.800,332,233,19,4,304,21,340,1.000,1.425E-15
+job.pdb,AF-Q04N22-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae D39,17.400,332,231,19,4,304,21,340,1.000,1.187E-15
+job.pdb,AF-B5XJ18-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes NZ131,17.400,333,230,21,4,304,21,340,1.000,9.896E-16
+job.pdb,"AF-C4ZDB0-F1-model_v4 Selenide, water dikinase",[Eubacterium] rectale ATCC 33656,15.900,345,230,17,1,304,17,342,1.000,1.111E-16
+job.pdb,AF-B1KIG9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella woodyi ATCC 51908,17.500,324,225,16,14,304,31,345,1.000,1.333E-16
+job.pdb,AF-B8CN80-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella piezotolerans WP3,18.000,326,221,22,14,304,32,346,1.000,4.468E-17
+job.pdb,AF-B7JM87-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus cereus AH820,16.400,334,228,18,14,310,27,346,1.000,2.447E-16
+job.pdb,"AF-Q931D0-F1-model_v4 Selenide, water dikinase",Sinorhizobium meliloti 1021,18.600,344,213,19,5,304,28,348,1.000,5.361E-17
+job.pdb,AF-B0VDJ1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acinetobacter baumannii AYE,17.300,345,228,19,4,304,25,356,1.000,2.601E-16
+job.pdb,AF-A6U7L8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sinorhizobium medicae WSM419,17.700,338,236,17,4,308,25,353,1.000,5.073E-16
+job.pdb,AF-A7FXD5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium botulinum A str. ATCC 19397,14.300,334,233,18,4,304,18,331,1.000,3.744E-16
+job.pdb,AF-Q7U4N8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Parasynechococcus marenigrum WH 8102,15.700,343,226,21,4,301,14,338,1.000,2.168E-16
+job.pdb,AF-Q9KF55-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Halalkalibacterium halodurans C-125,17.000,334,219,19,14,307,27,342,1.000,7.718E-17
+job.pdb,AF-B9J1K7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus cereus Q1,15.600,332,228,18,14,308,27,343,1.000,1.506E-16
+job.pdb,AF-Q87B94-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xylella fastidiosa Temecula1,16.200,339,231,18,4,304,28,351,1.000,7.304E-16
+job.pdb,AF-B1HTV6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lysinibacillus sphaericus C3-41,17.100,332,233,17,14,310,27,351,1.000,4.774E-16
+job.pdb,AF-C1CBM4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae JJA,17.100,333,231,20,4,304,21,340,1.000,1.117E-15
+job.pdb,AF-B8DTT6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bifidobacterium animalis subsp. lactis AD011,18.200,340,219,18,5,304,24,344,1.000,1.333E-16
+job.pdb,AF-A9LZD2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Neisseria meningitidis 053442,17.100,333,235,17,4,304,21,344,1.000,6.087E-16
+job.pdb,AF-B2HWV2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acinetobacter baumannii ACICU,18.000,343,230,21,4,306,25,356,1.000,3.316E-16
+job.pdb,AF-Q8G1K5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brucella suis 1330,17.100,345,236,18,4,312,29,359,1.000,6.873E-16
+job.pdb,"AF-A9KPW1-F1-model_v4 Selenide, water dikinase",Lachnoclostridium phytofermentans ISDg,17.300,341,228,17,1,304,17,340,1.000,1.920E-16
+job.pdb,AF-Q97TA2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae TIGR4,17.100,333,231,20,4,304,21,340,1.000,1.262E-15
+job.pdb,AF-A2RBZ5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes str. Manfredo,17.100,332,232,20,4,304,21,340,1.000,1.709E-15
+job.pdb,AF-A6WM34-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella baltica OS185,17.100,339,227,21,4,304,23,345,1.000,5.045E-17
+job.pdb,AF-Q3IIQ2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pseudoalteromonas translucida TAC125,18.400,325,221,17,14,304,32,346,1.000,1.417E-16
+job.pdb,AF-B4SN29-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Stenotrophomonas maltophilia R551-3,17.500,348,220,21,4,304,25,352,1.000,2.303E-16
+job.pdb,AF-B3PV93-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhizobium etli CIAT 652,18.100,342,237,17,4,311,25,357,1.000,7.761E-16
+job.pdb,AF-B0R4B5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Halobacterium salinarum R1,21.800,334,207,20,5,311,42,348,1.000,3.485E-18
+job.pdb,AF-B9E4K8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium kluyveri NBRC 12016,15.500,329,235,18,4,304,18,331,1.000,9.312E-16
+job.pdb,AF-C1CNS6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae Taiwan19F-14,17.400,333,230,20,4,304,21,340,1.000,1.117E-15
+job.pdb,"AF-Q0AFI6-F1-model_v4 Selenide, water dikinase",Nitrosomonas eutropha C91,17.600,345,218,21,4,304,27,349,1.000,4.468E-17
+job.pdb,AF-A0AJM1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Listeria welshimeri serovar 6b str. SLCC5334,15.300,338,242,18,4,308,20,346,1.000,6.468E-16
+job.pdb,AF-Q0ADT8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Nitrosomonas eutropha C91,17.400,339,224,19,5,304,31,352,1.000,6.432E-17
+job.pdb,AF-A9KBZ3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Coxiella burnetii Dugway 5J108-111,16.300,330,222,21,14,305,37,350,1.000,8.201E-17
+job.pdb,AF-Q2Y5R7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Nitrosospira multiformis ATCC 25196,17.600,335,230,17,5,306,31,352,1.000,1.333E-16
+job.pdb,AF-Q8E2G1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus agalactiae 2603V/R,17.100,333,231,20,4,304,21,340,1.000,1.514E-15
+job.pdb,AF-C1DC84-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Laribacter hongkongensis HLHK9,18.300,333,231,17,4,304,21,344,1.000,5.391E-16
+job.pdb,AF-B8JDJ0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Anaeromyxobacter dehalogenans 2CP-1,18.600,337,227,16,5,305,20,345,1.000,1.425E-15
+job.pdb,AF-C1EV65-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus cereus 03BB102,16.300,331,227,16,14,308,27,343,1.000,1.806E-16
+job.pdb,AF-B0TPW7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella halifaxensis HAW-EB4,18.700,326,219,21,14,304,32,346,1.000,2.586E-17
+job.pdb,AF-A4YI68-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Metallosphaera sedula DSM 5348,15.800,321,217,16,16,311,51,343,1.000,1.326E-17
+job.pdb,AF-B0KBQ3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Thermoanaerobacter pseudethanolicus ATCC 33223,18.200,318,226,14,5,295,18,328,1.000,2.764E-16
+job.pdb,AF-Q8P312-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes MGAS8232,17.400,332,231,20,4,304,21,340,1.000,2.316E-15
+job.pdb,AF-B8ZJN0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae ATCC 700669,17.000,334,230,20,4,304,21,340,1.000,1.341E-15
+job.pdb,AF-A1KU60-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Neisseria meningitidis FAM18,17.400,333,234,17,4,304,21,344,1.000,1.341E-15
+job.pdb,AF-Q1MIW9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhizobium leguminosarum bv. viciae 3841,17.400,343,238,17,4,311,25,357,1.000,8.247E-16
+job.pdb,AF-Q1GSA2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sphingopyxis alaskensis RB2256,17.200,330,220,15,15,305,36,351,1.000,1.255E-16
+job.pdb,AF-Q99148-F1-model_v4 Bifunctional purine biosynthetic protein ADE1,Yarrowia lipolytica CLIB122,20.700,337,225,18,4,304,452,782,1.000,1.341E-15
+job.pdb,AF-B1I7V5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae Hungary19A-6,17.100,333,231,20,4,304,21,340,1.000,1.817E-15
+job.pdb,AF-Q084L1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella frigidimarina NCIMB 400,18.200,324,223,16,14,304,31,345,1.000,2.601E-16
+job.pdb,AF-Q83AZ0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Coxiella burnetii RSA 493,17.400,326,223,20,14,305,37,350,1.000,2.303E-16
+job.pdb,AF-B9JUY3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Agrobacterium vitis S4,18.200,339,234,18,4,308,25,354,1.000,1.425E-15
+job.pdb,AF-Q6FZK1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bartonella quintana str. Toulouse,14.800,337,240,16,4,304,31,356,1.000,1.425E-15
+job.pdb,AF-Q8PYK1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanosarcina mazei Go1,17.900,318,221,13,16,311,48,347,1.000,3.298E-17
+job.pdb,AF-C1FV78-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium botulinum A2 str. Kyoto,13.500,333,237,17,4,304,18,331,1.000,8.247E-16
+job.pdb,AF-Q8DWL1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus mutans UA159,15.800,334,237,19,4,304,18,340,1.000,3.765E-15
+job.pdb,AF-Q1JE80-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes MGAS2096,16.000,336,231,20,4,304,21,340,1.000,9.312E-16
+job.pdb,AF-Q1J936-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes MGAS10750,16.300,336,230,20,4,304,21,340,1.000,8.764E-16
+job.pdb,AF-Q5H3C0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xanthomonas oryzae pv. oryzae KACC 10331,17.900,335,213,20,14,304,25,341,1.000,2.303E-16
+job.pdb,AF-Q4UX30-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xanthomonas campestris pv. campestris str. 8004,18.400,331,216,17,14,304,25,341,1.000,5.073E-16
+job.pdb,AF-Q8P725-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xanthomonas campestris pv. campestris str. ATCC 33913,17.900,334,214,18,14,304,25,341,1.000,2.601E-16
+job.pdb,AF-B7K0I0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rippkaea orientalis PCC 8801,15.000,340,241,16,4,306,14,342,1.000,2.779E-15
+job.pdb,AF-Q9JZ80-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Neisseria meningitidis MC58,17.700,333,233,19,4,304,21,344,1.000,1.425E-15
+job.pdb,AF-A9IVF6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bartonella tribocorum CIP 105476,16.000,337,238,16,4,304,31,358,1.000,1.709E-15
+job.pdb,AF-B1KZ57-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium botulinum A3 str. Loch Maree,13.800,332,237,17,4,304,18,331,1.000,1.262E-15
+job.pdb,"AF-B8FWU2-F1-model_v4 Selenide, water dikinase",Desulfitobacterium hafniense DCB-2,18.600,316,199,20,27,304,45,340,1.000,2.168E-16
+job.pdb,AF-B9DSR4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus uberis 0140J,15.600,333,236,19,4,304,21,340,1.000,2.461E-15
+job.pdb,AF-Q9JUA2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Neisseria meningitidis Z2491,17.100,333,235,17,4,304,21,344,1.000,1.187E-15
+job.pdb,AF-Q57E30-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brucella abortus bv. 1 str. 9-941,17.300,334,228,17,15,312,38,359,1.000,7.304E-16
+job.pdb,AF-C3L2V1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium botulinum Ba4 str. 657,13.800,332,237,16,4,304,18,331,1.000,1.052E-15
+job.pdb,AF-C1CHV9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pneumoniae P1031,17.100,333,231,21,4,304,21,340,1.000,2.316E-15
+job.pdb,AF-Q8Y6C3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Listeria monocytogenes EGD-e,16.900,342,234,20,4,308,20,348,1.000,5.391E-16
+job.pdb,AF-B0UKC4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methylobacterium sp. 4-46,14.700,352,231,17,4,307,23,353,1.000,1.255E-16
+job.pdb,AF-B7IUV5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus cereus G9842,15.000,332,230,18,14,308,27,343,1.000,3.979E-16
+job.pdb,AF-Q0ICW4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechococcus sp. CC9311,15.400,349,237,19,4,310,14,346,1.000,8.764E-16
+job.pdb,AF-C3MW31-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sulfolobus islandicus M.14.25,18.100,314,213,15,18,310,53,343,1.000,6.835E-17
+job.pdb,AF-Q1D8V5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Myxococcus xanthus DK 1622,17.200,331,223,19,14,306,27,344,1.000,1.417E-16
+job.pdb,AF-A5VPP4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brucella ovis ATCC 25840,18.500,334,224,18,15,312,38,359,1.000,8.247E-16
+job.pdb,AF-Q67KG0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Symbiobacterium thermophilum IAM 14863,16.900,348,228,19,4,305,19,351,1.000,1.117E-15
+job.pdb,AF-C0RI52-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brucella melitensis ATCC 23457,17.300,345,235,17,4,312,29,359,1.000,1.930E-15
+job.pdb,AF-O67691-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Aquifex aeolicus VF5,16.700,334,229,19,4,311,44,354,1.000,8.201E-17
+job.pdb,AF-A5N0Q2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium kluyveri DSM 555,14.900,327,239,15,4,304,18,331,1.000,1.262E-15
+job.pdb,AF-A9KHX3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lachnoclostridium phytofermentans ISDg,15.000,338,235,18,5,304,18,341,1.000,8.764E-16
+job.pdb,AF-A3QD32-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella loihica PV-4,16.700,323,229,16,14,304,31,345,1.000,2.601E-16
+job.pdb,AF-B7HS34-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bacillus cereus AH187,15.900,332,227,18,14,308,27,343,1.000,3.744E-16
+job.pdb,AF-B7GY98-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Acinetobacter baumannii AB307-0294,18.000,354,223,21,2,304,19,356,1.000,7.761E-16
+job.pdb,"AF-Q9AQI4-F1-model_v4 Selenide, water dikinase",Pseudomonas straminea,19.400,344,210,19,4,303,35,355,1.000,2.937E-16
+job.pdb,AF-A9MA84-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brucella canis ATCC 23365,17.300,334,228,17,15,312,38,359,1.000,1.187E-15
+job.pdb,AF-A3MXD4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Pyrobaculum calidifontis JCM 11548,19.800,313,211,17,16,309,49,340,1.000,3.504E-17
+job.pdb,AF-A0Q1J2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium novyi NT,13.600,330,240,14,4,304,18,331,1.000,1.117E-15
+job.pdb,AF-Q5FIV3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lactobacillus acidophilus NCFM,15.600,344,227,21,5,306,23,345,1.000,2.447E-16
+job.pdb,AF-A5GIY3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechococcus sp. WH 7803,17.100,350,229,20,4,310,14,345,1.000,1.187E-15
+job.pdb,AF-Q46F25-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanosarcina barkeri str. Fusaro,16.800,320,222,15,16,311,48,347,1.000,1.111E-16
+job.pdb,AF-Q83FE8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Tropheryma whipplei str. Twist,19.600,330,223,16,5,311,77,387,1.000,6.835E-17
+job.pdb,AF-Q2J4M9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Frankia casuarinae,16.700,335,233,18,4,311,64,379,1.000,3.744E-16
+job.pdb,AF-Q1WU57-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Ligilactobacillus salivarius UCC118,15.300,345,234,18,4,305,15,344,1.000,1.514E-15
+job.pdb,AF-Q6G5R9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bartonella henselae str. Houston-1,15.200,341,242,17,4,308,31,360,1.000,3.543E-15
+job.pdb,AF-Q3IQL3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Natronomonas pharaonis DSM 2160,18.100,342,223,19,5,315,42,357,1.000,3.103E-17
+job.pdb,AF-B1XNH7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechococcus sp. PCC 7002,16.800,333,233,16,4,301,14,337,1.000,2.615E-15
+job.pdb,AF-Q7NS12-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Chromobacterium violaceum ATCC 12472,18.400,336,227,17,4,304,22,345,1.000,3.979E-16
+job.pdb,AF-B7GU81-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bifidobacterium longum subsp. infantis ATCC 15697 = JCM 1222 = DSM 20088,17.900,339,233,17,4,306,16,345,1.000,1.262E-15
+job.pdb,AF-A9NA98-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Coxiella burnetii RSA 331,17.200,324,226,20,14,305,37,350,1.000,5.073E-16
+job.pdb,AF-B2S4W8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brucella abortus S19,17.300,335,227,17,15,312,38,359,1.000,9.896E-16
+job.pdb,"AF-Q24NA9-F1-model_v4 Selenide, water dikinase",Desulfitobacterium hafniense Y51,18.300,327,207,21,18,304,34,340,1.000,3.744E-16
+job.pdb,AF-A3CJZ4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus sanguinis SK36,16.100,334,233,19,4,304,21,340,1.000,3.543E-15
+job.pdb,AF-A8AU99-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus gordonii str. Challis substr. CH1,16.800,333,232,20,4,304,21,340,1.000,4.801E-15
+job.pdb,AF-Q5L3D0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Geobacillus kaustophilus HTA426,19.000,342,227,18,5,311,20,346,1.000,3.316E-16
+job.pdb,AF-Q83H66-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Tropheryma whipplei TW08/27,19.000,336,224,17,4,311,72,387,1.000,8.201E-17
+job.pdb,AF-A9BCS9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus str. MIT 9211,15.400,344,228,19,4,301,14,340,1.000,1.262E-15
+job.pdb,AF-A9FYZ4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sorangium cellulosum So ce56,17.300,351,222,19,4,304,16,348,1.000,2.764E-16
+job.pdb,AF-A8YW83-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lactobacillus helveticus DPC 4571,17.700,344,227,19,4,304,15,345,1.000,2.316E-15
+job.pdb,AF-Q215Q6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhodopseudomonas palustris BisB18,17.000,340,232,18,5,307,25,351,1.000,2.615E-15
+job.pdb,"AF-O62461-F1-model_v4 Probable selenide, water dikinase",Caenorhabditis elegans,18.300,332,216,19,23,312,60,378,1.000,9.261E-17
+job.pdb,AF-Q9UX24-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Saccharolobus solfataricus P2,16.600,318,215,16,18,311,53,344,1.000,8.201E-17
+job.pdb,AF-C1KW66-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Listeria monocytogenes serotype 4b str. CLIP 80459,17.300,328,223,20,14,304,28,344,1.000,1.052E-15
+job.pdb,AF-Q1QLI2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Nitrobacter hamburgensis X14,17.000,341,228,18,5,306,25,349,1.000,2.316E-15
+job.pdb,AF-Q55946-F1-model_v4 Uncharacterized protein sll0787,Synechocystis sp. PCC 6803 substr. Kazusa,20.500,301,190,16,24,310,40,305,1.000,9.896E-16
+job.pdb,AF-Q8PID9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xanthomonas citri pv. citri str. 306,17.700,333,216,17,14,304,25,341,1.000,9.896E-16
+job.pdb,AF-A9KY38-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Shewanella baltica OS195,17.600,340,224,21,4,304,23,345,1.000,2.764E-16
+job.pdb,AF-Q0ABB7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Alkalilimnicola ehrlichii MLHE-1,16.800,339,230,18,4,304,21,345,1.000,3.138E-15
+job.pdb,AF-B8DNV5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Desulfovibrio vulgaris str. 'Miyazaki F',16.200,332,236,15,5,304,28,349,1.000,2.615E-15
+job.pdb,AF-B2FRX8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Stenotrophomonas maltophilia K279a,17.800,342,223,18,4,304,28,352,1.000,1.920E-16
+job.pdb,AF-B8IP71-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methylobacterium nodulans ORS 2060,16.300,337,230,16,15,312,32,355,1.000,7.761E-16
+job.pdb,AF-Q6KZR2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Picrophilus torridus DSM 9790,16.000,337,230,18,4,311,61,373,1.000,2.764E-16
+job.pdb,AF-Q833Z1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Enterococcus faecalis V583,17.700,326,223,17,14,305,27,341,1.000,3.543E-15
+job.pdb,AF-Q5F973-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Neisseria gonorrhoeae FA 1090,16.000,336,235,18,4,304,21,344,1.000,4.518E-15
+job.pdb,AF-Q72T98-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130,15.500,341,234,20,4,304,18,344,1.000,2.461E-15
+job.pdb,AF-Q6N5C8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Rhodopseudomonas palustris CGA009,18.400,341,226,20,5,307,25,351,1.000,2.779E-15
+job.pdb,AF-C3NEN0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sulfolobus islandicus Y.G.57.14,17.000,316,214,15,18,310,53,343,1.000,1.333E-16
+job.pdb,AF-C3MQF3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sulfolobus islandicus L.S.2.15,17.100,320,211,18,18,311,53,344,1.000,6.432E-17
+job.pdb,AF-Q5V2D3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Haloarcula marismortui ATCC 43049,18.200,339,226,18,5,315,42,357,1.000,8.201E-17
+job.pdb,AF-Q72IH7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermus thermophilus HB27,18.200,318,218,16,16,311,56,353,1.000,6.053E-17
+job.pdb,AF-Q892X1-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium tetani E88,14.400,332,233,13,5,304,19,331,1.000,1.262E-15
+job.pdb,AF-Q7V581-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus str. MIT 9313,16.000,337,218,22,4,295,14,330,1.000,5.073E-16
+job.pdb,AF-A2C535-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus str. NATL1A,15.600,351,234,20,4,310,14,346,1.000,1.709E-15
+job.pdb,AF-Q8ZZJ7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Pyrobaculum aerophilum str. IM2,18.200,317,213,17,16,309,49,342,1.000,2.040E-16
+job.pdb,AF-B0RQI6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xanthomonas campestris pv. campestris str. B100,18.200,334,213,20,14,304,25,341,1.000,1.052E-15
+job.pdb,AF-Q1MRM4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lawsonia intracellularis PHE/MN1-00,14.900,334,243,17,4,304,23,348,1.000,6.121E-15
+job.pdb,AF-A7HYF2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Parvibaculum lavamentivorans DS-1,16.500,327,230,15,14,304,37,356,1.000,2.461E-15
+job.pdb,AF-B0K3Q6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Thermoanaerobacter sp. X514,17.500,314,217,15,14,295,25,328,1.000,9.896E-16
+job.pdb,AF-Q9F1T6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus suis,16.900,336,226,20,5,304,22,340,1.000,2.953E-15
+job.pdb,AF-A7HDB7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Anaeromyxobacter sp. Fw109-5,17.800,336,228,18,5,305,20,342,1.000,4.001E-15
+job.pdb,AF-A6X235-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brucella anthropi ATCC 49188,16.200,327,235,15,15,308,42,362,1.000,2.953E-15
+job.pdb,AF-C3N674-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sulfolobus islandicus M.16.27,16.500,320,213,16,18,311,53,344,1.000,2.434E-17
+job.pdb,AF-A5GVR5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechococcus sp. RCC307,18.800,335,211,23,4,294,14,331,1.000,4.493E-16
+job.pdb,AF-A1A0R8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bifidobacterium adolescentis ATCC 15703,17.700,338,223,18,5,304,24,344,1.000,2.051E-15
+job.pdb,AF-Q8UG98-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Agrobacterium fabrum str. C58,17.500,341,234,18,4,308,25,354,1.000,5.760E-15
+job.pdb,"AF-P52424-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase, chloroplastic/mitochondrial",Vigna unguiculata,17.000,300,211,15,33,304,99,388,1.000,1.817E-15
+job.pdb,AF-Q2RGU5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Moorella thermoacetica ATCC 39073,21.900,319,186,19,20,309,426,710,1.000,5.045E-17
+job.pdb,AF-Q9KF57-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Halalkalibacterium halodurans C-125,16.200,332,229,19,4,311,61,367,1.000,3.316E-16
+job.pdb,AF-A5GHL4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Synechococcus sp. WH 7803,18.600,317,213,16,19,311,59,354,1.000,6.835E-17
+job.pdb,AF-A4WMV7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Pyrobaculum arsenaticum DSM 13514,20.500,317,206,18,16,309,49,342,1.000,3.298E-17
+job.pdb,AF-C4KHN7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sulfolobus islandicus M.16.4,17.600,317,213,16,18,311,53,344,1.000,2.168E-16
+job.pdb,AF-A6UX13-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanococcus aeolicus Nankai-3,15.800,335,232,19,5,311,40,352,1.000,7.718E-17
+job.pdb,"AF-P07244-F1-model_v4 Bifunctional purine biosynthetic protein ADE5,7",Saccharomyces cerevisiae S288C,17.800,353,226,22,4,308,463,799,1.000,2.615E-15
+job.pdb,AF-O27272-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanothermobacter thermautotrophicus str. Delta H,20.300,325,208,19,20,312,33,338,1.000,2.040E-16
+job.pdb,AF-Q8F242-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Leptospira interrogans serovar Lai str. 56601,15.700,342,232,20,4,304,18,344,1.000,3.335E-15
+job.pdb,AF-Q1JP36-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Streptococcus pyogenes MGAS9429,16.300,343,231,22,4,304,21,349,1.000,1.057E-14
+job.pdb,AF-Q970V6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sulfurisphaera tokodaii str. 7,17.200,319,212,17,16,309,51,342,1.000,3.724E-17
+job.pdb,AF-Q5JFL7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermococcus kodakarensis KOD1,16.200,320,224,18,16,311,47,346,1.000,8.247E-16
+job.pdb,AF-A8MCK2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Caldivirga maquilingensis IC-167,19.100,314,212,19,16,309,49,340,1.000,7.304E-16
+job.pdb,"AF-A8EUZ4-F1-model_v4 Selenide, water dikinase",Aliarcobacter butzleri RM4018,16.300,330,213,16,18,304,36,345,1.000,8.764E-16
+job.pdb,AF-Q8YGB9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brucella melitensis bv. 1 str. 16M,17.300,335,227,17,15,312,38,359,1.000,3.765E-15
+job.pdb,AF-A1RQQ2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Pyrobaculum islandicum DSM 4184,18.400,314,218,17,16,311,49,342,1.000,1.700E-16
+job.pdb,AF-Q54GJ2-F1-model_v4 Bifunctional purine biosynthetic protein purD,Dictyostelium discoideum,15.300,333,228,18,16,306,495,815,1.000,1.052E-15
+job.pdb,AF-A2CBX4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus str. MIT 9303,16.500,339,214,23,4,295,14,330,1.000,7.304E-16
+job.pdb,AF-B2IJR2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Beijerinckia indica subsp. indica ATCC 9039,15.700,355,231,19,4,312,23,355,1.000,1.341E-15
+job.pdb,AF-Q8REV3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Fusobacterium nucleatum subsp. nucleatum ATCC 25586,14.400,325,232,16,14,304,27,339,1.000,1.057E-14
+job.pdb,AF-A5VQ15-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Brucella ovis ATCC 25840,19.700,324,190,20,20,311,431,716,1.000,1.920E-16
+job.pdb,AF-Q7UA92-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Parasynechococcus marenigrum WH 8102,17.800,320,218,14,16,311,63,361,1.000,1.417E-16
+job.pdb,AF-B3DT56-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bifidobacterium longum DJO10A,18.500,339,222,17,5,306,24,345,1.000,1.514E-15
+job.pdb,AF-Q46IM4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus str. NATL2A,15.200,334,224,18,4,295,14,330,1.000,3.138E-15
+job.pdb,AF-Q9PFS0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Xylella fastidiosa 9a5c,16.800,332,219,18,14,304,36,351,1.000,2.316E-15
+job.pdb,AF-B0CL36-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Brucella suis ATCC 23445,17.300,335,227,18,15,312,38,359,1.000,2.461E-15
+job.pdb,AF-Q11GW6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Chelativorans sp. BNC1,17.700,322,228,14,15,304,47,363,1.000,1.348E-14
+job.pdb,AF-Q9HJA4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermoplasma acidophilum DSM 1728,14.800,344,238,18,4,318,68,385,1.000,6.468E-16
+job.pdb,AF-Q8FMM3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Corynebacterium efficiens YS-314,16.900,318,217,14,20,311,82,378,1.000,1.262E-15
+job.pdb,AF-Q5SMH8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermus thermophilus HB8,18.200,318,218,16,16,311,56,353,1.000,2.764E-16
+job.pdb,AF-A9MAL4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Brucella canis ATCC 23365,19.700,324,190,20,20,311,431,716,1.000,2.303E-16
+job.pdb,AF-B9JFQ3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Agrobacterium radiobacter K84,21.900,305,188,18,30,311,441,718,1.000,9.312E-16
+job.pdb,AF-Q97J93-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Clostridium acetobutylicum ATCC 824,13.200,332,240,17,4,304,18,332,1.000,2.329E-14
+job.pdb,AF-C3NH14-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sulfolobus islandicus Y.N.15.51,17.000,316,214,14,18,310,53,343,1.000,1.255E-16
+job.pdb,AF-Q3ANP7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Synechococcus sp. CC9605,17.500,320,219,16,16,311,64,362,1.000,5.728E-16
+job.pdb,AF-Q12UL8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanococcoides burtonii DSM 6242,14.300,313,228,15,21,311,39,333,1.000,5.391E-16
+job.pdb,AF-B0CLG4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Brucella suis ATCC 23445,20.200,326,186,20,20,311,431,716,1.000,2.303E-16
+job.pdb,AF-A8LCI3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Frankia sp. EAN1pec,17.000,322,223,15,17,311,83,387,1.000,7.304E-16
+job.pdb,AF-B1YBM5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Pyrobaculum neutrophilum V24Sta,19.400,318,210,17,16,311,49,342,1.000,3.524E-16
+job.pdb,AF-A5UMW9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanobrevibacter smithii ATCC 35061,18.100,319,213,18,19,311,52,348,1.000,1.187E-15
+job.pdb,AF-Q3AD64-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Carboxydothermus hydrogenoformans Z-2901,18.100,314,186,18,30,309,430,706,1.000,9.312E-16
+job.pdb,AF-Q97BD5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermoplasma volcanium GSS1,15.400,337,234,19,4,311,68,382,1.000,9.896E-16
+job.pdb,AF-A4XKZ4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Caldicellulosiruptor saccharolyticus DSM 8903,14.200,337,234,17,5,304,23,341,1.000,1.425E-15
+job.pdb,AF-Q8TIT6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanosarcina acetivorans C2A,18.500,324,212,17,16,311,48,347,1.000,4.774E-16
+job.pdb,AF-Q2FI09-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus USA300,14.700,318,230,13,16,311,69,367,1.000,1.609E-15
+job.pdb,AF-Q2RWI3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhodospirillum rubrum ATCC 11170,15.500,334,233,19,4,311,56,366,1.000,1.117E-15
+job.pdb,AF-Q57DR8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Brucella abortus bv. 1 str. 9-941,19.700,324,190,20,20,311,431,716,1.000,3.316E-16
+job.pdb,AF-Q8G595-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Bifidobacterium longum NCC2705,18.100,341,227,17,4,306,19,345,1.000,2.953E-15
+job.pdb,AF-Q5HH15-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus COL,14.100,318,232,14,16,311,69,367,1.000,1.341E-15
+job.pdb,AF-B9JVW2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Agrobacterium vitis S4,22.000,317,173,20,30,311,441,718,1.000,1.806E-16
+job.pdb,AF-Q9RXT4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Deinococcus radiodurans R1,15.700,330,233,16,4,311,53,359,1.000,5.391E-16
+job.pdb,AF-O68186-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lactococcus cremoris subsp. cremoris MG1363,15.800,340,225,21,4,304,22,339,1.000,8.813E-15
+job.pdb,AF-B7KJK8-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Gloeothece citriformis PCC 7424,15.100,337,234,17,4,301,14,337,1.000,1.618E-14
+job.pdb,AF-A8ABX6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Ignicoccus hospitalis KIN4/I,17.200,331,226,20,4,311,37,342,1.000,1.341E-15
+job.pdb,AF-B9EAY8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Macrococcus caseolyticus JCSC5402,14.100,318,232,11,16,311,69,367,1.000,4.228E-16
+job.pdb,AF-Q9A5F0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Caulobacter vibrioides CB15,14.000,320,230,14,16,311,67,365,1.000,9.896E-16
+job.pdb,AF-C1ALD8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium tuberculosis variant bovis BCG str. Tokyo 172,19.100,318,210,19,20,311,90,386,1.000,1.262E-15
+job.pdb,AF-Q3B100-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Synechococcus sp. CC9902,17.800,320,218,15,16,311,64,362,1.000,2.601E-16
+job.pdb,AF-A5U0J2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium tuberculosis H37Ra,18.500,318,212,19,20,311,90,386,1.000,2.779E-15
+job.pdb,AF-P22102-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Homo sapiens,15.000,332,224,17,16,303,461,778,1.000,3.765E-15
+job.pdb,AF-Q4J8F8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sulfolobus acidocaldarius DSM 639,16.200,333,224,15,16,318,51,358,1.000,2.168E-16
+job.pdb,AF-B9KSY5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Cereibacter sphaeroides KD131,14.500,331,240,17,4,311,50,360,1.000,1.930E-15
+job.pdb,AF-Q2FZJ0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus NCTC 8325,14.400,318,231,13,16,311,69,367,1.000,1.817E-15
+job.pdb,AF-Q8Y6C1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Listeria monocytogenes EGD-e,15.300,320,228,14,16,311,68,368,1.000,4.493E-16
+job.pdb,AF-Q2YX54-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus RF122,14.100,318,232,14,16,311,69,367,1.000,1.709E-15
+job.pdb,AF-Q2ITQ2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhodopseudomonas palustris HaA2,20.900,305,188,18,30,310,440,715,1.000,1.262E-15
+job.pdb,AF-C0RIH1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Brucella melitensis ATCC 23457,20.200,326,186,20,20,311,431,716,1.000,4.493E-16
+job.pdb,AF-B2S573-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Brucella abortus S19,19.700,324,190,20,20,311,431,716,1.000,5.728E-16
+job.pdb,AF-A6X1J9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Brucella anthropi ATCC 49188,19.300,326,189,20,20,311,431,716,1.000,4.493E-16
+job.pdb,AF-Q8DIA7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermosynechococcus vestitus BP-1,17.500,320,219,17,16,311,63,361,1.000,8.764E-16
+job.pdb,AF-B8I492-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Ruminiclostridium cellulolyticum H10,15.600,339,230,18,5,304,19,340,1.000,9.365E-15
+job.pdb,AF-Q8TY09-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanopyrus kandleri AV19,17.500,319,221,15,16,311,49,348,1.000,4.518E-15
+job.pdb,AF-Q9REQ6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Zymomonas mobilis subsp. mobilis ZM4 = ATCC 31821,16.600,319,223,18,16,311,64,362,1.000,1.930E-15
+job.pdb,AF-Q218N3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhodopseudomonas palustris BisB18,21.300,305,187,22,30,310,440,715,1.000,1.117E-15
+job.pdb,AF-Q8YGN1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Brucella melitensis bv. 1 str. 16M,20.000,325,188,20,20,311,431,716,1.000,5.391E-16
+job.pdb,AF-B0S0R2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Finegoldia magna ATCC 29328,15.000,345,229,20,4,306,19,341,1.000,8.764E-16
+job.pdb,AF-P26500-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanothermobacter marburgensis str. Marburg,16.700,346,231,21,3,311,23,348,1.000,1.262E-15
+job.pdb,AF-A6U0N7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus JH1,14.400,318,231,14,16,311,69,367,1.000,2.316E-15
+job.pdb,AF-A6VGJ3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanococcus maripaludis C7,15.600,313,222,15,30,310,44,346,1.000,5.760E-15
+job.pdb,AF-Q9UXW6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Pyrococcus abyssi GE5,16.600,324,218,18,16,311,47,346,1.000,1.930E-15
+job.pdb,AF-P65901-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus N315,14.400,318,231,14,16,311,69,367,1.000,2.461E-15
+job.pdb,AF-B3PPS1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhizobium etli CIAT 652,20.100,307,180,16,30,306,441,712,1.000,9.312E-16
+job.pdb,AF-Q8TUD7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanosarcina acetivorans C2A,15.200,315,223,16,21,311,39,333,1.000,9.896E-16
+job.pdb,AF-Q9CFF4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Lactococcus lactis subsp. lactis Il1403,15.000,340,228,21,4,304,20,337,1.000,1.433E-14
+job.pdb,AF-O59621-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Pyrococcus horikoshii OT3,15.500,327,218,19,16,311,47,346,1.000,8.247E-16
+job.pdb,AF-Q6GAE4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus MSSA476,14.100,318,232,14,16,311,69,367,1.000,2.779E-15
+job.pdb,AF-Q58660-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanocaldococcus jannaschii DSM 2661,16.300,331,231,17,5,311,43,351,1.000,9.896E-16
+job.pdb,AF-Q5FIV1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lactobacillus acidophilus NCFM,18.800,313,200,17,20,310,439,719,1.000,1.187E-15
+job.pdb,AF-Q18JI5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Haloquadratum walsbyi DSM 16790,19.200,322,210,19,20,311,61,362,1.000,5.728E-16
+job.pdb,AF-Q2NAT8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Erythrobacter litoralis HTCC2594,16.600,336,227,22,4,311,48,358,1.000,1.262E-15
+job.pdb,AF-B9MS91-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Caldicellulosiruptor bescii DSM 6725,15.500,340,226,20,5,304,23,341,1.000,9.365E-15
+job.pdb,AF-A8I8B0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Azorhizobium caulinodans ORS 571,19.900,306,190,18,30,310,440,715,1.000,2.180E-15
+job.pdb,AF-Q88U25-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lactiplantibacillus plantarum WCFS1,17.500,319,216,18,19,311,73,370,1.000,4.518E-15
+job.pdb,AF-Q8NMI5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Corynebacterium glutamicum ATCC 13032,18.000,315,217,17,20,311,82,378,1.000,1.194E-14
+job.pdb,AF-A4QGY6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Corynebacterium glutamicum R,16.600,318,218,15,20,311,82,378,1.000,1.117E-15
+job.pdb,AF-Q2JQY9-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechococcus sp. JA-3-3Ab,17.700,338,220,17,4,308,25,337,1.000,4.252E-15
+job.pdb,AF-A7X0W1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus Mu3,14.400,318,231,14,16,311,69,367,1.000,3.765E-15
+job.pdb,AF-Q5FNL0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Gluconobacter oxydans 621H,16.400,317,222,17,16,309,61,357,1.000,6.873E-16
+job.pdb,AF-A0AJM3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Listeria welshimeri serovar 6b str. SLCC5334,16.200,320,225,17,16,311,68,368,1.000,1.052E-15
+job.pdb,AF-A3PA50-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus str. MIT 9301,17.200,330,228,16,4,311,59,365,1.000,1.817E-15
+job.pdb,AF-A2BNC9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus str. AS9601,16.600,330,230,15,4,311,59,365,1.000,2.180E-15
+job.pdb,AF-Q64737-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Mus musculus,14.900,334,225,18,14,303,460,778,1.000,6.504E-15
+job.pdb,AF-Q5N490-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechococcus elongatus PCC 6301,16.900,336,220,18,5,301,22,337,1.000,5.421E-15
+job.pdb,AF-A6UPQ3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanococcus vannielii SB,17.100,315,215,17,30,310,44,346,1.000,3.335E-15
+job.pdb,AF-Q8NX92-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus MW2,14.100,318,232,14,16,311,69,367,1.000,4.001E-15
+job.pdb,AF-Q2YNG6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Brucella abortus 2308,19.700,324,190,20,20,311,431,716,1.000,1.262E-15
+job.pdb,AF-Q8G183-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Brucella suis 1330,20.200,326,186,20,20,311,431,716,1.000,1.052E-15
+job.pdb,AF-Q5WJ86-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Alkalihalobacillus clausii KSM-K16,15.900,338,223,19,4,311,61,367,1.000,1.117E-15
+job.pdb,AF-Q92PH7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sinorhizobium meliloti 1021,13.800,331,242,16,4,311,53,363,1.000,1.930E-15
+job.pdb,AF-Q2JQL7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Synechococcus sp. JA-3-3Ab,17.600,317,216,16,19,311,64,359,1.000,4.801E-15
+job.pdb,AF-B0JTF5-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Microcystis aeruginosa NIES-843,15.200,341,224,21,5,301,18,337,1.000,6.121E-15
+job.pdb,AF-A8Z1L1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus USA300_TCH1516,14.100,318,232,14,16,311,69,367,1.000,4.518E-15
+job.pdb,AF-A4T7J3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycolicibacterium gilvum PYR-GCK,19.200,311,197,17,30,310,477,763,1.000,1.514E-15
+job.pdb,AF-B1WPZ0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Crocosphaera subtropica ATCC 51142,15.500,335,235,19,4,301,14,337,1.000,5.451E-14
+job.pdb,AF-Q58811-F1-model_v4 Uncharacterized protein MJ1416,Methanocaldococcus jannaschii DSM 2661,17.400,310,198,18,27,310,117,394,1.000,9.365E-15
+job.pdb,AF-Q28QC2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Jannaschia sp. CCS1,15.800,335,231,18,4,311,50,360,1.000,1.609E-15
+job.pdb,AF-A5G1X4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Acidiphilium cryptum JF-5,18.800,319,212,16,16,309,62,358,1.000,6.087E-16
+job.pdb,AF-Q4L578-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus haemolyticus JCSC1435,14.100,318,232,15,16,311,69,367,1.000,5.760E-15
+job.pdb,AF-Q6N9F2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhodopseudomonas palustris CGA009,20.800,302,187,19,30,308,440,712,1.000,3.543E-15
+job.pdb,AF-Q71YP9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Listeria monocytogenes serotype 4b str. F2365,16.400,322,222,17,16,311,68,368,1.000,1.817E-15
+job.pdb,AF-B5ZQU1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhizobium leguminosarum bv. trifolii WSM2304,19.800,322,192,18,20,310,431,717,1.000,6.873E-16
+job.pdb,AF-P0A5T9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium tuberculosis variant bovis AF2122/97,19.100,318,210,19,20,311,78,374,1.000,4.001E-15
+job.pdb,AF-Q2JL07-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechococcus sp. JA-2-3B'a(2-13),17.800,336,220,19,5,301,22,340,1.000,1.057E-14
+job.pdb,AF-Q2NEB6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanosphaera stadtmanae DSM 3091,17.600,312,219,16,19,309,52,346,1.000,3.765E-15
+job.pdb,AF-Q2K7X0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhizobium etli CFN 42,19.300,315,182,20,30,310,441,717,1.000,1.930E-15
+job.pdb,AF-Q6GI15-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus MRSA252,13.800,318,233,14,16,311,69,367,1.000,6.121E-15
+job.pdb,AF-Q8CPN9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus epidermidis ATCC 12228,14.700,318,230,14,16,311,69,367,1.000,7.345E-15
+job.pdb,AF-Q63GT3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus cereus E33L,14.900,321,226,16,16,311,69,367,1.000,1.425E-15
+job.pdb,AF-B9LT08-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Halorubrum lacusprofundi ATCC 49239,19.300,331,195,19,20,303,53,358,1.000,1.600E-16
+job.pdb,AF-A1KGT6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium tuberculosis variant bovis BCG str. Pasteur 1173P2,18.900,317,212,18,20,311,90,386,1.000,4.801E-15
+job.pdb,AF-A3PF79-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus str. MIT 9301,15.700,330,229,20,5,298,18,334,1.000,7.848E-14
+job.pdb,AF-O27427-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanothermobacter thermautotrophicus str. Delta H,17.100,320,215,19,19,311,52,348,1.000,9.312E-16
+job.pdb,AF-A8F8I3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Pseudothermotoga lettingae TMO,14.400,318,231,16,16,311,55,353,1.000,5.421E-15
+job.pdb,AF-P9WHL7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium tuberculosis H37Rv,19.400,318,209,19,20,311,90,386,1.000,5.421E-15
+job.pdb,AF-A6QFS7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus str. Newman,14.000,320,230,14,16,311,69,367,1.000,8.293E-15
+job.pdb,AF-Q6G335-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bartonella henselae str. Houston-1,15.900,319,225,17,16,311,65,363,1.000,2.779E-15
+job.pdb,AF-Q13AA1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhodopseudomonas palustris BisB5,15.900,320,224,20,16,311,64,362,1.000,4.001E-15
+job.pdb,AF-B8DDY8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Listeria monocytogenes HCC23,15.800,322,224,16,16,311,68,368,1.000,1.425E-15
+job.pdb,AF-Q47TL8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermobifida fusca YX,16.100,328,228,20,14,311,74,384,1.000,6.121E-15
+job.pdb,AF-Q3M6Z4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Trichormus variabilis ATCC 29413,16.200,320,223,17,16,311,65,363,1.000,3.138E-15
+job.pdb,AF-Q0BRI4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Granulibacter bethesdensis CGDNIH1,17.700,333,223,21,4,309,49,357,1.000,5.728E-16
+job.pdb,AF-Q49WJ3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus saprophyticus subsp. saprophyticus ATCC 15305 = NCTC 7292,13.500,318,234,13,16,311,69,367,1.000,9.365E-15
+job.pdb,AF-B3Q7H9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhodopseudomonas palustris TIE-1,20.700,303,186,21,30,308,440,712,1.000,2.779E-15
+job.pdb,AF-Q03Y89-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Leuconostoc mesenteroides subsp. mesenteroides ATCC 8293,16.500,332,230,17,4,311,60,368,1.000,2.779E-15
+job.pdb,AF-A6TLS3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Alkaliphilus metalliredigens QYMF,20.100,323,191,18,20,311,427,713,1.000,1.117E-15
+job.pdb,AF-Q02Y55-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lactococcus cremoris subsp. cremoris SK11,15.000,320,229,16,16,311,69,369,1.000,6.504E-15
+job.pdb,AF-Q92AN9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Listeria innocua Clip11262,15.500,322,225,16,16,311,68,368,1.000,1.817E-15
+job.pdb,AF-B8ZSV5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium leprae Br4923,18.000,338,229,20,3,311,56,374,1.000,7.345E-15
+job.pdb,AF-Q31DI1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus str. MIT 9312,16.700,329,229,15,5,311,60,365,1.000,5.101E-15
+job.pdb,AF-A8G1Z0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus str. MIT 9215,16.800,332,227,16,4,311,59,365,1.000,3.543E-15
+job.pdb,AF-Q31PY7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Synechococcus elongatus PCC 7942 = FACHB-805,17.200,337,218,19,5,301,22,337,1.000,9.951E-15
+job.pdb,AF-Q7UZR7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus subsp. pastoris str. CCMP1986,13.700,327,231,19,5,294,18,330,1.000,6.950E-14
+job.pdb,AF-Q6LXU3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanococcus maripaludis S2,15.500,315,220,18,30,310,44,346,1.000,1.057E-14
+job.pdb,AF-A4FWS4-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanococcus maripaludis C5,16.100,316,217,18,30,310,44,346,1.000,1.194E-14
+job.pdb,AF-A5IRV6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus JH9,14.400,318,231,14,16,311,69,367,1.000,9.951E-15
+job.pdb,AF-Q833Y9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Enterococcus faecalis V583,16.300,325,219,18,16,311,67,367,1.000,3.335E-15
+job.pdb,AF-C1KW68-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Listeria monocytogenes serotype 4b str. CLIP 80459,16.100,322,223,16,16,311,68,368,1.000,1.817E-15
+job.pdb,AF-Q81IQ3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus cereus ATCC 14579,13.900,322,228,15,16,311,69,367,1.000,8.764E-16
+job.pdb,AF-A2RJW3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lactococcus cremoris subsp. cremoris MG1363,14.300,320,231,14,16,311,69,369,1.000,4.001E-15
+job.pdb,AF-Q9CFE8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lactococcus lactis subsp. lactis Il1403,15.300,320,228,16,16,311,69,369,1.000,7.345E-15
+job.pdb,AF-Q1G9F8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lactobacillus delbrueckii subsp. bulgaricus ATCC 11842 = JCM 1002,14.300,320,231,15,16,311,68,368,1.000,8.813E-15
+job.pdb,AF-Q1MG23-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhizobium leguminosarum bv. viciae 3841,21.300,309,183,19,30,310,441,717,1.000,3.335E-15
+job.pdb,AF-A9WV65-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Renibacterium salmoninarum ATCC 33209,15.100,331,235,18,5,311,76,384,1.000,6.912E-15
+job.pdb,AF-P72644-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Synechocystis sp. PCC 6803 substr. Kazusa,16.000,331,229,17,5,311,54,359,1.000,1.341E-15
+job.pdb,AF-Q7NIR9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Gloeobacter violaceus PCC 7421,16.400,323,219,18,16,311,66,364,1.000,4.252E-15
+job.pdb,AF-A2C5J9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus str. MIT 9303,20.700,314,187,20,37,311,477,767,1.000,2.316E-15
+job.pdb,AF-A2BZA6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus str. NATL1A,17.100,321,219,17,16,311,80,378,1.000,7.761E-16
+job.pdb,AF-A9AA59-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanococcus maripaludis C6,16.300,318,214,19,30,310,44,346,1.000,4.518E-15
+job.pdb,"AF-Q05728-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase, chloroplastic",Arabidopsis thaliana,15.000,299,219,15,33,304,99,389,1.000,4.828E-14
+job.pdb,AF-Q8U491-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Pyrococcus furiosus DSM 3638,15.900,327,217,19,16,311,47,346,1.000,2.779E-15
+job.pdb,AF-B0KBQ5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermoanaerobacter pseudethanolicus ATCC 33223,18.600,317,213,21,19,311,59,354,1.000,2.316E-15
+job.pdb,AF-A9VRF1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus mycoides KBAB4,13.900,322,228,16,16,311,69,367,1.000,1.187E-15
+job.pdb,AF-P35852-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lacticaseibacillus casei,15.800,334,228,20,5,311,63,370,1.000,2.615E-15
+job.pdb,AF-Q1QMU2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Nitrobacter hamburgensis X14,19.600,316,199,21,20,310,430,715,1.000,1.817E-15
+job.pdb,AF-Q743F0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium avium subsp. paratuberculosis K-10,21.600,319,172,20,30,310,469,747,1.000,8.764E-16
+job.pdb,AF-Q2JI39-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Synechococcus sp. JA-2-3B'a(2-13),18.700,325,188,19,24,309,462,749,1.000,2.953E-15
+job.pdb,AF-Q55041-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Synechococcus elongatus PCC 7942 = FACHB-805,15.900,332,230,18,4,311,57,363,1.000,3.335E-15
+job.pdb,AF-Q7V9E5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus str. MIT 9313,17.700,332,224,18,4,311,54,360,1.000,2.779E-15
+job.pdb,AF-Q59A32-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Bos taurus,14.400,332,226,18,16,303,461,778,1.000,8.293E-15
+job.pdb,AF-Q8U3M6-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pyrococcus furiosus DSM 3638,19.600,305,205,20,30,311,47,334,1.000,1.269E-14
+job.pdb,AF-Q5LS98-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Ruegeria pomeroyi DSS-3,19.600,316,190,22,20,310,425,701,1.000,1.709E-15
+job.pdb,AF-Q07R72-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhodopseudomonas palustris BisA53,15.700,318,223,18,16,309,65,361,1.000,5.421E-15
+job.pdb,AF-C4L299-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Exiguobacterium sp. AT1b,15.500,322,223,16,16,311,69,367,1.000,2.779E-15
+job.pdb,AF-Q5Z2C3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Nocardia farcinica IFM 10152,18.300,321,212,20,20,311,81,380,1.000,9.365E-15
+job.pdb,AF-Q3J273-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Cereibacter sphaeroides 2.4.1,15.600,333,234,18,4,311,50,360,1.000,6.912E-15
+job.pdb,AF-A7HWB1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Parvibaculum lavamentivorans DS-1,19.500,317,197,18,20,309,430,715,1.000,1.425E-15
+job.pdb,AF-Q6HPA4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,[Bacillus thuringiensis] serovar konkukian str. 97-27,14.500,322,226,16,16,311,69,367,1.000,1.930E-15
+job.pdb,AF-Q38XW7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Latilactobacillus sakei subsp. sakei 23K,16.200,327,217,20,16,311,68,368,1.000,1.052E-15
+job.pdb,AF-O28339-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Archaeoglobus fulgidus DSM 4304,16.600,342,223,17,5,309,77,393,1.000,2.779E-15
+job.pdb,AF-Q7V3R5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus subsp. pastoris str. CCMP1986,16.400,329,230,15,5,311,60,365,1.000,3.335E-15
+job.pdb,AF-C6A0I0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermococcus sibiricus MM 739,17.700,322,188,24,30,318,419,696,1.000,8.247E-16
+job.pdb,AF-A4WQY3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Cereibacter sphaeroides ATCC 17025,13.500,331,243,17,4,311,50,360,1.000,1.618E-14
+job.pdb,AF-Q1WU59-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Ligilactobacillus salivarius UCC118,18.400,315,207,16,16,310,434,718,1.000,9.365E-15
+job.pdb,AF-Q5L3D2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Geobacillus kaustophilus HTA426,14.400,325,223,17,16,311,69,367,1.000,1.930E-15
+job.pdb,AF-A0QAT1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium avium 104,20.500,317,180,21,30,311,469,748,1.000,1.425E-15
+job.pdb,AF-A7HIJ4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Anaeromyxobacter sp. Fw109-5,14.800,317,231,14,16,311,61,359,1.000,3.156E-14
+job.pdb,AF-P21872-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Gallus gallus,15.100,331,223,19,16,303,461,776,1.000,1.719E-14
+job.pdb,AF-B2IC83-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Beijerinckia indica subsp. indica ATCC 9039,16.300,336,228,19,4,311,51,361,1.000,4.801E-15
+job.pdb,AF-A0R8Z6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus thuringiensis str. Al Hakam,14.600,321,227,15,16,311,69,367,1.000,2.461E-15
+job.pdb,AF-Q9ZB06-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lactococcus cremoris,14.300,320,231,14,16,311,69,369,1.000,6.912E-15
+job.pdb,AF-A8FAM7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus pumilus SAFR-032,13.700,320,231,16,16,311,69,367,1.000,2.779E-15
+job.pdb,"AF-O18373-F1-model_v4 Inactive selenide, water dikinase-like protein",Drosophila melanogaster,16.900,325,227,17,24,318,87,398,1.000,4.801E-15
+job.pdb,AF-A1UT47-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bartonella bacilliformis KC583,14.800,336,233,18,4,311,53,363,1.000,2.953E-15
+job.pdb,AF-B7IUV3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus cereus G9842,14.200,322,227,15,16,311,69,367,1.000,1.817E-15
+job.pdb,AF-A7GKH8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus cytotoxicus NVH 391-98,14.000,328,221,15,16,311,69,367,1.000,2.051E-15
+job.pdb,AF-Q7VF52-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Helicobacter hepaticus ATCC 51449,15.700,324,225,17,16,311,69,372,1.000,1.433E-14
+job.pdb,AF-C3PIW7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Corynebacterium aurimucosum ATCC 700975,16.500,314,222,15,20,311,81,376,1.000,1.348E-14
+job.pdb,AF-Q67KF8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Symbiobacterium thermophilum IAM 14863,17.200,319,223,12,16,311,59,359,1.000,1.057E-14
+job.pdb,AF-A2BTV9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus str. MIT 9515,16.400,329,230,15,5,311,60,365,1.000,4.801E-15
+job.pdb,AF-Q3ST22-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Nitrobacter winogradskyi Nb-255,16.800,320,221,19,16,311,65,363,1.000,6.504E-15
+job.pdb,AF-Q50023-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium leprae TN,17.700,315,218,15,20,311,78,374,1.000,1.269E-14
+job.pdb,AF-Q5N1Y6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Synechococcus elongatus PCC 6301,16.000,331,229,17,5,311,58,363,1.000,2.615E-15
+job.pdb,AF-C5A4U6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermococcus gammatolerans EJ3,20.000,315,181,19,26,309,414,688,1.000,1.817E-15
+job.pdb,AF-Q89IC0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bradyrhizobium diazoefficiens USDA 110,20.500,312,189,20,26,310,435,714,1.000,3.138E-15
+job.pdb,AF-A9IVH5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bartonella tribocorum CIP 105476,15.100,336,232,21,4,311,53,363,1.000,6.121E-15
+job.pdb,AF-B7JM85-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus cereus AH820,14.600,321,227,15,16,311,69,367,1.000,1.709E-15
+job.pdb,AF-A4IJX3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Geobacillus thermodenitrificans NG80-2,14.700,325,222,17,16,311,69,367,1.000,2.779E-15
+job.pdb,AF-Q8F6I3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Leptospira interrogans serovar Lai str. 56601,16.400,323,221,19,16,311,62,362,1.000,1.941E-14
+job.pdb,AF-Q8YR06-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Nostoc sp. PCC 7120 = FACHB-418,16.800,320,221,17,16,311,63,361,1.000,9.365E-15
+job.pdb,AF-Q58209-F1-model_v4 Uncharacterized protein MJ0799,Methanocaldococcus jannaschii DSM 2661,20.100,302,170,19,20,309,36,278,1.000,1.618E-14
+job.pdb,AF-Q5JFN7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Thermococcus kodakarensis KOD1,19.300,305,204,18,30,310,48,334,1.000,2.970E-14
+job.pdb,AF-Q5HQA1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus epidermidis RP62A,14.100,318,232,14,16,311,69,367,1.000,6.912E-15
+job.pdb,AF-Q4FLJ4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Candidatus Pelagibacter ubique HTCC1062,15.200,321,219,19,19,311,62,357,1.000,8.813E-15
+job.pdb,AF-B9J1K5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus cereus Q1,15.100,323,223,17,16,311,69,367,1.000,4.001E-15
+job.pdb,AF-A1TFE0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycolicibacterium vanbaalenii PYR-1,19.400,314,189,17,30,310,464,746,1.000,5.760E-15
+job.pdb,AF-O58054-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pyrococcus horikoshii OT3,18.600,305,207,18,30,310,47,334,1.000,2.970E-14
+job.pdb,AF-Q97CD7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Thermoplasma volcanium GSS1,15.100,330,233,19,4,306,19,328,1.000,6.912E-15
+job.pdb,AF-Q9HLY3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Thermoplasma acidophilum DSM 1728,15.400,342,232,19,4,313,19,335,1.000,4.801E-15
+job.pdb,AF-Q57656-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanocaldococcus jannaschii DSM 2661,15.800,340,237,19,4,314,19,338,1.000,2.615E-15
+job.pdb,AF-A7I157-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Campylobacter hominis ATCC BAA-381,15.700,323,226,16,16,311,57,360,1.000,9.951E-15
+job.pdb,AF-B8EPE8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methylocella silvestris BL2,19.500,307,184,17,30,308,440,711,1.000,5.760E-15
+job.pdb,AF-B7HS32-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus cereus AH187,13.900,323,227,16,16,311,69,367,1.000,1.052E-15
+job.pdb,AF-Q6A6C0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Cutibacterium acnes KPA171202,17.700,321,208,18,21,311,79,373,1.000,4.801E-15
+job.pdb,AF-Q4JXF0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Corynebacterium jeikeium K411,18.600,311,205,18,30,303,457,756,1.000,4.801E-15
+job.pdb,AF-Q1GHL5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Ruegeria sp. TM1040,15.100,336,232,18,4,311,50,360,1.000,6.121E-15
+job.pdb,AF-Q8RBK5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Caldanaerobacter subterraneus subsp. tengcongensis MB4,18.600,321,208,19,19,311,59,354,1.000,2.779E-15
+job.pdb,AF-B2IU46-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Nostoc punctiforme PCC 73102,15.900,320,224,16,16,311,65,363,1.000,5.101E-15
+job.pdb,AF-Q7VEK9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus subsp. marinus str. CCMP1375,17.400,333,224,17,4,311,60,366,1.000,3.335E-15
+job.pdb,AF-Q9UX29-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Saccharolobus solfataricus P2,15.700,323,222,16,14,312,27,323,1.000,1.194E-14
+job.pdb,AF-B9KFP6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Campylobacter lari RM2100,15.700,324,224,18,16,311,57,359,1.000,2.475E-14
+job.pdb,AF-B9DQ38-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus carnosus subsp. carnosus TM300,13.500,318,234,13,16,311,69,367,1.000,6.912E-15
+job.pdb,AF-Q73EN5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus cereus ATCC 10987,14.600,321,227,15,16,311,69,367,1.000,2.461E-15
+job.pdb,AF-B7GFT8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Anoxybacillus flavithermus WK1,15.000,325,221,17,16,311,69,367,1.000,3.335E-15
+job.pdb,AF-A7Z249-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus velezensis FZB42,13.700,320,231,17,16,311,69,367,1.000,6.121E-15
+job.pdb,AF-B0ST16-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Leptospira biflexa serovar Patoc strain 'Patoc 1 (Paris)',18.800,313,191,19,30,310,447,728,1.000,6.504E-15
+job.pdb,AF-A5UM16-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanobrevibacter smithii ATCC 35061,17.600,323,216,19,20,310,33,337,1.000,4.518E-15
+job.pdb,AF-A7H373-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Campylobacter jejuni subsp. doylei 269.97,13.900,338,238,20,4,311,45,359,1.000,1.618E-14
+job.pdb,AF-B0K3Q4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermoanaerobacter sp. X514,18.200,324,212,20,16,311,56,354,1.000,3.765E-15
+job.pdb,AF-B8JBS8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Anaeromyxobacter dehalogenans 2CP-1,17.000,323,217,17,16,311,61,359,1.000,1.827E-14
+job.pdb,AF-C1ATA2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhodococcus opacus B4,18.000,321,213,20,20,311,82,381,1.000,2.795E-14
+job.pdb,AF-Q318F3-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus str. MIT 9312,14.500,331,234,20,5,299,18,335,1.000,2.645E-13
+job.pdb,AF-Q2G630-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Novosphingobium aromaticivorans DSM 12444,15.800,335,231,19,4,311,48,358,1.000,6.121E-15
+job.pdb,AF-A1B943-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Paracoccus denitrificans PD1222,16.200,333,232,19,4,311,50,360,1.000,9.951E-15
+job.pdb,AF-A6Q3E8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Nitratiruptor sp. SB155-2,16.000,323,225,17,16,311,59,362,1.000,6.504E-15
+job.pdb,AF-B7H4T6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus cereus B4264,13.900,323,227,16,16,311,69,367,1.000,2.953E-15
+job.pdb,AF-Q8ES96-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Oceanobacillus iheyensis HTE831,15.000,332,233,17,4,311,61,367,1.000,9.365E-15
+job.pdb,AF-A6U9L9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sinorhizobium medicae WSM419,16.400,322,220,16,16,311,65,363,1.000,5.760E-15
+job.pdb,AF-Q8KD17-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Chlorobaculum tepidum TLS,20.400,322,190,17,30,317,448,737,1.000,7.761E-16
+job.pdb,AF-C0ZP44-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhodococcus erythropolis PR4,19.200,322,209,18,20,311,82,382,1.000,1.057E-14
+job.pdb,AF-Q8UEB0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Agrobacterium fabrum str. C58,13.800,331,242,18,4,311,84,394,1.000,1.522E-14
+job.pdb,AF-A2BTH0-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus str. AS9601,14.800,329,235,18,5,299,18,335,1.000,4.299E-13
+job.pdb,AF-C3PBN0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus anthracis str. A0248,14.300,328,220,17,16,311,69,367,1.000,1.117E-15
+job.pdb,AF-Q81ZH2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus anthracis,14.300,327,221,15,16,311,69,367,1.000,1.930E-15
+job.pdb,AF-A8YW85-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lactobacillus helveticus DPC 4571,18.500,328,198,18,16,313,435,723,1.000,2.051E-15
+job.pdb,AF-Q72PR5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130,16.400,323,221,19,16,311,62,362,1.000,3.786E-14
+job.pdb,AF-B8HRP1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Cyanothece sp. PCC 7425,17.100,320,220,17,16,311,65,363,1.000,2.063E-14
+job.pdb,AF-C3L532-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus anthracis str. CDC 684,14.000,328,221,16,16,311,69,367,1.000,1.609E-15
+job.pdb,AF-Q11IV2-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Chelativorans sp. BNC1,15.700,336,230,18,4,311,53,363,1.000,4.801E-15
+job.pdb,AF-B4UIX7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Anaeromyxobacter sp. K,16.500,327,214,18,16,311,61,359,1.000,1.124E-14
+job.pdb,AF-B1MHY1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacteroides abscessus ATCC 19977,19.500,322,208,19,20,311,81,381,1.000,1.269E-14
+job.pdb,AF-A1VZU6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Campylobacter jejuni subsp. jejuni 81-176,13.600,323,232,19,16,311,57,359,1.000,2.795E-14
+job.pdb,AF-P65900-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Staphylococcus aureus subsp. aureus Mu50,14.400,318,231,14,16,311,69,367,1.000,1.433E-14
+job.pdb,AF-A4YRR9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bradyrhizobium sp. ORS 278,17.000,322,218,21,16,311,63,361,1.000,1.433E-14
+job.pdb,AF-C5D4I0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Geobacillus sp. WCH70,14.500,323,225,16,16,311,69,367,1.000,8.293E-15
+job.pdb,AF-P12042-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus subtilis subsp. subtilis str. 168,13.200,324,228,17,16,311,69,367,1.000,5.760E-15
+job.pdb,AF-A1SPT8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Nocardioides sp. JS614,17.100,339,218,20,4,311,72,378,1.000,4.252E-15
+job.pdb,AF-Q46E56-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanosarcina barkeri str. Fusaro,16.700,322,210,19,21,311,39,333,1.000,1.930E-15
+job.pdb,AF-C5A4H7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Thermococcus gammatolerans EJ3,16.300,311,206,17,30,310,48,334,1.000,1.124E-14
+job.pdb,AF-A8Z6J5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Campylobacter concisus 13826,15.300,326,224,19,16,311,57,360,1.000,2.795E-14
+job.pdb,AF-A7GYY9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Campylobacter curvus 525.92,15.000,338,235,20,4,311,45,360,1.000,2.329E-14
+job.pdb,AF-Q6FZI9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bartonella quintana str. Toulouse,14.500,336,234,19,4,311,53,363,1.000,9.951E-15
+job.pdb,AF-A6QAK6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sulfurovum sp. NBC37-1,15.800,322,227,16,16,311,64,367,1.000,2.630E-14
+job.pdb,AF-B8HPV7-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Cyanothece sp. PCC 7425,14.800,356,229,19,5,301,22,362,1.000,1.001E-13
+job.pdb,AF-Q9PNY0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819,13.800,324,230,18,16,311,57,359,1.000,4.828E-14
+job.pdb,AF-B0SB88-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Leptospira biflexa serovar Patoc strain 'Patoc 1 (Ames)',17.900,324,215,21,16,311,62,362,1.000,1.348E-14
+job.pdb,"AF-Q6PF47-F1-model_v4 Selenide, water dikinase 1",Xenopus laevis,16.000,330,220,18,24,314,65,376,1.000,8.293E-15
+job.pdb,"AF-Q38A34-F1-model_v4 Selenide, water dikinase",Trypanosoma brucei brucei TREU927,15.500,316,212,18,31,306,76,376,1.000,2.192E-14
+job.pdb,AF-A9BIH4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Petrotoga mobilis SJ95,15.000,313,197,15,30,310,433,708,1.000,7.345E-15
+job.pdb,AF-Q037U9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lacticaseibacillus paracasei ATCC 334,15.100,337,227,18,5,311,61,368,1.000,3.138E-15
+job.pdb,AF-Q9KH12-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sinorhizobium fredii HH103,16.000,336,229,20,4,311,53,363,1.000,2.180E-15
+job.pdb,AF-Q5HUK4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Campylobacter jejuni RM1221,13.300,336,242,19,4,311,45,359,1.000,5.130E-14
+job.pdb,AF-Q30T55-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sulfurimonas denitrificans DSM 1251,16.100,322,226,16,16,311,63,366,1.000,1.001E-13
+job.pdb,AF-Q163V9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Roseobacter denitrificans OCh 114,15.400,336,231,19,4,311,50,360,1.000,6.912E-15
+job.pdb,AF-Q7M9L5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Wolinella succinogenes DSM 1740,15.400,323,227,17,16,311,59,362,1.000,5.793E-14
+job.pdb,AF-Q053V5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Leptospira borgpetersenii serovar Hardjo-bovis str. L550,16.000,325,220,19,16,311,62,362,1.000,6.121E-15
+job.pdb,AF-Q2IHC1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Anaeromyxobacter dehalogenans 2CP-C,17.300,329,209,20,16,311,61,359,1.000,1.269E-14
+job.pdb,"AF-Q0VC82-F1-model_v4 Selenide, water dikinase 1",Bos taurus,16.000,330,220,18,24,314,65,376,1.000,1.269E-14
+job.pdb,AF-Q2RZ77-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Salinibacter ruber DSM 13855,15.100,304,213,16,32,311,84,366,1.000,5.451E-14
+job.pdb,AF-Q9X0X3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermotoga maritima MSB8,17.000,328,220,17,4,311,35,330,1.000,9.951E-15
+job.pdb,AF-C1EV63-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus cereus 03BB102,14.500,329,218,16,16,311,69,367,1.000,2.180E-15
+job.pdb,"AF-Q6GL12-F1-model_v4 Selenide, water dikinase 1",Xenopus tropicalis,15.800,335,215,21,24,314,65,376,1.000,9.951E-15
+job.pdb,AF-Q65MS8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bacillus licheniformis DSM 13 = ATCC 14580,14.100,326,223,19,16,311,69,367,1.000,1.348E-14
+job.pdb,AF-Q8PX06-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanosarcina mazei Go1,15.900,338,227,22,4,311,23,333,1.000,6.912E-15
+job.pdb,AF-Q04QS4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Leptospira borgpetersenii serovar Hardjo-bovis str. JB197,15.600,325,221,19,16,311,62,362,1.000,1.269E-14
+job.pdb,AF-Q46I59-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Prochlorococcus marinus str. NATL2A,16.500,320,222,16,16,311,80,378,1.000,2.192E-14
+job.pdb,AF-O28580-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Archaeoglobus fulgidus DSM 4304,14.900,328,236,18,4,309,20,326,1.000,2.475E-14
+job.pdb,AF-Q9UY56-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Pyrococcus abyssi GE5,16.400,316,201,19,30,310,47,334,1.000,1.269E-14
+job.pdb,"AF-Q8BH69-F1-model_v4 Selenide, water dikinase 1",Mus musculus,16.300,331,218,19,24,314,65,376,1.000,2.192E-14
+job.pdb,AF-B9KZ38-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Thermomicrobium roseum DSM 5159,14.200,323,224,16,16,311,59,355,1.000,3.563E-14
+job.pdb,AF-B2GF74-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Limosilactobacillus fermentum IFO 3956,21.200,320,192,19,16,310,434,718,1.000,4.518E-15
+job.pdb,AF-B2G5B8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Limosilactobacillus reuteri JCM 1112,14.100,326,225,18,16,311,68,368,1.000,2.630E-14
+job.pdb,AF-A8G794-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Prochlorococcus marinus str. MIT 9215,15.800,328,223,21,5,294,18,330,1.000,5.825E-13
+job.pdb,"AF-Q7ZW38-F1-model_v4 Selenide, water dikinase 1",Danio rerio,16.200,333,216,21,24,314,65,376,1.000,1.522E-14
+job.pdb,AF-Q049L7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Lactobacillus delbrueckii subsp. bulgaricus ATCC BAA-365,19.800,318,198,19,16,310,434,717,1.000,1.269E-14
+job.pdb,AF-P9WHL6-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mycobacterium tuberculosis CDC1551,19.600,315,185,20,30,311,470,749,1.000,7.345E-15
+job.pdb,AF-A5VHT8-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Limosilactobacillus reuteri subsp. reuteri,20.700,318,189,19,20,310,438,719,1.000,7.805E-15
+job.pdb,AF-Q6ACC3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Leifsonia xyli subsp. xyli str. CTCB07,24.500,322,186,22,20,310,455,750,1.000,2.779E-15
+job.pdb,AF-Q98NN7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Mesorhizobium japonicum MAFF 303099,14.800,336,233,22,4,311,53,363,1.000,4.275E-14
+job.pdb,AF-Q9RKK5-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Streptomyces coelicolor A3(2),16.300,331,216,19,14,311,73,375,1.000,1.827E-14
+job.pdb,AF-B0C6R3-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Acaryochloris marina MBIC11017,15.700,331,231,18,5,311,58,364,1.000,1.130E-13
+job.pdb,"AF-P49903-F1-model_v4 Selenide, water dikinase 1",Homo sapiens,13.500,354,238,19,1,304,32,367,1.000,1.941E-14
+job.pdb,AF-A5EMI1-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Bradyrhizobium sp. BTAi1,19.100,313,184,19,30,310,439,714,1.000,9.365E-15
+job.pdb,AF-A8FM09-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Campylobacter jejuni subsp. jejuni 81116,13.500,339,238,22,4,311,45,359,1.000,1.130E-13
+job.pdb,AF-C3MD72-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Sinorhizobium fredii NGR234,14.700,333,237,18,4,311,53,363,1.000,4.543E-14
+job.pdb,AF-Q8TW12-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Methanopyrus kandleri AV19,16.700,310,204,20,38,312,55,345,1.000,1.063E-13
+job.pdb,AF-Q3B3Y0-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Pelodictyon luteolum DSM 273,18.400,331,195,19,20,309,438,734,1.000,9.365E-15
+job.pdb,AF-Q9RHW9-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Corynebacterium ammoniagenes,15.600,314,196,16,30,311,455,731,1.000,3.353E-14
+job.pdb,AF-Q0S766-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Rhodococcus jostii RHA1,16.600,319,190,17,30,311,465,744,1.000,4.275E-14
+job.pdb,AF-Q26255-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Chironomus tentans,14.600,354,233,24,4,306,450,785,1.000,1.539E-12
+job.pdb,"AF-Q5RF87-F1-model_v4 Selenide, water dikinase 1",Pongo abelii,13.500,354,238,19,1,304,32,367,1.000,4.023E-14
+job.pdb,AF-P16340-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Drosophila pseudoobscura pseudoobscura,17.200,336,218,19,14,304,466,786,1.000,1.201E-13
+job.pdb,AF-Q970V2-F1-model_v4 Phosphoribosylformylglycinamidine cyclo-ligase,Sulfurisphaera tokodaii str. 7,13.500,340,232,18,1,310,10,317,1.000,6.541E-14
+job.pdb,AF-Q3ARU4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Chlorobium chlorochromatii CaD3,16.900,325,191,19,30,311,449,737,1.000,1.194E-14
+job.pdb,AF-P00967-F1-model_v4 Trifunctional purine biosynthetic protein adenosine-3,Drosophila melanogaster,19.000,342,203,24,14,304,466,784,1.000,1.201E-13
+job.pdb,AF-Q82FW4-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Streptomyces avermitilis MA-4680 = NBRC 14893,19.600,316,186,18,20,302,449,729,1.000,2.986E-13
+job.pdb,AF-A0B5C7-F1-model_v4 Phosphoribosylformylglycinamidine synthase subunit PurL,Methanothrix thermoacetophila PT,19.400,308,201,17,30,311,462,748,1.000,1.636E-12
+job.pdb,"AF-Q4Q0M0-F1-model_v4 Selenide, water dikinase",Leishmania major,15.700,343,224,23,1,295,50,375,1.000,9.469E-13
+job.pdb,AF-O15067-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Homo sapiens,17.200,325,193,24,30,311,709,1000,1.000,9.522E-12
+job.pdb,AF-Q87DN2-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Xylella fastidiosa Temecula1,13.000,322,217,21,30,311,707,1005,1.000,2.241E-10
+job.pdb,AF-Q9JXK5-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Neisseria meningitidis MC58,13.300,344,212,22,23,309,282,596,1.000,2.858E-10
+job.pdb,AF-Q5F7J4-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Neisseria gonorrhoeae FA 1090,15.500,348,202,22,28,310,675,995,1.000,1.868E-10
+job.pdb,AF-Q9JWC5-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Neisseria meningitidis Z2491,13.700,342,213,21,23,309,282,596,1.000,4.936E-10
+job.pdb,AF-P38972-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Saccharomyces cerevisiae S288C,14.700,345,194,27,21,309,723,1023,1.000,7.510E-11
+job.pdb,AF-Q9KTN2-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Vibrio cholerae O1 biovar El Tor str. N16961,15.500,335,187,23,30,309,681,974,1.000,2.109E-10
+job.pdb,AF-Q9PDF6-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Xylella fastidiosa 9a5c,13.700,328,214,23,28,311,703,1005,1.000,1.023E-09
+job.pdb,AF-Q57LE6-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Salmonella enterica subsp. enterica serovar Choleraesuis str. SC-B67,16.400,335,186,23,28,309,679,972,1.000,5.245E-10
+job.pdb,AF-Q8PGR7-F1-model_v4 Phosphoribosylformylglycinamidine synthase,Xanthomonas citri pv. citri str. 306,13.000,359,202,24,30,311,706,1031,1.000,2.704E-09
+job.pdb,AF-V6F5E5-F1-model_v4 Cell division protein FtsZ,Magnetospirillum gryphiswaldense MSR-1,13.700,102,71,7,40,135,226,316,0.961,8.866E-03
+job.pdb,AF-Q9ZCQ3-F1-model_v4 Cell division protein FtsZ,Rickettsia prowazekii str. Madrid E,15.000,106,68,7,38,135,227,318,0.933,4.278E-03
+job.pdb,AF-Q4UMT7-F1-model_v4 Cell division protein FtsZ,Rickettsia felis URRWXCal2,17.100,105,65,8,40,135,227,318,0.933,6.544E-03
+job.pdb,AF-P0CAU9-F1-model_v4 Cell division protein FtsZ,Caulobacter vibrioides CB15,13.800,101,72,8,40,135,227,317,0.923,1.953E-02
+job.pdb,AF-P50907-F1-model_v4 Cell division protein FtsZ,Wolbachia pipientis,11.000,109,74,8,40,139,183,277,0.855,1.953E-02
+job.pdb,"AF-A4XCN1-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Salinispora tropica CNB-440,12.100,157,80,9,38,138,5,159,0.772,8.866E-03
+job.pdb,AF-O51929-F1-model_v4 Cell division protein FtsZ,Buchnera aphidicola str. Sg (Schizaphis graminum),10.400,105,71,8,40,135,223,313,0.772,2.205E-02
+job.pdb,AF-Q1RHL2-F1-model_v4 Cell division protein FtsZ,Rickettsia bellii RML369-C,12.100,157,86,10,40,182,228,346,0.772,5.796E-03
+job.pdb,AF-P0A9A8-F1-model_v4 Cell division protein FtsZ,Escherichia coli O157:H7,9.800,112,76,10,40,140,223,320,0.747,2.988E-02
+job.pdb,AF-Q9ALA4-F1-model_v4 Cell division protein FtsZ,Sodalis glossinidius,10.700,112,75,9,40,140,223,320,0.747,2.343E-02
+job.pdb,AF-Q68W73-F1-model_v4 Cell division protein FtsZ,Rickettsia typhi str. Wilmington,16.300,110,62,9,38,135,227,318,0.747,6.159E-03
+job.pdb,AF-Q3BK72-F1-model_v4 FtsZ-like protein,Magnetospirillum gryphiswaldense MSR-1,10.400,105,71,9,40,135,230,320,0.720,2.812E-02
+job.pdb,AF-B8H080-F1-model_v4 Cell division protein FtsZ,Caulobacter vibrioides NA1000,12.300,105,69,9,40,135,227,317,0.720,3.374E-02
+job.pdb,AF-Q9V2S0-F1-model_v4 Cell division protein FtsZ 1,Pyrococcus abyssi GE5,12.900,108,75,6,38,140,253,346,0.692,2.205E-02
+job.pdb,AF-Q9K9T7-F1-model_v4 Cell division protein FtsZ,Halalkalibacterium halodurans C-125,9.800,102,76,7,38,135,224,313,0.692,4.301E-02
+job.pdb,AF-O83405-F1-model_v4 Cell division protein FtsZ,Treponema pallidum subsp. pallidum str. Nichols,14.800,108,71,8,40,139,230,324,0.663,4.857E-02
+job.pdb,"AF-A1TG10-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Mycolicibacterium vanbaalenii PYR-1,9.400,159,84,8,38,139,5,160,0.601,3.374E-02
+job.pdb,AF-P0A9A6-F1-model_v4 Cell division protein FtsZ,Escherichia coli K-12,9.800,112,76,10,40,140,223,320,0.601,4.301E-02
+job.pdb,AF-P56097-F1-model_v4 Cell division protein FtsZ,Helicobacter pylori 26695,17.100,105,65,8,38,134,241,331,0.569,2.205E-02
+job.pdb,AF-P45482-F1-model_v4 Cell division protein FtsZ,Nostoc sp. PCC 7120 = FACHB-418,11.200,107,69,8,38,135,276,365,0.569,4.857E-02
+job.pdb,AF-P77817-F1-model_v4 Cell division protein FtsZ,Azotobacter vinelandii,13.200,151,87,11,40,181,224,339,0.442,4.571E-02
+job.pdb,"AF-Q2LUT1-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Syntrophus aciditrophicus SB,8.100,86,64,4,64,137,74,156,0.411,1.848E-01
+job.pdb,"AF-Q8G5L2-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Bifidobacterium longum NCC2705,11.600,86,57,7,60,135,94,170,0.411,6.581E-02
+job.pdb,AF-Q50318-F1-model_v4 Cell division protein FtsZ,Mycoplasmopsis pulmonis UAB CTIP,13.700,116,71,9,38,143,221,317,0.411,6.193E-02
+job.pdb,"AF-Q5Z2R2-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Nocardia farcinica IFM 10152,12.000,83,57,5,68,137,74,153,0.382,1.137E-01
+job.pdb,"AF-C1BAC3-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Rhodococcus opacus B4,8.400,83,60,6,68,137,74,153,0.382,1.284E-01
+job.pdb,"AF-B7GT04-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Bifidobacterium longum subsp. infantis ATCC 15697 = JCM 1222 = DSM 20088,11.600,86,57,7,60,135,94,170,0.382,7.431E-02
+job.pdb,AF-Q6ADI0-F1-model_v4 Bifunctional enzyme IspD/IspF,Leifsonia xyli subsp. xyli str. CTCB07,8.100,159,87,8,36,138,231,386,0.382,5.484E-02
+job.pdb,AF-Q57816-F1-model_v4 Cell division protein FtsZ 1,Methanocaldococcus jannaschii DSM 2661,14.400,111,71,9,38,140,249,343,0.353,2.087E-01
+job.pdb,"AF-A0QAB4-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Mycobacterium avium 104,9.800,162,87,9,34,139,1,159,0.326,8.391E-02
+job.pdb,"AF-B1VIQ0-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Corynebacterium urealyticum DSM 7109,8.500,163,86,8,34,137,3,161,0.326,1.070E-01
+job.pdb,"AF-Q4JXJ6-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Corynebacterium jeikeium K411,8.400,153,82,7,38,135,8,157,0.326,6.993E-02
+job.pdb,"AF-Q0AGI1-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Nitrosomonas eutropha C91,11.100,161,74,7,38,135,2,156,0.326,7.431E-02
+job.pdb,AF-P45069-F1-model_v4 Cell division protein FtsZ,Haemophilus influenzae Rd KW20,8.400,106,75,9,38,134,248,340,0.301,1.208E-01
+job.pdb,AF-Q83F12-F1-model_v4 Cell division protein FtsZ,Coxiella burnetii RSA 493,13.200,158,93,13,40,189,224,345,0.277,8.391E-02
+job.pdb,AF-Q310X3-F1-model_v4 Bifunctional enzyme IspD/IspF,Oleidesulfovibrio alaskensis G20,7.500,172,90,8,33,138,229,397,0.277,1.208E-01
+job.pdb,AF-O08439-F1-model_v4 Cell division protein FtsZ,Enterococcus faecalis V583,15.000,159,90,11,38,182,225,352,0.277,5.484E-02
+job.pdb,"AF-A2SBD7-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Burkholderia mallei NCTC 10229,7.600,156,83,7,38,135,3,155,0.254,1.137E-01
+job.pdb,AF-O66809-F1-model_v4 Cell division protein FtsZ,Aquifex aeolicus VF5,8.800,113,72,10,38,138,220,313,0.254,2.661E-01
+job.pdb,AF-A6U8F8-F1-model_v4 Bifunctional enzyme IspD/IspF,Sinorhizobium medicae WSM419,11.700,111,68,5,50,139,300,401,0.254,1.637E-01
+job.pdb,"AF-Q8R6E7-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Fusobacterium nucleatum subsp. nucleatum ATCC 25586,9.300,160,76,8,38,135,2,154,0.233,8.916E-02
+job.pdb,"AF-A9AIT6-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Burkholderia multivorans ATCC 17616,10.500,161,82,11,38,139,3,160,0.214,8.916E-02
+job.pdb,AF-A8LLT3-F1-model_v4 Phosphate acyltransferase,Dinoroseobacter shibae DFL 12 = DSM 16493,18.800,69,52,3,56,121,176,243,0.214,1.215E+00
+job.pdb,"AF-B1GYT3-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Candidatus Endomicrobium trichonymphae,9.300,161,76,9,40,137,3,156,0.196,1.208E-01
+job.pdb,AF-Q8TV53-F1-model_v4 Hydrogenase maturation factor HypA,Methanopyrus kandleri AV19,14.200,70,55,3,57,124,1,67,0.179,1.749E+00
+job.pdb,AF-D4GTC1-F1-model_v4 Tubulin-like protein CetZ2,Haloferax volcanii DS2,11.300,106,69,8,40,132,223,316,0.179,3.392E-01
+job.pdb,AF-A6X0N1-F1-model_v4 Bifunctional enzyme IspD/IspF,Brucella anthropi ATCC 49188,12.800,109,68,6,50,139,303,403,0.179,1.007E-01
+job.pdb,AF-Q2Y8F8-F1-model_v4 Hydrogenase maturation factor HypA,Nitrosospira multiformis ATCC 25196,11.700,68,52,4,60,123,3,66,0.164,7.472E-01
+job.pdb,"AF-A0KU85-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Shewanella sp. ANA-3,9.500,157,81,7,37,135,2,155,0.164,2.217E-01
+job.pdb,"AF-B9DXE4-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Clostridium kluyveri NBRC 12016,7.600,157,83,8,40,137,3,156,0.150,3.392E-01
+job.pdb,AF-B4SHT7-F1-model_v4 4-hydroxy-tetrahydrodipicolinate reductase,Stenotrophomonas maltophilia R551-3,11.600,86,68,5,60,142,121,201,0.150,7.472E-01
+job.pdb,"AF-Q886L7-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Pseudomonas syringae pv. tomato str. DC3000,15.500,109,61,8,50,137,58,156,0.138,1.137E-01
+job.pdb,AF-Q9PEC3-F1-model_v4 4-hydroxy-tetrahydrodipicolinate reductase,Xylella fastidiosa 9a5c,9.300,86,70,5,60,142,119,199,0.138,8.437E-01
+job.pdb,AF-A8IMT6-F1-model_v4 Hydrogenase maturation factor HypA,Azorhizobium caulinodans ORS 571,14.900,67,53,3,60,124,3,67,0.126,2.230E+00
+job.pdb,AF-Q9RYJ6-F1-model_v4 Hydrogenase maturation factor HypA,Deinococcus radiodurans R1,15.400,71,51,3,57,123,1,66,0.126,1.858E+00
+job.pdb,"AF-Q7NC56-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Mycoplasmoides gallisepticum str. R(low),8.500,70,63,1,67,135,81,150,0.126,7.472E-01
+job.pdb,"AF-Q4ZWQ2-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Pseudomonas syringae pv. syringae B728a,12.900,108,65,8,50,137,58,156,0.126,1.540E-01
+job.pdb,"AF-Q48F85-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Pseudomonas savastanoi pv. phaseolicola 1448A,15.500,109,61,8,50,137,58,156,0.126,1.637E-01
+job.pdb,AF-B0U565-F1-model_v4 4-hydroxy-tetrahydrodipicolinate reductase,Xylella fastidiosa M12,15.400,84,62,5,63,142,121,199,0.126,6.227E-01
+job.pdb,AF-B0RSP5-F1-model_v4 4-hydroxy-tetrahydrodipicolinate reductase,Xanthomonas campestris pv. campestris str. B100,13.900,86,66,5,60,142,120,200,0.126,7.940E-01
+job.pdb,AF-A6LCY1-F1-model_v4 Hydrogenase maturation factor HypA,Parabacteroides distasonis ATCC 8503,16.600,66,48,6,60,120,3,66,0.116,1.372E+00
+job.pdb,"AF-C0ZPR8-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Rhodococcus erythropolis PR4,6.600,90,58,6,68,139,74,155,0.116,2.217E-01
+job.pdb,"AF-Q15P30-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Pseudoalteromonas atlantica T6c,13.300,105,63,6,50,135,60,155,0.116,1.848E-01
+job.pdb,"AF-Q2GIK8-F1-model_v4 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",Anaplasma phagocytophilum str. HZ,5.900,169,86,7,33,135,3,164,0.116,4.884E-01
+job.pdb,AF-Q4UU71-F1-model_v4 4-hydroxy-tetrahydrodipicolinate reductase,Xanthomonas campestris pv. campestris str. 8004,10.900,91,67,6,60,139,120,207,0.106,8.437E-01
+job.pdb,AF-Q8P9L3-F1-model_v4 4-hydroxy-tetrahydrodipicolinate reductase,Xanthomonas campestris pv. campestris str. ATCC 33913,10.900,91,67,6,60,139,120,207,0.106,8.437E-01
+job.pdb,AF-Q3BUC6-F1-model_v4 4-hydroxy-tetrahydrodipicolinate reductase,Xanthomonas campestris pv. vesicatoria str. 85-10,13.900,86,66,5,60,142,120,200,0.098,1.215E+00
+job.pdb,AF-Q8PLE0-F1-model_v4 4-hydroxy-tetrahydrodipicolinate reductase,Xanthomonas citri pv. citri str. 306,12.700,86,67,5,60,142,120,200,0.098,1.372E+00
+job.pdb,AF-B3EL96-F1-model_v4 Hydrogenase maturation factor HypA,Chlorobium phaeobacteroides BS1,11.200,71,59,1,54,124,1,67,0.090,3.210E+00
+job.pdb,AF-Q8KBI8-F1-model_v4 Hydrogenase maturation factor HypA,Chlorobaculum tepidum TLS,7.000,71,62,1,54,124,1,67,0.082,3.210E+00
+job.pdb,AF-A4SLV6-F1-model_v4 Hydrogenase maturation factor HypA,Aeromonas salmonicida subsp. salmonicida A449,15.900,69,46,4,64,124,3,67,0.076,1.143E+00
+job.pdb,AF-A0KL76-F1-model_v4 Hydrogenase maturation factor HypA,Aeromonas hydrophila subsp. hydrophila ATCC 7966,11.200,71,56,4,57,124,1,67,0.069,2.676E+00
+job.pdb,AF-Q8I4N4-F1-model_v4 Receptor-type guanylate cyclase daf-11,Caenorhabditis elegans,16.400,67,48,5,59,123,45,105,0.069,4.912E+00
+job.pdb,"AF-P28350-F1-model_v4 Valine--tRNA ligase, mitochondrial",Neurospora crassa OR74A,5.700,87,58,3,59,130,940,1017,0.069,3.852E+00
+job.pdb,AF-B3QQ33-F1-model_v4 Hydrogenase maturation factor HypA,Chlorobaculum parvum NCIB 8327,5.800,103,61,5,60,158,3,73,0.063,2.370E+00
+job.pdb,AF-Q3SSP4-F1-model_v4 Valine--tRNA ligase,Nitrobacter winogradskyi Nb-255,17.200,93,56,7,53,129,790,877,0.063,2.676E+00
+job.pdb,AF-Q2NEZ5-F1-model_v4 Hydrogenase maturation factor HypA,Methanosphaera stadtmanae DSM 3091,9.800,71,49,6,59,120,2,66,0.057,5.546E+00
+job.pdb,AF-B9L1X1-F1-model_v4 Hydrogenase maturation factor HypA,Thermomicrobium roseum DSM 5159,11.400,70,55,4,57,123,1,66,0.057,5.546E+00
+job.pdb,AF-Q3KEY2-F1-model_v4 Threonine--tRNA ligase,Pseudomonas fluorescens Pf0-1,16.400,73,47,5,60,125,392,457,0.045,5.546E+00
+job.pdb,AF-Q6N6N1-F1-model_v4 Valine--tRNA ligase,Rhodopseudomonas palustris CGA009,14.700,95,62,7,53,135,795,882,0.029,7.985E+00
+job.pdb,AF-Q8IXB1-F1-model_v4 DnaJ homolog subfamily C member 10,Homo sapiens,18.100,55,38,2,68,122,355,402,0.024,4.093E+00
+job.pdb,AF-Q6NRT6-F1-model_v4 DnaJ homolog subfamily C member 10,Xenopus laevis,19.500,46,37,0,75,120,358,403,0.024,5.219E+00
+job.pdb,AF-F4IXE4-F1-model_v4 TPR repeat-containing thioredoxin TTL2,Arabidopsis thaliana,7.600,52,44,1,69,120,635,682,0.020,5.546E+00
+job.pdb,"AF-Q6JE37-F1-model_v4 Thioredoxin-like protein CITRX2, chloroplastic",Nicotiana benthamiana,12.800,39,32,2,84,121,94,131,0.016,7.985E+00
+job.pdb,AF-Q5R5L3-F1-model_v4 DnaJ homolog subfamily C member 10,Pongo abelii,18.800,53,38,1,68,120,355,402,0.014,6.262E+00
