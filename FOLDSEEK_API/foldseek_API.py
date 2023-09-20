@@ -15,8 +15,7 @@ class FoldseekAPI:
         if response.status_code == 200:
             return response.json()
         else:
-            print("Erro ao consultar o status. Status code:", response.status_code)
-            return None
+            return {'status_code': response.status_code}
 
     def download_results(self, ticket_id):
         url = f"{self.MMSEQS2_BASE_URL}/result/download/{ticket_id}"
@@ -48,19 +47,28 @@ class FoldseekAPI:
             print("Erro ao enviar o arquivo. Status code:", response.status_code)
             return None
 
-    def wait_for_completion(self, ticket_id, polling_interval=60):
+    def wait_for_completion(self, ticket_id, polling_interval=0.5):
+        error_503_reported = False
         for _ in tqdm(range(0, 100), desc="Aguardando processamento", unit="poll"):
             status = self.check_ticket_status(ticket_id)
+            
             if status and status.get('status') == "COMPLETED":
                 print("\nProcessamento concluído!")
                 return True
+            elif status and status.get('status_code') == 503:
+                if not error_503_reported:
+                    #print("\nErro ao consultar o status. Status code: 503")
+                    error_503_reported = True
+                time.sleep(polling_interval)
+                continue
             elif status and status.get('status') == "ERROR":
                 print("\nHouve um erro no processamento.")
                 return False
+            
             time.sleep(polling_interval)
         return False
 
-# Exemplo de uso da classse:
+# Exemplo de uso da classe:
 
 api = FoldseekAPI()
 
@@ -73,8 +81,13 @@ if result:
 ticket_id = result['id']
 print(ticket_id)
 
-# Aguarda a conclusão
-if api.wait_for_completion(ticket_id):
+# Se o status já for "COMPLETE", prosseguir para o download.
+if result['status'] == "COMPLETE":
+    print("\nProcessamento concluído!")
     api.download_results(ticket_id)
 else:
-    print("O trabalho não foi concluído com sucesso.")
+    # Aguarda a conclusão
+    if api.wait_for_completion(ticket_id):
+        api.download_results(ticket_id)
+    else:
+        print("O trabalho não foi concluído com sucesso.")
