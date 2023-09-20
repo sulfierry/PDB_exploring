@@ -1,32 +1,43 @@
 import requests
 
-class PDBAF_API:
+class PDB_AF:
     ALPHAFOLD_API_ENDPOINT = "https://www.alphafold.ebi.ac.uk/api/prediction/"
 
-    @staticmethod
-    def pdb_API(pdb_id):
-        url = f"https://files.rcsb.org/download/{pdb_id}.pdb"
+    def __init__(self, pdb_id=None, uniprot_id=None):
+        self.pdb_id = pdb_id
+        self.uniprot_id = uniprot_id
+
+    def download_pdb(self):
+        url = f"https://files.rcsb.org/download/{self.pdb_id}.pdb"
         response = requests.get(url)
 
         if response.status_code == 200:
-            with open(f"{pdb_id}.pdb", 'w') as file:
+            with open(f"{self.pdb_id}.pdb", 'w') as file:
                 file.write(response.text)
-            print(f"Arquivo {pdb_id}.pdb baixado com sucesso!")
+            print(f"Arquivo {self.pdb_id}.pdb baixado com sucesso!")
         else:
-            print(f"Não foi possível baixar o PDB com o ID: {pdb_id}. Verifique se o ID é válido.")
+            print(f"Não foi possível baixar o PDB com o ID: {self.pdb_id}. Verifique se o ID é válido.")
 
-    @staticmethod
-    def af_API(uniprot_accession):
-        response = requests.get(PDBAF_API.ALPHAFOLD_API_ENDPOINT + uniprot_accession)
+    def fetch_alfafold_data(self):
+        response = requests.get(self.ALPHAFOLD_API_ENDPOINT + self.uniprot_id)
 
         if response.status_code != 200:
-            print(f"Erro ao acessar a API para o UniProt ID: {uniprot_accession}. Código de status: {response.status_code}")
+            print(f"Erro ao acessar a API para o UniProt ID: {self.uniprot_id}. Código de status: {response.status_code}")
             return None
 
         return response.json()
 
-    @staticmethod
-    def download_pdb_file(pdb_url, filename):
+    def download_alfafold_pdb(self):
+        data = self.fetch_alfafold_data()
+
+        if data:
+            pdb_url = data[0].get("pdbUrl", "")
+            if pdb_url:
+                self.download_pdb_file(pdb_url, f"{self.uniprot_id}.pdb")
+            else:
+                print("URL do arquivo PDB não encontrado para este UniProt ID.")
+
+    def download_pdb_file(self, pdb_url, filename):
         response = requests.get(pdb_url)
         
         if response.status_code == 200:
@@ -38,17 +49,7 @@ class PDBAF_API:
 
 
 if __name__ == "__main__":
-    # Instancia da classe não é necessária, pois estamos usando métodos estáticos.
     
-    pdb_id = "3FD5"
-    PDBAF_API.pdb_API(pdb_id)
-
-    uniprot_id = "O15067"
-    data = PDBAF_API.af_API(uniprot_id)
-
-    if data:
-        pdb_url = data[0].get("pdbUrl", "")
-        if pdb_url:
-            PDBAF_API.download_pdb_file(pdb_url, f"{uniprot_id}.pdb")
-        else:
-            print("URL do arquivo PDB não encontrado para este UniProt ID.")
+    pdb = PDB_AF(pdb_id="3FD5", uniprot_id="O15067")
+    pdb.download_pdb()
+    pdb.download_alfafold_pdb()
