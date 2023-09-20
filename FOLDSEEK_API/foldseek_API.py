@@ -60,7 +60,7 @@ class FoldseekAPI:
             time.sleep(polling_interval)
         return False
 
-# Exemplo de uso da classe:
+# Exemplo de uso da classse:
 
 api = FoldseekAPI()
 
