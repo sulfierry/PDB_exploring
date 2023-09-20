@@ -1,86 +1,90 @@
 import csv
 import os
 
-def read_m8(file_path):
-    """Lê um arquivo .m8 e retorna uma lista de dicionários."""
-    results = []
-    headers = [
-        "query_id", "subject_id", "scientific_name", "perc_identity",
-        "alignment_length", "mismatches", "gap_opens", "query_start", 
-        "query_end", "subject_start", "subject_end", "evalue", "bit_score"
-    ]
+class M8:
 
-    with open(file_path, 'r') as file:
-        for line in file:
-            columns = line.strip().split('\t')
-            
-            # Inserir o nome científico (penúltima coluna) na terceira posição
-            scientific_name = columns[-1]
-            columns.insert(2, scientific_name)
+    def __init__(self, dir_path="./mmseqs_results/"):
+        self.dir_path = dir_path
 
-            results.append(dict(zip(headers, columns)))
+    def read_m8(self, file_path):
+        results = []
+        headers = [
+            "query_id", "subject_id", "scientific_name", "perc_identity",
+            "alignment_length", "mismatches", "gap_opens", "query_start", 
+            "query_end", "subject_start", "subject_end", "evalue", "bit_score"
+        ]
 
-    return results
+        with open(file_path, 'r') as file:
+            for line in file:
+                columns = line.strip().split('\t')
+                
+                # Inserir o nome científico (penúltima coluna) na terceira posição
+                scientific_name = columns[-1]
+                columns.insert(2, scientific_name)
 
-def save_to_csv(data, output_file):
-    """Salva os dados em formato CSV."""
-    with open(output_file, 'w', newline='') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=data[0].keys())
-        writer.writeheader()
-        for row in data:
-            writer.writerow(row)
+                results.append(dict(zip(headers, columns)))
 
-def print_formatted(data):
-    """Imprime os dados de forma formatada no terminal."""
-    headers = data[0].keys()
-    # Imprime os cabeçalhos
-    print("\t".join(headers))
-    print("-" * 120)
+        return results
 
-    for entry in data:
-        print("\t".join([str(entry[h]) for h in headers]))
+    def save_to_csv(self, data, output_file):
+        with open(output_file, 'w', newline='') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=data[0].keys())
+            writer.writeheader()
+            for row in data:
+                writer.writerow(row)
 
-def count_lines_in_m8(file_path):
-    """Conta o número de linhas em um arquivo .m8."""
-    with open(file_path, 'r') as file:
-        return sum(1 for _ in file)
+    def print_formatted(self, data):
+        headers = data[0].keys()
+        
+        # Definindo larguras para cada coluna
+        col_widths = {
+            "query_id": 15, "subject_id": 20, "scientific_name": 50,
+            "perc_identity": 15, "alignment_length": 17, "mismatches": 12,
+            "gap_opens": 12, "query_start": 12, "query_end": 12,
+            "subject_start": 15, "subject_end": 12, "evalue": 10, "bit_score": 10
+        }
 
-def total_organisms_in_directory(dir_path):
-    """Conta o total de linhas (organismos) em todos os arquivos .m8 do diretório."""
-    total_count = 0
+        # Imprimindo os cabeçalhos formatados
+        print("".join([f"{h:{col_widths[h]}}" for h in headers]))
+        print("-" * sum(col_widths.values()))
 
-    for filename in os.listdir(dir_path):
-        if filename.endswith(".m8"):
-            file_path = os.path.join(dir_path, filename)
-            total_count += count_lines_in_m8(file_path)
-
-    return total_count
+        for entry in data:
+            print("".join([f"{str(entry[h]):{col_widths[h]}}" for h in headers]))
 
 
+    def count_lines_in_m8(self, file_path):
+        with open(file_path, 'r') as file:
+            return sum(1 for _ in file)
 
-# Caminho do diretório contendo os arquivos .m8
-dir_path = "./mmseqs_results/"
+    def total_organisms_in_directory(self):
+        total_count = 0
+        for filename in os.listdir(self.dir_path):
+            if filename.endswith(".m8"):
+                file_path = os.path.join(self.dir_path, filename)
+                total_count += self.count_lines_in_m8(file_path)
 
+        return total_count
 
-# Caminho do diretório contendo os arquivos .m8
+    def process_files(self):
+        for filename in os.listdir(self.dir_path):
+            if filename.endswith(".m8"):
+                file_path = os.path.join(self.dir_path, filename)
+                output_csv_path = os.path.join(self.dir_path, filename.replace(".m8", ".csv"))
 
+                data = self.read_m8(file_path)
+                self.save_to_csv(data, output_csv_path)
 
-# Para cada arquivo .m8 no diretório, leia, salve em CSV e imprima
-for filename in os.listdir(dir_path):
-    if filename.endswith(".m8"):
-        file_path = os.path.join(dir_path, filename)
-        output_csv_path = os.path.join(dir_path, filename.replace(".m8", ".csv"))
+                print(f"Arquivo {filename} salvo em {output_csv_path}")
+                print(f"\nPrimeiras 10 entradas de {filename}:")
+                self.print_formatted(data[:10])
+                print("\n\n")
 
-        # Lê o arquivo
-        data = read_m8(file_path)
+def main():
+    m8_processor = M8()
 
-        # Salva em CSV
-        save_to_csv(data, output_csv_path)
-        print(f"Arquivo {filename} salvo em {output_csv_path}")
+    m8_processor.process_files()
+    total_organisms = m8_processor.total_organisms_in_directory()
+    print(f"Total de organismos em todos os arquivos .m8: {total_organisms}")
 
-        # Imprime as primeiras 10 entradas formatadas
-        print(f"\nPrimeiras 10 entradas de {filename}:")
-        print_formatted(data[:10])
-        print("\n\n")
-
-print(f"Total de organismos em todos os arquivos .m8: {total_organisms_in_directory(dir_path)}")
+if __name__ == "__main__":
+    main()
