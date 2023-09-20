@@ -78,12 +78,34 @@ class M8:
                 self.print_formatted(data[:10])
                 print("\n\n")
 
+    def save_filtered_to_csv(self, keyword, output_file):
+        all_data = []
+
+        # Itera por todos os arquivos .m8 na pasta
+        for filename in os.listdir(self.dir_path):
+            if filename.endswith(".m8"):
+                file_path = os.path.join(self.dir_path, filename)
+                data = self.read_m8(file_path)
+                all_data.extend(data)
+
+        # Filtra os dados baseados no keyword, verifica em todas as colunas
+        filtered_data = [row for row in all_data if any(keyword in str(value) for value in row.values())]
+
+        # Salva os dados filtrados no CSV
+        self.save_to_csv(filtered_data, output_file)
+
+
+
 def main():
     m8_processor = M8()
 
     m8_processor.process_files()
     total_organisms = m8_processor.total_organisms_in_directory()
     print(f"Total de organismos em todos os arquivos .m8: {total_organisms}")
+
+    keyword = "Homo sapiens"
+    m8_processor.save_filtered_to_csv("Homo sapiens", "filtered_Homo.csv")
+
 
 if __name__ == "__main__":
     main()
