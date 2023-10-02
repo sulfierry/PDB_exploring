@@ -47,6 +47,8 @@ def search_bindingdb(smiles, similarity_cutoff=0.8):
     }
 
     response = requests.get(base_url, params=params)
+    print(f"Response status: {response.status_code}")  # Log the status code
+    print(f"Response content: {response.content}")  # Log the content
 
     if response.status_code != 200:
         return []
@@ -101,10 +103,10 @@ def save_to_csv(data, filename):
 
 def search_all_databases(smiles):
     results = []
-    results.extend(search_chembl(smiles))
-    results.extend(search_pubchem(smiles))
+    # results.extend(search_chembl(smiles))
+    # results.extend(search_pubchem(smiles))
     results.extend(search_bindingdb(smiles))
-    results.extend(search_klifs(smiles))
+    # results.extend(search_klifs(smiles))
     return results
 
 def save_to_csv(results, filename='output.csv'):
@@ -128,5 +130,5 @@ all_results = search_all_databases(query_smiles)
 save_to_csv(all_results)
 
 
-results_klifs = search_klifs(query_smiles)
-save_to_csv2(results_klifs, 'KLIFS.csv')
+# results_klifs = search_klifs(query_smiles)
+# save_to_csv2(results_klifs, 'KLIFS.csv')
