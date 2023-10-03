@@ -3,13 +3,13 @@ import csv
 
 # Lista de URLs
 urls = [
-    'https://klifs.net/api_v2/kinase_groups',         # groups
-    'https://klifs.net/api_v2/kinase_families',       # families
-    'https://klifs.net/api_v2/kinase_names',          # kinase names
-    'https://klifs.net/api_v2/kinase_information',    # kinase information
+    # 'https://klifs.net/api_v2/kinase_groups',         # groups
+    # 'https://klifs.net/api_v2/kinase_families',       # families
+    # 'https://klifs.net/api_v2/kinase_names',          # kinase names
+    # 'https://klifs.net/api_v2/kinase_information',    # kinase information
     'https://klifs.net/api_v2/ligands_list',          # ligand list
     'https://klifs.net/api_v2/drug_list',             # drug list
-    'https://klifs.net/api_v2/interactions_get_types' # interaction get types
+    # 'https://klifs.net/api_v2/interactions_get_types' # interaction get types
 
     
 ]
