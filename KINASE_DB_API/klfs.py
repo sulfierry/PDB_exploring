@@ -46,7 +46,7 @@ def print_and_save_list_format(data, output_name):
 
 for url in urls:
     # Extrair a última palavra da URL após "/"
-    output_name = url.rstrip('/').split('/')[-1]
+    output_name = "klifs_"+url.rstrip('/').split('/')[-1]
 
     response = requests.get(url, headers={'accept': 'application/json'})
 
