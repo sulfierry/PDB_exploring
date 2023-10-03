@@ -103,9 +103,9 @@ def save_to_csv(data, filename):
 
 def search_all_databases(smiles):
     results = []
-    # results.extend(search_chembl(smiles))
-    # results.extend(search_pubchem(smiles))
-    results.extend(search_bindingdb(smiles))
+    results.extend(search_chembl(smiles))
+    results.extend(search_pubchem(smiles))
+    # results.extend(search_bindingdb(smiles))
     # results.extend(search_klifs(smiles))
     return results
 
@@ -125,7 +125,7 @@ def save_to_csv2(data, filename):
             csvwriter.writerow(row)
 
 
-query_smiles = "N[C@@H](CC(=O)Nc1ccc(Oc2cc(F)c(F)cc2Br)cc1)C(=O)O"
+query_smiles = "C1=CC(=CC=C1NC(=O)CC(C(=O)O)N)OC2=CC(=C(C=C2Br)F)F"
 all_results = search_all_databases(query_smiles)
 save_to_csv(all_results)
 
