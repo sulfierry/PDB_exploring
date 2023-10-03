@@ -1,12 +1,15 @@
 from chembl_webresource_client.new_client import new_client
+from tqdm import tqdm
 
 def fetch_all_compounds():
     molecule = new_client.molecule
     all_molecules = []
 
-    # Definindo os parâmetros de paginação
     page_size = 100
     skip = 0
+
+    # Como não sabemos o total, podemos usar um tqdm simples para mostrar o progresso
+    pbar = tqdm(desc="Downloading", unit="molecule")
 
     while True:
         # Obtendo compostos em lotes
@@ -17,6 +20,10 @@ def fetch_all_compounds():
         all_molecules.extend(batch)
         skip += page_size
 
+        # Atualizar a barra de progresso
+        pbar.update(len(batch))
+
+    pbar.close()
     return all_molecules
 
 def main():
