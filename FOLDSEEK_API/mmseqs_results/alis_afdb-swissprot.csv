@@ -1,4 +1,4 @@
-query_id,subject_id,scientific_name,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
+query_id,subject_id,specie,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
 job.pdb,AF-Q8XE87-F1-model_v4 Thiamine-monophosphate kinase,Escherichia coli O157:H7,84.400,321,50,0,1,321,3,323,1.000,1.519E-58
 job.pdb,AF-P0AGG0-F1-model_v4 Thiamine-monophosphate kinase,Escherichia coli K-12,84.400,321,50,0,1,321,3,323,1.000,1.614E-58
 job.pdb,AF-P0AGG1-F1-model_v4 Thiamine-monophosphate kinase,Escherichia coli CFT073,84.400,321,50,0,1,321,3,323,1.000,1.937E-58

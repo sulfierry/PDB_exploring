@@ -1,4 +1,4 @@
-query_id,subject_id,scientific_name,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
+query_id,subject_id,specie,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
 job.pdb,AF-A0A0H3FSL2-F1-model_v4 Thiamine-monophosphate kinase,Klebsiella aerogenes KCTC 2190,92.200,321,25,0,1,321,3,323,1.000,4.386E-60
 job.pdb,AF-A0A7U5UFA8-F1-model_v4 Thiamine-monophosphate kinase,Enterobacter cloacae complex sp.,82.800,321,55,0,1,321,3,323,1.000,3.081E-58
 job.pdb,AF-W1DNJ1-F1-model_v4 Thiamine-monophosphate kinase,Klebsiella pneumoniae IS43,97.900,291,6,0,31,321,25,315,1.000,2.596E-56

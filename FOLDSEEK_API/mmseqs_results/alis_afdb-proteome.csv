@@ -1,4 +1,4 @@
-query_id,subject_id,scientific_name,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
+query_id,subject_id,specie,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
 job.pdb,AF-A0A0H3GP01-F1-model_v4 Thiamine-monophosphate kinase,Klebsiella pneumoniae subsp. pneumoniae HS11286,99.600,321,1,0,1,321,3,323,1.000,3.101E-63
 job.pdb,AF-P0AGG0-F1-model_v4 Thiamine-monophosphate kinase,Escherichia coli K-12,84.400,321,50,0,1,321,3,323,1.000,1.737E-58
 job.pdb,AF-Q32JH1-F1-model_v4 Thiamine-monophosphate kinase,Shigella dysenteriae Sd197,83.400,321,53,0,1,321,3,323,1.000,3.389E-58

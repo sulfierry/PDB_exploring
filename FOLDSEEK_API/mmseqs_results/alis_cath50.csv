@@ -1,4 +1,4 @@
-query_id,subject_id,scientific_name,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
+query_id,subject_id,specie,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
 job.pdb,af_P0AGG0_145_323_3.90.650.10,Escherichia coli,79.800,179,36,0,143,321,1,179,1.000,1.861E-27
 job.pdb,5d9uB01,unclassified,46.100,143,74,2,1,142,1,141,1.000,3.379E-18
 job.pdb,5cc8B02,unclassified,42.000,169,83,5,144,312,2,155,1.000,2.360E-17

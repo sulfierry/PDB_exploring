@@ -1,4 +1,4 @@
-query_id,subject_id,scientific_name,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
+query_id,subject_id,specie,perc_identity,alignment_length,mismatches,gap_opens,query_start,query_end,subject_start,subject_end,evalue,bit_score
 job.pdb,"6mfm_B Structure of thiamine-monophosphate kinase from Acinetobacter baumannii in complex with adenosine diphosphate (ADP) and thiamine diphosphate (TPP), orthorhombic crystal form",Acinetobacter baumannii,43.600,321,163,7,1,320,1,304,1.000,3.885E-44
 job.pdb,"6mfm_A Structure of thiamine-monophosphate kinase from Acinetobacter baumannii in complex with adenosine diphosphate (ADP) and thiamine diphosphate (TPP), orthorhombic crystal form",Acinetobacter baumannii,44.200,321,161,7,2,321,1,304,1.000,7.132E-44
 job.pdb,5dd7_A Structure of thiamine-monophosphate kinase from Acinetobacter baumannii in complex with AMPPNP and thiamine-monophosphate,Acinetobacter baumannii,43.900,323,161,7,1,321,1,305,1.000,1.669E-43
