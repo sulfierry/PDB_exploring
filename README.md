@@ -24,3 +24,5 @@ This project provides a collection of scripts and tools for analyzing and manipu
 
 - `KINASE_DB_API`: API for kinase databases.
 - `PDB_ALPHAFOLD_API`: API for PDB AlphaFold structures.
+- `FOLDSEEK_API`: API for Foldseek.
+- `KLIFS_API`: API for KLIFS.
