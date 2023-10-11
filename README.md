@@ -22,3 +22,5 @@ This project provides a collection of scripts and tools for analyzing and manipu
 - `merge_ligand_protein.py`: Merges ligand and protein in PDB files.
 - `pdb_to_mol2.py`: Converts PDB files to mol2 format.
 
+- `KINASE_DB_API`: API for kinase databases.
+- `PDB_ALPHAFOLD_API`: API for PDB AlphaFold structures.
